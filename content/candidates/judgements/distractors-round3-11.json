@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-d13299fa",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A's 9% is a near-miss figure against the true ~6% (and 9% is the industry line's rise, the wrong series), B is the revenue-only slip (301 > 294), C's 'four times' is a near miss on 4.5 (or the H2 2011 margin read half a gridline off); the half-gridline misreading of the margin (4% or 6% read as 5%) is named in sourceHas, and revenue only (3%) or the industry line (a rise) do not make D true."
+  },
+  {
+    "id": "j-d7292156",
+    "judge": "distractors",
+    "fail": false,
+    "why": "Mark 4 comes from reading Question 1 alone (42%), mark 2 from reading route B (35% Q1, 62% combined), mark 3 from reversing most for least (14% is the lowest combined); reading Question 2 alone lands on mark 1, but sourceHas names that slip."
+  },
+  {
+    "id": "j-3dea2423",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B takes the 25% on the wrong base (a share of the 85%, not of everyone), C over-reads 'main reason' as 'just for the racing', and A's spending claim is the one statement without basis that sourceHas lists; skipping the multiplication gives 60%, not 51%."
+  },
+  {
+    "id": "j-0733cff2",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A mixes up Week -1 and Week 1 (the highest temporary share, 54%, is in Week 1), C over-reads both lines indexed at 100 as hours matching orders, D compares points moved (-50 against -75) instead of proportions; reading total hours instead of temporary hours (+38 against +40) still makes B true, which a strict reading would not count as the hourly/total line mix-up that sourceHas names."
+  },
+  {
+    "id": "j-aa0ecfd4",
+    "judge": "distractors",
+    "fail": false,
+    "why": "'Twice' compares margins alone (15% ÷ 8% = 1.9), 'half' compares 2016 revenues alone (148 ÷ 271 = 0.55), and 'three times' is the coarse filler that sourceHas lists (margins alone against another category's line, 15% ÷ 5%); skipping the growth step lands on 'the same', which sourceHas names."
+  },
+  {
+    "id": "j-1b547764",
+    "judge": "distractors",
+    "fail": false,
+    "why": "€1,199 is the 5.9-point margin gap times September revenue, €1,001 is that gap times July-August costs (two slips), and €879 is the numeric filler sourceHas lists, roughly continuing the ~10% ratio spacing (its step is 14%, a little wide)."
+  },
+  {
+    "id": "j-a9ce7a8c",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A looks true on the wrong base (1.0 ÷ postgraduate total 1.8 = 56%), B looks true when arts' faculty total is read for its postgraduate bar (0.8 ÷ 3.9 = 21%), D looks true on the combined base (0.9 ÷ 3.9 = 23%); the combined-base slip keeps C true but also makes D true, so it does not single out C."
+  },
+  {
+    "id": "j-49f3f174",
+    "judge": "distractors",
+    "fail": true,
+    "why": "6.6, 8.1 and 9.6 come from no slip (profit over costs gives 6.4, the May-September margin alone 8.4), and the three fillers do not sit as the sourceHas note says: the 1.5-point steps are 29% of the 5.1 answer, not the tight grid under a fifth of the answer where the source's fillers sit."
+  },
+  {
+    "id": "j-2f3fc7cd",
+    "judge": "distractors",
+    "fail": false,
+    "why": "Score 2 comes from reading Question 1 alone (37%), score 4 from reading club B (63% combined, 40% Q1), and score 1 only from two slips that end in a tie (Question 2 alone and least for most, 1 and 2 both at 5%), with ratings 1-4 offered as categories; reading Question 2 alone lands on score 3, but sourceHas names that slip."
+  },
+  {
+    "id": "j-16db61f4",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A looks worst when its 2.5 extra watchmakers are added on top of November's 2.5 (5 for 194 services), B when the step chart is read as needing 1.5 at 66 services (or the half-timer is added to November's staff), C when 148 services are read one step high (3 watchmakers, 195 minutes); forgetting the original half watchmaker in the cut options moves the worst to C, not D."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": "j-4c038285", "judge": "ambiguity", "fail": false, "why": "Only D holds: a 2% cut in hotel and flight costs saves $23.1m against $3.1m for running costs and less for IT, while a 2% revenue rise adds at most $2.9m (and deepens the $13m loss if all costs move with revenue)." },
+  { "id": "j-6cd1bcb9", "judge": "ambiguity", "fail": false, "why": "Only A holds: Harbor has 27,000/70 = 386 units per site against Keepwell's 48,000/130 = 369, while B, C and D need revenue or rent figures the table does not give." },
+  { "id": "j-eec2f885", "judge": "ambiguity", "fail": false, "why": "Only C holds: profit per route is C 0.57, A 0.93, B 1.89 and D 2.67 ($m), with no ties." },
+  { "id": "j-a76ca563", "judge": "ambiguity", "fail": false, "why": "D on expected damages: X 0.5 x 6 = 3.0, W 0.2 x 12 = 2.4, Y 0.2 x 7 = 1.4, Z 0.4 x 3 = 1.2, all points on gridlines or halfway between; ranking by damages alone (A) ignores the probabilities the exhibit exists to give and is a trap." },
+  { "id": "j-6c0df18f", "judge": "ambiguity", "fail": false, "why": "Only C holds: Leadership earns $39m/53 = $0.74m per designer against Coding's $47m/72 = $0.65m, while A is 86/179 = 48%, B needs costs and D is a tie at $0.75m each." },
+  { "id": "j-4f38cc99", "judge": "ambiguity", "fail": false, "why": "B is the one near option: with 5 Small-Market Clubs the other 11 solve to 3.03 Large-Market Clubs from revenue (2.88 from profit), and only 3 gives league averages that round to $24m and $1.1m." },
+  { "id": "j-79d2a0fb", "judge": "ambiguity", "fail": false, "why": "A on expected penalty: O 0.4 x 5 = 2.0, V 0.1 x 16 = 1.6, H 0.1 x 11 = 1.1, S 0.3 x 3 = 0.9, all points on gridlines or halfway between; ranking by penalty (B) or by probability (C) alone is a trap." },
+  { "id": "j-7666ad0a", "judge": "ambiguity", "fail": false, "why": "Only C holds: software reaches 79 x 79/66 = 94.6 at 33% (31.2) against IT support 127 x 127/105 = 153.6 at 10% (15.4), a ratio of 2.0 (2.0 also with absolute growth)." },
+  { "id": "j-927eff83", "judge": "ambiguity", "fail": false, "why": "Only A holds: apartments use 1.1 of the 3.9 household billion litres (28%), while factories take 8%, business 1.9/7.3 = 26% and offices and shops 11%, under an eighth." },
+  { "id": "j-a479934b", "judge": "ambiguity", "fail": false, "why": "Only C holds: earnings are S + 3% of A x V + 15% of N x W, divided by 7.5 x 5 x 45 hours." }
+]

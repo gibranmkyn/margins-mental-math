@@ -1,0 +1,12 @@
+[
+  { "id": "j-e23aa5c0", "judge": "ambiguity", "fail": false, "why": "Only C holds: 2011 profits of £60m rise 10% to £66m, and £66m over 158 products is £417,722 per product." },
+  { "id": "j-5a710de6", "judge": "ambiguity", "fail": false, "why": "Only C holds: total sales reach 439 x 1.03^10 = 590k, so zero-emission sales must go from 118k to above 295k (x2.5), which needs about 9.6% a year; 8% falls short and 12% is the first option that works, with 9 or 11 compounding years giving the same option." },
+  { "id": "j-744d7284", "judge": "ambiguity", "fail": false, "why": "Only C holds: the indirect contributions add to 0.3+0.4+0.3+0.5+0.6 = 2.1 points, and 2.1% of $600bn is $12.6bn; direct (0.7, giving $4.2bn) and total (2.8, giving $16.8bn) are traps." },
+  { "id": "j-6b234543", "judge": "ambiguity", "fail": false, "why": "Only B holds: margin times crossings gives 0 at $6.0, 0.5 x 41 = 20.5 at $6.5, 1 x 17 = 17 at $7.0 and 1.5 x 12 = 18 at $7.5, and any reasonable reading of the right axis (41 read as 38 to 44) still keeps $6.5 on top." },
+  { "id": "j-4ca65a8c", "judge": "ambiguity", "fail": false, "why": "Only C holds: 90% of 210,000 people is 189,000 single visits out of 300,000 visits, so 63%; 90% is the per-person trap." },
+  { "id": "j-b9c85ac3", "judge": "ambiguity", "fail": false, "why": "Only D holds: revenue per consultant is A 0.342, C 0.282, E 0.257, D 0.158, B 0.129 ($m), so the order is A, C, E, D, B with no ties." },
+  { "id": "j-76258593", "judge": "ambiguity", "fail": false, "why": "Only C holds: 8 cartons is 320 bottles, below the discount threshold, so orders are 320 x $5.70 = $1,824 and 320 x $8 = $2,560, which average $2,192, closest to $2,200." },
+  { "id": "j-74863173", "judge": "ambiguity", "fail": true, "why": "'Average revenue per developer across products' could be weighted (total $117m over 325 developers = $360,000, C) or the simple mean of the 12 products' ratios ($325,000, about 1.7% from D's $320,000), and both options are printed." },
+  { "id": "j-25dd7d83", "judge": "ambiguity", "fail": false, "why": "Only D holds: profits of $20m rise 20% to $24m, and $24m over 107 products is $224,299 per product." },
+  { "id": "j-3dd7e000", "judge": "ambiguity", "fail": false, "why": "Only B holds: 4,800 x 61% x 74% = 2,167 hotels, each saving 272,000 kWh x $0.11 = $29,920, gives $64.8m, and 95% paying and a 50% share leaves about $30.8m, so $31 million." }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": "j-6e030439", "judge": "ambiguity", "fail": false, "why": "Only D holds: 68,000 other drivers at 25% give 17,000 and 17,000 owners at 40% give 6,800, so the gap is 10,200; 6,800 (B) is just the owners' count." },
+  { "id": "j-4c86f97f", "judge": "ambiguity", "fail": false, "why": "Only B holds: 80% of the 45% who came mainly for the railway is 36%; C confuses main reason with only reason, D is really 6.75%, and A cannot be concluded." },
+  { "id": "j-9292397c", "judge": "ambiguity", "fail": false, "why": "Only A holds: 74% of 900 respondents is 666, and Campus 1 enrols 900/0.18 = 5,000, so 666/5,000 = 13.3%." },
+  { "id": "j-6d4ddb03", "judge": "ambiguity", "fail": false, "why": "Only C holds: 70% of the 40% drawn mainly by the garden is 28%; A is really 8%, B confuses main with only, and D cannot be concluded." },
+  { "id": "j-ac424ba4", "judge": "ambiguity", "fail": false, "why": "A is the one incorrect statement: 40% of 9,000 = 3,600 younger shoppers rated aftertaste 1-2 against 31% of 16,000 = 4,960 older shoppers, while B (9,760 vs 6,750 fives), C (90% vs at most 60%) and D (older mean 3.52 vs 3.0, 20% vs 40% low marks) all hold." },
+  { "id": "j-565c1ac2", "judge": "ambiguity", "fail": false, "why": "Only A holds: revenue times margin index gives 2009 = 51,254 against 2010 = 49,276, 4.0% higher (all chart values lie on or halfway between gridlines); C is really a 5.2% fall, B is a fall, and D is 13 vs 3, 4.3 times." },
+  { "id": "j-872ef1a0", "judge": "ambiguity", "fail": false, "why": "Only A holds: Country 6's margin (~43.6%) is the highest, above Country 3 (~40.9%) by more than half a gridline step; B is about 2 times, not 3, and C and D need market sizes the chart says it does not give." },
+  { "id": "j-09d3b71d", "judge": "ambiguity", "fail": false, "why": "A does least: against September-October's 31/0.5 = 62 bowls per potter, A gives 158/2.5 = 63.2 while B gives 208/3 = 69.3 and C and D give 136/2 and 102/1.5 = 68, with every staffing level matching Exhibit 1's steps." },
+  { "id": "j-8c512711", "judge": "ambiguity", "fail": false, "why": "Only D holds: 60% of the 85% who came mainly for the racing is 51%; B is really 21.25%, C confuses main with only, and A cannot be concluded." },
+  { "id": "j-adff48fe", "judge": "ambiguity", "fail": false, "why": "A: 15.2/112.4 = 13.52% less 10.3/121.9 = 8.45% gives a gap of 5.07 points, and the next option is 0.7 points away." }
+]

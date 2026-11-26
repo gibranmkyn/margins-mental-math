@@ -1,0 +1,12 @@
+[
+  { "id": "j-94327822", "judge": "realism", "fail": false, "why": "The service split (46/32/22) and the urgent-care problem pie (37/4/9/7/18/25) each sum to 100%, and 2,140 animals in a month is believable for a vet hospital." },
+  { "id": "j-8156b8e1", "judge": "realism", "fail": false, "why": "Hand peeling at 15 kg an hour, a machine at 50 kg an hour costing $13,720 over four years and a $15 staff cost are believable, and 245 days fits working-day opening." },
+  { "id": "j-c60e54d8", "judge": "realism", "fail": false, "why": "Each panel row is a subset no larger than the one above it for both one-person firms (5,530 to 896) and firms with staff (3,684 to 519), so the funnel is consistent." },
+  { "id": "j-c136eebf", "judge": "realism", "fail": false, "why": "The eight funder bars sum exactly to the $153 million total, believable research income for a university." },
+  { "id": "j-2712697c", "judge": "realism", "fail": false, "why": "Every hospital's capital-spending shares sum to 100%, and $29 to $91 million over five years per hospital with 69% to 96% bed occupancy is believable." },
+  { "id": "j-628b7f2d", "judge": "realism", "fail": false, "why": "Quillfire's mobile share falling from about 15% to 10% of a $1.2 to $2.15 billion market, and about 14% to 16% of the console market, is believable." },
+  { "id": "j-e76507e3", "judge": "realism", "fail": false, "why": "Practice profits of about $133,000 to $467,000 per practice across groups of 30 to 45 dental practices are believable." },
+  { "id": "j-6095ae41", "judge": "realism", "fail": false, "why": "94,000 motor policies, a $29 legal-cover fee and breakdown cover costing tens of dollars a year are consistent with the stated $4.39 million and believable for a broker." },
+  { "id": "j-f813a5d7", "judge": "realism", "fail": false, "why": "Both pies sum to 100%, and 3,200 exit forms is believable for a village mountain-bike park." },
+  { "id": "j-a108af5d", "judge": "realism", "fail": false, "why": "Game revenues of $1 to $31 million (about $120 million in all) against 5 to 66 developers per game, roughly $450,000 per developer, are believable for a loss-making mobile studio." }
+]

@@ -1,0 +1,12 @@
+[
+  {"id": "j-25c8110d", "judge": "realism", "fail": false, "why": "Annual farm output growth between -11.4% and 9.3% across four candidate countries, with letter and number ratings for credit and customs risk, is believable."},
+  {"id": "j-af7d5813", "judge": "realism", "fail": true, "why": "Private hire of screens brings in 103-121 million a year, about 70% of ticket revenue and roughly a third of the chain's total, when private hire at a real cinema chain is a few percent of revenue at most, so it is off by around a factor of ten."},
+  {"id": "j-5149f4f6", "judge": "realism", "fail": false, "why": "A commercial dishwasher needing 2-3 repair visits a year, $17 an hour labour, about 3,000 kWh a year and electricity at 8c/kWh is within a stylised range."},
+  {"id": "j-f13469d2", "judge": "realism", "fail": false, "why": "About €31,000 a month from roughly 700-740 lessons (about €43 a lesson) is believable, and the stated margins match revenue minus costs (15.2% and 8.6%)."},
+  {"id": "j-152fe530", "judge": "realism", "fail": false, "why": "30.2 sailing days a month across February to December and 29.6 in January fit the calendar, about $20 revenue per passenger is believable for short crossings, and profit equals revenue minus costs in both columns."},
+  {"id": "j-8b987907", "judge": "realism", "fail": false, "why": "Calls and hours spiking around a price change, with agency hours always below total hours in every week, is believable for a call centre."},
+  {"id": "j-f95a84e8", "judge": "realism", "fail": false, "why": "Per capita rice use of about 20-29 kg a year, with pack costs and prices of €0.60-3.10, is believable."},
+  {"id": "j-a0596f71", "judge": "realism", "fail": false, "why": "Business drone segment sales of €72-389 million, with modest past growth and faster forecast growth, are believable for a stylised market."},
+  {"id": "j-3b0e529e", "judge": "realism", "fail": false, "why": "Half-year revenues of €331-349 million match the stated 'over €650 million' a year, and about €130,000 revenue per technician is believable for a leading pest control firm."},
+  {"id": "j-ebd38238", "judge": "realism", "fail": false, "why": "The waterfall parts add to the €754 million total, and a hotel group earning most of its revenue from rooms, with smaller food, drink and service lines, is believable."}
+]

@@ -1,0 +1,12 @@
+[
+  {"id": "j-64b0190c", "judge": "realism", "fail": false, "why": "An autoclave serviced 2 to 4 times a year at €18 an hour and using about 2,000 kWh a year at 14c per kWh is believable for a dental clinic group."},
+  {"id": "j-4845ad1c", "judge": "realism", "fail": false, "why": "A jewellery workshop resizing 26 rings a month with half a jeweller (about 3 hours a ring) and 128 rings in December with 2.5 jewellers is believable, and the staffing figures agree with each other."},
+  {"id": "j-7162328e", "judge": "realism", "fail": false, "why": "A bakery café chain with about $420-510 million revenue split across bread, coffee, cakes and sandwiches, with coffee margins near 30% and food margins of 4-12%, is believable."},
+  {"id": "j-de73786a", "judge": "realism", "fail": false, "why": "2,500 exit questionnaires at a holiday park in August is believable, and both the stay-type stack (38+34+28) and the activity pie (27+21+18+15+11+8) add to 100%."},
+  {"id": "j-124299cd", "judge": "realism", "fail": true, "why": "Exhibit 2 is drawn as a 100% stacked bar on a 0-100 axis, but each row's segments sum to only 1.2, 0.3, 0.7, 0.8 and 0.9, so the 100% stack does not add to 100%."},
+  {"id": "j-3c8ac3fc", "judge": "realism", "fail": false, "why": "A cinema chain taking $44-47 million a month on about 3.4-3.7 million tickets (about $13 per admission) is believable, profit equals revenue minus costs in both periods, and the average days per month are correct."},
+  {"id": "j-206b723f", "judge": "realism", "fail": false, "why": "A gym chain earning about €39-42 million a month on 7 million visits (about €5.60 per visit) is believable, profit equals revenue minus costs in both periods, and the average days per month are correct."},
+  {"id": "j-88ea03b0", "judge": "realism", "fail": false, "why": "Faculty fee income growing 1-6% a year, split into driver shares that each sum to 100% (with a negative student-number share where enrolment fell), is believable."},
+  {"id": "j-c2ce4a07", "judge": "realism", "fail": false, "why": "A national printer with 38 plants and about $810-845 million a year in revenue, whose margin slips a few percent while industry profits rise 12%, is believable and consistent with the stated decline in profits."},
+  {"id": "j-de51d882", "judge": "realism", "fail": false, "why": "$95 million of sales across 1,080 salons (about $60,000-210,000 a year per salon by class) is high for a single professional hair-care supplier but within a factor of a few of what large salons buy, and the class shares sum to 100%."}
+]

@@ -1,0 +1,1801 @@
+[
+  {
+    "id": "au-109",
+    "skill": "building-formulas",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A climbing gym has M members, each paying a monthly fee of f dollars. Its rent is R dollars a month, and it has no other costs."
+      }
+    ],
+    "prompt": "Which formula gives the gym's annual profit in dollars?",
+    "options": [
+      "M × f × 12 − R",
+      "(M × f − R) × 12",
+      "(M × f − R) ÷ 12",
+      "M × (f − R) × 12"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Monthly profit: fees M × f less rent R",
+      "Annual profit: (M × f − R) × 12"
+    ],
+    "shortcut": "Check units: both fees and rent are monthly, so both must be multiplied by 12. M × f × 12 − R charges only one month of rent.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "M",
+        "f",
+        "R"
+      ],
+      "target": "12 * M * f - 12 * R"
+    }
+  },
+  {
+    "id": "au-110",
+    "skill": "building-formulas",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A café buys coffee beans at b dollars per kilogram. Each cup of coffee uses g grams of beans."
+      }
+    ],
+    "prompt": "Which formula gives the cost of the beans in one cup, in dollars?",
+    "options": [
+      "b × g ÷ 1,000",
+      "b ÷ (g × 1,000)",
+      "1,000 × b ÷ g",
+      "b × g × 1,000"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Price per gram: b ÷ 1,000 dollars",
+      "Cost per cup: g grams × b ÷ 1,000 = b × g ÷ 1,000"
+    ],
+    "shortcut": "Plug in easy numbers: beans at $20 a kg and 10 g a cup should cost 20 cents. Only b × g ÷ 1,000 gives 0.2.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "b",
+        "g"
+      ],
+      "target": "(b / 1000) * g"
+    }
+  },
+  {
+    "id": "au-111",
+    "skill": "building-formulas",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A city has H households. s% of households own a dog, and each dog-owning household spends d dollars a month on dog food."
+      }
+    ],
+    "prompt": "Which formula gives the city's annual market for dog food, in dollars?",
+    "options": [
+      "H ÷ s × 100 × d × 12",
+      "H × s × d × 12",
+      "H × s ÷ 100 × d",
+      "H × s ÷ 100 × d × 12"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Dog-owning households: H × s ÷ 100",
+      "Monthly spend: H × s ÷ 100 × d",
+      "Annual market: H × s ÷ 100 × d × 12"
+    ],
+    "shortcut": "A percentage needs ÷ 100 and a monthly spend needs × 12; only one option has both.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "H",
+        "s",
+        "d"
+      ],
+      "target": "(s / 100) * H * 12 * d"
+    }
+  },
+  {
+    "id": "au-112",
+    "skill": "building-formulas",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A clinic has D doctors, each available for h hours a week. Appointments last m minutes, and the clinic booked A appointments this week."
+      }
+    ],
+    "prompt": "Which formula gives the share of the doctors' available time that was booked, as a percentage?",
+    "options": [
+      "A × m × 60 ÷ (D × h) × 100",
+      "D × h × 60 ÷ (A × m) × 100",
+      "A ÷ (D × h × m) × 100",
+      "A × m ÷ (D × h × 60) × 100"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Booked time: A × m minutes",
+      "Available time: D × h hours = D × h × 60 minutes",
+      "Utilisation: A × m ÷ (D × h × 60) × 100"
+    ],
+    "shortcut": "Put both times in minutes before dividing: hours become minutes by × 60, which belongs with the available hours.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "D",
+        "h",
+        "m",
+        "A"
+      ],
+      "target": "100 * (A * m / 60) / (D * h)"
+    }
+  },
+  {
+    "id": "au-113",
+    "skill": "building-formulas",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A brewery's new beer has fixed costs of F dollars a year. It sells at p dollars a bottle and costs v dollars a bottle to brew and ship."
+      }
+    ],
+    "prompt": "Which formula gives the number of bottles it must sell each year to break even?",
+    "options": [
+      "(F − v) ÷ p",
+      "F ÷ p − v",
+      "F × (p − v)",
+      "F ÷ (p − v)"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Each bottle contributes p − v towards fixed costs",
+      "Bottles to cover F: F ÷ (p − v)"
+    ],
+    "shortcut": "Mind the brackets: F ÷ p − v divides by the price and then subtracts a cost from a number of bottles.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "F",
+        "p",
+        "v"
+      ],
+      "target": "1 / ((p - v) / F)"
+    }
+  },
+  {
+    "id": "au-114",
+    "skill": "building-formulas",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A garden shop has annual revenue of R dollars from a floor area of A square metres. It opens on d days a year."
+      }
+    ],
+    "prompt": "Which formula gives the shop's revenue per square metre per opening day?",
+    "options": [
+      "R ÷ (A × d)",
+      "R ÷ A ÷ 365",
+      "R × d ÷ A",
+      "A × d ÷ R"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Revenue per opening day: R ÷ d",
+      "Per square metre: R ÷ d ÷ A = R ÷ (A × d)"
+    ],
+    "shortcut": "Everything after “per” goes underneath. Dividing by 365 counts days the shop is shut.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "R",
+        "A",
+        "d"
+      ],
+      "target": "(R / d) / A"
+    }
+  },
+  {
+    "id": "au-115",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A printer maker sells ink cartridges at p dollars each. Each cartridge costs c dollars to make and prints n pages. A typical customer prints q pages a month."
+      }
+    ],
+    "prompt": "Which formula gives the maker's monthly profit from one typical customer's cartridges?",
+    "options": [
+      "q ÷ n × (p − c)",
+      "q ÷ n × p − c",
+      "q × n × (p − c)",
+      "n ÷ q × (p − c)"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Cartridges used per month: q ÷ n",
+      "Profit per cartridge: p − c",
+      "Monthly profit: q ÷ n × (p − c)"
+    ],
+    "shortcut": "Test it: 600 pages a month on 300-page cartridges is 2 cartridges, so q goes on top. q ÷ n × p − c subtracts the cost of only one cartridge.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "p",
+        "c",
+        "n",
+        "q"
+      ],
+      "target": "(p - c) * q / n"
+    }
+  },
+  {
+    "id": "au-116",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A software firm's website gets V visitors a month. r% of visitors start a free trial, and k% of trial users go on to pay a monthly fee of f dollars."
+      }
+    ],
+    "prompt": "Which formula gives the monthly revenue from the paying customers won from one month's visitors?",
+    "options": [
+      "V × r × k ÷ (10,000 × f)",
+      "V × (r + k) ÷ 100 × f",
+      "V × r × k × f ÷ 100",
+      "V × r × k × f ÷ 10,000"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Trials: V × r ÷ 100",
+      "Paying customers: V × r ÷ 100 × k ÷ 100 = V × r × k ÷ 10,000",
+      "Monthly revenue: V × r × k × f ÷ 10,000"
+    ],
+    "shortcut": "Two percentages in a chain mean dividing by 100 twice, i.e. by 10,000; shares multiply, they never add.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "V",
+        "r",
+        "k",
+        "f"
+      ],
+      "target": "V * (r / 100) * (k / 100) * f"
+    }
+  },
+  {
+    "id": "au-117",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A packing machine costs C dollars. It saves s hours of labour a week at a wage of w dollars an hour, and costs m dollars a year to maintain. Assume 52 working weeks a year."
+      }
+    ],
+    "prompt": "Which formula gives the machine's payback period in years?",
+    "options": [
+      "C ÷ (52 × s × w) − m",
+      "(C − m) ÷ (52 × s × w)",
+      "C × 52 ÷ (s × w − m)",
+      "C ÷ (52 × s × w − m)"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Annual labour saving: 52 × s × w",
+      "Net annual saving: 52 × s × w − m",
+      "Payback: C ÷ (52 × s × w − m)"
+    ],
+    "shortcut": "Payback is cost over net annual saving; the maintenance belongs inside the bracket with the savings it reduces.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "C",
+        "s",
+        "w",
+        "m"
+      ],
+      "target": "C / (s * w * 52 - m)"
+    }
+  },
+  {
+    "id": "au-118",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A cinema sold a adult tickets at P dollars each and c child tickets at a discount of d% off the adult price."
+      }
+    ],
+    "prompt": "Which formula gives the average price per ticket sold?",
+    "options": [
+      "P × (1 − d ÷ 100) × c ÷ (a + c)",
+      "P × (a + c × d ÷ 100) ÷ (a + c)",
+      "(P + P × (1 − d ÷ 100)) ÷ 2",
+      "P × (a + c × (1 − d ÷ 100)) ÷ (a + c)"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Child price: P × (1 − d ÷ 100)",
+      "Revenue: a × P + c × P × (1 − d ÷ 100) = P × (a + c × (1 − d ÷ 100))",
+      "Average: revenue ÷ (a + c)"
+    ],
+    "shortcut": "An average price is revenue over tickets. Halving the two prices ignores how many of each were sold; c × d ÷ 100 charges children only the discount.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "a",
+        "P",
+        "c",
+        "d"
+      ],
+      "target": "(a * P + c * P * (100 - d) / 100) / (a + c)"
+    }
+  },
+  {
+    "id": "au-119",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A snack brand's sales this year are S dollars, and they grow by g% every year."
+      }
+    ],
+    "prompt": "Which formula gives the brand's sales n years from now?",
+    "options": [
+      "S × (g ÷ 100) ^ n",
+      "S × (1 + g ÷ 100) × n",
+      "S × (1 + n × g ÷ 100)",
+      "S × (1 + g ÷ 100) ^ n"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Each year multiplies sales by (1 + g ÷ 100)",
+      "After n years: S × (1 + g ÷ 100) ^ n"
+    ],
+    "shortcut": "Growth compounds: the factor is raised to the power n. S × (1 + n × g ÷ 100) is simple growth, which understates it.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "S",
+        "g",
+        "n"
+      ],
+      "target": "S * pow(1 + g / 100, n)"
+    }
+  },
+  {
+    "id": "au-120",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A warehouse ships O orders a day. Each order takes t minutes to pick. A picker works a shift of h hours and spends a% of it picking."
+      }
+    ],
+    "prompt": "Which formula gives the number of pickers needed each day?",
+    "options": [
+      "O × t ÷ (60 × h × a ÷ 100)",
+      "O × t × 60 ÷ (h × a ÷ 100)",
+      "O ÷ (t × h × a)",
+      "O × t ÷ (60 × h) × a ÷ 100"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Picking time needed: O × t minutes",
+      "Picking time per picker: h × 60 × a ÷ 100 minutes",
+      "Pickers: O × t ÷ (60 × h × a ÷ 100)"
+    ],
+    "shortcut": "Work needed over work one person supplies, both in minutes. Lower productivity must raise the headcount, so a% belongs underneath.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "O",
+        "t",
+        "h",
+        "a"
+      ],
+      "target": "(O * t / 60) / (h * a / 100)"
+    }
+  },
+  {
+    "id": "au-121",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A magazine has N subscribers at the start of the year. Each month it loses c% of the subscribers it had at the start of that month, and then gains a new subscribers."
+      }
+    ],
+    "prompt": "Which formula gives the number of subscribers after two months?",
+    "options": [
+      "(N × (1 − c ÷ 100) + a) × (1 − c ÷ 100) + a",
+      "N × (1 − c ÷ 100) ^ 2 + 2 × a",
+      "N × (1 − 2 × c ÷ 100) + 2 × a",
+      "(N + a) × (1 − c ÷ 100) ^ 2"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "After month 1: N × (1 − c ÷ 100) + a",
+      "Month 2 loses c% of that whole number, including the first month's new subscribers, then adds a",
+      "After month 2: (N × (1 − c ÷ 100) + a) × (1 − c ÷ 100) + a"
+    ],
+    "shortcut": "The first month's new subscribers are exposed to one month of churn; only one option shrinks them once and the latest additions not at all.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "N",
+        "c",
+        "a"
+      ],
+      "target": "N * pow(1 - c / 100, 2) + a * (1 - c / 100) + a"
+    }
+  },
+  {
+    "id": "au-122",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A manufacturer sells q units at a price of p dollars each. Each unit costs v dollars to make, a sales agent earns a commission of k% of revenue, and fixed costs are F dollars."
+      }
+    ],
+    "prompt": "Which formula gives the manufacturer's profit as a percentage of revenue?",
+    "options": [
+      "(p × q × (1 − k ÷ 100) − v × q − F) ÷ (p × q − v × q) × 100",
+      "(p × (1 − k ÷ 100) − v) × q − F ÷ (p × q) × 100",
+      "((p − v) × q × (1 − k ÷ 100) − F) ÷ (p × q) × 100",
+      "(p × q × (1 − k ÷ 100) − v × q − F) ÷ (p × q) × 100"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Revenue: p × q; commission: p × q × k ÷ 100",
+      "Profit: p × q × (1 − k ÷ 100) − v × q − F",
+      "Margin: profit ÷ (p × q) × 100"
+    ],
+    "shortcut": "Commission is on revenue, not contribution, and a margin divides by revenue. The last option drops the brackets, so only F is divided.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "p",
+        "q",
+        "v",
+        "k",
+        "F"
+      ],
+      "target": "100 - k - 100 * (v * q + F) / (p * q)"
+    }
+  },
+  {
+    "id": "au-123",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Airlines measure revenue per available seat-kilometre: total revenue divided by (seats flown × kilometres flown). On one route an airline flies f flights a day in planes with S seats over a distance of d km. On average L% of seats are filled, and each passenger pays P dollars."
+      }
+    ],
+    "prompt": "Which formula gives the route's revenue per available seat-kilometre?",
+    "options": [
+      "P × S × L ÷ (100 × d × f)",
+      "P × L ÷ (100 × d)",
+      "P ÷ (d × L ÷ 100)",
+      "P × L ÷ 100 × d"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Daily revenue: f × S × L ÷ 100 × P",
+      "Daily seat-kilometres: f × S × d",
+      "Ratio: f and S cancel, leaving P × L ÷ (100 × d)"
+    ],
+    "shortcut": "Write the full fraction and cancel: flights and seats appear on top and bottom, so the answer cannot depend on them.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "f",
+        "S",
+        "d",
+        "L",
+        "P"
+      ],
+      "target": "(S * f * (L / 100) * P) / (S * f * d)"
+    }
+  },
+  {
+    "id": "au-124",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A charity's gala raised T dollars in total from g gold donors and s silver donors. Each gold donor gave x dollars, and each silver donor gave one third as much as a gold donor."
+      }
+    ],
+    "prompt": "Which formula gives x?",
+    "options": [
+      "T ÷ (g + s ÷ 3) ÷ 3",
+      "T ÷ (g + 3 × s)",
+      "3 × T ÷ (g + s)",
+      "3 × T ÷ (3 × g + s)"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Total raised: g × x + s × x ÷ 3 = T",
+      "x × (3 × g + s) ÷ 3 = T",
+      "x = 3 × T ÷ (3 × g + s)"
+    ],
+    "shortcut": "Test with one gold and three silver donors raising $200: x should be $100. Only 3 × T ÷ (3 × g + s) gives 600 ÷ 6 = 100.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "T",
+        "g",
+        "s"
+      ],
+      "target": "T / (g + s / 3)"
+    }
+  },
+  {
+    "id": "au-125",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A snack maker's market has two segments. Segment 1 makes up m% of the market by value, and the maker holds a% of it. In segment 2, which is the rest of the market, the maker holds b%."
+      }
+    ],
+    "prompt": "Which formula gives the maker's share of the whole market, as a percentage?",
+    "options": [
+      "(a × m + b × m) ÷ 100",
+      "a × m ÷ 100 + b",
+      "(a + b) ÷ 2",
+      "(a × m + b × (100 − m)) ÷ 100"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Share from segment 1: a% of m% of the market = a × m ÷ 100",
+      "Share from segment 2: b × (100 − m) ÷ 100",
+      "Total: (a × m + b × (100 − m)) ÷ 100"
+    ],
+    "shortcut": "An overall share is a weighted average of segment shares, weighted by segment size; the weights must add to 100.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "m",
+        "a",
+        "b"
+      ],
+      "target": "a * m / 100 + b * (1 - m / 100)"
+    }
+  },
+  {
+    "id": "au-126",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A fund invests I dollars. Each year the investment first grows by r%, and then a management fee of f% of the new balance is deducted."
+      }
+    ],
+    "prompt": "Which formula gives the value of the investment after 2 years?",
+    "options": [
+      "I × (1 + r ÷ 100) ^ 2 − 2 × f ÷ 100 × I",
+      "I × (1 + r ÷ 100) ^ 2 × (1 − 2 × f ÷ 100)",
+      "I × (1 + (r − f) ÷ 100) ^ 2",
+      "I × ((1 + r ÷ 100) × (1 − f ÷ 100)) ^ 2"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "One year: I × (1 + r ÷ 100) × (1 − f ÷ 100)",
+      "Two years: apply the same factor twice: I × ((1 + r ÷ 100) × (1 − f ÷ 100)) ^ 2"
+    ],
+    "shortcut": "A fee on the grown balance multiplies, it does not subtract from the rate: (1 + r)(1 − f) is not 1 + r − f.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "I",
+        "r",
+        "f"
+      ],
+      "target": "I * pow(1 + r / 100, 2) * pow(1 - f / 100, 2)"
+    }
+  },
+  {
+    "id": "bk-bcg-q15-a",
+    "modelledOn": "bcg-q15",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Duty Recovery Services (DRS) helps importers pay less customs duty in a country where the import duty rate is 4%. DRS took 58,000 phone enquiries in 2012, and the shipments it took on had an average declared value of 260,000."
+      },
+      {
+        "type": "list",
+        "items": [
+          "S% of the importers who phone DRS go on to hand over a shipment",
+          "DRS disputes the tariff code of each shipment with customs, which accepts the claim in A% of cases",
+          "When customs accepts, V% of the declared value is reclassified as duty-free",
+          "F% of importers with an accepted claim then settle the DRS invoice",
+          "DRS and the importer each keep half of the duty saved",
+          "2012 values: S% = 57%, A% = 78%, V% = 15%, F% = 94%"
+        ]
+      }
+    ],
+    "prompt": "What is the best estimation of the cash inflow of DRS in 2012?",
+    "options": [
+      "$2.5 million",
+      "$19 million",
+      "$26 million",
+      "$50 million"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Importers who pay: 58,000 × 57% × 78% × 94% = about 24,240.",
+      "Duty saved per shipment: 260,000 × 15% × 4% = $1,560, of which DRS keeps half, $780.",
+      "24,240 × $780 = about $18.9 million, so $19 million."
+    ],
+    "shortcut": "Round hard: 58k × 0.6 × 0.8 × 0.9 is about 25k importers, and 260k × 15% × 4% ÷ 2 is about $780 each, so a little under $20 million.",
+    "check": {
+      "kind": "value",
+      "answer": "58000 * 57 / 100 * 78 / 100 * 94 / 100 * 260000 * 15 / 100 * 4 / 100 / 2 / 1000000"
+    }
+  },
+  {
+    "id": "bk-bcg-q15-b",
+    "modelledOn": "bcg-q15",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "CreditWise is a tax advisory business in a country that gives companies a research tax credit worth 11% of their qualifying spending. Over 2011 it handled 9,400 enquiries, and the companies it took on spent $850,000 a year on research on average."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Of the companies that enquire, S% become clients",
+          "Each client's claim goes to the tax office, which accepts A% of them",
+          "An accepted claim adds V% of the client's research budget to its qualifying spending",
+          "F% of clients with an accepted claim pay what they owe CreditWise",
+          "Clients hand over half of the extra credit to CreditWise and keep the rest",
+          "2011 values: S% = 68%, A% = 73%, V% = 17%, F% = 95%"
+        ]
+      }
+    ],
+    "prompt": "What is the best estimation of the cash inflow of CreditWise in 2011?",
+    "options": [
+      "$3.5 million",
+      "$5.1 million",
+      "$35 million",
+      "$51 million"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Clients who pay: 9,400 × 68% × 73% × 95% = about 4,430.",
+      "Extra credit per company: $850,000 × 17% × 11% = $15,895, of which CreditWise keeps half, about $7,950.",
+      "4,430 × $7,950 = about $35.2 million, so $35 million."
+    ],
+    "shortcut": "Round hard: 9,400 × 0.7 × 0.7 × 0.95 is about 4,400 companies, and $850k × 17% × 11% ÷ 2 is about $8,000 each, so about $35 million.",
+    "check": {
+      "kind": "value",
+      "answer": "9400 * 68 / 100 * 73 / 100 * 95 / 100 * 850000 * 17 / 100 * 11 / 100 / 2 / 1000000"
+    }
+  },
+  {
+    "id": "bk-bcg-q15-c",
+    "modelledOn": "bcg-q15",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "BrightWatt helps hotels use less electricity, which costs them $0.11 per kWh. In 2013, 4,800 hotels got in touch with BrightWatt. A typical hotel that became a client uses 1,600,000 kWh a year."
+      },
+      {
+        "type": "list",
+        "items": [
+          "S% of the hotels that get in touch become clients",
+          "BrightWatt then proposes a package of changes, and the hotel's management says yes in A% of cases",
+          "Once the changes are made, the hotel's power consumption drops by V%",
+          "F% of those hotels go on to pay BrightWatt's bill",
+          "Every dollar cut from a hotel's power bill goes 50 cents to the hotel and 50 cents to BrightWatt",
+          "2013 values: S% = 61%, A% = 74%, V% = 17%, F% = 95%"
+        ]
+      }
+    ],
+    "prompt": "What is the best estimation of BrightWatt's cash inflow in 2013?",
+    "options": [
+      "$4.4 million",
+      "$31 million",
+      "$44 million",
+      "$88 million"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Hotels that pay: 4,800 × 61% × 74% × 95% = about 2,060.",
+      "Cut in the power bill per hotel: 1,600,000 kWh × 17% × $0.11 = $29,920, of which BrightWatt gets half, $14,960.",
+      "2,060 × $14,960 = about $30.8 million, so $31 million."
+    ],
+    "shortcut": "Round hard: 4,800 × 0.6 × 0.75 × 0.95 is about 2,050 hotels, and 1.6m × 17% × $0.11 ÷ 2 is about $15,000 each, so about $31 million.",
+    "check": {
+      "kind": "value",
+      "answer": "4800 * 61 / 100 * 74 / 100 * 95 / 100 * 1600000 * 17 / 100 * 0.11 / 2 / 1000000"
+    }
+  },
+  {
+    "id": "bk-bcg-q15-d",
+    "modelledOn": "bcg-q15",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "AquaYield advises farmers on irrigation in a region where farms pay $0.14 per cubic metre of water. In 2012, 3,100 farmers phoned AquaYield, and the farms it took on use 900,000 cubic metres of water a year on average."
+      },
+      {
+        "type": "list",
+        "items": [
+          "S% of farmers who phone become customers",
+          "AquaYield draws up an irrigation plan, which the water authority must approve; it approves A% of them",
+          "An approved plan cuts the farm's water consumption by V%",
+          "Of the farms using less water, F% pay AquaYield what it charges",
+          "Half of the drop in each farm's water bill goes to AquaYield",
+          "2012 values: S% = 58%, A% = 80%, V% = 29%, F% = 87%"
+        ]
+      }
+    ],
+    "prompt": "What is the best estimation of the cash inflow of AquaYield in 2012?",
+    "options": [
+      "$2.3 million",
+      "$3.3 million",
+      "$23 million",
+      "$33 million"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Farms that pay: 3,100 × 58% × 80% × 87% = about 1,250.",
+      "Drop in the water bill per farm: 900,000 cubic metres × 29% × $0.14 = $36,540, of which AquaYield gets half, $18,270.",
+      "1,250 × $18,270 = about $22.9 million, so $23 million."
+    ],
+    "shortcut": "Round hard: 3,100 × 0.6 × 0.8 × 0.9 is about 1,300 farms, and 900k × 30% × $0.14 ÷ 2 is about $19,000 each, so a little under $25 million.",
+    "check": {
+      "kind": "value",
+      "answer": "3100 * 58 / 100 * 80 / 100 * 87 / 100 * 900000 * 29 / 100 * 0.14 / 2 / 1000000"
+    }
+  },
+  {
+    "id": "bk-pracA-q25-a",
+    "modelledOn": "pracA-q25",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Unibank has grouped the holders of its checking accounts by the package they pay for."
+      },
+      {
+        "type": "table",
+        "title": "Exhibit 6 (extract): Checking account holders by package",
+        "headers": [
+          "Package",
+          "Account holders"
+        ],
+        "rows": [
+          [
+            "Basic",
+            "142,400"
+          ],
+          [
+            "Plus",
+            "31,900"
+          ],
+          [
+            "Premium",
+            "8,700"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "A Premium account holder currently pays twice as much in yearly package fees as a Plus holder. Basic holders pay no fees at present. From next year the bank will charge every account holder, Basic holders included, a card fee of $24 a year."
+      }
+    ],
+    "prompt": "With the card fee in place, the bank's estimate of total yearly fee income from these account holders is $7.35 million. How much does a Premium account holder pay in package fees each year at present?",
+    "options": [
+      "$60",
+      "$120",
+      "$144",
+      "$168"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "The $24 card fee on all 183,000 account holders is $4.392m, leaving $7.35m − $4.392m = $2.958m of package fees today",
+      "With x the yearly fee of a Plus holder: 31,900x + 8,700 × 2x = 49,300x = $2.958m, so x = $60",
+      "A Premium holder pays 2x = $120 a year"
+    ],
+    "shortcut": "Take out the flat $24 on everyone first; what is left of the $7.35m is today's package fees.",
+    "check": {
+      "kind": "value",
+      "answer": "2 * (7.35 * 1000000 - 24 * (142400 + 31900 + 8700)) / (31900 + 2 * 8700)"
+    }
+  },
+  {
+    "id": "bk-pracA-q25-b",
+    "modelledOn": "pracA-q25",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Telvia, a mobile network, has split its contract customers by how often they use their phones abroad."
+      },
+      {
+        "type": "table",
+        "title": "Exhibit 6 (extract): Contract customers by use abroad",
+        "headers": [
+          "Use abroad",
+          "Customers"
+        ],
+        "rows": [
+          [
+            "Never roam",
+            "512,600"
+          ],
+          [
+            "Roam occasionally",
+            "87,300"
+          ],
+          [
+            "Roam often",
+            "21,600"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "A customer who roams often currently spends three times as much a year on roaming charges as one who roams occasionally, and customers who never roam spend nothing on it. Telvia plans to add an $18 yearly roaming pass to every contract, whether or not the customer travels."
+      }
+    ],
+    "prompt": "Once the roaming pass is added, Telvia's estimate of total yearly roaming revenue from contract customers is $15.75 million. What does a customer who roams often spend on roaming each year at present?",
+    "options": [
+      "$30",
+      "$42",
+      "$90",
+      "$108"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "The $18 pass on all 621,500 contract customers is $11.187m, leaving $15.75m − $11.187m = $4.563m of roaming charges today",
+      "With x the yearly roaming spend of a customer who roams occasionally: 87,300x + 21,600 × 3x = 152,100x = $4.563m, so x = $30",
+      "A customer who roams often spends 3x = $90 a year"
+    ],
+    "shortcut": "Strip out the $18 pass on every contract first; what is left of the $15.75m is today's roaming spend.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * (15.75 * 1000000 - 18 * (512600 + 87300 + 21600)) / (87300 + 3 * 21600)"
+    }
+  },
+  {
+    "id": "bk-pracA-q25-c",
+    "modelledOn": "pracA-q25",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An insurance broker has grouped its motor policyholders by the breakdown cover they have added to their policy."
+      },
+      {
+        "type": "table",
+        "title": "Exhibit 6 (extract): Motor policyholders by breakdown cover",
+        "headers": [
+          "Breakdown cover",
+          "Policyholders"
+        ],
+        "rows": [
+          [
+            "None",
+            "61,800"
+          ],
+          [
+            "Basic",
+            "22,800"
+          ],
+          [
+            "Full",
+            "9,400"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "A policyholder with full cover pays twice as much a year for it as one with basic cover. Policyholders without breakdown cover pay nothing for it today. New rules will add legal cover at $29 a year to every motor policy, with or without breakdown cover."
+      }
+    ],
+    "prompt": "After the change, the broker's estimate of total yearly income from breakdown and legal cover on these policies is $4.39 million. What does a policyholder with full cover pay for breakdown cover each year at present?",
+    "options": [
+      "$40",
+      "$80",
+      "$109",
+      "$138"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "The $29 legal cover on all 94,000 policies is $2.726m, leaving $4.39m − $2.726m = $1.664m of breakdown premiums today",
+      "With x the yearly breakdown premium of a policyholder with basic cover: 22,800x + 9,400 × 2x = 41,600x = $1.664m, so x = $40",
+      "A policyholder with full cover pays 2x = $80 a year"
+    ],
+    "shortcut": "Take out the $29 on every policy first; what is left of the $4.39m is today's breakdown premiums.",
+    "check": {
+      "kind": "value",
+      "answer": "2 * (4.39 * 1000000 - 29 * (61800 + 22800 + 9400)) / (22800 + 2 * 9400)"
+    }
+  },
+  {
+    "id": "bk-pracA-q25-d",
+    "modelledOn": "pracA-q25",
+    "skill": "building-formulas",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Corvane, a maker of stock-control software for wholesalers, has grouped its customer accounts by support plan."
+      },
+      {
+        "type": "table",
+        "title": "Exhibit 6 (extract): Customer accounts by support plan",
+        "headers": [
+          "Support plan",
+          "Accounts"
+        ],
+        "rows": [
+          [
+            "No plan",
+            "3,940"
+          ],
+          [
+            "Standard",
+            "1,300"
+          ],
+          [
+            "Priority",
+            "410"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "An account on the Priority plan pays three times as much a year for support as one on the Standard plan; accounts with no plan pay nothing for support. From next year every account, with or without a plan, will also pay a hosting fee of $240 a year."
+      }
+    ],
+    "prompt": "With the hosting fee added, Corvane's estimate of total yearly income from support and hosting is $3.38 million. What does an account on the Priority plan pay for support each year at present?",
+    "options": [
+      "$800",
+      "$1,184",
+      "$2,400",
+      "$2,640"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "The $240 hosting fee on all 5,650 accounts is $1.356m, leaving $3.38m − $1.356m = $2.024m of support fees today",
+      "With x the yearly support fee of a Standard account: 1,300x + 410 × 3x = 2,530x = $2.024m, so x = $800",
+      "A Priority account pays 3x = $2,400 a year"
+    ],
+    "shortcut": "Strip out the $240 hosting fee on every account first; what is left of the $3.38m is today's support fees.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * (3.38 * 1000000 - 240 * (3940 + 1300 + 410)) / (1300 + 3 * 410)"
+    }
+  },
+  {
+    "id": "bk-pracB-q26-a",
+    "modelledOn": "pracB-q26",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "VanCo runs a fleet of delivery vans for online shops. After drivers' wages, diesel is its largest cost, and it wants to compare models of van before it renews part of the fleet next year. The team is building a simple cost model for each van."
+      },
+      {
+        "type": "list",
+        "items": [
+          "d = distance one van drives in a year, in kilometres",
+          "k = fuel economy of the van, in kilometres per litre of diesel",
+          "f = price of diesel, in $ per litre"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Charging the diesel price on the litres a van burns to cover its yearly distance will show what that van costs in fuel over the year."
+      }
+    ],
+    "prompt": "Which of the following formulae gives the amount in $ that one van spends on diesel over a full year of driving?",
+    "options": [
+      "d/(k×f)",
+      "(d×f)/k",
+      "d×k×f",
+      "(d×k)/f"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "First turn the distance into litres: d ÷ k (k is kilometres per litre).",
+      "Then charge the price per litre: (d ÷ k) × f = (d × f) ÷ k."
+    ],
+    "shortcut": "Check the units: kilometres ÷ (kilometres per litre) gives litres, and litres × $ per litre gives $.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "d",
+        "k",
+        "f"
+      ],
+      "target": "d / k * f"
+    }
+  },
+  {
+    "id": "bk-pracB-q26-b",
+    "modelledOn": "pracB-q26",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "PrintWise leases printers and copiers to law firms and accounting practices. Toner is billed separately from the lease, and several clients have asked what their printing really costs them. The team is comparing offices of different sizes."
+      },
+      {
+        "type": "list",
+        "items": [
+          "n = number of pages an office prints in a year",
+          "y = page yield of a toner cartridge, in pages per cartridge",
+          "t = price of a toner cartridge, in $ per cartridge"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Pricing the cartridges an office goes through for all of its yearly printing at the cartridge price tells the client what it spends on toner in a year."
+      }
+    ],
+    "prompt": "Which of the following formulae calculates the yearly toner spending, in $, of an office for all the pages it prints?",
+    "options": [
+      "(n×y)/t",
+      "n×y×t",
+      "n/(y×t)",
+      "(n×t)/y"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Cartridges used: n ÷ y (y is pages per cartridge).",
+      "Spending: (n ÷ y) × t = (n × t) ÷ y."
+    ],
+    "shortcut": "Units: pages ÷ (pages per cartridge) gives cartridges, then × $ per cartridge gives $.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "n",
+        "y",
+        "t"
+      ],
+      "target": "n / y * t"
+    }
+  },
+  {
+    "id": "bk-pracB-q26-c",
+    "modelledOn": "pracB-q26",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Grainco buys wheat from farms and sells it to flour mills abroad, which quote their prices per bushel. Farms weigh their crop in kilograms when it leaves the field. The team wants to estimate what each farm's harvest is worth before buying it."
+      },
+      {
+        "type": "list",
+        "items": [
+          "h = weight of a farm's harvest, in kilograms",
+          "b = weight of wheat in one bushel, in kilograms per bushel",
+          "q = export price of wheat, in $ per bushel"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Once the harvest has been expressed as a number of bushels, the export price per bushel gives what that wheat would fetch from the mills."
+      }
+    ],
+    "prompt": "Which of the following formulae calculates the export value, in $, of the whole harvest of a farm?",
+    "options": [
+      "(h×q)/b",
+      "(h×b)/q",
+      "h/(b×q)",
+      "h×b×q"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Bushels in the harvest: h ÷ b (b is kilograms per bushel).",
+      "Export value: (h ÷ b) × q = (h × q) ÷ b."
+    ],
+    "shortcut": "Units: kilograms ÷ (kilograms per bushel) gives bushels, and bushels × $ per bushel gives $.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "h",
+        "b",
+        "q"
+      ],
+      "target": "h / b * q"
+    }
+  },
+  {
+    "id": "bk-pracB-q26-d",
+    "modelledOn": "pracB-q26",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "CallPoint runs customer helplines for energy and water companies and bills its clients for agents' time. It is pricing a contract to take over the helpline of a new client. The team is estimating the staff cost from the calls the client expects."
+      },
+      {
+        "type": "list",
+        "items": [
+          "v = number of calls the client expects in a year",
+          "r = rate at which one agent handles calls, in calls per hour",
+          "w = agent wage, in $ per hour"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Paying the hourly wage for the agent hours it takes to answer every call in the year will give the wage bill of the contract."
+      }
+    ],
+    "prompt": "Which of the following formulae calculates the yearly wage cost, in $, of the agents needed to answer all of the client's calls?",
+    "options": [
+      "v×r×w",
+      "v/(r×w)",
+      "(v×w)/r",
+      "(v×r)/w"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Agent hours needed: v ÷ r (r is calls per hour).",
+      "Wage cost: (v ÷ r) × w = (v × w) ÷ r."
+    ],
+    "shortcut": "Units: calls ÷ (calls per hour) gives hours, and hours × $ per hour gives $.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "v",
+        "r",
+        "w"
+      ],
+      "target": "v / r * w"
+    }
+  },
+  {
+    "id": "bk-pracC-q10-a",
+    "modelledOn": "pracC-q10",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Packrite picks and packs orders for online shops from its warehouses. The CEO has seen that margins drop sharply during the peak season before the holidays, and the team is reviewing warehouse staffing."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Warehouse staff cost and output (average per week)",
+        "headers": [
+          "",
+          "Normal season",
+          "Peak season"
+        ],
+        "rows": [
+          [
+            "Hourly rate of pay (r)",
+            "$13.40",
+            "$14.90"
+          ],
+          [
+            "Orders packed (k)",
+            "1.37 million",
+            "1.86 million"
+          ],
+          [
+            "Paid hours spent working (w)",
+            "61,800",
+            "97,300"
+          ],
+          [
+            "Paid hours not spent working, e.g. holiday, breaks (n)",
+            "9,600",
+            "6,900"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Each warehouse employee is paid for 38 hours a week on average. Which of the following formulae gives the average number of orders packed per employee per week, for each of the two seasons?",
+    "options": [
+      "k÷((w+n)×38)",
+      "(k×38)÷(w+n)",
+      "(w+n)×38÷k",
+      "k÷((w+n)×38×r)"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Number of employees = total paid hours ÷ 38 = (w + n) ÷ 38.",
+      "Orders per employee = k ÷ ((w + n) ÷ 38) = (k × 38) ÷ (w + n).",
+      "Check with the normal season: 1.37m × 38 ÷ 71,400 ≈ 730 orders per employee."
+    ],
+    "shortcut": "The pay rate r has nothing to do with orders per employee, and orders k must be on top of the fraction.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "r",
+        "k",
+        "w",
+        "n"
+      ],
+      "target": "k * 38 / (w + n)"
+    }
+  },
+  {
+    "id": "bk-pracC-q10-b",
+    "modelledOn": "pracC-q10",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Callwise runs customer helplines for energy and phone companies. Its CEO has found that cost per call is much higher in January, when customers ring about their annual bills, and the team is looking at agent staffing."
+      },
+      {
+        "type": "table",
+        "title": "Table 3: Call centre staffing and calls (average per month)",
+        "headers": [
+          "",
+          "February – December",
+          "January"
+        ],
+        "rows": [
+          [
+            "Hourly rate of pay (p)",
+            "$15.30",
+            "$16.80"
+          ],
+          [
+            "Calls answered (c)",
+            "2.46 million",
+            "2.71 million"
+          ],
+          [
+            "Paid hours spent on calls (t)",
+            "188,000",
+            "251,000"
+          ],
+          [
+            "Paid hours not on calls, e.g. training, sick leave (s)",
+            "41,000",
+            "22,000"
+          ]
+        ]
+      }
+    ],
+    "prompt": "An agent is paid for 152 hours a month on average. Which of the following formulae correctly gives the average number of calls answered per agent, per month, in each period?",
+    "options": [
+      "(c×152)÷(t+s)",
+      "c÷((t+s)×152×p)",
+      "c÷((t+s)×152)",
+      "(t+s)×152÷c"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Number of agents = total paid hours ÷ 152 = (t + s) ÷ 152.",
+      "Calls per agent = c ÷ ((t + s) ÷ 152) = (c × 152) ÷ (t + s).",
+      "Check with February to December: 2.46m × 152 ÷ 229,000 ≈ 1,630 calls per agent."
+    ],
+    "shortcut": "Calls c go on top and paid hours divided by 152 give the agents; the hourly rate p plays no part.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "p",
+        "c",
+        "t",
+        "s"
+      ],
+      "target": "c * 152 / (t + s)"
+    }
+  },
+  {
+    "id": "bk-pracC-q10-c",
+    "modelledOn": "pracC-q10",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Linenco washes sheets and towels for hotels and hospitals in the country of Varnia. The CEO notes that profits fall in the summer months, when the hotels are full, and asks the team to study staffing at the laundries."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Laundry staff cost and output (average per month)",
+        "headers": [
+          "",
+          "October – March",
+          "April – September"
+        ],
+        "rows": [
+          [
+            "Hourly rate of pay (q)",
+            "$11.90",
+            "$12.70"
+          ],
+          [
+            "Linen washed, kg (L)",
+            "2.37 million",
+            "3.08 million"
+          ],
+          [
+            "Paid hours spent working (h)",
+            "27,400",
+            "41,200"
+          ],
+          [
+            "Paid hours not spent working, e.g. holidays, training (v)",
+            "4,300",
+            "6,800"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If an employee is paid for 165 hours in an average month, which formula below calculates the average kilograms of linen washed per employee, per month, for both periods?",
+    "options": [
+      "(h+v)×165÷L",
+      "L÷((h+v)×165×q)",
+      "(L×165)÷(h+v)",
+      "L÷((h+v)×165)"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Number of employees = total paid hours ÷ 165 = (h + v) ÷ 165.",
+      "Linen per employee = L ÷ ((h + v) ÷ 165) = (L × 165) ÷ (h + v).",
+      "Check with October to March: 2.37m × 165 ÷ 31,700 ≈ 12,300 kg per employee."
+    ],
+    "shortcut": "The hourly rate q is not needed for kilograms per employee, and L must sit on top.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "q",
+        "L",
+        "h",
+        "v"
+      ],
+      "target": "L * 165 / (h + v)"
+    }
+  },
+  {
+    "id": "bk-pracC-q10-d",
+    "modelledOn": "pracC-q10",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Basketo runs a chain of supermarkets. Its CEO has noticed that store profits are weaker in the holiday weeks than in the rest of the year, and the team looks at staffing at the checkouts."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Checkout staff cost and items scanned (average per week)",
+        "headers": [
+          "",
+          "Ordinary weeks",
+          "Holiday weeks"
+        ],
+        "rows": [
+          [
+            "Hourly rate of pay (m)",
+            "$12.60",
+            "$13.80"
+          ],
+          [
+            "Items scanned (s)",
+            "41.6 million",
+            "52.3 million"
+          ],
+          [
+            "Paid hours at the checkout (a)",
+            "36,900",
+            "49,800"
+          ],
+          [
+            "Paid hours away from the checkout, e.g. breaks, training (b)",
+            "5,200",
+            "3,100"
+          ]
+        ]
+      }
+    ],
+    "prompt": "A cashier is paid for 37.5 hours a week on average. Which of the following formulae accurately gives the average number of items scanned per cashier, per week, for the two kinds of week?",
+    "options": [
+      "s÷((a+b)×37.5×m)",
+      "(a+b)×37.5÷s",
+      "s÷((a+b)×37.5)",
+      "(s×37.5)÷(a+b)"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Number of cashiers = total paid hours ÷ 37.5 = (a + b) ÷ 37.5.",
+      "Items per cashier = s ÷ ((a + b) ÷ 37.5) = (s × 37.5) ÷ (a + b).",
+      "Check with ordinary weeks: 41.6m × 37.5 ÷ 42,100 ≈ 37,100 items per cashier."
+    ],
+    "shortcut": "Items s go on top; paid hours ÷ 37.5 give the cashiers, and the pay rate m is irrelevant.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "m",
+        "s",
+        "a",
+        "b"
+      ],
+      "target": "s * 37.5 / (a + b)"
+    }
+  },
+  {
+    "id": "bk-pst1-q25-a",
+    "modelledOn": "pst1-q25",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Gelatiamo is a chain of ice cream parlours with a strong base in its home market. To keep sales growing it is now studying a number of large cities abroad where it could open its first parlours."
+      },
+      {
+        "type": "paragraph",
+        "text": "For each city the team has collected: scoops eaten per person per year (s), weight of a scoop in grams (w), cost to the chain of one scoop in $ (c) and price charged for one scoop in $ (p)."
+      }
+    ],
+    "prompt": "Which of the following formulae gives the profit Gelatiamo could expect to earn per kilogram of ice cream sold, in each of the cities being studied?",
+    "options": [
+      "(p − c) × 1,000 ÷ w",
+      "(p − c) × w ÷ (s × 1,000)",
+      "(p × s) ÷ (c × w × 1,000)",
+      "(p × w × 1,000) ÷ (s × c)"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Profit per scoop = p − c.",
+      "A scoop weighs w grams, so profit per gram = (p − c) ÷ w.",
+      "A kilogram is 1,000 grams: profit per kilogram = (p − c) × 1,000 ÷ w.",
+      "Scoops per person (s) is not needed."
+    ],
+    "shortcut": "Try numbers: p = 4, c = 1, w = 100 gives $3 a scoop, 10 scoops a kilogram, $30 per kilogram; only the first formula gives 30.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "s",
+        "w",
+        "c",
+        "p"
+      ],
+      "target": "(p - c) * 1000 / w"
+    }
+  },
+  {
+    "id": "bk-pst1-q25-b",
+    "modelledOn": "pst1-q25",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "PressGo runs juice bars in shopping centres and railway stations across its home country, where growth has slowed. It is looking at entering several neighbouring countries to keep revenue rising."
+      },
+      {
+        "type": "paragraph",
+        "text": "For every country the team has gathered: bottles bought per customer per week (b), size of a bottle in millilitres (m), cost of making a bottle in $ (k) and selling price of a bottle in $ (r)."
+      }
+    ],
+    "prompt": "Which of the following formulae calculates the profit PressGo could make on each litre of juice it sells, in the countries it is considering?",
+    "options": [
+      "(r × b) ÷ (k × m × 1,000)",
+      "(r − k) × 1,000 ÷ m",
+      "(r − k) × m ÷ (b × 1,000)",
+      "(r × m × 1,000) ÷ (b × k)"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Profit per bottle = r − k.",
+      "A bottle holds m millilitres, so profit per millilitre = (r − k) ÷ m.",
+      "A litre is 1,000 millilitres: profit per litre = (r − k) × 1,000 ÷ m.",
+      "Bottles per customer (b) is not needed."
+    ],
+    "shortcut": "Plug in r = 5, k = 2, m = 250: $3 a bottle and 4 bottles a litre give $12 a litre, which only the second formula returns.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "b",
+        "m",
+        "k",
+        "r"
+      ],
+      "target": "(r - k) * 1000 / m"
+    }
+  },
+  {
+    "id": "bk-pst1-q25-c",
+    "modelledOn": "pst1-q25",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Crustworks is a large bakery group that supplies bread to supermarkets in mature markets. With sales there flat, it is weighing up building bakeries in a few fast-growing developing countries."
+      },
+      {
+        "type": "paragraph",
+        "text": "For each country the team knows: loaves bought per household per week (h), weight of a loaf in kilograms (g), cost of producing a loaf in $ (co) and wholesale price of a loaf in $ (pr)."
+      }
+    ],
+    "prompt": "Which of the following formulae would give the profit Crustworks could earn per tonne of bread sold, in the different countries it is looking at?",
+    "options": [
+      "(pr × g × 1,000) ÷ (h × co)",
+      "(pr − co) × g ÷ (h × 1,000)",
+      "(pr − co) × 1,000 ÷ g",
+      "(pr × h) ÷ (co × g × 1,000)"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Profit per loaf = pr − co.",
+      "A loaf weighs g kilograms, so profit per kilogram = (pr − co) ÷ g.",
+      "A tonne is 1,000 kilograms: profit per tonne = (pr − co) × 1,000 ÷ g.",
+      "Loaves per household (h) is not needed."
+    ],
+    "shortcut": "Test pr = 2, co = 1.5, g = 0.5: $0.50 a loaf, 2,000 loaves a tonne, $1,000 per tonne; only the third formula gives 1,000.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "h",
+        "g",
+        "co",
+        "pr"
+      ],
+      "target": "(pr - co) * 1000 / g"
+    }
+  },
+  {
+    "id": "bk-pst1-q25-d",
+    "modelledOn": "pst1-q25",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Hueline makes decorative paint and sells it through DIY stores in the markets where it is already well known. It now hopes to grow by launching its paint in several emerging economies."
+      },
+      {
+        "type": "paragraph",
+        "text": "In each market the team has measured: tins bought per household per year (t), volume of a tin in litres (v), cost of making a tin in $ (u) and the price of a tin in $ (q)."
+      }
+    ],
+    "prompt": "Which of the following formulae shows the potential profit Hueline could make per thousand litres of paint sold, in the markets it is studying?",
+    "options": [
+      "(q × t) ÷ (u × v × 1,000)",
+      "(q × v × 1,000) ÷ (t × u)",
+      "(q − u) × v ÷ (t × 1,000)",
+      "(q − u) × 1,000 ÷ v"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Profit per tin = q − u.",
+      "A tin holds v litres, so profit per litre = (q − u) ÷ v.",
+      "Per thousand litres: (q − u) × 1,000 ÷ v.",
+      "Tins per household (t) is not needed."
+    ],
+    "shortcut": "Use q = 20, u = 12, v = 2.5: $8 a tin, $3.20 a litre, $3,200 per thousand litres, which only the last formula gives.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "t",
+        "v",
+        "u",
+        "q"
+      ],
+      "target": "(q - u) * 1000 / v"
+    }
+  },
+  {
+    "id": "bk-sample-q09-a",
+    "modelledOn": "sample-q09",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Salespeople at AutoDeal, a group of used-car dealerships, are paid in three parts."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Fixed pay: an annual salary (F), the same however many cars they sell",
+          "Sales commission: each salesperson sells a number of cars (H) a year at an average price (P), and receives 1.5% of the value of those sales",
+          "Finance bonus: each salesperson arranges a number of car loans (L) a year through the dealership's lender, each earning the dealership an average commission of (R); the salesperson receives 10% of that commission"
+        ]
+      }
+    ],
+    "prompt": "Each salesperson puts in 9 hours a day on 5 days a week, for 46 weeks of the year. Which formula gives the salesperson's pay per hour worked?",
+    "options": [
+      "(F + (H × P) × (1 − 1.5%) + (L × R) × (1 − 10%)) ÷ (9 × 5 × 46)",
+      "(F + (H × P) × 1.5% + (L × R) × 10%) ÷ (9 × 5 × 46)",
+      "(F + (H + P) × 10% + (L + R) × 1.5%) ÷ (9 × 5 × 46)",
+      "(F + (H × P) ÷ 1.5% + (L × R) ÷ 10%) × (9 × 5 × 46)"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Annual pay = salary F + 1.5% of the value of cars sold (H × P) + 10% of the loan commission earned (L × R)",
+      "Hours worked a year = 9 × 5 × 46",
+      "Pay per hour = (F + (H × P) × 1.5% + (L × R) × 10%) ÷ (9 × 5 × 46)"
+    ],
+    "shortcut": "Pay per hour divides annual pay by hours, which rules out the formula that multiplies; each bonus is a rate times (count × average), which rules out the (1 − rate) version and the one that adds count and average and swaps the rates.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "F",
+        "H",
+        "P",
+        "L",
+        "R"
+      ],
+      "target": "(F + H * P * 1.5 / 100 + L * R * 10 / 100) / (9 * 5 * 46)"
+    }
+  },
+  {
+    "id": "bk-sample-q09-b",
+    "modelledOn": "sample-q09",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "BrewCo rewards its sales managers, who sell beer to bars and restaurants, as set out below."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Base pay: a yearly salary (S), paid whatever the results",
+          "Account bonus: each manager looks after a number of established accounts (A), each ordering beer worth (V) a year on average; the manager earns 3% of that value",
+          "New-account bonus: each manager opens a number of new accounts (N) a year, which order beer worth (W) each in their first twelve months on average; the manager earns 15% of those first orders"
+        ]
+      }
+    ],
+    "prompt": "A sales manager works 45 weeks a year, 5 days a week, for 7.5 hours each day. Which of the following formulae gives the manager's hourly earnings?",
+    "options": [
+      "(S + (A × V) ÷ 3% + (N × W) ÷ 15%) × (7.5 × 5 × 45)",
+      "(S + (A + V) × 15% + (N + W) × 3%) ÷ (7.5 × 5 × 45)",
+      "(S + (A × V) × 3% + (N × W) × 15%) ÷ (7.5 × 5 × 45)",
+      "(S + (A × V) × (1 − 3%) + (N × W) × (1 − 15%)) ÷ (7.5 × 5 × 45)"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Yearly earnings = salary S + 3% of established orders (A × V) + 15% of first-year new orders (N × W)",
+      "Hours worked a year = 7.5 × 5 × 45",
+      "Hourly earnings = (S + (A × V) × 3% + (N × W) × 15%) ÷ (7.5 × 5 × 45)"
+    ],
+    "shortcut": "Hourly means yearly earnings divided by yearly hours, so drop the formula that multiplies by hours; then each bonus must be accounts × order value × its own rate, which leaves one formula.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "S",
+        "A",
+        "V",
+        "N",
+        "W"
+      ],
+      "target": "(S + A * V * 3 / 100 + N * W * 15 / 100) / (7.5 * 5 * 45)"
+    }
+  },
+  {
+    "id": "bk-sample-q09-c",
+    "modelledOn": "sample-q09",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Account executives at Ledgerly, which resells accounting packages to small firms, earn the following."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Retainer: a fixed annual amount (K), unrelated to sales",
+          "Renewal commission: each executive manages a book of existing subscribers (E), each paying an average of (P) a year, and is paid 4% of that renewal revenue",
+          "New-business commission: each executive wins a number of new subscribers (G) every year, each paying an average of (Q) in their first year, and is paid 25% of that first-year revenue"
+        ]
+      }
+    ],
+    "prompt": "Which formula calculates an executive's earnings per hour, assuming the executive puts in 48 working weeks a year of 5 days, with 8.5 hours each day?",
+    "options": [
+      "(K + (E × P) × (1 − 4%) + (G × Q) × (1 − 25%)) ÷ (8.5 × 5 × 48)",
+      "(K + (E × P) ÷ 4% + (G × Q) ÷ 25%) × (8.5 × 5 × 48)",
+      "(K + (E + P) × 25% + (G + Q) × 4%) ÷ (8.5 × 5 × 48)",
+      "(K + (E × P) × 4% + (G × Q) × 25%) ÷ (8.5 × 5 × 48)"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Annual earnings = retainer K + 4% of renewal revenue (E × P) + 25% of new first-year revenue (G × Q)",
+      "Hours worked a year = 8.5 × 5 × 48",
+      "Earnings per hour = (K + (E × P) × 4% + (G × Q) × 25%) ÷ (8.5 × 5 × 48)"
+    ],
+    "shortcut": "Per hour means dividing by hours, which removes the formula that multiplies; revenue is subscribers × average payment, not their sum, and each commission keeps its own rate, which leaves the last formula.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "K",
+        "E",
+        "P",
+        "G",
+        "Q"
+      ],
+      "target": "(K + E * P * 4 / 100 + G * Q * 25 / 100) / (8.5 * 5 * 48)"
+    }
+  },
+  {
+    "id": "bk-sample-q09-d",
+    "modelledOn": "sample-q09",
+    "skill": "building-formulas",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Personal trainers at FitLife Gyms receive three kinds of pay."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Retainer: a fixed payment (T) each year, whatever their bookings",
+          "Coaching share: each trainer coaches a number of regular clients (C), each spending an average of (M) a year on sessions, and keeps 35% of that spending",
+          "Referral bonus: each trainer brings in a number of new gym members (J) a year, each paying an average membership fee of (Y) in their first year; the trainer receives 5% of those fees"
+        ]
+      }
+    ],
+    "prompt": "A trainer works 6 hours a day, 6 days a week, 49 weeks a year. Which of the following formulae gives the trainer's average pay for each hour worked?",
+    "options": [
+      "(T + (C × M) × 35% + (J × Y) × 5%) ÷ (6 × 6 × 49)",
+      "(T + (C × M) × (1 − 35%) + (J × Y) × (1 − 5%)) ÷ (6 × 6 × 49)",
+      "(T + (C × M) ÷ 35% + (J × Y) ÷ 5%) × (6 × 6 × 49)",
+      "(T + (C + M) × 5% + (J + Y) × 35%) ÷ (6 × 6 × 49)"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Annual pay = retainer T + 35% of client spending (C × M) + 5% of first-year fees from new members (J × Y)",
+      "Hours worked a year = 6 × 6 × 49",
+      "Pay per hour = (T + (C × M) × 35% + (J × Y) × 5%) ÷ (6 × 6 × 49)"
+    ],
+    "shortcut": "Divide a year's pay by a year's hours, so the formula that multiplies by hours goes; each bonus is clients × spend × its rate, which removes the (1 − rate) version and the one that adds and swaps the rates.",
+    "check": {
+      "kind": "formula",
+      "symbols": [
+        "T",
+        "C",
+        "M",
+        "J",
+        "Y"
+      ],
+      "target": "(T + C * M * 35 / 100 + J * Y * 5 / 100) / (6 * 6 * 49)"
+    }
+  }
+]

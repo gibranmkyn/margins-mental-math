@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-858889e6",
+    "judge": "distractors",
+    "fail": false,
+    "why": "€1,846 multiplies the 7.2-point margin gap by February revenue and €1,483 applies that gap to December - January costs (wrong base), while €2,031 is a numeric filler continuing the steady 10% ratio spacing as the source's does; the grid is tight, though the same gap times February costs (€1,678) happens to land on the answer."
+  },
+  {
+    "id": "j-06da8caa",
+    "judge": "distractors",
+    "fail": false,
+    "why": "£2.3m takes the cumulative 27% and leaves out the fixed cost (0.27 × £8.56m), £3.2m reads Group C's 22% share, and £2.6m is a numeric filler continuing the tight even spacing as in the source."
+  },
+  {
+    "id": "j-c3f924aa",
+    "judge": "distractors",
+    "fail": false,
+    "why": "K, R, N, Y ranks by lowest-year growth alone, the slip of ranking by peak growth landing on the answer is named in sourceHas, and the two rankings no slip produces (R, N, K, Y and K, R, Y, N) are covered by the source's two ranking fillers."
+  },
+  {
+    "id": "j-692c5ddf",
+    "judge": "distractors",
+    "fail": false,
+    "why": "4.1 points is the total fall not averaged, 1.0 divides it by four years, and 0.3 reads the phosphate series (about 1 point over three years); starting from 2009 gives about 1.26, which lands on the answer, but sourceHas names that slip."
+  },
+  {
+    "id": "j-b8460979",
+    "judge": "distractors",
+    "fail": false,
+    "why": "30% applies the 10% to the total $21.20 cost instead of the price to Paneline, 50% divides the cutting cost by the price to Paneline (7.05 ÷ 14.15), and 40% continues the even grid as a numeric filler the source also has."
+  },
+  {
+    "id": "j-aadfd896",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are all four countries on offer: A has the most bags, C the biggest bag and wins a rough estimate, and B is the label filler; the cost-column and price slips that still give D are both named in sourceHas, though B sits last on the true measure, not second-to-last as the note says."
+  },
+  {
+    "id": "j-220ff925",
+    "judge": "distractors",
+    "fail": false,
+    "why": "20% more reverses the direction, and 40% less and 40% more are the two statement fillers completing the four size-direction pairs as in the source; the total-profit and margin slips that land on 20% less are both named in sourceHas."
+  },
+  {
+    "id": "j-5a1a8618",
+    "judge": "distractors",
+    "fail": false,
+    "why": "70% uses people rather than visits as the base, 30% takes the complement (the people who came more than once), and 43% is the complement of the correct visit share; no slip lands on 57%."
+  },
+  {
+    "id": "j-c0620a2b",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1, 2, 3, 4, 5 ranks by revenue, purchases or one-year value; 2, 1, 3, 4, 5 gets Q1 against Q2 right but misjudges Q4 against Q5 by rounding early (85 ÷ 6 ≈ 14.2 beats 42 ÷ 3.1); and 1, 2, 4, 3, 5 is covered by the source's one ranking filler."
+  },
+  {
+    "id": "j-d12e10d6",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A needs the third-on-third check to rule out, B over-reads Week 0's peak in casual hours as the peak share (Week 1 is 55%), and C misreads both indexes sitting at 100 as hours matching jobs; reading total hours for casual hours or the adjacent weeks still gives D, but the source names the confusion between the two hours lines and the adjacent-weeks slip too."
+  }
+]

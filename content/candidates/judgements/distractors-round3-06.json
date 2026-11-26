@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-f41d2f2e",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is what you conclude from the faster forecast growth alone, or by projecting from the end of the forecast (both named source slips), B compares employers with schools only rather than with the rest of the market, and D takes simple yearly growth (2.7% against 7.7%, about 2.9x) or the dollar increases a year (0.75 against 2.4) as three times; close because reading C from today's column (6.3%) also leaves it true."
+  },
+  {
+    "id": "j-b66e7f2c",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$1.8bn takes one sector's 0.4-point indirect bar alone; $3.3bn and $4.8bn are numeric fillers continuing an evenly spaced wide grid ($3.3bn sits about 9% below the direct-only slip of $3.6bn), which sourceHas lists along with three fillers; leaving a row out gives $5.4-5.85bn, not the answer at its precision."
+  },
+  {
+    "id": "j-0b936303",
+    "judge": "distractors",
+    "fail": true,
+    "why": "5.1% has no slip behind it (Depot 2 gives 7.9%, Question 2 gives 6.8%, dropping score 3 gives 2.4%), and it does not sit where the source's filler does: dividing instead of multiplying gives 2.45, next to option A, not within about 4% of 5.1%."
+  },
+  {
+    "id": "j-ff554e4f",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is a near-miss total from an adding slip ($386m against $393m), B compares the losses by margin alone (68% against 51%), and D rounds 2009's 127% margin to 100% early (46 x 2 = 92, about 93)."
+  },
+  {
+    "id": "j-5bfb23bf",
+    "judge": "distractors",
+    "fail": true,
+    "why": "B, D, C, A and D, B, A, C each reverse a pair with the same number of models, where the profit figure alone settles the order, and B, C, D, A needs D lifted above C; no slip or pair of slips gives any of the three (the obvious ones, dividing the wrong way or ranking in reverse, give A, C, B, D), and the source allows only one ranking filler."
+  },
+  {
+    "id": "j-3220ffb5",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1, 2, 3, 4, 5 ranks by total revenue, orders or one-year value; 1, 3, 2, 4, 5 settles the close Q2/Q3 pair but assumes the top quintile stays highest (or rounds 4.8 orders down to 4); 1, 2, 4, 3, 5 is the one ranking filler that sourceHas allows."
+  },
+  {
+    "id": "j-6aab8706",
+    "judge": "distractors",
+    "fail": true,
+    "why": "$500 has no slip behind it (forgetting the crate of 4 gives $620, 24% off), and with $2,000 explained by averaging the 4-litre half alone ($1,920), $500 and $400 cannot be the source's fillers: neither is the correct option's close neighbour, and $400 sits below $500, which is not a slip option, rather than below one."
+  },
+  {
+    "id": "j-9a33b291",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A reads the near-equal shares and margins of Countries 6 and 9 as equal profit, B reads the smallest market share as the lowest sales (both over-readings with no market sizes), and C takes Country 7's margin, the neighbouring point to Country 1 (33.4 / 8.4 = 4.0); close because a stricter reader might count A and B as two statements outside the data."
+  },
+  {
+    "id": "j-3c0c98ae",
+    "judge": "distractors",
+    "fail": false,
+    "why": "20% lower reverses the comparison (6.14 / 7.36 = 17% lower); 40% higher and 40% lower are the two statement fillers sourceHas allows, completing the four size-and-direction pairs; the total-profit slip (+22%) and the margin slip (+16%) landing on D are both named in sourceHas."
+  },
+  {
+    "id": "j-e72e68f5",
+    "judge": "distractors",
+    "fail": false,
+    "why": "Each true statement looks false under a slip: A if you leave out a cost line or take the next group's segment, B if you read the cumulative top (32%) instead of the 18-point segment, and D if you take a neighbouring segment or headcount (21% gives £238); no slip keeps C the only false-looking statement."
+  }
+]

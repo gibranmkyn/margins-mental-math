@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-fb444a60",
+    "judge": "distractors",
+    "fail": false,
+    "why": "J, E, C, G ranks by the weakest year alone (higher floor = less risky); J, E, G, C and E, C, J, G are the two ranking fillers the source lists; ranking by peak growth alone lands on the answer, the slip the source names."
+  },
+  {
+    "id": "j-1b8540ff",
+    "judge": "distractors",
+    "fail": false,
+    "why": "3% more uses total cars without the days adjustment (3.4%); 5% fewer and 3% fewer reverse the comparison on the per-day and total figures and over-read the average as every single month; the wrong-base per-day slip landing on 5% more is the parity slip the source names."
+  },
+  {
+    "id": "j-0943c5ba",
+    "judge": "distractors",
+    "fail": true,
+    "why": "2.3% has no slip behind it and does not sit as the source's filler does: the note says a slip comes within about 4% of it, but here the nearest slips (wrong question 2.9%, scores 1-2 only 1.7%) are 25% or more away; 0.6% is a factor-of-10 slip and 1.7% leaves score 3 out."
+  },
+  {
+    "id": "j-fe454da5",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are all four countries on offer: M comes from dividing by the PPP rate or skipping the conversion, L and K are what a miscomparison picks (K the label filler the source lists), and dividing by both rates still picks J, the parity slip the source names."
+  },
+  {
+    "id": "j-64d39c37",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The evenly spaced wide grid ($4.6bn/$7.6bn/$10.6bn/$13.6bn) is one the source lists, with its three numeric fillers sitting as noted ($4.6bn just under the direct-only $4.8bn, $13.6bn about 10% above direct+indirect $12.4bn, $10.6bn continuing the spacing); leaving out the all-indirect or smallest row ($6.8bn) still picks $7.6bn, the parity slip the source names."
+  },
+  {
+    "id": "j-778dacee",
+    "judge": "distractors",
+    "fail": false,
+    "why": "Twice reverses the comparison, the same compares the growth rates (22% vs 24%) instead of profits, three times is the coarse filler the source lists; skipping the growth step lands on half, the parity slip the source names (reading 2010 margins also lands on half, but the question does not invite it)."
+  },
+  {
+    "id": "j-bea6953c",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A 1% revenue rise wins if venue charges are taken not to rise with revenue (€0.58m), a 1% venue cut wins if the 38% and 71% shares are swapped, and the royalties cut is dominated by the venue cut, the one dominated option the source lists."
+  },
+  {
+    "id": "j-c34542df",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are ratings on the scale: 1 is Question 1 read alone, 3 is campus B's combined top, 4 is what a miscomparison picks; reading Question 2 alone lands on 2, the parity slip the source names."
+  },
+  {
+    "id": "j-5f5db32b",
+    "judge": "distractors",
+    "fail": false,
+    "why": "More than 8% on documentaries (7.5%) and more than a quarter on drama (23.3%) are near-miss figures, and 74% football is 97 over football plus motor racing, leaving sports news out of sport."
+  },
+  {
+    "id": "j-ff001ad2",
+    "judge": "distractors",
+    "fail": true,
+    "why": "Costs of about $83m in 2010 come from no slip or pair of slips: the true figure is $94m, and forgetting to add revenue gives $53m, the 2009 margin $100m, the 2011 margin $71m; highest costs in 2009 and larger losses in 2011 both come from reading the margin as the amount."
+  }
+]

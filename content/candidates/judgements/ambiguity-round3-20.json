@@ -1,0 +1,12 @@
+[
+  {"id":"j-137e7b26","judge":"ambiguity","fail":false,"why":"Only D holds: the swings (strongest minus weakest) are E 1.8, J 2.2, C 9.4, G 28.0 points, and ranking by largest absolute move gives the same order, E, J, C, G."},
+  {"id":"j-08e4a03b","judge":"ambiguity","fail":false,"why":"Only D holds: June washes 426.9/30 = 14.23k cars a day against 412.7/30.5 = 13.53k in the other months, about 5.2% more; 3% is the trap you get by ignoring days, and A and B are false."},
+  {"id":"j-38ea5c67","judge":"ambiguity","fail":false,"why":"Only B holds: 68% of respondents graded 1 to 3, and respondents are 9% of customers, so 0.68 x 9% = 6.1%; no other option is near."},
+  {"id":"j-17b8a2e5","judge":"ambiguity","fail":false,"why":"Only A holds: J earns 71,284/3.10 = $23.0k, ahead of M at 186,450/8.70 = $21.4k (about 7% apart), with L at $13.1k and K at $1.6k."},
+  {"id":"j-6aba8caf","judge":"ambiguity","fail":false,"why":"Only B holds: the indirect shares add to 1.9 percentage points, and 1.9% of $400bn is $7.6bn; the other options match no reading (direct 1.2 points gives $4.8bn, total 3.1 points gives $12.4bn)."},
+  {"id":"j-1aebff31","judge":"ambiguity","fail":false,"why":"Only A holds: repeating the 2010-13 growth gives yogurt about $108.5m at an 11% margin ($11.9m) and cheese about $148.5m at 16% ($23.8m), a ratio of 0.50; linear growth also gives 0.50, and both margins sit on or halfway between gridlines."},
+  {"id":"j-35b24ead","judge":"ambiguity","fail":false,"why":"Only D holds: a 1% production-cost cut saves 0.71% of revenue ($0.41m), more than a venue-charge cut ($0.22m) or a royalty cut (smaller still), while 1% more revenue widens the loss because costs total 109% of revenue."},
+  {"id":"j-b8788c73","judge":"ambiguity","fail":false,"why":"Only B holds: with both questions on the same 990 respondents, rating 2 totals 24+48 = 72% against 45% for 5 and 38% for 1."},
+  {"id":"j-e91836fc","judge":"ambiguity","fail":false,"why":"Only C holds on the natural reading: general programs are 320/549 = 58.3%, while documentaries are 7.5%, drama 23.3% and football 97/153 = 63% of sport (74% only if sports news is wrongly kept out of 'all sports coverage')."},
+  {"id":"j-519dfab1","judge":"ambiguity","fail":false,"why":"Only A holds: revenue sums to 24+41+67+95+131 = $358m, while costs peak in 2013 ($161m), the 2011 loss ($48.9m) is smaller than 2012's ($52.3m), and 2010 costs are $93.9m, not $83m."}
+]

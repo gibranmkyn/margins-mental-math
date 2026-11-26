@@ -1,0 +1,12 @@
+[
+  { "id": "j-7f63ddc8", "judge": "ambiguity", "fail": false, "why": "Only A holds: profit per wash falls from $9,457/4,872 = $1.94 to $5,279/4,731 = $1.12, about 42% less, and no other option is near." },
+  { "id": "j-69252c05", "judge": "ambiguity", "fail": false, "why": "Only C holds: the falls are Q3 42.6%, Q5 30.4%, Q4 24.4%, Q2 15.4% and Q1 12.8%, with no ties." },
+  { "id": "j-f55d349d", "judge": "ambiguity", "fail": false, "why": "B: September-October takes 86 h x 60 / 83 = 62.2 minutes per change and November takes 430 h x 60 / 368 = 70.1 minutes, a difference of 7.9 minutes." },
+  { "id": "j-54f380bf", "judge": "ambiguity", "fail": false, "why": "Option A (D, A, B, C, E) holds: the ratios are D 27.4, A 20.1, B 19.6, C 13.1 and E 9.1, so A and B are clearly separated." },
+  { "id": "j-b41fe44f", "judge": "ambiguity", "fail": false, "why": "A: 607 arrangements from 3.5 FTE is 173 per FTE, worse than February's 195, while B (227), C and D (240) all improve on it; even if the chart boundary at 360 or 480 is read as needing the next step up (C 180, D 192), A is still lowest." },
+  { "id": "j-52baf9ec", "judge": "ambiguity", "fail": false, "why": "A: 36,000 one-time climbers make 36,000 of the 180,000 visits, which is 20%; the 75% in C is a trap." },
+  { "id": "j-a1684168", "judge": "ambiguity", "fail": false, "why": "Only C holds: from Week 1 to Week 2 hours go from about 95 to 92 (-3%) while orders go from 60 to 35 (-42%); temporary staff's share peaks in Week -1, not Week -2, their rise of 38 points covers a 28% rise in orders, and D cannot be concluded from indices." },
+  { "id": "j-3a624c00", "judge": "ambiguity", "fail": false, "why": "A: 12% + 23% + 20% = 55% of respondents, and 55% x 26% = 14.3% of the client base." },
+  { "id": "j-1305f850", "judge": "ambiguity", "fail": false, "why": "A: the current model costs $60 + $192 = $252 a year and the new one $70 + $150 = $220, so it saves $32 a year, which is $96 over three years." },
+  { "id": "j-e30ce648", "judge": "ambiguity", "fail": false, "why": "Only A holds: supplier cuts in transport and packaging are 0.9/2.1 = 43%, while B (0.6/1.7 = 35%), C (0.6/3.8 = 16%) and D (0.8/1.7 = 47%) are all false." }
+]

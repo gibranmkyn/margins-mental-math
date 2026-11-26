@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-6b2c23d1",
+    "judge": "distractors",
+    "fail": false,
+    "why": "£3.3m reads Group D's 17% instead of B's 19%, £4.1m reads Group C's 21%, and £4.5m takes B's cumulative 24% instead of its own 19% (£4.66m, within 4%); the grid is also tight."
+  },
+  {
+    "id": "j-1b529db7",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The profitability statement is the one no-basis statement sourceHas lists; Cars vs Fashion is a near-miss (0.46 vs 0.48 per head), and Travel vs Cycling is equal per head (0.30 each), which a careless read of Travel's bigger revenue mistakes for more."
+  },
+  {
+    "id": "j-e4a24593",
+    "judge": "distractors",
+    "fail": false,
+    "why": "20% households reads Works F alone, 10% farms reads Works A alone, and 'more than 85%' holds for Works A alone (90%) but is 82% combined; reading one works alone also makes the industry statement true, but sourceHas names that slip; a simple average makes nothing true."
+  },
+  {
+    "id": "j-f4211fcb",
+    "judge": "distractors",
+    "fail": false,
+    "why": "50% applies the 10% to the €3.41 total instead of €2.73 (0.341 ÷ 0.68 = 50%); 20% and 30% carry on the even grid that this slip option anchors, and sourceHas lists two numeric fillers."
+  },
+  {
+    "id": "j-1a74ebe0",
+    "judge": "distractors",
+    "fail": false,
+    "why": "Saving €120,000 reverses the sign; €270,000 more expensive ignores the tier and prices all 270,000 kg at €8; €270,000 less expensive combines that with a reversed sign."
+  },
+  {
+    "id": "j-216d0129",
+    "judge": "distractors",
+    "fail": false,
+    "why": "£20,122 is the answer out by a factor of 10; £164,634 applies a 10% decrease instead of an increase (£27m ÷ 164); £16,463 is that sign slip plus the factor-of-10 slip."
+  },
+  {
+    "id": "j-1a9ba991",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A and C compare total share or installer count instead of sales per installer (reversed comparisons), and B fails whether A and C are pooled or simply averaged; a simple average of B and C still makes D true, but sourceHas names the same simple-average slip (there for A and C), so it counts as parity."
+  },
+  {
+    "id": "j-1a9d96a4",
+    "judge": "distractors",
+    "fail": false,
+    "why": "In this INCORRECT question the distractors are statements the data settles: D traps candidates who compare office workers' higher share of 1s (63% vs 55%) instead of counts (8,190 vs 12,100), A takes summing the 3-to-5 marks across criteria, and B is a plain reading of the look chart."
+  },
+  {
+    "id": "j-e3d91b10",
+    "judge": "distractors",
+    "fail": false,
+    "why": "Tight even grid (steps of 1.5, 19% of the answer): 9.3 comes from margin on costs instead of revenue (9.6), 6.3 is where a rough estimate or a whole-year average lands, and 10.8 carries on the spacing as one of the listed fillers; no slip lands on 7.8."
+  },
+  {
+    "id": "j-47d9829b",
+    "judge": "distractors",
+    "fail": false,
+    "why": "£2,516,340 is the answer out by a factor of 10; £205,882 applies a 10% decrease instead of an increase (£31.5m ÷ 153); £2,058,824 is that sign slip plus the factor-of-10 slip."
+  }
+]

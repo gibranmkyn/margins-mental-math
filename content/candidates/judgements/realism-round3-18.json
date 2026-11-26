@@ -1,0 +1,12 @@
+[
+  {"id": "j-6b533006", "judge": "realism", "fail": false, "why": "Steel at $0.63/kg from the mill rising to $1.84/kg as a stamped part is believable, and the waterfall steps add up (0.63+0.25=0.88, +0.35=1.23, +0.61=1.84)."},
+  {"id": "j-6c6a744e", "judge": "realism", "fail": false, "why": "Each route's two driver shares add to 100%, and a negative passenger share (e.g. -28.2% on Route 1) just means traffic fell while fares rose, alongside believable yearly revenue growth of 1.6% to 6.2%."},
+  {"id": "j-491bac37", "judge": "realism", "fail": false, "why": "A 66,000-player playtest is believable, and every rating distribution for both groups adds to 100%."},
+  {"id": "j-71eb49cb", "judge": "realism", "fail": false, "why": "Wholesale extra virgin olive oil at EUR 6.80 to 8.20 per litre, sold in cases of 8 with a 500-bottle discount threshold, is believable for a supplier to supermarkets."},
+  {"id": "j-0a1d57c3", "judge": "realism", "fail": false, "why": "A florist with about EUR 30,000 monthly revenue and about 1,800 bouquets (about EUR 16 each) is believable, and both margins match revenue minus costs (12.6% and 6.8%)."},
+  {"id": "j-fcdb7f49", "judge": "realism", "fail": false, "why": "Aged cheese at $7.90/kg from the dairy rising to $14.40/kg at the counter is believable, and the waterfall steps add up."},
+  {"id": "j-c3e91844", "judge": "realism", "fail": false, "why": "An eight-chair salon with about EUR 52,000 monthly revenue from about 1,500 appointments (about 7 per chair per day at about EUR 34 each) is believable, and both margins match revenue minus costs."},
+  {"id": "j-095aee21", "judge": "realism", "fail": false, "why": "A market for business cleaning chemicals of about $260 to 490 million split across hotels, hospitals and food factories is believable, and the growth paths are plausible."},
+  {"id": "j-ee49e174", "judge": "realism", "fail": false, "why": "A mobile game maker with $163 million in sales, platform fees of 41% (store commission plus licensing) and studio costs of 33%, leaving a 26% operating margin, is believable."},
+  {"id": "j-01d41e7b", "judge": "realism", "fail": false, "why": "Every pie adds to 100%, and 1,500 respondents being 12% of a zone's clients means about 12,500 registered clients, which is believable for a chain of vet clinics."}
+]

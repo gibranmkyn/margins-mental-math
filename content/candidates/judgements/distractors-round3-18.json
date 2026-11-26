@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-7ac6d131",
+    "judge": "distractors",
+    "fail": false,
+    "why": "30% applies the 10% to the total mill-to-part cost (0.184 ÷ 0.61 = 30%), and 40% and 50% continue the even spacing as the two numeric fillers the source lists (50% is also roughly stamping cost over price paid, 0.61 ÷ 1.23); no common slip lands on 20%."
+  },
+  {
+    "id": "j-8889e6e0",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B and C come from ranking by the driver's share alone, ignoring the route's total growth (Route 10 and Route 1 have the smallest shares); D's 26% is the plain average of the ten Passengers shares (258.6 ÷ 10), mistaking a share of growth for growth; ranking by share or by total makes A look false, so no slip lands on it."
+  },
+  {
+    "id": "j-c7a4ae7a",
+    "judge": "distractors",
+    "fail": false,
+    "why": "6,600 reads rating 3 (30%) for existing players, 8,800 reads rating 2 (20%) for existing players, and 5,500 stops at the existing-player count (also a neighbour in a tight grid of steps about a seventh of the answer); misreading rating 3 for new players also gives 7,700, but that is the adjacent-rating slip the source names as landing on its correct option."
+  },
+  {
+    "id": "j-2ffc1ed4",
+    "judge": "distractors",
+    "fail": false,
+    "why": "€2,100 prices the 1L bottle only (€2,176) or uses €8.20 a litre for both sizes (€1,968); €420 forgets the 8 bottles per case and adds the two sizes instead of averaging (€436); €350 is a numeric filler sitting below €420 at the same ratio as €1,750 sits below €2,100, as the source's does; the wrong-discount and adjacent-column slips that land on €1,750 are both named in sourceHas."
+  },
+  {
+    "id": "j-6f39b72b",
+    "judge": "distractors",
+    "fail": false,
+    "why": "C (40% more) reverses the direction of the change, and B and D (a fifth less or more) are the two statement fillers the source lists, completing the two sizes by two directions; comparing total profit or margins lands on A, but sourceHas names both slips."
+  },
+  {
+    "id": "j-156eff54",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The 20/30/40/50 grid is tight (steps 20% of the 50% answer), and slips land near it: 10% of the dairy price gives 32%, 10% of the wholesaler price gives 43%, and cutting cost over price paid gives 20%; applying the 10% to the total cost (59%) lands on 50%, but sourceHas names that wrong-base slip."
+  },
+  {
+    "id": "j-e0aadebd",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A (40% lower) reverses the direction, and B and D (a fifth lower or higher) are the two statement fillers the source lists; comparing total profit (+37%) or margins (+39%) lands on C, but sourceHas names both slips, and dividing by September's figure gives 29%, which lands on no option."
+  },
+  {
+    "id": "j-5657b9dd",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B comes from simple rather than compound yearly growth (3.75% vs 10.6% a year, about 2.8 times); C divides 46 by the 10-year total (46 ÷ 490 = 9.4%), a wrong-column base; D extends the faster forecast growth past the years shown, or projects 20 years from the end of the forecast; A could still read true if the forecast columns were misread as the past period, though that misreading is unlikely when the columns are labelled."
+  },
+  {
+    "id": "j-bdd45866",
+    "judge": "distractors",
+    "fail": true,
+    "why": "A slip lands on the correct option: a candidate who ignores that platform fees rise with in-game sales nets the full $1.63m and still picks C (more than the $0.67m or $0.54m from the cuts), and sourceHas does not name this slip; D, dominated by B, is covered by sourceHas."
+  },
+  {
+    "id": "j-eaf3a339",
+    "judge": "distractors",
+    "fail": false,
+    "why": "3.7% leaves out rating 3 (31% × 12% = 3.72%), 0.9% is the answer off by a factor of 10 (0.852%), and 2.6% is the one numeric filler the source allows; its nearest slip, reading rating 2 only (2.4%), sits about 8% away against the source's 4%."
+  }
+]

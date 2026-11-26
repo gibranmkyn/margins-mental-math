@@ -1,0 +1,12 @@
+[
+  {"id":"j-4a38eb8d","judge":"ambiguity","fail":false,"why":"Only A holds: weighting D (21k) and G (9k), the first three groups are 27.6k of 30k students (92%), while B, C and D give 51%, 9.5% and 31.5%, all on gridline or half-gridline readings."},
+  {"id":"j-c22a7ce3","judge":"ambiguity","fail":false,"why":"Only D holds: 2011 car revenue is 447 of 599 (75%), whereas servicing profit of about 97 trails the other three combined (about 120), new-car margin fell 40% against 22% for used cars, and servicing grew 43% against 17% for parts."},
+  {"id":"j-93a2c1a1","judge":"ambiguity","fail":false,"why":"B: unresolved calls are 61% of 388k (236.7k) in March against 48% of 412k (197.8k) on average, a gap of 38.9k, and no other option is near."},
+  {"id":"j-b9c553a7","judge":"ambiguity","fail":false,"why":"C: 2009-2012 irrigation revenue per rep is 6.45, 6.17, 6.08 and 6.00 ($m), averaging about 6.2 (pooled 1,540/250 = 6.16), and other options are far away under any reasonable chart reading."},
+  {"id":"j-c515ca62","judge":"ambiguity","fail":false,"why":"Only C holds: August washes 3,027/23.4 = 129.4 tonnes per working day against 3,184/25.4 = 125.4 on average, about 3.2% more."},
+  {"id":"j-f58df95d","judge":"ambiguity","fail":false,"why":"Only D holds: revenue sums to 19+36+62+94+124 = 335, while 2013 losses (52.6) exceed 2012's (48.4), 2011 costs are about 83.5, and costs peak in 2014 (about 156)."},
+  {"id":"j-6a9a0eda","judge":"ambiguity","fail":false,"why":"D: uncontacted large-firm staff (413.8k) are by far the largest pool, whereas contact covers 24.7% of staff (not over 25%), subscription revenue is not in the data, and large firms have the lowest contacted share (5.8%) so C is not clearly true."},
+  {"id":"j-997f882d","judge":"ambiguity","fail":false,"why":"B is the incorrect one: battery life got 70% scores of 3+ from former electric users, below handle's 90% and tied with cleaning, while A (mean 3.55 vs 3.50, 90% vs 70% at 3+), C and D (9,620 vs 7,560 scores of 1) hold."},
+  {"id":"j-c9a12544","judge":"ambiguity","fail":false,"why":"C: 330,000 kg costs $1,320,000 now and $400,000 + $500,000 = $900,000 from the importer, $420,000 cheaper."},
+  {"id":"j-504a7abb","judge":"ambiguity","fail":false,"why":"B: a 2% salary cut adds 2% of €152.6m = €3.05m, ahead of the project-expense cut (€1.57m) and the travel cut (less still), while a 2% fee rise deepens the 9% loss."}
+]

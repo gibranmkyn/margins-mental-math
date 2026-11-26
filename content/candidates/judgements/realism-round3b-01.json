@@ -1,0 +1,44 @@
+[
+  {
+    "id": "j-41be6bbd",
+    "judge": "realism",
+    "fail": false,
+    "why": "A tyre maker selling 410,000 to 520,000 tyres of each type a year in markets of 2.5 to 3.6 million tyres (about 15 to 17% share) is believable, and its sales stay well below each market."
+  },
+  {
+    "id": "j-d43323be",
+    "judge": "realism",
+    "fail": false,
+    "why": "An online DIY store with 90-day revenue of EUR 58 to 387 per customer across 1.1 to 6.2 orders (about EUR 53 to 63 per order) and thin first-year profits of EUR 0.9 to 28 is believable for low-margin retail."
+  },
+  {
+    "id": "j-fbbd3161",
+    "judge": "realism",
+    "fail": false,
+    "why": "Developing markets at $37bn of a $196bn global pet food market, a leader near $8bn and a steadily falling tail across the top 50 are believable; having the top 50 make up all developing-market sales is a stylised simplification, not an impossibility."
+  },
+  {
+    "id": "j-8104e7c4",
+    "judge": "realism",
+    "fail": false,
+    "why": "An online wine merchant with 90-day revenue of $71 to $364 per customer (about $65 to $85 per order) and first-year profits of $1.2 to $34 is believable."
+  },
+  {
+    "id": "j-65650e34",
+    "judge": "realism",
+    "fail": false,
+    "why": "An online photo printer with 90-day revenue of $34 to $188 per customer (about $27 to $32 per order) and first-year profits of $0.6 to $19 is believable, if thin-margined."
+  },
+  {
+    "id": "j-83eadee0",
+    "judge": "realism",
+    "fail": false,
+    "why": "In-app spending of $14 to $85 per paying player in 90 days at about $11 to $14 per purchase is believable; first-year profits of $0.3 to $15 are low for digital goods but within a factor of a few once platform fees and acquisition costs are counted."
+  },
+  {
+    "id": "j-88e035fb",
+    "judge": "realism",
+    "fail": false,
+    "why": "The direct and indirect contributions add to each bar's total (for example 0.3 + 0.4 = 0.7), microfinance adding about 3 percentage points of growth over a decade is believable, and $400bn of GDP is within a factor of a few of a large poor agricultural economy."
+  }
+]

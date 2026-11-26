@@ -1,0 +1,12 @@
+[
+  { "id": "j-773ea51d", "judge": "realism", "fail": false, "why": "A fast-growing, loss-making solar installer with revenue rising from $26m to $143m and margins improving from -142% to -22% (implied costs of $63m to $174m) is believable for a scale-up." },
+  { "id": "j-798e7e08", "judge": "realism", "fail": false, "why": "Each region's product split adds to 100%, and regional revenues of $19m to $87m with 8% to 27% operating margins are believable for a business software company." },
+  { "id": "j-89a841d8", "judge": "realism", "fail": false, "why": "Shares add to 100% of $415m, and the implied average dealer sales of about $0.24m to $1.1m a year and return rates of 3% to 8% are believable for a building materials wholesaler." },
+  { "id": "j-d1990956", "judge": "realism", "fail": false, "why": "All four rating pies add to 100%, and survey samples of 650 and 1,480 for a home appliance repair firm are believable." },
+  { "id": "j-0b1451c7", "judge": "realism", "fail": false, "why": "4.8 million jars at 0.05 kg each means 240,000 kg of shea butter a year at $4 to $7 per kg, which is believable for a pharmacy skincare brand." },
+  { "id": "j-c6585f3c", "judge": "realism", "fail": false, "why": "About 70,000 tyres a month at roughly $87 of revenue per tyre across about 25 opening days is believable for a tyre-fitting chain, and profit equals revenue minus costs in both columns." },
+  { "id": "j-f2718b81", "judge": "realism", "fail": false, "why": "5,000 to 12,000 extra orders a day at about $3 to $3.60 profit per order, with upfront investments of $30m to $45m and monthly costs of a few hundred thousand dollars, is believable for a multi-city food delivery app." },
+  { "id": "j-86d66bbd", "judge": "realism", "fail": false, "why": "Half a cook making 103 platters a month and 2.5 cooks making 495 both work out to about 50 minutes per platter at 168 hours a month, which is believable for a family caterer." },
+  { "id": "j-462b06be", "judge": "realism", "fail": false, "why": "A loss-making mobile games studio growing revenue from $15m to $98m, with margins improving from -158% to -31% (implied costs of $39m to $128m), is believable." },
+  { "id": "j-51c73b69", "judge": "realism", "fail": true, "why": "In developing countries Q and S, average household income comes to about $67,000 and $61,000 at basic exchange rates, and about $281,000 and $355,000 at the PPP rates given, far above what any wealthy economy reports, let alone a developing one." }
+]

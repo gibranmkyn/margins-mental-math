@@ -1,0 +1,12 @@
+[
+  {"id": "j-cef8cefa", "judge": "realism", "fail": false, "why": "Liquid fertiliser at $9.80 to $12.40 per litre in cartons of 20 bottles, with a 4-carton order worth roughly $500 to $800, is believable for nursery supply."},
+  {"id": "j-12798305", "judge": "realism", "fail": false, "why": "A main flour mill taking in 520 to 1,350 tonnes of wheat a day on weekdays, and none at weekends when it is closed, fits a large commercial mill."},
+  {"id": "j-ceb2ec91", "judge": "realism", "fail": false, "why": "Yield shares above 100% go with negative herd-size shares that still sum to 100%, which is a valid growth decomposition for farms whose herds shrank, and 1.2% to 5.8% yearly output growth is believable."},
+  {"id": "j-51472d8a", "judge": "realism", "fail": false, "why": "Both breakdowns add to 100%, and 3,600 customers surveyed in a month (about 120 a day) is high for one service centre but within a few times what a large one could handle."},
+  {"id": "j-8ba5c958", "judge": "realism", "fail": false, "why": "A sawmill log yard taking 350 to 2,350 tonnes a day on weekdays, and none at weekends when it is closed, is believable for a large sawmill."},
+  {"id": "j-3e0dc1ce", "judge": "realism", "fail": false, "why": "Hotel shampoo at about $1.14 to $1.55 a bottle, boxes of 60 and a 12-box order worth around $1,000 is pricey for amenities but within a few times of real figures."},
+  {"id": "j-32284f22", "judge": "realism", "fail": false, "why": "The awareness-to-usage funnel shrinks at every step for both shops and offices, and a survey of about 8,500 premises on patrol roads is believable."},
+  {"id": "j-eea5b435", "judge": "realism", "fail": false, "why": "About EUR 2.2 million of monthly revenue across 140 laundromats (about EUR 16,000 per outlet a month) is believable, as are a 19% rise in electricity price and a 16% fall in margin."},
+  {"id": "j-8788dc14", "judge": "realism", "fail": false, "why": "Revenue minus costs gives the stated 8.0% and 9.4% margins, and about 330 drinks a day at roughly EUR 4.30 each suits a juice bar next to a large office park."},
+  {"id": "j-0274f4f5", "judge": "realism", "fail": false, "why": "A half-time mechanic doing 39 services a month and 2.5 mechanics doing 183, at about 45 services per half FTE, is believable for a small bike workshop in spring."}
+]

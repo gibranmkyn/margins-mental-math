@@ -1,0 +1,12 @@
+[
+  {"id":"j-eefe8935","judge":"ambiguity","fail":false,"why":"Only D holds: metres per capita are A 2,360, B 2,850, C 2,160 and D 2,940, so D leads B by 90 m on exact table figures."},
+  {"id":"j-caa637a5","judge":"ambiguity","fail":false,"why":"Only A holds on every reading: 462.0k of 1,121.4k employees have had some contact (41.2%); C needs premium data not given, D fails because uncontacted medium-employer staff (307.0k) outnumber large (220.1k), and B is false by penetration (medium 6.9% vs small 11.9%)."},
+  {"id":"j-aaf6dd91","judge":"ambiguity","fail":false,"why":"Only B holds: Country 8's margin (about 42%) is clearly highest, next about 34%; A and C need market sizes not given, and D's ratio is about 3x (41.8/13.9), not twice, on any reasonable reading."},
+  {"id":"j-ba61041b","judge":"ambiguity","fail":false,"why":"A: the second market is about 34.6% - 22.3% = 12.3% of $37bn, roughly $4.6bn, and any reasonable reading stays well short of the $8.7bn midpoint to B."},
+  {"id":"j-2f0ef69b","judge":"ambiguity","fail":false,"why":"Only A holds: timber rose to 115 and margin fell to 85, both on gridlines, so both moved 15%; July profit is 1,946 x 0.90 / 1,837 = 95.3% of April's, which rules out B and C, and D is not given."},
+  {"id":"j-51e35154","judge":"ambiguity","fail":false,"why":"C: income per pound of maintenance is D 10.91, A 10.65, C 7.60, B 6.39 and E 5.92 from labelled values, giving D, A, C, B, E."},
+  {"id":"j-eb3c99fc","judge":"ambiguity","fail":false,"why":"D: total cost is £3.4m + 64,000 x £45 = £6.28m, and Group B's 22% share comes to £1.38m, nearest £1.4m (the midpoint with £1.2m is £1.3m)."},
+  {"id":"j-1a7a8f20","judge":"ambiguity","fail":false,"why":"Only D holds: food packaging grew 18.2% against 11.0% for the rest (382 to 424); A fails (513 vs 583 in 20 years), B is 18.7%, and C's relative growth is about 2x a year (8.3% vs 4.3% CAGR), not 3x."},
+  {"id":"j-2edd0591","judge":"ambiguity","fail":false,"why":"Only A holds: average share of sales per garage is A 0.131%, B 0.083% and C 0.200%, so A > B, and every other statement contradicts this order."},
+  {"id":"j-e409dfd0","judge":"ambiguity","fail":false,"why":"D: with equal n, the branch A ratings combine to 1: 27, 2: 41, 3: 42, 4: 58 and 5: 32, so rating 4 is clearly most frequent."}
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-3a2a8535",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A's 30% is the desks' return with the monthly cost left out (15.2m / 50m), C turns 'at least' into 'at most' with the 21% hurdle rounded down to 20%, and D turns the maximum into a minimum; no slip tried (dropping monthly costs, charging them once) lands on 24m."
+  },
+  {
+    "id": "j-84361a0f",
+    "judge": "distractors",
+    "fail": false,
+    "why": "D is what dividing by the PPP rate gives, B is the lowest (comparison reversed), and C is the one listed label filler among options that are all the countries on offer; dividing by both rates still lands on E, which sourceHas names."
+  },
+  {
+    "id": "j-cf1102e8",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A ranks by profit alone, B ranks by probability alone, and D swaps P and Q, which you get by reading P's 10 a gridline low (0.8 against 0.9); neither single-factor slip lands on C."
+  },
+  {
+    "id": "j-d0924907",
+    "judge": "distractors",
+    "fail": false,
+    "why": "D ranks by the worst year alone (higher lowest growth means less risky), A and C are the two ranking fillers sourceHas lists, and ranking by peak growth alone lands on B, which sourceHas names as parity."
+  },
+  {
+    "id": "j-61a0194a",
+    "judge": "distractors",
+    "fail": false,
+    "why": "D puts the 15% hotel share on the wrong base (it is 15% of the 45%), C over-reads 'main reason' as 'only reason', and A (spending) is the single statement without basis that sourceHas allows."
+  },
+  {
+    "id": "j-054143c9",
+    "judge": "distractors",
+    "fail": false,
+    "why": "2,445 divides 17,100 by 7 days, 3,700 averages Monday to Thursday with Friday left out (14,800 / 4), and 3,950 continues a tight grid (steps about 8%); a half-gridline misread still lands on 3,425, which sourceHas names."
+  },
+  {
+    "id": "j-f81ccc8f",
+    "judge": "distractors",
+    "fail": false,
+    "why": "sourceHas lists the evenly spaced wide grid and three numeric fillers: 8.6bn sits about 12% above the direct-only slip (7.7bn), and 6.0bn and 3.4bn continue the 2.6bn spacing (3.4bn is the bottom of the grid, where the source's note puts its filler at the top); leaving a row out gives 9.8bn, which is not the answer."
+  },
+  {
+    "id": "j-5262312e",
+    "judge": "distractors",
+    "fail": false,
+    "why": "3.5% leaves out score 3 (27% x 13%), 0.9% is the answer a factor of 10 off, and 7.2% is 72% with the 13% step skipped and a decimal slip on top (two slips); the listed filler's note (dividing comes within 4%) does not fit it, so the pass rests on that pair of slips."
+  },
+  {
+    "id": "j-3922bb77",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A ranks by probability alone, C ranks by value alone, and D swaps K and J, which you get by reading K's 20 half a gridline low or J's 6 high (2.0 against 1.8); neither single-factor slip lands on B."
+  },
+  {
+    "id": "j-c824b2bb",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1 is what district B's two pies give (wrong district), 4 is Question 1 alone, and 2 is Question 2's least-given score (comparison reversed); Question 2 alone still lands on 3, which sourceHas names, and the options are ratings on the scale."
+  }
+]

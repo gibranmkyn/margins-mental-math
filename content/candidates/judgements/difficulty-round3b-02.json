@@ -1,0 +1,8 @@
+[
+  {
+    "id": "j-2ead6c48",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Both test the same four statement types (half-on-half profit as revenue x margin, ratio of index changes, 4% profit drop, two-year profit sum ratio), each needing gridline reads of the margin index: the source's key C takes read margin, multiply by revenue, compare (3 steps) and the question's key C takes read two endpoints, take the ratio, compare (3 steps), with full elimination about equal in both, so the counts match; the revenue x margin step only moves from the keyed option to distractor A."
+  }
+]

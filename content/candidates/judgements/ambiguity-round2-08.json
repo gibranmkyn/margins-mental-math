@@ -1,0 +1,12 @@
+[
+  { "id": "j-11492030", "judge": "ambiguity", "fail": false, "why": "Only C holds: revenue per staff is D 0.435, E 0.351, B 0.320, C 0.219, A 0.154, with no ties." },
+  { "id": "j-60db3ec9", "judge": "ambiguity", "fail": false, "why": "Only B holds: 720 cans is below the 1,000-can threshold, so orders are $1,584 (400g) and $2,880 (800g), averaging $2,232, nearest $2,250." },
+  { "id": "j-3dedc3a3", "judge": "ambiguity", "fail": false, "why": "Only A holds: profit per scoop (p − c) times scoops per kilogram (1,000 ÷ w); s plays no part in per-kilogram profit." },
+  { "id": "j-4231140d", "judge": "ambiguity", "fail": false, "why": "Only B holds: 27% + 11% + 27% = 65% of respondents scored 1 to 3, and 65% x 14% = 9.1% of all North customers." },
+  { "id": "j-bc132717", "judge": "ambiguity", "fail": false, "why": "Only A holds: value per order is Q2 $25.6, Q1 $27.7, Q4 $29.1, Q3 $30.9, Q5 $31.2, giving 2, 1, 4, 3, 5." },
+  { "id": "j-d81b24a1", "judge": "ambiguity", "fail": false, "why": "Only A holds: 180 bags is below the 600-bag threshold, so orders are $1,080 (250g) and $1,890 (500g), averaging $1,485, nearest $1,500." },
+  { "id": "j-b148ef74", "judge": "ambiguity", "fail": false, "why": "Only D holds: the plan saves $8,600 + $31,700 = $40,300, which buys 2,879 proofreader hours at $14, so 2,850 is the highest option that still pays (3,250 needs the whole $47,000, which includes costs the plan does not replace)." },
+  { "id": "j-2161fb05", "judge": "ambiguity", "fail": true, "why": "C (151) holds if the statement means drivers who needed help only once (55,100 / 365), but on a literal reading every driver, repeat callers included, has a last call after which they do not call again, so 58,000 / 365 = 159 makes D defensible too." },
+  { "id": "j-8cd9c53d", "judge": "ambiguity", "fail": false, "why": "Only A holds: bins per collection day are 58.4 thousand in November against 60.3 thousand in other months, about 3.1% fewer (the 5% comes from total bins, not per day)." },
+  { "id": "j-b9ddc661", "judge": "ambiguity", "fail": false, "why": "Only D holds: H2 2012 profit is 792 x 0.99 = 784 against 764 x 1.00 in H1 2012 (99 sits halfway between gridlines); A gives 8% not 12%, B gives 5.5% not 4%, and C gives 18/4 = 4.5 times, not four." }
+]

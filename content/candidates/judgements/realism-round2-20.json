@@ -1,0 +1,12 @@
+[
+  { "id": "j-fbd9c8b8", "judge": "realism", "fail": false, "why": "A bakery group comparing loaves per household, loaf weight, unit cost and wholesale price across countries is a believable setup with no figures that could be wrong." },
+  { "id": "j-04e06ae3", "judge": "realism", "fail": false, "why": "An ice machine using 2,450 to 2,900 kWh a year at 8c/kWh with one to three service visits of a few hours is believable, though $14 an hour for a technician is on the low side." },
+  { "id": "j-40d56f77", "judge": "realism", "fail": false, "why": "An engineering firm with $146 million revenue across twelve lines and 676 engineers gives about $200,000 to $280,000 per engineer, which is believable." },
+  { "id": "j-21c93409", "judge": "realism", "fail": false, "why": "A 7% share of a $2.4 billion cereal market at a 14.8% margin gives about $25 million profit, and shares of 0.6% to 8.3% with margins of 10% to 35% are believable for a foreign cereal maker." },
+  { "id": "j-776a5eec", "judge": "realism", "fail": true, "why": "Country K's household income of 388,416 at a PPP rate of 1.80 is about $216,000 a household (and Country M's about $200,000), roughly twice the US average, which cannot be right for the emerging economies the context describes." },
+  { "id": "j-141f89b7", "judge": "realism", "fail": false, "why": "A tax advisory firm with 9,400 enquiries a year, clients spending $850,000 on research and an 11% credit gives about $35 million inflow, which is believable for a national firm." },
+  { "id": "j-f9fc5011", "judge": "realism", "fail": false, "why": "A shredding truck costing $2,160 a day and serving about 94 offices twice a week at $120 a week each, collecting about 6 tonnes a day, is believable." },
+  { "id": "j-be072ef0", "judge": "realism", "fail": false, "why": "Fitness clubs with 5,300 to 8,400 members at $39 to $52 a month and pools with 2,400 to 3,900 weekly visits at $4.50 to $6.00, with margins of 4% to 24%, are believable." },
+  { "id": "j-28b3fcc8", "judge": "realism", "fail": false, "why": "Two dry-cleaning shops cleaning about 10,000 garments a month for about €47,000 revenue, with margins consistent with the stated revenue and costs, is believable." },
+  { "id": "j-2d416439", "judge": "realism", "fail": false, "why": "A 900-space round-the-clock city garage seeing 52,000 different vehicles a year, 72% of them once, is believable." }
+]

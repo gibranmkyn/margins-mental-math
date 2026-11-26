@@ -1,0 +1,12 @@
+[
+  {"id":"j-5a80634a","judge":"ambiguity","fail":false,"why":"Only B holds: airport desks earn 1,600 x 26 x 365 - 4.8m = 10.38m a year on 50m (20.8% ROI), and app pickup earns 12.78m - 7.8m = 4.98m, so its upfront spend must stay below 4.98 / 0.208 = about 24m, which is a maximum, not a minimum."},
+  {"id":"j-97933026","judge":"ambiguity","fail":false,"why":"D (Country E): incomes at basic rates are B 4,571, C 8,630, D 40,339 and E 43,479 US dollars, so E is clearly highest."},
+  {"id":"j-478ffdee","judge":"ambiguity","fail":false,"why":"C: expected profit lost is R 2.5, S 1.8, P 1.0, Q 0.9 ($m), and every value lies on a gridline or exactly halfway between two, so the narrow P/Q gap is read exactly; A ranks by profit at stake alone, which is a trap."},
+  {"id":"j-04f077a0","judge":"ambiguity","fail":false,"why":"B: the spread between best and worst growth years is Z 1.8, W 2.3, X 8.0 and V 17.0 points, giving Z, W, X, V from least to most risky."},
+  {"id":"j-16e14578","judge":"ambiguity","fail":false,"why":"B: 45% x 80% = 36% came mainly for the railway on a day out from outside the area; A and C treat 'main reason' as 'only reason' or spending as nil, and D is really 45% x 15% = 6.75%."},
+  {"id":"j-b49672e4","judge":"ambiguity","fail":false,"why":"B: (5,600 + 3,300 + 2,800 + 3,100 + 2,300) / 5 = 3,420, and C is 280 away, beyond what independent quarter-step reading errors could move the average; A is the 7-day trap."},
+  {"id":"j-22fa20ca","judge":"ambiguity","fail":false,"why":"D: the indirect contributions sum to 0.3 + 0.2 + 0.4 + 0.5 + 0.2 = 1.6 points of GDP, and 1.6% of $700bn = $11.2bn; no other option matches any reading."},
+  {"id":"j-09488d94","judge":"ambiguity","fail":false,"why":"C: 11 + 16 + 45 = 72% of downtown respondents gave 1 to 3, and 72% x 13% = 9.36%, about 9.4% of all downtown members; no other option is near."},
+  {"id":"j-e7ffb63e","judge":"ambiguity","fail":false,"why":"B: expected crude forgone is L 4.0, M 3.2, K 2.0, J 1.8 ($m), and every point lies on a gridline or exactly halfway between two, so K above J reads exactly; D swaps J and K."},
+  {"id":"j-c0581bf9","judge":"ambiguity","fail":false,"why":"C: the same 1,420 respondents answered both questions, so the combined shares are score 1: 47, 2: 25, 3: 67, 4: 39 and 5: 22, and score 3 clearly leads."}
+]

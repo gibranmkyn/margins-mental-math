@@ -1,0 +1,2289 @@
+[
+  {
+    "id": "au-001",
+    "skill": "break-even-payback",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A ceramics studio wants to sell a glazed planter through garden centres."
+      },
+      {
+        "type": "table",
+        "title": "Planter economics",
+        "headers": [
+          "Item",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Wholesale price per planter",
+            "$36"
+          ],
+          [
+            "Clay, glaze and kiln firing per planter",
+            "$21"
+          ],
+          [
+            "Studio rent and kiln upkeep per year",
+            "$54,000"
+          ]
+        ]
+      }
+    ],
+    "prompt": "How many planters must the studio sell each year to break even?",
+    "options": [
+      "1,500",
+      "2,570",
+      "3,600",
+      "4,500"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Contribution per planter: $36 − $21 = $15",
+      "Break-even volume: $54,000 ÷ $15 = 3,600 planters"
+    ],
+    "shortcut": "Divide the fixed costs by the contribution, never by the price: 54 ÷ 15 = 3.6, so 3,600.",
+    "check": {
+      "kind": "value",
+      "answer": "54000 / (36 - 21)"
+    }
+  },
+  {
+    "id": "au-002",
+    "skill": "break-even-payback",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A laundromat owner is replacing her old dryers with a heat-pump dryer bank costing $18,000. The new dryers cut the electricity bill by $520 a month, but their service contract adds $70 a month."
+      }
+    ],
+    "prompt": "How many months will the new dryers take to pay back their cost?",
+    "options": [
+      "32 months",
+      "35 months",
+      "40 months",
+      "45 months"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Net monthly saving: $520 − $70 = $450",
+      "Payback: $18,000 ÷ $450 = 40 months"
+    ],
+    "shortcut": "Net the saving first: $450 a month. 18,000 ÷ 450 is the same as 180 ÷ 4.5 = 40.",
+    "check": {
+      "kind": "value",
+      "answer": "18000 / (520 - 70)"
+    }
+  },
+  {
+    "id": "au-003",
+    "skill": "break-even-payback",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A gym chain is opening a spin studio. The studio's rent, bikes and instructors cost $96,000 a year. Each class visit costs $6 in towels, water and cleaning. The chain expects 4,000 class visits a year."
+      }
+    ],
+    "prompt": "What price per class visit lets the studio exactly break even?",
+    "options": [
+      "$24",
+      "$27",
+      "$30",
+      "$33"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Fixed cost per visit: $96,000 ÷ 4,000 = $24",
+      "Break-even price: $24 + $6 = $30"
+    ],
+    "shortcut": "Spread the fixed costs over the visits, then add the cost of each visit back on: 24 + 6.",
+    "check": {
+      "kind": "value",
+      "answer": "96000 / 4000 + 6"
+    }
+  },
+  {
+    "id": "au-004",
+    "skill": "break-even-payback",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A bookshop café's average ticket is $8. Ingredients and packaging take 35% of each ticket. Staff, rent and utilities cost $13,000 a month whatever the sales."
+      }
+    ],
+    "prompt": "What monthly revenue does the café need to break even?",
+    "options": [
+      "$14,000",
+      "$17,550",
+      "$20,000",
+      "$26,000"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Each dollar of revenue keeps 100% − 35% = 65 cents",
+      "Break-even revenue: $13,000 ÷ 0.65 = $20,000"
+    ],
+    "shortcut": "Divide fixed costs by the share of revenue kept: 13 ÷ 0.65 = 20. Adding 35% to the fixed costs is the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "13000 / (1 - 35 / 100)"
+    }
+  },
+  {
+    "id": "au-005",
+    "skill": "break-even-payback",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A hotel is replacing all its lighting with LEDs for $84,000. The switch saves $30,000 a year in electricity and a further $5,000 a year in replacement bulbs and labour."
+      }
+    ],
+    "prompt": "How long will the LED lighting take to pay for itself?",
+    "options": [
+      "1.6 years",
+      "2.0 years",
+      "2.4 years",
+      "2.8 years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Annual saving: $30,000 + $5,000 = $35,000",
+      "Payback: $84,000 ÷ $35,000 = 2.4 years"
+    ],
+    "shortcut": "Count every saving: 84 ÷ 35 = 12 ÷ 5, which is 2.4 years.",
+    "check": {
+      "kind": "value",
+      "answer": "84000 / (30000 + 5000)"
+    }
+  },
+  {
+    "id": "au-006",
+    "skill": "break-even-payback",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A food truck sells tacos for $4.50 each. Ingredients and wrapping cost $1.70 per taco. The truck's lease, permit and parking cost $1,400 a week."
+      }
+    ],
+    "prompt": "How many tacos must the truck sell each week to break even?",
+    "options": [
+      "311",
+      "420",
+      "500",
+      "560"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Contribution per taco: $4.50 − $1.70 = $2.80",
+      "Break-even volume: $1,400 ÷ $2.80 = 500 tacos"
+    ],
+    "shortcut": "1,400 ÷ 2.8 = 14,000 ÷ 28 = 500.",
+    "check": {
+      "kind": "value",
+      "answer": "1400 / (4.50 - 1.70)"
+    }
+  },
+  {
+    "id": "au-007",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A board-game publisher is preparing a new strategy title, sold to retailers at $28 a copy."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Manufacturing: $9.50 per copy",
+          "Freight to retailers: $1.30 per copy",
+          "Designer royalty: 10% of the retailer price",
+          "Artwork and rules editing: $24,000, one-off",
+          "Playtesting events: $6,000, one-off",
+          "Trade-show marketing: $15,600, one-off"
+        ]
+      }
+    ],
+    "prompt": "Which is closest to the number of copies the publisher must sell to recover its one-off costs?",
+    "options": [
+      "2,120",
+      "2,650",
+      "3,170",
+      "3,800"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "One-off costs: $24,000 + $6,000 + $15,600 = $45,600",
+      "Royalty: 10% × $28 = $2.80 per copy",
+      "Contribution per copy: $28 − $9.50 − $1.30 − $2.80 = $14.40",
+      "Break-even: $45,600 ÷ $14.40 ≈ 3,167 copies, closest to 3,170"
+    ],
+    "shortcut": "Leaving out the royalty gives 45,600 ÷ 17.20 ≈ 2,650, the trap. With it, 45,600 ÷ 14.4: 14.4 × 3,000 = 43,200, and the remaining 2,400 ÷ 14.4 ≈ 167.",
+    "check": {
+      "kind": "value",
+      "answer": "(24000 + 6000 + 15600) / (28 - 9.50 - 1.30 - 10 / 100 * 28)"
+    }
+  },
+  {
+    "id": "au-008",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A courier firm is choosing between a diesel van and an electric van for its city routes. The electric van costs $14,400 more to buy. Either van would cover 30,000 km a year."
+      },
+      {
+        "type": "table",
+        "title": "Running costs",
+        "headers": [
+          "",
+          "Diesel van",
+          "Electric van"
+        ],
+        "rows": [
+          [
+            "Fuel or charging per km",
+            "$0.14",
+            "$0.05"
+          ],
+          [
+            "Servicing per year",
+            "$1,800",
+            "$900"
+          ]
+        ]
+      }
+    ],
+    "prompt": "How many years of running-cost savings will repay the electric van's extra purchase price?",
+    "options": [
+      "4.0 years",
+      "4.8 years",
+      "5.3 years",
+      "6.0 years"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Energy saving: 30,000 km × ($0.14 − $0.05) = $2,700 a year",
+      "Servicing saving: $1,800 − $900 = $900 a year",
+      "Payback: $14,400 ÷ ($2,700 + $900) = 4.0 years"
+    ],
+    "shortcut": "Work only with differences: 9 cents × 30,000 = $2,700, plus $900, is $3,600 a year; 14,400 ÷ 3,600 = 4.",
+    "check": {
+      "kind": "value",
+      "answer": "14400 / (30000 * (0.14 - 0.05) + (1800 - 900))"
+    }
+  },
+  {
+    "id": "au-009",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A dental practice is considering a digital intraoral scanner to replace physical impressions. It takes 60 impressions a month."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Physical impression today: $38 each in materials and lab fees",
+          "Digital impression with the scanner: $8 each in lab fees",
+          "Scanner software subscription: $400 a month"
+        ]
+      }
+    ],
+    "prompt": "The practice will only buy the scanner if the savings repay its purchase price within 2 years. What is the most it should pay for the scanner?",
+    "options": [
+      "$16,800",
+      "$24,000",
+      "$28,800",
+      "$33,600"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Impression saving: 60 × ($38 − $8) = $1,800 a month",
+      "Net saving after the subscription: $1,800 − $400 = $1,400 a month",
+      "Over 24 months: $1,400 × 24 = $33,600"
+    ],
+    "shortcut": "Net the subscription off before multiplying: 1,400 × 24 = 1,400 × 25 − 1,400 = 33,600.",
+    "check": {
+      "kind": "value",
+      "answer": "(60 * (38 - 8) - 400) * 24"
+    }
+  },
+  {
+    "id": "au-010",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A cinema's snack counter sells popcorn and soft drinks. Each snack customer buys exactly one item: 60% choose popcorn and 40% a drink. The counter's staff and equipment cost $10,560 a month."
+      },
+      {
+        "type": "table",
+        "title": "Contribution per item",
+        "headers": [
+          "Item",
+          "Contribution"
+        ],
+        "rows": [
+          [
+            "Popcorn",
+            "$3.20"
+          ],
+          [
+            "Soft drink",
+            "$2.10"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which is closest to the number of snack customers the counter needs each month to break even?",
+    "options": [
+      "3,830",
+      "3,980",
+      "4,360",
+      "5,030"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Average contribution per customer: 0.6 × $3.20 + 0.4 × $2.10 = $1.92 + $0.84 = $2.76",
+      "Break-even: $10,560 ÷ $2.76 ≈ 3,826 customers, closest to 3,830"
+    ],
+    "shortcut": "Weight the contributions by the mix, not a plain average ($2.65 gives 3,980, the trap). 2.76 × 3,800 = 10,488, leaving 72 ÷ 2.76 ≈ 26 more.",
+    "check": {
+      "kind": "value",
+      "answer": "10560 / (60 / 100 * 3.20 + 40 / 100 * 2.10)"
+    }
+  },
+  {
+    "id": "au-011",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A pet-treat subscription box costs $25 a month. Each box costs $16 to fill and ship, and the card processor keeps 4% of the fee. The company spends $72 in advertising to win each new subscriber."
+      }
+    ],
+    "prompt": "How many months must a new subscriber stay before the company recovers the cost of winning them?",
+    "options": [
+      "6 months",
+      "8 months",
+      "9 months",
+      "12 months"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Card fee: 4% × $25 = $1 a month",
+      "Contribution per month: $25 − $16 − $1 = $8",
+      "Months to recover $72: $72 ÷ $8 = 9 months"
+    ],
+    "shortcut": "Forgetting the 4% fee gives 72 ÷ 9 = 8 months. With it, the margin is $8 and the answer 9.",
+    "check": {
+      "kind": "value",
+      "answer": "72 / (25 - 16 - 4 / 100 * 25)"
+    }
+  },
+  {
+    "id": "au-012",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A boutique hotel has 40 rooms and is open every day of the year."
+      },
+      {
+        "type": "table",
+        "title": "Hotel economics",
+        "headers": [
+          "Item",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Average room rate per night",
+            "$150"
+          ],
+          [
+            "Cleaning, laundry and amenities per occupied room-night",
+            "$40"
+          ],
+          [
+            "Annual fixed costs",
+            "$1,124,200"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What average occupancy does the hotel need over the year to break even?",
+    "options": [
+      "51%",
+      "64%",
+      "70%",
+      "77%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Contribution per occupied room-night: $150 − $40 = $110",
+      "Room-nights needed: $1,124,200 ÷ $110 = 10,220",
+      "Room-nights available: 40 × 365 = 14,600",
+      "Occupancy: 10,220 ÷ 14,600 = 70%"
+    ],
+    "shortcut": "Contribution per available room-night at 100% occupancy is 14,600 × $110 ≈ $1.6m; $1.12m ÷ $1.6m = 0.7, so 70%.",
+    "check": {
+      "kind": "value",
+      "answer": "1124200 / (150 - 40) / (40 * 365) * 100"
+    }
+  },
+  {
+    "id": "au-013",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A bakery chain is investing $240,000 in an automated dough line. At full output the line replaces 3 bakers, each costing $42,000 a year, but adds $18,000 a year in maintenance and $6,000 a year in electricity. During the first year the line is being commissioned, so all of its first-year savings and costs are half of the full-year figures."
+      }
+    ],
+    "prompt": "Which is closest to the time the dough line takes to pay back its investment?",
+    "options": [
+      "1.9 years",
+      "2.4 years",
+      "2.9 years",
+      "3.4 years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Full-year net saving: 3 × $42,000 − $18,000 − $6,000 = $102,000",
+      "First-year net saving: $102,000 ÷ 2 = $51,000",
+      "Still to recover after year 1: $240,000 − $51,000 = $189,000",
+      "Further time: $189,000 ÷ $102,000 ≈ 1.85 years, so about 2.85 years in all, closest to 2.9"
+    ],
+    "shortcut": "A half-speed first year is like losing half a year: 240 ÷ 102 ≈ 2.35 years, plus half a year, about 2.85 years.",
+    "check": {
+      "kind": "value",
+      "answer": "1 + (240000 - (3 * 42000 - 18000 - 6000) / 2) / (3 * 42000 - 18000 - 6000)"
+    }
+  },
+  {
+    "id": "au-014",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A co-working operator rents desks at $320 per desk per month. Each occupied desk costs $70 a month in cleaning, utilities and coffee."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The lease on the first floor costs $27,500 a month and holds up to 100 desks",
+          "Filling more than 100 desks requires a second floor, which holds another 100 desks",
+          "The second floor adds $9,000 a month in lease and $4,500 a month for a community manager"
+        ]
+      }
+    ],
+    "prompt": "How many desks must be occupied each month for the operator to break even?",
+    "options": [
+      "110 desks",
+      "164 desks",
+      "190 desks",
+      "218 desks"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Contribution per desk: $320 − $70 = $250 a month",
+      "One floor: $27,500 ÷ $250 = 110 desks, more than the 100 it holds, so a second floor is needed",
+      "Two floors: ($27,500 + $9,000 + $4,500) ÷ $250 = $41,000 ÷ $250 = 164 desks"
+    ],
+    "shortcut": "Always check a break-even volume against capacity. 110 is impossible on one floor; add the step in fixed cost and divide again.",
+    "check": {
+      "kind": "value",
+      "answer": "(27500 + 9000 + 4500) / (320 - 70)"
+    }
+  },
+  {
+    "id": "au-015",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A logistics company is evaluating route-planning software costing $180,000 upfront. Fuel savings are expected to be $40,000 in the first year and to rise by $10,000 in each following year as drivers adopt the tool."
+      }
+    ],
+    "prompt": "Approximately how long will the software take to pay back its upfront cost?",
+    "options": [
+      "2.3 years",
+      "3.0 years",
+      "3.4 years",
+      "4.5 years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Savings by year: $40,000, $50,000, $60,000, $70,000",
+      "Cumulative after 3 years: $150,000, leaving $30,000",
+      "Part of year 4: $30,000 ÷ $70,000 ≈ 0.43, so about 3.4 years"
+    ],
+    "shortcut": "Add the savings year by year until you pass the cost; dividing by the first year's saving (4.5 years) ignores the growth.",
+    "check": {
+      "kind": "value",
+      "answer": "3 + (180000 - (40000 + (40000 + 10000) + (40000 + 2 * 10000))) / (40000 + 3 * 10000)"
+    }
+  },
+  {
+    "id": "au-016",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A print shop is choosing between two copier leases."
+      },
+      {
+        "type": "table",
+        "title": "Lease terms",
+        "headers": [
+          "",
+          "Copier A",
+          "Copier B"
+        ],
+        "rows": [
+          [
+            "Monthly lease",
+            "$600",
+            "$250"
+          ],
+          [
+            "Charge per page",
+            "$0.02",
+            "$0.045"
+          ],
+          [
+            "Toner",
+            "Included",
+            "$0.006 per page"
+          ],
+          [
+            "Service visit fee",
+            "$50 per month",
+            "Included"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Above roughly what monthly volume does Copier A become the cheaper choice?",
+    "options": [
+      "12,900 pages",
+      "14,000 pages",
+      "16,000 pages",
+      "17,800 pages"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Fixed cost gap: ($600 + $50) − $250 = $400 a month more for A",
+      "Per-page gap: ($0.045 + $0.006) − $0.02 = $0.031 a page more for B",
+      "Indifference volume: $400 ÷ $0.031 ≈ 12,900 pages"
+    ],
+    "shortcut": "Compare the extra fixed cost with the per-page saving. Ignoring toner and service gives 350 ÷ 0.025 = 14,000, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "(600 + 50 - 250) / (0.045 + 0.006 - 0.02)"
+    }
+  },
+  {
+    "id": "au-017",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An online fitness platform has 12,000 members paying $30 a month. Streaming and support cost $6 per member per month. Management proposes cutting the price to $25 to attract more members."
+      }
+    ],
+    "prompt": "By roughly what percentage must membership grow for total monthly contribution to stay the same after the price cut?",
+    "options": [
+      "17%",
+      "21%",
+      "26%",
+      "32%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Contribution today: 12,000 × ($30 − $6) = $288,000 a month",
+      "Contribution per member after the cut: $25 − $6 = $19",
+      "Members needed: $288,000 ÷ $19 ≈ 15,160, which is about 26% more"
+    ],
+    "shortcut": "Ratio of margins: 24 ÷ 19 ≈ 1.26; the price falls 17%, but the margin falls by 5 ÷ 24 ≈ 21%, and volume must rise 5 ÷ 19 ≈ 26%.",
+    "check": {
+      "kind": "value",
+      "answer": "(12000 * (30 - 6) / (25 - 6) / 12000 - 1) * 100"
+    }
+  },
+  {
+    "id": "au-018",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A grain farm pays a contractor $95 per hectare to harvest its 1,200 hectares each year. It could instead buy its own harvester for $380,000 and sell it later for an expected $80,000."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Fuel and operator for its own harvester: $28 per hectare",
+          "Insurance and storage: $15,000 a year"
+        ]
+      }
+    ],
+    "prompt": "Which is closest to the number of years of use after which the harvester's savings cover its net cost (purchase price less resale value)?",
+    "options": [
+      "3.7 years",
+      "4.6 years",
+      "5.2 years",
+      "5.8 years"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Saving per hectare: $95 − $28 = $67, so 1,200 × $67 = $80,400 a year",
+      "Net annual saving: $80,400 − $15,000 = $65,400",
+      "Net cost: $380,000 − $80,000 = $300,000",
+      "Years: $300,000 ÷ $65,400 ≈ 4.6"
+    ],
+    "shortcut": "Net both sides first: $300k of cost against about $65k a year; 65 × 4.6 ≈ 300. Forgetting resale gives 5.8, forgetting insurance gives 3.7 years.",
+    "check": {
+      "kind": "value",
+      "answer": "(380000 - 80000) / (1200 * (95 - 28) - 15000)"
+    }
+  },
+  {
+    "id": "bk-bcg-q14-b",
+    "modelledOn": "bcg-q14",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Brightpage publishes school textbooks and pays an agency to proofread them. The plan is to take on its own proofreaders for the science titles, replacing both the agency and the editors who correct errors found after printing. Editors earn $34 per hour on average and proofreaders $14 per hour."
+      },
+      {
+        "type": "table",
+        "title": "Cost study: cost by series ($)",
+        "headers": [
+          "",
+          "Science titles",
+          "History titles"
+        ],
+        "rows": [
+          [
+            "Total cost",
+            "47,000",
+            "27,000"
+          ],
+          [
+            "Cost from proofreading agency",
+            "8,600",
+            "16,000"
+          ],
+          [
+            "Number of errors found",
+            "312",
+            "41"
+          ],
+          [
+            "Cost of correcting errors (by editors)",
+            "31,700",
+            "3,700"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the most time the new proofreaders could take on the science titles and still make the plan worth switching to?",
+    "options": [
+      "3250 hours",
+      "2250 hours",
+      "2750 hours",
+      "2850 hours"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Bringing the work in-house removes the proofreading agency cost and the correction cost on the science titles: $8,600 + $31,700 = $40,300.",
+      "At $14 per hour that pays for 40,300 ÷ 14 = 2,879 proofreader hours, so 2,850 is the largest option that still pays.",
+      "3,250 hours would cost $45,500 and exceed the saving.",
+      "The $34 editor wage is not needed."
+    ],
+    "shortcut": "The saving is the science titles' $8,600 + $31,700 = $40,300, and the $34 wage is a distractor. 14 × 2,800 = 39,200 leaves $1,100, about 79 more hours, so the limit is about 2,879 hours: 2,850 fits.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "14 * 3250 <= 8600 + 31700 ? 3250 : -1000000",
+        "14 * 2250 <= 8600 + 31700 ? 2250 : -1000000",
+        "14 * 2750 <= 8600 + 31700 ? 2750 : -1000000",
+        "14 * 2850 <= 8600 + 31700 ? 2850 : -1000000"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q14-c",
+    "modelledOn": "bcg-q14",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Hotline Appliances buys in the wiring for its ovens from a contractor. It proposes to hire its own assemblers for the oven range, replacing both the contractor and the technicians who repair faulty units. The average wage is $31 per hour for technicians and $15 per hour for assemblers."
+      },
+      {
+        "type": "table",
+        "title": "Cost analysis: cost by range ($)",
+        "headers": [
+          "",
+          "Oven range",
+          "Hob range"
+        ],
+        "rows": [
+          [
+            "Total cost",
+            "48,600",
+            "26,500"
+          ],
+          [
+            "Cost from wiring contractor",
+            "14,000",
+            "12,500"
+          ],
+          [
+            "Number of faulty units found",
+            "157",
+            "19"
+          ],
+          [
+            "Cost of repairing faulty units (by technicians)",
+            "27,600",
+            "2,400"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the maximum time the assemblers can take to wire the oven range for it to be worth moving to this proposal?",
+    "options": [
+      "3200 hours",
+      "2500 hours",
+      "2750 hours",
+      "1800 hours"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Bringing the work in-house removes the wiring contractor cost and the repair cost on the oven range: $14,000 + $27,600 = $41,600.",
+      "At $15 per hour that pays for 41,600 ÷ 15 = 2,773 assembler hours, so 2,750 is the largest option that still pays.",
+      "3,200 hours would cost $48,000 and exceed the saving.",
+      "The $31 technician wage is not needed."
+    ],
+    "shortcut": "Only $14,000 + $27,600 = $41,600 on the oven range is saved. 15 × 2,800 = 42,000 is too much and 15 × 2,750 = 41,250 fits, so 2,750 hours is the most that pays.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "15 * 3200 <= 14000 + 27600 ? 3200 : -1000000",
+        "15 * 2500 <= 14000 + 27600 ? 2500 : -1000000",
+        "15 * 2750 <= 14000 + 27600 ? 2750 : -1000000",
+        "15 * 1800 <= 14000 + 27600 ? 1800 : -1000000"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q14-d",
+    "modelledOn": "bcg-q14",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Saucery makes cooking sauces and uses an outside firm to label the jars it exports. The idea is to employ its own labellers for the export range, replacing both the labelling firm and the warehouse staff who relabel wrongly labelled batches. Wages average $23 per hour for warehouse staff and $16 per hour for labellers."
+      },
+      {
+        "type": "table",
+        "title": "Cost review: cost by range ($)",
+        "headers": [
+          "",
+          "Export range",
+          "Home range"
+        ],
+        "rows": [
+          [
+            "Total cost",
+            "57,200",
+            "19,600"
+          ],
+          [
+            "Cost from labelling firm",
+            "7,800",
+            "11,200"
+          ],
+          [
+            "Number of batches relabelled",
+            "96",
+            "11"
+          ],
+          [
+            "Cost of relabelling (by warehouse staff)",
+            "41,500",
+            "1,300"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the maximum number of hours the labellers can take over the export range for the switch to pay off?",
+    "options": [
+      "3050 hours",
+      "3500 hours",
+      "2500 hours",
+      "2900 hours"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Bringing the work in-house removes the labelling firm cost and the relabelling cost on the export range: $7,800 + $41,500 = $49,300.",
+      "At $16 per hour that pays for 49,300 ÷ 16 = 3,081 labeller hours, so 3,050 is the largest option that still pays.",
+      "3,500 hours would cost $56,000 and exceed the saving.",
+      "The $23 warehouse wage is not needed."
+    ],
+    "shortcut": "The export range saves $7,800 + $41,500 = $49,300. 16 × 3,100 = 49,600 is just too much and 16 × 3,050 = 48,800 fits, so 3,050 is the highest option that still pays.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "16 * 3050 <= 7800 + 41500 ? 3050 : -1000000",
+        "16 * 3500 <= 7800 + 41500 ? 3500 : -1000000",
+        "16 * 2500 <= 7800 + 41500 ? 2500 : -1000000",
+        "16 * 2900 <= 7800 + 41500 ? 2900 : -1000000"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q14-e",
+    "modelledOn": "bcg-q14",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Restwell makes sofas and armchairs and sends its frames to an outside workshop to be upholstered. Management proposes hiring its own upholsterers for the sofa range, replacing both the workshop and the repair staff who fix sofas returned with faults. Repair staff earn $29 per hour on average and upholsterers $17 per hour."
+      },
+      {
+        "type": "table",
+        "title": "Upholstery study: cost by range ($)",
+        "headers": [
+          "",
+          "Sofa range",
+          "Armchair range"
+        ],
+        "rows": [
+          [
+            "Total cost",
+            "57,400",
+            "25,400"
+          ],
+          [
+            "Cost from upholstery workshop",
+            "46,600",
+            "19,400"
+          ],
+          [
+            "Number of faulty sofas returned",
+            "31",
+            "21"
+          ],
+          [
+            "Cost of fixing faulty sofas (by repair staff)",
+            "3,700",
+            "2,300"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the most hours the new upholsterers could spend on the sofa range for the switch to still be worthwhile?",
+    "options": [
+      "2700 hours",
+      "2950 hours",
+      "3300 hours",
+      "2800 hours"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Upholstering in-house removes the workshop cost and the repair cost on the sofa range: $46,600 + $3,700 = $50,300.",
+      "At $17 per hour that pays for 50,300 ÷ 17 = 2,959 upholsterer hours, so 2,950 is the largest option that still pays.",
+      "3,300 hours would cost $56,100 and exceed the saving.",
+      "The $29 repair wage is not needed."
+    ],
+    "shortcut": "Only the sofa range's $46,600 + $3,700 = $50,300 is saved. 17 × 3,000 = 51,000 is just too much and 17 × 2,950 = 50,150 fits, so 2,950 hours is the most that pays.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "17 * 2700 <= 46600 + 3700 ? 2700 : -1000000",
+        "17 * 2950 <= 46600 + 3700 ? 2950 : -1000000",
+        "17 * 3300 <= 46600 + 3700 ? 3300 : -1000000",
+        "17 * 2800 <= 46600 + 3700 ? 2800 : -1000000"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q14-f",
+    "modelledOn": "bcg-q14",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Velocraft builds bicycles and pays a wheel-building firm to lace and true the wheels for its bikes. The suggestion is to train in-house wheel builders for the road range, so that neither the firm nor the mechanics who true faulty wheels are needed there. The average wage is $27 per hour for mechanics and $18 per hour for wheel builders."
+      },
+      {
+        "type": "table",
+        "title": "Workshop audit: cost by bike range ($)",
+        "headers": [
+          "",
+          "Road range",
+          "City range"
+        ],
+        "rows": [
+          [
+            "Total cost",
+            "69,300",
+            "22,600"
+          ],
+          [
+            "Cost from wheel-building firm",
+            "59,400",
+            "16,400"
+          ],
+          [
+            "Number of faulty wheels found",
+            "142",
+            "37"
+          ],
+          [
+            "Cost of truing faulty wheels (by mechanics)",
+            "3,200",
+            "820"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the maximum time the wheel builders can take on the road range wheels if moving to the suggestion is to pay off?",
+    "options": [
+      "3250 hours",
+      "3350 hours",
+      "3800 hours",
+      "3450 hours"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Building wheels in-house removes the wheel-building firm cost and the truing cost on the road range: $59,400 + $3,200 = $62,600.",
+      "At $18 per hour that pays for 62,600 ÷ 18 = 3,478 wheel-builder hours, so 3,450 is the largest option that still pays.",
+      "3,800 hours would cost $68,400 and exceed the saving.",
+      "The $27 mechanic wage is not needed."
+    ],
+    "shortcut": "The road range saves $59,400 + $3,200 = $62,600; the $27 wage is a distractor. 18 × 3,500 = 63,000 is just too much and 18 × 3,450 = 62,100 fits, so 3,450 is the highest option that still pays.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "18 * 3250 <= 59400 + 3200 ? 3250 : -1000000",
+        "18 * 3350 <= 59400 + 3200 ? 3350 : -1000000",
+        "18 * 3800 <= 59400 + 3200 ? 3800 : -1000000",
+        "18 * 3450 <= 59400 + 3200 ? 3450 : -1000000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q05-a",
+    "modelledOn": "pracB-q05",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Crumb & Co runs 26 bakeries. Each shop divides and shapes its bread dough by hand, and an equipment dealer is offering a dough divider that portions and rounds the dough automatically in the shop."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Dividing dough by hand and by machine",
+        "headers": [
+          "",
+          "By hand",
+          "By machine"
+        ],
+        "rows": [
+          [
+            "Labor cost per hour",
+            "$12.00",
+            "$12.00"
+          ],
+          [
+            "Labor time to divide and shape dough",
+            "6 minutes per kg",
+            "1 hour for 40 kg"
+          ],
+          [
+            "Set-up and cleaning time per day",
+            "15 minutes",
+            "50 minutes"
+          ],
+          [
+            "Other costs",
+            "None",
+            "$13,640 to buy and run the divider over its life"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If a divider lasts four years and each bakery trades 310 days a year, what is the smallest amount of dough a bakery must divide each day for buying a divider to save it money?",
+    "options": [
+      "18kg per day",
+      "21kg per day",
+      "24kg per day",
+      "27kg per day"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "By hand: 6 minutes per kg = $1.20 per kg, plus 15 minutes = $3.00 a day of set-up",
+      "Machine: 40 kg an hour = $0.30 per kg, plus 50 minutes = $10.00 a day of set-up, plus $13,640 ÷ 4 = $3,410 a year = $11 a day",
+      "Daily saving at y kg = 0.9y − 7, which must exceed 11, so y > 20 kg",
+      "The smallest option above 20 is 21kg per day"
+    ],
+    "shortcut": "Turn the divider into a daily cost first: $3,410 a year ÷ 310 days = $11 a day, then solve 0.9y > 18.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(12 * 6 / 60 - 12 / 40) * 18 - 12 * (50 - 15) / 60 - 13640 / 4 / 310 > 0 ? -18 : -1000",
+        "(12 * 6 / 60 - 12 / 40) * 21 - 12 * (50 - 15) / 60 - 13640 / 4 / 310 > 0 ? -21 : -1000",
+        "(12 * 6 / 60 - 12 / 40) * 24 - 12 * (50 - 15) / 60 - 13640 / 4 / 310 > 0 ? -24 : -1000",
+        "(12 * 6 / 60 - 12 / 40) * 27 - 12 * (50 - 15) / 60 - 13640 / 4 / 310 > 0 ? -27 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q05-b",
+    "modelledOn": "pracB-q05",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A contract caterer runs 43 staff canteens in office buildings, open on working days only. Kitchen staff peel potatoes by hand, and a supplier has offered a peeling machine for each canteen."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Peeling potatoes by hand and by machine",
+        "headers": [
+          "",
+          "By hand",
+          "By machine"
+        ],
+        "rows": [
+          [
+            "Hourly staff cost",
+            "$15.00",
+            "$15.00"
+          ],
+          [
+            "Staff time to peel potatoes",
+            "4 minutes per kg",
+            "1 hour for 50 kg"
+          ],
+          [
+            "Daily set-up and clean-down time",
+            "12 minutes",
+            "40 minutes"
+          ],
+          [
+            "Other costs",
+            "None",
+            "$13,720 for the machine and its running costs, over its whole life"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Assuming a machine lasts four years and the canteens open 245 days a year, what is the least weight of potatoes a canteen would need to peel each day before buying a machine pays?",
+    "options": [
+      "23kg per day",
+      "27kg per day",
+      "31kg per day",
+      "35kg per day"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "By hand: 4 minutes per kg = $1.00 per kg, plus 12 minutes = $3.00 a day of set-up",
+      "Machine: 50 kg an hour = $0.30 per kg, plus 40 minutes = $10.00 a day of set-up, plus $13,720 ÷ 4 = $3,430 a year = $14 a day",
+      "Daily saving at y kg = 0.7y − 7, which must exceed 14, so y > 30 kg",
+      "The smallest option above 30 is 31kg per day"
+    ],
+    "shortcut": "Make the machine a daily cost first: $3,430 ÷ 245 days = $14 a day, then solve 0.7y > 21.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(15 * 4 / 60 - 15 / 50) * 23 - 15 * (40 - 12) / 60 - 13720 / 4 / 245 > 0 ? -23 : -1000",
+        "(15 * 4 / 60 - 15 / 50) * 27 - 15 * (40 - 12) / 60 - 13720 / 4 / 245 > 0 ? -27 : -1000",
+        "(15 * 4 / 60 - 15 / 50) * 31 - 15 * (40 - 12) / 60 - 13720 / 4 / 245 > 0 ? -31 : -1000",
+        "(15 * 4 / 60 - 15 / 50) * 35 - 15 * (40 - 12) / 60 - 13720 / 4 / 245 > 0 ? -35 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q05-c",
+    "modelledOn": "pracB-q05",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A fishmonger runs a dozen fish counters, open six days a week. Its staff fillet whole fish by hand, and a maker of filleting machines has quoted for installing one at each counter."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Filleting fish by hand and by machine",
+        "headers": [
+          "",
+          "By hand",
+          "By machine"
+        ],
+        "rows": [
+          [
+            "Wage per staff hour",
+            "$18.00",
+            "$18.00"
+          ],
+          [
+            "Staff time to fillet fish",
+            "6 minutes per kg",
+            "1 hour for 30 kg"
+          ],
+          [
+            "Set-up and cleaning time per day",
+            "20 minutes",
+            "50 minutes"
+          ],
+          [
+            "Other costs",
+            "None",
+            "$19,278 to buy and run the machine over its life"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Assuming a machine lasts three years and the counters open 306 days a year, what is the lowest daily weight of fish a counter must fillet before buying a machine pays off?",
+    "options": [
+      "21kg per day",
+      "26kg per day",
+      "31kg per day",
+      "36kg per day"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "By hand: 6 minutes per kg = $1.80 per kg, plus 20 minutes = $6.00 a day of set-up",
+      "Machine: 30 kg an hour = $0.60 per kg, plus 50 minutes = $15.00 a day of set-up, plus $19,278 ÷ 3 = $6,426 a year = $21 a day",
+      "Daily saving at y kg = 1.2y − 9, which must exceed 21, so y > 25 kg",
+      "The smallest option above 25 is 26kg per day"
+    ],
+    "shortcut": "Make the machine a daily cost first: $6,426 ÷ 306 days = $21 a day, then solve 1.2y > 30.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(18 * 6 / 60 - 18 / 30) * 21 - 18 * (50 - 20) / 60 - 19278 / 3 / 306 > 0 ? -21 : -1000",
+        "(18 * 6 / 60 - 18 / 30) * 26 - 18 * (50 - 20) / 60 - 19278 / 3 / 306 > 0 ? -26 : -1000",
+        "(18 * 6 / 60 - 18 / 30) * 31 - 18 * (50 - 20) / 60 - 19278 / 3 / 306 > 0 ? -31 : -1000",
+        "(18 * 6 / 60 - 18 / 30) * 36 - 18 * (50 - 20) / 60 - 19278 / 3 / 306 > 0 ? -36 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q05-d",
+    "modelledOn": "pracB-q05",
+    "skill": "break-even-payback",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A chain of juice bars has 22 counters in office lobbies, open on weekdays. Staff squeeze fresh orange juice by hand, and a supplier has offered to fit an automatic juicer at every counter."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Squeezing orange juice by hand and by machine",
+        "headers": [
+          "",
+          "By hand",
+          "By machine"
+        ],
+        "rows": [
+          [
+            "Staff cost per hour",
+            "$12.00",
+            "$12.00"
+          ],
+          [
+            "Staff time to squeeze juice",
+            "15 minutes per litre",
+            "1 hour for 20 litres"
+          ],
+          [
+            "Set-up and cleaning time per day",
+            "15 minutes",
+            "40 minutes"
+          ],
+          [
+            "Other costs",
+            "None",
+            "$6,630 to buy and run the juicer over its life"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If a juicer lasts two years and the bars open 255 days a year, what is the smallest daily volume of juice a bar would have to squeeze for a juicer to be the cheaper choice?",
+    "options": [
+      "6 litres per day",
+      "7 litres per day",
+      "8 litres per day",
+      "9 litres per day"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "By hand: 15 minutes per litre = $3.00 per litre, plus 15 minutes = $3.00 a day of set-up",
+      "Machine: 20 litres an hour = $0.60 per litre, plus 40 minutes = $8.00 a day of set-up, plus $6,630 ÷ 2 = $3,315 a year = $13 a day",
+      "Daily saving at y litres = 2.4y − 5, which must exceed 13, so y > 7.5 litres",
+      "The smallest option above 7.5 is 8 litres per day"
+    ],
+    "shortcut": "Make the juicer a daily cost first: $3,315 ÷ 255 days = $13 a day, then solve 2.4y > 18.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(12 * 15 / 60 - 12 / 20) * 6 - 12 * (40 - 15) / 60 - 6630 / 2 / 255 > 0 ? -6 : -1000",
+        "(12 * 15 / 60 - 12 / 20) * 7 - 12 * (40 - 15) / 60 - 6630 / 2 / 255 > 0 ? -7 : -1000",
+        "(12 * 15 / 60 - 12 / 20) * 8 - 12 * (40 - 15) / 60 - 6630 / 2 / 255 > 0 ? -8 : -1000",
+        "(12 * 15 / 60 - 12 / 20) * 9 - 12 * (40 - 15) / 60 - 6630 / 2 / 255 > 0 ? -9 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracC-q16-a",
+    "modelledOn": "pracC-q16",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "PureFlow Water Inc delivers bottled drinking water to offices and rents them the water coolers, in several large cities. The team is looking at the economics of a typical delivery van on one of its routes."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The average weekly fee per office is $35",
+          "Each office gets two deliveries a week, of three 19-litre bottles each",
+          "A van and its driver cost $560 per day, and vans run five days a week",
+          "Filling and cleaning each bottle costs PureFlow $0.20"
+        ]
+      }
+    ],
+    "prompt": "If there are no other costs, which of the following is the SMALLEST number of offices a van must serve for its weekly route to make a profit?",
+    "options": [
+      "76",
+      "80",
+      "84",
+      "88"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Weekly van cost: $560 × 5 = $2,800.",
+      "Bottle cost per office: 2 × 3 × $0.20 = $1.20, so each office contributes $35 − $1.20 = $33.80.",
+      "Break-even: 2,800 ÷ 33.80 ≈ 82.8 offices, so 84 is the smallest option at which it makes a profit."
+    ],
+    "shortcut": "80 offices would just cover the $2,800 before bottle costs; at $1.20 an office the van needs about 3 more.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(35 - 2 * 3 * 0.2) * 76 - 560 * 5 > 0 ? -76 : -1000",
+        "(35 - 2 * 3 * 0.2) * 80 - 560 * 5 > 0 ? -80 : -1000",
+        "(35 - 2 * 3 * 0.2) * 84 - 560 * 5 > 0 ? -84 : -1000",
+        "(35 - 2 * 3 * 0.2) * 88 - 560 * 5 > 0 ? -88 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracC-q16-b",
+    "modelledOn": "pracC-q16",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "SiteLoo Inc rents portable toilets to building sites and services them on site with pump trucks. The team wants to know how many toilets one service truck needs in order to be profitable."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The average rental fee is $60 per toilet per week",
+          "Each toilet is serviced twice a week, and each service removes 0.16 cubic metres of waste on average",
+          "A truck, its fuel and its driver cost $1,500 per day, and trucks work five days a week",
+          "The treatment plant charges SiteLoo $6 per cubic metre of waste"
+        ]
+      }
+    ],
+    "prompt": "Assuming there are no other costs, what is the SMALLEST number of toilets one truck must service for its week's work to make a profit?",
+    "options": [
+      "125",
+      "130",
+      "135",
+      "140"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Weekly truck cost: $1,500 × 5 = $7,500.",
+      "Treatment cost per toilet: 2 × 0.16 m³ × $6 = $1.92, so each toilet contributes $60 − $1.92 = $58.08.",
+      "Break-even: 7,500 ÷ 58.08 ≈ 129.1 toilets, so 130 is the smallest option at which it makes a profit."
+    ],
+    "shortcut": "125 toilets would just cover the $7,500 before treatment; at about $2 a toilet the truck needs about 4 more.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(60 - 2 * 0.16 * 6) * 125 - 1500 * 5 > 0 ? -125 : -1000",
+        "(60 - 2 * 0.16 * 6) * 130 - 1500 * 5 > 0 ? -130 : -1000",
+        "(60 - 2 * 0.16 * 6) * 135 - 1500 * 5 > 0 ? -135 : -1000",
+        "(60 - 2 * 0.16 * 6) * 140 - 1500 * 5 > 0 ? -140 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracC-q16-c",
+    "modelledOn": "pracC-q16",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Nightwatch Security Inc sells mobile patrols to shops, warehouses and offices: a guard drives from site to site during the night and checks each one. The team examines the profitability of a typical patrol car."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Each site pays an average fee of $110 per week",
+          "Each site is checked twice a week, and each check adds about 4 km of driving",
+          "Fuel and wear for the extra driving cost $0.60 per km",
+          "The patrol car and its guard cost $1,100 per night and work seven nights a week"
+        ]
+      }
+    ],
+    "prompt": "Ignoring any other costs, which of the following is the SMALLEST number of sites a patrol car needs for its week of patrols to be profitable?",
+    "options": [
+      "66",
+      "70",
+      "74",
+      "78"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Weekly car and guard cost: $1,100 × 7 = $7,700.",
+      "Driving cost per site: 2 × 4 km × $0.60 = $4.80, so each site contributes $110 − $4.80 = $105.20.",
+      "Break-even: 7,700 ÷ 105.20 ≈ 73.2 sites, so 74 is the smallest option at which it makes a profit."
+    ],
+    "shortcut": "70 sites would just cover the $7,700 before driving costs; at $4.80 a site the car needs about 3 more.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(110 - 2 * 4 * 0.6) * 66 - 1100 * 7 > 0 ? -66 : -1000",
+        "(110 - 2 * 4 * 0.6) * 70 - 1100 * 7 > 0 ? -70 : -1000",
+        "(110 - 2 * 4 * 0.6) * 74 - 1100 * 7 > 0 ? -74 : -1000",
+        "(110 - 2 * 4 * 0.6) * 78 - 1100 * 7 > 0 ? -78 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracC-q16-d",
+    "modelledOn": "pracC-q16",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "ShredSafe Inc collects confidential papers from offices, shreds them and sends the shredded paper on to a recycling plant. The team is analysing how profitable a typical collection truck is."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The average weekly fee per office is $120",
+          "Each office has two collections a week, of 0.15 tonnes of paper each on average",
+          "A truck with its crew and fuel costs $2,160 per day, working five days a week",
+          "The recycling plant charges $12 per tonne to take the shredded paper"
+        ]
+      }
+    ],
+    "prompt": "If there are no costs other than those above, what is the SMALLEST number of offices a truck must collect from to make a profit over its week?",
+    "options": [
+      "90",
+      "94",
+      "98",
+      "102"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Weekly truck cost: $2,160 × 5 = $10,800.",
+      "Plant charge per office: 2 × 0.15 tonnes × $12 = $3.60, so each office contributes $120 − $3.60 = $116.40.",
+      "Break-even: 10,800 ÷ 116.40 ≈ 92.8 offices, so 94 is the smallest option at which it makes a profit."
+    ],
+    "shortcut": "90 offices would just cover the $10,800 before the plant charge; at $3.60 an office the truck needs about 3 more.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(120 - 2 * 0.15 * 12) * 90 - 2160 * 5 > 0 ? -90 : -1000",
+        "(120 - 2 * 0.15 * 12) * 94 - 2160 * 5 > 0 ? -94 : -1000",
+        "(120 - 2 * 0.15 * 12) * 98 - 2160 * 5 > 0 ? -98 : -1000",
+        "(120 - 2 * 0.15 * 12) * 102 - 2160 * 5 > 0 ? -102 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracC-q22-a",
+    "modelledOn": "pracC-q22",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Swiftline is a parcel carrier. Its trading result is delivery revenue less two costs: the fees it pays self-employed drivers and the cost of running its depots."
+      },
+      {
+        "type": "paragraph",
+        "text": "Last year Swiftline earned $350 million of delivery revenue. Driver fees amounted to 78% of that revenue and depot costs to 27%, so the firm traded at a loss."
+      }
+    ],
+    "prompt": "Suppose driver fees stay at 78% of delivery revenue while depot costs stay at last year's level in dollars. By approximately what percentage would Swiftline's delivery revenue need to rise for its trading result to reach zero?",
+    "options": [
+      "5%",
+      "18%",
+      "23%",
+      "27%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Depot costs stay at 27% × $350m = $94.5m",
+      "Each $1 of revenue keeps $1 − $0.78 = $0.22 after driver fees, so break-even revenue is $94.5m ÷ 0.22 ≈ $430m",
+      "Increase: $430m ÷ $350m − 1 ≈ 23%"
+    ],
+    "shortcut": "The loss is 5% of revenue and each extra dollar of revenue covers 22 cents of it, so revenue must rise by 5 ÷ 22 ≈ 23%.",
+    "check": {
+      "kind": "value",
+      "answer": "(27 * 350 / 100) / (1 - 78 / 100) / 350 * 100 - 100"
+    }
+  },
+  {
+    "id": "bk-pracC-q22-b",
+    "modelledOn": "pracC-q22",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Voltaro is an electricity retailer. Its operating result is sales revenue minus the cost of wholesale power and network charges, which moves with sales, and minus its operating costs for billing, call centres and marketing."
+      },
+      {
+        "type": "paragraph",
+        "text": "Last year Voltaro's sales were $600 million. Wholesale power and network charges cost 87% of sales and operating costs came to 17% of sales, producing an operating loss."
+      }
+    ],
+    "prompt": "If wholesale power and network charges continue to cost 87% of sales and operating costs remain at last year's amount in dollars, roughly what percentage growth in sales would bring Voltaro's operating result up to exactly zero?",
+    "options": [
+      "4%",
+      "17%",
+      "24%",
+      "31%"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Operating costs stay at 17% × $600m = $102m",
+      "Each $1 of sales keeps $1 − $0.87 = $0.13 after power and network charges, so break-even sales are $102m ÷ 0.13 ≈ $785m",
+      "Increase: $785m ÷ $600m − 1 ≈ 31%"
+    ],
+    "shortcut": "The loss is 4% of sales and each extra dollar of sales covers only 13 cents of it, so sales must grow by 4 ÷ 13 ≈ 31%.",
+    "check": {
+      "kind": "value",
+      "answer": "(17 * 600 / 100) / (1 - 87 / 100) / 600 * 100 - 100"
+    }
+  },
+  {
+    "id": "bk-pracC-q22-c",
+    "modelledOn": "pracC-q22",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Kitbox sells meal kits by subscription. Ingredients, packing and delivery rise and fall with the boxes it sends out; its kitchens, technology and marketing are a fixed cost."
+      },
+      {
+        "type": "paragraph",
+        "text": "In the year just ended Kitbox had revenue of $150 million. Ingredients, packing and delivery cost 63% of revenue and fixed costs 48%, so it made a loss."
+      }
+    ],
+    "prompt": "Assume ingredients, packing and delivery go on costing 63% of revenue and fixed costs stay at last year's dollar figure. Revenue would have to grow by about what percentage for Kitbox to cover all its costs and no more?",
+    "options": [
+      "11%",
+      "23%",
+      "30%",
+      "48%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Fixed costs stay at 48% × $150m = $72m",
+      "Each $1 of revenue keeps $1 − $0.63 = $0.37 after ingredients, packing and delivery, so break-even revenue is $72m ÷ 0.37 ≈ $195m",
+      "Increase: $195m ÷ $150m − 1 ≈ 30%"
+    ],
+    "shortcut": "The loss is 11% of revenue and each extra dollar keeps 37 cents, so revenue must grow by 11 ÷ 37 ≈ 30%.",
+    "check": {
+      "kind": "value",
+      "answer": "(48 * 150 / 100) / (1 - 63 / 100) / 150 * 100 - 100"
+    }
+  },
+  {
+    "id": "bk-pracC-q22-d",
+    "modelledOn": "pracC-q22",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "GrocerCo is a wholesaler supplying groceries to independent shops. What it makes is sales revenue less the cost of the goods it buys in, which scales with sales, and less operating costs such as warehouses and trucks."
+      },
+      {
+        "type": "paragraph",
+        "text": "Last year GrocerCo's sales were $520 million. Goods bought in cost 93% of sales and operating costs 9% of sales, so the wholesaler lost money."
+      }
+    ],
+    "prompt": "Approximately what percentage rise in sales would GrocerCo need in order to break even, if goods bought in still cost 93% of sales and operating costs stay at last year's level in dollars?",
+    "options": [
+      "2%",
+      "9%",
+      "22%",
+      "29%"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Operating costs stay at 9% × $520m = $46.8m",
+      "Each $1 of sales keeps $1 − $0.93 = $0.07 after goods bought in, so break-even sales are $46.8m ÷ 0.07 ≈ $669m",
+      "Increase: $669m ÷ $520m − 1 ≈ 29%"
+    ],
+    "shortcut": "The loss is 2% of sales and each extra dollar of sales keeps only 7 cents, so sales must rise by 2 ÷ 7 ≈ 29%.",
+    "check": {
+      "kind": "value",
+      "answer": "(9 * 520 / 100) / (1 - 93 / 100) / 520 * 100 - 100"
+    }
+  },
+  {
+    "id": "bk-pst1-q05-a",
+    "modelledOn": "pst1-q05",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A gym chain has been shown a treadmill that technicians have to visit less often and that uses less electricity. The CEO wonders if switching would lower the gyms' running costs."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Treadmills, existing and replacement",
+        "headers": [
+          "",
+          "Current model",
+          "New model"
+        ],
+        "rows": [
+          [
+            "Service visits per year",
+            "4",
+            "2"
+          ],
+          [
+            "Technician time per visit",
+            "1.5h",
+            "3.5h"
+          ],
+          [
+            "Technician cost per hour",
+            "$10",
+            "$10"
+          ],
+          [
+            "Annual electricity use",
+            "1,600 kWh",
+            "1,250 kWh"
+          ],
+          [
+            "Electricity price",
+            "12c / kWh",
+            "12c / kWh"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If the CEO will only switch to the new treadmill when the savings on electricity and servicing pay back the extra cost within three years, what is the highest extra price per treadmill that the CEO should be willing to pay for the new model over the current one?",
+    "options": [
+      "$96",
+      "$106",
+      "$116",
+      "$126"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Current: 4 × 1.5h × $10 = $60 servicing + 1,600 kWh × $0.12 = $192 electricity, so $252 a year",
+      "New: 2 × 3.5h × $10 = $70 servicing + 1,250 kWh × $0.12 = $150 electricity, so $220 a year",
+      "Saving $32 a year × 3 years = $96"
+    ],
+    "shortcut": "Electricity saves 350 kWh × 12c = $42, but servicing takes 7h − 6h = 1h more, costing $10; $32 × 3 = $96.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * ((4 * 1.5 * 10 + 1600 * 12 / 100) - (2 * 3.5 * 10 + 1250 * 12 / 100))"
+    }
+  },
+  {
+    "id": "bk-pst1-q05-b",
+    "modelledOn": "pst1-q05",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A hotel group's equipment supplier is offering a new ice machine that draws less power and needs servicing less often. The CEO has asked if the hotels would save money by changing over."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Current ice machine vs new model",
+        "headers": [
+          "",
+          "Current model",
+          "New model"
+        ],
+        "rows": [
+          [
+            "Service visits per year",
+            "3",
+            "1"
+          ],
+          [
+            "Technician time per visit",
+            "2h",
+            "4.5h"
+          ],
+          [
+            "Technician cost per hour",
+            "$14",
+            "$14"
+          ],
+          [
+            "Annual electricity consumption",
+            "2,900 kWh",
+            "2,450 kWh"
+          ],
+          [
+            "Electricity cost",
+            "8c / kWh",
+            "8c / kWh"
+          ]
+        ]
+      }
+    ],
+    "prompt": "The CEO will approve the new ice machine only if what it saves on servicing and electricity covers the extra purchase price in three years or less. What is the most the hotel group should agree to pay for each new machine on top of the price of the current model?",
+    "options": [
+      "$161",
+      "$171",
+      "$181",
+      "$191"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Current: 3 × 2h × $14 = $84 servicing + 2,900 kWh × $0.08 = $232 electricity, so $316 a year",
+      "New: 1 × 4.5h × $14 = $63 servicing + 2,450 kWh × $0.08 = $196 electricity, so $259 a year",
+      "Saving $57 a year × 3 years = $171"
+    ],
+    "shortcut": "Servicing saves 6h − 4.5h = 1.5h × $14 = $21 and electricity 450 kWh × 8c = $36; $57 × 3 = $171.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * ((3 * 2 * 14 + 2900 * 8 / 100) - (1 * 4.5 * 14 + 2450 * 8 / 100))"
+    }
+  },
+  {
+    "id": "bk-pst1-q05-c",
+    "modelledOn": "pst1-q05",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A chain of print and copy shops is considering a newer photocopier said to run more cheaply and break down less. The CEO would like to see whether the switch pays."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Photocopiers, old and newer",
+        "headers": [
+          "",
+          "Current model",
+          "New model"
+        ],
+        "rows": [
+          [
+            "Maintenance visits per year",
+            "3",
+            "2"
+          ],
+          [
+            "Engineer time per visit",
+            "2.5h",
+            "3.5h"
+          ],
+          [
+            "Engineer cost per hour",
+            "$13",
+            "$13"
+          ],
+          [
+            "Annual electricity consumption",
+            "2,050 kWh",
+            "1,700 kWh"
+          ],
+          [
+            "Electricity cost",
+            "11c / kWh",
+            "11c / kWh"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Suppose the CEO buys the new photocopiers only if the savings on electricity and maintenance repay the extra investment within at most three years. What is the largest price difference between the new model and the current model that the CEO should accept for each machine?",
+    "options": [
+      "$115",
+      "$125",
+      "$135",
+      "$145"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Current: 3 × 2.5h × $13 = $97.50 maintenance + 2,050 kWh × $0.11 = $225.50 electricity, so $323 a year",
+      "New: 2 × 3.5h × $13 = $91 maintenance + 1,700 kWh × $0.11 = $187 electricity, so $278 a year",
+      "Saving $45 a year × 3 years = $135"
+    ],
+    "shortcut": "Maintenance saves 7.5h − 7h = 0.5h × $13 = $6.50 and electricity 350 kWh × 11c = $38.50; $45 × 3 = $135.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * ((3 * 2.5 * 13 + 2050 * 11 / 100) - (2 * 3.5 * 13 + 1700 * 11 / 100))"
+    }
+  },
+  {
+    "id": "bk-pst1-q05-d",
+    "modelledOn": "pst1-q05",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A vending operator can buy a drinks dispenser that calls for fewer engineer call-outs and a little less electricity. The CEO is asking whether swapping out the old dispensers would cut costs."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Dispensers in use vs replacement",
+        "headers": [
+          "",
+          "Current model",
+          "New model"
+        ],
+        "rows": [
+          [
+            "Maintenance visits per year",
+            "6",
+            "3"
+          ],
+          [
+            "Labour time per visit",
+            "1.5h",
+            "2h"
+          ],
+          [
+            "Labour cost per hour",
+            "$8",
+            "$8"
+          ],
+          [
+            "Annual electricity consumption",
+            "2,250 kWh",
+            "2,125 kWh"
+          ],
+          [
+            "Electricity cost",
+            "8c / kWh",
+            "8c / kWh"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If the CEO is only willing to swap dispensers when the electricity and maintenance savings make up for the extra outlay within three years, what is the highest premium per dispenser the operator should accept for the new model compared with the current one?",
+    "options": [
+      "$72",
+      "$82",
+      "$92",
+      "$102"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Current: 6 × 1.5h × $8 = $72 labour + 2,250 kWh × $0.08 = $180 electricity, so $252 a year",
+      "New: 3 × 2h × $8 = $48 labour + 2,125 kWh × $0.08 = $170 electricity, so $218 a year",
+      "Saving $34 a year × 3 years = $102"
+    ],
+    "shortcut": "Labour saves 9h − 6h = 3h × $8 = $24 and electricity 125 kWh × 8c = $10; $34 × 3 = $102.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * ((6 * 1.5 * 8 + 2250 * 8 / 100) - (3 * 2 * 8 + 2125 * 8 / 100))"
+    }
+  },
+  {
+    "id": "bk-pst1-q05-e",
+    "modelledOn": "pst1-q05",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A laundromat chain has received a quote for a washer that is serviced half as frequently and is more energy efficient. Its CEO questions whether the upgrade would trim operating expenses."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Washer currently installed vs upgrade",
+        "headers": [
+          "",
+          "Current model",
+          "New model"
+        ],
+        "rows": [
+          [
+            "Service visits per year",
+            "6",
+            "3"
+          ],
+          [
+            "Technician time per visit",
+            "1.5h",
+            "2.5h"
+          ],
+          [
+            "Technician cost per hour",
+            "$16",
+            "$16"
+          ],
+          [
+            "Annual electricity consumption",
+            "1,380 kWh",
+            "1,130 kWh"
+          ],
+          [
+            "Electricity cost",
+            "12c / kWh",
+            "12c / kWh"
+          ]
+        ]
+      }
+    ],
+    "prompt": "The CEO will replace the washers only if the savings on servicing and electricity pay back the extra purchase cost within three years at most. What is the highest additional price per machine the chain should be prepared to pay for the new model rather than the current one?",
+    "options": [
+      "$132",
+      "$142",
+      "$152",
+      "$162"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Current: 6 × 1.5h × $16 = $144 servicing + 1,380 kWh × $0.12 = $165.60 electricity, so $309.60 a year",
+      "New: 3 × 2.5h × $16 = $120 servicing + 1,130 kWh × $0.12 = $135.60 electricity, so $255.60 a year",
+      "Saving $54 a year × 3 years = $162"
+    ],
+    "shortcut": "Servicing saves 9h − 7.5h = 1.5h × $16 = $24 and electricity 250 kWh × 12c = $30; $54 × 3 = $162.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * ((6 * 1.5 * 16 + 1380 * 12 / 100) - (3 * 2.5 * 16 + 1130 * 12 / 100))"
+    }
+  },
+  {
+    "id": "bk-pst1-q05-f",
+    "modelledOn": "pst1-q05",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A supermarket chain's refrigeration supplier is promoting a chiller cabinet that keeps food cold on less electricity and has a more reliable compressor. The CEO asks whether the stores would come out ahead."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Chiller cabinets compared",
+        "headers": [
+          "",
+          "Current model",
+          "New model"
+        ],
+        "rows": [
+          [
+            "Maintenance visits per year",
+            "4",
+            "3"
+          ],
+          [
+            "Engineer time per visit",
+            "2.5h",
+            "3h"
+          ],
+          [
+            "Engineer cost per hour",
+            "$14",
+            "$14"
+          ],
+          [
+            "Annual electricity consumption",
+            "4,620 kWh",
+            "4,210 kWh"
+          ],
+          [
+            "Electricity cost",
+            "10c / kWh",
+            "10c / kWh"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Assuming the CEO will only buy the new cabinets if the gains in maintenance and electricity recover the added cost within a three-year period, what is the largest extra amount per cabinet the CEO should agree to pay for the new model over the current model?",
+    "options": [
+      "$165",
+      "$175",
+      "$185",
+      "$195"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Current: 4 × 2.5h × $14 = $140 maintenance + 4,620 kWh × $0.10 = $462 electricity, so $602 a year",
+      "New: 3 × 3h × $14 = $126 maintenance + 4,210 kWh × $0.10 = $421 electricity, so $547 a year",
+      "Saving $55 a year × 3 years = $165"
+    ],
+    "shortcut": "Maintenance saves 10h − 9h = 1h × $14 = $14 and electricity 410 kWh × 10c = $41; $55 × 3 = $165.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * ((4 * 2.5 * 14 + 4620 * 10 / 100) - (3 * 3 * 14 + 4210 * 10 / 100))"
+    }
+  },
+  {
+    "id": "bk-pst1-q05-g",
+    "modelledOn": "pst1-q05",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A restaurant chain is looking at a dishwasher that its maker says breaks down less and runs on less power. The CEO would like to know whether swapping it in would cut the kitchens' costs."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Kitchen dishwashers, existing and proposed",
+        "headers": [
+          "",
+          "Current model",
+          "New model"
+        ],
+        "rows": [
+          [
+            "Repair visits per year",
+            "3",
+            "2"
+          ],
+          [
+            "Labour time per visit",
+            "2h",
+            "2.5h"
+          ],
+          [
+            "Labour cost per hour",
+            "$17",
+            "$17"
+          ],
+          [
+            "Annual electricity use",
+            "3,250 kWh",
+            "2,700 kWh"
+          ],
+          [
+            "Electricity price",
+            "8c / kWh",
+            "8c / kWh"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If the CEO approves the new dishwashers only when the savings on repairs and electricity make up for the higher price within three years or less, what is the most the chain should accept to pay per dishwasher on top of the price of the current model?",
+    "options": [
+      "$163",
+      "$173",
+      "$183",
+      "$193"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Current: 3 × 2h × $17 = $102 repairs + 3,250 kWh × $0.08 = $260 electricity, so $362 a year",
+      "New: 2 × 2.5h × $17 = $85 repairs + 2,700 kWh × $0.08 = $216 electricity, so $301 a year",
+      "Saving $61 a year × 3 years = $183"
+    ],
+    "shortcut": "Repairs save 6h − 5h = 1h × $17 = $17 and electricity 550 kWh × 8c = $44; $61 × 3 = $183.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * ((3 * 2 * 17 + 3250 * 8 / 100) - (2 * 2.5 * 17 + 2700 * 8 / 100))"
+    }
+  },
+  {
+    "id": "bk-pst1-q05-h",
+    "modelledOn": "pst1-q05",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A group of dental clinics is weighing an upgraded autoclave for sterilising instruments, which its manufacturer claims is thriftier with electricity and less demanding to look after. The CEO wants the figures checked before committing."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Autoclaves, present and upgraded",
+        "headers": [
+          "",
+          "Current model",
+          "New model"
+        ],
+        "rows": [
+          [
+            "Service visits per year",
+            "4",
+            "2"
+          ],
+          [
+            "Labour time per service visit",
+            "1.5h",
+            "2.5h"
+          ],
+          [
+            "Labour cost per hour",
+            "€18",
+            "€18"
+          ],
+          [
+            "Annual electricity consumption",
+            "2,100 kWh",
+            "1,850 kWh"
+          ],
+          [
+            "Electricity cost",
+            "14c / kWh",
+            "14c / kWh"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Suppose the CEO will only change over if what the new autoclave saves on electricity and servicing repays the extra investment within three years. What is the maximum price difference per autoclave between the new and the current model that the CEO should accept?",
+    "options": [
+      "€149",
+      "€159",
+      "€169",
+      "€179"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Current: 4 × 1.5h × €18 = €108 labour + 2,100 kWh × €0.14 = €294 electricity, so €402 a year",
+      "New: 2 × 2.5h × €18 = €90 labour + 1,850 kWh × €0.14 = €259 electricity, so €349 a year",
+      "Saving €53 a year × 3 years = €159"
+    ],
+    "shortcut": "Labour saves 6h − 5h = 1h × €18 = €18 and electricity 250 kWh × 14c = €35; €53 × 3 = €159.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * ((4 * 1.5 * 18 + 2100 * 14 / 100) - (2 * 2.5 * 18 + 1850 * 14 / 100))"
+    }
+  },
+  {
+    "id": "bk-pst1-q22-a",
+    "modelledOn": "pst1-q22",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "ShineGo is a car wash chain with a strong position in its home market. To keep its revenue growing it plans to build new automatic wash sites in seven regions where it does not yet operate."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Comparable car wash sites by region",
+        "headers": [
+          "Region",
+          "Avg wash time",
+          "Avg cars washed per day per site"
+        ],
+        "rows": [
+          [
+            "Region 1",
+            "6min 20sec",
+            "250"
+          ],
+          [
+            "Region 2",
+            "5min 45sec",
+            "400"
+          ],
+          [
+            "Region 3",
+            "7min 10sec",
+            "150"
+          ],
+          [
+            "Region 4",
+            "4min 55sec",
+            "550"
+          ],
+          [
+            "Region 5",
+            "6min 15sec",
+            "350"
+          ],
+          [
+            "Region 6",
+            "8min 30sec",
+            "200"
+          ],
+          [
+            "Region 7",
+            "5min 15sec",
+            "450"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Suppose ShineGo has just finished an $800,000 site in Region 5 and makes a profit of $2 on every car it washes. By which point will that site have paid back its cost?",
+    "options": [
+      "In 2.9 years",
+      "In 3.0 years",
+      "In 3.1 years",
+      "In 3.2 years"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Region 5 washes 350 cars a day, so profit is 350 × $2 × 365 = $255,500 a year.",
+      "$800,000 ÷ $255,500 = 3.13 years.",
+      "3.1 years is not quite enough to pay back, so the earliest option that covers the cost is 3.2 years."
+    ],
+    "shortcut": "The site makes $700 a day, about $255,000 a year, so three years cover about $766,000, a little short of $800,000. Payback comes just after 3.1 years: round up to 3.2.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "2.9 * 350 * 2 * 365 >= 800000 ? -2.9 : -1000",
+        "3.0 * 350 * 2 * 365 >= 800000 ? -3.0 : -1000",
+        "3.1 * 350 * 2 * 365 >= 800000 ? -3.1 : -1000",
+        "3.2 * 350 * 2 * 365 >= 800000 ? -3.2 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q22-c",
+    "modelledOn": "pst1-q22",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "FuelPoint operates fuel stations, each with a small convenience shop, throughout its domestic market. The board now wants to expand abroad and has collected figures on comparable stations in seven countries."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Comparable FuelPoint stations by country",
+        "headers": [
+          "Country",
+          "Avg time at the pump",
+          "Avg customers per day per station"
+        ],
+        "rows": [
+          [
+            "Country A",
+            "4min 25sec",
+            "800"
+          ],
+          [
+            "Country B",
+            "6min 50sec",
+            "450"
+          ],
+          [
+            "Country C",
+            "5min 30sec",
+            "650"
+          ],
+          [
+            "Country D",
+            "3min 45sec",
+            "1,000"
+          ],
+          [
+            "Country E",
+            "7min 15sec",
+            "350"
+          ],
+          [
+            "Country F",
+            "5min 40sec",
+            "550"
+          ],
+          [
+            "Country G",
+            "4min 10sec",
+            "850"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Assume FuelPoint has just opened a $2 million station in Country B, which makes a profit of $5 per customer. At which point will the station have fully paid for itself?",
+    "options": [
+      "In 2.3 years",
+      "In 2.4 years",
+      "In 2.5 years",
+      "In 2.6 years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Country B has 450 customers a day, so profit is 450 × $5 × 365 = $821,250 a year.",
+      "$2,000,000 ÷ $821,250 = 2.44 years.",
+      "By 2.4 years the station is still slightly short of break-even; the earliest option past it is 2.5 years."
+    ],
+    "shortcut": "$2,250 a day is about $820,000 a year; $2 million ÷ $0.82 million ≈ 2.44. Break-even comes after that point, so round up to 2.5.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "2.3 * 450 * 5 * 365 >= 2 * 1000000 ? -2.3 : -1000",
+        "2.4 * 450 * 5 * 365 >= 2 * 1000000 ? -2.4 : -1000",
+        "2.5 * 450 * 5 * 365 >= 2 * 1000000 ? -2.5 : -1000",
+        "2.6 * 450 * 5 * 365 >= 2 * 1000000 ? -2.6 : -1000"
+      ]
+    }
+  }
+]

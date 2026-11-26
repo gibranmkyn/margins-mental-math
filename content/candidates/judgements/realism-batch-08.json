@@ -1,0 +1,12 @@
+[
+  { "id": "j-0996103f", "judge": "realism", "fail": false, "why": "Hand squeezing at 4 litres an hour, a juicer at 20 litres an hour costing $6,630 over two years and a $12 staff cost are believable, and 255 days fits weekday opening." },
+  { "id": "j-57afd275", "judge": "realism", "fail": false, "why": "Each survey row is a subset no larger than the one above it for both small (3,170 to 495) and large (1,428 to 193) offices, so the funnel is consistent." },
+  { "id": "j-8fbf4cd5", "judge": "realism", "fail": false, "why": "Wash prices of EUR 2.50 to 4.00, a few hundred customers per laundromat a week and EUR 3 of vending spend are believable, and a 40% vending margin against 12% for the trade is within a factor of a few." },
+  { "id": "j-70944fc4", "judge": "realism", "fail": false, "why": "78 cafes taking about $3.4 to $3.8 million a month (roughly $45,000 to $49,000 per cafe) is believable, as are the modest index movements." },
+  { "id": "j-f6b6579a", "judge": "realism", "fail": false, "why": "Division revenues of EUR 31 to 168 million with margins of 4% to 23%, and print magazines declining, are believable for a publisher." },
+  { "id": "j-7927e1ae", "judge": "realism", "fail": false, "why": "About $1.75 to $1.96 million of monthly fare revenue across 140 local routes is believable for a regional bus operator, as are the modest index movements." },
+  { "id": "j-0e00b1eb", "judge": "realism", "fail": false, "why": "With 3 small, 5 mid and 4 big-market teams the segment figures reproduce the stated $68.5 million revenue, $4.15 million profit and a 50% average win rate, and the magnitudes are believable for a baseball league." },
+  { "id": "j-9a6509c7", "judge": "realism", "fail": false, "why": "Hand dividing at 10 kg an hour, a divider at 40 kg an hour costing $13,640 over four years and a $12 wage are believable for a 26-shop bakery chain." },
+  { "id": "j-b5860498", "judge": "realism", "fail": false, "why": "A farm-diesel distributor with $380 million sales, fuel at 94% and operating costs at 7% losing 1% is consistent and believable for a thin-margin fuel distributor." },
+  { "id": "j-3279ffd5", "judge": "realism", "fail": false, "why": "Module revenues of $1 to $43 million (about $143 million in all) against 6 to 82 developers per module, roughly $460,000 per developer, are believable for a loss-making software firm." }
+]

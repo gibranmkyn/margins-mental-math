@@ -1,0 +1,12 @@
+[
+  {"id":"j-197f2d70","judge":"ambiguity","fail":false,"why":"Only A can be concluded: seasonal hours are about 103 of 200 total in Week 1 (about 52%, the only week where seasonal hours outnumber permanent ones, next highest about 37%); B and D need staffing norms the exhibit does not give, and C is false because rentals 150 to 75 and hours 200 to 100 both halve, all on gridlines."},
+  {"id":"j-3877df04","judge":"ambiguity","fail":false,"why":"A: kg per capita is 37 x 0.4 = 14.8 against C 14.4, B 12.4 and D 11.7."},
+  {"id":"j-59c631d2","judge":"ambiguity","fail":false,"why":"A: T is 56,903 / 2.30 = about $24,700 against U about $22,900, V about $6,700 and X about $4,600."},
+  {"id":"j-f2e307c6","judge":"ambiguity","fail":false,"why":"B: 5/6 of 120,000 = 100,000 single-visit people make 100,000 of the 250,000 visits, which is 40%; 17% and 83% are the per-person shares, a trap."},
+  {"id":"j-29fc623a","judge":"ambiguity","fail":false,"why":"B: with guests kept at 15,000 and non-guests 30,000, 45% x 30,000 - 40% x 15,000 = 13,500 - 6,000 = 7,500; holding the 35,000 total (about 5,833) or the 20,000 non-guests (5,000) gives no printed option."},
+  {"id":"j-4c27ceca","judge":"ambiguity","fail":false,"why":"C: expected profit missed is U 0.5 x 7 = 3.5, W 0.2 x 16 = 3.2, T 0.2 x 8 = 1.6, V 0.3 x 5 = 1.5, all points on gridlines or exactly halfway between them."},
+  {"id":"j-b8cb9308","judge":"ambiguity","fail":false,"why":"C: drops are Q2 48.5%, Q4 32.8%, Q1 17.4%, Q3 14.0%, Q5 8.6%, with no ties."},
+  {"id":"j-c7658539","judge":"ambiguity","fail":true,"why":"The question does not say which group stays the same size: keeping owners at 17,000 (other drivers 68,000) gives 17,000 - 6,800 = 10,200 (D), while keeping other drivers at 34,000 (owners 8,500) gives 8,500 - 3,400 = 5,100 (A)."},
+  {"id":"j-e9187b73","judge":"ambiguity","fail":false,"why":"B is false: total spend is GBP 9m + 152,000 x GBP 45 = GBP 15.84m, so Group B gets 18% / 9,500 = about GBP 300 per member, while A (475), C (218) and D (155) match exactly; leaving out the fixed cost makes all four false, so it is not a competing reading."},
+  {"id":"j-07aab364","judge":"ambiguity","fail":false,"why":"C: containers not accepted are 27% x 4,718 = 1,274 thousand in June against 19% x 4,630 = 880 thousand otherwise, a difference of 394 thousand; the other options are 88 thousand steps away."}
+]

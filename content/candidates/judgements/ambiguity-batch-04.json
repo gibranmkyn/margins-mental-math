@@ -1,0 +1,12 @@
+[
+  { "id": "j-4150c576", "judge": "ambiguity", "fail": false, "why": "Only D holds: (12+5+8)% x 28% = 7.0% of passengers, while business is 13% x 28% = 3.6% (not 3.5%), 43% is a share of long-haul passengers only (C), and B has no data." },
+  { "id": "j-4b7fda0e", "judge": "ambiguity", "fail": false, "why": "Operating costs are $102m, so sales must reach 102/0.13 = $785m, a rise of 30.8%, so D (31%)." },
+  { "id": "j-a937d8f2", "judge": "ambiguity", "fail": false, "why": "Clothing's like-for-like share is 12/36 = one third, and a third of the $144m total growth is $48m (B)." },
+  { "id": "j-20e714d8", "judge": "ambiguity", "fail": false, "why": "The pass brings 621,500 x $18 = $11.187m, leaving $4.563m = 87,300x + 21,600 x 3x, so x = $30 and a frequent roamer pays $90 at present (C)." },
+  { "id": "j-a53f8869", "judge": "ambiguity", "fail": false, "why": "With 2 small-town teams, the revenue total ($98m) gives 4.09 big-city teams and the profit total ($4.9m) gives 4.14; neither is a whole number, but only 4 (C) fits either total closely (3 or 5 miss by about 25%)." },
+  { "id": "j-a6ee81dd", "judge": "ambiguity", "fail": false, "why": "Applying the changes to the 2013 figures gives (37+43) x 0.75 + (63+59+85) x 1.3 = 60 + 269.1 = 329.1, so B." },
+  { "id": "j-7de70525", "judge": "ambiguity", "fail": false, "why": "Fixed costs are $72m, so revenue must reach 72/0.37 = $194.6m, a rise of 29.7%, so C (30%)." },
+  { "id": "j-d89f1a5a", "judge": "ambiguity", "fail": false, "why": "A 1% wage cut saves $0.65m, against $0.21m for a 1% overhead cut, $0.20m net for 1% more revenue (wages rise with it) and less for vans, so C." },
+  { "id": "j-a55e63a2", "judge": "ambiguity", "fail": false, "why": "Business's public-grant share is 0.3/1.2 = 25%, and 25% of the $18.1m total is $4.5m (C)." },
+  { "id": "j-357c1490", "judge": "ambiguity", "fail": false, "why": "Growth due to footfall is 1.6% x 111.3% = 1.78 points for Region A and 5.4% x 14.2% = 0.77 for Region J, a difference of 1.01, so 1.0 (C)." }
+]

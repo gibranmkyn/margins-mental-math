@@ -1,0 +1,12 @@
+[
+  { "id": "j-70725583", "judge": "realism", "fail": false, "why": "Electric bicycle sales of $32m to $225m per bike type, with city bikes growing fastest and mountain bikes flat, are believable." },
+  { "id": "j-cd3fc45f", "judge": "realism", "fail": false, "why": "Measuring tins per household, tin volume, unit cost and price for each market is a sensible setup for a paint maker, and the item gives no figures that could be wrong." },
+  { "id": "j-3e8450ff", "judge": "realism", "fail": false, "why": "Shares add to 100% of $360m, which means about $100k to $640k of licence revenue per reseller across 1,380 resellers, with churn of 11% to 21%; that is believable for small-firm accounting software." },
+  { "id": "j-18c2038c", "judge": "realism", "fail": false, "why": "A four-screen cinema selling about 17,000 tickets a month at about $11.50 revenue per ticket is believable, and both margins match revenue minus costs (11.0% and 8.1%)." },
+  { "id": "j-726f5ed5", "judge": "realism", "fail": false, "why": "Annual pages printed, cartridge yield and cartridge price are realistic variables for an office's toner spend, and the item gives no figures that could be wrong." },
+  { "id": "j-8d86b1ba", "judge": "realism", "fail": false, "why": "About 800 thousand cheques a month for a fictional country is believable, and the reader-machine funnel shrinks at every stage (100% to 83% to 81% to 74%), as it must." },
+  { "id": "j-dd35ccab", "judge": "realism", "fail": false, "why": "Fuel stations serving 350 to 1,000 customers a day with 4 to 7 minutes at the pump, and a $2m station earning $5 profit per customer, are believable." },
+  { "id": "j-078e4bdf", "judge": "realism", "fail": false, "why": "500,000 visits a year for a large city's zoo is believable; 200,000 visitors with four-fifths coming once means the other 40,000 average about 8.5 visits, which annual pass holders could plausibly make." },
+  { "id": "j-d5c96013", "judge": "realism", "fail": false, "why": "A patrol car covering about 70 sites with two checks each a week (about 20 checks a night) at $110 per site a week is believable, and $1,100 a night for car and guard is high but within a few times a realistic cost." },
+  { "id": "j-bf12e322", "judge": "realism", "fail": false, "why": "Office coffee at $14 to $17 per kg against a $14 per kg cost, with orders falling from 40 to 16 kg per office per month as price rises, is believable." }
+]

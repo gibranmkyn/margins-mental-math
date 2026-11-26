@@ -1,0 +1,902 @@
+{
+  "about": "Round 2 of booklet candidates: every booklet question not used in the pilot (evals/pilot-sources.json) was judged as a source. 60 of the 78 are suitable and all 60 are used; 18 are rejected (below; bcg-q03 and pst1-q12 were dropped after planning, on the source review in evals/rounds/source-review.md). Target: about 200 candidates passing the evals, planned with a margin for the pilot's drop rate (93% passed after a fix round): 218 candidates. Since fewer than 70 sources are suitable, 38 sources get 4 variants (letters a to d) and 22 get 3 (a to c); the 3-variant ones are those with the most notCovered options, loose keys, hard gridline readings, or that are trivial, plus percentage sources held back so the skill mix stays near the booklets'. 13 writer groups (eight of 5 sources, five of 4, 14 to 18 candidates each); no group holds two questions of one booklet, so never two of one case. Each source's note says what it tests and the quirks a writer keeps under the parity standard (evals/WRITING.md). Fields as in pilot-sources.json, plus variants and note.",
+  "variantsCap": 4,
+  "letters": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "totals": {
+    "sources": 60,
+    "candidates": 218,
+    "sourcesAt4": 38,
+    "sourcesAt3": 22,
+    "sourcesPerBooklet": {
+      "bcg": 3,
+      "pst1": 8,
+      "pst2": 9,
+      "pst3": 10,
+      "pracA": 6,
+      "pracB": 12,
+      "pracC": 8,
+      "sample": 4
+    },
+    "candidatesPerBooklet": {
+      "bcg": 12,
+      "pst1": 30,
+      "pst2": 33,
+      "pst3": 35,
+      "pracA": 23,
+      "pracB": 39,
+      "pracC": 30,
+      "sample": 16
+    },
+    "sourcesPerSkill": {
+      "testing-statements": 13,
+      "percentages-in-context": 18,
+      "unit-economics": 7,
+      "ratios-comparisons": 8,
+      "break-even-payback": 4,
+      "building-formulas": 4,
+      "growth-trends": 4,
+      "averages-mixes": 2
+    },
+    "candidatesPerSkill": {
+      "testing-statements": 48,
+      "percentages-in-context": 60,
+      "unit-economics": 26,
+      "ratios-comparisons": 28,
+      "break-even-payback": 16,
+      "building-formulas": 16,
+      "growth-trends": 16,
+      "averages-mixes": 8
+    },
+    "candidatesPerTier": {
+      "1": 6,
+      "2": 133,
+      "3": 79
+    },
+    "candidatesPerOptionKind": {
+      "numeric": 102,
+      "statement": 75,
+      "ranking": 19,
+      "formula": 12,
+      "label": 10
+    },
+    "candidatesWithChart": 113,
+    "candidatesReadFromGridlines": 35,
+    "candidatesClosest": 29,
+    "candidatesWithTable": 94,
+    "chartKindsSources": {
+      "bar": 20,
+      "pie": 10,
+      "line": 6,
+      "stacked-bar-100": 3,
+      "stacked-bar": 3,
+      "scatter": 3,
+      "waterfall": 2,
+      "cumulative": 2,
+      "indexed-line": 1
+    }
+  },
+  "groups": [
+    {
+      "group": 1,
+      "candidates": 17,
+      "sources": [
+        {
+          "id": "pst1-q17",
+          "skill": "growth-trends",
+          "tier": 3,
+          "options": "statement",
+          "charts": [
+            "line"
+          ],
+          "variants": 4,
+          "note": "Growth statements on a labelled three-point line chart (3 years ago, today, in 5 years): annualised rates over unequal periods, a share of total, a ten-year extrapolation. Watch: the key's 'about two times higher' (10% vs 20% a year) is loose, keep; one notCovered allowed (the projection); unequal periods are the trap."
+        },
+        {
+          "id": "pst3-q23",
+          "skill": "testing-statements",
+          "tier": 2,
+          "options": "statement",
+          "charts": [
+            "stacked-bar-100"
+          ],
+          "variants": 4,
+          "note": "Statements on shares of direct and indirect contributions from a labelled horizontal 100% stack with total bar notes. Watch: percentage-point parts drawn as a 100% stack with a bold-total note, keep that form; one bar has a zero part; all four statements are 'X is less/more than N% of total'."
+        },
+        {
+          "id": "pracC-q02",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [],
+          "table": true,
+          "variants": 3,
+          "note": "Percentage-point difference between two periods' profit margins from a monthly-averages table. Watch: days and items rows unused; the analysis records no trap (its three wrong options are fillers), so none is required; declare any real slip you reproduce (relative change instead of points, or cost / revenue); options 1.5 points apart; invented country (source's Molvania is a booklet name)."
+        },
+        {
+          "id": "pracB-q23",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "scatter"
+          ],
+          "readFromGridlines": true,
+          "closest": true,
+          "variants": 3,
+          "note": "Profit in one market = market size x share x margin, both read from a scatter (gridlines), closest. Watch: x on a gridline, y just under one (34.9 on step 5); distractors are sales (margin skipped) and near neighbours; 4 of 20 values on gridlines; three slips on the answer listed."
+        },
+        {
+          "id": "pst2-q07",
+          "skill": "ratios-comparisons",
+          "tier": 3,
+          "options": "statement",
+          "charts": [],
+          "table": true,
+          "variants": 3,
+          "note": "ROI hurdle statements: one option's annual return (customers per day x 365 x profit - 12 x monthly cost) / investment sets the rate the other must beat. Watch: options in pairs (maximum/minimum amount, at least/at most rate), the 'minimum' one is a filler; the key 'at least 30%' is loose (true hurdle about 31%), keep it as loose; same table as pst2-q05, the worked example, so avoid faithful.json's setting."
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pst1-q05",
+          "skill": "break-even-payback",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Maximum extra price for a new machine whose labour and electricity savings repay within three years. Watch: cents per kWh to dollars; options evenly spaced $10 apart (source's grid); the analysis records no trap (its three wrong options are fillers), so none is required; declare any real slip you reproduce (e.g. one year only or labour left out); small dollar figures like the source's."
+        },
+        {
+          "id": "sample-q06",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "options": "ranking",
+          "charts": [
+            "bar",
+            "bar"
+          ],
+          "variants": 4,
+          "note": "Ranks five of twelve items by revenue per analyst from two labelled horizontal bar charts. Watch: seven items unused; wrong rankings swap the close pair (0.47 vs 0.42); the 'work full-time on one product only' sentence is the source's own caveat, keep its job; same exhibit as sample-q07/q08 and the pilot's sample-q04."
+        },
+        {
+          "id": "pst3-q15",
+          "skill": "unit-economics",
+          "tier": 3,
+          "options": "statement",
+          "charts": [
+            "scatter"
+          ],
+          "table": true,
+          "readFromGridlines": true,
+          "variants": 3,
+          "note": "Which idea LEAST improves minutes per unit, with the FTE needed read from a step-joined scatter by output band. Watch: step scatter, all 12 values on gridlines; the source's option 'a total of 3 extra bakers' reads as 3 or 3.5 FTE and both give the key, keep that robustness, add no new ambiguity; best check on each option's minutes per unit; table and scenario shared with pst3-q14."
+        },
+        {
+          "id": "pracC-q25",
+          "skill": "testing-statements",
+          "tier": 2,
+          "options": "statement",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Statements comparing average premium per broker across classes and pooled pairs (share / count). Watch: pooled 'Class A and Class C' averages are loosely worded, keep; claims-ratio column and the total in the title unused."
+        },
+        {
+          "id": "pracB-q04",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "waterfall"
+          ],
+          "closest": true,
+          "variants": 3,
+          "note": "Share of a preparation cost explained by a 10% weight loss valued at the purchase price, from a labelled waterfall ($ per kg, 2 decimals), closest. Watch: loose premise (10% x price paid = cost of the loss), keep; 46% keyed as 50%; options 20/30/40/50%."
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "candidates": 14,
+      "sources": [
+        {
+          "id": "pst2-q23",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "pie",
+            "pie",
+            "pie",
+            "pie"
+          ],
+          "variants": 3,
+          "note": "Share of the whole customer base giving ratings 1 to 3 = sum of three slices x respondents' share of the base. Watch: four pies, one used; options unordered (1.1%, 11.3%, 5.2%, 7.5%); 11.25 shown as 11.3."
+        },
+        {
+          "id": "pracA-q24",
+          "skill": "testing-statements",
+          "tier": 3,
+          "options": "statement",
+          "charts": [],
+          "table": true,
+          "variants": 3,
+          "note": "'Most likely TRUE' among statements on a 9x3 table of employees by contact level, segment and company size: contacted share per company size. Watch: two notCovered options (donations, opportunity) and one no-basis statement as the source has; 'most likely' wording, keep; 93% surplus."
+        },
+        {
+          "id": "pst3-q19",
+          "skill": "growth-trends",
+          "tier": 3,
+          "options": "numeric",
+          "charts": [
+            "stacked-bar-100"
+          ],
+          "readFromGridlines": true,
+          "variants": 4,
+          "note": "Minimum years for a segment growing 20% to pass 40% of a total growing 10%; the segment's base is read from a 100% stacked bar (gridlines) x the bar-note total. Watch: seven bars, one used; real country names (Mexico, Indonesia) must become invented ones; options 2/4/6/8; 12 of 21 values on gridlines."
+        },
+        {
+          "id": "pracB-q26",
+          "skill": "building-formulas",
+          "tier": 2,
+          "options": "formula",
+          "charts": [],
+          "variants": 4,
+          "note": "Formula: income converted at the basic rate, then scaled by PPP, (c x p) / e. Watch: context is a definitions list plus one explanatory sentence; the three distractors are permutations."
+        }
+      ]
+    },
+    {
+      "group": 4,
+      "candidates": 14,
+      "sources": [
+        {
+          "id": "pst2-q21",
+          "skill": "averages-mixes",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "line",
+            "line"
+          ],
+          "readFromGridlines": true,
+          "closest": true,
+          "variants": 4,
+          "note": "Average of yearly revenue per salesperson over the last four years, from two line charts read from gridlines (one dual-axis), closest. Watch: values between gridlines on a step-25 axis (530, 570); market-size series and the other segment unused; options unordered with unit slips ($3.4m, $0.3m, $7.9m, $0.8m); 'last four years' of five shown is loose; three slips on the answer listed."
+        },
+        {
+          "id": "pst1-q09",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "statement",
+          "charts": [],
+          "variants": 3,
+          "note": "Visitors per day x share who come once; options are sentences that differ only in the number. Watch: people vs attendances base is the trap; no exhibit; source is a Manchester hospital with no currency: invent the setting, no real city."
+        },
+        {
+          "id": "pracA-q06",
+          "skill": "testing-statements",
+          "tier": 3,
+          "options": "statement",
+          "charts": [
+            "stacked-bar"
+          ],
+          "variants": 4,
+          "note": "Statements: growth from each driver = total growth x driver share, from a labelled horizontal stacked bar with shares above 100% and below 0 and bar-note totals. Watch: the '24%' statement has no basis in the source, keep one such; country names must be invented."
+        },
+        {
+          "id": "pracB-q19",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "options": "ranking",
+          "charts": [],
+          "table": true,
+          "variants": 3,
+          "note": "Ranks four countries by volatility = max - min growth (negative minima). Watch: risk-letter and corruption rows are surplus and offer a rival ranking; the definition paragraph sets the measure; table shared with the rejected pracB-q20."
+        }
+      ]
+    },
+    {
+      "group": 5,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pracB-q22",
+          "skill": "testing-statements",
+          "tier": 2,
+          "options": "statement",
+          "charts": [
+            "scatter"
+          ],
+          "readFromGridlines": true,
+          "variants": 3,
+          "note": "Statements on a scatter of margin vs share (gridlines): margin ratio between two points 'approximately 4 times'; absolute claims need market sizes. Watch: two notCovered (sales, profit contribution); exact ratio 4.35 keyed as 'approximately 4', keep that looseness but no quarter-step reading may flip it; reference lines on the scatter."
+        },
+        {
+          "id": "pst1-q25",
+          "skill": "building-formulas",
+          "tier": 2,
+          "options": "formula",
+          "charts": [],
+          "variants": 4,
+          "note": "Formula for profit per thousand litres from symbols (price, cost, cup size, cups per head); cups per head is the distractor symbol. Watch: source writes 'x' and '/', candidates must write the true signs; keep 1,000 inside the formulas; no numbers in the context."
+        },
+        {
+          "id": "pst3-q26",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "stacked-bar-100"
+          ],
+          "variants": 3,
+          "note": "GDP x summed indirect contribution points = amount attributed. Watch: loose premise (applies ten-year points to current GDP, ignores growth), keep; evenly spaced options (sourceHas wideGrid); replace the real country; 2013/2023 is the source's year pair."
+        },
+        {
+          "id": "sample-q07",
+          "skill": "growth-trends",
+          "tier": 3,
+          "options": "numeric",
+          "charts": [
+            "bar",
+            "bar"
+          ],
+          "variants": 4,
+          "note": "Minimum years for one item's share to pass half when it grows 10% and the total 5% (share grows by the ratio of growth factors); answer is the first option above about 13 years. Watch: best check with a feasibility score per option; options 10/15/20/25 evenly spaced as the source's; slipsOnAnswer listed."
+        },
+        {
+          "id": "pst2-q14",
+          "skill": "unit-economics",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Profit per item after a 10% rise: (sum of three category profits x 1.1) / total items, profits in millions. Watch: options pair each value with its ten-times slip, not ascending (copy the pattern); answer exact to the unit (325,926); 'Table 1 (Company B)' is a cut of a bigger table, keep the title style."
+        }
+      ]
+    },
+    {
+      "group": 6,
+      "candidates": 17,
+      "sources": [
+        {
+          "id": "pst3-q06",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "bar",
+            "bar",
+            "bar",
+            "bar"
+          ],
+          "variants": 3,
+          "note": "Difference in respondents giving one rating when one group is three times the other: % x N for each, subtract. Watch: four charts, one criterion used (78% surplus); options evenly spaced 4,000 to 5,500."
+        },
+        {
+          "id": "pst1-q22",
+          "skill": "break-even-payback",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Payback of one store = investment / (customers per day x profit per customer x 365); options 2.6 to 2.9 years and the key is the first option at which it has paid back (2.74 gives 2.8), so a best at-least check. Watch: waiting-time column and six other rows unused (78% surplus); rounding to nearest (2.7) is the trap, keep the result between two options."
+        },
+        {
+          "id": "pracC-q12",
+          "skill": "testing-statements",
+          "tier": 3,
+          "options": "statement",
+          "charts": [
+            "line"
+          ],
+          "readFromGridlines": true,
+          "variants": 3,
+          "note": "Statements on a three-line indexed chart (items and two hours series, on different bases) read from gridlines on a step-25 axis: proportionality, shares of hours. Watch: the index-base statement is notCovered (1 allowed); the key turns on a small fall (91 to 88) against a rise (45 to 55), keep it robust to quarter-step (6.25) readings; the last statement mixes bases loosely, keep."
+        },
+        {
+          "id": "pracB-q12",
+          "skill": "percentages-in-context",
+          "tier": 1,
+          "options": "numeric",
+          "charts": [
+            "pie",
+            "pie"
+          ],
+          "variants": 3,
+          "note": "Tier 1: respondents in a sub-branch = total x share x share from two labelled pies. Watch: options 60/360/600/2,400 each a slip; keep tier 1."
+        },
+        {
+          "id": "bcg-q15",
+          "skill": "building-formulas",
+          "tier": 3,
+          "options": "numeric",
+          "charts": [],
+          "variants": 4,
+          "note": "Chains a funnel of percentages (calls x sign-up x approval x paying) with a saving per unit (value x reduction x tax rate, split in half) into annual cash inflow. Watch: 'best estimation' is not read as closest, so the exact result must display as the keyed option ($20.8m shown as $21 million); wide uneven grid 2.5/21/25/50; invent the jurisdiction (source names Texas); the source gives the property value without a currency sign."
+        }
+      ]
+    },
+    {
+      "group": 7,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pracB-q25",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "options": "label",
+          "charts": [],
+          "table": true,
+          "variants": 3,
+          "note": "Highest income in dollars = local income / exchange rate (label options). Watch: the PPP row is unused and the trap; irregular five- and six-digit incomes."
+        },
+        {
+          "id": "pst3-q13",
+          "skill": "unit-economics",
+          "tier": 3,
+          "options": "statement",
+          "charts": [],
+          "table": true,
+          "variants": 3,
+          "note": "Approximate change in profit per item between two periods; four paired options (about 20%/40%, less/more). Watch: -43% read as 'approximately 40% less', keep the paired grid; two slips on the answer listed."
+        },
+        {
+          "id": "pst2-q02",
+          "skill": "testing-statements",
+          "tier": 3,
+          "options": "statement",
+          "charts": [
+            "line"
+          ],
+          "table": true,
+          "readFromGridlines": true,
+          "variants": 4,
+          "note": "Statements on a revenue table + margin line chart read from gridlines: one category's profit (revenue x margin) beats all others combined across four years; growth, share and margin-decline claims. Watch: axis step 2, 6 of 16 values on gridlines; the 'declined as fast' statement is the points-vs-relative trap, keep its wording; two slips on the answer listed."
+        },
+        {
+          "id": "pracC-q03",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "statement",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Approximate % change in items per day (items / days per period); four paired options (3%/5%, fewer/more). Watch: 'than in any of the other months' in two options is loose (only averages given), keep; skipping per-day gives the 3% trap."
+        },
+        {
+          "id": "pst1-q14",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "cumulative"
+          ],
+          "closest": true,
+          "variants": 4,
+          "note": "Cost of one group = difference of two cumulative % from a labelled cumulative chart x total cost (fixed + attendances x variable cost), closest. Watch: patient counts in barNoteRows and the distinct-patients note are surplus; options evenly spaced (1.8 to 2.4); pounds only with a UK setting, as the source."
+        }
+      ]
+    },
+    {
+      "group": 8,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pst1-q24",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "options": "label",
+          "charts": [],
+          "table": true,
+          "variants": 3,
+          "note": "Highest litres per head = cups per head x cup size across four countries (label options). Watch: cost and price columns unused; two slips land on the answer in the source (slipsOnAnswer); keep it this light."
+        },
+        {
+          "id": "pracA-q23",
+          "skill": "percentages-in-context",
+          "tier": 3,
+          "options": "numeric",
+          "charts": [
+            "bar",
+            "bar"
+          ],
+          "variants": 4,
+          "note": "Percentage increase if one office matched the best ratio among the others: best ratio / own ratio - 1. Watch: no closest wording, yet the source's key relies on rounded intermediates (exact 232.5% vs keyed 235%): make the exact answer display as the option; trap pairs 100 points apart (forgetting -1; the second-best office)."
+        },
+        {
+          "id": "sample-q02",
+          "skill": "testing-statements",
+          "tier": 3,
+          "options": "statement",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Statements on a revenue and negative profit-margin table: loss = revenue x margin, cost = revenue x (1 - margin), cumulative revenue. Watch: margins below -100%; the cumulative-sum statement is a near miss ($346m vs $353m) and the cost statement says 'approximately', keep both gaps as narrow."
+        },
+        {
+          "id": "pracB-q09",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "statement",
+          "charts": [],
+          "variants": 3,
+          "note": "Probability that a random visit was a person's only visit = once-only people / total visits. Watch: people vs visits is the trap; options 25/33/66/75% (66 not 67, keep); no national institutions (source: Arts Council)."
+        },
+        {
+          "id": "bcg-q02",
+          "skill": "unit-economics",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "line"
+          ],
+          "readFromGridlines": true,
+          "variants": 4,
+          "note": "Picks the profit-maximising price from a dual-axis line chart read from gridlines: (price - flat cost) x litres per car per option. Watch: third series on the right-hand axis; the lowest price gives zero profit (a near-filler the source keeps); 10 of 12 values on gridlines; three slips land on the answer in the source (slipsOnAnswer), keep, do not fix."
+        }
+      ]
+    },
+    {
+      "group": 9,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pst2-q22",
+          "skill": "percentages-in-context",
+          "tier": 1,
+          "options": "numeric",
+          "charts": [
+            "pie",
+            "pie",
+            "pie",
+            "pie"
+          ],
+          "variants": 3,
+          "note": "Tier 1: rating with the most responses over two questions put to the same respondents = sum of percentages. Watch: four labelled pies, two unused (the other area); options are ratings 1 to 4; keep it tier 1."
+        },
+        {
+          "id": "pracC-q10",
+          "skill": "building-formulas",
+          "tier": 2,
+          "options": "formula",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Formula for items per employee: employees = (paid working + paid non-working hours) / 160. Watch: the pay-rate symbol is unused; options contain 160, still formulas; write true signs."
+        },
+        {
+          "id": "pracB-q18",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "cumulative"
+          ],
+          "readFromGridlines": true,
+          "closest": true,
+          "variants": 3,
+          "note": "Second-largest market = step between the first two bars of a 50-bar cumulative chart read from gridlines (step 20) x total, closest. Watch: quarter-step readings are coarse (5 points), so options must stay as far apart as the source's (13.4, 37.5, 71.7, 200.8); keep the groups field; 9 of 50 values on gridlines."
+        },
+        {
+          "id": "pst3-q05",
+          "skill": "testing-statements",
+          "tier": 3,
+          "options": "statement",
+          "charts": [
+            "bar",
+            "bar",
+            "bar",
+            "bar"
+          ],
+          "variants": 4,
+          "note": "INCORRECT conclusion among four, from four labelled bar charts of rating shares for two groups of different sizes: counts (% x N, summed over criteria) vs shares. Watch: the keyed claim is wrong only in counts (in summed % it would hold), keep the group sizes doing that; 'generally liked/disliked' is loose, keep; encode each option as 'this conclusion is incorrect' in the truth check."
+        },
+        {
+          "id": "bcg-q14",
+          "skill": "break-even-payback",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Maximum hours new in-house staff can take, given the costs they replace (outsourcing + defect fixing on one line) at their hourly wage; the key is the largest option under the exact figure (3,650 under 3,667) and the prompt has no 'closest', so use a best check with an at-most feasibility score. Watch: options listed in no order (keep); the second line's column and the other wage are unused."
+        }
+      ]
+    },
+    {
+      "group": 10,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pst3-q11",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [],
+          "table": true,
+          "variants": 3,
+          "note": "Difference in average monthly profit between two periods (revenue x margin; revenue - cost must agree within rounding). Watch: the source's rounded margins make both routes agree within 1, keep that; item counts unused; the reviewed analysis records two traps and one filler: reproduce the traps (e.g. margin difference x one revenue)."
+        },
+        {
+          "id": "pracA-q04",
+          "skill": "growth-trends",
+          "tier": 3,
+          "options": "numeric",
+          "charts": [
+            "waterfall"
+          ],
+          "variants": 4,
+          "note": "Minimum annual growth for a sub-total of a labelled waterfall to exceed half of a total growing 5% a year, in 10 years. Watch: compounding over ten years with options 10/15/20/25%; the definitions list and other categories are surplus; four slips on the answer listed; no booklet names (McKinsey, G8)."
+        },
+        {
+          "id": "pst2-q11",
+          "skill": "ratios-comparisons",
+          "tier": 3,
+          "options": "label",
+          "charts": [
+            "stacked-bar"
+          ],
+          "variants": 4,
+          "note": "Year with the highest segment profit as % of total sales: sales = total profit / margin from bar notes, then segment profit / sales. Watch: labelled stacked bar with negative segments and two barNoteRows (margin, total profits); options are years (label); keep negatives."
+        },
+        {
+          "id": "pracC-q16",
+          "skill": "break-even-payback",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [],
+          "variants": 4,
+          "note": "Smallest number of customers for a truck to profit: daily cost x days / (fee - disposal per customer), first option above 103.1. Watch: forgetting disposal (10,000 / 100 = 100, profit only above 100) still lands on 104, a slipsOnAnswer the source has (round-2 calibration failed the source for it), keep, do not declare; options 4 apart."
+        },
+        {
+          "id": "pracB-q07",
+          "skill": "testing-statements",
+          "tier": 2,
+          "options": "statement",
+          "charts": [],
+          "table": true,
+          "variants": 3,
+          "note": "Which statement can be concluded from a two-company table of percentages; per-outlet volume is the only computable one. Watch: three wrong options are not covered by the data (procurement effectiveness, profit in dollars, dish prices): notCovered allowed 3, one no-basis; the substance is spotting what the data does not support, so the blind solve and judges carry three options."
+        }
+      ]
+    },
+    {
+      "group": 11,
+      "candidates": 16,
+      "sources": [
+        {
+          "id": "sample-q08",
+          "skill": "averages-mixes",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [
+            "bar",
+            "bar"
+          ],
+          "variants": 4,
+          "note": "Average revenue per analyst = total revenue / total analysts over twelve items from two labelled bar charts. Watch: options not ascending ($48,000, $480,000, $440,000, $400,000: a ten-times slip beside the answer), copy the pattern; the reviewed analysis records two traps and one filler ($48,000): reproduce the traps (a revenue bar, or an analyst bar, left out of its total); 90% of the data is used (surplus 10%)."
+        },
+        {
+          "id": "pracB-q15",
+          "skill": "testing-statements",
+          "tier": 3,
+          "options": "statement",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Growth statements on a market-size table (4 years ago, today, in 10 years): extrapolate the ten-year multiple to 20 years, compare past growth, 'three times quicker', a past share. Watch: 'if the forecasted trends continue' is loose, keep; one notCovered allowed; periods of 4 and 10 years."
+        },
+        {
+          "id": "pst3-q03",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "ranking",
+          "charts": [
+            "bar"
+          ],
+          "variants": 4,
+          "note": "Ranks five quintiles by percentage fall from a labelled two-series horizontal bar chart. Watch: every option starts with the same quintile, only the tail differs; the stem 'What is the correct ranking of the five quintiles in Exhibit 1' trips originality, reword; chart lists quintile 5 at the top."
+        },
+        {
+          "id": "pst2-q25",
+          "skill": "unit-economics",
+          "tier": 3,
+          "options": "numeric",
+          "charts": [],
+          "table": true,
+          "closest": true,
+          "variants": 4,
+          "note": "Average order value over two pack formats: price per litre x tube volume x tubes per order, averaged; the discount threshold is not reached (the trap). Watch: options in the source's pattern ($5,000, $25,000, $6,000, $30,000), not ascending; closest; mL to litres; three slips on the answer listed."
+        }
+      ]
+    },
+    {
+      "group": 12,
+      "candidates": 16,
+      "sources": [
+        {
+          "id": "pracC-q14",
+          "skill": "testing-statements",
+          "tier": 3,
+          "options": "statement",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Statements on a three-city table: landfill vs collection margin ratio 'two to six times' (profit per dollar = margin), revenue comparisons, a claim needing an unknown share. Watch: two notCovered allowed; replace the real US cities; the '25% less' statement is refuted only by a bound in the source."
+        },
+        {
+          "id": "pracB-q06",
+          "skill": "unit-economics",
+          "tier": 2,
+          "options": "statement",
+          "charts": [],
+          "variants": 4,
+          "note": "Annual cost comparison: tiered price (first N kg at one rate, the rest lower) vs a flat price; four paired options (+/-150k, +/-300k). Watch: the 'other costs' line is unused (same either way); keep the tier break below the annual volume."
+        },
+        {
+          "id": "pst2-q12",
+          "skill": "percentages-in-context",
+          "tier": 3,
+          "options": "numeric",
+          "charts": [
+            "stacked-bar"
+          ],
+          "closest": true,
+          "variants": 4,
+          "note": "Counterfactual: apply total profit's relative decline to one segment, add the other segment, divide by sales inferred from margin, closest. Watch: same exhibit as pst2-q11; symmetric options -2/-1/1/2% with a negative answer; pounds only with a UK setting."
+        },
+        {
+          "id": "pracA-q13",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "options": "ranking",
+          "charts": [
+            "bar"
+          ],
+          "table": true,
+          "variants": 4,
+          "note": "Ranks five quintiles by revenue per transaction from a table; the bar chart of one-year value is surplus. Watch: near tie ($85 vs $86) is the trap, keep two ratios that close; do not use 'correct ranking of the five quintiles in Exhibit'."
+        }
+      ]
+    },
+    {
+      "group": 13,
+      "candidates": 16,
+      "sources": [
+        {
+          "id": "pst1-q03",
+          "skill": "testing-statements",
+          "tier": 3,
+          "options": "statement",
+          "charts": [
+            "indexed-line"
+          ],
+          "table": true,
+          "readFromGridlines": true,
+          "variants": 4,
+          "note": "Statements combining a half-year revenue table with an indexed profit-margin line read from gridlines: profit moves with revenue x margin index; one 'six times' rate claim and 10%/2% near misses. Watch: half-step values (101.5, 98.5), 5 of 12 on gridlines; the 'equal to six times' claim is loose (13 vs 2 points gives 6.5), keep; three slips on the answer listed."
+        },
+        {
+          "id": "pst3-q14",
+          "skill": "unit-economics",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [],
+          "table": true,
+          "closest": true,
+          "variants": 4,
+          "note": "Minutes per unit = FTE x 160 hours x 60 / units for two periods, difference, closest. Watch: evenly spaced wide grid 1/5/9/13 (sourceHas wideGrid, allowed here); the 50% time share in prose."
+        },
+        {
+          "id": "pracA-q22",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "options": "ranking",
+          "charts": [
+            "bar",
+            "bar"
+          ],
+          "variants": 4,
+          "note": "Ranks five of nine offices by donations / cost from two labelled horizontal bar charts. Watch: four offices unused (one is the client office, used by pracA-q23); the trap rankings use donations alone or swap the close pair (8.3 vs 8.1); pounds only with a UK setting, no real place names (source: Greater London)."
+        },
+        {
+          "id": "pracC-q05",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "options": "numeric",
+          "charts": [],
+          "table": true,
+          "variants": 4,
+          "note": "Extra items sorted by hand = (1 - machine-sorted share) x items, difference between periods, from a flow table and a volume table. Watch: the middle flow rows are distractors; options evenly spaced (76, 104, 132, 160)."
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "id": "bcg-q01",
+      "why": "Escape option ('None of the above / we lack sufficient information'); a value check needs a number in every option (as in the pilot)."
+    },
+    {
+      "id": "pst2-q05",
+      "why": "Worked example: evals/calibration/faithful.json is modelled on it."
+    },
+    {
+      "id": "pst2-q10",
+      "why": "CANNOT be concluded, and the keyed option is the one the data cannot settle (index ratio across two bases); notCovered can never be the correct option, so no check can key it."
+    },
+    {
+      "id": "pst2-q13",
+      "why": "Options are measures that 'cannot be determined'; no check kind can verify what is not determinable (as in the pilot)."
+    },
+    {
+      "id": "pst3-q02",
+      "why": "CANNOT be concluded, and the keyed option needs data the exhibit does not give (spend per product); same problem as pst2-q10."
+    },
+    {
+      "id": "pst3-q07",
+      "why": "Which measure CAN be determined; options are measures, not testable claims (as in the pilot)."
+    },
+    {
+      "id": "pracA-q12",
+      "why": "CANNOT be concluded with a qualitative inference option ('is an indicator of their value'); keyed option is not determinable (as in the pilot)."
+    },
+    {
+      "id": "pracA-q15",
+      "why": "Which measure CAN be determined; options are measures (as in the pilot)."
+    },
+    {
+      "id": "pracA-q16",
+      "why": "Disputed key: the exhibit says percentage points, the key reads relative lift (see its note)."
+    },
+    {
+      "id": "pracA-q17",
+      "why": "Same exhibit and the same doubt as pracA-q16: the keyed option holds only if the 'percentage point' lifts are read as relative changes; and one wrong option ('no overall impact') rests on a 0.0 figure the calculation gate cannot test."
+    },
+    {
+      "id": "pracB-q20",
+      "why": "Statements infer how a rating is built; a truth check could only restate the solution (as in the pilot)."
+    },
+    {
+      "id": "pracC-q13",
+      "why": "Options are inequalities; the formula check cannot test an inequality (as in the pilot)."
+    },
+    {
+      "id": "pracC-q19",
+      "why": "Redrawn chart and the booklet's worked solution read the days differently (see its note); also the same chart as the worked example pracC-q21."
+    },
+    {
+      "id": "pracC-q20",
+      "why": "Statements are deductions about minimum staffing; three not covered by data and a truth check could only restate the solution (as in the pilot)."
+    },
+    {
+      "id": "pracC-q21",
+      "why": "Worked example: evals/calibration/faithful.json is modelled on it."
+    },
+    {
+      "id": "pracC-q24",
+      "why": "Statements are judgements ('should increase premiums'), not claims a truth check can test (as in the pilot)."
+    },
+    {
+      "id": "bcg-q03",
+      "why": "Judged unsuitable in the source review (evals/rounds/source-review.md), borderline: spend per car is a constant, so the answer is the row with the most cars, in effect a reading question."
+    },
+    {
+      "id": "pst1-q12",
+      "why": "Judged unsuitable in the source review (evals/rounds/source-review.md): inequality options (\"less than / at least 2,250\") whose key rests on the data not covering inpatients and outpatients."
+    }
+  ]
+}

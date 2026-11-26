@@ -1,0 +1,12 @@
+[
+  {"id":"j-3491a9ef","judge":"ambiguity","fail":false,"why":"Only D holds: on trend cargo reaches about $160m (or $117m linear) against mountain's $118m (or $114m) in 20 years, while A fails (relative growth is about 2x per year or 7x in total, not 3x), B fails (15.6% vs 26.7%) and C fails (32/167 = 19%)."},
+  {"id":"j-ca4a32fd","judge":"ambiguity","fail":false,"why":"Threshold question: 450 x $5 x 365 = $821k a year repays $2m after 2.44 years, so it has paid for itself first at C (2.5 years), with exact data keeping 2.44 clearly short of 2.5 and past 2.4."},
+  {"id":"j-c95a6a3c","judge":"ambiguity","fail":false,"why":"B: the second province adds about 20% (30% to 50%, both on half-gridline marks) of $62bn, about $12bn, and no reasonable reading reaches another option."},
+  {"id":"j-785f3757","judge":"ambiguity","fail":false,"why":"B: 58,000 x 57% x 78% x 94% = 24,240 paying claims x ($260,000 x 15% x 4% / 2 = $780) = $18.9m, nearest $19m."},
+  {"id":"j-a09d0bbb","judge":"ambiguity","fail":false,"why":"C: 2010-2013 revenue per rep is 3.55, 3.73, 3.67, 3.62, averaging $3.64m (the aggregate and the five-year reading also give about $3.6m), far from other options."},
+  {"id":"j-8a227a36","judge":"ambiguity","fail":false,"why":"Only A holds: workshop to leasing margin ratios are 16/4 = 4, 18/6 = 3 and 18/3 = 6; C is false (City 2 has the lowest leasing revenue), B is false (leasing profit is the larger), and D cannot be concluded because the hours include unbilled work on leased cars."},
+  {"id":"j-6db15f9f","judge":"ambiguity","fail":false,"why":"D: revenue per consultant is A 0.350, C 0.282, E 0.257, D 0.158, B 0.129, with no ties."},
+  {"id":"j-5e9719f4","judge":"ambiguity","fail":false,"why":"C: $117m over 325 developers = $360,000 exactly; a simple mean of the product ratios gives $276k, which is not near any option, so it offers no second answer."},
+  {"id":"j-d6325775","judge":"ambiguity","fail":false,"why":"D: falls are Q3 44.7%, Q2 40.0%, Q4 33.3%, Q5 25.3%, Q1 17.6%, with no ties."},
+  {"id":"j-0e71d707","judge":"ambiguity","fail":false,"why":"Threshold question: 1,300 x $1 x 365 = $474,500 a year earns back $1.2m after 2.53 years (2.56 on 360 days), so the cost is first recovered at B (2.6 years), not at the nearer 2.5."}
+]

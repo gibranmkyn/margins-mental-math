@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-20ed3d43",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are all the years shown: 2009 comes from taking exports as a share of total profits (30 of 10), 2010 from reading the margin row alone, and 2012 from comparing export profits in absolute terms."
+  },
+  {
+    "id": "j-34cde93c",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$10.1bn reads the cumulative bar height (42% of $24bn), $19.6bn applies the city-2 step to the $135bn total (wrong base), and $0.4bn applies the 15% step to Frostline's own $2.6bn sales (wrong base; also covered by the source's numeric fillers)."
+  },
+  {
+    "id": "j-518de13a",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is a near-miss where history and science both come to $0.20m a producer, D is a near-miss comparison ($0.45m against $0.47m), and B reads revenue as profit with no cost data, the one statement without basis that sourceHas allows."
+  },
+  {
+    "id": "j-c6c668df",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A reads the market-share axis (2.4 against 0.8, exactly 3 times) instead of margin; B over-reads near-equal shares and margins as equal profit, ignoring market size; D over-reads the smallest share as the smallest sales."
+  },
+  {
+    "id": "j-187b237d",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1.8 forgets to divide the 3-year fall, 3.4 is the summer-tyre total fall (wrong series), and 1.1 is the summer fall averaged over 3 years (wrong series); the slips that count four years or start in 2009 give about 0.45-0.47, which sourceHas names and which sit more than 20% from 0.6 anyway."
+  },
+  {
+    "id": "j-9dae1610",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$78m stops at sales without applying the margin, $2.0m is the answer off by a factor of 10 (margin taken as 2.5%), and $84.5m pairs reading the share half a gridline high (6.5%) with leaving out the margin; the half-gridline misreads that land on $19.5m (about $21m) are the same slips sourceHas names."
+  },
+  {
+    "id": "j-de2c83a1",
+    "judge": "distractors",
+    "fail": true,
+    "why": "Weighting the two hotels by rooms instead of guest nights (a wrong-base slip on the exhibit's own Rooms row) gives (230×50% + 520×60%) ÷ 750 = 56.9%, so it still lands on the correct 57% statement, and sourceHas does not name that slip."
+  },
+  {
+    "id": "j-88bd0822",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A over-reads 2006's most negative margin as its highest costs, C is a near-miss total (€302m against €309m), and D compares losses by margin alone, ignoring revenue."
+  },
+  {
+    "id": "j-33fa0fea",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A compares contacted staff in absolute numbers instead of as a share of each company size, C rounds 34.8% up past 35%, and D (course fees) is the one statement without basis that sourceHas allows."
+  },
+  {
+    "id": "j-154db2e9",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A ranks by revenue alone, C ranks by probability alone (B and R tie at 0.2), and D swaps the last two by reading the logistics firm's revenue half a gridline high (1.0 against 0.8)."
+  }
+]

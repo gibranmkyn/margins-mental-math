@@ -1,0 +1,12 @@
+[
+  {"id": "j-dfcc940d", "judge": "realism", "fail": false, "why": "A housing association with 50.2k homes (the groups add to that total), 140,000 repair jobs a year and about £19.4m of repair cost (roughly £390 per home) is believable, and per-home cost falls from Group A to Group E as stated."},
+  {"id": "j-6f5b9977", "judge": "realism", "fail": false, "why": "Twelve subscription magazines earning €1m to €44m each with 4 to 92 journalists, roughly €250k to €500k of revenue per journalist, is believable for a loss-making online publisher."},
+  {"id": "j-f85a2ae7", "judge": "realism", "fail": false, "why": "Every 100% stack adds to 100, and works supplying 28 to 110 million cubic metres to 150k to 980k people give household use of roughly 115 to 230 litres per person per day, which is believable."},
+  {"id": "j-f7424065", "judge": "realism", "fail": false, "why": "The waterfall steps add correctly (1.63 + 0.58 = 2.21, + 0.52 = 2.73, + 0.68 = 3.41), and a farm price of €1.63 per kg with 10% weight loss in hulling is believable."},
+  {"id": "j-3d01a9ce", "judge": "realism", "fail": false, "why": "Hazelnuts at €5 to €8 per kg, 30 g of hazelnuts in a bar, €0.38 of other inputs and 9 million bars a year (270,000 kg of nuts) are believable for a chocolate maker."},
+  {"id": "j-81d8c401", "judge": "realism", "fail": false, "why": "A stationery retailer earning £30m profit across 164 product lines (about £180k per line) is a stylised but believable figure of the kind screening tests use."},
+  {"id": "j-85ceea57", "judge": "realism", "fail": false, "why": "Shares add to 100% of €260m, giving €150k to €200k of sales per Class A or B installer and about €1.1m per Class C installer, with 2 to 4 complaints per 100 jobs, all believable."},
+  {"id": "j-07ee366a", "judge": "realism", "fail": false, "why": "The 13,000 office and 22,000 home workers add to the 35,000 surveyed, and every mark distribution adds to 100%."},
+  {"id": "j-50d3ddd7", "judge": "realism", "fail": false, "why": "The average month lengths match the calendar (273/9 and 92/3 days), profit equals revenue minus costs in both columns, and about €9 to €10 per transaction is believable for a stationery chain."},
+  {"id": "j-8359e73e", "judge": "realism", "fail": false, "why": "A music chain earning £35m profit across 153 product lines (about £230k per line) is a stylised but believable figure of the kind screening tests use."}
+]

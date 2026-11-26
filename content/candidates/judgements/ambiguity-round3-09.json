@@ -1,0 +1,12 @@
+[
+  {"id":"j-5ee9d7c9","judge":"ambiguity","fail":false,"why":"Only C holds: contacted workers are 747.6k of 1,226.5k (61.0%), while medium employers, not small, have the lowest contact share (9.6% vs 15.5%), no-contact medium (208.2k) exceeds no-contact large (177.5k), and savings paid in are not given."},
+  {"id":"j-de6c035d","judge":"ambiguity","fail":false,"why":"A: 20+9+45 = 74% of respondents rated 1 to 3, and respondents are 18% of students, so 0.74 x 0.18 = 13.3% of students; no other option is near."},
+  {"id":"j-7db9c5a2","judge":"ambiguity","fail":false,"why":"Only D holds: leasing is 154/908 = 17.0%, while fleet and airports (carbon permits, leasing, maintenance, ground handling) is 413/908 = 45.5%, carbon permits 4.1% and ground staff 52/209 = 24.9% of staff costs."},
+  {"id":"j-ab686785","judge":"ambiguity","fail":false,"why":"A is the false one: total cost is £3.5m + 320,000 x £9 = £6.38m, so Group A gets 13% / 3k = £276 per caller, while B (£164), C (£102) and D (£69) all check out."},
+  {"id":"j-6e91a86e","judge":"ambiguity","fail":false,"why":"Only B holds: from Week 0 to Week 1 hours go about 190 to 196 while cars fall about 196 to 121, whereas Week 1 (about 88/196 = 45%) beats Week 0 (about 77/190 = 41%) on contract share under any reasonable reading, and A and D cannot be concluded."},
+  {"id":"j-53e77b28","judge":"ambiguity","fail":false,"why":"Only B holds: 15% of the 48% using the gym is 7.2% of members, while weight loss is 13.4% (not 28%), the three goals in C give 16.8% (not 10.5%), and D has no data."},
+  {"id":"j-3c35fc55","judge":"ambiguity","fail":false,"why":"Only C holds: 70% of the 40% drawn mainly by the garden came on a day trip, 28% of visitors, while hotel stays are 8%, 'mainly' is not 'only', and spending is not shown."},
+  {"id":"j-9a2afd6b","judge":"ambiguity","fail":false,"why":"C: 4,000 x 80% x 35% = 1,120 respondents."},
+  {"id":"j-9bf6375b","judge":"ambiguity","fail":false,"why":"C: a 1% cut in royalties saves 1% of $117.8m = $1.18m, more than a 1% cut in running costs ($0.99m), a 1% revenue rise with proportional costs ($0.58m) or a cut in advertising, which is only part of running costs."},
+  {"id":"j-c2f79fac","judge":"ambiguity","fail":false,"why":"A: maintenance saves $140 - $126 = $14 and electricity saves 410 kWh x $0.10 = $41 a year, so $55 x 3 = $165 is the most the CEO should pay extra."}
+]

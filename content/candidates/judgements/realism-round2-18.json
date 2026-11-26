@@ -1,0 +1,12 @@
+[
+  { "id": "j-9a8cc886", "judge": "realism", "fail": false, "why": "Multiplexes drawing 550 to 2,300 visitors a day with queues of 5 to 12 minutes, a $2 million build cost and $1.50 profit per visitor are believable cinema figures." },
+  { "id": "j-25d46b70", "judge": "realism", "fail": false, "why": "The context defines only variables (bottles per customer, bottle size, cost and price per bottle) for a juice bar chain and gives no figures that could be implausible." },
+  { "id": "j-a5ab29e3", "judge": "realism", "fail": false, "why": "An office supplies distributor with EUR 470-600 million revenue across four categories and margins of 2-30%, highest on printer ink, is believable." },
+  { "id": "j-0a657c43", "judge": "realism", "fail": false, "why": "Sector FDI effects of 0.1 to 1.1 percentage points of growth, with direct and indirect parts adding to each bar's total, are plausible for a developing economy with $460bn GDP." },
+  { "id": "j-dd58f54e", "judge": "realism", "fail": false, "why": "Cargo and passenger profits add to the stated totals each year, and the implied sales of $0.8-1.2 billion at 0.5-3% margins fit a mid-sized airline." },
+  { "id": "j-6d574f2d", "judge": "realism", "fail": false, "why": "Maintenance and installation profits add to the stated totals each year, and the implied sales of $1.2-1.8 billion at 1-3.5% margins are believable for a lift company." },
+  { "id": "j-a99d7356", "judge": "realism", "fail": false, "why": "A genetic testing lab whose revenue grows from $32 million to $167 million while margins improve from -147% to -18% is a believable loss-making growth business." },
+  { "id": "j-a7dc5446", "judge": "realism", "fail": false, "why": "About 6,000-7,000 litres of diesel per van a year and cost shares that add to 100% with the profit margin for both firms are believable for parcel couriers." },
+  { "id": "j-87ccd6af", "judge": "realism", "fail": false, "why": "A solar panel market of about $580-1,330 million split across utility, commercial and home installations with steady growth is believable." },
+  { "id": "j-815ec240", "judge": "realism", "fail": false, "why": "The context defines only distance, fuel economy and diesel price for a van fleet cost model and gives no figures that could be implausible." }
+]

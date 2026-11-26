@@ -1,0 +1,12 @@
+[
+  { "id": "j-5f1f2e9c", "judge": "realism", "fail": false, "why": "Each territory's two source shares sum to 100% (negative where spend per customer fell), and annual growth of 1.5% to 5.3% is believable for a software reseller." },
+  { "id": "j-a4085501", "judge": "realism", "fail": false, "why": "Copy prices of EUR 0.06 to 0.09 a page, a few hundred customers per shop a week and EUR 3 of stationery each are believable, and a 25% stationery margin against 10% for the market is within a factor of a few." },
+  { "id": "j-6a9111d6", "judge": "realism", "fail": false, "why": "A low-cost airline selling 600,000 wraps a year at $7.00, bought at $4.00 to $4.30 with $2.50 of handling, is believable." },
+  { "id": "j-767409e6", "judge": "realism", "fail": false, "why": "The eight sources sum exactly to the 19.7 million tonne total, a believable figure for a large city." },
+  { "id": "j-d18d2798", "judge": "realism", "fail": false, "why": "The group member counts add to the stated 122k, and GBP 11.2 million of cost over 1.8 million loans (about 15 per member) is believable for a 14-branch city library service." },
+  { "id": "j-93127e3c", "judge": "realism", "fail": false, "why": "Half-year spend of $52 to $129 per client at a budget salon chain is believable, and the question's drop/growth is a stated hypothetical." },
+  { "id": "j-4ccacb1a", "judge": "realism", "fail": false, "why": "Delisting probabilities of 10% to 40% and $3 to $14 million of annual profit at risk per chain are believable for a snack and drinks maker." },
+  { "id": "j-0da875eb", "judge": "realism", "fail": false, "why": "Each survey row is a subset no larger than the one above it for both medical (846 to 214) and dental (573 to 65) practices, so the funnel is consistent." },
+  { "id": "j-a6a78f97", "judge": "realism", "fail": false, "why": "Byteguard's shares of about 7% to 8% in cloud backup and about 22% to 25% in antivirus are believable for a vendor with roughly $500 million revenue." },
+  { "id": "j-8344c169", "judge": "realism", "fail": false, "why": "Strike probabilities of 10% to 50% and costs of $1 to $18 million per staff group are believable for an airline of unstated size." }
+]

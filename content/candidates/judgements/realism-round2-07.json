@@ -1,0 +1,12 @@
+[
+  { "id": "j-c4800fe7", "judge": "realism", "fail": false, "why": "A taste test of a ready meal with 8,000 customers and 15,000 non-customers is believable, and every rating distribution adds to 100%." },
+  { "id": "j-7350c917", "judge": "realism", "fail": false, "why": "An ice-cream parlour taking about $42,000 a month from roughly 12,400 servings (about $3.40 each) is believable, and the margins match revenue minus costs." },
+  { "id": "j-6581cd48", "judge": "realism", "fail": false, "why": "A small motoring club with 54k members making 92,000 call-outs at £4.1m fixed plus £100 a call-out is believable; the group member counts add to 54k and cost per head falls from Group A to Group E as stated." },
+  { "id": "j-5f19b6e6", "judge": "realism", "fail": false, "why": "A capital-city bus operator with about 31 million journeys and $53 million revenue a month is believable, profit equals revenue minus costs, and the average month lengths are correct." },
+  { "id": "j-f1038953", "judge": "realism", "fail": false, "why": "Online and showroom profits add to the stated totals, and the margins imply steady sales of about $0.8-1 billion, believable for a furniture retailer with loss-making showrooms." },
+  { "id": "j-4b14f779", "judge": "realism", "fail": false, "why": "Export market shares of 0.6% to 6.2% and margins of 11% to 24% fit a kitchen equipment maker with a modest presence abroad." },
+  { "id": "j-a8262f1d", "judge": "realism", "fail": false, "why": "Bread consumption of about 57 to 71 kg per person a year, loaf prices of $0.90 to $2.00 and costs below price are all believable." },
+  { "id": "j-538ceb90", "judge": "realism", "fail": true, "why": "The chart says countries run from biggest to smallest, yet country 10 adds 2.7 points after country 9 adds 1.5, and country 35 adds 1.5 points after country 34 adds 0, so the running total cannot be ordered as stated." },
+  { "id": "j-db1ba93d", "judge": "realism", "fail": false, "why": "1.5 million candles of 0.3 kg each from two factories, with wax at $2 to $5 per kg and a volume price break, is believable." },
+  { "id": "j-06e1f0b9", "judge": "realism", "fail": false, "why": "About 1,500 to 1,800 agents paid $15 to $17 an hour, answering around 11 to 13 calls per paid hour on calls, is believable for a helpline outsourcer." }
+]

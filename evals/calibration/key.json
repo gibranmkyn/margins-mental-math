@@ -1,0 +1,908 @@
+[
+ {
+  "id": "cal-001-3ee55e22",
+  "judge": "ambiguity",
+  "kind": "faithful",
+  "expectFail": false,
+  "basedOn": "pracC-q21"
+ },
+ {
+  "id": "cal-002-78ee4c7e",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracC-q05"
+ },
+ {
+  "id": "cal-003-63eaf9a1",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracA-q06"
+ },
+ {
+  "id": "cal-004-c898d7c0",
+  "judge": "ambiguity",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "two defensible answers: totals now add to 2.4, so the direct contribution is 0.6, exactly between options 0.5 and 0.7",
+  "basedOn": "pst3-q24"
+ },
+ {
+  "id": "cal-005-53e37f7d",
+  "judge": "ambiguity",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "two defensible answers: £0.33 million is the correct £325,926 written another way",
+  "basedOn": "pst2-q14"
+ },
+ {
+  "id": "cal-006-a5e7e273",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracC-q16"
+ },
+ {
+  "id": "cal-007-7f06e437",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q19"
+ },
+ {
+  "id": "cal-008-aaa4321e",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q05"
+ },
+ {
+  "id": "cal-009-10fc8582",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "bcg-q03"
+ },
+ {
+  "id": "cal-010-49e76289",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracA-q23"
+ },
+ {
+  "id": "cal-011-5c6d60bf",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q07"
+ },
+ {
+  "id": "cal-012-931ebd7b",
+  "judge": "ambiguity",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "two defensible answers: the prompt no longer says which exchange rate to use; basic rates give Z, PPP rates give Y",
+  "basedOn": "pracB-q25"
+ },
+ {
+  "id": "cal-013-7bac0df5",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q12"
+ },
+ {
+  "id": "cal-014-d0757270",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "sample-q07"
+ },
+ {
+  "id": "cal-015-a92f8646",
+  "judge": "ambiguity",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "two defensible answers: a second statement is also true (about 3% fewer items in the month, not per day)",
+  "basedOn": "pracC-q03"
+ },
+ {
+  "id": "cal-016-13a43d0c",
+  "judge": "ambiguity",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "two defensible answers: at D consumption reads about 67 litres, so D earns 0.3 × 67 = 20.1 against C's 0.2 × 100 = 20, a tie within reading error",
+  "basedOn": "bcg-q02"
+ },
+ {
+  "id": "cal-017-eeb5726b",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q23"
+ },
+ {
+  "id": "cal-018-a3a03fa4",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q11"
+ },
+ {
+  "id": "cal-019-8941e4bd",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q17"
+ },
+ {
+  "id": "cal-020-56862522",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q22"
+ },
+ {
+  "id": "cal-021-b1dd0eff",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q21"
+ },
+ {
+  "id": "cal-022-4501e052",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q14"
+ },
+ {
+  "id": "cal-023-569b9345",
+  "judge": "ambiguity",
+  "kind": "faithful",
+  "expectFail": false,
+  "basedOn": "pst2-q05"
+ },
+ {
+  "id": "cal-024-e9140c79",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "bcg-q14"
+ },
+ {
+  "id": "cal-025-4a79fde7",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q02"
+ },
+ {
+  "id": "cal-026-d42fa101",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q24"
+ },
+ {
+  "id": "cal-027-38e2513f",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q12"
+ },
+ {
+  "id": "cal-028-400f4de9",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q02"
+ },
+ {
+  "id": "cal-029-becdc4d9",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracC-q16"
+ },
+ {
+  "id": "cal-030-a8df09ad",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q07"
+ },
+ {
+  "id": "cal-031-20891112",
+  "judge": "distractors",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "the wrong options ($9,000, $2.1 million, $73 million) come from no misreading or slip in totalling and dividing",
+  "basedOn": "sample-q08"
+ },
+ {
+  "id": "cal-032-c7398d60",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q24"
+ },
+ {
+  "id": "cal-033-b22b657a",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q12"
+ },
+ {
+  "id": "cal-034-c1f074e7",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "bcg-q14"
+ },
+ {
+  "id": "cal-035-7d0d7685",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "sample-q07"
+ },
+ {
+  "id": "cal-036-4311a589",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracA-q23"
+ },
+ {
+  "id": "cal-037-94345148",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q22"
+ },
+ {
+  "id": "cal-038-b4fb9f4b",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "bcg-q03"
+ },
+ {
+  "id": "cal-039-695a70d1",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracA-q06"
+ },
+ {
+  "id": "cal-040-e0e22e1f",
+  "judge": "distractors",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "$1.7 million corresponds to no slip and the source has no filler ($3.3 million can be reached by taking the top quintile's level as its uplift)",
+  "basedOn": "pracA-q14"
+ },
+ {
+  "id": "cal-041-7918574c",
+  "judge": "distractors",
+  "kind": "faithful",
+  "expectFail": false,
+  "basedOn": "pst2-q05"
+ },
+ {
+  "id": "cal-042-57527eff",
+  "judge": "distractors",
+  "kind": "faithful",
+  "expectFail": false,
+  "basedOn": "pracC-q21"
+ },
+ {
+  "id": "cal-043-701243fd",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q12"
+ },
+ {
+  "id": "cal-044-ae9e77f9",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q21"
+ },
+ {
+  "id": "cal-045-565d5b97",
+  "judge": "distractors",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "a distractor no mistake produces: aquaculture saves at most $600,000 even at $11 for all 300,000 kg, and the nearest slip (forgetting the 0.25 kg per dish) gives $1.65 million less, not $2,000,000",
+  "basedOn": "pracB-q06"
+ },
+ {
+  "id": "cal-046-549343cc",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q05"
+ },
+ {
+  "id": "cal-047-b17e042e",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q17"
+ },
+ {
+  "id": "cal-048-ee6a500d",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q11"
+ },
+ {
+  "id": "cal-049-89d4f1be",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q14"
+ },
+ {
+  "id": "cal-050-ff1de5ca",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q23"
+ },
+ {
+  "id": "cal-051-0e213401",
+  "judge": "distractors",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "a distractor tests nothing in the data (cakes against bread is never given), so no mistake leads to it",
+  "basedOn": "pst3-q13"
+ },
+ {
+  "id": "cal-052-cf10aff2",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracC-q05"
+ },
+ {
+  "id": "cal-053-57fa4875",
+  "judge": "distractors",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "no wrong option comes from a mistake: 57, 88 and 140 percentage points match no slip, and 140 is impossible",
+  "basedOn": "pracC-q17"
+ },
+ {
+  "id": "cal-054-4236b3d4",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q19"
+ },
+ {
+  "id": "cal-055-cbfea431",
+  "judge": "realism",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "impossible data: 3,565 large businesses currently use NGI, more than the 2,865 surveyed",
+  "basedOn": "pracC-q17"
+ },
+ {
+  "id": "cal-056-cbe8e623",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q12"
+ },
+ {
+  "id": "cal-057-f7c26645",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q22"
+ },
+ {
+  "id": "cal-058-ba2744ac",
+  "judge": "realism",
+  "kind": "faithful",
+  "expectFail": false,
+  "basedOn": "pst2-q05"
+ },
+ {
+  "id": "cal-059-074b8a1a",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q24"
+ },
+ {
+  "id": "cal-060-4a3f7f26",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracC-q16"
+ },
+ {
+  "id": "cal-061-7483c6aa",
+  "judge": "realism",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "implausible scale: a chain of 100,000 restaurants on one stretch of coast",
+  "basedOn": "pracB-q06"
+ },
+ {
+  "id": "cal-062-74233e5b",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracA-q06"
+ },
+ {
+  "id": "cal-063-44f30aeb",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q11"
+ },
+ {
+  "id": "cal-064-fe29c93c",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "bcg-q03"
+ },
+ {
+  "id": "cal-065-e40ee257",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q23"
+ },
+ {
+  "id": "cal-066-320c1967",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q02"
+ },
+ {
+  "id": "cal-067-e16923fe",
+  "judge": "realism",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "impossible data: December has 38 days",
+  "basedOn": "pracC-q02"
+ },
+ {
+  "id": "cal-068-723d070a",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "sample-q07"
+ },
+ {
+  "id": "cal-069-fa554c17",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "bcg-q14"
+ },
+ {
+  "id": "cal-070-bc5ec234",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q14"
+ },
+ {
+  "id": "cal-071-08c096fd",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q12"
+ },
+ {
+  "id": "cal-072-e7ffa97b",
+  "judge": "realism",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "impossible data: an area B pie whose shares add to 140%",
+  "basedOn": "pst2-q22"
+ },
+ {
+  "id": "cal-073-bf0fe683",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracC-q05"
+ },
+ {
+  "id": "cal-074-832ed7a6",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q19"
+ },
+ {
+  "id": "cal-075-c4ac2f0b",
+  "judge": "realism",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "impossible data: a negative number of transactions",
+  "basedOn": "pracA-q14"
+ },
+ {
+  "id": "cal-076-201452f3",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q17"
+ },
+ {
+  "id": "cal-077-9e9024b3",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracA-q23"
+ },
+ {
+  "id": "cal-078-5b554d6e",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q05"
+ },
+ {
+  "id": "cal-079-cc326aaa",
+  "judge": "realism",
+  "kind": "faithful",
+  "expectFail": false,
+  "basedOn": "pracC-q21"
+ },
+ {
+  "id": "cal-080-6e99f977",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q21"
+ },
+ {
+  "id": "cal-081-5053746b",
+  "judge": "realism",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q07"
+ },
+ {
+  "id": "cal-082-48057504",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "bcg-q14"
+ },
+ {
+  "id": "cal-083-2701eed9",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q12"
+ },
+ {
+  "id": "cal-084-982268e8",
+  "judge": "difficulty",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "much easier: one addition and one division, where the source compounds two growth rates over ten years and tests options",
+  "basedOn": "pracA-q04"
+ },
+ {
+  "id": "cal-085-2ebc1325",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q02"
+ },
+ {
+  "id": "cal-086-b326e038",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "bcg-q03"
+ },
+ {
+  "id": "cal-087-d27d476f",
+  "judge": "difficulty",
+  "kind": "faithful",
+  "expectFail": false,
+  "basedOn": "pracC-q21"
+ },
+ {
+  "id": "cal-088-ba9318ce",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q22"
+ },
+ {
+  "id": "cal-089-88f2b249",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q21"
+ },
+ {
+  "id": "cal-090-e7417643",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q11"
+ },
+ {
+  "id": "cal-091-5bcd2795",
+  "judge": "difficulty",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "much easier: a single division read from the table, where the source sets up two daily cost lines and solves for break-even volume",
+  "basedOn": "pracB-q05"
+ },
+ {
+  "id": "cal-092-c0de34cd",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q14"
+ },
+ {
+  "id": "cal-093-6ead695e",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracC-q16"
+ },
+ {
+  "id": "cal-094-a5602fb7",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q12"
+ },
+ {
+  "id": "cal-095-ed04868e",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst3-q19"
+ },
+ {
+  "id": "cal-096-552354fa",
+  "judge": "difficulty",
+  "kind": "faithful",
+  "expectFail": false,
+  "basedOn": "pst2-q05"
+ },
+ {
+  "id": "cal-097-dc8c9fb4",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "sample-q07"
+ },
+ {
+  "id": "cal-098-98da6b9d",
+  "judge": "difficulty",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "much harder: three years of compounding, growth in the product count and a currency conversion on top of the source's sum and division",
+  "basedOn": "pst2-q14"
+ },
+ {
+  "id": "cal-099-01a28dac",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracA-q06"
+ },
+ {
+  "id": "cal-100-d63a466a",
+  "judge": "difficulty",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "much harder: five steps (two rates, a projected count, a conversion rate, a product) where the source takes two divisions and a subtraction",
+  "basedOn": "pracC-q17"
+ },
+ {
+  "id": "cal-101-ea533f48",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q24"
+ },
+ {
+  "id": "cal-102-f27b0417",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracA-q23"
+ },
+ {
+  "id": "cal-103-4a9fdce0",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q07"
+ },
+ {
+  "id": "cal-104-538c0d2b",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracC-q05"
+ },
+ {
+  "id": "cal-105-b09c3772",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q23"
+ },
+ {
+  "id": "cal-106-4ece882f",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q05"
+ },
+ {
+  "id": "cal-107-4e5499d4",
+  "judge": "difficulty",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "much easier: one addition of printed totals, where the source finds a share, totals the sectors and applies the share",
+  "basedOn": "pst3-q24"
+ },
+ {
+  "id": "cal-108-53005077",
+  "judge": "difficulty",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst1-q17"
+ },
+ {
+  "id": "cal-129-5070a917",
+  "judge": "difficulty",
+  "kind": "rewrite",
+  "expectFail": false,
+  "basedOn": "pst1-q05"
+ },
+ {
+  "id": "cal-130-49cfa8c6",
+  "judge": "difficulty",
+  "kind": "rewrite",
+  "expectFail": false,
+  "basedOn": "pracB-q12"
+ },
+ {
+  "id": "cal-131-2a47b23a",
+  "judge": "difficulty",
+  "kind": "rewrite",
+  "expectFail": false,
+  "basedOn": "pst2-q21"
+ },
+ {
+  "id": "cal-132-7d48a330",
+  "judge": "difficulty",
+  "kind": "rewrite",
+  "expectFail": false,
+  "basedOn": "pst3-q11"
+ },
+ {
+  "id": "cal-133-ddbefdf9",
+  "judge": "difficulty",
+  "kind": "rewrite",
+  "expectFail": false,
+  "basedOn": "pracA-q23"
+ },
+ {
+  "id": "cal-134-271eb113",
+  "judge": "difficulty",
+  "kind": "rewrite",
+  "expectFail": false,
+  "basedOn": "sample-q07"
+ },
+ {
+  "id": "cal-135-52700a69",
+  "judge": "difficulty",
+  "kind": "rewrite",
+  "expectFail": false,
+  "basedOn": "pracB-q07"
+ },
+ {
+  "id": "cal-136-12100f01",
+  "judge": "difficulty",
+  "kind": "rewrite",
+  "expectFail": false,
+  "basedOn": "pst1-q24"
+ },
+ {
+  "id": "cal-137-8f9f3bc7",
+  "judge": "ambiguity",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracA-q23"
+ },
+ {
+  "id": "cal-138-8806c8e5",
+  "judge": "ambiguity",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "two defensible answers: 'how much higher' with options in % admits the 21-point difference (21%) and the 44% relative difference (44%), and the prompt excludes neither",
+  "basedOn": "pracC-q17"
+ },
+ {
+  "id": "cal-139-5ea4e27f",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracB-q11"
+ },
+ {
+  "id": "cal-140-f3d2a68b",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pracC-q23"
+ },
+ {
+  "id": "cal-141-0b7ffb87",
+  "judge": "distractors",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "a common mistake lands on the correct option: leaving out the set-up and clean-up labour gives a threshold of 7.1 kg, and the smallest option above it is still the answer, 11 kg",
+  "basedOn": "pracB-q05"
+ },
+ {
+  "id": "cal-142-8870d8c3",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q15"
+ },
+ {
+  "id": "cal-143-30f0d30e",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q03"
+ },
+ {
+  "id": "cal-144-1e0ab576",
+  "judge": "distractors",
+  "kind": "booklet",
+  "expectFail": false,
+  "basedOn": "pst2-q19"
+ },
+ {
+  "id": "cal-145-d268f2e0",
+  "judge": "distractors",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "two rankings no slip or pair of slips produces (A, B, D, C and B, C, D, A, in place of the source's filler and its swapped-pair slip C, A, B, D); the source keeps one such filler",
+  "basedOn": "pst2-q15"
+ },
+ {
+  "id": "cal-146-061279f4",
+  "judge": "distractors",
+  "kind": "broken",
+  "expectFail": true,
+  "defect": "two values no slip lands on: 5.5% (the total fall, a slip) is replaced by 9.5%, which no slip gives, so 3.5% no longer continues a slip's spacing either; the source keeps one such filler",
+  "basedOn": "pst2-q19"
+ }
+]

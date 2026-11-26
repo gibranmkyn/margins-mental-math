@@ -1,0 +1,12 @@
+[
+  {"id":"j-a5972c44","judge":"ambiguity","fail":false,"why":"Only B holds: restaurants 2,231/3,418 = 65.3% aware and hotels 711/1,262 = 56.3%, a gap of 8.9 points, and the next option is 7 points away."},
+  {"id":"j-4289c802","judge":"ambiguity","fail":false,"why":"Only D is incorrect: pet owners gave suction 60% ratings of 3 and above against 70% for run time and 90% for emptying, while A (11,400 vs 7,650 fives), B (other households' mean 3.69 vs 3.50 with half the 1-2 ratings) and C (55% vs 20% rating handling 1-2) hold."},
+  {"id":"j-f59ff4e3","judge":"ambiguity","fail":false,"why":"Only A fits: total cost is £7.3m + 160,000 x £60 = £16.9m, and Group B's 28% - 12% = 16% of that is £2.70m, with the next option £0.3m away."},
+  {"id":"j-5de8ba6f","judge":"ambiguity","fail":false,"why":"Only A fits: keeping 16,000 passengers and tripling to 48,000 other travellers gives 9,600 - 5,600 = 4,000 grade-4 legroom ratings, and the other ways of holding the sample fixed (2,500 or 2,000) match no option."},
+  {"id":"j-cd8ba777","judge":"ambiguity","fail":false,"why":"Only D fits: decreases are Q1 52.2%, Q2 30.2%, Q4 27.6%, Q3 22.2%, Q5 15.0%, giving 1, 2, 4, 3, 5 with no ties."},
+  {"id":"j-6691a658","judge":"ambiguity","fail":false,"why":"Only A fits: 8,000 x 30% whose main reason was OutletOne x 20% by coach tour = 480."},
+  {"id":"j-7c7812f9","judge":"ambiguity","fail":false,"why":"Only B holds: appointments per opening day are 2,448 in other months and 2,324 in October, 5.1% fewer, so the 3% option and both 'more' options are false."},
+  {"id":"j-f9f6325d","judge":"ambiguity","fail":false,"why":"Only C can be concluded: Cupwise uses 1.2m/360 = 3,333 kg per shop against Beanly's 0.4m/160 = 2,500 kg, while A, B and D need prices or revenues the table does not give."},
+  {"id":"j-a4005cf8","judge":"ambiguity","fail":false,"why":"Only B holds: assembly and welding bring in 87 of €161m = 54.0%, while picking (0.465) trails welding (0.477) per engineer, painting and palletising tie at 0.4, and profit is not given."},
+  {"id":"j-0dab11c0","judge":"ambiguity","fail":false,"why":"Only B holds: Pedalwise has contacted 5% of small-company workers against 17% at medium and 49% at large, while A fails (312.7k of 1,060.6k = 29.5%), C needs lease data not given, and D fails as medium companies' uncontacted pool (272.5k) beats large (257.9k)."}
+]

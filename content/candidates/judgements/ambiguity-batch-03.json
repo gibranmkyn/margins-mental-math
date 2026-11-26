@@ -1,0 +1,12 @@
+[
+  { "id": "j-808b4337", "judge": "ambiguity", "fail": false, "why": "Growth due to new customers is 1.5% x 111.4% = 1.67 points for Territory A and 4.2% x 28% = 1.18 for Territory J, a difference of 0.49, so 0.5 (B), with other options 0.4 away." },
+  { "id": "j-5c7893bc", "judge": "ambiguity", "fail": false, "why": "Weekly profit per shop (printing plus 25% of EUR3 stationery per customer) is EUR352 / 608 / 566 / 330 at EUR0.06-0.09; even reading B's 85 pages as low as 80 gives EUR589, still above C, so B." },
+  { "id": "j-eee52953", "judge": "ambiguity", "fail": false, "why": "MaxiWrap earns 600,000 x $0.50 = $300,000; FlyFresh earns $4,620,000 - $2,784,000 (tiered wrap cost) - $1,650,000 = $186,000, a fall of $114,000, so B." },
+  { "id": "j-bcdaf1eb", "judge": "ambiguity", "fail": false, "why": "Only C holds: cars are 4.1 of the 6.2 transport total = 66%, while homes are 27%, public buildings 4.6% and buildings 9.3/19.7 = 47% (D's 43% leaves out public buildings)." },
+  { "id": "j-2b7bcdfb", "judge": "ambiguity", "fail": false, "why": "Total cost is £8.5m + 1.8m x £1.50 = £11.2m; A (£373), B (£224) and D (£85) check out, but Group C is 22% x £11.2m / 18,000 = £137, so C alone is false." },
+  { "id": "j-b952cb55", "judge": "ambiguity", "fail": false, "why": "Applying the changes to the 2012 figures gives (59+86) x 0.8 + (80+99+129) x 1.3 = 116 + 400.4 = 516.4, so C." },
+  { "id": "j-c82aa21d", "judge": "ambiguity", "fail": false, "why": "All points read exactly (on or halfway between gridlines), and expected losses are L 1.6, K 1.4, N 0.7, M 0.6 ($m), so D (L, K, N, M)." },
+  { "id": "j-6cff1062", "judge": "ambiguity", "fail": false, "why": "661/846 = 78.1% against 398/573 = 69.5% is a gap of 8.7 points, so A (9); the next option is 5 points away." },
+  { "id": "j-07e867ec", "judge": "ambiguity", "fail": false, "why": "All four values read exactly: share falls from 110/1,350 = 8.1% to 130/1,950 = 6.7%, 1.48 points over three years = 0.49 a year, so A (0.5), and counting four years still gives A." },
+  { "id": "j-5463b76a", "judge": "ambiguity", "fail": false, "why": "All points read exactly, and expected strike costs are C 2.1, P 1.8, E 0.9, G 0.5 ($m), so A (C, P, E, G)." }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": "j-bd9706b7", "judge": "ambiguity", "fail": false, "why": "Only D holds as a threshold: 1,100 visitors x $1.50 = $1,650 a day, so $2m takes 1,212 days or 3.32 years; at 3.3 years only about $1.99m has been earned, so break-even has first happened by 3.4 years." },
+  { "id": "j-669066a3", "judge": "ambiguity", "fail": false, "why": "Only B: profit per bottle is r - k and a litre holds 1,000/m bottles, so profit per litre is (r - k) x 1,000 / m." },
+  { "id": "j-55f9eebe", "judge": "ambiguity", "fail": false, "why": "Only B is true: printer ink profit over 2010-13 is about EUR150m against about EUR91m for the other three combined, while paper's margin fell 29% vs computers' 50% (A), computers plus paper were 52% of 2013 revenue (C), and ink grew 55% vs furniture's 26% (D)." },
+  { "id": "j-9d811dcc", "judge": "ambiguity", "fail": false, "why": "Only A: the indirect contributions sum to 0.1+0.4+0.3+0.2+0.5 = 1.5 percentage points, and 1.5% of $460bn is $6.9bn; B ($9.2bn) is the direct-contribution trap." },
+  { "id": "j-67423af7", "judge": "ambiguity", "fail": false, "why": "Only D: total sales are profit/margin (800, 1,200, 800, 800), so cargo is 3.5%, 2.3%, 2.5% and 4.0% of sales, highest in 2011." },
+  { "id": "j-61767ccc", "judge": "ambiguity", "fail": false, "why": "Only A: total sales are profit/margin (1,200, 1,800, 1,200, 1,200), so maintenance is 3.5%, 2.0%, 3.0% and 2.0% of sales, highest in 2011." },
+  { "id": "j-e7e930c1", "judge": "ambiguity", "fail": false, "why": "Only D: the loss was 91 x 69% = $62.8m in 2012 against 128 x 45% = $57.6m in 2013, while total revenue is $472m (A), 2011 costs are about $124m (B), and costs peaked in 2014 at about $197m (C)." },
+  { "id": "j-448ffed9", "judge": "ambiguity", "fail": false, "why": "Only A can be concluded: Swiftbox uses 7,000 litres per van against Parcelo's 6,000, and B, C and D would need revenue, diesel price or parcel figures the table does not give." },
+  { "id": "j-56ddaa1e", "judge": "ambiguity", "fail": false, "why": "Only C holds on the natural reading that growth rates continue: home rooftops grow x2.09 per decade to about 537 against commercial's x1.25 to about 439, while A is false (18%), B is false under the relative convention (CAGR about 7.6% vs 3.8%, about 2x), and D is false (16% vs 30%)." },
+  { "id": "j-d23d872b", "judge": "ambiguity", "fail": false, "why": "Only B: a van burns d/k litres a year, and at f dollars a litre that costs (d x f)/k." }
+]

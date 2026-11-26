@@ -1,0 +1,12 @@
+[
+  {"id":"j-75f67d33","judge":"ambiguity","fail":false,"why":"Only A is incorrect: current customers gave more 1s on flavour (20% vs 10%) and value (11% vs 3%) but fewer on portion (10% vs 22%) and cooking time (10% vs 13%), so not 'generally', while B (cooking 1-2 ratings 40% vs 19%, mean 3.19 vs 3.32), C (value 93% at 3+ vs at most 81% elsewhere) and D (flavour 1-2 ratings 50% vs 20%) all hold."},
+  {"id":"j-48a1c7f6","judge":"ambiguity","fail":false,"why":"A: the second country is 39.9% - 24.8% = 15.1% of $86 billion = $13.0 billion; reasonable gridline readings (about 25 and 40) give about 15%, well away from B's $34.4 billion (the cumulative 40%)."},
+  {"id":"j-a20f0f7d","judge":"ambiguity","fail":false,"why":"C: revenue per editor is D 0.435, E 0.351, B 0.316, C 0.219, A 0.154, so D, E, B, C, A, with no ties."},
+  {"id":"j-dabe33b7","judge":"ambiguity","fail":false,"why":"C: 58,000 x 84% = 48,720 one-time drivers / 365 = 133.5 a day, so 133 is the only near option and the next (127, 145) are about 5% or more away."},
+  {"id":"j-561b66d4","judge":"ambiguity","fail":false,"why":"C: the second country is 35.1% - 19.8% = 15.3% of $47 billion = $7.2 billion; reasonable gridline readings give a share of roughly 10-20% ($4.7-9.4 billion), which stays nearest $7.1 billion."},
+  {"id":"j-1766d91a","judge":"ambiguity","fail":false,"why":"B: income in $US is Q 14,395, S 13,178, R 5,069, P 2,400, so Q leads S by about 9%."},
+  {"id":"j-9c4afb8b","judge":"ambiguity","fail":false,"why":"Only D is true: barley plus other crops give 1.2 of 2.2 yield points (54.5%), while A (rapeseed 0.5/1.7 = 29%), B (0.7/1.7 = 41%) and C (0.5/3.9 = 13%) are false."},
+  {"id":"j-5a4bbd90","judge":"ambiguity","fail":false,"why":"C: total profit fell 50% (40 to 20), so wholesale would fall from 70 to 35, giving a total of 35 - 10 = 25 on 2013 sales of 20/4% = 500, which is 5.0% (the absolute-decline reading gives 8%, which is not an option)."},
+  {"id":"j-f65a488f","judge":"ambiguity","fail":false,"why":"D: income in $US is J 12,542, F 11,645, H 4,968, G 2,017, so J leads F by about 8%."},
+  {"id":"j-82eb1a5d","judge":"ambiguity","fail":false,"why":"B: the percentage drops are Q2 45%, Q3 34.3%, Q5 27.8%, Q4 25%, Q1 14.3%, giving 2, 3, 5, 4, 1 with no ties."}
+]

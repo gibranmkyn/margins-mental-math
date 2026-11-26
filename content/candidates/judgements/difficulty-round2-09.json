@@ -1,0 +1,12 @@
+[
+  {"id":"j-8da5f349","judge":"difficulty","fail":false,"why":"Source: kg needed, current-supplier cost, tiered cost with the volume threshold, difference, ignore the unchanged other costs (5 steps); question: the same five steps with salmon and a 100,000 kg tier."},
+  {"id":"j-8f78111b","judge":"difficulty","fail":false,"why":"Source: two per-restaurant divisions, a comparison, and the three no-calculation rejections together (4 steps); question: per-gym electricity on the same pattern with the same three rejections (4 steps)."},
+  {"id":"j-c830697f","judge":"difficulty","fail":false,"why":"Source: gridline readings of indexed lines, four statement checks including the base-week trap and two share/difference calculations (about 6 steps); question: same unlabelled three-line chart and same four checks (about 6 steps)."},
+  {"id":"j-1e875e14","judge":"difficulty","fail":false,"why":"Source: three per-member shares, two combined-class shares, four comparisons (about 6 steps); question: the identical structure with distributors instead of brokers (about 6 steps)."},
+  {"id":"j-2280f026","judge":"difficulty","fail":false,"why":"Source: sum three waterfall bars, compound the total 10 years, halve, test 10% and 15% (5 steps); question: the same five steps with online sales at 4% total growth."},
+  {"id":"j-f0e31c4c","judge":"difficulty","fail":false,"why":"Source: sum one rating level across four charts per group, weight by two sample sizes, compare, plus three share checks (about 6 steps, count-vs-share trap); question: the same with 5-ratings and the same trap (about 6 steps)."},
+  {"id":"j-536a8902","judge":"difficulty","fail":false,"why":"Source: sum 12 bars, find one product's share, relative growth rate, required multiple, years and option pick (5 steps); question: the same five steps for Title C."},
+  {"id":"j-2d8773c9","judge":"difficulty","fail":false,"why":"Source: weekly fixed cost, variable cost per customer, contribution, break-even division, round up to a profit (5 steps); question: the identical five steps for toilets."},
+  {"id":"j-201bd9cc","judge":"difficulty","fail":false,"why":"Source: read two unlabelled cumulative bars from gridlines, take the difference (avoiding the bar-height trap), multiply by the total (3 steps); question: the same three steps."},
+  {"id":"j-8774b3c6","judge":"difficulty","fail":false,"why":"Source: three per-broker shares, two combined-class shares, four comparisons (about 6 steps); question: the identical structure with travel agents (about 6 steps)."}
+]

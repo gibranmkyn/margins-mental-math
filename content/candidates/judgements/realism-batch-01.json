@@ -1,0 +1,12 @@
+[
+  { "id": "j-c4852878", "judge": "realism", "fail": false, "why": "Both laundries' cost shares and margins sum to 100% (27+43+13+17 and 24+39+10+27), and 64 vans, 9 sites and 1,300 clients is a believable regional laundry." },
+  { "id": "j-fd8b8fb6", "judge": "realism", "fail": false, "why": "Shop profits of about $25,000 to $143,000 per shop across chains of 70 to 120 bakeries are believable." },
+  { "id": "j-891f0257", "judge": "realism", "fail": false, "why": "Half-year spend of $23 to $78 per service-plan customer at a bicycle repair chain is believable, and the question's shrink/climb is a stated hypothetical." },
+  { "id": "j-146f5e9a", "judge": "realism", "fail": false, "why": "A cinema chain selling 400,000 trays of nachos a year at $4.00, bought at $1.50 with $2.00 of other costs, is believable." },
+  { "id": "j-9d8bd5a6", "judge": "realism", "fail": false, "why": "600 regulars per kiosk buying 5 cups a week at EUR 2 and EUR 5 of food a week is believable for a station coffee kiosk, and a 40% food margin against 15% for the industry is high but within a factor of a few." },
+  { "id": "j-d83d0bd9", "judge": "realism", "fail": false, "why": "64 bakery shops taking about $2.2 to $2.6 million a month (roughly $35,000 to $40,000 per shop) is believable, as are the modest index movements." },
+  { "id": "j-2228a7c0", "judge": "realism", "fail": false, "why": "A parcel carrier with $350 million revenue, driver fees of 78% and depot costs of 27% trading at a 5% loss is internally consistent and believable." },
+  { "id": "j-22c7c8ff", "judge": "realism", "fail": false, "why": "The visit-purpose split (57/26/17) and the how-they-heard pie (36/27/22/7/5/3) each sum to 100% and 4,800 questionnaires in a month is believable for a city museum." },
+  { "id": "j-d30a8904", "judge": "realism", "fail": false, "why": "Fizzo's sparkling revenue of $158 to $175 million in a market of $1.1 to $1.85 billion gives shares of about 10% to 14%, believable for a soft drinks maker, and the market growth is fast but possible." },
+  { "id": "j-ff0dbb43", "judge": "realism", "fail": false, "why": "The eight spending bars sum exactly to the $111 million total, a believable non-staff budget for a large general hospital." }
+]

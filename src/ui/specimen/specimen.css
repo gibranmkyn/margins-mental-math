@@ -1,0 +1,99 @@
+/* Specimen page only. Steps only, like every other file outside tokens.css. */
+
+.specimen {
+  gap: var(--space-8);
+}
+
+.spec {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  background: var(--ink);
+}
+
+.spec-head {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.spec-name {
+  font-size: var(--type-xl);
+  font-weight: var(--weight-heavy);
+  letter-spacing: var(--tracking-display);
+}
+
+.spec-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.spec-stack {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+.swatch {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.swatch-chip {
+  height: var(--space-8);
+  border: var(--hairline) solid var(--line);
+}
+
+.type-sample {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: var(--hairline) solid var(--line);
+}
+
+.space-bar {
+  height: var(--space-3);
+  background: var(--accent);
+}
+
+.spec-prompt {
+  font-size: var(--type-lg);
+  line-height: var(--leading-snug);
+}
+
+.spec-paragraph {
+  font-size: var(--type-md);
+  line-height: var(--leading-body);
+  color: var(--text);
+  max-width: 65ch;
+}
+
+.spec-sprint {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.spec-sprint-count {
+  font-family: var(--num);
+  font-size: var(--type-num-hero);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-solid);
+  letter-spacing: var(--tracking-display);
+}
+
+.spec-frame {
+  border: var(--hairline) solid var(--line);
+}
+
+.spec-frame .screen {
+  min-height: 0;
+}

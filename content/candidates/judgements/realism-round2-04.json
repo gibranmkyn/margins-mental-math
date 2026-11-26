@@ -1,0 +1,12 @@
+[
+  { "id": "j-5e2b9618", "judge": "realism", "fail": false, "why": "Franchised and owned profits add to each stated total (35, 50, 15, 25) and the margins imply steady group sales of about EUR 1.0-1.25 billion, believable for a hotel group." },
+  { "id": "j-56e2f16d", "judge": "realism", "fail": false, "why": "Each hotel's Room rate and Occupancy shares add to 100%, a negative Occupancy share is a normal decomposition where occupancy fell, and annual revenue growth of 0.9% to 5.8% is believable." },
+  { "id": "j-0e302f5b", "judge": "realism", "fail": false, "why": "For a national petrol chain, $32-54 million projects, $600-750 thousand monthly costs and 9,000-20,000 extra daily customers at $2.50-4.40 profit each give believable returns of roughly 40%." },
+  { "id": "j-33018d14", "judge": "realism", "fail": false, "why": "About one hanging basket per gardener hour (80 baskets from 80 hours, 368 from 400 hours) and 2.5 full time gardeners in peak season are believable for a garden centre." },
+  { "id": "j-92b89176", "judge": "realism", "fail": false, "why": "The eight capacity bars add to the 27 GW total, a believable mix and size for a mid-sized country's power system." },
+  { "id": "j-b703bedb", "judge": "realism", "fail": false, "why": "Export and home profits add to each stated total and the margins imply sales of $250-500 million, believable for an outdoor clothing maker." },
+  { "id": "j-592848bb", "judge": "realism", "fail": false, "why": "Twelve practices with $143 million fees and 275 consultants give about $520,000 per consultant, believable for a strategy consultancy." },
+  { "id": "j-1544f2a2", "judge": "realism", "fail": false, "why": "City hotels with $14-40 million room revenue paying $1.1-4.6 million in agent commission (about 4% to 18% of revenue) are believable." },
+  { "id": "j-534f0d61", "judge": "realism", "fail": false, "why": "Lease fees of $510-590 a month on 7,100-9,300 cars, workshop rates of $76-95 an hour and thin leasing margins against fatter workshop margins are believable." },
+  { "id": "j-d61aef7a", "judge": "realism", "fail": false, "why": "Checkout pay of $12.60-13.80 an hour, about 1,100 cashiers and around 1,050-1,130 items scanned per paid checkout hour are high but within a factor of a few of what a supermarket chain reports." }
+]

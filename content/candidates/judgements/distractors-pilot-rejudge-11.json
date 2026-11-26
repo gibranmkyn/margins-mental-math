@@ -1,0 +1,3 @@
+[
+  { "id": "j-a592a413", "judge": "distractors", "fail": false, "why": "The options form an evenly spaced grid (36, 48, 60, 72, step 12) anchored by $72 million, which applies Clothing's like-for-like to new-store ratio (12/24 = 0.5) instead of its share (1/3) to the $144m total, so $36m and $60m continue the spacing; no common slip lands exactly on $48m." }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": "j-52191183", "judge": "realism", "fail": false, "why": "Four hotel survey pies with samples of 940 and 1,350 guests each add to 100%, and the low cleanliness scores at hotel A are poor but possible." },
+  { "id": "j-caabf5e3", "judge": "realism", "fail": false, "why": "Each crop's more-land and higher-yield parts add to its stated total (for example wheat 0.7 + 0.5 = 1.2), and an average annual rise in harvest value of about 3 percentage points is believable for a farmers' cooperative." },
+  { "id": "j-7d463722", "judge": "realism", "fail": false, "why": "A multiplex chain gaining 4,000 to 7,000 visitors a day at about EUR 7 to 9 profit each, with investments of EUR 35m to 60m and monthly costs under EUR 1m, gives annual returns of roughly 25% and is believable." },
+  { "id": "j-64303d50", "judge": "realism", "fail": false, "why": "Bottled cooking gas at $1.20 to $1.50 per kg against a $1.20 cost, with restaurants buying 10 to 50 kg a week, fits a commercial LPG supplier." },
+  { "id": "j-9706b600", "judge": "realism", "fail": false, "why": "Revenue minus costs equals the stated profit in both seasons, the average month lengths match the calendar, and about $48 of revenue per rental day over 650,000 to 690,000 rental days a month fits a national car rental leader." },
+  { "id": "j-d26e1c10", "judge": "realism", "fail": false, "why": "Meal-kit revenue of $17m to $46m per market with marketing at roughly 4% to 16% of revenue is within a few times of what such a business reports." },
+  { "id": "j-804f9499", "judge": "realism", "fail": false, "why": "Every rating split adds to 100%, and the existing-owner and first-time-buyer groups add to the 32,000 runners tested." },
+  { "id": "j-3f201392", "judge": "realism", "fail": false, "why": "An online sports retailer with 115 product lines earning $30m in total, or about $260,000 per product, is believable as stylised case data." },
+  { "id": "j-c80ee43a", "judge": "realism", "fail": false, "why": "A 255-lawyer corporate firm billing $156m, between about $190,000 and $825,000 per lawyer by practice, matches what such firms report." },
+  { "id": "j-e64f02a8", "judge": "realism", "fail": false, "why": "Market spending of about $29bn split across company sizes, with small businesses growing from $2.8bn to $6.8bn over five years, is within a few times of the real accounting software market." }
+]

@@ -1,0 +1,183 @@
+/*
+ * Chart renderer, drawn inside the Figure part. Colours are the chart steps in
+ * tokens.css: --chart-1 (amber) for the series the question asks about,
+ * --chart-2 to --chart-4 for the rest. Sizes inside the SVG are set on the
+ * marks by layout.ts, in CSS pixels at 1:1 (12px, matching --type-xs).
+ */
+
+.chart-unit {
+  font-family: var(--word);
+  font-size: var(--type-xs);
+  line-height: var(--leading-snug);
+  color: var(--muted);
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
+  margin-top: var(--space-2);
+  list-style: none;
+  font-family: var(--word);
+  font-size: var(--type-sm);
+  color: var(--text);
+}
+
+.chart-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Beats the Figure's full-width rule for the drawing itself. */
+.figure-body .chart-swatch {
+  flex: none;
+  width: var(--chart-swatch);
+  height: var(--chart-swatch);
+}
+
+.figure-body .chart-swatch-line {
+  width: var(--chart-swatch-line);
+}
+
+/* A chart wider than its frame (so its text can stay 12px) scrolls sideways here, fading at the edge that hides more. */
+.chart-frame {
+  position: relative;
+  min-width: 0;
+  margin-top: var(--space-2);
+}
+
+.chart-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: var(--table-fade);
+  background: linear-gradient(to right, transparent, var(--ink));
+  opacity: 0;
+  pointer-events: none;
+}
+
+.chart-more-right::after {
+  opacity: 1;
+}
+
+.chart-canvas {
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+}
+
+.chart-hint {
+  margin-top: var(--space-1);
+  text-align: right;
+}
+
+.chart-canvas svg {
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Fills */
+.paint-accent {
+  fill: var(--chart-1);
+  stroke: var(--chart-1-edge);
+}
+.paint-light {
+  fill: var(--chart-2);
+}
+.paint-mid {
+  fill: var(--chart-3);
+}
+.paint-dark {
+  fill: var(--chart-4);
+}
+.paint-hatch-ground {
+  fill: var(--ink);
+}
+.paint-hatch-line {
+  stroke: var(--chart-2);
+}
+.paint-hatch {
+  stroke: var(--chart-2);
+  stroke-width: 1;
+}
+/* An asked-about waterfall decrease: the accent fill with ink hatching, inside the accent's own edge. */
+.paint-accent-hatch-ground {
+  fill: var(--chart-1);
+}
+.paint-accent-hatch-line {
+  stroke: var(--chart-1-ink);
+}
+.paint-accent-hatch {
+  stroke: var(--chart-1-edge);
+  stroke-width: 1;
+}
+
+/* Slices and markers are outlined in the page colour so neighbours stay apart. */
+.chart-slice,
+.chart-marker {
+  stroke: var(--ink);
+}
+
+/* The asked-about slice keeps its own edge; a marker on the asked-about line takes the line's colour. */
+.chart-slice.paint-accent {
+  stroke: var(--chart-1-edge);
+}
+.chart-marker.paint-accent {
+  fill: var(--chart-1-line);
+}
+
+/* Lines */
+.stroke-accent {
+  stroke: var(--chart-1-line);
+}
+.stroke-light {
+  stroke: var(--chart-2);
+}
+.stroke-mid {
+  stroke: var(--chart-3);
+}
+.stroke-dark {
+  stroke: var(--chart-4);
+}
+
+/* Rules */
+.rule-grid {
+  stroke: var(--chart-grid);
+}
+.rule-grid-strong {
+  stroke: var(--chart-grid-strong);
+}
+.rule-base,
+.rule-leader,
+.rule-reference,
+.rule-connector {
+  stroke: var(--muted);
+}
+.rule-knock {
+  stroke: var(--chart-knock);
+  opacity: 0.7;
+}
+
+/* Text */
+.ink-text,
+.ink-on-dark {
+  fill: var(--text);
+}
+.ink-muted {
+  fill: var(--muted);
+}
+.ink-on-light {
+  fill: var(--ink);
+}
+.ink-on-accent {
+  fill: var(--chart-1-ink);
+}
+.ink-halo {
+  fill: var(--text);
+  stroke: var(--ink);
+  paint-order: stroke;
+  stroke-linejoin: round;
+}

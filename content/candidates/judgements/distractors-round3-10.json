@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-2df20723",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1, 2, 3, 4, 5 is the ranking by revenue, orders or one year value instead of revenue per order, 2, 1, 3, 4, 5 settles Q2 against Q1 but assumes the rest stay in order, and 1, 3, 2, 4, 5 has no slip behind it but passes as the one ranking filler the source has."
+  },
+  {
+    "id": "j-ed57c95b",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B looks incorrect if you add the percentages without weighting by group size (younger 75% against older 61%), D looks incorrect to a glance at the younger shoppers' tall 40% bar at 4, and C is a true statement the sweetness chart has to be checked against, so each is a fair true statement in an INCORRECT question."
+  },
+  {
+    "id": "j-90e34f95",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$340k, $380k and $420k form a tight grid (steps about 10% of the answer), $420k also comes from leaving Team C's 34 brokers out of the total (133 / 316), and $42k is that slip plus a factor-of-ten unit slip; the slips that land on $380k (leaving out one team, or a small revenue bar, or a small broker bar) are the ones the source names."
+  },
+  {
+    "id": "j-ab6b18d9",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$3.7bn is the direct share in place of the indirect one (0.7 x 5.4 = 3.78), $5.9bn is leaving the biotech row out of the indirect sum (1.1 x 5.4 = 5.94), and $10.3bn is the top of an evenly spaced wide grid that the source has (its nearest slip, direct plus indirect at 11.9, is a numeric filler as listed); leaving out the smallest row (7.0) lands on $8.1bn, but the source names that slip."
+  },
+  {
+    "id": "j-0d929717",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B is the revenue-only slip (revenue rose from 262 to 267), C confuses the 3% fall in margin with a fall in profit, and D rounds 13 / 3 = 4.3 to four or reads a margin index a gridline off; reading the margin half a gridline off still gives 6% for A, but the source names that slip."
+  },
+  {
+    "id": "j-8d0fc0b8",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B reads the market share axis instead of margin (2.4 / 0.8 = 3), C treats the lowest share as the lowest sales, and D treats similar share and margin as similar profit without market size; C and D are over-readings the figures point towards, not statements without basis."
+  },
+  {
+    "id": "j-b9934f4b",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$132, $142 and $152 sit with $162 in a tight evenly spaced grid (steps of $10, about 6% of the answer) on a maximum-price question, where rough estimates land on the neighbours, and no slip (ignoring labour time gives $234, electricity only $90) lands on $162."
+  },
+  {
+    "id": "j-08fa5552",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B is reading 'a total of 2.5 extra' as 2.5 potters in all (192 minutes per bowl), D is misreading the step at 108 bowls (2 potters, 178 minutes) or adding the hires to November's 2.5, and C ties with D at 133 minutes and passes as the source's tie filler, since every slip that hurts C hurts D more; the slips that keep A on top are the ones the source names."
+  },
+  {
+    "id": "j-f7a127ae",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B uses the new-customer total as the base (0.5 / 1.9 = 26%), C uses the combined total (0.5 / 3.3 = 15%), and D leaves fixed-line out of the existing total (0.8 / 1.1 = 73%) or reads the new-customer series; no single slip leaves A as the only statement that reads true."
+  },
+  {
+    "id": "j-e80bfc68",
+    "judge": "distractors",
+    "fail": false,
+    "why": "7, 11 and 15 minutes complete an evenly spaced wide grid, which the source has, with numeric fillers listed: counting only the summer groomers (9.9) falls between 7 and 11, and counting the original groomer full time in July gives 15.9, near 15; no slip lands on 3."
+  }
+]

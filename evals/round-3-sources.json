@@ -1,0 +1,4572 @@
+{
+  "about": "Round 3 of booklet candidates (26 November 2026), planned under the family cap as changed that day (evals/README.md, \"Changes to the criteria\"): 8 variants where every variant's answer is worked out afresh from its own numbers (numbers, rankings, labels, statements that differ only in their numbers), 4 otherwise, never more than 2 at one letter. Every new variant's answer letter is fixed here so that no letter exceeds 2 in its family; its currency is fixed so that the round moves the bank towards the booklets' mix. Sources that failed before are limited or left out (`left out` below). Before writing: delete the 9 dropped round-2 leftovers from content/candidates (the stopping rule; their letters are not reused), and check that the app keeps siblings apart in sessions and mocks (the precondition for any fifth variant). Groups 1 to 8: 140 candidates for about 135 admitted. Groups 9 to 12 (added the same day, README \"The keyed claim\"): 64 candidates in 16 statement families already at 4, each new variant keying a different one of its source's claims from the one the admitted siblings key (`keys`, from the source's `keyedClaim.claims`), so that no claim is keyed by more than 4 variants (half of 8); about 50 admitted. Groups 13 and 14 (added later that day): the six statement families written to 4 in groups 1 to 8, opened the same way (24 candidates; their waiting variants carry `keys` under `waiting`), and the last single slots in four numeric families (4). bk-pracB-q09-d and -e were never written (D is unreachable). 230 candidates written or planned, about 205 admitted: about the 200 wanted, if the moved-key variants pass at about 80%.",
+  "date": "2026-11-26",
+  "caps": {
+    "computedAnswer": 8,
+    "otherwise": 4,
+    "perLetter": 2,
+    "keyedClaimMoves": 8
+  },
+  "totals": {
+    "sources": 61,
+    "candidates": 230,
+    "sourcesPerBooklet": {
+      "pracB": 13,
+      "pracC": 8,
+      "pst2": 11,
+      "pst3": 10,
+      "pracA": 5,
+      "bcg": 1,
+      "sample": 4,
+      "pst1": 9
+    },
+    "candidatesPerBooklet": {
+      "pracB": 44,
+      "pracC": 32,
+      "pst2": 41,
+      "pst3": 43,
+      "pracA": 21,
+      "bcg": 2,
+      "sample": 13,
+      "pst1": 34
+    },
+    "sourcesPerSkill": {
+      "percentages-in-context": 19,
+      "averages-mixes": 3,
+      "unit-economics": 6,
+      "testing-statements": 19,
+      "ratios-comparisons": 9,
+      "break-even-payback": 2,
+      "expected-value": 1,
+      "growth-trends": 2
+    },
+    "candidatesPerSkill": {
+      "percentages-in-context": 66,
+      "averages-mixes": 8,
+      "unit-economics": 26,
+      "testing-statements": 77,
+      "ratios-comparisons": 35,
+      "break-even-payback": 6,
+      "expected-value": 4,
+      "growth-trends": 8
+    },
+    "candidatesPerTier": {
+      "1": 14,
+      "2": 140,
+      "3": 76
+    },
+    "candidatesPerAnswerKind": {
+      "numeric": 77,
+      "statement (numbers only differ)": 17,
+      "ranking": 25,
+      "label": 16,
+      "statement": 7,
+      "statement (keyed claim moves)": 88
+    },
+    "answerLetters": {
+      "A": 52,
+      "D": 58,
+      "C": 59,
+      "B": 61
+    },
+    "answerLettersShare": {
+      "A": "23%",
+      "D": "25%",
+      "C": "26%",
+      "B": "27%"
+    },
+    "bankAnswerLettersBefore": {
+      "A": 105,
+      "B": 136,
+      "C": 136,
+      "D": 94
+    },
+    "bankAnswerLettersAfterAll": {
+      "A": "157 (22%)",
+      "B": "197 (28%)",
+      "C": "195 (28%)",
+      "D": "152 (22%)"
+    },
+    "currencies": {
+      "dollars": 68,
+      "euros": 40,
+      "none": 106,
+      "pounds": 16
+    },
+    "currencyShareOfThoseNamingOne": {
+      "dollars": "55%",
+      "euros": "32%",
+      "pounds": "13%"
+    },
+    "groups1to8": {
+      "sources": 45,
+      "candidates": 138
+    },
+    "groups9to12KeyedClaim": {
+      "sources": 16,
+      "candidates": 64
+    },
+    "notWritten": [
+      "bk-pracB-q09-d",
+      "bk-pracB-q09-e"
+    ],
+    "groups13to14": {
+      "sources": 10,
+      "candidates": 28,
+      "keyedClaim": 24
+    }
+  },
+  "currencyRule": "Dollars, euros or pounds as each variant's `currency` says; `none` where the source names no currency. Pounds only for sources in pounds (pracA-q22, pst1-q14, pst2-q14); euros for sources in euros and for some dollar sources, set in an unnamed country where euros are plausible. Never name a real country, the UK included (WRITING.md section 4: at most an invented or unnamed country); one currency per question.",
+  "groups": [
+    {
+      "group": 1,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pracB-q04",
+          "caseTitle": "Freddie's Shrimp Shack",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q04-a",
+              "industry": "coffee-shop chain",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pracB-q04-b",
+              "industry": "steak restaurants",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracB-q04-c",
+              "industry": "fast-food chain (fries)",
+              "answer": "B"
+            }
+          ],
+          "variants": 5,
+          "new": [
+            {
+              "id": "bk-pracB-q04-d",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q04-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q04-f",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q04-g",
+              "answer": "C",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pracB-q04-h",
+              "answer": "B",
+              "currency": "euros"
+            }
+          ],
+          "note": "Share of a preparation cost explained by a weight loss valued at the purchase price, from a labelled waterfall ($ per kg, two decimals), closest. Keep the loose premise and the 20/30/40/50% grid (the siblings kept it too); the 40% trap applies the loss to the wrong price. Answer at A needs the true share near 20% with the trap still on a higher option. Siblings passed first time."
+        },
+        {
+          "id": "pracC-q19",
+          "caseTitle": "National Garbage Inc",
+          "skill": "averages-mixes",
+          "tier": 1,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracC-q19-a",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q19-b",
+              "answer": "B",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q19-c",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q19-d",
+              "answer": "D",
+              "currency": "none"
+            }
+          ],
+          "note": "New source. Average daily tonnage Monday to Friday from a line chart read from gridlines (7 days shown), best approximates. Traps: dividing by 7 (always below, so not A), leaving out Friday, averaging the two end days. Answers must survive quarter-step readings. Its chart is the worked example's (pracC-q21, evals/calibration/faithful.json): take nothing from that example's setting or numbers."
+        },
+        {
+          "id": "pst2-q14",
+          "caseTitle": "Babylove",
+          "skill": "unit-economics",
+          "tier": 2,
+          "answerKind": "numeric (options in no order)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q14-a",
+              "industry": "garden retailer (pounds)",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q14-b",
+              "industry": "online sports retailer",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst2-q14-c",
+              "industry": "kitchenware shops (pounds)",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst2-q14-d",
+              "industry": "pet-supplies stores",
+              "answer": "D"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst2-q14-e",
+              "answer": "D",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pst2-q14-f",
+              "answer": "A",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pst2-q14-g",
+              "answer": "C",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pst2-q14-h",
+              "answer": "B",
+              "currency": "pounds"
+            }
+          ],
+          "note": "Profit per item after a 10% rise: (sum of three category profits x 1.1) / items, in millions. Options pair each value with its ten-times slip, not ascending: copy the pattern; answer exact to the unit. The source is in pounds: these in pounds, country unnamed."
+        },
+        {
+          "id": "pst3-q03",
+          "caseTitle": "Milky Choc",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "ranking",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q03-a",
+              "industry": "bookshops",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst3-q03-b",
+              "industry": "pizza takeaways",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst3-q03-c",
+              "industry": "cinemas",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst3-q03-d",
+              "industry": "garden centres",
+              "answer": "C"
+            }
+          ],
+          "variants": 3,
+          "new": [
+            {
+              "id": "bk-pst3-q03-e",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q03-f",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q03-g",
+              "answer": "C",
+              "currency": "none"
+            }
+          ],
+          "note": "Ranks five quintiles by percentage fall from a labelled two-series horizontal bar chart (quintile 5 at the top); every option starts with the same quintile. Traps: ranking by level, a neighbouring bar. Reword past \"What is the correct ranking of the five quintiles in Exhibit 1\". Limited to 3: two siblings needed the fix round."
+        },
+        {
+          "id": "pracA-q24",
+          "caseTitle": "WFGLA",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement",
+          "cap": 4,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracA-q24-a",
+              "industry": "workplace pensions",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracA-q24-b",
+              "industry": "regional bus pass",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracA-q24-c",
+              "industry": "blood service",
+              "answer": "D"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pracA-q24-d",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "\"Most likely TRUE\" among statements on a 9x3 table by contact level, segment and size; two notCovered and one no-basis statement as the source has; 93% surplus. Cap stays 4 (the keyed claim is the same in every variant); the last slot answers at B."
+        },
+        {
+          "id": "pst2-q07",
+          "caseTitle": "mybasket.com",
+          "skill": "ratios-comparisons",
+          "tier": 3,
+          "answerKind": "statement",
+          "cap": 4,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q07-a",
+              "industry": "food delivery app",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst2-q07-b",
+              "industry": "multiplex cinemas (euros)",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst2-q07-c",
+              "industry": "petrol stations",
+              "answer": "B"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pst2-q07-d",
+              "answer": "A",
+              "currency": "euros"
+            }
+          ],
+          "note": "ROI hurdle statements: one option's annual return sets the rate the other must beat; options in pairs (maximum / minimum amount, at least / at most rate), the \"minimum\" one a filler; the loose \"at least\" key, keep. Same table as the worked example pst2-q05: avoid faithful.json's setting. Cap stays 4; the last slot answers at A. The source is in euros."
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pracB-q19",
+          "caseTitle": "PharmaCo",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "answerKind": "ranking",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q19-a",
+              "industry": "packaged-food company",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q19-b",
+              "industry": "beach-resort hotels",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pracB-q19-c",
+              "industry": "cement producer",
+              "answer": "A"
+            }
+          ],
+          "variants": 5,
+          "new": [
+            {
+              "id": "bk-pracB-q19-d",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q19-e",
+              "answer": "B",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q19-f",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q19-g",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q19-h",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Ranks four countries by volatility = max - min growth (negative minima). The risk-letter and corruption rows are surplus and offer a rival ranking; the one trap ranks by the minimum alone; two filler rankings as the source has. Siblings passed first time."
+        },
+        {
+          "id": "pracC-q03",
+          "caseTitle": "Mail-It",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "statement (numbers only differ)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracC-q03-a",
+              "industry": "bill printing and mailing",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracC-q03-b",
+              "industry": "waste collection",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracC-q03-c",
+              "industry": "driving schools",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracC-q03-d",
+              "industry": "tyre fitting",
+              "answer": "D"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracC-q03-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q03-f",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q03-g",
+              "answer": "C",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q03-h",
+              "answer": "B",
+              "currency": "euros"
+            }
+          ],
+          "note": "Approximate % change in items per day (items / days per period); four paired options (3% / 5%, fewer / more); \"than in any of the other months\" is loose, keep; skipping the per-day step gives the 3% trap. Siblings passed first time."
+        },
+        {
+          "id": "pst2-q23",
+          "caseTitle": "Liftex ltd.",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric (options in no order)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q23-a",
+              "industry": "car rental survey",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst2-q23-b",
+              "industry": "broadband survey",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst2-q23-c",
+              "industry": "insurance broker survey",
+              "answer": "A"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst2-q23-d",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q23-e",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q23-f",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q23-g",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Share of the whole customer base giving ratings 1 to 3 = sum of three slices x respondents' share of the base; four pies, one used; options unordered with a ten-times slip, the \"1 and 2 only\" slip and one filler."
+        },
+        {
+          "id": "bcg-q14",
+          "caseTitle": "Imagine Learning (MCP practice set)",
+          "skill": "break-even-payback",
+          "tier": 2,
+          "answerKind": "numeric (options in no order)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-bcg-q14-b",
+              "industry": "textbook publisher (proofreading)",
+              "answer": "D"
+            },
+            {
+              "id": "bk-bcg-q14-c",
+              "industry": "oven maker (wiring)",
+              "answer": "C"
+            },
+            {
+              "id": "bk-bcg-q14-d",
+              "industry": "cooking-sauce maker (jar labelling)",
+              "answer": "A"
+            }
+          ],
+          "variants": 2,
+          "new": [
+            {
+              "id": "bk-bcg-q14-e",
+              "answer": "B",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-bcg-q14-f",
+              "answer": "D",
+              "currency": "dollars"
+            }
+          ],
+          "note": "Maximum hours in-house staff may take so the switch pays: (outsourcing + defect fixing on one line) / hourly wage, keyed as the largest option not above it (best check, at-most score). Keep the options in no order and the second line and other wage unused. Limited to 2: bk-bcg-q14-a failed because counting the other product line too still picked its answer; check that slip (both lines, or the other line's subcontractor cost) lands on a wrong option."
+        },
+        {
+          "id": "sample-q08",
+          "caseTitle": "Energy Data",
+          "skill": "averages-mixes",
+          "tier": 2,
+          "answerKind": "numeric (options in no order)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-sample-q08-a",
+              "industry": "accounting software",
+              "answer": "C"
+            },
+            {
+              "id": "bk-sample-q08-b",
+              "industry": "architecture practice",
+              "answer": "B"
+            },
+            {
+              "id": "bk-sample-q08-c",
+              "industry": "management consultancy",
+              "answer": "D"
+            },
+            {
+              "id": "bk-sample-q08-d",
+              "industry": "advertising agency",
+              "answer": "A"
+            }
+          ],
+          "variants": 2,
+          "new": [
+            {
+              "id": "bk-sample-q08-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-sample-q08-f",
+              "answer": "A",
+              "currency": "dollars"
+            }
+          ],
+          "note": "Average revenue per analyst = total revenue / total analysts over twelve items from two labelled bar charts. Options not ascending (a ten-times slip beside the answer); traps leave one revenue bar or one analyst bar out of its total; dropping a small bar must not land on the answer unless slipsOnAnswer lists it. Limited to 2: three of four siblings needed the fix round."
+        },
+        {
+          "id": "pst3-q15",
+          "caseTitle": "Paul Bakery",
+          "skill": "unit-economics",
+          "tier": 3,
+          "answerKind": "statement",
+          "cap": 4,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q15-a",
+              "industry": "florist",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst3-q15-b",
+              "industry": "picture framer",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst3-q15-c",
+              "industry": "garden centre",
+              "answer": "D"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pst3-q15-d",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Which idea LEAST improves minutes per unit, with FTE read from a step-joined scatter by output band; all 12 values on gridlines; keep the \"a total of 3 extra\" robustness. Cap stays 4; the last slot answers at B."
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "candidates": 17,
+      "sources": [
+        {
+          "id": "pracC-q02",
+          "caseTitle": "Mail-It",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric (no trap)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracC-q02-a",
+              "industry": "car rental",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracC-q02-b",
+              "industry": "online clothing",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracC-q02-c",
+              "industry": "city bus operator",
+              "answer": "C"
+            }
+          ],
+          "variants": 5,
+          "new": [
+            {
+              "id": "bk-pracC-q02-d",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q02-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q02-f",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q02-g",
+              "answer": "C",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pracC-q02-h",
+              "answer": "B",
+              "currency": "euros"
+            }
+          ],
+          "note": "Percentage-point difference between two periods' profit margins from a monthly-averages table; days and items rows unused. The source records no trap (three fillers, options 1.5 points apart): none is required; declare any real slip. Invented country (Molvania is a booklet name). Siblings passed first time."
+        },
+        {
+          "id": "pst1-q05",
+          "caseTitle": "Selecto",
+          "skill": "break-even-payback",
+          "tier": 2,
+          "answerKind": "numeric (no trap)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst1-q05-a",
+              "industry": "gym chain (treadmill)",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst1-q05-b",
+              "industry": "hotel group (ice machine)",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst1-q05-c",
+              "industry": "print and copy shops (photocopier)",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst1-q05-d",
+              "industry": "vending operator (drinks dispenser)",
+              "answer": "D"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst1-q05-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q05-f",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q05-g",
+              "answer": "C",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q05-h",
+              "answer": "B",
+              "currency": "euros"
+            }
+          ],
+          "note": "Maximum extra price for a new machine whose labour and electricity savings repay within three years; cents per kWh to dollars. No trap recorded (a tight even $10 grid): none required. Small figures like the source's."
+        },
+        {
+          "id": "pst2-q25",
+          "caseTitle": "Liftex ltd.",
+          "skill": "unit-economics",
+          "tier": 3,
+          "answerKind": "numeric (options in no order)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q25-a",
+              "industry": "hand sanitiser",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst2-q25-b",
+              "industry": "coffee beans",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q25-c",
+              "industry": "wall paint",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst2-q25-d",
+              "industry": "wet dog food",
+              "answer": "B"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst2-q25-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst2-q25-f",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst2-q25-g",
+              "answer": "C",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst2-q25-h",
+              "answer": "B",
+              "currency": "euros"
+            }
+          ],
+          "note": "Average order value over two pack sizes: price per litre x volume x units per order, averaged; the discount threshold is not reached (the trap). Options in the source's pattern (value, five times, next value, five times), closest. Siblings passed first time."
+        },
+        {
+          "id": "pst3-q11",
+          "caseTitle": "Paul Bakery",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q11-a",
+              "industry": "ice-cream parlour",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst3-q11-b",
+              "industry": "ski rental shop (euros)",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst3-q11-c",
+              "industry": "bicycle repair workshop",
+              "answer": "D"
+            }
+          ],
+          "variants": 3,
+          "new": [
+            {
+              "id": "bk-pst3-q11-d",
+              "answer": "D",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst3-q11-e",
+              "answer": "B",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst3-q11-f",
+              "answer": "C",
+              "currency": "euros"
+            }
+          ],
+          "note": "Difference in average monthly profit between two periods (revenue x margin; revenue - cost agrees within rounding). Two traps (margin points x one revenue; margin read on costs) and a bottom filler; answer at A is unproven, so B, C, D. The source is in euros."
+        },
+        {
+          "id": "pracB-q22",
+          "caseTitle": "PharmaCo",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement",
+          "cap": 4,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q22-a",
+              "industry": "vegetable seeds",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q22-b",
+              "industry": "accounting software",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracB-q22-c",
+              "industry": "restaurant kitchen equipment",
+              "answer": "D"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pracB-q22-d",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Statements on a scatter of margin against share (gridlines): a margin ratio \"approximately N times\"; two notCovered. Keep the looseness but no quarter-step reading may flip it. Cap stays 4; the last slot answers at B."
+        }
+      ]
+    },
+    {
+      "group": 4,
+      "candidates": 17,
+      "sources": [
+        {
+          "id": "pst1-q24",
+          "caseTitle": "StarCoffee",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "answerKind": "label",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst1-q24-a",
+              "industry": "bakery group",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst1-q24-b",
+              "industry": "mineral-water bottler",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst1-q24-c",
+              "industry": "yogurt maker",
+              "answer": "C"
+            }
+          ],
+          "variants": 5,
+          "new": [
+            {
+              "id": "bk-pst1-q24-d",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q24-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q24-f",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q24-g",
+              "answer": "C",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst1-q24-h",
+              "answer": "B",
+              "currency": "euros"
+            }
+          ],
+          "note": "Highest litres per head = cups per head x cup size across four countries (Country A to D). Cost and price columns unused; two slips land on the answer in the source (slipsOnAnswer); the rounding trap needs two products close. Keep it this light."
+        },
+        {
+          "id": "pracC-q05",
+          "caseTitle": "Mail-It",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracC-q05-a",
+              "industry": "cheque processing",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracC-q05-b",
+              "industry": "airport baggage handling",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracC-q05-c",
+              "industry": "toll motorways",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracC-q05-d",
+              "industry": "health-insurance claims",
+              "answer": "D"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracC-q05-e",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q05-f",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q05-g",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q05-h",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Extra items handled by hand = (1 - machine share) x items, difference between periods, from a flow table and a volume table; the middle flow rows are distractors. One trap (the fall in machine-handled items) and two fillers in an even grid."
+        },
+        {
+          "id": "pst3-q06",
+          "caseTitle": "Milky Choc",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q06-a",
+              "industry": "mobile network",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst3-q06-b",
+              "industry": "dog-food maker",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst3-q06-c",
+              "industry": "gym chain",
+              "answer": "D"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst3-q06-d",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q06-e",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q06-f",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q06-g",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Difference in respondents giving one rating when one group is three times the other: % x N for each, subtract; four charts, one criterion used. Options evenly spaced; C is new to the family: the \"reports one count without subtracting\" slips must still land on wrong options."
+        },
+        {
+          "id": "pracC-q17",
+          "caseTitle": "National Garbage Inc",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracC-q17-a",
+              "industry": "broadband operator",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracC-q17-b",
+              "industry": "water coolers for offices",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracC-q17-c",
+              "industry": "medical sample collection",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracC-q17-d",
+              "industry": "bookkeeping software",
+              "answer": "C"
+            }
+          ],
+          "variants": 2,
+          "new": [
+            {
+              "id": "bk-pracC-q17-e",
+              "answer": "B",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q17-f",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Percentage-point difference in awareness between two customer groups from a survey table; traps read a usage row, the considered row, or mixes rows. Both new variants answer at B, which no sibling has: put the considered-row difference above the true difference and below the mixed-row slip. If the traps cannot all be kept with B, write one and report it. Pilot family, passed."
+        },
+        {
+          "id": "pst2-q19",
+          "caseTitle": "Liftex ltd.",
+          "skill": "percentages-in-context",
+          "tier": 3,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q19-a",
+              "industry": "heating equipment",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst2-q19-b",
+              "industry": "soft drinks",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst2-q19-c",
+              "industry": "antivirus software",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q19-d",
+              "industry": "mobile games",
+              "answer": "B"
+            }
+          ],
+          "variants": 2,
+          "new": [
+            {
+              "id": "bk-pst2-q19-e",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q19-f",
+              "answer": "C",
+              "currency": "none"
+            }
+          ],
+          "note": "Average annual market-share loss over three year-steps from a line chart read from gridlines, closest, in percentage points. Traps: the wrong series, the total instead of the annual loss (always above, so not D); the filler continues the spacing; counting four years lands near the answer in the source too (slipsOnAnswer)."
+        }
+      ]
+    },
+    {
+      "group": 5,
+      "candidates": 17,
+      "sources": [
+        {
+          "id": "pst2-q22",
+          "caseTitle": "Liftex ltd.",
+          "skill": "percentages-in-context",
+          "tier": 1,
+          "answerKind": "numeric (ratings 1 to 4)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q22-a",
+              "industry": "hotel guest survey",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q22-b",
+              "industry": "online grocer survey",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst2-q22-c",
+              "industry": "appliance repair survey",
+              "answer": "D"
+            }
+          ],
+          "variants": 5,
+          "new": [
+            {
+              "id": "bk-pst2-q22-d",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q22-e",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q22-f",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q22-g",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q22-h",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Tier 1: the rating with the most responses over two questions put to the same respondents = sum of percentages, from four labelled pies, two unused. Options are the ratings 1 to 4, so the answer can be any rating; the three traps (one question alone, the fewest, the other area) must land on the other three. Keep tier 1. Siblings passed first time."
+        },
+        {
+          "id": "pst1-q14",
+          "caseTitle": "Saint John's Hospital",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst1-q14-a",
+              "industry": "motoring club (pounds)",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst1-q14-b",
+              "industry": "insurer IT service desk",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst1-q14-c",
+              "industry": "appliance warranty repairs",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst1-q14-d",
+              "industry": "home-care charity (pounds)",
+              "answer": "D"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst1-q14-e",
+              "answer": "D",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pst1-q14-f",
+              "answer": "A",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pst1-q14-g",
+              "answer": "C",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pst1-q14-h",
+              "answer": "B",
+              "currency": "pounds"
+            }
+          ],
+          "note": "Cost of one group = difference of two cumulative % from a labelled cumulative chart x total cost (fixed + attendances x variable cost), closest. Traps read the wrong bar's increment; options evenly spaced. The source is in pounds: write these in pounds, country unnamed."
+        },
+        {
+          "id": "pst3-q13",
+          "caseTitle": "Paul Bakery",
+          "skill": "unit-economics",
+          "tier": 3,
+          "answerKind": "statement (numbers only differ)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q13-a",
+              "industry": "car wash",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst3-q13-b",
+              "industry": "independent cinema",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst3-q13-c",
+              "industry": "dry cleaner (euros)",
+              "answer": "C"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst3-q13-d",
+              "answer": "D",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst3-q13-e",
+              "answer": "D",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst3-q13-f",
+              "answer": "A",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst3-q13-g",
+              "answer": "C",
+              "currency": "euros"
+            }
+          ],
+          "note": "Approximate change in profit per item between two periods; four paired options (about 20% / 40%, less / more); the trap reverses the direction, the other two are fillers. The source is in euros. Siblings passed first time."
+        },
+        {
+          "id": "sample-q06",
+          "caseTitle": "Energy Data",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "answerKind": "ranking",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-sample-q06-a",
+              "industry": "law firm",
+              "answer": "B"
+            },
+            {
+              "id": "bk-sample-q06-b",
+              "industry": "trade-magazine publisher",
+              "answer": "C"
+            },
+            {
+              "id": "bk-sample-q06-c",
+              "industry": "recruitment agency",
+              "answer": "D"
+            },
+            {
+              "id": "bk-sample-q06-d",
+              "industry": "engineering consultancy",
+              "answer": "A"
+            }
+          ],
+          "variants": 3,
+          "new": [
+            {
+              "id": "bk-sample-q06-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-sample-q06-f",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-sample-q06-g",
+              "answer": "B",
+              "currency": "dollars"
+            }
+          ],
+          "note": "Ranks five of twelve items by revenue per analyst from two labelled horizontal bar charts; seven items unused; traps swap the close pair, rank by headcount, or read an adjacent bar. Keep the full-time caveat sentence. Limited to 3: two siblings needed the fix round."
+        },
+        {
+          "id": "pracB-q23",
+          "caseTitle": "PharmaCo",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q23-a",
+              "industry": "industrial paints",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q23-b",
+              "industry": "breakfast cereals",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracB-q23-c",
+              "industry": "bottled mineral water",
+              "answer": "A"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pracB-q23-d",
+              "answer": "B",
+              "currency": "dollars"
+            }
+          ],
+          "note": "Profit in one market = market size x share x margin read from a scatter (gridlines), closest. Forgetting the margin gives sales, far above, so the answer sits at A or B only; the one open slot is B."
+        }
+      ]
+    },
+    {
+      "group": 6,
+      "candidates": 17,
+      "sources": [
+        {
+          "id": "pst3-q26",
+          "caseTitle": "Public Private Partnerships",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric (no trap)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q26-a",
+              "industry": "tourism development funds",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst3-q26-b",
+              "industry": "special economic zones",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst3-q26-c",
+              "industry": "foreign direct investment",
+              "answer": "A"
+            }
+          ],
+          "variants": 5,
+          "new": [
+            {
+              "id": "bk-pst3-q26-d",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst3-q26-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst3-q26-f",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst3-q26-g",
+              "answer": "C",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst3-q26-h",
+              "answer": "B",
+              "currency": "dollars"
+            }
+          ],
+          "note": "GDP x summed indirect contribution points = amount attributed; loose premise (ten-year points on current GDP), keep; evenly spaced grid (wideGrid), no trap required. Invent the country; 2013/2023 is the source's year pair."
+        },
+        {
+          "id": "pst1-q26",
+          "caseTitle": "StarCoffee",
+          "skill": "expected-value",
+          "tier": 2,
+          "answerKind": "ranking",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst1-q26-a",
+              "industry": "snacks and soft-drinks maker (retailer threats)",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst1-q26-b",
+              "industry": "airline (strike threats)",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst1-q26-c",
+              "industry": "software company (lawsuits)",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst1-q26-d",
+              "industry": "building contractor (penalties)",
+              "answer": "A"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst1-q26-e",
+              "answer": "C",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q26-f",
+              "answer": "B",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q26-g",
+              "answer": "C",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q26-h",
+              "answer": "B",
+              "currency": "dollars"
+            }
+          ],
+          "note": "Ranks four risks by probability x cost from a scatter read from gridlines, closest. Traps: by cost alone, by probability alone, one cost misread off the gridlines. Siblings all answered A or D; these answer at B and C (rankings can sit at any letter). Pilot family, passed."
+        },
+        {
+          "id": "pst3-q14",
+          "caseTitle": "Paul Bakery",
+          "skill": "unit-economics",
+          "tier": 2,
+          "answerKind": "numeric (no trap)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q14-a",
+              "industry": "family caterer",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst3-q14-b",
+              "industry": "bike shop",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst3-q14-c",
+              "industry": "tailor",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst3-q14-d",
+              "industry": "tyre garage",
+              "answer": "B"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst3-q14-e",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q14-f",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q14-g",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q14-h",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Minutes per unit = FTE x 160 hours x 60 / units for two periods, difference, closest. Evenly spaced wide grid (sourceHas wideGrid), no trap required; keep the 50% time share in prose."
+        },
+        {
+          "id": "pracB-q18",
+          "caseTitle": "PharmaCo",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q18-a",
+              "industry": "medical equipment maker",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q18-b",
+              "industry": "industrial coatings maker",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracB-q18-c",
+              "industry": "baby-food maker",
+              "answer": "C"
+            }
+          ],
+          "variants": 2,
+          "new": [
+            {
+              "id": "bk-pracB-q18-d",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q18-e",
+              "answer": "B",
+              "currency": "dollars"
+            }
+          ],
+          "note": "Second-largest market = step between the first two bars of a 50-bar cumulative chart read from gridlines x total, closest. The cumulative-height trap is always above the answer, so not D. Options as far apart as the source's; keep the groups field and about 9 of 50 values on gridlines. Limited to 2: all three siblings needed the fix round."
+        },
+        {
+          "id": "pst2-q15",
+          "caseTitle": "Babylove",
+          "skill": "ratios-comparisons",
+          "tier": 1,
+          "answerKind": "ranking",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q15-a",
+              "industry": "ferry operator",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst2-q15-b",
+              "industry": "bakery chain",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q15-d",
+              "industry": "grocer",
+              "answer": "B"
+            }
+          ],
+          "variants": 2,
+          "new": [
+            {
+              "id": "bk-pst2-q15-e",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q15-f",
+              "answer": "D",
+              "currency": "none"
+            }
+          ],
+          "note": "Tier 1: ranks four companies by profit per product in one category; the two traps swap the two rows with equal product counts; one filler ranking, never two. Limited to 2: the pilot's four failed on the filler, and bk-pst2-q15-c failed with two rankings no slip produces."
+        }
+      ]
+    },
+    {
+      "group": 7,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pracA-q13",
+          "caseTitle": "Marcadia",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "answerKind": "ranking",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracA-q13-a",
+              "industry": "online pet-supplies store",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pracA-q13-b",
+              "industry": "food delivery app",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracA-q13-c",
+              "industry": "online beauty retailer",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracA-q13-d",
+              "industry": "cinema ticketing app",
+              "answer": "B"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracA-q13-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracA-q13-f",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracA-q13-g",
+              "answer": "C",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracA-q13-h",
+              "answer": "B",
+              "currency": "euros"
+            }
+          ],
+          "note": "Ranks five quintiles by revenue per transaction from a table; the one-year-value chart is surplus. Keep the near tie (the source's $85 against $86) as the trap and a stem that does not start \"What is the correct ranking of the five quintiles in Exhibit\". All four admitted siblings passed every judge first time."
+        },
+        {
+          "id": "pracB-q06",
+          "caseTitle": "Freddie's Shrimp Shack",
+          "skill": "unit-economics",
+          "tier": 2,
+          "answerKind": "statement (numbers only differ)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q06-a",
+              "industry": "pizza restaurants",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q06-b",
+              "industry": "candle maker",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracB-q06-c",
+              "industry": "frozen ready meals",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracB-q06-d",
+              "industry": "skincare maker",
+              "answer": "A"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracB-q06-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q06-f",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q06-g",
+              "answer": "C",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q06-h",
+              "answer": "B",
+              "currency": "euros"
+            }
+          ],
+          "note": "Annual cost comparison: tiered price (first N kg at one rate, the rest lower) against a flat price; four paired options (+/- X, +/- 2X); the \"other costs\" line is unused; the tier break stays below the annual volume. Siblings passed first time."
+        },
+        {
+          "id": "pst2-q03",
+          "caseTitle": "mybasket.com",
+          "skill": "growth-trends",
+          "tier": 3,
+          "answerKind": "label (coarse scale)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q03-a",
+              "industry": "publisher",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q03-b",
+              "industry": "freight company",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst2-q03-c",
+              "industry": "IT products reseller",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst2-q03-d",
+              "industry": "bicycle maker",
+              "answer": "D"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst2-q03-e",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q03-f",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q03-g",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q03-h",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Projected profit of one category against another as half / the same / twice / three times, growing revenue at past rates with fixed margins. Keep near-equal growth (rates a point or two apart) so base-year profits give the answer, and the \"three times\" top step as the source's filler. Pilot family."
+        },
+        {
+          "id": "pracB-q12",
+          "caseTitle": "Metropolis Modern Art Gallery",
+          "skill": "percentages-in-context",
+          "tier": 1,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q12-a",
+              "industry": "indoor ski centre",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracB-q12-b",
+              "industry": "motor museum",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracB-q12-c",
+              "industry": "street-food hall",
+              "answer": "A"
+            }
+          ],
+          "variants": 3,
+          "new": [
+            {
+              "id": "bk-pracB-q12-d",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q12-e",
+              "answer": "B",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q12-f",
+              "answer": "C",
+              "currency": "none"
+            }
+          ],
+          "note": "Tier 1: respondents in a sub-branch = total x share x share from two labelled pies. Every wrong option is a slip (wrong slice, skipping the first pie); skipping the first pie always gives more, so the answer cannot be D. Keep tier 1. Siblings passed first time."
+        },
+        {
+          "id": "pst2-q21",
+          "caseTitle": "Liftex ltd.",
+          "skill": "averages-mixes",
+          "tier": 2,
+          "answerKind": "numeric (options in no order)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q21-a",
+              "industry": "commercial kitchen equipment",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q21-b",
+              "industry": "office furniture",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst2-q21-c",
+              "industry": "packaging supplier",
+              "answer": "B"
+            }
+          ],
+          "variants": 2,
+          "new": [
+            {
+              "id": "bk-pst2-q21-e",
+              "answer": "C",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst2-q21-f",
+              "answer": "D",
+              "currency": "dollars"
+            }
+          ],
+          "note": "Average of yearly revenue per salesperson over the last four years from two line charts read from gridlines (one dual-axis), closest; options in no order with ten-times slips. Limited to 2: bk-pst2-q21-d failed (one option had no slip within 5%, and the other segment's line nearly landed on the answer): every option needs its slip within 5%, and the other line must land well away."
+        },
+        {
+          "id": "pst1-q09",
+          "caseTitle": "Saint John's Hospital",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "statement (numbers only differ)",
+          "cap": 8,
+          "answerLetters": [
+            "B",
+            "C"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst1-q09-a",
+              "industry": "parking garage",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst1-q09-b",
+              "industry": "24-hour gym day passes",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst1-q09-c",
+              "industry": "motoring club patrols",
+              "answer": "C"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pst1-q09-d",
+              "answer": "C",
+              "currency": "none"
+            }
+          ],
+          "note": "Visitors per day x share who come once; four sentences that differ only in the number. Rounding 365 to 400 always gives less and the two-slip option more, so the answer sits at B, or at C when the share rounds down; one slot left (C). Invent the setting."
+        }
+      ]
+    },
+    {
+      "group": 8,
+      "candidates": 18,
+      "sources": [
+        {
+          "id": "pracA-q22",
+          "caseTitle": "WFGLA",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "answerKind": "ranking",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracA-q22-a",
+              "industry": "mattress retailer, direct sales",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracA-q22-b",
+              "industry": "business software sales teams",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pracA-q22-c",
+              "industry": "car insurer branches",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracA-q22-d",
+              "industry": "language schools",
+              "answer": "C"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracA-q22-e",
+              "answer": "D",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pracA-q22-f",
+              "answer": "A",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pracA-q22-g",
+              "answer": "C",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pracA-q22-h",
+              "answer": "B",
+              "currency": "pounds"
+            }
+          ],
+          "note": "Ranks five of nine units by result / cost from two labelled horizontal bar charts; four units unused (one is the client's own, used by pracA-q23). Traps: ranking by the result alone, swapping the close pair (the source's 8.3 against 8.1), the reversed order. The source is in pounds and all four siblings used dollars: write these in pounds, country unnamed. Round 2 revised 3 of 4 in the fix round (all then passed): check each trap ranking really follows its slip."
+        },
+        {
+          "id": "pracB-q09",
+          "caseTitle": "Metropolis Modern Art Gallery",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "statement (numbers only differ)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q09-a",
+              "industry": "climbing centre",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q09-b",
+              "industry": "zoo",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracB-q09-c",
+              "industry": "theme park",
+              "answer": "C"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracB-q09-d",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q09-e",
+              "answer": "D",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q09-f",
+              "answer": "A",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q09-g",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Probability that a random visit was a person's only visit = once-only people / total visits; options 25/33/66/75% (66 not 67, keep). Traps: wrong base (repeat visits), share of people, the complement. No national institutions. Siblings passed first time."
+        },
+        {
+          "id": "pst2-q11",
+          "caseTitle": "Babylove",
+          "skill": "ratios-comparisons",
+          "tier": 3,
+          "answerKind": "label (years)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q11-a",
+              "industry": "furniture retailer",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q11-b",
+              "industry": "hotel group",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst2-q11-c",
+              "industry": "lift installer",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q11-d",
+              "industry": "airline (passengers and cargo)",
+              "answer": "D"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst2-q11-e",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q11-f",
+              "answer": "B",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q11-g",
+              "answer": "C",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q11-h",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Year with the highest segment profit as % of total sales: sales = total profit / margin from bar notes. Labelled stacked bar with negative segments and two barNoteRows; keep negatives. Siblings all answered A or D; these answer at B and C (the source's own answer is C): the total-margin and profit-base traps must land on other years."
+        },
+        {
+          "id": "pracB-q25",
+          "caseTitle": "PharmaCo",
+          "skill": "ratios-comparisons",
+          "tier": 2,
+          "answerKind": "label",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q25-a",
+              "industry": "infant-formula maker",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracB-q25-b",
+              "industry": "low-cost phone maker",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pracB-q25-c",
+              "industry": "home-appliance maker",
+              "answer": "D"
+            }
+          ],
+          "variants": 3,
+          "new": [
+            {
+              "id": "bk-pracB-q25-d",
+              "answer": "A",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q25-e",
+              "answer": "D",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q25-f",
+              "answer": "A",
+              "currency": "dollars"
+            }
+          ],
+          "note": "Highest income in dollars = local income / exchange rate (label options). The PPP row is unused and the trap; one filler label. Limited to 3: all three siblings needed the fix round."
+        },
+        {
+          "id": "pracB-q07",
+          "caseTitle": "Freddie's Shrimp Shack",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement",
+          "cap": 4,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q07-a",
+              "industry": "pizza restaurants",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q07-b",
+              "industry": "parcel vans",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q07-c",
+              "industry": "gyms",
+              "answer": "D"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pracB-q07-d",
+              "answer": "C",
+              "currency": "none"
+            }
+          ],
+          "note": "Which statement can be concluded from a two-company table of percentages; per-outlet volume is the only computable one; three notCovered allowed, one no-basis. Cap stays 4; the last slot answers at B."
+        },
+        {
+          "id": "pracC-q12",
+          "caseTitle": "Mail-It",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement",
+          "cap": 4,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracC-q12-a",
+              "industry": "tax preparation offices",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracC-q12-b",
+              "industry": "online florist",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pracC-q12-c",
+              "industry": "school uniforms online",
+              "answer": "C"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pracC-q12-d",
+              "answer": "B",
+              "currency": "none"
+            }
+          ],
+          "note": "Statements on a three-line indexed chart read from gridlines: proportionality and shares of hours; one notCovered; keep the key robust to quarter-step readings. Cap stays 4; the last slot answers at B."
+        },
+        {
+          "id": "pst3-q20",
+          "caseTitle": "Public Private Partnerships",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement",
+          "cap": 4,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q20-a",
+              "industry": "hospital group capital budget",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst3-q20-c",
+              "industry": "ports authority",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst3-q20-d",
+              "industry": "children's book publisher",
+              "answer": "B"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pst3-q20-e",
+              "answer": "A",
+              "currency": "none"
+            }
+          ],
+          "note": "Statements on shares of a combined pair of units from a 100% stacked bar read from gridlines; the keyed multi-category statement must hold for every quarter-step reading, and a single-unit reading must not make another option true (why bk-pst3-q20-b failed). Cap stays 4; the last slot answers at A. Pilot family."
+        }
+      ]
+    },
+    {
+      "group": 9,
+      "candidates": 16,
+      "keyedClaim": true,
+      "sources": [
+        {
+          "id": "pracA-q03",
+          "caseTitle": "Innovation Capital",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "a part's share of its own sub-total",
+              "B": "a group's exact share of the whole",
+              "C": "one item above a threshold share of the whole",
+              "D": "one item above a threshold share of the whole"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "a part's share of its own sub-total"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracA-q03-a",
+              "industry": "hospital non-staff spending",
+              "answer": "B",
+              "keys": "a part's share of its own sub-total"
+            },
+            {
+              "id": "bk-pracA-q03-b",
+              "industry": "water company supply",
+              "answer": "A",
+              "keys": "a part's share of its own sub-total"
+            },
+            {
+              "id": "bk-pracA-q03-c",
+              "industry": "city council carbon budget",
+              "answer": "C",
+              "keys": "a part's share of its own sub-total"
+            },
+            {
+              "id": "bk-pracA-q03-d",
+              "industry": "university research income",
+              "answer": "D",
+              "keys": "a part's share of its own sub-total"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracA-q03-e",
+              "answer": "A",
+              "keys": "a group's exact share of the whole",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracA-q03-f",
+              "answer": "B",
+              "keys": "one item above a threshold share of the whole",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pracA-q03-g",
+              "answer": "C",
+              "keys": "a group's exact share of the whole",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracA-q03-h",
+              "answer": "D",
+              "keys": "one item above a threshold share of the whole",
+              "currency": "euros"
+            }
+          ],
+          "note": "Four statements on shares of a two-level breakdown (a labelled chart of totals split into groups and parts). Every admitted sibling keys the part's share of its own sub-total; here that statement is false: put its stated figure on the slip the source uses for its group statement (a part left out of, or counted in, the wrong sub-total), so it becomes the third trap. Key a group's exact share of the whole (e, g: the true figure, with the slip of leaving a part out landing elsewhere) or one item above a threshold (f, h: the item clearly above, say 12% against \"more than 10%\", while the other threshold statement stays a near miss below). Three trapped wrong options, as the source."
+        },
+        {
+          "id": "pracB-q02",
+          "caseTitle": "Freddie's Shrimp Shack",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "two indexed lines changing at the same rate",
+              "B": "profit falling by a stated percentage",
+              "C": "profit higher in a later month than an earlier one",
+              "D": "the price customers pay (not covered)"
+            },
+            "neverKeyed": [
+              "D"
+            ],
+            "sourceKeys": "profit higher in a later month than an earlier one"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracB-q02-a",
+              "industry": "bakery chain",
+              "answer": "C",
+              "keys": "profit higher in a later month than an earlier one"
+            },
+            {
+              "id": "bk-pracB-q02-b",
+              "industry": "coffee-house chain",
+              "answer": "B",
+              "keys": "profit higher in a later month than an earlier one"
+            },
+            {
+              "id": "bk-pracB-q02-c",
+              "industry": "chocolate shops",
+              "answer": "D",
+              "keys": "profit higher in a later month than an earlier one"
+            },
+            {
+              "id": "bk-pracB-q02-d",
+              "industry": "bus operator",
+              "answer": "A",
+              "keys": "profit higher in a later month than an earlier one"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracB-q02-e",
+              "answer": "A",
+              "keys": "two indexed lines changing at the same rate",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q02-f",
+              "answer": "B",
+              "keys": "profit falling by a stated percentage",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pracB-q02-g",
+              "answer": "C",
+              "keys": "two indexed lines changing at the same rate",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q02-h",
+              "answer": "D",
+              "keys": "profit falling by a stated percentage",
+              "currency": "euros"
+            }
+          ],
+          "note": "A monthly revenue table and two indexed lines (an input price and the profit margin); profit = revenue x margin. All four siblings keyed \"more profit in the later month\". Here that is false: revenue grows less than the margin falls, and the slip that reads revenue growth alone (or the margin's points as profit) makes it look true, the second trap. e and g key the two lines changing at the same rate (say +10% and -10% on the index, with the other statement's trap, points against percent, landing elsewhere); f and h key profit falling by the stated percentage, exactly (revenue x margin index), with the margin's own fall a different figure. The customer-price statement stays not covered. Two trapped wrong options."
+        },
+        {
+          "id": "pracC-q23",
+          "caseTitle": "InCo",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "a rise in revenue",
+              "B": "a cut in the other main cost",
+              "C": "a cut in the cost that moves with revenue",
+              "D": "a cut in a smaller cost (dominated)"
+            },
+            "neverKeyed": [
+              "D"
+            ],
+            "sourceKeys": "a cut in the cost that moves with revenue"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracC-q23-a",
+              "industry": "food-delivery platform",
+              "answer": "A",
+              "keys": "a cut in the cost that moves with revenue"
+            },
+            {
+              "id": "bk-pracC-q23-b",
+              "industry": "package tour operator",
+              "answer": "D",
+              "keys": "a cut in the cost that moves with revenue"
+            },
+            {
+              "id": "bk-pracC-q23-c",
+              "industry": "contract cleaning",
+              "answer": "C",
+              "keys": "a cut in the cost that moves with revenue"
+            },
+            {
+              "id": "bk-pracC-q23-d",
+              "industry": "farm diesel distributor",
+              "answer": "B",
+              "keys": "a cut in the cost that moves with revenue"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracC-q23-e",
+              "answer": "A",
+              "keys": "a rise in revenue",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q23-f",
+              "answer": "B",
+              "keys": "a cut in the other main cost",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pracC-q23-g",
+              "answer": "C",
+              "keys": "a rise in revenue",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q23-h",
+              "answer": "D",
+              "keys": "a cut in the other main cost",
+              "currency": "euros"
+            }
+          ],
+          "note": "Which 1% (or 2%) change most raises profit, given that one cost rises in line with revenue. All siblings keyed the cut in that in-line cost, the largest base. e and g key the revenue rise: a business whose in-line cost is under half of revenue (a software or media firm paying, say, 30% in royalties), so revenue minus the in-line cost beats every cost base; the slip \"the largest cost is the biggest lever\" now leads to the in-line cost. f and h key the other main cost: it is larger than the in-line cost (a labour-heavy service with small pass-through costs); forgetting that revenue drags the in-line cost with it leads to the revenue rise. The smaller cost stays dominated. Two trapped wrong options."
+        },
+        {
+          "id": "pst1-q11",
+          "caseTitle": "Saint John's Hospital",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "one condition's share of all visitors",
+              "B": "one condition's share of all visitors",
+              "C": "the share going on to another service (not covered)",
+              "D": "three conditions' combined share of all visitors"
+            },
+            "neverKeyed": [
+              "C"
+            ],
+            "sourceKeys": "three conditions' combined share of all visitors"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst1-q11-a",
+              "industry": "animal hospital",
+              "answer": "A",
+              "keys": "three conditions' combined share of all visitors"
+            },
+            {
+              "id": "bk-pst1-q11-b",
+              "industry": "airport passengers",
+              "answer": "D",
+              "keys": "three conditions' combined share of all visitors"
+            },
+            {
+              "id": "bk-pst1-q11-c",
+              "industry": "museum visitors",
+              "answer": "A",
+              "keys": "three conditions' combined share of all visitors"
+            },
+            {
+              "id": "bk-pst1-q11-d",
+              "industry": "broadband helpline",
+              "answer": "B",
+              "keys": "three conditions' combined share of all visitors"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst1-q11-e",
+              "answer": "B",
+              "keys": "one condition's share of all visitors",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst1-q11-f",
+              "answer": "C",
+              "keys": "one condition's share of all visitors",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst1-q11-g",
+              "answer": "C",
+              "keys": "one condition's share of all visitors",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst1-q11-h",
+              "answer": "D",
+              "keys": "one condition's share of all visitors",
+              "currency": "none"
+            }
+          ],
+          "note": "Nested labelled pies: where visitors go first, then what those in one service have. Every sibling keyed the combined share of three conditions; every variant here keys one condition's share of all visitors (share x share, exact to the figure stated). The three-condition statement is now the trap: its figure adds the three slices of the inner pie without the outer share, or uses another service's slice. Keep the second one-condition statement on the wrong base (the inner share read as a share of all), and the onward-referral statement not covered. Two trapped wrong options."
+        }
+      ]
+    },
+    {
+      "group": 10,
+      "candidates": 16,
+      "keyedClaim": true,
+      "sources": [
+        {
+          "id": "pracA-q06",
+          "caseTitle": "Innovation Capital",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "one driver's growth across all units",
+              "B": "greatest growth in one driver",
+              "C": "least growth in that same driver",
+              "D": "least growth in the other driver"
+            },
+            "neverKeyed": [
+              "A"
+            ],
+            "sourceKeys": "greatest growth in one driver"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracA-q06-a",
+              "industry": "paint maker product lines",
+              "answer": "B",
+              "keys": "greatest growth in one driver"
+            },
+            {
+              "id": "bk-pracA-q06-b",
+              "industry": "hotel group",
+              "answer": "C",
+              "keys": "least growth in the other driver"
+            },
+            {
+              "id": "bk-pracA-q06-c",
+              "industry": "cinema chain",
+              "answer": "D",
+              "keys": "least growth in the other driver"
+            },
+            {
+              "id": "bk-pracA-q06-d",
+              "industry": "burger franchise regions",
+              "answer": "C",
+              "keys": "least growth in the other driver"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracA-q06-e",
+              "answer": "A",
+              "keys": "least growth in that same driver",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracA-q06-f",
+              "answer": "A",
+              "keys": "greatest growth in one driver",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracA-q06-g",
+              "answer": "B",
+              "keys": "least growth in that same driver",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracA-q06-h",
+              "answer": "D",
+              "keys": "greatest growth in one driver",
+              "currency": "none"
+            }
+          ],
+          "note": "Growth split into two drivers per unit (a labelled stacked bar of driver shares, summing to 100%, with each unit's growth as a bar note). Driver growth = share x total growth. The \"grew by N% across all\" statement can never be concluded (no unit weights) and stays the averaging trap. Siblings keyed greatest growth once and least growth in the other driver three times, so none of these keys that: e and g key least growth in the same driver as the \"greatest\" statement (the unit with the smallest share is not the one with the least growth: that is now the trap on the other statement), f and h key greatest growth. The admitted b to d rotate which driver each statement names: read them first. Three trapped wrong options."
+        },
+        {
+          "id": "pracB-q11",
+          "caseTitle": "Metropolis Modern Art Gallery",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "the share who paid for an overnight stay",
+              "B": "the share who spent nothing (not covered)",
+              "C": "the share who came on a day trip",
+              "D": "the share who came only for the attraction (not covered)"
+            },
+            "neverKeyed": [
+              "B",
+              "D"
+            ],
+            "sourceKeys": "the share who paid for an overnight stay"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracB-q11-a",
+              "industry": "aquarium",
+              "answer": "B",
+              "keys": "the share who paid for an overnight stay"
+            },
+            {
+              "id": "bk-pracB-q11-b",
+              "industry": "concert arena",
+              "answer": "D",
+              "keys": "the share who paid for an overnight stay"
+            },
+            {
+              "id": "bk-pracB-q11-c",
+              "industry": "mountain-bike park",
+              "answer": "A",
+              "keys": "the share who paid for an overnight stay"
+            },
+            {
+              "id": "bk-pracB-q11-d",
+              "industry": "farm museum",
+              "answer": "C",
+              "keys": "the share who paid for an overnight stay"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracB-q11-e",
+              "answer": "A",
+              "keys": "the share who came on a day trip",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q11-f",
+              "answer": "B",
+              "keys": "the share who came on a day trip",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q11-g",
+              "answer": "C",
+              "keys": "the share who came on a day trip",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q11-h",
+              "answer": "D",
+              "keys": "the share who came on a day trip",
+              "currency": "none"
+            }
+          ],
+          "note": "Two labelled pies from a visitor survey: why they came, then, of those who came because of the attraction, what they spent on. Every sibling keyed the overnight-stay share (share x share); every variant here keys the day-trip share, computed on the right base. The overnight-stay statement is now the trap: its figure is the second pie's slice taken as a share of all respondents (the source's own day-trip slip, turned round). \"Spent nothing\" and \"only came for it\" stay as the source has them: not covered (main reason is not only reason). Two trapped wrong options."
+        },
+        {
+          "id": "pracC-q25",
+          "caseTitle": "InCo",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "one class's average above another's",
+              "B": "two classes' average below a third's",
+              "C": "two classes' average above a third's",
+              "D": "one class's average above another's"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "two classes' average below a third's"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracC-q25-a",
+              "industry": "building-materials wholesaler",
+              "answer": "C",
+              "keys": "two classes' average below a third's"
+            },
+            {
+              "id": "bk-pracC-q25-b",
+              "industry": "package holidays",
+              "answer": "A",
+              "keys": "two classes' average below a third's"
+            },
+            {
+              "id": "bk-pracC-q25-c",
+              "industry": "regional brewer",
+              "answer": "D",
+              "keys": "two classes' average below a third's"
+            },
+            {
+              "id": "bk-pracC-q25-d",
+              "industry": "accounting software",
+              "answer": "B",
+              "keys": "two classes' average below a third's"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracC-q25-e",
+              "answer": "A",
+              "keys": "one class's average above another's",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q25-f",
+              "answer": "B",
+              "keys": "two classes' average above a third's",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pracC-q25-g",
+              "answer": "C",
+              "keys": "one class's average above another's",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracC-q25-h",
+              "answer": "D",
+              "keys": "two classes' average above a third's",
+              "currency": "euros"
+            }
+          ],
+          "note": "Average income per intermediary by class = class share of income x total / number in class, from a labelled chart or table. Every sibling keyed \"two classes' average below a third's\"; here that is false, and comparing shares without dividing by numbers makes it look true (the source's first slip, now on it). e and g key one class's average above another's (only one of the two such statements true); f and h key two classes' average above a third's. Keep the divide-the-wrong-way slip. Three trapped wrong options."
+        },
+        {
+          "id": "pst1-q15",
+          "caseTitle": "Saint John's Hospital",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "the figure for the first group",
+              "B": "the figure for the second group",
+              "C": "the figure for the third group",
+              "D": "the figure for the fourth group"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "the figure for the third group"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst1-q15-a",
+              "industry": "housing association repairs",
+              "answer": "A",
+              "keys": "the figure for the first group"
+            },
+            {
+              "id": "bk-pst1-q15-b",
+              "industry": "university IT service desk",
+              "answer": "B",
+              "keys": "the figure for the second group"
+            },
+            {
+              "id": "bk-pst1-q15-c",
+              "industry": "public library",
+              "answer": "C",
+              "keys": "the figure for the third group"
+            },
+            {
+              "id": "bk-pst1-q15-d",
+              "industry": "leisure centres",
+              "answer": "D",
+              "keys": "the figure for the fourth group"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst1-q15-e",
+              "answer": "A",
+              "keys": "the figure for the first group",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pst1-q15-f",
+              "answer": "B",
+              "keys": "the figure for the second group",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pst1-q15-g",
+              "answer": "C",
+              "keys": "the figure for the third group",
+              "currency": "pounds"
+            },
+            {
+              "id": "bk-pst1-q15-h",
+              "answer": "D",
+              "keys": "the figure for the fourth group",
+              "currency": "pounds"
+            }
+          ],
+          "note": "Which per-head spend is FALSE: total cost (fixed + variable x users) x a group's increment of a labelled cumulative chart / that group's users, four groups in order, so the false group is the answer letter. The siblings already keyed each group once; each new variant keys the group of its letter. Traps: leaving out the fixed cost, the cumulative share for the increment, the cumulative users. Pounds, as the source; never name the country (the siblings named it: do not copy that). Three trapped wrong options."
+        }
+      ]
+    },
+    {
+      "group": 11,
+      "candidates": 16,
+      "keyedClaim": true,
+      "sources": [
+        {
+          "id": "pracB-q15",
+          "caseTitle": "PharmaCo",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "a segment overtaking another within 20 years on forecast trends",
+              "B": "a segment growing faster than the rest over the past four years",
+              "C": "forecast growth three times past growth",
+              "D": "a segment below 10% of the market four years ago"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "a segment overtaking another within 20 years on forecast trends"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracB-q15-a",
+              "industry": "payroll software",
+              "answer": "B",
+              "keys": "a segment overtaking another within 20 years on forecast trends"
+            },
+            {
+              "id": "bk-pracB-q15-b",
+              "industry": "electric bicycles",
+              "answer": "D",
+              "keys": "a segment overtaking another within 20 years on forecast trends"
+            },
+            {
+              "id": "bk-pracB-q15-c",
+              "industry": "solar panels",
+              "answer": "C",
+              "keys": "a segment overtaking another within 20 years on forecast trends"
+            },
+            {
+              "id": "bk-pracB-q15-d",
+              "industry": "animal medicines",
+              "answer": "A",
+              "keys": "a segment overtaking another within 20 years on forecast trends"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracB-q15-e",
+              "answer": "A",
+              "keys": "a segment growing faster than the rest over the past four years",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q15-f",
+              "answer": "B",
+              "keys": "forecast growth three times past growth",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pracB-q15-g",
+              "answer": "C",
+              "keys": "a segment below 10% of the market four years ago",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pracB-q15-h",
+              "answer": "D",
+              "keys": "a segment growing faster than the rest over the past four years",
+              "currency": "euros"
+            }
+          ],
+          "note": "A table of a market by segment four years ago, today and in ten years (forecast), in billions. Every sibling keyed the 20-year overtaking; here it is false: the small segment's compound rate leaves it short in 20 years, and extending the absolute yearly gain (or the ten-year multiple) makes it look true, a trap. e and h key \"grew faster than the rest\" on the right comparison (against the rest of the market, not one other segment, which is now the trap); f keys \"three times\" on compound annual rates (with simple averages or absolute gains landing elsewhere); g keys \"below 10% four years ago\" on that year's total (with the ten-year total as the wrong base). Three trapped wrong options."
+        },
+        {
+          "id": "pst1-q03",
+          "caseTitle": "Selecto",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "one rate N times another",
+              "B": "one year's profit N% above another's",
+              "C": "profit higher in a half-year than the one before",
+              "D": "profit falling by N% over the period"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "profit higher in a half-year than the one before"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst1-q03-a",
+              "industry": "self-service laundries",
+              "answer": "A",
+              "keys": "profit higher in a half-year than the one before"
+            },
+            {
+              "id": "bk-pst1-q03-b",
+              "industry": "car parks",
+              "answer": "B",
+              "keys": "profit higher in a half-year than the one before"
+            },
+            {
+              "id": "bk-pst1-q03-c",
+              "industry": "office cleaning",
+              "answer": "D",
+              "keys": "profit higher in a half-year than the one before"
+            },
+            {
+              "id": "bk-pst1-q03-d",
+              "industry": "fitness clubs",
+              "answer": "C",
+              "keys": "profit higher in a half-year than the one before"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst1-q03-e",
+              "answer": "A",
+              "keys": "one year's profit N% above another's",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q03-f",
+              "answer": "B",
+              "keys": "profit falling by N% over the period",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst1-q03-g",
+              "answer": "C",
+              "keys": "one rate N times another",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q03-h",
+              "answer": "D",
+              "keys": "profit falling by N% over the period",
+              "currency": "euros"
+            }
+          ],
+          "note": "Half-yearly revenue (table) and indexed lines for industry profit and the company's margin (chart); profit = revenue x margin. Every sibling keyed \"more profit in H2 than H1 of the first year\"; here that is false (revenue up less than the margin falls) and reading revenue alone makes it true, the trap. e keys the year-on-year percentage, exact on the sums; f and h key the fall over the period, exact (revenue x margin index, not the index points alone, which land elsewhere); g keys the \"N times\" ratio of the two indexed changes, exact (no gridline reading: label the lines or put the values on gridlines). Three trapped wrong options."
+        },
+        {
+          "id": "pst3-q05",
+          "caseTitle": "Milky Choc",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "one group liking or disliking a criterion more",
+              "B": "one group giving more ratings of one value",
+              "C": "the criterion with most ratings of 3 and above",
+              "D": "one group liking or disliking a criterion more"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "one group giving more ratings of one value"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst3-q05-a",
+              "industry": "running shoes",
+              "answer": "C",
+              "keys": "one group giving more ratings of one value"
+            },
+            {
+              "id": "bk-pst3-q05-b",
+              "industry": "frozen ready meals",
+              "answer": "A",
+              "keys": "one group giving more ratings of one value"
+            },
+            {
+              "id": "bk-pst3-q05-c",
+              "industry": "hotel room design",
+              "answer": "D",
+              "keys": "one group giving more ratings of one value"
+            },
+            {
+              "id": "bk-pst3-q05-d",
+              "industry": "mobile banking app",
+              "answer": "B",
+              "keys": "one group giving more ratings of one value"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst3-q05-e",
+              "answer": "A",
+              "keys": "one group liking or disliking a criterion more",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q05-f",
+              "answer": "B",
+              "keys": "the criterion with most ratings of 3 and above",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q05-g",
+              "answer": "C",
+              "keys": "one group liking or disliking a criterion more",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q05-h",
+              "answer": "D",
+              "keys": "the criterion with most ratings of 3 and above",
+              "currency": "none"
+            }
+          ],
+          "note": "Which conclusion is INCORRECT, from rating charts (1 to 5) per criterion for two customer groups. Every sibling made \"one group gave more ratings of one value\" the incorrect one; here it is correct, and reading the wrong group's or criterion's bars makes it look incorrect (a trap). e and g make a liked-or-disliked statement the incorrect one (with \"liked\" read as 4 and 5 only making a true one look incorrect, the source's first slip); f and h make the top-criterion-at-3-and-above statement incorrect (the other group's bars giving another winner). The keyed option is the incorrect statement. Three trapped wrong options. One sibling needed the fix round: check each slip against the charts."
+        },
+        {
+          "id": "sample-q02",
+          "caseTitle": "Energy Data",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "revenue over the years summing to a figure",
+              "B": "costs highest in one year",
+              "C": "losses higher in one year than the next",
+              "D": "costs about a figure in one year"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "losses higher in one year than the next"
+          },
+          "admitted": [
+            {
+              "id": "bk-sample-q02-a",
+              "industry": "online grocery",
+              "answer": "A",
+              "keys": "losses higher in one year than the next"
+            },
+            {
+              "id": "bk-sample-q02-b",
+              "industry": "rooftop solar",
+              "answer": "B",
+              "keys": "losses higher in one year than the next"
+            },
+            {
+              "id": "bk-sample-q02-c",
+              "industry": "genetic testing lab",
+              "answer": "D",
+              "keys": "losses higher in one year than the next"
+            },
+            {
+              "id": "bk-sample-q02-d",
+              "industry": "mobile games studio",
+              "answer": "C",
+              "keys": "losses higher in one year than the next"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-sample-q02-e",
+              "answer": "A",
+              "keys": "revenue over the years summing to a figure",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-sample-q02-f",
+              "answer": "B",
+              "keys": "costs about a figure in one year",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-sample-q02-g",
+              "answer": "C",
+              "keys": "costs highest in one year",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-sample-q02-h",
+              "answer": "D",
+              "keys": "revenue over the years summing to a figure",
+              "currency": "euros"
+            }
+          ],
+          "note": "Revenue bars and a margin line over five years (costs = revenue x (1 - margin), losses = costs - revenue). Every sibling keyed \"lost more in one year than the next\"; here that is false (the margin improves less than revenue grows) and comparing margins makes it look true, the trap. e and h key the revenue sum (exact; a rough sum lands elsewhere); f keys costs in one year (revenue x (1 - margin), with dropping a term landing on another option); g keys \"costs highest in the first year\" (a launch year with heavy spending: costs truly highest there, and the most negative margin pointing to the same year is allowed only if another slip lands elsewhere; prefer a year where margin and cost peaks differ). Three trapped wrong options."
+        }
+      ]
+    },
+    {
+      "group": 12,
+      "candidates": 16,
+      "keyedClaim": true,
+      "sources": [
+        {
+          "id": "pst1-q17",
+          "caseTitle": "StarCoffee",
+          "skill": "growth-trends",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "two segments growing at the same pace",
+              "B": "a segment's share of the market today",
+              "C": "a segment overtaking others combined within ten years",
+              "D": "a segment's growth N times another's"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "a segment's growth N times another's"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst1-q17-a",
+              "industry": "pet food",
+              "answer": "B",
+              "keys": "a segment's growth N times another's"
+            },
+            {
+              "id": "bk-pst1-q17-b",
+              "industry": "accounting software",
+              "answer": "D",
+              "keys": "a segment's growth N times another's"
+            },
+            {
+              "id": "bk-pst1-q17-c",
+              "industry": "gyms",
+              "answer": "A",
+              "keys": "a segment's growth N times another's"
+            },
+            {
+              "id": "bk-pst1-q17-d",
+              "industry": "bicycles",
+              "answer": "C",
+              "keys": "a segment's growth N times another's"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst1-q17-e",
+              "answer": "A",
+              "keys": "two segments growing at the same pace",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q17-f",
+              "answer": "B",
+              "keys": "a segment's share of the market today",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst1-q17-g",
+              "answer": "C",
+              "keys": "a segment overtaking others combined within ten years",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst1-q17-h",
+              "answer": "D",
+              "keys": "a segment's share of the market today",
+              "currency": "euros"
+            }
+          ],
+          "note": "A line chart of market size by segment, three years ago, today and in five years. Every sibling keyed \"about twice as fast\"; here that is false (the true ratio of yearly rates near 1.5 or 3) and comparing absolute gains makes it about two, the trap. e keys the same pace on relative growth (the lines not parallel: absolute gains differ, now the trap on it); f and h key the share today (read off labelled points); g keys overtaking within ten years on compound rates (with a straight-line extension landing the other way). Three trapped wrong options."
+        },
+        {
+          "id": "pst2-q02",
+          "caseTitle": "mybasket.com",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "one category's profit above all others combined",
+              "B": "two categories' revenue growing as fast",
+              "C": "two categories above 60% of revenue",
+              "D": "two margins declining as fast"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "one category's profit above all others combined"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst2-q02-a",
+              "industry": "home-improvement stores",
+              "answer": "C",
+              "keys": "one category's profit above all others combined"
+            },
+            {
+              "id": "bk-pst2-q02-b",
+              "industry": "online sports retailer",
+              "answer": "A",
+              "keys": "one category's profit above all others combined"
+            },
+            {
+              "id": "bk-pst2-q02-c",
+              "industry": "pet superstores",
+              "answer": "D",
+              "keys": "one category's profit above all others combined"
+            },
+            {
+              "id": "bk-pst2-q02-d",
+              "industry": "office supplies distributor",
+              "answer": "B",
+              "keys": "one category's profit above all others combined"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst2-q02-e",
+              "answer": "A",
+              "keys": "two categories' revenue growing as fast",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q02-f",
+              "answer": "B",
+              "keys": "two categories above 60% of revenue",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q02-g",
+              "answer": "C",
+              "keys": "two margins declining as fast",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst2-q02-h",
+              "answer": "D",
+              "keys": "two categories above 60% of revenue",
+              "currency": "none"
+            }
+          ],
+          "note": "Revenue by category per year (table) and margins (chart); profit = revenue x margin summed over the years. Every sibling keyed \"one category's profit above all others combined\"; here that is false, and comparing revenue (or margins) makes it look true, the trap. e keys revenue growing as fast (relative growth equal; the wrong row now the trap); f and h key the 60% share on the right pair; g keys margins declining as fast in relative terms (5 to 3 and 10 to 6: different points, the same -40%), the points-against-percent slip now leading the other way. Three trapped wrong options."
+        },
+        {
+          "id": "pst3-q23",
+          "caseTitle": "Public Private Partnerships",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "below a share of its own total",
+              "B": "above a share of its own total",
+              "C": "below a share of its own total",
+              "D": "above a share of the combined total"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "above a share of its own total"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst3-q23-a",
+              "industry": "airlines",
+              "answer": "C",
+              "keys": "above a share of its own total"
+            },
+            {
+              "id": "bk-pst3-q23-b",
+              "industry": "household appliance maker",
+              "answer": "A",
+              "keys": "above a share of its own total"
+            },
+            {
+              "id": "bk-pst3-q23-c",
+              "industry": "crop farming",
+              "answer": "D",
+              "keys": "above a share of its own total"
+            },
+            {
+              "id": "bk-pst3-q23-d",
+              "industry": "grocery stores",
+              "answer": "B",
+              "keys": "above a share of its own total"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst3-q23-e",
+              "answer": "A",
+              "keys": "below a share of its own total",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q23-f",
+              "answer": "B",
+              "keys": "above a share of the combined total",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q23-g",
+              "answer": "C",
+              "keys": "below a share of its own total",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q23-h",
+              "answer": "D",
+              "keys": "above a share of the combined total",
+              "currency": "none"
+            }
+          ],
+          "note": "A labelled stacked bar of two contributions (direct and indirect, or new and existing) by sector; statements compare a sector's share against a threshold on its own total or the combined one. Every sibling keyed \"above a share of its own total\"; here that statement is false and dividing by the wrong total makes it look true. e and g key a \"below\" statement on its own total (the other \"below\" statement false on the right base, true on the combined one: the source's slip); f and h key \"above a share of the combined total\" (with its own total giving the same verdict is not allowed: the wrong base must flip only the other statements). Three trapped wrong options."
+        },
+        {
+          "id": "sample-q04",
+          "caseTitle": "Energy Data",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "the top two products' share of revenue",
+              "B": "one product's revenue per head above another's",
+              "C": "the most profitable product (not covered)",
+              "D": "one product's revenue per head above another's"
+            },
+            "neverKeyed": [
+              "C"
+            ],
+            "sourceKeys": "one product's revenue per head above another's"
+          },
+          "admitted": [
+            {
+              "id": "bk-sample-q04-a",
+              "industry": "mobile games",
+              "answer": "A",
+              "keys": "one product's revenue per head above another's"
+            },
+            {
+              "id": "bk-sample-q04-b",
+              "industry": "city government software",
+              "answer": "B",
+              "keys": "one product's revenue per head above another's"
+            },
+            {
+              "id": "bk-sample-q04-c",
+              "industry": "online courses",
+              "answer": "C",
+              "keys": "one product's revenue per head above another's"
+            },
+            {
+              "id": "bk-sample-q04-d",
+              "industry": "medical devices",
+              "answer": "D",
+              "keys": "one product's revenue per head above another's"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-sample-q04-e",
+              "answer": "A",
+              "keys": "the top two products' share of revenue",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-sample-q04-f",
+              "answer": "B",
+              "keys": "the top two products' share of revenue",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-sample-q04-g",
+              "answer": "C",
+              "keys": "the top two products' share of revenue",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-sample-q04-h",
+              "answer": "D",
+              "keys": "the top two products' share of revenue",
+              "currency": "euros"
+            }
+          ],
+          "note": "Revenue by product and headcount by product (two labelled bar charts). Every sibling keyed a revenue-per-head comparison; every variant here keys the top two products' share of revenue, exact. Both per-head statements are false: one by the source's slip (higher revenue read as higher per head), the other by comparing headcounts the wrong way round. \"Most profitable\" stays not covered (no costs). Two trapped wrong options."
+        }
+      ]
+    },
+    {
+      "group": 13,
+      "candidates": 14,
+      "keyedClaim": true,
+      "sources": [
+        {
+          "id": "pracA-q24",
+          "caseTitle": "WFGLA",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "the share of all employees contacted",
+              "B": "the company size given the least attention",
+              "C": "where most of the money has come from (not covered)",
+              "D": "the biggest pool not yet contacted"
+            },
+            "neverKeyed": [
+              "C"
+            ],
+            "sourceKeys": "the company size given the least attention"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracA-q24-a",
+              "industry": "workplace pensions",
+              "answer": "C",
+              "keys": "the company size given the least attention"
+            },
+            {
+              "id": "bk-pracA-q24-b",
+              "industry": "regional bus pass",
+              "answer": "A",
+              "keys": "the company size given the least attention"
+            },
+            {
+              "id": "bk-pracA-q24-c",
+              "industry": "blood service",
+              "answer": "D",
+              "keys": "the company size given the least attention"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pracA-q24-d",
+              "industry": "e-bike leasing through employers",
+              "answer": "B",
+              "keys": "the company size given the least attention"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracA-q24-e",
+              "answer": "A",
+              "keys": "the share of all employees contacted",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracA-q24-f",
+              "answer": "B",
+              "keys": "the biggest pool not yet contacted",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracA-q24-g",
+              "answer": "C",
+              "keys": "the share of all employees contacted",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracA-q24-h",
+              "answer": "D",
+              "keys": "the biggest pool not yet contacted",
+              "currency": "none"
+            }
+          ],
+          "note": "Which is most likely TRUE, from a table of people by contact level, segment and company size. All four siblings keyed \"small companies have had the least attention\". Here that is false: another size has the lowest share contacted, while small companies still have the fewest contacted in absolute terms, so comparing counts instead of shares (the source's own slip on its answer) makes it look true: declare it as a trap. e and g key the share of all people contacted (\"slightly more than N%\", true at one or two points above, the table covering everyone in the region, as the source's does); counting only frequent contact must land elsewhere. f and h key the biggest uncontacted pool at large companies, true, with large companies NOT the biggest employer overall, so the source's slip (\"large companies have the most people\") points away from it. The money-by-contact statement stays not covered. Two trapped wrong options. Read the waiting -d as well as the admitted siblings."
+        },
+        {
+          "id": "pracB-q22",
+          "caseTitle": "PharmaCo",
+          "skill": "testing-statements",
+          "tier": 2,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "the country with the highest profit per unit of sales",
+              "B": "one country's profit per unit of sales N times another's",
+              "C": "the country with the lowest sales (not covered)",
+              "D": "two countries adding the same profit (not covered)"
+            },
+            "neverKeyed": [
+              "C",
+              "D"
+            ],
+            "sourceKeys": "one country's profit per unit of sales N times another's"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracB-q22-a",
+              "industry": "vegetable seeds",
+              "answer": "A",
+              "keys": "one country's profit per unit of sales N times another's"
+            },
+            {
+              "id": "bk-pracB-q22-b",
+              "industry": "accounting software",
+              "answer": "C",
+              "keys": "one country's profit per unit of sales N times another's"
+            },
+            {
+              "id": "bk-pracB-q22-c",
+              "industry": "restaurant kitchen equipment",
+              "answer": "D",
+              "keys": "one country's profit per unit of sales N times another's"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pracB-q22-d",
+              "industry": "whisky distiller",
+              "answer": "B",
+              "keys": "one country's profit per unit of sales N times another's"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracB-q22-e",
+              "answer": "A",
+              "keys": "the country with the highest profit per unit of sales",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q22-f",
+              "answer": "B",
+              "keys": "the country with the highest profit per unit of sales",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q22-g",
+              "answer": "C",
+              "keys": "the country with the highest profit per unit of sales",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracB-q22-h",
+              "answer": "D",
+              "keys": "the country with the highest profit per unit of sales",
+              "currency": "none"
+            }
+          ],
+          "note": "A scatter of market share against profit margin for ten countries, no market sizes. All four siblings keyed the \"N times as much profit per unit of sales\" ratio; every variant here keys the highest-margin country, named in the statement, the highest point clearly (not half a gridline): the far-right point (highest share) is another country, the source's slip, now making the true statement look false. The ratio statement is false (true ratio clearly away from the stated N) and a slip lands on N: the neighbouring point read for the lower country, or the ratio of market shares; declare it. Lowest sales and equal profit stay not covered (no market sizes). Two trapped wrong options. Only one other claim can be true, so the family ends half and half."
+        },
+        {
+          "id": "pst2-q07",
+          "caseTitle": "mybasket.com",
+          "skill": "ratios-comparisons",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "the maximum upfront investment",
+              "B": "a minimum upfront investment (never true)",
+              "C": "the return the option must at least earn",
+              "D": "a return the option may at most earn (never true)"
+            },
+            "neverKeyed": [
+              "B",
+              "D"
+            ],
+            "sourceKeys": "the return the option must at least earn"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst2-q07-a",
+              "industry": "food delivery app",
+              "answer": "C",
+              "keys": "the return the option must at least earn"
+            },
+            {
+              "id": "bk-pst2-q07-b",
+              "industry": "multiplex cinemas",
+              "answer": "D",
+              "keys": "the return the option must at least earn"
+            },
+            {
+              "id": "bk-pst2-q07-c",
+              "industry": "petrol stations",
+              "answer": "B",
+              "keys": "the return the option must at least earn"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pst2-q07-d",
+              "industry": "theme parks",
+              "answer": "A",
+              "keys": "the return the option must at least earn"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst2-q07-e",
+              "answer": "A",
+              "keys": "the maximum upfront investment",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst2-q07-f",
+              "answer": "B",
+              "keys": "the maximum upfront investment",
+              "currency": "euros"
+            },
+            {
+              "id": "bk-pst2-q07-g",
+              "answer": "C",
+              "keys": "the maximum upfront investment",
+              "currency": "dollars"
+            },
+            {
+              "id": "bk-pst2-q07-h",
+              "answer": "D",
+              "keys": "the maximum upfront investment",
+              "currency": "dollars"
+            }
+          ],
+          "note": "Three improvement options with upfront cost, monthly costs and profit; the company picks the alternative only if it beats the best option's annual return. All four siblings keyed \"would need a return of at least N%\". Every variant here keys the maximum upfront investment, its figure the true one (annual profit net of monthly costs / the hurdle return). The hurdle statements carry the figure the source's slip gives (monthly costs left out), so \"at least N%\" is false by a slip: declare it; \"at most\" and \"minimum\" stay reversed and false, the minimum one at the same figure as the keyed maximum (as the source pairs them). Keep the figures clear of rounding. Three trapped wrong options. \"Minimum\" and \"at most\" can never be true, so the family ends half and half. The source is in euros."
+        },
+        {
+          "id": "pst3-q13",
+          "caseTitle": "Paul Bakery",
+          "skill": "unit-economics",
+          "tier": 3,
+          "answerKind": "statement (numbers only differ)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q13-a",
+              "industry": "car wash",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst3-q13-b",
+              "industry": "independent cinema",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst3-q13-c",
+              "industry": "dry cleaner (euros)",
+              "answer": "C"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pst3-q13-d",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst3-q13-e",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst3-q13-f",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst3-q13-g",
+              "answer": "C"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pst3-q13-h",
+              "answer": "B",
+              "currency": "euros"
+            }
+          ],
+          "note": "The eighth variant, at B (the letter with one). Same as group 5's note: statements that differ only in their numbers; the trap reverses the direction, the other two are fillers. In euros, as the source."
+        },
+        {
+          "id": "pst3-q06",
+          "caseTitle": "Milky Choc",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst3-q06-a",
+              "industry": "mobile network",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst3-q06-b",
+              "industry": "dog-food maker",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst3-q06-c",
+              "industry": "gym chain",
+              "answer": "D"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pst3-q06-d",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst3-q06-e",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst3-q06-f",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst3-q06-g",
+              "answer": "B"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pst3-q06-h",
+              "answer": "C",
+              "currency": "none"
+            }
+          ],
+          "note": "The eighth variant, at C (the letter with one). Same as group 4's note: difference in respondents giving one rating when one group is three times the other; the \"reports one count without subtracting\" slips on wrong options."
+        }
+      ]
+    },
+    {
+      "group": 14,
+      "candidates": 14,
+      "keyedClaim": true,
+      "sources": [
+        {
+          "id": "pracC-q12",
+          "caseTitle": "Mail-It",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "the week with the highest share of temporary staff hours",
+              "B": "hours exactly matching items in one week (not covered)",
+              "C": "total hours not moving in proportion to items between two weeks",
+              "D": "temporary staff hours rising too little for the items between two weeks"
+            },
+            "neverKeyed": [
+              "B"
+            ],
+            "sourceKeys": "total hours not moving in proportion to items between two weeks"
+          },
+          "admitted": [
+            {
+              "id": "bk-pracC-q12-a",
+              "industry": "tax preparation offices",
+              "answer": "A",
+              "keys": "total hours not moving in proportion to items between two weeks"
+            },
+            {
+              "id": "bk-pracC-q12-b",
+              "industry": "online florist",
+              "answer": "D",
+              "keys": "total hours not moving in proportion to items between two weeks"
+            },
+            {
+              "id": "bk-pracC-q12-c",
+              "industry": "school uniforms online",
+              "answer": "C",
+              "keys": "total hours not moving in proportion to items between two weeks"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pracC-q12-d",
+              "industry": "tyre-fitting centres",
+              "answer": "B",
+              "keys": "total hours not moving in proportion to items between two weeks"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pracC-q12-e",
+              "answer": "A",
+              "keys": "the week with the highest share of temporary staff hours",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q12-f",
+              "answer": "B",
+              "keys": "temporary staff hours rising too little for the items between two weeks",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q12-g",
+              "answer": "C",
+              "keys": "the week with the highest share of temporary staff hours",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pracC-q12-h",
+              "answer": "D",
+              "keys": "temporary staff hours rising too little for the items between two weeks",
+              "currency": "none"
+            }
+          ],
+          "note": "Indexed lines (items arriving, total hours, temporary-staff hours, all on a base week) around a peak. All four siblings keyed \"total hours did not move in proportion to items\" between two weeks; here, between the weeks it names, total hours and items move in proportion, and reading the temporary-staff line instead of total hours (the source's slip on its answer) makes it look out of proportion: declare it. e and g key the week with the highest temporary share (temporary / total hours), true, with the week of the biggest jump in temporary hours a different week (the source's growth-for-level slip, now pointing away). f and h key the temporary-hours rise falling short of the items rise between two named weeks, true, with another pair of weeks where it holds the other way (the wrong-pair slip). \"Exactly matched in the base week\" stays not covered (both lines start at 100 by construction). Three trapped wrong options."
+        },
+        {
+          "id": "pst3-q15",
+          "caseTitle": "Paul Bakery",
+          "skill": "unit-economics",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "more output with no new hires",
+              "B": "more hires and more output",
+              "C": "fewer extra hires and lower output",
+              "D": "fewer extra hires and lower output"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "more hires and more output"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst3-q15-a",
+              "industry": "florist",
+              "answer": "A",
+              "keys": "more hires and more output"
+            },
+            {
+              "id": "bk-pst3-q15-b",
+              "industry": "picture framer",
+              "answer": "C",
+              "keys": "more hires and more output"
+            },
+            {
+              "id": "bk-pst3-q15-c",
+              "industry": "garden centre",
+              "answer": "D",
+              "keys": "more hires and more output"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pst3-q15-d",
+              "industry": "bicycle repair workshop",
+              "answer": "B",
+              "keys": "more hires and more output"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst3-q15-e",
+              "answer": "A",
+              "keys": "more output with no new hires",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q15-f",
+              "answer": "B",
+              "keys": "fewer extra hires and lower output",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q15-g",
+              "answer": "C",
+              "keys": "more output with no new hires",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q15-h",
+              "answer": "D",
+              "keys": "fewer extra hires and lower output",
+              "currency": "none"
+            }
+          ],
+          "note": "Which idea would LEAST help the drop in efficiency (minutes of staff time per unit) in a peak month, from a step chart of staff needed against output. All four siblings keyed \"hire 3 extra and make N more\" as least helpful. Here that idea helps more than another: a slip makes it look least helpful (forgetting the extra units it adds, or counting the 3 hires on top of the staff the chart already gives, the source's own slip on its answer): declare it. e and g key \"make more with no new hires\": the extra output crosses a step of the chart, so the units need more staff than the idea allows for and minutes per unit rise most; misreading the step by a gridline must not give the same verdict for another option. f and h key a \"hire only N and cut output\" idea: the cut lands at the expensive end of a step. Keep the source's one filler idea at most. Two trapped wrong options. The hardest family to move: check each idea's minutes per unit by hand, and report rather than force it."
+        },
+        {
+          "id": "pst3-q20",
+          "caseTitle": "Public Private Partnerships",
+          "skill": "testing-statements",
+          "tier": 3,
+          "answerKind": "statement (keyed claim moves)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "keyedClaim": {
+            "claims": {
+              "A": "one category's exact share of the combined total",
+              "B": "one category's exact share of the combined total",
+              "C": "one category above a threshold share of the combined total",
+              "D": "three categories above a threshold share of the combined total"
+            },
+            "neverKeyed": [],
+            "sourceKeys": "three categories above a threshold share of the combined total"
+          },
+          "admitted": [
+            {
+              "id": "bk-pst3-q20-a",
+              "industry": "hospital group capital budget",
+              "answer": "D",
+              "keys": "three categories above a threshold share of the combined total"
+            },
+            {
+              "id": "bk-pst3-q20-c",
+              "industry": "ports authority",
+              "answer": "C",
+              "keys": "three categories above a threshold share of the combined total"
+            },
+            {
+              "id": "bk-pst3-q20-d",
+              "industry": "children's book publisher",
+              "answer": "B",
+              "keys": "three categories above a threshold share of the combined total"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pst3-q20-e",
+              "industry": "private university group",
+              "answer": "A",
+              "keys": "three categories above a threshold share of the combined total"
+            }
+          ],
+          "variants": 4,
+          "new": [
+            {
+              "id": "bk-pst3-q20-f",
+              "answer": "A",
+              "keys": "one category's exact share of the combined total",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q20-g",
+              "answer": "B",
+              "keys": "one category above a threshold share of the combined total",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q20-h",
+              "answer": "C",
+              "keys": "one category's exact share of the combined total",
+              "currency": "none"
+            },
+            {
+              "id": "bk-pst3-q20-i",
+              "answer": "D",
+              "keys": "one category above a threshold share of the combined total",
+              "currency": "none"
+            }
+          ],
+          "note": "Shares by category for two units combined, from an unlabelled 100% stacked bar with each unit's total as a bar note (weighted shares). All siblings keyed \"more than N% of the two combined are in three categories\". Here that is false (the three combined clearly below N) and reading one unit alone makes it true: that slip is the source's own (Brazil alone gives 95%; evals/source-distractors.json now lists it under slipsOnAnswer), and here it must land on the false statement, so declare it as a trap. f and h key one category's exact combined share (weighted; neither unit alone nor the simple average gives the stated figure); g and i key one category above a threshold combined (true weighted; the unit with the higher share must not be the only reason it reads true, so make the simple average or the other unit point below). The source's near-miss filler may stay as one filler. Two trapped wrong options at least, as the source."
+        },
+        {
+          "id": "pracB-q09",
+          "caseTitle": "Metropolis Modern Art Gallery",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "statement (numbers only differ)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pracB-q09-a",
+              "industry": "climbing centre",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q09-b",
+              "industry": "zoo",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pracB-q09-c",
+              "industry": "theme park",
+              "answer": "C"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pracB-q09-f",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pracB-q09-g",
+              "answer": "B"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pracB-q09-h",
+              "answer": "C",
+              "currency": "none"
+            }
+          ],
+          "note": "One more variant at C, the only letter left (A and B hold 2; D is unreachable, as the group 8 writer found: the share-of-people trap is always at least the true share, so it must sit above the answer). Example: 300,000 people, two-thirds once only: once-only visits 200,000 of 350,000 = 57% at C, share of people 67% at D, the complement 43% and the repeaters' share of people 33% below. -d and -e of group 8 were never written; their letters are not used."
+        },
+        {
+          "id": "pst2-q23",
+          "caseTitle": "Liftex ltd.",
+          "skill": "percentages-in-context",
+          "tier": 2,
+          "answerKind": "numeric (options in no order)",
+          "cap": 8,
+          "answerLetters": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "admitted": [
+            {
+              "id": "bk-pst2-q23-a",
+              "industry": "car rental survey",
+              "answer": "B"
+            },
+            {
+              "id": "bk-pst2-q23-b",
+              "industry": "broadband survey",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst2-q23-c",
+              "industry": "insurance broker survey",
+              "answer": "A"
+            }
+          ],
+          "waiting": [
+            {
+              "id": "bk-pst2-q23-d",
+              "answer": "C"
+            },
+            {
+              "id": "bk-pst2-q23-e",
+              "answer": "D"
+            },
+            {
+              "id": "bk-pst2-q23-f",
+              "answer": "A"
+            },
+            {
+              "id": "bk-pst2-q23-g",
+              "answer": "B"
+            }
+          ],
+          "variants": 1,
+          "new": [
+            {
+              "id": "bk-pst2-q23-h",
+              "answer": "C",
+              "currency": "none"
+            }
+          ],
+          "note": "The eighth variant, at C (the letter with one). Same as group 2's note: the share of the whole base giving ratings 1 to 3 = sum of three slices x respondents' share; options unordered with a ten-times slip, the \"1 and 2 only\" slip and one filler."
+        }
+      ]
+    }
+  ],
+  "leftOut": [
+    {
+      "id": "pst1-q22",
+      "why": "Payback keyed on the first option by which payback is complete: the blind solver rounded to the nearest option in both round-2 leftovers (-b, -d); its letters are tied to the threshold grid. No new variants; delete -b and -d."
+    },
+    {
+      "id": "pracA-q14",
+      "why": "Failed in the pilot (CCCC, then fillers) and its two waiting variants failed the distractors judge again (an option no slip produces); the answer can sit only at A or C. No new variants; delete -a and -d."
+    },
+    {
+      "id": "pracC-q14",
+      "why": "Statement source (cap stays 4); bk-pracC-q14-c was never blind-solved after the solver derived a revenue the context says cannot be derived. No new variant; delete -c."
+    },
+    {
+      "id": "bcg-q14, pst2-q15, pst2-q21, sample-q08",
+      "why": "Limited to 2 new variants each (see their notes), not left out."
+    },
+    {
+      "id": "pracA-q17",
+      "why": "Rated suitable by the source review, but its exhibit is pracA-q16's (disputed key, percentage points against relative lift), option D has a strict reading under which it too cannot be concluded, and its \"no overall impact\" option rests on a 0.0 figure. Not used."
+    },
+    {
+      "id": "bcg-q03, pst1-q12 and the 14 other rejected sources",
+      "why": "As in evals/round-2-sources.json \"rejected\": bcg-q03 is in effect a reading question (constant spend per car), pst1-q12 keys an inequality on data that does not cover the groups."
+    },
+    {
+      "id": "bcg-q02, bcg-q04, bcg-q12, bcg-q15, pracA-q04, pracA-q07, pracA-q23, pracA-q25, pracB-q05, pracC-q16, pracC-q22, pst1-q06, pst2-q12, pst3-q04, pst3-q19, pst3-q24, sample-q07",
+      "why": "Cap 8, but full at 4: their traps fix the answer to two letters (a slip that always gives more must sit above it, one that always gives less below), and both letters already hold 2. (pst1-q26 and pst2-q11, also at two letters, are rankings and year labels whose answer can sit at any letter: they are opened.)"
+    },
+    {
+      "id": "pracB-q07, pst1-q07",
+      "why": "Statement families at 4 whose keyed claim cannot move: every other option is not covered by the data (3 each), so no other claim can be made true."
+    },
+    {
+      "id": "Formula families already at 4 (pracB-q26, pracC-q10, pst1-q25, sample-q09)",
+      "why": "Cap unchanged: the keyed formula has the same form in every variant, and a formula question has no other claim to key."
+    },
+    {
+      "id": "pracC-q19",
+      "why": "Two letters (B, C) still free, but its four group 1 variants are its only ones: two more would take it past 4 and put those waiting variants under the 15% bar and the owner-review block mid-round. A later round can add them once the four are judged."
+    },
+    {
+      "id": "pst3-q03, bcg-q14, sample-q08, sample-q06, pracB-q18, pst2-q15, pst2-q21, pracB-q25",
+      "why": "Letters still free, but each was limited in groups 1 to 8 for its failure history (see the notes); not raised before those variants are judged."
+    }
+  ]
+}

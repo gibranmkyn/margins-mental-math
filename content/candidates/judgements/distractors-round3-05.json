@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-29c85703",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are every year shown: 2011 comes from comparing parts and service profits without the sales base (35 is the largest), 2013 from dividing them by total profits instead of sales (300%), and 2014 from picking the lowest share instead of the highest or is covered by the listed label filler; no unlisted slip lands on 2012."
+  },
+  {
+    "id": "j-5a41ad40",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B is a near-miss where software's larger revenue suggests more per head but the two are equal (0.19 each), C reverses a close comparison (0.23 vs 0.25), and D, profitability with no cost data, is the one listed statement about something the data does not cover (or reads largest revenue as most profitable)."
+  },
+  {
+    "id": "j-e85aafb3",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$320,000 less comes from ignoring the volume tier and comparing $6 with $5 on all 320,000 kg, $320,000 more adds a sign reversal to that, and $370,000 less is the right figure with the sign reversed; no common slip gives $370,000 more."
+  },
+  {
+    "id": "j-5a627157",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A reads Class C's larger total share as a larger average, and C and D come from dividing merchants by share the wrong way (B then looks highest); the simple average of A's and B's per-merchant sales still makes B true, but that unweighted averaging is the slip the source names."
+  },
+  {
+    "id": "j-14bbb41a",
+    "judge": "distractors",
+    "fail": false,
+    "why": "505 divides the total by 7 days instead of 5, 590 divides by 6, and 640 belongs to a tight grid (steps of about 8 to 11%); reading one point half a gridline off still lands on 710, but the source names that slip."
+  },
+  {
+    "id": "j-177d7f69",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$150,000 and $190,000 make a tight grid around $170,000 (steps of 12%), and $15,000 is the listed numeric filler, a factor of ten below $150,000, though it sits 13% from the answer's unit slip ($17,000) against the source's 9%; leaving out a team or dropping a small bar lands on the answer, as the source names, and the unnamed simple average of team ratios (0.172) only does so because almost every team's ratio is about 0.17."
+  },
+  {
+    "id": "j-17e735ad",
+    "judge": "distractors",
+    "fail": false,
+    "why": "£47,826 is the answer out by a factor of 10, £391,304 cuts profits by 10% instead of raising them (63 ÷ 161), and £39,130 is that reversal plus the factor-of-10 slip; skipping the growth gives £434,783, which is not the answer."
+  },
+  {
+    "id": "j-b43b73a0",
+    "judge": "distractors",
+    "fail": false,
+    "why": "C, A, D, B, E is the correct order reversed (or fuel divided by fare), B, A, D, E, C ranks by fare income alone and ignores fuel, and E, B, A, D, C swaps the close pair D (6.9) and A (6.7) on a rough estimate."
+  },
+  {
+    "id": "j-41342859",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The 5% oilseeds figure reads Farm E alone, the 25% barley figure is the simple average of 40% and 10%, and more than 85% holds for Farm B alone (90%); reading Farm E alone still makes the wheat statement true, but the source names that slip."
+  },
+  {
+    "id": "j-8110b589",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The 36% figure divides clothing by non-food without household goods (0.4 ÷ 1.1), a wrong base; household goods at more than 10% (9.2%) and tins at more than a quarter (22.4%) are near misses that a rough base of about 9 or 8 makes look true; counting fruit and vegetables as grocery gives 80%, not 63%."
+  }
+]

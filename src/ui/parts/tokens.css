@@ -1,0 +1,231 @@
+/*
+ * Margins design steps: "Scoreboard". Every colour, size, space, radius, duration and easing
+ * used anywhere in src/ui is named here. No other CSS file may contain px, hex,
+ * rgb(), ms or cubic-bezier values (src/ui/parts/design-steps.test.ts checks).
+ * Guide: DESIGN.md at the repository root.
+ *
+ * Two themes. Every colour step has a dark value (the default) and a light value under
+ * :root[data-theme='light']; parts and screens use the steps and never know which theme is on.
+ * The names describe roles, not shades: --ink is the page and --text is what is written on it,
+ * whichever way round they are. src/ui/theme.ts sets data-theme (index.html before first paint).
+ *
+ * Three colour families:
+ *   page   --ink --panel --raise --line --text --muted --faint   the surface and what is written on it
+ *   board  --board --board-text --board-num --board-muted --board-miss   the black band; the same in both themes
+ *   lit    --lit --lit-ink --lit-edge --lit-outline --unlit   amber as a FILL: the one action, hits, progress
+ * --accent is amber as TEXT or a LINE on the page. Amber cannot be read on white, so in light it is ink:
+ * never use --accent as a fill (use --lit) and never use --lit as text on the page (use --accent).
+ */
+
+/* ---- Colour, dark: a floodlit board at night. Neutrals lean toward the amber. ---- */
+:root {
+  --ink: #12100b; /* page */
+  --panel: #1a1710; /* sheets that rise over the page: feedback, docks */
+  --raise: #262218; /* tiles: keys, options, callouts */
+  --raise-edge: #070604; /* the ledge under a tile */
+  --line: #3d3727; /* hairlines, outlines of quiet controls */
+  --text: #f7f5ef; /* 17:1 on the page */
+  --muted: #aaa392; /* 7.4:1 on the page: secondary text, labels */
+  --faint: #7f7969; /* 4.2:1: large text, glyphs, disabled. Never small text */
+  --accent: #ffbe1a; /* amber as text or line: XP, a win, focus, selection */
+  --accent-edge: #9a6f00; /* legacy alias of --lit-edge */
+  --accent-ink: #15120a; /* text on an --accent fill (legacy; new code uses --lit / --lit-ink) */
+  --accent-wash: rgb(255 190 26 / 0.22); /* behind a correct answer */
+  --miss: #ff6b5b; /* wrong answers only */
+  --miss-wash: rgb(255 107 91 / 0.14); /* fill behind a wrong option */
+
+  --board: #070604; /* the band that carries the numbers that matter now */
+  --board-text: #f7f5ef;
+  --board-num: #ffbe1a; /* lit numerals on the board */
+  --board-muted: #aaa392;
+  --board-miss: #ff6b5b; /* a miss shown on the board */
+
+  --lit: #ffbe1a; /* amber as a fill: primary button, hits, progress, seals */
+  --lit-ink: #15120a; /* text on --lit */
+  --lit-edge: #9a6f00; /* the ledge a lit button presses into */
+  --lit-outline: #ffbe1a; /* outline of a lit fill: invisible in dark, ink in light */
+  --unlit: #3a3323; /* an unlit segment: empty track, unanswered tally */
+  --bar: #3a3323; /* a progress bar's unlit segments */
+  --bar-gap: #12100b; /* the gap between segments of a bar */
+  --bar-neutral: #f7f5ef; /* a neutral (coverage) fill */
+  --sel: #3a3323; /* a chosen option or chip */
+  --sel-text: #f7f5ef;
+  --flap: #262218; /* the upper half of a flap tile; the lower half is the board */
+
+  /* Chart series, in order. Amber marks the series the question is about. */
+  --chart-1: #ffbe1a; /* the asked-about series, as a fill */
+  --chart-1-ink: #15120a; /* a label on that fill */
+  --chart-1-edge: #ffbe1a; /* its outline: invisible in dark, ink in light */
+  --chart-1-line: #ffbe1a; /* the asked-about series as a thin line or marker */
+  --chart-2: #f7f5ef;
+  --chart-3: #aaa392;
+  --chart-4: #6f6a5c;
+  --chart-grid: var(--line);
+  --chart-grid-strong: var(--faint); /* gridlines of a chart whose values are estimated */
+  --chart-knock: var(--ink); /* gridlines cut through estimated bars so a top can be judged */
+
+  color-scheme: dark;
+}
+
+/*
+ * ---- Colour, light: the results page. White paper, black bands, amber only as a fill under ink ----
+ * The board stays black, so lit numerals look the same in both themes. On the page amber is never
+ * text (1.6:1 on white): --accent becomes ink, and every lit fill gets an ink outline.
+ * Contrast on the page / on a sheet / on a tile is checked in design-steps.test.ts.
+ */
+:root[data-theme='light'] {
+  --ink: #ffffff; /* page */
+  --panel: #f6f5f1; /* sheets that rise over the page */
+  --raise: #eceae4; /* tiles: keys, options, callouts */
+  --raise-edge: #121110; /* the ledge under a tile: ink, so tiles read as keys on white */
+  --line: #cfcdc5; /* hairlines, outlines of quiet controls */
+  --text: #121110; /* 18.8:1 on the page */
+  --muted: #5d5a52; /* 6.9:1 on the page, 5.7:1 on a tile */
+  --faint: #8a877d; /* 3.6:1: large text, glyphs, disabled. Never small text */
+  --accent: #121110; /* on white the accent as text or line is ink */
+  --accent-edge: #121110;
+  --accent-ink: #ffffff;
+  --accent-wash: rgb(255 184 0 / 0.5); /* the amber marker behind a correct answer */
+  --miss: #c2261a; /* wrong answers only. 5.9:1 as text */
+  --miss-wash: rgb(194 38 26 / 0.09);
+
+  --board: #121110;
+  --board-text: #ffffff;
+  --board-num: #ffbe1a;
+  --board-muted: #b9b5a8;
+  --board-miss: #ff7a6b;
+
+  --lit: #ffb800;
+  --lit-ink: #121110;
+  --lit-edge: #121110;
+  --lit-outline: #121110;
+  --unlit: #dcdad2;
+  --bar: #dcdad2; /* empty segments are the pale ones, so 0% reads as empty on a white page */
+  --bar-gap: #ffffff;
+  --bar-neutral: #121110; /* coverage: ink */
+  --sel: #121110;
+  --sel-text: #ffffff;
+  --flap: #2e2b25;
+
+  --chart-1: #ffb800; /* true amber on white needs its ink outline, like every lit fill */
+  --chart-1-ink: #121110;
+  --chart-1-edge: #121110;
+  --chart-1-line: #9a6200; /* a thin line cannot carry an outline: amber deep enough to read on white */
+  --chart-2: #121110;
+  --chart-3: #55534d; /* further from series 4 than before: the two greys must be told apart in a stack */
+  --chart-4: #969389;
+
+  color-scheme: light;
+}
+
+/* ---- Everything else is the same in both themes ---- */
+:root {
+  /* ---- Type ---- */
+  --num: 'Big Shoulders Variable', 'Arial Narrow', 'Helvetica Neue', sans-serif; /* numerals and labels, 20px and up */
+  --word: 'Hanken Grotesk Variable', 'Avenir Next', system-ui, sans-serif; /* words, and figures under 20px */
+  --display: var(--word); /* legacy name */
+  --mono: var(--word); /* legacy name: small data text. Big figures use --num */
+
+  --type-xs: 0.75rem; /* 12: chart text, tags */
+  --type-label: 0.9375rem; /* 15: uppercase labels in the numeral face */
+  --type-sm: 0.875rem; /* 14: meta, captions, table cells */
+  --type-md: 1rem; /* 16: body, steps */
+  --type-lg: 1.1875rem; /* 19: shortcut, option text, row titles */
+  --type-num: 1.375rem; /* 22: figures in rows, tables and panel heads */
+  --type-xl: 1.625rem; /* 26: panel titles, rank, button labels */
+  --type-button: clamp(1.3125rem, 6.7vw, 1.625rem); /* 21 to 26: the primary button's label, one line on a 320px phone */
+  --type-2xl: 2.125rem; /* 34: stat values, keys, compact options */
+  --type-3xl: 2.75rem; /* 44: verdict, section title */
+  --type-wordmark: 2.5rem; /* 40 */
+
+  /* Numbers that carry a screen. Fluid only between phone widths. */
+  --type-num-sm: clamp(2.25rem, 6dvh, 3.25rem); /* prompt and answer while feedback shows */
+  --type-num-md: clamp(3rem, 9.5dvh, 5.25rem); /* typed answer: at least as big as the prompt */
+  --type-num-lg: clamp(2.75rem, 9dvh, 4.75rem); /* drill prompt */
+  --num-glyph: 0.47; /* average glyph width of the numeral face in em; fits a prompt to one line */
+  --type-num-hero: clamp(6.5rem, 36vw, 10rem); /* session score, sprint count */
+  --type-num-hero-fit: 15dvh; /* the summary score also follows the screen's height, so score, tally and stats clear the pinned buttons */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-heavy: 800;
+  --weight-black: 900;
+
+  --leading-solid: 0.9; /* hero numbers, wordmark */
+  --leading-tight: 1.05;
+  --leading-snug: 1.25;
+  --leading-body: 1.55;
+
+  --tracking-tight: -0.01em; /* word headings */
+  --tracking-display: 0.01em; /* the numeral face: never tighter, it is already condensed */
+  --tracking-label: 0.08em; /* uppercase labels */
+  --tracking-caps: 0.04em; /* uppercase titles and buttons in the numeral face */
+
+  /* ---- Space: a 4px rhythm ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 48px;
+
+  /* ---- Layout ---- */
+  --screen-max: 480px;
+  --gutter: 20px; /* page edge to content */
+  --margin-x: 0px; /* legacy: the old margin line. Kept so --content-x still resolves */
+  /* Device insets (notch, Dynamic Island, home indicator). Read env() only here. iPhone 14 Pro standalone: 59 top, 34 bottom. */
+  --inset-top: env(safe-area-inset-top, 0px);
+  --inset-right: env(safe-area-inset-right, 0px);
+  --inset-bottom: env(safe-area-inset-bottom, 0px);
+  --inset-left: env(safe-area-inset-left, 0px);
+  --pad: max(var(--gutter), var(--inset-left), var(--inset-right));
+  --content-x: calc(var(--pad) + var(--margin-x)); /* left edge of all text */
+  --safe-top: max(var(--space-4), var(--inset-top));
+  --safe-bottom: max(var(--space-4), var(--inset-bottom));
+  --sheet-max: 76dvh; /* tallest a docked sheet may grow */
+
+  /* ---- Lines, touch, shape ---- */
+  --hairline: 1px;
+  --stroke: 2px; /* focus ring, selected outline */
+  --stroke-heavy: 3px; /* strike-through, caret, underline */
+  --ledge: 5px; /* how far the primary button presses down */
+  --ledge-key: 3px; /* how far a tile (key, option) presses down */
+  --track: 10px; /* progress bar */
+  --track-thin: 6px; /* pace bar, thin bars in lists */
+  --seg: 12px; /* one segment of a bar */
+  --seg-gap: 3px; /* between segments */
+  --tally: 16px; /* height of a tally segment */
+  --flap-w: 0.66em; /* width of one flap tile, relative to its digit */
+  --table-label-min: 6.5rem; /* narrowest a pinned row-name column may be squeezed */
+  --table-label: 8.5rem; /* widest a pinned row-name column may be, so figures keep most of the width */
+  --table-fade: 28px; /* the fade at a table edge that hides more columns */
+  --option-chrome: 68px; /* a compact option's letter key, gaps and padding: what its figure cannot use */
+  --touch-min: 44px; /* smallest tap target; controls never smaller */
+  --touch-row: 56px; /* rows, chips, options, secondary button */
+  --option-compact: 9.5rem; /* narrowest option card when short options sit two to a row */
+  --chart-swatch: 14px; /* key swatch for a bar, segment or slice */
+  --chart-swatch-line: 26px; /* key swatch for a line: its dash and marker */
+  --touch-primary: 64px; /* the primary button */
+  --touch-key: clamp(50px, 7.4dvh, 62px); /* keypad keys */
+  --radius: 3px; /* tiles and bands. This is the only radius. */
+
+  /* ---- Motion ---- */
+  --dur-press: 60ms; /* press-down */
+  --dur-quick: 150ms; /* state changes */
+  --dur-base: 220ms; /* sheets, reveals */
+  --dur-slow: 420ms; /* the score arriving */
+  --stagger: 60ms; /* between items in one list */
+  --dur-blink: 1050ms; /* caret */
+  --ease-out: cubic-bezier(0.25, 1, 0.5, 1); /* quart */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1); /* stamps and pops */
+
+  /* ---- Stacking ---- */
+  --z-dock: 1; /* docks cover the margin line */
+  --z-inset: 2; /* the strip under the status bar / Dynamic Island */
+  --z-overlay: 10;
+  --z-toast: 20;
+}

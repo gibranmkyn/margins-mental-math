@@ -1,0 +1,12 @@
+[
+  { "id": "j-3ded11d2", "judge": "ambiguity", "fail": false, "why": "Pay is T + 35% of C x M + 5% of J x Y, divided by 6 x 6 x 49 hours, which is A alone." },
+  { "id": "j-42a4f923", "judge": "ambiguity", "fail": false, "why": "Only B holds: (14+9+7)% x 47% = 14.1% of callers, while slow speeds are 21% x 47% = 9.9% (not 10.0%), A gives a technical-support share as a share of all callers, and C has no data." },
+  { "id": "j-e3d9cf72", "judge": "ambiguity", "fail": false, "why": "Operating costs are $46.8m, so sales must reach 46.8/0.07 = $668.6m, a rise of 28.6%, so D (29%)." },
+  { "id": "j-6be4723f", "judge": "ambiguity", "fail": false, "why": "Applying the changes to the 2011 figures gives (41+55) x 0.75 + (62+74+95) x 1.4 = 72 + 323.4 = 395.4, so B." },
+  { "id": "j-7587b703", "judge": "ambiguity", "fail": false, "why": "The 2013 margins read exactly (11% halfway between gridlines, 6% on one); 2016 profit is 131 x 1.236 x 11% = EUR17.8m for warehousing and 238 x 1.253 x 6% = EUR17.9m for parcels, so B." },
+  { "id": "j-12f3e152", "judge": "ambiguity", "fail": false, "why": "Weekly profit per centre (games plus 35% of EUR10 bar spend per bowler) is about EUR2,240 / 3,224 / 2,993 / 1,690 at EUR4-7; with reasonable readings of 2.7 and 1.9 games, B spans 3,159-3,289 and C 2,890-3,096, so B." },
+  { "id": "j-c78fae24", "judge": "ambiguity", "fail": false, "why": "All four values read exactly: share falls from 230/1,650 = 13.9% to 250/2,350 = 10.6%, 3.3 points over three years = 1.1 a year, so B." },
+  { "id": "j-7e2d0d1f", "judge": "ambiguity", "fail": false, "why": "Only B holds: 30% x 70% = 21% stayed in a hotel or guesthouse having come for the aquarium, while C gives the subgroup's 55% as a share of everyone (it is 38.5%), A has no data, and D turns 'mainly' into 'no other reason'." },
+  { "id": "j-872553b9", "judge": "ambiguity", "fail": false, "why": "Each quintile has 36,000 drivers and the step-ups total $0.5 + $1.5 + $4.5 + $13.5 = $20, so the gain is $720,000 (C)." },
+  { "id": "j-f8ed51dc", "judge": "ambiguity", "fail": false, "why": "Total cost is £5.5m + 85,000 x £50 = £9.75m; A (£780), B (£474) and C (£341) check out, but Group D is 24% x £9.75m / 8,500 = £275, so D alone is false." }
+]

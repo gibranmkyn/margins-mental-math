@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-38fa5695",
+    "judge": "distractors",
+    "fail": false,
+    "why": "20 points reads the 'have considered' row (52.5% vs 32.6%), 2 points reads the 'use now or have used' or 'use now' row (about 1.5 points), and 33 points takes the hotels' figure from the wrong row or base (65.3% minus 32.6% considered, or 711 over 2,231); each is a wrong-row or wrong-base slip, and no common slip lands on 9."
+  },
+  {
+    "id": "j-239ed1fd",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is true but looks false to a candidate who compares percentages of 5s without weighting by group size, B looks false to one who sees pet owners' larger share of 5s on run time, and C looks false to one who reads the series the wrong way round; C is fairly plainly true, which makes this a close call."
+  },
+  {
+    "id": "j-05b9e976",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options form a tight grid with steps of about 11% of the answer; £3.0m takes Group C's 18% share (wrong bar) and £3.3m Group D's 20%, £3.6m continues the spacing, and no slip lands on £2.7m."
+  },
+  {
+    "id": "j-de604d6c",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options form a grid with steps of 20% of the answer; 5,600 stops at the passengers' count, 4,800 reads grade 3 instead of 4 (or ignores the threefold assumption and uses 20% of 24,000), 6,400 continues the spacing, and no slip lands on 4,000."
+  },
+  {
+    "id": "j-d231e370",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A ranks by sessions per member (level, not change), C swaps the near-tied quintiles 2 and 4 (30% vs 28%), and B comes from rounding to the nearest 10 too early, which ties quintiles 2 and 3 behind 4; the later-year-base slip lands on D but sourceHas names it; B's basis is thin."
+  },
+  {
+    "id": "j-9ee2d75d",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1,600 skips the first pie, 800 skips the first pie and takes train and bus (or takes local residents for the first pie), and 5,600 skips the first pie and takes car; each is one slip or a pair of slips."
+  },
+  {
+    "id": "j-c31660a2",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A forgets to divide by opening days (appointments down 2.8%), D reverses the direction of the change, and C reverses the direction while also skipping the per-day step, each also reading the average as true of every month; the wrong-base slip that still gives 5% fewer is named in sourceHas."
+  },
+  {
+    "id": "j-bbafe6c3",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A over-reads Cupwise's higher bean-cost share as poorer buying, B over-reads the higher margin as a bigger profit, and D (drink prices) is the one statement without basis that sourceHas allows; comparing total beans without dividing by shops still gives C, but sourceHas names that slip."
+  },
+  {
+    "id": "j-ac441e9d",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is a near miss (picking €0.47m vs welding €0.48m per engineer), D tempts a candidate who sees painting's larger revenue (both are €0.40m per engineer), and C (profitability, with no cost data) is the one statement without basis that sourceHas allows."
+  },
+  {
+    "id": "j-c94125a9",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is a near miss (29.5%, not more than 30%), D tempts a candidate who sees large companies' biggest no-contact cell (but medium companies' 272.5k beats 257.9k), C (leases) is the one statement without basis that sourceHas allows, and both slips that still land on B are named in sourceHas."
+  }
+]

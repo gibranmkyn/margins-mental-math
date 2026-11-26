@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-df8f8327",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are all four countries on offer: B (2,850) is the near-miss a rough estimate lands on, A is ranking by rolls alone and skipping the length step, and C is the source-style label filler; rolls × cost and rolls × price both land on D, the same slips the source names."
+  },
+  {
+    "id": "j-dbbc5065",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B is the absolute-versus-share slip (small employers have the fewest contacted employees, 17.9k), D wrongly treats large employers as the biggest uncontacted group (it is medium, 307k against 220k), and C (premiums) is the single no-basis statement that sourceHas allows."
+  },
+  {
+    "id": "j-2b9137f1",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A reads Country 7's lowest market share as the lowest sales, C reads Countries 1 and 10's similar share and margin as similar profit, and D comes from reading the neighbouring Country 9 (about 21%) instead of Country 5, which gives about twice."
+  },
+  {
+    "id": "j-544ed45e",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$12.8bn takes bar 2's cumulative 34.6% of $37bn, $24.1bn applies the correct 12.3% to the global $196bn, and $67.8bn makes both slips at once (34.6% × $196bn)."
+  },
+  {
+    "id": "j-4bbc4e24",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B takes the 10% margin fall as the profit fall and ignores revenue growth, C reads revenue as profit, and D (dining table prices) is the single no-basis statement that sourceHas allows."
+  },
+  {
+    "id": "j-6ca3ee22",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A swaps the close pair D and A (10.9 against 10.6), B ranks by toll income alone (or by toll minus maintenance), and D divides the wrong way round (maintenance ÷ toll)."
+  },
+  {
+    "id": "j-bd57edb0",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The grid is tight (steps of £0.2m, about 14% of the answer): £0.8m is forgetting the variable cost (22% × £3.4m = £0.75m), £1.0m is the cumulative 33% applied to variable cost only (£0.95m), and £1.2m is rounding 22% down to 20% or reading Group C (19%)."
+  },
+  {
+    "id": "j-ea106a02",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A extends the faster forecast growth without checking starting levels, C takes simple annual growth (12.2% against 4.5% a year, about 2.7x) as three times, and B takes 88 over the wrong column's total (88 ÷ 969 = 9%); B's slip is the weakest of the three."
+  },
+  {
+    "id": "j-7a71db9e",
+    "judge": "distractors",
+    "fail": false,
+    "why": "C compares total sales share (57% against 22%) instead of the per-garage average, while B and D reverse the per-garage comparisons (C's average is the highest and B's the lowest), or come from dividing garages by sales the wrong way round."
+  },
+  {
+    "id": "j-b0fa68f4",
+    "judge": "distractors",
+    "fail": false,
+    "why": "Rating 3 reads Question 1 alone, rating 2 reads branch B (or is the near-miss 41 against 42), and rating 1 reverses most for least on the combined totals; reading Question 2 alone lands on 4, but sourceHas names that slip."
+  }
+]

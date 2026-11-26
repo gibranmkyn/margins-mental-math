@@ -1,0 +1,12 @@
+[
+  {"id": "j-80affe61", "judge": "realism", "fail": false, "why": "The business profits add to the stated totals each year (35, 20, 10, 30), and the margins imply sales of about 800 to 1,200 million, which is believable for a carmaker whose new car arm runs at or slightly below break-even."},
+  {"id": "j-ebc567ca", "judge": "realism", "fail": false, "why": "$130 million of revenue across 586 full-time translators is about $220,000 per head, which is high but within a factor of a few of what a corporate translation firm could report, and a loss is still possible after overheads."},
+  {"id": "j-198c2fb4", "judge": "realism", "fail": false, "why": "1.6 million boxes at 0.2 kg is 320,000 kg of leaf a year at $3 to $6 per kg, and 2.5 g of tea per bag with $0.65 of packaging per box, which is all believable for a tea packer."},
+  {"id": "j-4030f6a4", "judge": "realism", "fail": false, "why": "The shares add to 100%, and €315m across 1,160 merchants gives each merchant between about €140,000 and €1.4m of seed sales a year, which is plausible."},
+  {"id": "j-144959cd", "judge": "realism", "fail": false, "why": "Zero pallets at the weekend matches the Monday to Friday receiving window, and 200 to 980 pallets a day (at most about 120 an hour) is believable for a central parts warehouse, even with a quiet Monday."},
+  {"id": "j-250b5378", "judge": "realism", "fail": false, "why": "$68 million of revenue across 400 technicians is about $170,000 per technician, which is believable for an IT support firm, and a loss is still possible after overheads."},
+  {"id": "j-3c6bac99", "judge": "realism", "fail": false, "why": "£70 million of profit across 161 laptop, phone and accessory products is about £435,000 per product, which is plausible for an electronics group."},
+  {"id": "j-bae2756d", "judge": "realism", "fail": false, "why": "Depot fare incomes of £13.7m to £41.7m against fuel bills of £1.9m to £5.6m make fuel roughly 10 to 20% of fares, which is believable for large bus depots."},
+  {"id": "j-6412bdee", "judge": "realism", "fail": false, "why": "Every farm's crop shares add to 100%, and farms of 290 to 840 hectares with average yields of 6.4 to 8.6 tonnes per hectare are believable, if on the high side for a mix that includes oilseeds."},
+  {"id": "j-f7dd3fca", "judge": "realism", "fail": false, "why": "The product line sales add exactly to the $9.8 billion total, which is a believable size for a national supermarket chain."}
+]

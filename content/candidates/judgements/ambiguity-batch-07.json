@@ -1,0 +1,12 @@
+[
+  { "id": "j-c848e544", "judge": "ambiguity", "fail": false, "why": "B is the one near option: with 6 Town Teams the 14 others solve to 3.85 Metro Teams from revenue (3.9 from profit), and only 4 Metro Teams gives league averages that round to $16m and $0.9m, while 3 or 5 give $14.9m/$0.81m or $17.6m/$1.01m." },
+  { "id": "j-3e7d2074", "judge": "ambiguity", "fail": false, "why": "Only B holds: of the 1,200 thousand copies in B and E, print is 536 (45%), e-books 382 (32%), audiobooks 208 (17%) and other 74 (6%), so the three main formats are 94%; all segments sit on gridlines or halfway between them." },
+  { "id": "j-d8ffc2f8", "judge": "ambiguity", "fail": false, "why": "Only C holds: of 130 million tonnes at C and F, containers are 52.5 (40%), dry bulk 39.5 (30%), liquid bulk 26.5 (20%) and other 11.5 (9%), so the first three are 91%." },
+  { "id": "j-819b08b9", "judge": "ambiguity", "fail": false, "why": "Only D holds: July profit is 1,083/864 x 0.85 = 1.07 times March's, while cocoa rose about 17% against a 20% margin fall (A), B ignores the revenue rise and C needs price data." },
+  { "id": "j-4f6faf5b", "judge": "ambiguity", "fail": false, "why": "Only A holds: of 190 million litres in Regions 2 and 6, cheese is 59.5 (31%), powder 86.5 (46%), butter 32.5 (17%) and other 11.5 (6%), so the three products take 94%." },
+  { "id": "j-bb59768b", "judge": "ambiguity", "fail": false, "why": "Only A holds: a 1% cut in courier payments saves $3.6m against $1.2m for overheads and less for technology, while a 1% revenue rise with costs keeping their ratios deepens the $18.4m loss by $0.2m." },
+  { "id": "j-6a366549", "judge": "ambiguity", "fail": false, "why": "Only B holds: profit per store is B 0.0375, C 0.056, A 0.126 and D 0.158 (GBP m), with no ties." },
+  { "id": "j-4a115833", "judge": "ambiguity", "fail": false, "why": "Only A holds: 2,979/4,860 = 61.3% against 1,606/2,915 = 55.1% is a gap of 6.2 points, and the question asks explicitly for points." },
+  { "id": "j-a3988d22", "judge": "ambiguity", "fail": false, "why": "Only C holds: the rises are $1 + $2.50 + $5 + $21.50 = $30 across four quintiles of 70,000 shoppers, i.e. $2.1 million." },
+  { "id": "j-4bc1b1e6", "judge": "ambiguity", "fail": false, "why": "Only C holds: Route 1's growth from sailings is 1.8 x 121.1% = 2.18 points and Route 10's is 4.6 x 23.3% = 1.07, a gap of 1.11." }
+]

@@ -1,0 +1,12 @@
+[
+  {"id": "j-961f4df7", "judge": "realism", "fail": false, "why": "A group of year-round theme parks weighing plans costing up to EUR 50m upfront, with a few thousand extra visitors a day at EUR 9 to 14 profit each, is believable."},
+  {"id": "j-ff6c728e", "judge": "realism", "fail": true, "why": "Truing the road range's 412 faulty wheels costs $52,900, about $128 or nearly 5 mechanic-hours at $27 per wheel, more than five times the $9,700 paid for all the road range's wheels; truing a wheel takes well under an hour, and at any real wheel price the faulty wheels would outnumber the wheels bought."},
+  {"id": "j-c21d34e9", "judge": "realism", "fail": false, "why": "A medicines wholesaler handling about 2.4 million order lines a month, with a robot-picking funnel that narrows from 100% to 55-66%, is believable."},
+  {"id": "j-615e4e1e", "judge": "realism", "fail": false, "why": "Almonds at $6 to $10 per kg, 0.1 kg per bag and 2.2 million bags a year (220 tonnes of almonds) fit a supermarket granola maker."},
+  {"id": "j-a5b6d2f0", "judge": "realism", "fail": true, "why": "Members are placed in quintiles by how often they ride, yet Quintile 3 averages fewer rides than Quintile 2 in both years (34 vs 37 in 2011, 18 vs 30 in 2012), which cannot happen when the quintiles are ranked by ride frequency."},
+  {"id": "j-8743c718", "judge": "realism", "fail": false, "why": "A cosmetics group with 172 products earning GBP 25m profit, about GBP 145,000 per product, is believable."},
+  {"id": "j-4d9d056f", "judge": "realism", "fail": false, "why": "Booking growth split by trip type into app and website contributions of 0.1 to 0.7 percentage points, with each bar's parts adding to the stated totals, is believable."},
+  {"id": "j-6bb59a10", "judge": "realism", "fail": false, "why": "Market sales of $9 to $25 billion per platform, with mobile growing quickly, are believable for a national or regional video game market."},
+  {"id": "j-29bc7748", "judge": "realism", "fail": false, "why": "A city bike-hire scheme with 64,000 members making 2.1 million trips and costing GBP 6.2m a year, about GBP 40 to 390 per member by group, is believable."},
+  {"id": "j-847a4d74", "judge": "realism", "fail": false, "why": "A mid-priced hotel group with revenues in the tens to hundreds of millions per line and margins of 7-15% is believable."}
+]

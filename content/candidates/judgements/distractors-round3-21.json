@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-07174447",
+    "judge": "distractors",
+    "fail": false,
+    "why": "€149, €169 and €179 form a tight €10 grid (about 6% of the answer) around a maximum-price answer, as the source's listed grid fillers do; no slip reaches €159 (pricing visits at the hourly rate gives €213, dropping labour €105, dropping electricity €54, reversing the labour sign €51)."
+  },
+  {
+    "id": "j-56a417a4",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A becomes the worst once the original half jeweller is left out of B and D (B then looks like 144 minutes a ring), or once 138 rings are read off the chart as needing 3 jewellers; C looks worst when its extra 50 rings are ignored (3 jewellers for 128 rings, 211 minutes) or the 2.5 hires are added on top of December's staff; D looks worst when 60 rings are read off the chart as needing 1.5 jewellers (225 minutes); slips that move off B go to other options, not to B."
+  },
+  {
+    "id": "j-81865f94",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A reads the equal 2-point fall as an equal rate (confusing points with relative change); C holds for the wrong row (sandwiches and cakes both grew about 16%); D is the margin-for-profit over-reading (coffee's margin tops the other three combined); B stays true and no slip makes it the only true statement."
+  },
+  {
+    "id": "j-566fad91",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is the one statement the data does not cover, which sourceHas allows; B is a near-miss figure (37% × 28% = 10.4%, read roughly as 10%); C takes the cabin-guest share as a share of all guests (wrong base); the wrong-base slip on D gives 15%, not 4.2%."
+  },
+  {
+    "id": "j-28e17775",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$7.1bn, $9.1bn and $11.1bn continue a wide, evenly spaced grid that sourceHas lists, with three numeric fillers; the nearest slips sit beside them (direct contribution $6.6bn is about 7% short of $7.1bn, direct plus indirect $11.7bn is about 5% over $11.1bn), and leaving out a row ($4.2bn or $4.5bn) does not land on $5.1bn."
+  },
+  {
+    "id": "j-d10f62d1",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The 1.5-point grid is tight (steps about 18% of 8.3), as in the source's listed fillers; dividing the profit drop by a single revenue base gives about 7.0, which lands on 6.8, and no slip gives 8.3 (margin on costs gives 10.9)."
+  },
+  {
+    "id": "j-819c6b2f",
+    "judge": "distractors",
+    "fail": false,
+    "why": "8.4 comes from computing markup on costs instead of margin on revenue (13.5% minus 5.3% is 8.2), and 3.9 and 5.4 continue the 1.5-point spacing, which is about 22% of the answer, so only just tight; the single-base slip gives about 6.0 to 6.5, which is not 6.9 at the precision written."
+  },
+  {
+    "id": "j-f98c1923",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A and C rank by a driver's share rather than its absolute growth (Medicine's −26.9%, Business's 17.6%); B averages the ten student-number shares (290.2 ÷ 10 = 29%), treating a share of growth as growth; ranking by total growth lands on D, but sourceHas names that slip."
+  },
+  {
+    "id": "j-3b1caa7a",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A compares revenue alone (427 > 418); B reads the 4-point fall in the margin index as a 4% fall in profit; D is a near-miss figure (9% where the truth is about 6%) that no exact slip produces; C's ratio of 3 holds however the change is measured."
+  },
+  {
+    "id": "j-800233a9",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A, B and D each look true to a candidate who compares share of sales rather than sales per salon (B's 54% read as the biggest buyers), and D also passes under a rounded simple average of A's and B's per-salon figures; neither slip leaves C true."
+  }
+]

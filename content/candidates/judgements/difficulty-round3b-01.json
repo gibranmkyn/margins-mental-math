@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-ec759240",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: read 2010 and 2013 values from unlabelled left and right axes, compute two shares, take the difference, divide by three years (6 steps); question: the same gridline readings, two shares, difference and division by three (6 steps), with nothing added or dropped."
+  },
+  {
+    "id": "j-4c06d533",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: five revenue-per-transaction divisions then the deciding comparisons (Q3 vs Q2, Q4 vs Q5) to rank (about 7 steps); question: five revenue-per-order divisions then the deciding comparisons (Q4 vs Q3 and Q5, Q5 vs Q3) to rank (about 7 steps), the same kind of work with a different swap pattern."
+  },
+  {
+    "id": "j-4154f300",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: gridline-read the margin and industry indexes, then test four statements built on revenue x margin (half-year change, two-year change, annual sums, ratio of index moves) (about 6 steps); question: the same four statement types on the same kind of exhibit (about 6 steps), the true answer just being the annual-sums statement rather than the half-year one."
+  },
+  {
+    "id": "j-7ea3e605",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: read bars 1 and 2 off gridlines on a cumulative chart, take the difference (avoiding the bar-height trap), multiply by the total (4 steps); question: the same reads, difference, trap and multiplication (4 steps), plus at most one extra decision to pick the $37bn developing-market total over the $196bn global figure."
+  },
+  {
+    "id": "j-9874145b",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: five revenue-per-transaction divisions and two deciding comparisons (Q3 vs Q2, Q4 vs Q5) to rank (about 7 steps); question: five revenue-per-order divisions and the same two deciding comparisons (about 7 steps), same structure and answer pattern."
+  },
+  {
+    "id": "j-3eb6141f",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: gridline-read the margin and industry indexes, then test four statements on revenue x margin (half-year change, H1-to-end change, annual sums, ratio of index moves) (about 6 steps); question: the same four statement types on the same exhibit kind (about 6 steps), with the true answer being the H1-to-end change."
+  },
+  {
+    "id": "j-482d20df",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: five revenue-per-transaction divisions and two deciding comparisons (Q3 vs Q2, Q4 vs Q5) to rank (about 7 steps); question: five revenue-per-order divisions and two deciding comparisons (Q2 vs Q1, Q4 vs Q3, with Q5 checked on top) (about 7 steps), the same kind of work."
+  },
+  {
+    "id": "j-0c2ef4e8",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: gridline-read the margin and industry indexes, then test four statements on revenue x margin (about 6 steps); question: the same four statement types on the same exhibit kind (about 6 steps), with the true answer being the H1-to-end profit change."
+  },
+  {
+    "id": "j-df919621",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: five revenue-per-transaction divisions and two deciding comparisons (Q3 vs Q2, Q4 vs Q5) to rank (about 7 steps); question: five revenue-per-purchase divisions and two deciding comparisons (Q2 vs Q1, Q4 vs Q5 with Q5 just above Q3) (about 7 steps), the same kind of work."
+  },
+  {
+    "id": "j-b74c7a60",
+    "judge": "difficulty",
+    "fail": false,
+    "why": "Source: pick the indirect segments out of the stacked bars (trap: not the totals), sum the five, apply the percentage to 2013 GDP (3 steps); question: the same segment selection, sum of five and percentage of GDP (3 steps)."
+  }
+]

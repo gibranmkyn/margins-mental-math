@@ -1,0 +1,12 @@
+[
+  {"id":"j-130ec4d6","judge":"ambiguity","fail":false,"why":"Only B holds: sales per ad dollar are D 18.6, B 13.0, E 10.4, A 7.65, C 7.43, and A and C are far enough apart to settle the last two places."},
+  {"id":"j-21a39929","judge":"ambiguity","fail":false,"why":"Only A holds: $81m over 300 staff is $270,000, and the simple average of account ratios (about $207,000) is not among the options."},
+  {"id":"j-1e9c0437","judge":"ambiguity","fail":false,"why":"Only A holds: premiums per cost dollar are D 27.4, A 20.1, B 19.6, C 13.1, E 9.1, so A clearly ranks above B."},
+  {"id":"j-9a5381b3","judge":"ambiguity","fail":false,"why":"Only A holds: 12%+23%+20% = 55% of respondents, times 26% of the client base, is 14.3%."},
+  {"id":"j-490b90ff","judge":"ambiguity","fail":false,"why":"Only D holds: 1,100 visitors x $1.50 x 365 = $602,250 a year, so $2m is repaid at 3.32 years, which is past 3.3 (only $1.99m earned by then), making 3.4 the first option where the cost has been earned back."},
+  {"id":"j-62d77748","judge":"ambiguity","fail":false,"why":"Only B holds: replacing the $11,000 subcontractor and $37,500 of repairs saves $48,500, which pays for 2,694 upholsterer hours at $18, and 2,650 is the highest option still within that."},
+  {"id":"j-b308effd","judge":"ambiguity","fail":false,"why":"Only C holds: M is about $10,400, against K $9,600, L $5,200 and N $2,100."},
+  {"id":"j-8f1440e6","judge":"ambiguity","fail":false,"why":"Only C holds: fees per promotion dollar are A 12.3, D 11.4, C 7.44, B 7.21, E 5.25, so C clearly ranks above B."},
+  {"id":"j-be57f797","judge":"ambiguity","fail":false,"why":"Only B holds: 2009-2012 revenue of 440, 460, 495 and 520 over 70, 70, 80 and 80 reps averages about $6.4m, whether averaged by year or pooled, and reasonable chart readings stay far from the other options."},
+  {"id":"j-5f4ab897","judge":"ambiguity","fail":false,"why":"Only B holds: $77m over 350 architects is $220,000, and the simple average of studio ratios (about $173,000) is not among the options."}
+]

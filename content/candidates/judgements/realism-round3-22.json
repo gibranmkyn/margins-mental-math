@@ -1,0 +1,12 @@
+[
+  {"id": "j-6eae244d", "judge": "realism", "fail": false, "why": "A single-shop florist with about €25k monthly revenue, around 1,500 orders and margins of 16.3% and 9.1% that match revenue minus costs is believable."},
+  {"id": "j-0e809d5c", "judge": "realism", "fail": false, "why": "A city employment service with 72k jobseekers (bands sum to 72k), 214,000 appointments at £40 plus £6.1m fixed cost gives about £200 per jobseeker, and per-person cost falls from Group A to E as stated."},
+  {"id": "j-3f3d5a59", "judge": "realism", "fail": false, "why": "Mining output growth ranging from -14.1% to 11.6% across five years and ordinal risk scores are believable country indicators."},
+  {"id": "j-bb7b9ad7", "judge": "realism", "fail": false, "why": "Agrona's 375-391 thousand tonnes of nitrogen against a 2.2-3.15 million tonne market (about 12-17% share) and roughly 24% of phosphate are believable."},
+  {"id": "j-110c1747", "judge": "realism", "fail": false, "why": "Coated glass rising from $7.85 to $21.20 per square metre through coating, distribution and cutting, with the waterfall adding up, is believable for a window maker."},
+  {"id": "j-9aae252b", "judge": "realism", "fail": false, "why": "Per-capita chip consumption of about 1.5-3 kg a year, bag sizes of 20-100 g and prices of $0.30-$1.40 above costs are believable."},
+  {"id": "j-129aee99", "judge": "realism", "fail": false, "why": "A suburban driving school giving about 900 lessons a month at roughly €43 each, with margins of 12.6% and 9.7% that match revenue minus costs, is believable."},
+  {"id": "j-04d64cb0", "judge": "realism", "fail": true, "why": "160,000 visits from 130,000 people with seven-tenths coming once leaves 91,000 single visits and 69,000 visits for 39,000 repeat visitors, who need at least 78,000, so the figures cannot all hold."},
+  {"id": "j-b2d78588", "judge": "realism", "fail": false, "why": "600,000 paying players with 1-7 purchases worth $14-$85 in 90 days and low one-year profit values of $0.30-$15 are believable for a mobile game after platform fees and costs."},
+  {"id": "j-3ed7ac05", "judge": "realism", "fail": false, "why": "A removals firm whose jobs double into the peak week and then drop, with casual mover hours always below total hours, is believable."}
+]

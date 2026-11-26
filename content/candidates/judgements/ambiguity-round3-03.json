@@ -1,0 +1,12 @@
+[
+  {"id":"j-9b4e9b15","judge":"ambiguity","fail":false,"why":"Only C holds: total sales are total profit over margin (1,000, 1,000, 800, 1,200), so export profit is 3.0%, 3.0%, 3.75% and 3.3% of sales, and 2011 is highest."},
+  {"id":"j-339756ad","judge":"ambiguity","fail":false,"why":"Only B holds: city 2 adds 41.9 - 27.4 = 14.5% of $24bn, about $3.5bn, and reasonable gridline readings stay well inside the $1.95bn-$6.8bn band around B."},
+  {"id":"j-8f775c1c","judge":"ambiguity","fail":false,"why":"Only C is true: true crime and comedy earn 73 of the $140m total (52.1%); history and science tie at $0.2m per producer, comedy is $0.45m against true crime's $0.47m, and profit is not shown."},
+  {"id":"j-a374bee8","judge":"ambiguity","fail":false,"why":"Only C is valid: Country 4's margin (about 37%) is clearly the highest, while A gives about 1.6x rather than 3x, and B and D need market sizes that the exhibit leaves out."},
+  {"id":"j-d89007ec","judge":"ambiguity","fail":false,"why":"A: winter share falls from 430/2,600 = 16.5% to 460/3,120 = 14.7%, a loss of 1.8 points over three years or 0.6 a year (0.45 if divided by four years still gives A), and reasonable chart readings stay below the 0.85 midpoint."},
+  {"id":"j-693a801d","judge":"ambiguity","fail":false,"why":"B: a 6% share of $1.3bn is $78m of revenue, and a margin of about 25.4% gives about $19.8m; reasonable readings of the margin keep the answer near B and far from the other options."},
+  {"id":"j-8aef644b","judge":"ambiguity","fail":false,"why":"Only A is true: weighted by 96k and 224k nights, leisure is 182.4/320 = 57.0%, conferences 8.5%, business 19% and the three named purposes together 84.5%, all read from segments that sit on gridlines."},
+  {"id":"j-5d6f1fef","judge":"ambiguity","fail":false,"why":"Only B is true: 2007 costs are 33 x 2.36 = EUR77.9m; costs rise every year, revenue totals EUR309m, and the 2009 loss (EUR50.5m) is bigger than the 2008 loss (EUR47.0m)."},
+  {"id":"j-db24d44d","judge":"ambiguity","fail":false,"why":"B: large companies with no contact are the biggest uncontacted pool (383.6k staff); C is false at 449.0/1,289.4 = 34.8%, D needs fee data, and A fails on proportion (small 15.7% contacted against large 9.0%) and on frequent contact (13.6k against 9.1k)."},
+  {"id":"j-ef25e4bd","judge":"ambiguity","fail":false,"why":"B: expected revenue lost is H 2.8, B 2.4, R 0.8 and L 0.5 ($m), every value read exactly from gridlines or halfway points, which gives H, B, R, L."}
+]

@@ -1,0 +1,12 @@
+[
+  { "id": "j-96021e43", "judge": "realism", "fail": false, "why": "A gym trainer on a retainer plus 35% of client session spend and 5% of referred members' fees, working 6 hours a day, 6 days a week, 49 weeks a year, is believable." },
+  { "id": "j-091d705c", "judge": "realism", "fail": false, "why": "The routing split (47/37/16) and the fault pie (33/21/16/14/9/7) each sum to 100%, and 15,000 callers surveyed in a month is believable for a broadband provider." },
+  { "id": "j-464e2045", "judge": "realism", "fail": false, "why": "A grocery wholesaler with $520 million sales, goods at 93% and operating costs at 9% losing 2% is consistent and believable for a thin-margin wholesaler." },
+  { "id": "j-403361c4", "judge": "realism", "fail": false, "why": "Half-year spend of $30 to $95 per member at a tea subscription club is believable, and the question's fall/rise is a stated hypothetical." },
+  { "id": "j-d44f888e", "judge": "realism", "fail": false, "why": "Business-line revenues of EUR 44 to 238 million growing a few percent a year with margins of 3% to 12% are believable for a freight company." },
+  { "id": "j-4a89fd6d", "judge": "realism", "fail": false, "why": "Game prices of EUR 4 to 7, a few hundred bowlers per centre a week and EUR 10 of bar spend are believable, and a 35% bar margin against 15% for the sector is within a factor of a few." },
+  { "id": "j-fc2954c5", "judge": "realism", "fail": false, "why": "Thermacor's heat pump share falling from about 14% to 11% of a $1.5 to $2.35 billion market, and about 19% of the boiler market, is believable." },
+  { "id": "j-28ee0310", "judge": "realism", "fail": false, "why": "Both pies sum to 100%, and 4,800 exit responses over four weeks is believable for a coastal-town aquarium." },
+  { "id": "j-942ec586", "judge": "realism", "fail": false, "why": "180,000 new drivers with first-year profit of $0.50 to $20.50 on 90-day rental fees of $39 to $281 implies thin but believable car-sharing margins." },
+  { "id": "j-1d97007d", "judge": "realism", "fail": false, "why": "The group home counts add to the stated 31.5k (of about 40,000 homes), and GBP 9.75 million of repair cost over 85,000 jobs is believable for a housing association of that size." }
+]

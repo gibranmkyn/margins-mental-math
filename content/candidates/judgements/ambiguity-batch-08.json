@@ -1,0 +1,12 @@
+[
+  { "id": "j-69ee8110", "judge": "ambiguity", "fail": false, "why": "Threshold answer C: hand costs $3 + $3/litre a day, the juicer $8 + $0.60/litre + $13 (6,630/510), so break-even is 7.5 litres and 8 is the first option at which the juicer is cheaper." },
+  { "id": "j-20115944", "judge": "ambiguity", "fail": false, "why": "Only C holds: 2,022/3,170 = 63.8% against 670/1,428 = 46.9% is a gap of 16.9 points, and the question asks explicitly for points." },
+  { "id": "j-19499f08", "judge": "ambiguity", "fail": false, "why": "Only B holds: weekly profit per laundromat (wash margin x washes plus 40% of the EUR3 vending spend) is A 492, B 330 x 2.5 = 825, C 250 x 3.1 = 775, D 432, and reasonable readings of 2.6 and 1.9 off the right axis do not close the EUR50 gap." },
+  { "id": "j-86ae8c99", "judge": "ambiguity", "fail": false, "why": "Only B holds: October profit is 3,822/3,412 x 0.95 = 1.06 times August's, while the bean price rose 20% against a margin fall of about 17% (D) and C needs price data." },
+  { "id": "j-f48494b7", "judge": "ambiguity", "fail": false, "why": "Only A holds: digital reaches 66 x 66/54 = 80.7 at 12% (9.7) against books 93 x 93/77 = 112.3 at 17% (19.1), a ratio of 0.51 (0.51 also with absolute growth)." },
+  { "id": "j-24524f85", "judge": "ambiguity", "fail": false, "why": "Only A holds: December profit is 1,958/1,746 x 0.95 = 1.07 times September's, while diesel rose about 12% against a 10% margin fall (B) and D needs fare data." },
+  { "id": "j-8ccde5c0", "judge": "ambiguity", "fail": false, "why": "Only C holds: revenue of 12 x $68.5m = $822m less 3 x $34m leaves $720m for 9 teams, which solves to 4 Big-Market Teams, and profit checks exactly at $49.8m." },
+  { "id": "j-6ca65304", "judge": "ambiguity", "fail": false, "why": "Threshold answer B: hand costs $3 + $1.20/kg a day, the divider $10 + $0.30/kg + $11 (13,640/1,240), so break-even is exactly 20 kg and 21 kg is the first option at which the divider saves money." },
+  { "id": "j-6c4a2781", "judge": "ambiguity", "fail": false, "why": "Only B holds: a 2% cut in fuel purchases saves $7.1m against $0.5m for operating costs and less for the fleet, while a 2% sales rise with costs in proportion deepens the $3.8m loss." },
+  { "id": "j-225fe0be", "judge": "ambiguity", "fail": false, "why": "Only B holds: Invoicing earns $38m/68 = $0.56m per developer against Payroll's $43m/82 = $0.52m, while A is 81/143 = 57%, C needs costs and D is a tie at $0.40m each." }
+]

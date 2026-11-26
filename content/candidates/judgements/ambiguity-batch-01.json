@@ -1,0 +1,12 @@
+[
+  { "id": "j-c450ffdd", "judge": "ambiguity", "fail": false, "why": "Only B holds: Washwell serves 750/36 = 20.8 clients per van against Crestline's 1,300/64 = 20.3, while A and D need revenue figures and C needs prices, none of which are given." },
+  { "id": "j-392d7cc1", "judge": "ambiguity", "fail": false, "why": "Profit per shop is A 0.025, C 0.042, B 0.114, D 0.143 ($m), so A (A, C, B, D) is the only correct order, with no ties." },
+  { "id": "j-1572e702", "judge": "ambiguity", "fail": false, "why": "Applying the changes to the 2010 figures gives (34+46)x0.7 + (50+68+78)x1.25 = 56 + 245 = 301, so C; the next option is $28 away." },
+  { "id": "j-79580d97", "judge": "ambiguity", "fail": false, "why": "Crunchos earns 400,000 x $0.50 = $200,000; Toltec earns $1,760,000 - $735,000 (tiered tray cost) - $880,000 = $145,000, a fall of $55,000, so B." },
+  { "id": "j-91b58147", "judge": "ambiguity", "fail": false, "why": "Weekly profit per kiosk (coffee plus 40% of EUR5 food per regular) is EUR1,200 / 1,786 / 1,584 / about 830 at EUR2.0/2.4/2.8/3.2; the cup values read exactly (5, 4.5, 3.5) or cannot move D near the top, so B." },
+  { "id": "j-08bd4b42", "judge": "ambiguity", "fail": false, "why": "Only C holds: May profit is 0.90 x 2,563/2,184 = 1.06 times February's, while wheat rose about 17% against a 15% margin fall (A false) and there is no bread-price data (D)." },
+  { "id": "j-a03bcf8b", "judge": "ambiguity", "fail": false, "why": "Depot costs are $94.5m, so revenue must reach 94.5/0.22 = $429.5m, a rise of 22.7%, clearly closest to C (23%)." },
+  { "id": "j-9bcb67f0", "judge": "ambiguity", "fail": false, "why": "Only A holds: (7+5+3)% x 26% = 3.9% of visitors, while B confuses bases (36% of exhibition visitors is 9.4% of visitors), C gives 5.7% not 6.0%, and D has no data." },
+  { "id": "j-d25a3fcb", "judge": "ambiguity", "fail": false, "why": "All four values sit exactly halfway between gridlines: share falls from 165/1,150 = 14.3% to 175/1,850 = 9.5%, 4.9 points over three years = 1.6 a year, so C (counting four years gives 1.2, still nearest C)." },
+  { "id": "j-cc43b14e", "judge": "ambiguity", "fail": false, "why": "Only B holds: IT is 5 of the 18 support spend = 27.8%, while clinical is 68/111 = 61%, medical equipment 9.0% and medicines 27.9%; A's 52% needs medical equipment misfiled as estate." }
+]

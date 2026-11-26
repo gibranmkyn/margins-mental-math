@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-f8239bf7",
+    "judge": "distractors",
+    "fail": false,
+    "why": "C, E, A, D, B comes from reading E's revenue off D's adjacent bar (6, giving 0.18) or its translators off F's (29); C, A, D, E, B from reading E's translators off D's bar (47, giving 0.11); C, A, E, B, D from reading D's translators off C's bar (71, giving 0.085); adjacent-bar misreads that keep the right order are covered by sourceHas."
+  },
+  {
+    "id": "j-87bbb7d7",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The ten-year claim extends the fastest-growing segment's trend past the years shown (an over-reading), 'twice the yearly rate' is what you get comparing absolute growth (0.62 vs 0.30 billion a year) instead of percentage rates, and 'same rate' misreads the identical +1.2 billion absolute rise of still and sparkling as the same rate; all three are fair."
+  },
+  {
+    "id": "j-d6839e12",
+    "judge": "distractors",
+    "fail": false,
+    "why": "2, 12 and 17 minutes form an evenly spaced wide grid around the answer, and sourceHas lists that grid and three numeric fillers in the same places (the extra-staff-only slip, 13.8, sits between 12 and 17 as the note says); close because stopping at the 7% time increase and reading it as 7 minutes lands exactly on the correct option, a slip sourceHas does not name."
+  },
+  {
+    "id": "j-4bdd1ec4",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B, A, D, C, E ranks by placement fees alone, skipping the division; C, B, E, D, A swaps the close pair B and C (14.3 vs 14.1) when 2.9 is rounded to 3; A, D, E, C, B is the full reverse from dividing spend by fees; close because two adjacent-bar misreads (A's fees as 25.3, B's spend as 1.3) still give the correct order, though the options do not invite bar misreads and sourceHas is empty."
+  },
+  {
+    "id": "j-8ec39d1d",
+    "judge": "distractors",
+    "fail": false,
+    "why": "40% applies the 10% weight loss to the total 'paddy to pack' cost of 1.41 instead of the 1.06 price to Whitegrain (0.141 / 0.35 = 40%), and 20% and 50% continue the even 10-point spacing as the two numeric fillers sourceHas lists."
+  },
+  {
+    "id": "j-8f0829ea",
+    "judge": "distractors",
+    "fail": false,
+    "why": "60% uses shoppers instead of visits as the base (three-fifths), 40% is its complement (the shoppers who came more than once), and 73% is the complement of the answer (repeat visits); each is a wrong-base or reversal slip."
+  },
+  {
+    "id": "j-4a351f5b",
+    "judge": "distractors",
+    "fail": false,
+    "why": "3,300 uses the sofa range's total cost (57,400 / 17 = 3,376), 2,200 leaves out the workshop saving (37,900 / 17 = 2,229), and 2,800 comes from rounding the saving down to 50,000 too early (2,941 hours, so 2,950 looks too many); close because 2,800 relies on early rounding across the threshold and the options are not an even grid; picking the nearest option is covered by sourceHas."
+  },
+  {
+    "id": "j-09a54be4",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A reads the 15% fall in the margin index as a 15% fall in profit, ignoring revenue growth; D reads February's higher revenue as higher profit; B is about ring prices, which the data does not cover, the one such statement sourceHas allows."
+  },
+  {
+    "id": "j-52ca418f",
+    "judge": "distractors",
+    "fail": false,
+    "why": "2, 5 and 11 minutes form an evenly spaced wide grid with no slip on them, which sourceHas lists (with three numeric fillers); close because the note's details do not fit exactly (step 3 is not close to the answer of 8, and the extra-staff-only slip at 16.5 does not sit beside a filler), and stopping at the 7% increase (7 minutes) lands nearest the correct 8, a slip sourceHas does not name."
+  },
+  {
+    "id": "j-897e8bee",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options form a tight grid with steps of 1.5 (about 16% of the answer); 7.6 also comes from dividing the 5.4 profit drop by autumn revenue (7.8), or from using autumn revenue for both margins, and 4.6 and 6.1 continue the spacing as the numeric fillers sourceHas lists."
+  }
+]

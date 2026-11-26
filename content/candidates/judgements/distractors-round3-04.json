@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-30d53fab",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$2.5m reads the intruder-alarm series (average 2.49), $0.5m is the answer slipped by a factor of 10, and $0.3m needs two slips together: dividing CCTV revenue by all sales reps (about 3.0) and then a factor-of-10 slip; the slips that land on $4.9m (five-year average, wrong window, half-gridline misread, totals ratio, single year) are all named in sourceHas."
+  },
+  {
+    "id": "j-5f77f5b9",
+    "judge": "distractors",
+    "fail": false,
+    "why": "N, S, K, L ranks by the lowest change alone; S, K, N, L and N, S, L, K have no slip behind them but pass as the two ranking fillers sourceHas lists; ranking by the peak alone lands on the correct option, as sourceHas notes for the source."
+  },
+  {
+    "id": "j-da3f0b3a",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options form a tight grid with steps of 700 (about 14% of the answer), and 3,500 (the Lumena count alone), 4,200 (the scent chart) and 5,600 (20% of the actual 28,000) are all slips; no common slip gives 4,900."
+  },
+  {
+    "id": "j-e30a93b1",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A's 'twice' comes from comparing absolute yearly increases (0.62 against 0.30 a year) instead of growth rates; C confuses equal absolute growth (+1.6 each) with equal rates; D is a trend extended past the years shown, an over-reading the data settles only after a calculation; no slip makes another statement true."
+  },
+  {
+    "id": "j-657eeca9",
+    "judge": "distractors",
+    "fail": false,
+    "why": "D's 35% is the tills' return with the monthly cost left out, B turns the maximum into a minimum, and A reverses the comparison on the roughly 26% threshold, rounded to 25% (a bit loose on precision); leaving out monthly costs throughout gives about $20m, not the correct $18m."
+  },
+  {
+    "id": "j-b1b5c322",
+    "judge": "distractors",
+    "fail": false,
+    "why": "D, C, B, A, E is the correct ranking reversed (lowest to highest, or budget per pound of sales), D, B, E, A, C ranks by sales or budget alone, and E, A, B, D, C gets the close call between C (9.5) and D (9.3) wrong."
+  },
+  {
+    "id": "j-90c738e2",
+    "judge": "distractors",
+    "fail": false,
+    "why": "C's 50% is the rebuild's return with its monthly cost left out, B turns the maximum into a minimum, and D reverses the comparison on the roughly 36% threshold rounded to 35%; leaving out monthly costs throughout gives about €35m, not €33m."
+  },
+  {
+    "id": "j-400a4551",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B, C, D, E, A ranks by staff numbers alone, B, C, E, A, D ranks by revenue alone (or misjudges E against C), and B, E, C, D, A comes from reading D's revenue off the adjacent bar (9 instead of 4) or A's staff off B's bar."
+  },
+  {
+    "id": "j-fcf0f2c0",
+    "judge": "distractors",
+    "fail": false,
+    "why": "2, 4 and 6 have no slip within 5% (counting only the trainees gives 3.4), but the evenly spaced grid is covered by the wide grid sourceHas lists and its three numeric fillers, the nearest slip falling between 2 and 4 as the note describes; strictly, the notes put a filler at the top of the grid, where this question has its answer."
+  },
+  {
+    "id": "j-740b8bd3",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1, 2, 3, 4, 5 ranks by revenue, orders or one-year value alone, 1, 2, 4, 3, 5 gets the close call between Q3 (62.9) and Q5 (62.4) wrong, and 1, 3, 2, 4, 5 has no slip behind it but passes as the single ranking filler sourceHas lists."
+  }
+]

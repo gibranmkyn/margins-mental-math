@@ -1,0 +1,1328 @@
+[
+  {
+    "id": "au-145",
+    "skill": "expected-value",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A toy company is deciding whether to make a range of toys tied to an upcoming film. If the film is a hit, which it puts at a 30% chance, the range earns a profit of $2m. Otherwise the range loses $0.5m."
+      }
+    ],
+    "prompt": "What is the expected profit from making the range?",
+    "options": [
+      "$0.25m",
+      "$0.40m",
+      "$0.60m",
+      "$0.75m"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Hit: 0.3 × $2m = $0.6m",
+      "Miss: 0.7 × (−$0.5m) = −$0.35m",
+      "Expected profit: $0.6m − $0.35m = $0.25m"
+    ],
+    "shortcut": "Weight every outcome by its probability, losses included; leaving out the 70% chance of a loss gives $0.6m.",
+    "check": {
+      "kind": "value",
+      "answer": "30 / 100 * 2 - (100 - 30) / 100 * 0.5"
+    }
+  },
+  {
+    "id": "au-146",
+    "skill": "expected-value",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A building contractor must buy a batch of steel beams. If the beams arrive late, the contractor pays its client an $8,000 penalty."
+      },
+      {
+        "type": "table",
+        "title": "Supplier quotes",
+        "headers": [
+          "Supplier",
+          "Price",
+          "Chance of late delivery"
+        ],
+        "rows": [
+          [
+            "Arlen",
+            "$10,000",
+            "5%"
+          ],
+          [
+            "Brockway",
+            "$9,600",
+            "15%"
+          ],
+          [
+            "Calder",
+            "$9,800",
+            "8%"
+          ],
+          [
+            "Dunmore",
+            "$10,050",
+            "2%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which supplier gives the lowest expected total cost, including the risk of a penalty?",
+    "options": [
+      "Dunmore",
+      "Calder",
+      "Brockway",
+      "Arlen"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Expected penalty = chance × $8,000: Arlen $400, Brockway $1,200, Calder $640, Dunmore $160",
+      "Expected total: Arlen $10,400, Brockway $10,800, Calder $10,440, Dunmore $10,210",
+      "Lowest: Dunmore"
+    ],
+    "shortcut": "Each percentage point of lateness costs $80; Brockway's $400 discount buys 10 extra points ($800) of risk against Arlen.",
+    "check": {
+      "kind": "best",
+      "pick": "min",
+      "scores": [
+        "10050 + 2 / 100 * 8000",
+        "9800 + 8 / 100 * 8000",
+        "9600 + 15 / 100 * 8000",
+        "10000 + 5 / 100 * 8000"
+      ]
+    }
+  },
+  {
+    "id": "au-147",
+    "skill": "expected-value",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An open-air food market gets about 300 visitors on a rainy day and 800 on a dry day. The forecast gives a 40% chance of rain on Saturday."
+      }
+    ],
+    "prompt": "How many visitors should the market expect on Saturday?",
+    "options": [
+      "550",
+      "600",
+      "640",
+      "800"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Expected visitors: 0.4 × 300 + 0.6 × 800",
+      "= 120 + 480 = 600"
+    ],
+    "shortcut": "Start from the dry-day figure and take off the rain risk: 800 − 0.4 × 500 = 600. The plain average (550) ignores that rain is less likely.",
+    "check": {
+      "kind": "value",
+      "answer": "40 / 100 * 300 + 60 / 100 * 800"
+    }
+  },
+  {
+    "id": "au-148",
+    "skill": "expected-value",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A jewellery shop estimates a 10% chance each year of a burglary costing $30,000. An insurer offers to cover the full loss for a premium of $2,400 a year."
+      }
+    ],
+    "prompt": "By how much does buying the insurance lower the shop's expected annual cost?",
+    "options": [
+      "$400",
+      "$600",
+      "$800",
+      "$3,000"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Expected loss without insurance: 10% × $30,000 = $3,000",
+      "With insurance: the $2,400 premium",
+      "Saving: $3,000 − $2,400 = $600"
+    ],
+    "shortcut": "Compare the premium with probability × loss: 2,400 against 3,000.",
+    "check": {
+      "kind": "value",
+      "answer": "10 / 100 * 30000 - 2400"
+    }
+  },
+  {
+    "id": "au-149",
+    "skill": "expected-value",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An architecture practice has bid for three contracts."
+      },
+      {
+        "type": "table",
+        "title": "Open bids",
+        "headers": [
+          "Contract",
+          "Fee if won",
+          "Chance of winning"
+        ],
+        "rows": [
+          [
+            "Library",
+            "$400k",
+            "50%"
+          ],
+          [
+            "Clinic",
+            "$250k",
+            "20%"
+          ],
+          [
+            "Stadium",
+            "$900k",
+            "10%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the practice's expected fee income from the three bids?",
+    "options": [
+      "$290k",
+      "$340k",
+      "$390k",
+      "$517k"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Library: 0.5 × $400k = $200k; Clinic: 0.2 × $250k = $50k; Stadium: 0.1 × $900k = $90k",
+      "Total: $340k"
+    ],
+    "shortcut": "Expected values add across independent bids; sum probability × fee.",
+    "check": {
+      "kind": "value",
+      "answer": "50 / 100 * 400 + 20 / 100 * 250 + 10 / 100 * 900"
+    }
+  },
+  {
+    "id": "au-150",
+    "skill": "expected-value",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "At a broadband provider's help desk, 70% of calls are resolved by the first agent in 6 minutes. The rest are escalated to a specialist, and those calls take 20 minutes in total."
+      }
+    ],
+    "prompt": "What is the expected length of a call?",
+    "options": [
+      "10.2 minutes",
+      "11.4 minutes",
+      "13.0 minutes",
+      "14.0 minutes"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Expected length: 0.7 × 6 + 0.3 × 20",
+      "= 4.2 + 6 = 10.2 minutes"
+    ],
+    "shortcut": "Escalated calls take 14 minutes longer and happen 30% of the time: 6 + 0.3 × 14 = 10.2.",
+    "check": {
+      "kind": "value",
+      "answer": "70 / 100 * 6 + 30 / 100 * 20"
+    }
+  },
+  {
+    "id": "au-151",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A drinks company could launch a new energy drink nationally now. It estimates a 60% chance of success, bringing a $5m profit, and a 40% chance of failure, losing $2m. Alternatively, it could first run a $0.4m test market that would let it fix problems, raising the chance of success to 75% with the same payoffs."
+      }
+    ],
+    "prompt": "By how much does test-marketing first raise the expected profit, after paying for the test?",
+    "options": [
+      "$0.25m",
+      "$0.65m",
+      "$1.05m",
+      "$1.25m"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Launch now: 0.6 × $5m − 0.4 × $2m = $3m − $0.8m = $2.2m",
+      "Test first: 0.75 × $5m − 0.25 × $2m − $0.4m = $3.75m − $0.5m − $0.4m = $2.85m",
+      "Gain: $2.85m − $2.2m = $0.65m"
+    ],
+    "shortcut": "Moving 15 points of probability from a −$2m outcome to a +$5m outcome is worth 0.15 × $7m = $1.05m; less the $0.4m test.",
+    "check": {
+      "kind": "value",
+      "answer": "(75 / 100 * 5 - (100 - 75) / 100 * 2 - 0.4) - (60 / 100 * 5 - 40 / 100 * 2)"
+    }
+  },
+  {
+    "id": "au-152",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A mining company has shortlisted four exploration projects and the possible profit from each."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Oak: 50% chance of $4m, 50% chance of nothing",
+          "Pine: 20% chance of $13m, 80% chance of a $0.5m loss",
+          "Elm: a certain $1.9m",
+          "Ash: 30% chance of $8m, 40% chance of $1.5m, 30% chance of a $2m loss"
+        ]
+      }
+    ],
+    "prompt": "Which project has the highest expected profit?",
+    "options": [
+      "Ash",
+      "Oak",
+      "Elm",
+      "Pine"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Oak: 0.5 × $4m = $2.0m; Pine: 0.2 × $13m − 0.8 × $0.5m = $2.6m − $0.4m = $2.2m",
+      "Elm: $1.9m; Ash: 0.3 × $8m + 0.4 × $1.5m − 0.3 × $2m = $2.4m + $0.6m − $0.6m = $2.4m",
+      "Highest: Ash"
+    ],
+    "shortcut": "In Ash, the 30% loss cancels the 40% chance of $1.5m exactly, leaving 0.3 × $8m. Pine's big upside is mostly eaten by its likely loss.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "30 / 100 * 8 + 40 / 100 * 1.5 - 30 / 100 * 2",
+        "50 / 100 * 4 + 50 / 100 * 0",
+        "1.9",
+        "20 / 100 * 13 - 80 / 100 * 0.5"
+      ]
+    }
+  },
+  {
+    "id": "au-153",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A factory makes 50,000 kettles a month, and 2% of them are faulty. Inspection catches 60% of the faulty kettles, which are then repaired at $8 each. The faulty kettles that are missed reach customers and cost $45 each in returns and goodwill."
+      }
+    ],
+    "prompt": "What is the factory's expected monthly cost of faulty kettles?",
+    "options": [
+      "$18,000",
+      "$22,800",
+      "$26,500",
+      "$45,000"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Faulty kettles: 2% × 50,000 = 1,000",
+      "Caught: 600 × $8 = $4,800; missed: 400 × $45 = $18,000",
+      "Total: $22,800"
+    ],
+    "shortcut": "Expected cost per faulty kettle: 0.6 × 8 + 0.4 × 45 = 22.8, times 1,000 faulty kettles.",
+    "check": {
+      "kind": "value",
+      "answer": "50000 * 2 / 100 * (60 / 100 * 8 + (100 - 60) / 100 * 45)"
+    }
+  },
+  {
+    "id": "au-154",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A games studio is considering a marketing push for its next title costing $1.2m. If the title succeeds, the studio earns $4m of profit before the marketing cost; if it fails, it earns nothing."
+      }
+    ],
+    "prompt": "Above what probability of success does the marketing push have a positive expected profit?",
+    "options": [
+      "23%",
+      "30%",
+      "40%",
+      "77%"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Expected profit: p × $4m − $1.2m",
+      "Positive when p > $1.2m ÷ $4m = 30%"
+    ],
+    "shortcut": "Break-even probability = cost ÷ payoff. Dividing by $4m + $1.2m gives 23%, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "1.2 / 4 * 100"
+    }
+  },
+  {
+    "id": "au-155",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A biotech firm is deciding whether to start mid-stage trials of a drug. The trials cost $20m now and have a 40% chance of success. Only if they succeed will the firm run late-stage trials, costing a further $80m, with a 60% chance of success. An approved drug would be worth $500m."
+      }
+    ],
+    "prompt": "What is the expected value of starting the mid-stage trials?",
+    "options": [
+      "$20m",
+      "$40m",
+      "$68m",
+      "$100m"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Chance of approval: 0.4 × 0.6 = 0.24, worth 0.24 × $500m = $120m",
+      "Expected costs: $20m + 0.4 × $80m = $52m",
+      "Expected value: $120m − $52m = $68m"
+    ],
+    "shortcut": "The $80m is only spent in the 40% of cases that reach late-stage trials; counting it in full gives $20m, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "40 / 100 * 60 / 100 * 500 - 20 - 40 / 100 * 80"
+    }
+  },
+  {
+    "id": "au-156",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A florist orders 100 bouquets for Mother's Day at $12 each and sells them at $30 each. Bouquets left unsold are thrown away."
+      },
+      {
+        "type": "table",
+        "title": "Expected demand",
+        "headers": [
+          "Bouquets demanded",
+          "Probability"
+        ],
+        "rows": [
+          [
+            "60",
+            "30%"
+          ],
+          [
+            "80",
+            "50%"
+          ],
+          [
+            "100",
+            "20%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the florist's expected profit on the order?",
+    "options": [
+      "$1,140",
+      "$1,200",
+      "$1,320",
+      "$1,800"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Expected bouquets sold: 0.3 × 60 + 0.5 × 80 + 0.2 × 100 = 18 + 40 + 20 = 78",
+      "Revenue: 78 × $30 = $2,340; cost: 100 × $12 = $1,200",
+      "Expected profit: $2,340 − $1,200 = $1,140"
+    ],
+    "shortcut": "Pay for all 100, earn only on the expected 78 sold. Assuming every bouquet sells gives $1,800.",
+    "check": {
+      "kind": "value",
+      "answer": "30 * (30 / 100 * 60 + 50 / 100 * 80 + 20 / 100 * 100) - 12 * 100"
+    }
+  },
+  {
+    "id": "au-157",
+    "skill": "expected-value",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A bakery makes special cakes for a one-day town fair. Each cake costs $8 to make and sells for $20. Unsold cakes are given away at the end of the day."
+      },
+      {
+        "type": "table",
+        "title": "Cakes demanded at the fair",
+        "headers": [
+          "Demand",
+          "Probability"
+        ],
+        "rows": [
+          [
+            "40",
+            "25%"
+          ],
+          [
+            "60",
+            "50%"
+          ],
+          [
+            "80",
+            "25%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which quantity should the bakery make to maximise its expected profit?",
+    "options": [
+      "40 cakes",
+      "60 cakes",
+      "70 cakes",
+      "80 cakes"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "40 cakes: all sell, 40 × $12 = $480",
+      "60 cakes: expected sales 0.25 × 40 + 0.75 × 60 = 55; 55 × $20 − 60 × $8 = $620",
+      "70 cakes: expected sales 10 + 30 + 17.5 = 57.5; $1,150 − $560 = $590",
+      "80 cakes: expected sales 60; $1,200 − $640 = $560; best is 60"
+    ],
+    "shortcut": "Each extra cake earns $12 if it sells and loses $8 if not, so make it only while its chance of selling is above 8 ÷ 20 = 40%. Cakes 61 to 80 sell only 25% of the time.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "20 * 40 - 8 * 40",
+        "20 * (25 / 100 * 40 + (50 / 100 + 25 / 100) * 60) - 8 * 60",
+        "20 * (25 / 100 * 40 + 50 / 100 * 60 + 25 / 100 * 70) - 8 * 70",
+        "20 * (25 / 100 * 40 + 50 / 100 * 60 + 25 / 100 * 80) - 8 * 80"
+      ]
+    }
+  },
+  {
+    "id": "au-158",
+    "skill": "expected-value",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An energy company can drill an exploration well for $6m. It estimates a 25% chance of a large find worth $30m, a 35% chance of a small find worth $8m and a 40% chance the well is dry. For $1m, a seismic survey would show beforehand whether the well will be dry, so the company would drill only if it will not be."
+      }
+    ],
+    "prompt": "By how much does doing the survey first raise the expected profit, after paying for the survey?",
+    "options": [
+      "$1.0m",
+      "$1.4m",
+      "$2.4m",
+      "$4.3m"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Drill without survey: 0.25 × $30m + 0.35 × $8m − $6m = $7.5m + $2.8m − $6m = $4.3m",
+      "Survey first: 0.25 × ($30m − $6m) + 0.35 × ($8m − $6m) − $1m = $6m + $0.7m − $1m = $5.7m",
+      "Gain: $5.7m − $4.3m = $1.4m"
+    ],
+    "shortcut": "The survey saves the $6m drilling cost in the 40% of cases that are dry: 0.4 × $6m = $2.4m, less the $1m survey.",
+    "check": {
+      "kind": "value",
+      "answer": "(25 / 100 * (30 - 6) + 35 / 100 * (8 - 6) - 1) - (25 / 100 * 30 + 35 / 100 * 8 - 6)"
+    }
+  },
+  {
+    "id": "au-159",
+    "skill": "expected-value",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A shipping line moves 4,000 containers a year, each carrying cargo worth $60,000 on average. Each container has a 0.5% chance of being lost, and the line bears the full loss. An insurer offers cover for a premium of 0.4% of each container's cargo value, but the line would still pay the first $5,000 of each loss."
+      }
+    ],
+    "prompt": "How much would insurance save the line each year in expected cost?",
+    "options": [
+      "$40k",
+      "$140k",
+      "$240k",
+      "$1,060k"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Without insurance: 4,000 × 0.5% × $60,000 = 20 lost containers × $60,000 = $1,200k",
+      "With insurance: premium 4,000 × 0.4% × $60,000 = $960k, plus 20 × $5,000 = $100k of uncovered losses",
+      "Saving: $1,200k − $1,060k = $140k"
+    ],
+    "shortcut": "Per container: expected loss $300 against a $240 premium plus 0.5% × $5,000 = $25; saving $35 × 4,000 = $140k.",
+    "check": {
+      "kind": "value",
+      "answer": "(4000 * 0.5 / 100 * 60000 - (4000 * 0.4 / 100 * 60000 + 4000 * 0.5 / 100 * 5000)) / 1000"
+    }
+  },
+  {
+    "id": "au-160",
+    "skill": "expected-value",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A homeware retailer plans a promotional email to 200,000 customers."
+      },
+      {
+        "type": "list",
+        "items": [
+          "25% of recipients open the email",
+          "8% of those who open it click through to the site",
+          "30% of those who click through buy something",
+          "Average order: $90, at a 40% margin",
+          "Sending costs $0.01 per email, plus $3,000 for design"
+        ]
+      }
+    ],
+    "prompt": "What is the campaign's expected profit?",
+    "options": [
+      "$33,200",
+      "$35,200",
+      "$38,200",
+      "$43,200"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Orders: 200,000 × 25% × 8% × 30% = 1,200",
+      "Margin: 1,200 × $90 × 40% = $43,200",
+      "Costs: 200,000 × $0.01 + $3,000 = $5,000; profit $38,200"
+    ],
+    "shortcut": "Chain the rates: 0.25 × 0.08 × 0.3 = 0.6% of recipients buy, i.e. 1,200 orders worth $36 margin each.",
+    "check": {
+      "kind": "value",
+      "answer": "200000 * 25 / 100 * 8 / 100 * 30 / 100 * 90 * 40 / 100 - 200000 * 0.01 - 3000"
+    }
+  },
+  {
+    "id": "au-161",
+    "skill": "expected-value",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A consultancy is deciding whether to answer a public tender. Writing the proposal costs $40k. It has a 30% chance of being shortlisted; if shortlisted, it must spend a further $15k on a pitch and then has a 50% chance of winning. The contract would bring $600k of revenue at a 35% margin."
+      }
+    ],
+    "prompt": "What is the expected profit (or loss) of answering the tender?",
+    "options": [
+      "−$23.5k",
+      "−$13.0k",
+      "−$8.5k",
+      "$45.5k"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Chance of winning: 0.3 × 0.5 = 15%; margin if won: 35% × $600k = $210k, so 0.15 × $210k = $31.5k",
+      "Expected costs: $40k + 0.3 × $15k = $44.5k",
+      "Expected profit: $31.5k − $44.5k = −$13.0k"
+    ],
+    "shortcut": "Use margin, not revenue ($90k against $44.5k gives $45.5k, the trap), and charge the pitch only when shortlisted.",
+    "check": {
+      "kind": "value",
+      "answer": "30 / 100 * 50 / 100 * 600 * 35 / 100 - 40 - 30 / 100 * 15"
+    }
+  },
+  {
+    "id": "au-162",
+    "skill": "expected-value",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An electronics retailer must place a single order for a new gadget before the holiday season. Each unit costs $40 and sells for $70; units left after the season are cleared at $25."
+      },
+      {
+        "type": "table",
+        "title": "Season demand",
+        "headers": [
+          "Units demanded",
+          "Probability"
+        ],
+        "rows": [
+          [
+            "1,000",
+            "20%"
+          ],
+          [
+            "1,500",
+            "50%"
+          ],
+          [
+            "2,500",
+            "30%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which order quantity gives the highest expected profit?",
+    "options": [
+      "1,000 units",
+      "1,500 units",
+      "2,000 units",
+      "2,500 units"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Each unit sold earns $30; each unit cleared loses $15",
+      "1,000: $30,000. 1,500: 0.2 × ($30,000 − $7,500) + 0.8 × $45,000 = $40,500",
+      "2,000: 0.2 × $15,000 + 0.5 × $37,500 + 0.3 × $60,000 = $39,750",
+      "2,500: 0.2 × $7,500 + 0.5 × $30,000 + 0.3 × $75,000 = $39,000; best is 1,500"
+    ],
+    "shortcut": "Add units while the chance they sell exceeds 15 ÷ (30 + 15) = 1/3. Units above 1,500 sell only 30% of the time, so stop at 1,500, even though average demand is 1,700.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(70 - 40) * 1000",
+        "20 / 100 * ((70 - 40) * 1000 - (40 - 25) * (1500 - 1000)) + (50 / 100 + 30 / 100) * (70 - 40) * 1500",
+        "20 / 100 * ((70 - 40) * 1000 - (40 - 25) * (2000 - 1000)) + 50 / 100 * ((70 - 40) * 1500 - (40 - 25) * (2000 - 1500)) + 30 / 100 * (70 - 40) * 2000",
+        "20 / 100 * ((70 - 40) * 1000 - (40 - 25) * (2500 - 1000)) + 50 / 100 * ((70 - 40) * 1500 - (40 - 25) * (2500 - 1500)) + 30 / 100 * (70 - 40) * 2500"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q26-a",
+    "modelledOn": "pst1-q26",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A maker of snacks and soft drinks sells mainly through four large retail chains, each of which has threatened to delist its products in a dispute over prices. Exhibit 2 shows the probability that each chain carries out its threat in the coming year and the annual profit the company would lose."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "title": "Exhibit 2: Potential profit at risk from retailer delistings",
+        "unit": "Annual profit lost if the chain delists ($ million)",
+        "xUnit": "Probability of delisting in the coming year",
+        "categories": [
+          "Chain K",
+          "Chain L",
+          "Chain M",
+          "Chain N"
+        ],
+        "x": [
+          0.1,
+          0.4,
+          0.2,
+          0.1
+        ],
+        "series": [
+          {
+            "name": "Profit lost",
+            "values": [
+              14,
+              4,
+              3,
+              7
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 16,
+          "step": 2
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 0.5,
+          "step": 0.1
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following lists is the best ranking of the retail chains, from the chain that should concern the sales director MOST to the one that should concern her LEAST?",
+    "options": [
+      "K, N, L, M",
+      "L, M, K, N",
+      "L, K, M, N",
+      "L, K, N, M"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Expected loss = probability × profit lost",
+      "L: 0.4 × $4m = $1.6m",
+      "K: 0.1 × $14m = $1.4m",
+      "N: 0.1 × $7m = $0.7m",
+      "M: 0.2 × $3m = $0.6m",
+      "Ranking: L, K, N, M"
+    ],
+    "shortcut": "K beats N on sight (equal 10% odds, double the loss), so B is out; L's $1.6m tops K's $1.4m, so A is out; N's $0.7m tops M's $0.6m, so D rather than C.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "0.1 * 14 > 0.1 * 7 && 0.1 * 7 > 0.4 * 4 && 0.4 * 4 > 0.2 * 3",
+        "0.4 * 4 > 0.2 * 3 && 0.2 * 3 > 0.1 * 14 && 0.1 * 14 > 0.1 * 7",
+        "0.4 * 4 > 0.1 * 14 && 0.1 * 14 > 0.2 * 3 && 0.2 * 3 > 0.1 * 7",
+        "0.4 * 4 > 0.1 * 14 && 0.1 * 14 > 0.1 * 7 && 0.1 * 7 > 0.2 * 3"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q26-b",
+    "modelledOn": "pst1-q26",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An airline's agreements with four groups of staff expire this year, and the union for each group has threatened a strike. Exhibit 2 shows the probability of a strike by each group over the coming year and the cost the airline would bear."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "title": "Exhibit 2: Potential cost of strikes by staff group",
+        "unit": "Cost to the airline if the group strikes ($ million)",
+        "xUnit": "Probability of a strike in the coming year",
+        "categories": [
+          "Pilots (P)",
+          "Cabin crew (C)",
+          "Engineers (E)",
+          "Ground staff (G)"
+        ],
+        "x": [
+          0.1,
+          0.3,
+          0.1,
+          0.5
+        ],
+        "series": [
+          {
+            "name": "Cost of a strike",
+            "values": [
+              18,
+              7,
+              9,
+              1
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 20,
+          "step": 2
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 0.6,
+          "step": 0.1
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following lists is the best ranking of the staff groups, from the group the CEO should be MOST concerned about down to the group he should be LEAST concerned about?",
+    "options": [
+      "C, P, E, G",
+      "P, E, C, G",
+      "G, C, P, E",
+      "C, P, G, E"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Expected cost = probability × cost of a strike",
+      "Cabin crew: 0.3 × $7m = $2.1m",
+      "Pilots: 0.1 × $18m = $1.8m",
+      "Engineers: 0.1 × $9m = $0.9m",
+      "Ground staff: 0.5 × $1m = $0.5m",
+      "Ranking: C, P, E, G"
+    ],
+    "shortcut": "P beats E on sight (equal 10% odds, double the cost), so C is out; cabin crew's $2.1m tops the pilots' $1.8m, so B is out; the engineers' $0.9m tops ground staff's $0.5m, so A rather than D.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "0.3 * 7 > 0.1 * 18 && 0.1 * 18 > 0.1 * 9 && 0.1 * 9 > 0.5 * 1",
+        "0.1 * 18 > 0.1 * 9 && 0.1 * 9 > 0.3 * 7 && 0.3 * 7 > 0.5 * 1",
+        "0.5 * 1 > 0.3 * 7 && 0.3 * 7 > 0.1 * 18 && 0.1 * 18 > 0.1 * 9",
+        "0.3 * 7 > 0.1 * 18 && 0.1 * 18 > 0.5 * 1 && 0.5 * 1 > 0.1 * 9"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q26-c",
+    "modelledOn": "pst1-q26",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A software company is defending four lawsuits brought by former customers. Exhibit 2 shows its lawyers' view of the probability that the company loses each case and the damages it would then have to pay."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "title": "Exhibit 2: Potential damages from pending lawsuits",
+        "unit": "Damages if the case is lost ($ million)",
+        "xUnit": "Probability of losing the case",
+        "categories": [
+          "Claim W",
+          "Claim X",
+          "Claim Y",
+          "Claim Z"
+        ],
+        "x": [
+          0.2,
+          0.5,
+          0.2,
+          0.4
+        ],
+        "series": [
+          {
+            "name": "Damages",
+            "values": [
+              12,
+              6,
+              7,
+              3
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 14,
+          "step": 2
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 0.6,
+          "step": 0.1
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following lists is the best ranking of the claims, from the claim the board should be MOST concerned about to the claim it should be LEAST concerned about?",
+    "options": [
+      "W, Y, X, Z",
+      "X, Z, W, Y",
+      "X, W, Z, Y",
+      "X, W, Y, Z"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Expected damages = probability × damages",
+      "X: 0.5 × $6m = $3.0m",
+      "W: 0.2 × $12m = $2.4m",
+      "Y: 0.2 × $7m = $1.4m",
+      "Z: 0.4 × $3m = $1.2m",
+      "Ranking: X, W, Y, Z"
+    ],
+    "shortcut": "W above Y needs no sum (same 20% chance, larger damages), which removes B; X's $3.0m beats W's $2.4m, which removes A; Y's $1.4m beats Z's $1.2m, which picks D over C.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "0.2 * 12 > 0.2 * 7 && 0.2 * 7 > 0.5 * 6 && 0.5 * 6 > 0.4 * 3",
+        "0.5 * 6 > 0.4 * 3 && 0.4 * 3 > 0.2 * 12 && 0.2 * 12 > 0.2 * 7",
+        "0.5 * 6 > 0.2 * 12 && 0.2 * 12 > 0.4 * 3 && 0.4 * 3 > 0.2 * 7",
+        "0.5 * 6 > 0.2 * 12 && 0.2 * 12 > 0.2 * 7 && 0.2 * 7 > 0.4 * 3"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q26-d",
+    "modelledOn": "pst1-q26",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A building contractor has four large projects due for handover next year, and each contract carries a penalty for late completion. Exhibit 2 shows the probability that each project is handed over late and the penalty the contractor would then pay."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "title": "Exhibit 2: Potential late-completion penalties by project",
+        "unit": "Penalty if handed over late ($ million)",
+        "xUnit": "Probability of late handover",
+        "categories": [
+          "Office tower (O)",
+          "Viaduct (V)",
+          "Hospital wing (H)",
+          "School (S)"
+        ],
+        "x": [
+          0.4,
+          0.1,
+          0.1,
+          0.3
+        ],
+        "series": [
+          {
+            "name": "Penalty",
+            "values": [
+              5,
+              16,
+              11,
+              3
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 18,
+          "step": 2
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 0.5,
+          "step": 0.1
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following lists is the best ranking of the projects, from the project the managing director should be MOST concerned about to the project she should be LEAST concerned about?",
+    "options": [
+      "O, V, H, S",
+      "V, H, O, S",
+      "O, S, V, H",
+      "O, V, S, H"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Expected penalty = probability × penalty",
+      "Office tower: 0.4 × $5m = $2.0m",
+      "Viaduct: 0.1 × $16m = $1.6m",
+      "Hospital wing: 0.1 × $11m = $1.1m",
+      "School: 0.3 × $3m = $0.9m",
+      "Ranking: O, V, H, S"
+    ],
+    "shortcut": "V beats H on sight (equal 10% odds, larger penalty), so C is out; the office tower's $2.0m tops the viaduct's $1.6m, so B is out; the hospital wing's $1.1m tops the school's $0.9m, so A rather than D.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "0.4 * 5 > 0.1 * 16 && 0.1 * 16 > 0.1 * 11 && 0.1 * 11 > 0.3 * 3",
+        "0.1 * 16 > 0.1 * 11 && 0.1 * 11 > 0.4 * 5 && 0.4 * 5 > 0.3 * 3",
+        "0.4 * 5 > 0.3 * 3 && 0.3 * 3 > 0.1 * 16 && 0.1 * 16 > 0.1 * 11",
+        "0.4 * 5 > 0.1 * 16 && 0.1 * 16 > 0.3 * 3 && 0.3 * 3 > 0.1 * 11"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q26-e",
+    "modelledOn": "pst1-q26",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A supermarket chain has heard that a hard-discount grocer intends to open stores in four of the chain's regions. Exhibit 2 shows how likely the newcomer is to arrive in each region by the end of next year and how much yearly profit the chain would give up there."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "title": "Exhibit 2: Profit at stake from a discount newcomer, by region",
+        "unit": "Yearly profit given up if the newcomer opens ($ million)",
+        "xUnit": "Probability of the newcomer opening by the end of next year",
+        "categories": [
+          "Region P",
+          "Region Q",
+          "Region R",
+          "Region S"
+        ],
+        "x": [
+          0.1,
+          0.3,
+          0.5,
+          0.1
+        ],
+        "series": [
+          {
+            "name": "Profit given up",
+            "values": [
+              10,
+              3,
+              5,
+              18
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 20,
+          "step": 2
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 0.6,
+          "step": 0.1
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following lists is the best ranking of the regions, from the one the chief executive should be MOST worried about to the one she should be LEAST worried about?",
+    "options": [
+      "S, P, R, Q",
+      "R, Q, P, S",
+      "R, S, P, Q",
+      "R, S, Q, P"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Expected loss = probability × profit lost",
+      "Region R: 0.5 × $5m = $2.5m",
+      "Region S: 0.1 × $18m = $1.8m",
+      "Region P: 0.1 × $10m = $1.0m",
+      "Region Q: 0.3 × $3m = $0.9m",
+      "Ranking: R, S, P, Q"
+    ],
+    "shortcut": "S beats P on sight (same 10% chance, bigger loss), so B is out; R's $2.5m tops S's $1.8m, so A is out; P's $1.0m tops Q's $0.9m, so C rather than D.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "0.1 * 18 > 0.1 * 10 && 0.1 * 10 > 0.5 * 5 && 0.5 * 5 > 0.3 * 3",
+        "0.5 * 5 > 0.3 * 3 && 0.3 * 3 > 0.1 * 10 && 0.1 * 10 > 0.1 * 18",
+        "0.5 * 5 > 0.1 * 18 && 0.1 * 18 > 0.1 * 10 && 0.1 * 10 > 0.3 * 3",
+        "0.5 * 5 > 0.1 * 18 && 0.1 * 18 > 0.3 * 3 && 0.3 * 3 > 0.1 * 10"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q26-f",
+    "modelledOn": "pst1-q26",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Four corporate customers of a telecom operator are tendering their phone and data services this year, and each has invited bids from competing networks. Exhibit 2 gives the chance that each customer moves to a competitor and the yearly revenue the operator would forfeit."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "title": "Exhibit 2: Revenue at stake in this year's tenders",
+        "unit": "Yearly revenue forfeited if the customer moves ($ million)",
+        "xUnit": "Probability of the customer moving to a competitor",
+        "categories": [
+          "Bank (B)",
+          "Hospital group (H)",
+          "Logistics firm (L)",
+          "Retailer (R)"
+        ],
+        "x": [
+          0.2,
+          0.4,
+          0.5,
+          0.2
+        ],
+        "series": [
+          {
+            "name": "Revenue forfeited",
+            "values": [
+              12,
+              7,
+              1,
+              4
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 14,
+          "step": 2
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 0.6,
+          "step": 0.1
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following lists is the best ranking of the customers, from the customer the sales director should worry about MOST down to the customer he should worry about LEAST?",
+    "options": [
+      "B, H, R, L",
+      "H, B, R, L",
+      "L, H, R, B",
+      "H, B, L, R"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Expected revenue lost = probability × revenue lost",
+      "Hospital group: 0.4 × $7m = $2.8m",
+      "Bank: 0.2 × $12m = $2.4m",
+      "Retailer: 0.2 × $4m = $0.8m",
+      "Logistics firm: 0.5 × $1m = $0.5m",
+      "Ranking: H, B, R, L"
+    ],
+    "shortcut": "B beats R on sight (same 20% chance, three times the revenue), so C is out; the hospital group's $2.8m tops the bank's $2.4m, so A is out; the retailer's $0.8m tops the logistics firm's $0.5m, so B rather than D.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "0.2 * 12 > 0.4 * 7 && 0.4 * 7 > 0.2 * 4 && 0.2 * 4 > 0.5 * 1",
+        "0.4 * 7 > 0.2 * 12 && 0.2 * 12 > 0.2 * 4 && 0.2 * 4 > 0.5 * 1",
+        "0.5 * 1 > 0.4 * 7 && 0.4 * 7 > 0.2 * 4 && 0.2 * 4 > 0.2 * 12",
+        "0.4 * 7 > 0.2 * 12 && 0.2 * 12 > 0.5 * 1 && 0.5 * 1 > 0.2 * 4"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q26-g",
+    "modelledOn": "pst1-q26",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A toy maker earns much of its profit from ranges built on four film and cartoon characters. Each licence ends next year, and every rights holder has hinted it may not renew. Exhibit 2 shows how likely each licence is not to be renewed and the yearly profit the toy maker would then miss."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "title": "Exhibit 2: Character licences and the profit tied to them",
+        "unit": "Yearly profit missed if the licence is not renewed ($ million)",
+        "xUnit": "Probability of the licence not being renewed",
+        "categories": [
+          "Licence T",
+          "Licence U",
+          "Licence V",
+          "Licence W"
+        ],
+        "x": [
+          0.2,
+          0.5,
+          0.3,
+          0.2
+        ],
+        "series": [
+          {
+            "name": "Profit missed",
+            "values": [
+              8,
+              7,
+              5,
+              16
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 18,
+          "step": 2
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 0.6,
+          "step": 0.1
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following lists is the best ranking of the licences, from the licence the managing director should be MOST concerned about to the licence she should be LEAST concerned about?",
+    "options": [
+      "U, V, T, W",
+      "W, T, U, V",
+      "U, W, T, V",
+      "U, W, V, T"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Expected profit lost = probability × profit lost",
+      "U: 0.5 × $7m = $3.5m",
+      "W: 0.2 × $16m = $3.2m",
+      "T: 0.2 × $8m = $1.6m",
+      "V: 0.3 × $5m = $1.5m",
+      "Ranking: U, W, T, V"
+    ],
+    "shortcut": "W beats T on sight (same 20% chance, twice the loss), so A is out; U's $3.5m tops W's $3.2m, so B is out; T's $1.6m tops V's $1.5m, so C rather than D.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "0.5 * 7 > 0.3 * 5 && 0.3 * 5 > 0.2 * 8 && 0.2 * 8 > 0.2 * 16",
+        "0.2 * 16 > 0.2 * 8 && 0.2 * 8 > 0.5 * 7 && 0.5 * 7 > 0.3 * 5",
+        "0.5 * 7 > 0.2 * 16 && 0.2 * 16 > 0.2 * 8 && 0.2 * 8 > 0.3 * 5",
+        "0.5 * 7 > 0.2 * 16 && 0.2 * 16 > 0.3 * 5 && 0.3 * 5 > 0.2 * 8"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q26-h",
+    "modelledOn": "pst1-q26",
+    "skill": "expected-value",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An oil producer operates four offshore fields in waters crossed by seasonal storms. Exhibit 2 shows the odds that a storm forces each field to stop pumping this season and the value of the crude the producer would forgo."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "title": "Exhibit 2: Storm shutdown exposure by field",
+        "unit": "Value of crude forgone if the field stops ($ million)",
+        "xUnit": "Probability of a storm stopping the field this season",
+        "categories": [
+          "Field J",
+          "Field K",
+          "Field L",
+          "Field M"
+        ],
+        "x": [
+          0.3,
+          0.1,
+          0.4,
+          0.1
+        ],
+        "series": [
+          {
+            "name": "Crude forgone",
+            "values": [
+              6,
+              20,
+              10,
+              32
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 36,
+          "step": 4
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 0.5,
+          "step": 0.1
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following lists is the best ranking of the fields, from the field that should concern the operations director MOST to the field that should concern him LEAST?",
+    "options": [
+      "L, J, K, M",
+      "L, M, K, J",
+      "M, K, L, J",
+      "L, M, J, K"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Expected cost = probability × cost of lost output",
+      "L: 0.4 × $10m = $4.0m",
+      "M: 0.1 × $32m = $3.2m",
+      "K: 0.1 × $20m = $2.0m",
+      "J: 0.3 × $6m = $1.8m",
+      "Ranking: L, M, K, J"
+    ],
+    "shortcut": "M beats K on sight (same 10% chance, larger cost), so A is out; L's $4.0m tops M's $3.2m, so C is out; K's $2.0m tops J's $1.8m, so B rather than D.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "0.4 * 10 > 0.3 * 6 && 0.3 * 6 > 0.1 * 20 && 0.1 * 20 > 0.1 * 32",
+        "0.4 * 10 > 0.1 * 32 && 0.1 * 32 > 0.1 * 20 && 0.1 * 20 > 0.3 * 6",
+        "0.1 * 32 > 0.1 * 20 && 0.1 * 20 > 0.4 * 10 && 0.4 * 10 > 0.3 * 6",
+        "0.4 * 10 > 0.1 * 32 && 0.1 * 32 > 0.3 * 6 && 0.3 * 6 > 0.1 * 20"
+      ]
+    }
+  }
+]

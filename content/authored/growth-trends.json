@@ -1,0 +1,3766 @@
+[
+  {
+    "id": "au-037",
+    "skill": "growth-trends",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An outdoor-clothing label grew its revenue from $40m in 2021 to $48.4m in 2023."
+      }
+    ],
+    "prompt": "What was its average annual growth rate over the two years, compounded?",
+    "options": [
+      "9.5%",
+      "10.0%",
+      "10.5%",
+      "21.0%"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Total growth factor: $48.4m ÷ $40m = 1.21",
+      "Annual factor: √1.21 = 1.10, so 10% a year"
+    ],
+    "shortcut": "Recognise 1.21 as 1.1 squared. 21% is the two-year total, not the annual rate.",
+    "check": {
+      "kind": "value",
+      "answer": "(sqrt(48.4 / 40) - 1) * 100"
+    }
+  },
+  {
+    "id": "au-038",
+    "skill": "growth-trends",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A pet-food brand sells 250,000 bags this year, and its sales are growing by 20% a year."
+      }
+    ],
+    "prompt": "If that growth continues, how many bags will it sell two years from now?",
+    "options": [
+      "300,000",
+      "320,000",
+      "350,000",
+      "360,000"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Next year: 250,000 × 1.2 = 300,000",
+      "The year after: 300,000 × 1.2 = 360,000"
+    ],
+    "shortcut": "Two years of 20% is × 1.44, not × 1.40: 250,000 × 1.44 = 360,000.",
+    "check": {
+      "kind": "value",
+      "answer": "250000 * (1 + 20 / 100) * (1 + 20 / 100)"
+    }
+  },
+  {
+    "id": "au-039",
+    "skill": "growth-trends",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A regional zoo has recorded its annual visitor numbers."
+      },
+      {
+        "type": "table",
+        "title": "Annual visitors (thousands)",
+        "headers": [
+          "Year",
+          "Visitors"
+        ],
+        "rows": [
+          [
+            "2019",
+            "410"
+          ],
+          [
+            "2020",
+            "460"
+          ],
+          [
+            "2021",
+            "505"
+          ],
+          [
+            "2022",
+            "560"
+          ],
+          [
+            "2023",
+            "600"
+          ]
+        ]
+      }
+    ],
+    "prompt": "In which year did visitor numbers grow fastest in percentage terms?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "2020: 50 ÷ 410 ≈ 12.2%; 2021: 45 ÷ 460 ≈ 9.8%",
+      "2022: 55 ÷ 505 ≈ 10.9%; 2023: 40 ÷ 560 ≈ 7.1%",
+      "Fastest: 2020"
+    ],
+    "shortcut": "2022 had the biggest jump in visitors (55k) but from a larger base; 50 on 410 beats 55 on 505.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "460 / 410 - 1",
+        "505 / 460 - 1",
+        "560 / 505 - 1",
+        "600 / 560 - 1"
+      ]
+    }
+  },
+  {
+    "id": "au-040",
+    "skill": "growth-trends",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A city has 25,000 registered electric cars. Registrations have been growing by 18% a year, and planners expect that rate to continue."
+      }
+    ],
+    "prompt": "Roughly how many years will it take for the city to have 100,000 electric cars?",
+    "options": [
+      "4 years",
+      "6 years",
+      "8 years",
+      "17 years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "The fleet must quadruple, which is two doublings",
+      "At 18% a year, one doubling takes about 72 ÷ 18 = 4 years",
+      "Two doublings: about 8 years (exactly, about 8.4)"
+    ],
+    "shortcut": "Rule of 72: doubling time ≈ 72 ÷ growth rate. Growing by a fixed 4,500 cars a year would take 17 years, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "log(100000 / 25000) / log(1 + 18 / 100)"
+    }
+  },
+  {
+    "id": "au-041",
+    "skill": "growth-trends",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A local newspaper's print circulation fell by 15% in each of the last two years. It now sells 289,000 copies a week."
+      }
+    ],
+    "prompt": "What was its weekly circulation two years ago?",
+    "options": [
+      "376,000",
+      "382,000",
+      "400,000",
+      "413,000"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Two years of decline: 0.85 × 0.85 = 0.7225",
+      "Circulation then: 289,000 ÷ 0.7225 = 400,000"
+    ],
+    "shortcut": "Undo declines by dividing: 289 ÷ 0.7225 = 400 (since 0.85² = 0.7225 and 17² = 289). Adding back 30% gives 376,000, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "289000 / ((1 - 15 / 100) * (1 - 15 / 100))"
+    }
+  },
+  {
+    "id": "au-042",
+    "skill": "growth-trends",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A construction-cost index, set to 100 in 2020, stood at 112 in 2022 and 128 in 2024. A standard small house cost $250,000 to build in 2020."
+      }
+    ],
+    "prompt": "By what percentage did construction costs rise between 2022 and 2024?",
+    "options": [
+      "12.5%",
+      "14.3%",
+      "16.0%",
+      "28.0%"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Ratio of the index values: 128 ÷ 112 ≈ 1.143",
+      "Rise: about 14.3%"
+    ],
+    "shortcut": "The 16-point gap is measured from 112, not 100: 16 ÷ 112 = 1 ÷ 7 ≈ 14.3%.",
+    "check": {
+      "kind": "value",
+      "answer": "(128 / 112 - 1) * 100"
+    }
+  },
+  {
+    "id": "au-043",
+    "skill": "growth-trends",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Two rival sparkling-water brands are tracked by an industry analyst. Fernway has annual sales of $60m, growing by 5% a year. Tallis has annual sales of $40m, growing by 15% a year."
+      }
+    ],
+    "prompt": "If both growth rates hold, after how many years will Tallis's annual sales first exceed Fernway's?",
+    "options": [
+      "3 years",
+      "4 years",
+      "5 years",
+      "6 years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Tallis gains on Fernway by a factor of 1.15 ÷ 1.05 ≈ 1.095 a year, and must close a gap of 60 ÷ 40 = 1.5",
+      "1.095⁴ ≈ 1.44, still short; 1.095⁵ ≈ 1.58, past 1.5",
+      "So Tallis first leads after 5 years"
+    ],
+    "shortcut": "Track the ratio, not the two series: about 9.5% a year of relative growth; 72 ÷ 9.5 ≈ 7.6 years to double, so 1.5× takes a bit over 4 years, i.e. the fifth year.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "40 * pow(1 + 15 / 100, 3) > 60 * pow(1 + 5 / 100, 3) && 40 * pow(1 + 15 / 100, 2) <= 60 * pow(1 + 5 / 100, 2)",
+        "40 * pow(1 + 15 / 100, 4) > 60 * pow(1 + 5 / 100, 4) && 40 * pow(1 + 15 / 100, 3) <= 60 * pow(1 + 5 / 100, 3)",
+        "40 * pow(1 + 15 / 100, 5) > 60 * pow(1 + 5 / 100, 5) && 40 * pow(1 + 15 / 100, 4) <= 60 * pow(1 + 5 / 100, 4)",
+        "40 * pow(1 + 15 / 100, 6) > 60 * pow(1 + 5 / 100, 6) && 40 * pow(1 + 15 / 100, 5) <= 60 * pow(1 + 5 / 100, 5)"
+      ]
+    }
+  },
+  {
+    "id": "au-044",
+    "skill": "growth-trends",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A language-learning app's monthly active users rose steadily over four years."
+      },
+      {
+        "type": "table",
+        "title": "Monthly active users",
+        "headers": [
+          "Year",
+          "Users"
+        ],
+        "rows": [
+          [
+            "2020",
+            "1.2 million"
+          ],
+          [
+            "2024",
+            "2.4 million"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What was the compound annual growth rate of users from 2020 to 2024?",
+    "options": [
+      "18.9%",
+      "20.0%",
+      "20.8%",
+      "25.0%"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Users doubled over 4 years: growth factor 2",
+      "Annual factor: 2^(1/4) = √√2 ≈ √1.414 ≈ 1.189, so about 18.9% a year"
+    ],
+    "shortcut": "Rule of 72: doubling in 4 years means about 72 ÷ 4 = 18% a year. Spreading the 100% evenly (25%) ignores compounding.",
+    "check": {
+      "kind": "value",
+      "answer": "((2.4 / 1.2) ** (1 / 4) - 1) * 100"
+    }
+  },
+  {
+    "id": "au-045",
+    "skill": "growth-trends",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "The market for home-fitness equipment is worth $500m and growing by 8% a year. One maker's sales in this market are $50m and growing by 20% a year."
+      }
+    ],
+    "prompt": "What will the maker's market share be in 3 years if both growth rates continue?",
+    "options": [
+      "11.1%",
+      "13.7%",
+      "16.0%",
+      "17.3%"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Maker in 3 years: $50m × 1.2³ = $50m × 1.728 = $86.4m",
+      "Market in 3 years: $500m × 1.08³ ≈ $500m × 1.26 = $630m",
+      "Share: $86.4m ÷ $630m ≈ 13.7%"
+    ],
+    "shortcut": "Share grows by (1.2 ÷ 1.08) ≈ 1.11 a year: 10% × 1.11³ ≈ 10% × 1.37. Dividing by today's market ($500m) gives 17.3%, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "50 * (1 + 20 / 100) ** 3 / (500 * (1 + 8 / 100) ** 3) * 100"
+    }
+  },
+  {
+    "id": "au-046",
+    "skill": "growth-trends",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A toy company's sales grew by 30% in 2022, fell by 20% in 2023 and grew by 10% in 2024, reaching $114.4m in 2024."
+      }
+    ],
+    "prompt": "What were the company's sales in 2021?",
+    "options": [
+      "$92.4m",
+      "$95.3m",
+      "$100.0m",
+      "$104.2m"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Combined growth factor: 1.3 × 0.8 × 1.1 = 1.144",
+      "Sales in 2021: $114.4m ÷ 1.144 = $100.0m"
+    ],
+    "shortcut": "Multiply the factors (1.3 × 0.8 = 1.04, × 1.1 = 1.144) and notice 114.4 ÷ 1.144 is exactly 100. Adding the rates (+20%) gives $95.3m, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "114.4 / ((1 + 30 / 100) * (1 - 20 / 100) * (1 + 10 / 100))"
+    }
+  },
+  {
+    "id": "au-047",
+    "skill": "growth-trends",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A building-supplies distributor reports revenue by region."
+      },
+      {
+        "type": "table",
+        "title": "Revenue ($m)",
+        "headers": [
+          "Region",
+          "2023",
+          "2024"
+        ],
+        "rows": [
+          [
+            "North",
+            "120",
+            "132"
+          ],
+          [
+            "South",
+            "80",
+            "100"
+          ],
+          [
+            "West",
+            "50",
+            "48"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What share of the distributor's total revenue growth from 2023 to 2024 came from the South region?",
+    "options": [
+      "50.0%",
+      "53.4%",
+      "62.5%",
+      "66.7%"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Changes: North +12, South +20, West −2",
+      "Total growth: 12 + 20 − 2 = $30m",
+      "South's share: 20 ÷ 30 ≈ 66.7%"
+    ],
+    "shortcut": "Net the shrinking region off the total first; leaving West out gives 20 ÷ 32 = 62.5%, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "(100 - 80) / ((132 - 120) + (100 - 80) + (48 - 50)) * 100"
+    }
+  },
+  {
+    "id": "au-048",
+    "skill": "growth-trends",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "At the end of 2024 a renewable-energy developer operated 1.2 GW of wind capacity. It plans to grow capacity by 25% each year."
+      }
+    ],
+    "prompt": "At the end of which year will its capacity first exceed 3 GW?",
+    "options": [
+      "2027",
+      "2028",
+      "2029",
+      "2030"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Capacity must grow by 3 ÷ 1.2 = 2.5 times",
+      "1.25 a year: 1.56 after two years, 1.95 after three, 2.44 after four, 3.05 after five",
+      "Five years after 2024: the end of 2029"
+    ],
+    "shortcut": "1.25² ≈ 1.56 and 1.25⁴ ≈ 2.44, just short of 2.5, so it takes a fifth year.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "1.2 * pow(1 + 25 / 100, 2027 - 2024) > 3 && 1.2 * pow(1 + 25 / 100, 2027 - 2024 - 1) <= 3",
+        "1.2 * pow(1 + 25 / 100, 2028 - 2024) > 3 && 1.2 * pow(1 + 25 / 100, 2028 - 2024 - 1) <= 3",
+        "1.2 * pow(1 + 25 / 100, 2029 - 2024) > 3 && 1.2 * pow(1 + 25 / 100, 2029 - 2024 - 1) <= 3",
+        "1.2 * pow(1 + 25 / 100, 2030 - 2024) > 3 && 1.2 * pow(1 + 25 / 100, 2030 - 2024 - 1) <= 3"
+      ]
+    }
+  },
+  {
+    "id": "au-049",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An engineering group has two divisions. In 2019 the Industrial division had revenue of $200m and the Digital division $50m. Their revenues since are tracked as indices, each set to 100 in 2019."
+      },
+      {
+        "type": "table",
+        "title": "Revenue index (2019 = 100)",
+        "headers": [
+          "Division",
+          "2019",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Industrial",
+            "100",
+            "115"
+          ],
+          [
+            "Digital",
+            "100",
+            "240"
+          ]
+        ]
+      }
+    ],
+    "prompt": "By what percentage did the group's total revenue grow from 2019 to 2024?",
+    "options": [
+      "15%",
+      "25%",
+      "40%",
+      "78%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Industrial 2024: $200m × 1.15 = $230m; Digital 2024: $50m × 2.4 = $120m",
+      "Total: $350m against $250m in 2019",
+      "Growth: 350 ÷ 250 − 1 = 40%"
+    ],
+    "shortcut": "Indices only show each series against itself; weight them by 2019 size (0.8 × 15% + 0.2 × 140% = 12% + 28%). Averaging the indices gives 78%, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "((200 * 115 / 100 + 50 * 240 / 100) / (200 + 50) - 1) * 100"
+    }
+  },
+  {
+    "id": "au-050",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "In one country, store-based sales of home furnishings are $30bn and growing by 3% a year, while online sales are $9bn and growing by 12% a year."
+      }
+    ],
+    "prompt": "If these growth rates continue, after how many years will online sales first make up more than 30% of the combined market?",
+    "options": [
+      "3 years",
+      "4 years",
+      "5 years",
+      "6 years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Online above 30% of the total means online above 30 ÷ 70 ≈ 0.43 of store sales; today it is 9 ÷ 30 = 0.30",
+      "The ratio must grow by 0.43 ÷ 0.30 ≈ 1.43; it grows by 1.12 ÷ 1.03 ≈ 1.087 a year",
+      "1.087⁴ ≈ 1.40, still short; 1.087⁵ ≈ 1.52, past it, so 5 years"
+    ],
+    "shortcut": "Turn the share into a ratio (30% of total = 3:7 against stores) and compound the relative growth of about 8.7% a year.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "9 * pow(1 + 12 / 100, 3) / (30 * pow(1 + 3 / 100, 3) + 9 * pow(1 + 12 / 100, 3)) > 30 / 100 && 9 * pow(1 + 12 / 100, 2) / (30 * pow(1 + 3 / 100, 2) + 9 * pow(1 + 12 / 100, 2)) <= 30 / 100",
+        "9 * pow(1 + 12 / 100, 4) / (30 * pow(1 + 3 / 100, 4) + 9 * pow(1 + 12 / 100, 4)) > 30 / 100 && 9 * pow(1 + 12 / 100, 3) / (30 * pow(1 + 3 / 100, 3) + 9 * pow(1 + 12 / 100, 3)) <= 30 / 100",
+        "9 * pow(1 + 12 / 100, 5) / (30 * pow(1 + 3 / 100, 5) + 9 * pow(1 + 12 / 100, 5)) > 30 / 100 && 9 * pow(1 + 12 / 100, 4) / (30 * pow(1 + 3 / 100, 4) + 9 * pow(1 + 12 / 100, 4)) <= 30 / 100",
+        "9 * pow(1 + 12 / 100, 6) / (30 * pow(1 + 3 / 100, 6) + 9 * pow(1 + 12 / 100, 6)) > 30 / 100 && 9 * pow(1 + 12 / 100, 5) / (30 * pow(1 + 3 / 100, 5) + 9 * pow(1 + 12 / 100, 5)) <= 30 / 100"
+      ]
+    }
+  },
+  {
+    "id": "au-051",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A medical-devices company had revenue of $84m in 2024. Its board has set a target of $120m for 2028."
+      }
+    ],
+    "prompt": "What compound annual growth rate does the target require?",
+    "options": [
+      "9.3%",
+      "10.0%",
+      "10.7%",
+      "11.4%"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Growth factor needed over 4 years: 120 ÷ 84 ≈ 1.43",
+      "Annual factor: 1.43^(1/4); 1.09⁴ ≈ 1.41 and 1.095⁴ ≈ 1.44",
+      "So about 9.3% a year"
+    ],
+    "shortcut": "Test the options by compounding: 1.093² ≈ 1.195, and 1.195² ≈ 1.428. Spreading the 43% evenly gives 10.7%, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "((120 / 84) ** (1 / 4) - 1) * 100"
+    }
+  },
+  {
+    "id": "au-052",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A payroll-software company starts the quarter with 8,000 customers. Each month it loses 3% of the customers it had at the start of that month, and signs up 600 new customers by the month's end."
+      }
+    ],
+    "prompt": "Approximately how many customers will it have at the end of the quarter's third month?",
+    "options": [
+      "8,720",
+      "9,050",
+      "9,380",
+      "9,800"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Month 1: 8,000 × 0.97 + 600 = 8,360",
+      "Month 2: 8,360 × 0.97 + 600 ≈ 8,709",
+      "Month 3: 8,709 × 0.97 + 600 ≈ 9,048, about 9,050"
+    ],
+    "shortcut": "Losses are about 250 a month and rising slowly; net gain about 360, 350, 340. Ignoring churn entirely gives 9,800.",
+    "check": {
+      "kind": "value",
+      "answer": "((8000 * (1 - 3 / 100) + 600) * (1 - 3 / 100) + 600) * (1 - 3 / 100) + 600"
+    }
+  },
+  {
+    "id": "au-053",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A market-research firm publishes sizes for the global smart-lock market by region, with a forecast for 2027."
+      },
+      {
+        "type": "table",
+        "title": "Smart-lock market ($bn)",
+        "headers": [
+          "Region",
+          "2020",
+          "2024",
+          "2027 forecast"
+        ],
+        "rows": [
+          [
+            "North America",
+            "14.0",
+            "18.2",
+            "21.0"
+          ],
+          [
+            "Asia-Pacific",
+            "6.0",
+            "9.6",
+            "15.4"
+          ],
+          [
+            "Europe",
+            "12.0",
+            "14.4",
+            "17.3"
+          ],
+          [
+            "Latin America",
+            "2.0",
+            "3.0",
+            "4.5"
+          ]
+        ]
+      }
+    ],
+    "prompt": "For which region is the compound annual growth rate forecast to rise the most, comparing 2024–2027 with 2020–2024?",
+    "options": [
+      "Asia-Pacific",
+      "Latin America",
+      "Europe",
+      "North America"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "North America: 1.3 over 4 years ≈ 6.8% a year, then 1.15 over 3 years ≈ 4.9%: slows by about 1.9 points",
+      "Asia-Pacific: 1.6 over 4 years ≈ 12.5%, then 1.60 over 3 years ≈ 17.1%: speeds up by about 4.6 points",
+      "Europe: 1.2 over 4 years ≈ 4.7%, then 1.20 over 3 years ≈ 6.3%: up about 1.6 points",
+      "Latin America: 1.5 over 4 years ≈ 10.7%, then 1.5 over 3 years ≈ 14.5%: up about 3.8 points",
+      "Largest rise: Asia-Pacific"
+    ],
+    "shortcut": "Asia-Pacific and Latin America both grow by the same factor in fewer years later; Asia-Pacific's factor (1.6) is bigger, so compressing it into 3 years lifts its rate more.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "pow(15.4 / 9.6, 1 / 3) - pow(9.6 / 6.0, 1 / 4)",
+        "pow(4.5 / 3.0, 1 / 3) - pow(3.0 / 2.0, 1 / 4)",
+        "pow(17.3 / 14.4, 1 / 3) - pow(14.4 / 12.0, 1 / 4)",
+        "pow(21.0 / 18.2, 1 / 3) - pow(18.2 / 14.0, 1 / 4)"
+      ]
+    }
+  },
+  {
+    "id": "au-054",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A pharmacy chain had 120 stores last year, each with average sales of $2.0m. This year sales at those existing stores rose by 4% on average. The chain also opened 30 new stores, and each new store's sales this year were, on average, half of an existing store's sales this year."
+      }
+    ],
+    "prompt": "By what percentage did the chain's total sales grow this year?",
+    "options": [
+      "9.0%",
+      "12.5%",
+      "17.0%",
+      "30.0%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Last year: 120 × $2.0m = $240m",
+      "Existing stores this year: 120 × $2.08m = $249.6m; new stores: 30 × $1.04m = $31.2m",
+      "Growth: $280.8m ÷ $240m − 1 = 17.0%"
+    ],
+    "shortcut": "Like-for-like adds 4%; 30 half-strength stores add the equivalent of 15 stores on 120, i.e. 12.5% × 1.04 = 13%. 4% + 13% = 17%.",
+    "check": {
+      "kind": "value",
+      "answer": "((120 * 2.0 * (1 + 4 / 100) + 30 * 2.0 * (1 + 4 / 100) / 2) / (120 * 2.0) - 1) * 100"
+    }
+  },
+  {
+    "id": "bk-pracA-q04-a",
+    "modelledOn": "pracA-q04",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A consulting team is preparing a strategy review for a national grocery chain, looking at how far its online business could grow. The team splits the chain's yearly sales into three channels."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Store sales: products that shoppers take from the shelves and pay for in the chain's supermarkets",
+          "Wholesale: bulk supplies sold to other businesses and public institutions",
+          "Online sales: orders that customers place through the chain's website or app"
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "waterfall",
+        "title": "Exhibit 1: Total annual sales",
+        "unit": "US$ billions",
+        "categories": [
+          "Fresh food",
+          "Packaged groceries",
+          "Household and beauty",
+          "Restaurants and cafes",
+          "Schools and hospitals",
+          "Home delivery",
+          "Click and collect",
+          "Meal kits",
+          "Total"
+        ],
+        "series": [
+          {
+            "name": "Sales",
+            "values": [
+              4.6,
+              3.1,
+              1.3,
+              0.6,
+              0.4,
+              1.4,
+              0.9,
+              0.6,
+              12.9
+            ]
+          }
+        ],
+        "totals": [
+          8
+        ],
+        "axis": {
+          "min": 0,
+          "max": 14,
+          "step": 2
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Suppose the chain's total sales in Exhibit 1 grow by 4% a year from now on. Which of the following would be the MINIMUM annual growth in Online sales needed for Online sales to be more than half of total sales in 10 years?",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Online sales today = 1.4 + 0.9 + 0.6 = 2.9.",
+      "Total in 10 years = 12.9 × 1.04¹⁰ ≈ 19.1, so Online sales must exceed about 9.5.",
+      "At 10%: 2.9 × 1.1¹⁰ ≈ 7.5, not enough.",
+      "At 15%: 2.9 × 1.15¹⁰ ≈ 11.7, more than half.",
+      "So 15% is the minimum option."
+    ],
+    "shortcut": "Online sales must multiply by about 3.3 (9.5 ÷ 2.9). Ten years at 10% gives only about 2.6 times; at 15% money doubles roughly every five years, so about 4 times, which is enough.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(1.4 + 0.9 + 0.6) * pow(1 + 10 / 100, 10) > 12.9 * pow(1 + 4 / 100, 10) / 2 ? -10 : -1000",
+        "(1.4 + 0.9 + 0.6) * pow(1 + 15 / 100, 10) > 12.9 * pow(1 + 4 / 100, 10) / 2 ? -15 : -1000",
+        "(1.4 + 0.9 + 0.6) * pow(1 + 20 / 100, 10) > 12.9 * pow(1 + 4 / 100, 10) / 2 ? -20 : -1000",
+        "(1.4 + 0.9 + 0.6) * pow(1 + 25 / 100, 10) > 12.9 * pow(1 + 4 / 100, 10) / 2 ? -25 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracA-q04-b",
+    "modelledOn": "pracA-q04",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An energy consultancy is advising a country's grid operator on how quickly wind and solar power could come to dominate its power stations. It sorts the country's generating capacity into three types."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Fossil capacity: power stations that burn coal, gas or oil",
+          "Firm low-carbon capacity: plants that produce low-carbon power at any hour, whatever the weather",
+          "Variable renewables: renewable plants whose output rises and falls with the wind and the sun"
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "waterfall",
+        "title": "Exhibit 1: Installed generating capacity",
+        "unit": "Gigawatts (GW)",
+        "categories": [
+          "Coal",
+          "Natural gas",
+          "Oil",
+          "Nuclear",
+          "Hydroelectric",
+          "Onshore wind",
+          "Offshore wind",
+          "Solar",
+          "Total"
+        ],
+        "series": [
+          {
+            "name": "Capacity",
+            "values": [
+              4.9,
+              6.3,
+              0.8,
+              1.4,
+              6.2,
+              3.7,
+              1.6,
+              2.1,
+              27
+            ]
+          }
+        ],
+        "totals": [
+          8
+        ],
+        "axis": {
+          "min": 0,
+          "max": 30,
+          "step": 5
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Which of the following would be the MINIMUM yearly growth in Variable renewables for them to reach more than half of total capacity within 8 years, if total capacity in Exhibit 1 were to increase by 4% each year?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Variable renewables today = 3.7 + 1.6 + 2.1 = 7.4 GW.",
+      "Total in 8 years = 27.0 × 1.04⁸ ≈ 37.0, so Variable renewables must exceed about 18.5.",
+      "At 10%: 7.4 × 1.1⁸ ≈ 15.9, not enough.",
+      "At 15%: 7.4 × 1.15⁸ ≈ 22.6, more than half.",
+      "So 15% is the minimum option."
+    ],
+    "shortcut": "Variable renewables must grow 2.5 times (18.5 ÷ 7.4) in 8 years. 1.1⁸ ≈ 2.1 falls short; 1.15⁸ ≈ 3.1 clears it.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(3.7 + 1.6 + 2.1) * pow(1 + 5 / 100, 8) > 27 * pow(1 + 4 / 100, 8) / 2 ? -5 : -1000",
+        "(3.7 + 1.6 + 2.1) * pow(1 + 10 / 100, 8) > 27 * pow(1 + 4 / 100, 8) / 2 ? -10 : -1000",
+        "(3.7 + 1.6 + 2.1) * pow(1 + 15 / 100, 8) > 27 * pow(1 + 4 / 100, 8) / 2 ? -15 : -1000",
+        "(3.7 + 1.6 + 2.1) * pow(1 + 20 / 100, 8) > 27 * pow(1 + 4 / 100, 8) / 2 ? -20 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracA-q04-c",
+    "modelledOn": "pracA-q04",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A strategy team is reviewing a media group's plan to turn itself into a mainly digital business. For a board presentation, the team sorts the group's revenue into three kinds."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Print: newspapers and magazines, and the advertising printed in them",
+          "Broadcast: television and radio channels, paid for by advertisers or by subscribers",
+          "Digital: content and services that customers reach over the internet"
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "waterfall",
+        "title": "Exhibit 1: Group revenue by source",
+        "unit": "US$ billions",
+        "categories": [
+          "Newspaper sales",
+          "Magazine sales",
+          "Print advertising",
+          "TV advertising",
+          "Radio advertising",
+          "Streaming subscriptions",
+          "Online advertising",
+          "Podcasts and apps",
+          "Total"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              1.6,
+              0.7,
+              1.1,
+              1.3,
+              0.6,
+              1.1,
+              0.8,
+              0.4,
+              7.6
+            ]
+          }
+        ],
+        "totals": [
+          8
+        ],
+        "axis": {
+          "min": 0,
+          "max": 8,
+          "step": 1
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "If the group's total revenue in Exhibit 1 grows by 5% annually from now on, which of the following would be the MINIMUM growth rate per year for Digital revenue that would see Digital make up more than half of total revenue after 10 years?",
+    "options": [
+      "8%",
+      "12%",
+      "16%",
+      "20%"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Digital revenue today = 1.1 + 0.8 + 0.4 = 2.3.",
+      "Total in 10 years = 7.6 × 1.05¹⁰ ≈ 12.4, so Digital must exceed about 6.2.",
+      "At 8%: 2.3 × 1.08¹⁰ ≈ 5.0, not enough.",
+      "At 12%: 2.3 × 1.12¹⁰ ≈ 7.1, more than half.",
+      "So 12% is the minimum option."
+    ],
+    "shortcut": "Digital must grow about 2.7 times (6.2 ÷ 2.3). At 8% money doubles in about 9 years (≈ 2.2 times in 10), short; at 12% it doubles in 6 (≈ 3.1 times), enough.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(1.1 + 0.8 + 0.4) * pow(1 + 8 / 100, 10) > 7.6 * pow(1 + 5 / 100, 10) / 2 ? -8 : -1000",
+        "(1.1 + 0.8 + 0.4) * pow(1 + 12 / 100, 10) > 7.6 * pow(1 + 5 / 100, 10) / 2 ? -12 : -1000",
+        "(1.1 + 0.8 + 0.4) * pow(1 + 16 / 100, 10) > 7.6 * pow(1 + 5 / 100, 10) / 2 ? -16 : -1000",
+        "(1.1 + 0.8 + 0.4) * pow(1 + 20 / 100, 10) > 7.6 * pow(1 + 5 / 100, 10) / 2 ? -20 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracA-q04-d",
+    "modelledOn": "pracA-q04",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A consulting team is working for a country's association of vehicle importers on how fast zero-emission vehicles could take over the new-vehicle market. It divides yearly new-vehicle sales into three types."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Combustion vehicles: driven only by a petrol or diesel engine",
+          "Hybrids: vehicles that pair an engine with an electric motor",
+          "Zero-emission vehicles: vehicles that give off no exhaust when driven"
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "waterfall",
+        "title": "Exhibit 1: New-vehicle sales last year",
+        "unit": "Thousand vehicles",
+        "categories": [
+          "Petrol cars",
+          "Diesel cars",
+          "Diesel vans and trucks",
+          "Full hybrids",
+          "Plug-in hybrids",
+          "Battery-electric cars",
+          "Battery-electric vans",
+          "Battery-electric trucks",
+          "Total"
+        ],
+        "series": [
+          {
+            "name": "Sales",
+            "values": [
+              95,
+              49,
+              31,
+              52,
+              94,
+              84,
+              27,
+              7,
+              439
+            ]
+          }
+        ],
+        "totals": [
+          8
+        ],
+        "axis": {
+          "min": 0,
+          "max": 500,
+          "step": 100
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "If total new-vehicle sales in Exhibit 1 were to rise by 3% annually, which of the following would be the MINIMUM annual growth in sales of Zero-emission vehicles for them to account for more than half of all new-vehicle sales in 10 years?",
+    "options": [
+      "4%",
+      "8%",
+      "12%",
+      "16%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Zero-emission sales today = 84 + 27 + 7 = 118 thousand.",
+      "Total in 10 years = 439 × 1.03¹⁰ ≈ 590, so Zero-emission sales must exceed about 295.",
+      "At 8%: 118 × 1.08¹⁰ ≈ 255, not enough.",
+      "At 12%: 118 × 1.12¹⁰ ≈ 366, more than half.",
+      "So 12% is the minimum option."
+    ],
+    "shortcut": "Zero-emission sales must grow 2.5 times (295 ÷ 118). 1.08¹⁰ ≈ 2.2 falls short; 1.12¹⁰ ≈ 3.1 is more than enough.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(84 + 27 + 7) * pow(1 + 4 / 100, 10) > 439 * pow(1 + 3 / 100, 10) / 2 ? -4 : -1000",
+        "(84 + 27 + 7) * pow(1 + 8 / 100, 10) > 439 * pow(1 + 3 / 100, 10) / 2 ? -8 : -1000",
+        "(84 + 27 + 7) * pow(1 + 12 / 100, 10) > 439 * pow(1 + 3 / 100, 10) / 2 ? -12 : -1000",
+        "(84 + 27 + 7) * pow(1 + 16 / 100, 10) > 439 * pow(1 + 3 / 100, 10) / 2 ? -16 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q17-a",
+    "modelledOn": "pst1-q17",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Kibblo, a pet food maker best known for its dry dog food, is deciding whether to launch a range of fresh meals for dogs and cats sold by subscription."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Size of the pet food market by type of food",
+        "unit": "Market size, $ billion",
+        "categories": [
+          "3 years ago",
+          "Today",
+          "In 5 years"
+        ],
+        "series": [
+          {
+            "name": "Dry food",
+            "values": [
+              18,
+              22.6,
+              25.9
+            ]
+          },
+          {
+            "name": "Wet food",
+            "values": [
+              14,
+              18.7,
+              22.4
+            ]
+          },
+          {
+            "name": "Fresh food",
+            "values": [
+              3,
+              4.1,
+              10.2
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 30,
+          "step": 5
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Which of the following statements about the pet food market is true, based on Exhibit 1?",
+    "options": [
+      "Fresh food makes up 17% of the pet food market today",
+      "Over the next five years, fresh food is set to grow about twice as fast each year as wet food grew over the past three years",
+      "Sales of dry food and wet food are expected to grow at the same rate in the next five years",
+      "If the forecast trends continue, fresh food will be a larger market than dry and wet food combined within ten years"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Wet food, past three years: 18.7 ÷ 14.0 = 1.34, about 10% a year; fresh food, next five years: 10.2 ÷ 4.1 = 2.49, about 20% a year, so about twice as fast",
+      "Fresh food's share today: 4.1 ÷ (22.6 + 18.7 + 4.1) = 9%, not 17%",
+      "Next five years: dry food 25.9 ÷ 22.6 = +15%, wet food 22.4 ÷ 18.7 = +20%, not the same rate",
+      "Ten years at the same growth: fresh food 10.2 × 2.49 ≈ 25 against dry and wet food 48.3 × 1.17 ≈ 57, so not larger"
+    ],
+    "shortcut": "Three years at 10% a year multiply by about 1.33 and five years at 20% by about 2.49: wet food's 1.34 and fresh food's 2.49 match. Rough ratios dispose of the other three.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(4.1 / (22.6 + 18.7 + 4.1) * 100 - 17) < 1",
+        "abs((pow(10.2 / 4.1, 1 / 5) - 1) / (pow(18.7 / 14, 1 / 3) - 1) - 2) < 1 / 4",
+        "abs(25.9 / 22.6 - 22.4 / 18.7) < 1 / 100",
+        "10.2 * 10.2 / 4.1 > (25.9 + 22.4) * (25.9 + 22.4) / (22.6 + 18.7)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q17-b",
+    "modelledOn": "pst1-q17",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "LedgerLine sells accounting software to large and mid-sized companies. It is considering a simpler, cheaper product for small businesses, where it has almost no customers today."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Spending on accounting software by size of customer",
+        "unit": "Annual spending, $ billion",
+        "categories": [
+          "3 years ago",
+          "Today",
+          "In 5 years"
+        ],
+        "series": [
+          {
+            "name": "Large companies",
+            "values": [
+              12.4,
+              15,
+              17.1
+            ]
+          },
+          {
+            "name": "Mid-sized companies",
+            "values": [
+              8.6,
+              11.2,
+              13.6
+            ]
+          },
+          {
+            "name": "Small businesses",
+            "values": [
+              1.9,
+              2.8,
+              6.8
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 20,
+          "step": 5
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Based on Exhibit 1, which of the following statements about spending on accounting software is true?",
+    "options": [
+      "If forecast trends continue, small businesses will spend more on accounting software than large and mid-sized companies together within ten years",
+      "Spending by large companies and by mid-sized companies will rise at the same rate over the coming five years",
+      "Small businesses account for 18% of spending on accounting software today",
+      "Spending by small businesses will grow about twice as fast each year over the next five years as spending by mid-sized companies did over the last three years"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Mid-sized companies, last three years: 11.2 ÷ 8.6 = 1.30, about 9% a year; small businesses, next five years: 6.8 ÷ 2.8 = 2.43, about 19% a year, so about twice as fast",
+      "Ten years at the same growth: small businesses 6.8 × 2.43 ≈ 17 against large and mid-sized 30.7 × 1.17 ≈ 36, so not more",
+      "Next five years: large 17.1 ÷ 15.0 = +14%, mid-sized 13.6 ÷ 11.2 = +21%, not the same rate",
+      "Small businesses' share today: 2.8 ÷ (15.0 + 11.2 + 2.8) = 10%, not 18%"
+    ],
+    "shortcut": "Three years at 10% multiply by about 1.33, five years at 20% by about 2.49; 1.30 and 2.43 sit just below each, so the rates are close to 9% and 19%: about double. Rough ratios dispose of the rest.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "6.8 * 6.8 / 2.8 > (17.1 + 13.6) * (17.1 + 13.6) / (15 + 11.2)",
+        "abs(17.1 / 15 - 13.6 / 11.2) < 1 / 100",
+        "abs(2.8 / (15 + 11.2 + 2.8) * 100 - 18) < 1",
+        "abs((pow(6.8 / 2.8, 1 / 5) - 1) / (pow(11.2 / 8.6, 1 / 3) - 1) - 2) < 1 / 4"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q17-c",
+    "modelledOn": "pst1-q17",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "FitHive runs full-service gyms and budget gyms. To keep its revenue growing, it is looking at opening boutique studios that offer small group classes such as cycling and yoga."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Revenue of the gym market by type of club",
+        "unit": "Revenue, $ billion",
+        "categories": [
+          "3 years ago",
+          "Today",
+          "In 5 years"
+        ],
+        "series": [
+          {
+            "name": "Full-service gyms",
+            "values": [
+              9,
+              12.1,
+              14.2
+            ]
+          },
+          {
+            "name": "Budget gyms",
+            "values": [
+              7.5,
+              9.6,
+              11.9
+            ]
+          },
+          {
+            "name": "Boutique studios",
+            "values": [
+              1.4,
+              2,
+              5.1
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 15,
+          "step": 5
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Which of the following statements can be concluded from the data in Exhibit 1?",
+    "options": [
+      "Boutique studios will grow about twice as fast each year over the next five years as full-service gyms did over the past three years",
+      "If the forecast trends continue, boutique studios will earn more than full-service and budget gyms combined within ten years",
+      "Revenue of full-service gyms and of budget gyms will increase at the same pace in the next five years",
+      "Boutique studios make up 16% of gym revenue today"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Full-service gyms, past three years: 12.1 ÷ 9.0 = 1.34, about 10% a year; boutique studios, next five years: 5.1 ÷ 2.0 = 2.55, about 21% a year, so about twice as fast",
+      "Ten years at the same growth: boutique studios 5.1 × 2.55 ≈ 13 against full-service and budget 26.1 × 1.20 ≈ 31, so not more",
+      "Next five years: full-service 14.2 ÷ 12.1 = +17%, budget 11.9 ÷ 9.6 = +24%, not the same pace",
+      "Boutique studios' share today: 2.0 ÷ (12.1 + 9.6 + 2.0) = 8%, not 16%"
+    ],
+    "shortcut": "Three years at 10% multiply by about 1.33 and five years at 20% by about 2.49, so 1.34 and 2.55 mean roughly 10% and 20% a year. The others fall to rough ratios.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs((pow(5.1 / 2, 1 / 5) - 1) / (pow(12.1 / 9, 1 / 3) - 1) - 2) < 1 / 4",
+        "5.1 * 5.1 / 2 > (14.2 + 11.9) * (14.2 + 11.9) / (12.1 + 9.6)",
+        "abs(14.2 / 12.1 - 11.9 / 9.6) < 1 / 100",
+        "abs(2 / (12.1 + 9.6 + 2) * 100 - 16) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q17-d",
+    "modelledOn": "pst1-q17",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Pedalon, a bicycle maker that sells mostly road and mountain bikes through independent dealers, is looking at adding electric bikes to its range to keep its sales growing."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Bicycle sales by type of bike",
+        "unit": "Sales, $ billion",
+        "categories": [
+          "3 years ago",
+          "Today",
+          "In 5 years"
+        ],
+        "series": [
+          {
+            "name": "Road bikes",
+            "values": [
+              8.2,
+              10.7,
+              12.3
+            ]
+          },
+          {
+            "name": "Mountain bikes",
+            "values": [
+              6.4,
+              8.6,
+              10.6
+            ]
+          },
+          {
+            "name": "Electric bikes",
+            "values": [
+              1.6,
+              2.1,
+              5.3
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 14,
+          "step": 2
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Which of the following statements is a valid conclusion, based on the exhibit?",
+    "options": [
+      "Road bikes and mountain bikes will grow their sales at the same rate over the next five years",
+      "Electric bikes make up 19% of bicycle sales today",
+      "Electric bike sales will grow about twice as fast each year over the next five years as mountain bike sales did over the past three years",
+      "If the forecast trends continue, electric bikes will outsell road and mountain bikes combined within ten years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Mountain bikes, past three years: 8.6 ÷ 6.4 = 1.34, about 10% a year; electric bikes, next five years: 5.3 ÷ 2.1 = 2.52, about 20% a year, so about twice as fast",
+      "Next five years: road 12.3 ÷ 10.7 = +15%, mountain 10.6 ÷ 8.6 = +23%, not the same rate",
+      "Electric bikes' share today: 2.1 ÷ (10.7 + 8.6 + 2.1) = 10%, not 19%",
+      "Ten years at the same growth: electric 5.3 × 2.52 ≈ 13 against road and mountain 22.9 × 1.19 ≈ 27, so they do not outsell them"
+    ],
+    "shortcut": "Growth of 10% a year for three years gives 1.33 and 20% for five years gives 2.49; mountain bikes' 1.34 and electric bikes' 2.52 match those. Rough ratios rule out the others.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(12.3 / 10.7 - 10.6 / 8.6) < 1 / 100",
+        "abs(2.1 / (10.7 + 8.6 + 2.1) * 100 - 19) < 1",
+        "abs((pow(5.3 / 2.1, 1 / 5) - 1) / (pow(8.6 / 6.4, 1 / 3) - 1) - 2) < 1 / 4",
+        "5.3 * 5.3 / 2.1 > (12.3 + 10.6) * (12.3 + 10.6) / (10.7 + 8.6)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q17-e",
+    "modelledOn": "pst1-q17",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Slumbra makes spring and foam mattresses and is weighing whether to switch part of its factory capacity to hybrid mattresses, a newer type that combines springs with layers of foam."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Size of the mattress market by type of mattress",
+        "unit": "Market size, $ billion",
+        "categories": [
+          "3 years ago",
+          "Today",
+          "In 5 years"
+        ],
+        "series": [
+          {
+            "name": "Spring mattresses",
+            "values": [
+              12,
+              14.6,
+              16.9
+            ]
+          },
+          {
+            "name": "Foam mattresses",
+            "values": [
+              7.4,
+              8.3,
+              9.6
+            ]
+          },
+          {
+            "name": "Hybrid mattresses",
+            "values": [
+              3.2,
+              4.2,
+              7.5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 20,
+          "step": 5
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Which of the following statements about the mattress market is a valid conclusion, based on Exhibit 1?",
+    "options": [
+      "Spring mattresses and foam mattresses will grow at the same rate over the next five years",
+      "If forecast trends continue, hybrid mattresses will sell more than spring and foam mattresses combined within ten years",
+      "Over the next five years, hybrid mattresses will grow about twice as fast each year as foam mattresses grew over the past three years",
+      "Hybrid mattresses make up 22% of the mattress market today"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Next five years: spring mattresses 16.9 ÷ 14.6 = +16%, foam mattresses 9.6 ÷ 8.3 = +16%, so the same rate (true)",
+      "Ten years at the same growth: hybrid 7.5 × 1.79 ≈ 13 against spring and foam 26.5 × 1.16 ≈ 31, so not more",
+      "Hybrid, next five years: 7.5 ÷ 4.2 = 1.79, about 12% a year; foam, past three years: 8.3 ÷ 7.4 = 1.12, about 4% a year, so about three times as fast, not twice",
+      "Hybrid mattresses' share today: 4.2 ÷ (14.6 + 8.3 + 4.2) = 15%, not 22%"
+    ],
+    "shortcut": "Spring mattresses add 2.3 and foam mattresses 1.3, but each adds about a sixth of today's size, so the rates match. 1.79 over five years is about 12% a year and 1.12 over three years about 4%: three times, not twice.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(16.9 / 14.6 - 9.6 / 8.3) < 1 / 100",
+        "7.5 * 7.5 / 4.2 > (16.9 + 9.6) * (16.9 + 9.6) / (14.6 + 8.3)",
+        "abs((pow(7.5 / 4.2, 1 / 5) - 1) / (pow(8.3 / 7.4, 1 / 3) - 1) - 2) < 1 / 4",
+        "abs(4.2 / (14.6 + 8.3 + 4.2) * 100 - 22) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q17-f",
+    "modelledOn": "pst1-q17",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Casalto sells sofas, beds and tables through its own furniture stores and is deciding how much to invest in selling online, where its sales are still small."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Furniture sales by sales channel",
+        "unit": "Sales, € billion",
+        "categories": [
+          "3 years ago",
+          "Today",
+          "In 5 years"
+        ],
+        "series": [
+          {
+            "name": "Furniture stores",
+            "values": [
+              13.8,
+              15.7,
+              17.3
+            ]
+          },
+          {
+            "name": "Department stores",
+            "values": [
+              6,
+              6.9,
+              8.5
+            ]
+          },
+          {
+            "name": "Online",
+            "values": [
+              2.2,
+              3.1,
+              6.2
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 20,
+          "step": 5
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Based on Exhibit 1, which of the following statements about furniture sales is true?",
+    "options": [
+      "Over the next five years, online sales will grow at about twice the yearly rate that department store sales grew at over the past three years",
+      "Online sales make up 12% of all furniture sales today",
+      "Sales in furniture stores and in department stores will grow at the same rate over the next five years",
+      "If forecast trends continue, online sales will be larger than furniture store and department store sales combined within ten years"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Online, next five years: 6.2 ÷ 3.1 = 2.0, about 15% a year; department stores, past three years: 6.9 ÷ 6.0 = 1.15, about 5% a year, so about three times the rate, not twice",
+      "Online share today: 3.1 ÷ (15.7 + 6.9 + 3.1) = 12% (true)",
+      "Next five years: furniture stores 17.3 ÷ 15.7 = +10%, department stores 8.5 ÷ 6.9 = +23%, not the same rate",
+      "Ten years at the same growth: online 6.2 × 2.0 ≈ 12 against furniture and department stores 25.8 × 1.14 ≈ 29, so not larger"
+    ],
+    "shortcut": "Today's total is about 25.7 and 12% of it is about 3.1, the online figure. The other three fall to rough ratios: doubling in five years is about 15% a year against 5%.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs((pow(6.2 / 3.1, 1 / 5) - 1) / (pow(6.9 / 6, 1 / 3) - 1) - 2) < 1 / 4",
+        "abs(3.1 / (15.7 + 6.9 + 3.1) * 100 - 12) < 1 / 2",
+        "abs(17.3 / 15.7 - 8.5 / 6.9) < 1 / 100",
+        "6.2 * 6.2 / 3.1 > (17.3 + 8.5) * (17.3 + 8.5) / (15.7 + 6.9)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q17-h",
+    "modelledOn": "pst1-q17",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Aquena bottles still and sparkling mineral water and is considering a range of flavoured waters, a small part of the market that has started to grow quickly."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Bottled water market by type",
+        "unit": "Market size, € billion",
+        "categories": [
+          "3 years ago",
+          "Today",
+          "In 5 years"
+        ],
+        "series": [
+          {
+            "name": "Still water",
+            "values": [
+              7.9,
+              8.7,
+              9.9
+            ]
+          },
+          {
+            "name": "Sparkling water",
+            "values": [
+              4.6,
+              5.5,
+              6.7
+            ]
+          },
+          {
+            "name": "Flavoured water",
+            "values": [
+              1.8,
+              2.3,
+              5.4
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 10,
+          "step": 2
+        },
+        "labelled": true,
+        "decimals": 1
+      }
+    ],
+    "prompt": "According to Exhibit 1, which of the following statements about the bottled water market is true?",
+    "options": [
+      "If forecast trends continue, flavoured water will be a bigger market than still and sparkling water combined within ten years",
+      "Over the next five years, flavoured water will grow at about twice the yearly rate that sparkling water grew at over the past three years",
+      "Still water and sparkling water will grow at the same rate over the next five years",
+      "Flavoured water accounts for 14% of the bottled water market today"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Ten years at the same growth: flavoured 5.4 × 2.35 ≈ 13 against still and sparkling 16.6 × 1.17 ≈ 19, so not bigger",
+      "Flavoured, next five years: 5.4 ÷ 2.3 = 2.35, about 19% a year; sparkling, past three years: 5.5 ÷ 4.6 = 1.20, about 6% a year, so about three times the rate, not twice",
+      "Next five years: still 9.9 ÷ 8.7 = +14%, sparkling 6.7 ÷ 5.5 = +22%, not the same rate",
+      "Flavoured water's share today: 2.3 ÷ (8.7 + 5.5 + 2.3) = 14% (true)"
+    ],
+    "shortcut": "Today's total is 16.5, and 14% of it is about 2.3, the flavoured figure. The rest fall to rough ratios: 1.20 over three years is about 6% a year, 2.35 over five years about 19%.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "5.4 * 5.4 / 2.3 > (9.9 + 6.7) * (9.9 + 6.7) / (8.7 + 5.5)",
+        "abs((pow(5.4 / 2.3, 1 / 5) - 1) / (pow(5.5 / 4.6, 1 / 3) - 1) - 2) < 1 / 4",
+        "abs(9.9 / 8.7 - 6.7 / 5.5) < 1 / 100",
+        "abs(2.3 / (8.7 + 5.5 + 2.3) * 100 - 14) < 1 / 2"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst2-q03-a",
+    "modelledOn": "pst2-q03",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "ReadMore publishes books, consumer magazines and digital subscriptions, and also runs trade events. The CEO fears that a large foreign publisher could enter the market and cut into profits."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: ReadMore revenues 2009-2012 (EUR millions)",
+        "headers": [
+          "Division",
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "rows": [
+          [
+            "Books",
+            "77",
+            "82",
+            "88",
+            "93"
+          ],
+          [
+            "Digital subscriptions",
+            "54",
+            "57",
+            "62",
+            "66"
+          ],
+          [
+            "Print magazines",
+            "168",
+            "163",
+            "157",
+            "149"
+          ],
+          [
+            "Trade events",
+            "31",
+            "35",
+            "33",
+            "38"
+          ]
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Profit margin by division 2009-2012",
+        "unit": "Profit margin",
+        "categories": [
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "series": [
+          {
+            "name": "Books",
+            "values": [
+              15,
+              16,
+              16,
+              17
+            ]
+          },
+          {
+            "name": "Digital subscriptions",
+            "values": [
+              10,
+              11,
+              11,
+              12
+            ]
+          },
+          {
+            "name": "Print magazines",
+            "values": [
+              9,
+              7,
+              6,
+              4
+            ]
+          },
+          {
+            "name": "Trade events",
+            "values": [
+              19,
+              21,
+              20,
+              23
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 24,
+          "step": 2
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%"
+      }
+    ],
+    "prompt": "If each division's revenue kept growing between 2012 and 2015 at the rate it grew between 2009 and 2012, and every profit margin stayed at its 2012 level, how much profit would digital subscriptions generate in 2015 compared with books?",
+    "options": [
+      "Half as much profit",
+      "The same amount of profit",
+      "Twice as much profit",
+      "Three times as much profit"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Growth 2009-2012: digital subscriptions 66 ÷ 54 − 1 = 22%, books 93 ÷ 77 − 1 = 21%",
+      "2015 revenue: digital subscriptions 66 × 1.22 = €80.5m, books 93 × 1.21 = €112.5m",
+      "2015 profit: digital subscriptions €80.5m × 12% = €9.7m, books €112.5m × 17% = €19.1m",
+      "€9.7m ÷ €19.1m = 0.51, so digital subscriptions would make half as much profit"
+    ],
+    "shortcut": "2012 profits are already about one to two (66 × 12% = €7.9m against 93 × 17% = €15.8m), and both divisions grew about 21-22%, so the ratio stays at a half.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "-abs(((66 * 66 / 54 * 12) / (93 * 93 / 77 * 17)) * 2 - 1)",
+        "-abs(((66 * 66 / 54 * 12) / (93 * 93 / 77 * 17)) - 1)",
+        "-abs(((66 * 66 / 54 * 12) / (93 * 93 / 77 * 17)) / 2 - 1)",
+        "-abs(((66 * 66 / 54 * 12) / (93 * 93 / 77 * 17)) / 3 - 1)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst2-q03-b",
+    "modelledOn": "pst2-q03",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "CargoLine is a freight company offering warehousing, parcel delivery, pallet freight and freight forwarding to retailers and manufacturers. The CEO is worried that an overseas carrier may come into the market and squeeze profits."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: CargoLine revenues 2010-2013 (EUR millions)",
+        "headers": [
+          "Business line",
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "rows": [
+          [
+            "Warehousing",
+            "106",
+            "113",
+            "121",
+            "131"
+          ],
+          [
+            "Parcel delivery",
+            "190",
+            "205",
+            "221",
+            "238"
+          ],
+          [
+            "Pallet freight",
+            "78",
+            "84",
+            "83",
+            "88"
+          ],
+          [
+            "Freight forwarding",
+            "44",
+            "47",
+            "51",
+            "55"
+          ]
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Profit margin by business line 2010-2013",
+        "unit": "Profit margin",
+        "categories": [
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "series": [
+          {
+            "name": "Warehousing",
+            "values": [
+              10,
+              11,
+              12,
+              11
+            ]
+          },
+          {
+            "name": "Parcel delivery",
+            "values": [
+              8,
+              7,
+              7,
+              6
+            ]
+          },
+          {
+            "name": "Pallet freight",
+            "values": [
+              5,
+              6,
+              5,
+              4
+            ]
+          },
+          {
+            "name": "Freight forwarding",
+            "values": [
+              3,
+              3,
+              5,
+              6
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 14,
+          "step": 2
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%"
+      }
+    ],
+    "prompt": "Assume that from 2013 to 2016 revenue in every business line grows by the same percentage as it did from 2010 to 2013, while profit margins hold at their 2013 values. How much profit would warehousing then make compared to parcel delivery?",
+    "options": [
+      "Half as much profit",
+      "The same amount of profit",
+      "Twice as much profit",
+      "Three times as much profit"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Growth 2010-2013: warehousing 131 ÷ 106 − 1 = 24%, parcel delivery 238 ÷ 190 − 1 = 25%",
+      "2016 revenue: warehousing 131 × 1.24 = €162m, parcel delivery 238 × 1.25 = €298m",
+      "2016 profit: warehousing €162m × 11% = €17.8m, parcel delivery €298m × 6% = €17.9m",
+      "€17.8m ÷ €17.9m = 1.0, so warehousing would make the same profit"
+    ],
+    "shortcut": "In 2013 the two already earn about the same (131 × 11% = €14.4m, 238 × 6% = €14.3m), and both grew by about a quarter, so they stay level.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "-abs(((131 * 131 / 106 * 11) / (238 * 238 / 190 * 6)) * 2 - 1)",
+        "-abs(((131 * 131 / 106 * 11) / (238 * 238 / 190 * 6)) - 1)",
+        "-abs(((131 * 131 / 106 * 11) / (238 * 238 / 190 * 6)) / 2 - 1)",
+        "-abs(((131 * 131 / 106 * 11) / (238 * 238 / 190 * 6)) / 3 - 1)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst2-q03-c",
+    "modelledOn": "pst2-q03",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Softwise sells software licences, IT support contracts, cloud hosting and computer hardware to mid-sized businesses. The CEO is concerned that larger competitors will cut prices and hurt margins."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Softwise revenues 2008-2011 (USD millions)",
+        "headers": [
+          "Business line",
+          "2008",
+          "2009",
+          "2010",
+          "2011"
+        ],
+        "rows": [
+          [
+            "Software licences",
+            "66",
+            "71",
+            "74",
+            "79"
+          ],
+          [
+            "IT support contracts",
+            "105",
+            "114",
+            "120",
+            "127"
+          ],
+          [
+            "Cloud hosting",
+            "31",
+            "38",
+            "45",
+            "52"
+          ],
+          [
+            "Hardware resale",
+            "142",
+            "135",
+            "137",
+            "124"
+          ]
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Profit margin by business line 2008-2011",
+        "unit": "Profit margin",
+        "categories": [
+          "2008",
+          "2009",
+          "2010",
+          "2011"
+        ],
+        "series": [
+          {
+            "name": "Software licences",
+            "values": [
+              36,
+              35,
+              35,
+              33
+            ]
+          },
+          {
+            "name": "IT support contracts",
+            "values": [
+              13,
+              12,
+              11,
+              10
+            ]
+          },
+          {
+            "name": "Cloud hosting",
+            "values": [
+              22,
+              25,
+              26,
+              28
+            ]
+          },
+          {
+            "name": "Hardware resale",
+            "values": [
+              4,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 40,
+          "step": 2
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%"
+      }
+    ],
+    "prompt": "Suppose revenue in each business line continued to grow over 2011-2014 as it did over 2008-2011, and each line's profit margin remained where it was in 2011. In 2014, how much profit would software licences produce relative to IT support contracts?",
+    "options": [
+      "Half as much profit",
+      "The same amount of profit",
+      "Twice as much profit",
+      "Three times as much profit"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Growth 2008-2011: software licences 79 ÷ 66 − 1 = 20%, IT support contracts 127 ÷ 105 − 1 = 21%",
+      "2014 revenue: software licences 79 × 1.20 = $94.8m, IT support contracts 127 × 1.21 = $153.7m",
+      "2014 profit: software licences $94.8m × 33% = $31.3m, IT support contracts $153.7m × 10% = $15.4m",
+      "$31.3m ÷ $15.4m = 2.03, so software licences would make twice as much profit"
+    ],
+    "shortcut": "In 2011 licences already earn about twice as much (79 × 33% = $26m against 127 × 10% = $13m), and both lines grew about 20%, so the ratio stays near 2.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "-abs(((79 * 79 / 66 * 33) / (127 * 127 / 105 * 10)) * 2 - 1)",
+        "-abs(((79 * 79 / 66 * 33) / (127 * 127 / 105 * 10)) - 1)",
+        "-abs(((79 * 79 / 66 * 33) / (127 * 127 / 105 * 10)) / 2 - 1)",
+        "-abs(((79 * 79 / 66 * 33) / (127 * 127 / 105 * 10)) / 3 - 1)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst2-q03-d",
+    "modelledOn": "pst2-q03",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "CycleCo makes road, mountain and children's bikes and sells parts and accessories through independent dealers. The CEO worries that a low-cost manufacturer from abroad will enter the market and erode profits."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: CycleCo revenues 2009-2012 (EUR millions)",
+        "headers": [
+          "Product range",
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "rows": [
+          [
+            "Road bikes",
+            "129",
+            "138",
+            "146",
+            "153"
+          ],
+          [
+            "Mountain bikes",
+            "104",
+            "103",
+            "101",
+            "99"
+          ],
+          [
+            "Parts and accessories",
+            "58",
+            "61",
+            "63",
+            "67"
+          ],
+          [
+            "Children's bikes",
+            "81",
+            "86",
+            "90",
+            "95"
+          ]
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Profit margin by product range 2009-2012",
+        "unit": "Profit margin",
+        "categories": [
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "series": [
+          {
+            "name": "Road bikes",
+            "values": [
+              12,
+              13,
+              15,
+              15
+            ]
+          },
+          {
+            "name": "Mountain bikes",
+            "values": [
+              11,
+              10,
+              10,
+              9
+            ]
+          },
+          {
+            "name": "Parts and accessories",
+            "values": [
+              14,
+              15,
+              13,
+              13
+            ]
+          },
+          {
+            "name": "Children's bikes",
+            "values": [
+              6,
+              7,
+              7,
+              8
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 16,
+          "step": 2
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%"
+      }
+    ],
+    "prompt": "If the revenue growth seen in each product range from 2009 to 2012 were repeated from 2012 to 2015, with profit margins unchanged from their 2012 level, how much profit would road bikes earn in 2015 compared with children's bikes?",
+    "options": [
+      "Half as much profit",
+      "The same amount of profit",
+      "Twice as much profit",
+      "Three times as much profit"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Growth 2009-2012: road bikes 153 ÷ 129 − 1 = 19%, children's bikes 95 ÷ 81 − 1 = 17%",
+      "2015 revenue: road bikes 153 × 1.19 = €182m, children's bikes 95 × 1.17 = €111m",
+      "2015 profit: road bikes €182m × 15% = €27.3m, children's bikes €111m × 8% = €8.9m",
+      "€27.3m ÷ €8.9m = 3.07, so road bikes would make three times as much profit"
+    ],
+    "shortcut": "In 2012 road bikes already earn three times as much (153 × 15% = €23m against 95 × 8% = €7.6m), and both ranges grew by a little under a fifth, so the ratio stays at about 3.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "-abs(((153 * 153 / 129 * 15) / (95 * 95 / 81 * 8)) * 2 - 1)",
+        "-abs(((153 * 153 / 129 * 15) / (95 * 95 / 81 * 8)) - 1)",
+        "-abs(((153 * 153 / 129 * 15) / (95 * 95 / 81 * 8)) / 2 - 1)",
+        "-abs(((153 * 153 / 129 * 15) / (95 * 95 / 81 * 8)) / 3 - 1)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst2-q03-e",
+    "modelledOn": "pst2-q03",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Hotelia runs mid-priced hotels and earns its money from rooms, food and beverage, conferences, and spa and leisure. The CEO fears that an international chain will open hotels nearby and cut into profits."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Hotelia revenues 2009-2012 (millions)",
+        "headers": [
+          "Business line",
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "rows": [
+          [
+            "Rooms",
+            "150",
+            "158",
+            "167",
+            "176"
+          ],
+          [
+            "Food and beverage",
+            "93",
+            "98",
+            "103",
+            "110"
+          ],
+          [
+            "Conferences",
+            "46",
+            "52",
+            "49",
+            "56"
+          ],
+          [
+            "Spa and leisure",
+            "22",
+            "21",
+            "24",
+            "26"
+          ]
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Profit margin by business line 2009-2012",
+        "unit": "Profit margin",
+        "categories": [
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "series": [
+          {
+            "name": "Rooms",
+            "values": [
+              13,
+              14,
+              14,
+              15
+            ]
+          },
+          {
+            "name": "Food and beverage",
+            "values": [
+              10,
+              9,
+              9,
+              8
+            ]
+          },
+          {
+            "name": "Conferences",
+            "values": [
+              12,
+              13,
+              12,
+              13
+            ]
+          },
+          {
+            "name": "Spa and leisure",
+            "values": [
+              7,
+              8,
+              9,
+              9
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 16,
+          "step": 2
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%"
+      }
+    ],
+    "prompt": "Assume revenue in every business line rises from 2012 to 2015 by the same percentage as it rose from 2009 to 2012, and that each profit margin is held at its 2012 value. How much profits would rooms then make compared with food and beverage?",
+    "options": [
+      "Half as much profits",
+      "The same amount of profits",
+      "Twice as much profits",
+      "Three times as much profits"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Growth 2009-2012: rooms 176 ÷ 150 − 1 = 17%, food and beverage 110 ÷ 93 − 1 = 18%",
+      "2015 revenue: rooms 176 × 1.17 = 206, food and beverage 110 × 1.18 = 130",
+      "2015 profit: rooms 206 × 15% = 31.0, food and beverage 130 × 8% = 10.4",
+      "31.0 ÷ 10.4 = 3.0, so rooms would make three times as much profit"
+    ],
+    "shortcut": "In 2012 rooms already earn three times as much (176 × 15% = 26.4 against 110 × 8% = 8.8), and both lines grew by about a sixth or a little more, so the ratio stays at 3.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "-abs(((176 * 176 / 150 * 15) / (110 * 110 / 93 * 8)) * 2 - 1)",
+        "-abs(((176 * 176 / 150 * 15) / (110 * 110 / 93 * 8)) - 1)",
+        "-abs(((176 * 176 / 150 * 15) / (110 * 110 / 93 * 8)) / 2 - 1)",
+        "-abs(((176 * 176 / 150 * 15) / (110 * 110 / 93 * 8)) / 3 - 1)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst2-q03-f",
+    "modelledOn": "pst2-q03",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "MilkCo is a dairy cooperative supplying liquid milk, cheese, yogurt, and butter and cream to grocery chains. The CEO is concerned that cheaper imported dairy products will take shelf space and lower profits."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: MilkCo revenues 2010-2013 (millions)",
+        "headers": [
+          "Product group",
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "rows": [
+          [
+            "Liquid milk",
+            "214",
+            "209",
+            "211",
+            "203"
+          ],
+          [
+            "Cheese",
+            "97",
+            "105",
+            "112",
+            "120"
+          ],
+          [
+            "Yogurt",
+            "73",
+            "79",
+            "83",
+            "89"
+          ],
+          [
+            "Butter and cream",
+            "44",
+            "48",
+            "46",
+            "50"
+          ]
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Profit margin by product group 2010-2013",
+        "unit": "Profit margin",
+        "categories": [
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "series": [
+          {
+            "name": "Liquid milk",
+            "values": [
+              6,
+              5,
+              5,
+              4
+            ]
+          },
+          {
+            "name": "Cheese",
+            "values": [
+              14,
+              15,
+              15,
+              16
+            ]
+          },
+          {
+            "name": "Yogurt",
+            "values": [
+              9,
+              10,
+              12,
+              11
+            ]
+          },
+          {
+            "name": "Butter and cream",
+            "values": [
+              9,
+              9,
+              8,
+              7
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 18,
+          "step": 2
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%"
+      }
+    ],
+    "prompt": "If every product group kept up its 2010-2013 revenue growth over 2013-2016, and its profit margin stayed where it was in 2013, how much profits would yogurt generate in 2016 compared to cheese?",
+    "options": [
+      "Half as much profits",
+      "The same amount of profits",
+      "Twice as much profits",
+      "Three times as much profits"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Growth 2010-2013: yogurt 89 ÷ 73 − 1 = 22%, cheese 120 ÷ 97 − 1 = 24%",
+      "2016 revenue: yogurt 89 × 1.22 = 108.5, cheese 120 × 1.24 = 148.5",
+      "2016 profit: yogurt 108.5 × 11% = 11.9, cheese 148.5 × 16% = 23.8",
+      "11.9 ÷ 23.8 = 0.50, so yogurt would make half as much profit"
+    ],
+    "shortcut": "In 2013 yogurt already earns about half as much (89 × 11% = 9.8 against 120 × 16% = 19.2), and both groups grew by just over a fifth, so the ratio stays at a half.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "-abs(((89 * 89 / 73 * 11) / (120 * 120 / 97 * 16)) * 2 - 1)",
+        "-abs(((89 * 89 / 73 * 11) / (120 * 120 / 97 * 16)) - 1)",
+        "-abs(((89 * 89 / 73 * 11) / (120 * 120 / 97 * 16)) / 2 - 1)",
+        "-abs(((89 * 89 / 73 * 11) / (120 * 120 / 97 * 16)) / 3 - 1)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst2-q03-g",
+    "modelledOn": "pst2-q03",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Gardenly is a chain of garden centres selling plants and seeds, garden furniture, and tools and equipment, with a café and gift shop at each site. The CEO is worried that home-improvement superstores will widen their garden ranges and take profits."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Gardenly revenues 2008-2011 (millions)",
+        "headers": [
+          "Department",
+          "2008",
+          "2009",
+          "2010",
+          "2011"
+        ],
+        "rows": [
+          [
+            "Plants and seeds",
+            "68",
+            "73",
+            "78",
+            "83"
+          ],
+          [
+            "Garden furniture",
+            "107",
+            "115",
+            "126",
+            "132"
+          ],
+          [
+            "Tools and equipment",
+            "61",
+            "58",
+            "63",
+            "59"
+          ],
+          [
+            "Café and gifts",
+            "28",
+            "32",
+            "36",
+            "39"
+          ]
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Profit margin by department 2008-2011",
+        "unit": "Profit margin",
+        "categories": [
+          "2008",
+          "2009",
+          "2010",
+          "2011"
+        ],
+        "series": [
+          {
+            "name": "Plants and seeds",
+            "values": [
+              17,
+              18,
+              18,
+              19
+            ]
+          },
+          {
+            "name": "Garden furniture",
+            "values": [
+              8,
+              7,
+              7,
+              6
+            ]
+          },
+          {
+            "name": "Tools and equipment",
+            "values": [
+              14,
+              13,
+              16,
+              17
+            ]
+          },
+          {
+            "name": "Café and gifts",
+            "values": [
+              23,
+              24,
+              25,
+              25
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 26,
+          "step": 2
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%"
+      }
+    ],
+    "prompt": "If revenue in each department went on growing between 2011 and 2014 at the same rate as between 2008 and 2011, and profit margins did not change from their 2011 levels, how much profits would plants and seeds bring in compared to garden furniture?",
+    "options": [
+      "Half as much profits",
+      "The same amount of profits",
+      "Twice as much profits",
+      "Three times as much profits"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Growth 2008-2011: plants and seeds 83 ÷ 68 − 1 = 22%, garden furniture 132 ÷ 107 − 1 = 23%",
+      "2014 revenue: plants and seeds 83 × 1.22 = 101, garden furniture 132 × 1.23 = 163",
+      "2014 profit: plants and seeds 101 × 19% = 19.2, garden furniture 163 × 6% = 9.8",
+      "19.2 ÷ 9.8 = 1.97, so plants and seeds would make twice as much profit"
+    ],
+    "shortcut": "In 2011 plants and seeds already earn about twice as much (83 × 19% = 15.8 against 132 × 6% = 7.9), and both departments grew by about 22%, so the ratio stays near 2.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "-abs(((83 * 83 / 68 * 19) / (132 * 132 / 107 * 6)) * 2 - 1)",
+        "-abs(((83 * 83 / 68 * 19) / (132 * 132 / 107 * 6)) - 1)",
+        "-abs(((83 * 83 / 68 * 19) / (132 * 132 / 107 * 6)) / 2 - 1)",
+        "-abs(((83 * 83 / 68 * 19) / (132 * 132 / 107 * 6)) / 3 - 1)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst2-q03-h",
+    "modelledOn": "pst2-q03",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Sportique is a sporting goods retailer with large out-of-town stores selling footwear, clothing, sports equipment, and nutrition and supplements. The CEO is anxious that online-only sellers will undercut its prices and erode profits."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Sportique revenues 2010-2013 (millions)",
+        "headers": [
+          "Category",
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "rows": [
+          [
+            "Footwear",
+            "96",
+            "106",
+            "111",
+            "119"
+          ],
+          [
+            "Clothing",
+            "172",
+            "185",
+            "199",
+            "216"
+          ],
+          [
+            "Sports equipment",
+            "143",
+            "136",
+            "146",
+            "140"
+          ],
+          [
+            "Nutrition and supplements",
+            "27",
+            "31",
+            "36",
+            "42"
+          ]
+        ]
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Profit margin by product category, 2010-2013",
+        "unit": "Profit margin",
+        "categories": [
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "series": [
+          {
+            "name": "Footwear",
+            "values": [
+              12,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "name": "Clothing",
+            "values": [
+              11,
+              10,
+              9,
+              8
+            ]
+          },
+          {
+            "name": "Sports equipment",
+            "values": [
+              12,
+              11,
+              11,
+              11
+            ]
+          },
+          {
+            "name": "Nutrition and supplements",
+            "values": [
+              7,
+              6,
+              5,
+              5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 16,
+          "step": 2
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%"
+      }
+    ],
+    "prompt": "If each category's revenue growth from 2010 to 2013 were to carry on from 2013 to 2016, and profit margins held at their 2013 level, how much profits would the footwear category generate compared to the clothing category?",
+    "options": [
+      "Half as much profits",
+      "The same amount of profits",
+      "Twice as much profits",
+      "Three times as much profits"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Growth 2010-2013: footwear 119 ÷ 96 − 1 = 24%, clothing 216 ÷ 172 − 1 = 26%",
+      "2016 revenue: footwear 119 × 1.24 = 148, clothing 216 × 1.26 = 271",
+      "2016 profit: footwear 148 × 15% = 22.1, clothing 271 × 8% = 21.7",
+      "The two are about the same"
+    ],
+    "shortcut": "2013 profits are already level (119 × 15% = 17.9 against 216 × 8% = 17.3) and both categories grew about a quarter, so they stay about equal.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "-abs(((119 * 119 / 96 * 15) / (216 * 216 / 172 * 8)) * 2 - 1)",
+        "-abs(((119 * 119 / 96 * 15) / (216 * 216 / 172 * 8)) - 1)",
+        "-abs(((119 * 119 / 96 * 15) / (216 * 216 / 172 * 8)) / 2 - 1)",
+        "-abs(((119 * 119 / 96 * 15) / (216 * 216 / 172 * 8)) / 3 - 1)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q19-a",
+    "modelledOn": "pst3-q19",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Cloud subscriptions let business customers rent software by the month instead of buying a licence outright. Your team is advising a business software company on how fast its cloud products could reshape its revenue. Exhibit 1 shows the company's revenue in each of its seven sales regions last year, split by product line."
+      },
+      {
+        "type": "chart",
+        "chart": "stacked-bar-100",
+        "title": "Exhibit 1: Revenue by product line ($ million) and operating margin",
+        "unit": "% of total revenue",
+        "categories": [
+          "Region A",
+          "Region B",
+          "Region C",
+          "Region D",
+          "Region E",
+          "Region F",
+          "Region G"
+        ],
+        "series": [
+          {
+            "name": "Licences",
+            "values": [
+              50,
+              40,
+              60,
+              70,
+              30,
+              50,
+              40
+            ]
+          },
+          {
+            "name": "Maintenance",
+            "values": [
+              15,
+              20,
+              15,
+              10,
+              30,
+              5,
+              15
+            ]
+          },
+          {
+            "name": "Cloud subscriptions",
+            "values": [
+              20,
+              30,
+              20,
+              10,
+              30,
+              30,
+              30
+            ]
+          },
+          {
+            "name": "Consulting",
+            "values": [
+              15,
+              10,
+              5,
+              10,
+              10,
+              15,
+              15
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 100,
+          "step": 10
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%",
+        "barNoteRows": [
+          {
+            "name": "Operating margin",
+            "notes": [
+              "18%",
+              "23%",
+              "14%",
+              "27%",
+              "11%",
+              "8%",
+              "21%"
+            ]
+          },
+          {
+            "name": "Total, $ million",
+            "notes": [
+              "36",
+              "58",
+              "64",
+              "87",
+              "43",
+              "19",
+              "31"
+            ]
+          }
+        ]
+      }
+    ],
+    "prompt": "Suppose total revenue in Region C grows by 15% per year from now on, while its revenue from cloud subscriptions grows at 30% per year. What is the MINIMUM number of whole years before cloud subscriptions make up more than 30% of the region's total revenue?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Cloud subscription revenue in Region C to start: 20% × $64m = $12.8m",
+      "After 2 years: $12.8m × 1.3² = $21.6m against a total of $64m × 1.15² = $84.6m, a 25.6% share, not yet more than 30%",
+      "After 4 years: $12.8m × 1.3⁴ = $36.6m against a total of $64m × 1.15⁴ = $111.9m, a 32.7% share, more than 30%",
+      "So 4 years is the smallest option that takes cloud subscriptions past 30%"
+    ],
+    "shortcut": "The share multiplies by 1.3 ÷ 1.15 ≈ 1.13 each year: 20% → 22.6% → 25.6% → 28.9% → 32.7%, so it passes 30% in year 4.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "20 * pow((1 + 30 / 100) / (1 + 15 / 100), 2) > 30 ? -2 : -1000",
+        "20 * pow((1 + 30 / 100) / (1 + 15 / 100), 4) > 30 ? -4 : -1000",
+        "20 * pow((1 + 30 / 100) / (1 + 15 / 100), 6) > 30 ? -6 : -1000",
+        "20 * pow((1 + 30 / 100) / (1 + 15 / 100), 8) > 30 ? -8 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q19-b",
+    "modelledOn": "pst3-q19",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A private university group runs seven campuses and wants to depend less on tuition fees. Research grants are its fastest-growing source of income, and the board has asked your team to test its targets for the next decade. Exhibit 1 shows each campus's income in the last academic year, split by source."
+      },
+      {
+        "type": "chart",
+        "chart": "stacked-bar-100",
+        "title": "Exhibit 1: Income by source ($ million) and student satisfaction",
+        "unit": "% of total income",
+        "categories": [
+          "Campus 1",
+          "Campus 2",
+          "Campus 3",
+          "Campus 4",
+          "Campus 5",
+          "Campus 6",
+          "Campus 7"
+        ],
+        "series": [
+          {
+            "name": "Tuition fees",
+            "values": [
+              50,
+              40,
+              60,
+              35,
+              50,
+              35,
+              70
+            ]
+          },
+          {
+            "name": "Government funding",
+            "values": [
+              30,
+              30,
+              20,
+              35,
+              20,
+              20,
+              15
+            ]
+          },
+          {
+            "name": "Research grants",
+            "values": [
+              15,
+              20,
+              15,
+              20,
+              20,
+              30,
+              10
+            ]
+          },
+          {
+            "name": "Other income",
+            "values": [
+              5,
+              10,
+              5,
+              10,
+              10,
+              15,
+              5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 100,
+          "step": 10
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%",
+        "barNoteRows": [
+          {
+            "name": "Student satisfaction",
+            "notes": [
+              "81%",
+              "74%",
+              "88%",
+              "69%",
+              "77%",
+              "83%",
+              "72%"
+            ]
+          },
+          {
+            "name": "Total, $ million",
+            "notes": [
+              "96",
+              "212",
+              "57",
+              "128",
+              "79",
+              "143",
+              "49"
+            ]
+          }
+        ]
+      }
+    ],
+    "prompt": "Assume total income at Campus 6 rises by 10% each year and its research grant income rises by 15% each year. After how many years, at the MINIMUM, would research grants account for more than 35% of the campus's total income?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Research grant income at Campus 6 to start: 30% × $143m = $42.9m",
+      "After 2 years: $42.9m × 1.15² = $56.7m against a total of $143m × 1.1² = $173.0m, a 32.8% share, not yet more than 35%",
+      "After 4 years: $42.9m × 1.15⁴ = $75.0m against a total of $143m × 1.1⁴ = $209.4m, a 35.8% share, more than 35%",
+      "So 4 years is the first option at which research grants pass 35%"
+    ],
+    "shortcut": "The share multiplies by 1.15 ÷ 1.1 ≈ 1.045 each year: 30% → 31.4% → 32.8% → 34.3% → 35.8%, so it passes 35% in year 4.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "30 * pow((1 + 15 / 100) / (1 + 10 / 100), 2) > 35 ? -2 : -1000",
+        "30 * pow((1 + 15 / 100) / (1 + 10 / 100), 4) > 35 ? -4 : -1000",
+        "30 * pow((1 + 15 / 100) / (1 + 10 / 100), 6) > 35 ? -6 : -1000",
+        "30 * pow((1 + 15 / 100) / (1 + 10 / 100), 8) > 35 ? -8 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q19-c",
+    "modelledOn": "pst3-q19",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A hotel group owns seven city-centre hotels. Its conference and events business has grown faster than room bookings for several years, and the owners want to know how large a part of each hotel's revenue it could become. Exhibit 1 shows each hotel's revenue last year, split by source."
+      },
+      {
+        "type": "chart",
+        "chart": "stacked-bar-100",
+        "title": "Exhibit 1: Revenue by source ($ million) and room occupancy",
+        "unit": "% of total revenue",
+        "categories": [
+          "Hotel A",
+          "Hotel B",
+          "Hotel C",
+          "Hotel D",
+          "Hotel E",
+          "Hotel F",
+          "Hotel G"
+        ],
+        "series": [
+          {
+            "name": "Rooms",
+            "values": [
+              60,
+              60,
+              40,
+              50,
+              70,
+              40,
+              70
+            ]
+          },
+          {
+            "name": "Food and drink",
+            "values": [
+              20,
+              25,
+              30,
+              25,
+              10,
+              25,
+              20
+            ]
+          },
+          {
+            "name": "Conference and events",
+            "values": [
+              10,
+              10,
+              25,
+              20,
+              10,
+              30,
+              5
+            ]
+          },
+          {
+            "name": "Other",
+            "values": [
+              10,
+              5,
+              5,
+              5,
+              10,
+              5,
+              5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 100,
+          "step": 10
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%",
+        "barNoteRows": [
+          {
+            "name": "Room occupancy",
+            "notes": [
+              "78%",
+              "84%",
+              "71%",
+              "80%",
+              "66%",
+              "89%",
+              "73%"
+            ]
+          },
+          {
+            "name": "Total, $ million",
+            "notes": [
+              "34",
+              "22",
+              "53",
+              "41",
+              "17",
+              "28",
+              "26"
+            ]
+          }
+        ]
+      }
+    ],
+    "prompt": "Hotel D expects its total revenue to grow by 5% a year and its conference and events revenue to grow at 10% a year. On these assumptions, what is the MINIMUM number of years it would take for conference and events to make up more than 25% of the hotel's total revenue?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Conference and events revenue at Hotel D to start: 20% × $41m = $8.2m",
+      "After 4 years: $8.2m × 1.1⁴ = $12.0m against a total of $41m × 1.05⁴ = $49.8m, a 24.1% share, not yet more than 25%",
+      "After 6 years: $8.2m × 1.1⁶ = $14.5m against a total of $41m × 1.05⁶ = $54.9m, a 26.4% share, more than 25%",
+      "So 6 years is the first option at which conference and events pass 25%"
+    ],
+    "shortcut": "The share multiplies by 1.1 ÷ 1.05 ≈ 1.048 each year: 20% → 21.0% → 22.0% → 23.0% → 24.1% after 4 years, and 26.4% after 6.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "20 * pow((1 + 10 / 100) / (1 + 5 / 100), 2) > 25 ? -2 : -1000",
+        "20 * pow((1 + 10 / 100) / (1 + 5 / 100), 4) > 25 ? -4 : -1000",
+        "20 * pow((1 + 10 / 100) / (1 + 5 / 100), 6) > 25 ? -6 : -1000",
+        "20 * pow((1 + 10 / 100) / (1 + 5 / 100), 8) > 25 ? -8 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q19-d",
+    "modelledOn": "pst3-q19",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Mobile wallets let people pay from their phones without a bank card. Your team is advising a payments company that processes transactions in seven countries on where wallets could overtake older ways of paying. Exhibit 1 shows the value of payments the company processed in each country last year, split by method."
+      },
+      {
+        "type": "chart",
+        "chart": "stacked-bar-100",
+        "title": "Exhibit 1: Payments processed by method ($ billion) and adults with a bank account",
+        "unit": "% of total payments",
+        "categories": [
+          "Country A",
+          "Country B",
+          "Country C",
+          "Country D",
+          "Country E",
+          "Country F",
+          "Country G"
+        ],
+        "series": [
+          {
+            "name": "Cards",
+            "values": [
+              40,
+              25,
+              50,
+              45,
+              30,
+              50,
+              20
+            ]
+          },
+          {
+            "name": "Bank transfers",
+            "values": [
+              30,
+              40,
+              25,
+              30,
+              20,
+              30,
+              45
+            ]
+          },
+          {
+            "name": "Mobile wallets",
+            "values": [
+              15,
+              30,
+              10,
+              20,
+              40,
+              10,
+              25
+            ]
+          },
+          {
+            "name": "Cash and other",
+            "values": [
+              15,
+              5,
+              15,
+              5,
+              10,
+              10,
+              10
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 100,
+          "step": 10
+        },
+        "labelled": false,
+        "decimals": 0,
+        "suffix": "%",
+        "barNoteRows": [
+          {
+            "name": "Adults with a bank account",
+            "notes": [
+              "62%",
+              "48%",
+              "76%",
+              "56%",
+              "39%",
+              "67%",
+              "54%"
+            ]
+          },
+          {
+            "name": "Total, $ billion",
+            "notes": [
+              "16",
+              "38",
+              "9",
+              "63",
+              "29",
+              "24",
+              "46"
+            ]
+          }
+        ]
+      }
+    ],
+    "prompt": "If the total value of payments in Country B were to grow by 15% annually, and payments by mobile wallet there were to grow at 25% annually, how many full years, at the MINIMUM, would it take for mobile wallets to account for more than 45% of all payments in the country?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Mobile wallet payments in Country B to start: 30% × $38bn = $11.4bn",
+      "After 4 years: $11.4bn × 1.25⁴ = $27.8bn against a total of $38bn × 1.15⁴ = $66.5bn, a 41.9% share, not yet more than 45%",
+      "After 6 years: $11.4bn × 1.25⁶ = $43.5bn against a total of $38bn × 1.15⁶ = $87.9bn, a 49.5% share, more than 45%",
+      "So 6 years is the first option at which mobile wallets pass 45%"
+    ],
+    "shortcut": "The share multiplies by 1.25 ÷ 1.15 ≈ 1.087 each year: 30% → 35.4% after 2 years → 41.9% after 4 → 49.5% after 6.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "30 * pow((1 + 25 / 100) / (1 + 15 / 100), 2) > 45 ? -2 : -1000",
+        "30 * pow((1 + 25 / 100) / (1 + 15 / 100), 4) > 45 ? -4 : -1000",
+        "30 * pow((1 + 25 / 100) / (1 + 15 / 100), 6) > 45 ? -6 : -1000",
+        "30 * pow((1 + 25 / 100) / (1 + 15 / 100), 8) > 45 ? -8 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-sample-q07-a",
+    "modelledOn": "sample-q07",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Tradeline Press publishes trade magazines for builders, farmers and other industries, sold to businesses on yearly subscriptions. Its revenue has grown every year since 2002, but it has not yet made a profit."
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 2 shows the revenue each title brought in during 2011 and the number of journalists working on each title. Every journalist writes for one title only."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Revenue by title, 2011",
+        "unit": "$ million",
+        "categories": [
+          "Title L",
+          "Title K",
+          "Title J",
+          "Title I",
+          "Title H",
+          "Title G",
+          "Title F",
+          "Title E",
+          "Title D",
+          "Title C",
+          "Title B",
+          "Title A"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              8,
+              13,
+              7,
+              4,
+              24,
+              9,
+              1,
+              26,
+              3,
+              41,
+              12,
+              6
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 50,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of journalists by title",
+        "unit": "Journalists",
+        "categories": [
+          "Title L",
+          "Title K",
+          "Title J",
+          "Title I",
+          "Title H",
+          "Title G",
+          "Title F",
+          "Title E",
+          "Title D",
+          "Title C",
+          "Title B",
+          "Title A"
+        ],
+        "series": [
+          {
+            "name": "Number of journalists",
+            "values": [
+              11,
+              20,
+              9,
+              5,
+              29,
+              12,
+              4,
+              33,
+              6,
+              47,
+              16,
+              10
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 50,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Suppose total revenue in Exhibit 2 grows by 4% a year from now on, while revenue from Title C grows by 9% a year. On those growth rates, which of the following would be the MINIMUM period before Title C makes up more than half of total revenue?",
+    "options": [
+      "10 years",
+      "15 years",
+      "20 years",
+      "25 years"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Total revenue is $154m, of which Title C brings in $41m (26.6%).",
+      "Each year Title C's share rises by a factor of 1.09 ÷ 1.04 ≈ 1.048.",
+      "The share must rise from 26.6% to 50%, a factor of 1.88: ln 1.88 ÷ ln 1.048 ≈ 13.4 years.",
+      "So 10 years falls short and 15 years is the first option long enough."
+    ],
+    "shortcut": "Rule of 72: at about 4.8% relative growth the share doubles in roughly 15 years, and it needs a little less than a doubling, so between 10 and 15 years.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "41 * pow(1 + 9 / 100, 10) > (6 + 12 + 41 + 3 + 26 + 1 + 9 + 24 + 4 + 7 + 13 + 8) * pow(1 + 4 / 100, 10) / 2 ? -10 : -1000",
+        "41 * pow(1 + 9 / 100, 15) > (6 + 12 + 41 + 3 + 26 + 1 + 9 + 24 + 4 + 7 + 13 + 8) * pow(1 + 4 / 100, 15) / 2 ? -15 : -1000",
+        "41 * pow(1 + 9 / 100, 20) > (6 + 12 + 41 + 3 + 26 + 1 + 9 + 24 + 4 + 7 + 13 + 8) * pow(1 + 4 / 100, 20) / 2 ? -20 : -1000",
+        "41 * pow(1 + 9 / 100, 25) > (6 + 12 + 41 + 3 + 26 + 1 + 9 + 24 + 4 + 7 + 13 + 8) * pow(1 + 4 / 100, 25) / 2 ? -25 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-sample-q07-b",
+    "modelledOn": "sample-q07",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Pixelnest develops games for mobile phones and earns its revenue from in-app purchases. Revenue has risen quickly since 2005, though the company has still never turned a profit."
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 2 gives each game's revenue in 2012 and how many developers work on it. Each developer is assigned full-time to a single game."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Revenue by game, 2012",
+        "unit": "$ million",
+        "categories": [
+          "Game L",
+          "Game K",
+          "Game J",
+          "Game I",
+          "Game H",
+          "Game G",
+          "Game F",
+          "Game E",
+          "Game D",
+          "Game C",
+          "Game B",
+          "Game A"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              5,
+              8,
+              12,
+              2,
+              6,
+              14,
+              1,
+              10,
+              2,
+              21,
+              4,
+              31
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 40,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of developers by game",
+        "unit": "Developers",
+        "categories": [
+          "Game L",
+          "Game K",
+          "Game J",
+          "Game I",
+          "Game H",
+          "Game G",
+          "Game F",
+          "Game E",
+          "Game D",
+          "Game C",
+          "Game B",
+          "Game A"
+        ],
+        "series": [
+          {
+            "name": "Number of developers",
+            "values": [
+              9,
+              12,
+              21,
+              6,
+              11,
+              27,
+              3,
+              20,
+              5,
+              37,
+              7,
+              42
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 50,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Assume that from now on total revenue in Exhibit 2 rises by 6% each year and revenue from Game A rises by 10% each year. In that case, which of the following would be the MINIMUM span of time before Game A brings in more than half of total revenue?",
+    "options": [
+      "10 years",
+      "15 years",
+      "20 years",
+      "25 years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Total revenue is $116m, of which Game A brings in $31m (26.7%).",
+      "Each year Game A's share rises by a factor of 1.10 ÷ 1.06 ≈ 1.038.",
+      "The share must rise from 26.7% to 50%, a factor of 1.87: ln 1.87 ÷ ln 1.038 ≈ 16.9 years.",
+      "So 15 years falls short and 20 years is the first option long enough."
+    ],
+    "shortcut": "Rule of 72: at about 3.8% relative growth the share doubles in roughly 19 years; it needs a little less than a doubling, about 17 years, which is more than 15.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "31 * pow(1 + 10 / 100, 10) > (31 + 4 + 21 + 2 + 10 + 1 + 14 + 6 + 2 + 12 + 8 + 5) * pow(1 + 6 / 100, 10) / 2 ? -10 : -1000",
+        "31 * pow(1 + 10 / 100, 15) > (31 + 4 + 21 + 2 + 10 + 1 + 14 + 6 + 2 + 12 + 8 + 5) * pow(1 + 6 / 100, 15) / 2 ? -15 : -1000",
+        "31 * pow(1 + 10 / 100, 20) > (31 + 4 + 21 + 2 + 10 + 1 + 14 + 6 + 2 + 12 + 8 + 5) * pow(1 + 6 / 100, 20) / 2 ? -20 : -1000",
+        "31 * pow(1 + 10 / 100, 25) > (31 + 4 + 21 + 2 + 10 + 1 + 14 + 6 + 2 + 12 + 8 + 5) * pow(1 + 6 / 100, 25) / 2 ? -25 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-sample-q07-c",
+    "modelledOn": "sample-q07",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Frostfield makes frozen meals and desserts under twelve brands, which it sells to supermarket chains. Sales have grown steadily since 2001, yet the business has never been profitable."
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 2 shows revenue by brand for 2010 and the number of sales representatives working on each brand. Each representative sells one brand only."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Revenue by brand, 2010",
+        "unit": "$ million",
+        "categories": [
+          "Brand L",
+          "Brand K",
+          "Brand J",
+          "Brand I",
+          "Brand H",
+          "Brand G",
+          "Brand F",
+          "Brand E",
+          "Brand D",
+          "Brand C",
+          "Brand B",
+          "Brand A"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              4,
+              1,
+              9,
+              5,
+              3,
+              25,
+              11,
+              1,
+              36,
+              15,
+              7,
+              2
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 40,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of sales representatives by brand",
+        "unit": "Sales representatives",
+        "categories": [
+          "Brand L",
+          "Brand K",
+          "Brand J",
+          "Brand I",
+          "Brand H",
+          "Brand G",
+          "Brand F",
+          "Brand E",
+          "Brand D",
+          "Brand C",
+          "Brand B",
+          "Brand A"
+        ],
+        "series": [
+          {
+            "name": "Number of sales representatives",
+            "values": [
+              8,
+              2,
+              10,
+              7,
+              6,
+              43,
+              12,
+              3,
+              39,
+              32,
+              9,
+              5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 50,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "If total revenue in Exhibit 2 grew at 3% per year from now and Brand D's revenue grew at 7%, which of the following would be the MINIMUM period after which Brand D accounts for more than half of total revenue?",
+    "options": [
+      "10 years",
+      "15 years",
+      "20 years",
+      "25 years"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Total revenue is $119m, of which Brand D brings in $36m (30.3%).",
+      "Each year Brand D's share rises by a factor of 1.07 ÷ 1.03 ≈ 1.039.",
+      "The share must rise from 30.3% to 50%, a factor of 1.65: ln 1.65 ÷ ln 1.039 ≈ 13.2 years.",
+      "So 10 years falls short and 15 years is the first option long enough."
+    ],
+    "shortcut": "Rule of 72: at about 3.9% relative growth the share doubles in roughly 18 years; it needs only about 1.65 times, well under a doubling, so about 13 years.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "36 * pow(1 + 7 / 100, 10) > (2 + 7 + 15 + 36 + 1 + 11 + 25 + 3 + 5 + 9 + 1 + 4) * pow(1 + 3 / 100, 10) / 2 ? -10 : -1000",
+        "36 * pow(1 + 7 / 100, 15) > (2 + 7 + 15 + 36 + 1 + 11 + 25 + 3 + 5 + 9 + 1 + 4) * pow(1 + 3 / 100, 15) / 2 ? -15 : -1000",
+        "36 * pow(1 + 7 / 100, 20) > (2 + 7 + 15 + 36 + 1 + 11 + 25 + 3 + 5 + 9 + 1 + 4) * pow(1 + 3 / 100, 20) / 2 ? -20 : -1000",
+        "36 * pow(1 + 7 / 100, 25) > (2 + 7 + 15 + 36 + 1 + 11 + 25 + 3 + 5 + 9 + 1 + 4) * pow(1 + 3 / 100, 25) / 2 ? -25 : -1000"
+      ]
+    }
+  },
+  {
+    "id": "bk-sample-q07-d",
+    "modelledOn": "sample-q07",
+    "skill": "growth-trends",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Skillbridge sells online training courses to companies, which pay a yearly licence fee for each employee enrolled. Revenue has climbed strongly since 2003, but Skillbridge has yet to make money."
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 2 gives the revenue earned by each course in 2013 and the number of trainers assigned to each course. No trainer works on more than one course."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Revenue by course, 2013",
+        "unit": "$ million",
+        "categories": [
+          "Course L",
+          "Course K",
+          "Course J",
+          "Course I",
+          "Course H",
+          "Course G",
+          "Course F",
+          "Course E",
+          "Course D",
+          "Course C",
+          "Course B",
+          "Course A"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              8,
+              10,
+              7,
+              11,
+              3,
+              9,
+              22,
+              2,
+              12,
+              5,
+              38,
+              46
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 50,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of trainers by course",
+        "unit": "Trainers",
+        "categories": [
+          "Course L",
+          "Course K",
+          "Course J",
+          "Course I",
+          "Course H",
+          "Course G",
+          "Course F",
+          "Course E",
+          "Course D",
+          "Course C",
+          "Course B",
+          "Course A"
+        ],
+        "series": [
+          {
+            "name": "Number of trainers",
+            "values": [
+              7,
+              11,
+              9,
+              10,
+              6,
+              12,
+              35,
+              4,
+              20,
+              8,
+              44,
+              51
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 60,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Total revenue in Exhibit 2 is forecast to grow by 5% a year, and revenue from Course A by 9% a year. On that basis, which of the following would be the MINIMUM length of time before Course A accounts for more than half of total revenue?",
+    "options": [
+      "10 years",
+      "15 years",
+      "20 years",
+      "25 years"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Total revenue is $173m, of which Course A brings in $46m (26.6%).",
+      "Each year Course A's share rises by a factor of 1.09 ÷ 1.05 ≈ 1.038.",
+      "The share must rise from 26.6% to 50%, a factor of 1.88: ln 1.88 ÷ ln 1.038 ≈ 16.9 years.",
+      "So 15 years falls short and 20 years is the first option long enough."
+    ],
+    "shortcut": "Rule of 72: at about 3.8% relative growth the share doubles in roughly 19 years; it needs a little less than a doubling, about 17 years, so more than 15.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "46 * pow(1 + 9 / 100, 10) > (46 + 38 + 5 + 12 + 2 + 22 + 9 + 3 + 11 + 7 + 10 + 8) * pow(1 + 5 / 100, 10) / 2 ? -10 : -1000",
+        "46 * pow(1 + 9 / 100, 15) > (46 + 38 + 5 + 12 + 2 + 22 + 9 + 3 + 11 + 7 + 10 + 8) * pow(1 + 5 / 100, 15) / 2 ? -15 : -1000",
+        "46 * pow(1 + 9 / 100, 20) > (46 + 38 + 5 + 12 + 2 + 22 + 9 + 3 + 11 + 7 + 10 + 8) * pow(1 + 5 / 100, 20) / 2 ? -20 : -1000",
+        "46 * pow(1 + 9 / 100, 25) > (46 + 38 + 5 + 12 + 2 + 22 + 9 + 3 + 11 + 7 + 10 + 8) * pow(1 + 5 / 100, 25) / 2 ? -25 : -1000"
+      ]
+    }
+  }
+]

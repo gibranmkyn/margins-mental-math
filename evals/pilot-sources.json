@@ -1,0 +1,72 @@
+{
+  "about": "The pilot: 25 booklet questions, 4 candidates each (letters a to d), 100 candidates in all, split into 5 writer groups of similar workload. Chosen so the set matches the booklets' mix of skill, tier, option kind, chart/no-chart, charts read from gridlines and 'closest' prompts, touches all 8 booklets and all 9 chart kinds, and takes at most 2 questions from any one case and never two that show the same context. See evals/README.md, 'The pilot'.",
+  "variantsPerSource": 4,
+  "letters": ["a", "b", "c", "d"],
+  "groups": [
+    {
+      "group": 1,
+      "sources": [
+        { "id": "sample-q04", "skill": "testing-statements", "tier": 2, "options": "statement", "charts": ["bar", "bar"] },
+        { "id": "bcg-q04", "skill": "unit-economics", "tier": 3, "options": "numeric", "charts": ["line"], "table": true, "readFromGridlines": true },
+        { "id": "pracA-q03", "skill": "testing-statements", "tier": 2, "options": "statement", "charts": ["waterfall"] },
+        { "id": "pracA-q25", "skill": "building-formulas", "tier": 3, "options": "numeric", "charts": [], "table": true, "closest": true },
+        { "id": "pracC-q17", "skill": "percentages-in-context", "tier": 2, "options": "numeric", "charts": [], "table": true }
+      ]
+    },
+    {
+      "group": 2,
+      "sources": [
+        { "id": "pst3-q20", "skill": "testing-statements", "tier": 3, "options": "statement", "charts": ["stacked-bar-100"], "readFromGridlines": true },
+        { "id": "pracB-q02", "skill": "testing-statements", "tier": 2, "options": "statement", "charts": ["indexed-line"], "table": true, "readFromGridlines": true },
+        { "id": "pst1-q06", "skill": "unit-economics", "tier": 2, "options": "statement", "charts": [] },
+        { "id": "pst1-q26", "skill": "expected-value", "tier": 2, "options": "ranking", "charts": ["scatter"], "readFromGridlines": true, "closest": true },
+        { "id": "pracB-q05", "skill": "break-even-payback", "tier": 3, "options": "numeric", "charts": [], "table": true }
+      ]
+    },
+    {
+      "group": 3,
+      "sources": [
+        { "id": "pst2-q03", "skill": "growth-trends", "tier": 3, "options": "label", "charts": ["line"], "table": true, "readFromGridlines": true },
+        { "id": "pracB-q11", "skill": "testing-statements", "tier": 2, "options": "statement", "charts": ["pie", "pie"] },
+        { "id": "pst2-q19", "skill": "percentages-in-context", "tier": 3, "options": "numeric", "charts": ["line"], "readFromGridlines": true, "closest": true },
+        { "id": "sample-q09", "skill": "building-formulas", "tier": 2, "options": "formula", "charts": [] },
+        { "id": "pst2-q15", "skill": "ratios-comparisons", "tier": 1, "options": "ranking", "charts": [], "table": true }
+      ]
+    },
+    {
+      "group": 4,
+      "sources": [
+        { "id": "pracA-q14", "skill": "unit-economics", "tier": 2, "options": "numeric", "charts": ["bar"], "table": true },
+        { "id": "pst1-q15", "skill": "testing-statements", "tier": 3, "options": "statement", "charts": ["cumulative"] },
+        { "id": "pst3-q24", "skill": "ratios-comparisons", "tier": 2, "options": "numeric", "charts": ["stacked-bar-100"], "closest": true },
+        { "id": "pst1-q07", "skill": "testing-statements", "tier": 2, "options": "statement", "charts": [], "table": true },
+        { "id": "bcg-q12", "skill": "averages-mixes", "tier": 3, "options": "numeric", "charts": [], "table": true }
+      ]
+    },
+    {
+      "group": 5,
+      "sources": [
+        { "id": "pst3-q04", "skill": "percentages-in-context", "tier": 2, "options": "numeric", "charts": ["bar"] },
+        { "id": "pracA-q07", "skill": "percentages-in-context", "tier": 2, "options": "numeric", "charts": ["stacked-bar"], "closest": true },
+        { "id": "pst1-q11", "skill": "testing-statements", "tier": 2, "options": "statement", "charts": ["pie", "stacked-bar-100"] },
+        { "id": "pracC-q23", "skill": "percentages-in-context", "tier": 2, "options": "statement", "charts": [] },
+        { "id": "pracC-q22", "skill": "break-even-payback", "tier": 2, "options": "numeric", "charts": [], "closest": true }
+      ]
+    }
+  ],
+  "excluded": [
+    { "id": "pst2-q13", "why": "Options are figures that 'cannot be determined from the data'; no check kind can verify what is not determinable." },
+    { "id": "pracA-q15", "why": "Same as pst2-q13: which measure cannot be calculated." },
+    { "id": "pst3-q07", "why": "Same as pst2-q13: which measure cannot be calculated." },
+    { "id": "bcg-q01", "why": "Three numbers and a 'None of the above / we lack sufficient information' option; a value check needs a number in every option." },
+    { "id": "pracA-q16", "why": "The booklet's key is disputed (see its note): a source with two defensible answers." },
+    { "id": "pracC-q19", "why": "The redrawn chart and the booklet's worked solution read the days differently (see its note)." },
+    { "id": "pracC-q13", "why": "Options are inequalities (r < t×n + l×w); the formula check compares values and cannot test an inequality." },
+    { "id": "pracC-q24", "why": "Statements are judgements ('InCo should increase premiums'), not claims a truth check can test." },
+    { "id": "pracA-q12", "why": "Statements are qualitative inferences ('is an indicator of their value'), not arithmetic claims." },
+    { "id": "pracB-q20", "why": "Statements infer how a rating is built; a truth check could only restate the solution." },
+    { "id": "pracC-q20", "why": "Statements are deductions about minimum staffing; a truth check could only restate the solution." },
+    { "id": "pst2-q05", "why": "Modelled on in the worked examples of evals/WRITING.md; left out so no writer starts from an example." },
+    { "id": "pracC-q21", "why": "Modelled on in the worked examples of evals/WRITING.md; left out so no writer starts from an example." }
+  ]
+}

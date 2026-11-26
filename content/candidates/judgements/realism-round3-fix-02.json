@@ -1,0 +1,12 @@
+[
+  { "id": "j-e1e698e0", "judge": "realism", "fail": false, "why": "A carmaker surveying 51,000 drivers (17,000 owners plus 34,000 others) is believable, and every rating distribution in the four charts adds to 100%." },
+  { "id": "j-b50a02a2", "judge": "realism", "fail": false, "why": "A heritage railway collecting 2,600 reply cards in a month is believable, and both pies (45/40/15 and 80/15/5) add to 100%." },
+  { "id": "j-a59a1c29", "judge": "realism", "fail": false, "why": "All four score distributions add to 100%, and 900 respondents being 18% of enrolment implies a campus of about 5,000 students, which suits a business school." },
+  { "id": "j-a8643a38", "judge": "realism", "fail": false, "why": "A city botanic garden gathering 3,900 exit replies over six weekends is believable, and both pies (40/45/15 and 70/20/10) add to 100%." },
+  { "id": "j-f7a71363", "judge": "realism", "fail": false, "why": "In-store tastings with 25,000 shoppers (9,000 plus 16,000) are believable for a drinks brand across many stores, and all eight rating distributions add to 100%." },
+  { "id": "j-89f3f96f", "judge": "realism", "fail": false, "why": "Half-year revenue of $252 to $267 million matches over $500 million a year, about $175k of revenue per employee suits a uniform rental firm with 2,900 staff, and revenue times the margin index gives annual profit falling from 2008 to 2010 as stated." },
+  { "id": "j-b3251ad3", "judge": "realism", "fail": false, "why": "Overseas market shares of 0.3% to 7.3% fit a firm that sells little abroad, and profit margins of 12% to 44% are high for paint but within a factor of a few of what it could report." },
+  { "id": "j-4aef89a6", "judge": "realism", "fail": false, "why": "The potter numbers agree (0.5 plus 2 extra makes 2.5, and the step chart gives 0.5 potters for 31 bowls and 2.5 for 147), and about 2.5 hours per hand-thrown bowl is slow but within a factor of a few of a small studio's rate." },
+  { "id": "j-3d677c5a", "judge": "realism", "fail": false, "why": "A rural racing circuit collecting 6,500 survey sheets over three meetings, with only 5% local spectators, is believable, and both pies add to 100%." },
+  { "id": "j-a71779b9", "judge": "realism", "fail": false, "why": "Profit equals revenue minus costs in both periods, the average days per month (30.3 and 30.6) match the calendar, and about $7 of revenue per case is believable for a bottler." }
+]

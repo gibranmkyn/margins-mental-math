@@ -1,0 +1,12 @@
+[
+  {"id":"j-45429e9b","judge":"ambiguity","fail":false,"why":"Only C holds: revenue per order is Q2 $26.4, Q1 $28.3, Q4 $29.6, Q3 $31.7, Q5 $31.9, and the one close pair (Q3 and Q5) is never printed the other way round in any option."},
+  {"id":"j-bb136c0a","judge":"ambiguity","fail":false,"why":"Only A is incorrect: younger shoppers' mean aftertaste rating is 3.15 against 2.67 for older shoppers, while B (6,750 vs 9,760 fives), C (90% vs at most 75%) and D (fizz mean 3.52 vs 3.00) all hold."},
+  {"id":"j-12f4c9e8","judge":"ambiguity","fail":false,"why":"D: total revenue $133m over 350 brokers is exactly $380,000, and even a simple average of the team figures ($365k) is not printed as an option."},
+  {"id":"j-87d76a3b","judge":"ambiguity","fail":false,"why":"C: the indirect lifts add up to 1.5 percentage points, and 1.5% of $540bn is $8.1bn; no other reading (direct 0.7 gives $3.8bn, compounding gives about $87bn) lands on a second option."},
+  {"id":"j-5fdbb538","judge":"ambiguity","fail":false,"why":"Only A holds: 2008 profit index 262x100 + 267x97 = 52,099 against 2010's 252x96.5 + 256x97 = 49,150 is 6.0% higher (5.7% to 6.3% across reasonable readings of 96.5), while B and C are false and D gives 13/3 = 4.3, not four."},
+  {"id":"j-d80fc35b","judge":"ambiguity","fail":false,"why":"Only A holds: Country 6's margin (about 43.6%) is clearly the highest, while B gives about 2x rather than 3x, and C and D need market sizes the chart says it does not give."},
+  {"id":"j-ef2d76de","judge":"ambiguity","fail":false,"why":"D: servicing saves $144 - $120 = $24 a year and electricity saves 250 kWh x $0.12 = $30, so $54 x 3 = $162."},
+  {"id":"j-bae30206","judge":"ambiguity","fail":true,"why":"108 and 144 bowls sit exactly on step edges, and the chart's points put 108 at 2.0 and 144 at 2.5 potters; on that reading C (2.0 potters for 144) and D (1.5 for 108) both fall short and tie for least, while on the capacity reading (36 bowls per half potter) both reach 72 bowls per potter and A (63.2) is least."},
+  {"id":"j-b0c3cc23","judge":"ambiguity","fail":false,"why":"Only A is true: new-customer fixed-line plus TV is 0.4 of 1.9 = 21%, while B (15%), C (26%) and D (57%) all fail their thresholds."},
+  {"id":"j-88826e8b","judge":"ambiguity","fail":false,"why":"A: May-June takes 79 h x 60 / 77 = 61.6 minutes per dog and July takes 395 h x 60 / 367 = 64.6, a difference of 3.0 minutes."}
+]

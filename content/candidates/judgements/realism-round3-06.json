@@ -1,0 +1,12 @@
+[
+  {"id": "j-ab5aa440", "judge": "realism", "fail": false, "why": "A language-learning software market of about $490 million split across individuals, schools and employers, with modest growth forecasts, is believable."},
+  {"id": "j-fc801488", "judge": "realism", "fail": false, "why": "Sector gains of 0.2 to 0.7 percentage points of GDP growth over 10 years from apprenticeships, applied to a $450bn economy, are believable, and the 100% bars only show each sector's direct and indirect split of those points."},
+  {"id": "j-49218916", "judge": "realism", "fail": false, "why": "All four score pies sum to 100%, and 1,100 respondents making up 22% of a tool-hire depot's roughly 5,000 accounts is believable."},
+  {"id": "j-50597517", "judge": "realism", "fail": false, "why": "A fast-growing satellite crop-mapping firm with revenue rising from $28m to $134m and losses narrowing from -149% to -14% is a believable loss-making growth company."},
+  {"id": "j-0cb109e0", "judge": "realism", "fail": false, "why": "Outdoor brands with 11 to 18 tent models making $3m to $14m in tent profits is believable."},
+  {"id": "j-c9efffc0", "judge": "realism", "fail": false, "why": "An online wine merchant with 350,000 new customers, orders of about $64 to $76 and first-year profit of $1 to $34 per customer fits a thin-margin retailer."},
+  {"id": "j-068ca98c", "judge": "realism", "fail": false, "why": "Engine oil at $12 to $14 a litre to garages is high but within a factor of two of trade prices, and orders of 20 crates worth about $1,000 to $4,000 are believable."},
+  {"id": "j-63866583", "judge": "realism", "fail": false, "why": "Market shares of 0.3% to 7.7% and profit margins of 8% to 33% for a solar panel maker's foothold markets are believable."},
+  {"id": "j-9d02d9b0", "judge": "realism", "fail": false, "why": "A university-town bike workshop with about €41,000 monthly revenue from roughly 720 repairs (about €58 each) is believable, and the stated margins match revenue minus costs."},
+  {"id": "j-eeb3e10f", "judge": "realism", "fail": false, "why": "52,000 claims from 40.5k landlords (the groups add up), with about £12.5m in handling costs, works out to about £240 per claim, which is believable for a landlord insurer."}
+]

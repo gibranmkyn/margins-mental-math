@@ -1,0 +1,12 @@
+[
+  {"id": "j-61c221c9", "judge": "realism", "fail": false, "why": "A linen-service survey of about 4,700 restaurants and hotels in which each stage (aware, considered, ever used, use now) stays no larger than the one before it is believable."},
+  {"id": "j-bae6f0e3", "judge": "realism", "fail": false, "why": "A questionnaire to 28,000 buyers of a new cordless vacuum, with every rating split adding to 100% for both groups, is believable."},
+  {"id": "j-dde67262", "judge": "realism", "fail": false, "why": "A pest-control firm with 44.2k customers (the group counts add to this), 160,000 treatments a year, £16.9m of total treatment cost and cost per customer falling from Group A to Group E is consistent and believable."},
+  {"id": "j-220a42d4", "judge": "realism", "fail": false, "why": "An airline seat trial with 40,000 travellers, where every grade split adds to 100% for both groups, is large but believable."},
+  {"id": "j-7b40dc14", "judge": "realism", "fail": true, "why": "Members are grouped into quintiles by how often they train, yet Quintile 2 averages more sessions than Quintile 3 in both years (43 vs 36 in 2010, 30 vs 28 in 2011), which frequency-ranked quintiles cannot show."},
+  {"id": "j-e3d77507", "judge": "realism", "fail": false, "why": "An outlet village interviewing 8,000 shoppers over four weekends, with both pie splits adding to 100%, is believable."},
+  {"id": "j-73fd1f64", "judge": "realism", "fail": false, "why": "A dental chain with about 60,000 appointments and €5.8m revenue a month (about €95 per appointment), about 25 opening days a month and profit equal to revenue minus costs in both columns is believable."},
+  {"id": "j-9a05a7e6", "judge": "realism", "fail": false, "why": "Coffee chains using about 2,500 to 3,300 kg of beans per shop a year, with cost shares and margin adding to 100% for both, are believable."},
+  {"id": "j-084db46b", "judge": "realism", "fail": false, "why": "A robot maker with €161m revenue across 12 robot types and 368 engineers (about €440k revenue per engineer) is believable."},
+  {"id": "j-41ba08ef", "judge": "realism", "fail": false, "why": "An e-bike leasing territory of about 1.06 million workers, most not yet contacted and with contact concentrated at large companies, is believable."}
+]

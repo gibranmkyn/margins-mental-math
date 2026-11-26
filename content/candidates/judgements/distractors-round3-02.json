@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-5039bc08",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is a near-miss (rubber +16% against margin -14%, and the unlabelled November margin read a gridline low makes them match), C is the revenue-read-as-profit slip, and D on tire prices is the one statement without basis that sourceHas allows; no slip lands on the 5% figure in B."
+  },
+  {
+    "id": "j-a29ef242",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B takes the 30% hotel share on the wrong base (of all respondents, not the 75%), D over-reads 'main reason' as 'only reason', and C on spending is the one statement without basis that sourceHas allows."
+  },
+  {
+    "id": "j-9dd59a9a",
+    "judge": "distractors",
+    "fail": false,
+    "why": "D's 21% is hybrid's share read from the 'in 5 years' column (7.2 / 33.8), C's 'twice' comes from comparing absolute yearly increases (0.6bn against 0.3bn) rather than rates, and B over-reads hybrid's fast growth as overtaking the rest; this is a close call because the extrapolation in B is far from true once you compute it."
+  },
+  {
+    "id": "j-da60a543",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A, D, C, B and D, A, B, C each come from swapping the profits of the two rows that share a product count (A/D or B/C); C, D, A, B is the one ranking filler sourceHas allows; ranking by profit alone landing on the correct order matches the slip sourceHas names."
+  },
+  {
+    "id": "j-294ae17e",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A (similar share and margin read as similar profit), C (largest share read as highest margin) and D (smallest share read as smallest sales) are fair over-readings; misreading a margin by half a gridline or taking the neighbouring point still gives 'about 3 times', which matches the slips sourceHas names; close because the same misreading applied to Country 1 rather than the lower country is not literally the slip sourceHas names."
+  },
+  {
+    "id": "j-43eb14cf",
+    "judge": "distractors",
+    "fail": false,
+    "why": "188 thousand is the drop in transactions completed at self-checkout (49% x 1,836 - 40% x 1,779), and 245 and 302 carry on the 57-thousand spacing, as the two numeric fillers in sourceHas do; ignoring the volume change gives about 160 to 165, which is not 131."
+  },
+  {
+    "id": "j-76879197",
+    "judge": "distractors",
+    "fail": false,
+    "why": "C ranks by revenue alone, B ranks by developer count alone, and D comes from reading B's or C's revenue off the bar next to it, which swaps B and C; the adjacent-bar slip that keeps the correct order is one sourceHas names."
+  },
+  {
+    "id": "j-0e0bf746",
+    "judge": "distractors",
+    "fail": false,
+    "why": "C (Line F) ranks by total growth while ignoring the split, D (Line J) ranks Load per call by its share alone, and A's 31% is the average of the ten Ship calls shares read as growth; close because that averaging slip is a stretch."
+  },
+  {
+    "id": "j-ed10ac94",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options sit within about 10% of 159 as a tight set: 153 rounds 83% down to 80% (192 x 0.8), 175 takes off 17 instead of 17% (or uses 70,000 / 400), and 145 rounds 365 days up to 400 before applying 83%; close because the set is not evenly spaced and the slips behind 145 and 153 are coarse roundings."
+  },
+  {
+    "id": "j-efea7b6b",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are all four years on offer (2008 for reading margin alone or the fixed-line series, 2011 for growth in mobile profit, 2010 as the label filler sourceHas allows); comparing mobile profits without the sales base lands on 2009, which matches the slip sourceHas names."
+  }
+]

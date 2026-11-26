@@ -1,0 +1,12 @@
+[
+  { "id": "j-9319ab6f", "judge": "ambiguity", "fail": false, "why": "Only A holds: bite wound, eye injury and poisoning are 20% of the 32% in urgent care, i.e. 6.4% of all animals, while stomach upset is 8.0% (B), skin condition 5.8% (C) and D has no data behind it." },
+  { "id": "j-0f152016", "judge": "ambiguity", "fail": false, "why": "Threshold answer C: hand costs $3 + $1/kg a day, the machine $10 + $0.30/kg + $14 (13,720/980), so break-even is exactly 30 kg and 31 kg is the first option at which the machine pays." },
+  { "id": "j-e4e2ee9d", "judge": "ambiguity", "fail": false, "why": "Only C holds: 3,937/5,530 = 71.2% against 1,820/3,684 = 49.4% is a gap of 21.8 points, and the question asks explicitly for points." },
+  { "id": "j-be4a2b02", "judge": "ambiguity", "fail": false, "why": "Only D holds: medical charities give $21m of the $34m from charities and gifts (61.8%), while the health ministry is 6.5%, public funding 97/153 = 63% and research councils 38%." },
+  { "id": "j-cab39457", "judge": "ambiguity", "fail": false, "why": "Only D holds: of $125m at B and C, buildings take $73.75m (59%), equipment $28.75m (23%), IT $14.25m (11%) and other $8.25m (7%), so the three named types take 93%; all segments sit on gridlines or halfway between them." },
+  { "id": "j-3222f422", "judge": "ambiguity", "fail": false, "why": "Only B holds: the share falls from 200/1,450 = 13.8% to 220/2,150 = 10.2%, 3.56 points over three years or 1.19 a year, with every value on a gridline or halfway between two." },
+  { "id": "j-eba402f6", "judge": "ambiguity", "fail": false, "why": "Only D holds: profit per practice is D 0.13, B 0.20, C 0.37 and A 0.47 ($m), with no ties." },
+  { "id": "j-8230cd86", "judge": "ambiguity", "fail": false, "why": "Only C holds: legal cover brings 94,000 x $29 = $2,726,000, leaving $1,664,000 = 41,600 x the basic fee, so basic is $40 and full $80." },
+  { "id": "j-e6b55a50", "judge": "ambiguity", "fail": false, "why": "Only A holds: 35% of the 80% who came mainly for the park is 28% of riders, while C confuses bases (57% of 80% is 46%), D turns 'main purpose' into 'no other purpose' and B infers spending the data does not show." },
+  { "id": "j-eeaecab4", "judge": "ambiguity", "fail": false, "why": "Only A holds: Hidden objects earns $27m/52 = $0.52m per developer against Solitaire's $31m/66 = $0.47m, while B is 58/120 = 48%, C needs costs and D is a tie at $0.50m each." }
+]

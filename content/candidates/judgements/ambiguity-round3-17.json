@@ -1,0 +1,12 @@
+[
+  {"id":"j-201375ff","judge":"ambiguity","fail":false,"why":"Only D holds: revenue per translator is C 0.183, A 0.161, E 0.147, D 0.128, B 0.087 ($m), giving C, A, E, D, B with no ties."},
+  {"id":"j-4f84c8e2","judge":"ambiguity","fail":false,"why":"Only D is true: flavoured is 2.3 of 16.5 = 13.9% today; C fails because still grows 13.8% against sparkling's 21.8% (equal only in absolute terms, a trap under the relative-rate convention), B's ratio is about 3x not 2x, and A fails (about 12.7 vs 19.4 in ten years)."},
+  {"id":"j-f279fb6a","judge":"ambiguity","fail":false,"why":"Only B holds: 4,860 min / 50 = 97.2 min per chair in April-May against 24,300 / 233 = 104.3 in June, a 7.1-minute difference, with the next options 5 minutes away."},
+  {"id":"j-bb11e2bf","judge":"ambiguity","fail":false,"why":"Only D holds: fees per pound are B 14.34, C 14.08, E 11.20, D 8.88, A 7.35 from labelled values, giving B, C, E, D, A."},
+  {"id":"j-0bd8d0ff","judge":"ambiguity","fail":false,"why":"B (30%) is closest: the 10% weight loss adds 1.06/0.9 - 1.06 = €0.118 per kg (or €0.106 on the simpler 10% reading), 30-34% of the €0.35 cost, both nearer 30% than 40%."},
+  {"id":"j-86be1ed4","judge":"ambiguity","fail":false,"why":"Only A holds: 3/5 of 900,000 = 540,000 single-visit shoppers make 540,000 of 2,000,000 visits = 27%; 60% is the share of people, a trap."},
+  {"id":"j-1e492523","judge":"ambiguity","fail":false,"why":"B (2950 hours) is the threshold: the switch saves $12,400 + $37,900 = $50,300, which buys 50,300 / 17 = 2,959 upholsterer hours, so 2,950 is the highest option still worthwhile (3,300 would exceed the saving, and comes only from wrongly counting the whole $57,400)."},
+  {"id":"j-813c8145","judge":"ambiguity","fail":false,"why":"Only C holds: on gridline-exact readings gold rises 100 to 120 (+20%) while the margin index falls 100 to 80 (-20%); February profit is 0.85 x 2,804/2,615 = 0.91 of October's, so A and D fail, and B has no data."},
+  {"id":"j-77db1125","judge":"ambiguity","fail":false,"why":"Only C holds: 5,280 min / 46 = 114.8 min per frame in January-February against 26,400 / 215 = 122.8 in March, an 8.0-minute difference."},
+  {"id":"j-3ea6d996","judge":"ambiguity","fail":false,"why":"Only D holds: margins are 10.2/63.7 = 16.0% and 4.8/69.1 = 6.9%, a gap of 9.07 points, and the next option is 1.5 points away."}
+]

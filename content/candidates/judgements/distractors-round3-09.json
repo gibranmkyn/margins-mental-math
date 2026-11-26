@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-bdaeff11",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A takes the absolute count of contacted workers (17.1k, the fewest) in place of the share, D misreads which column holds the largest uncontacted group (medium 208.2k beats large 177.5k), and B (savings, which the data never gives) is the one statement without basis that sourceHas allows."
+  },
+  {
+    "id": "j-80fe2ed3",
+    "judge": "distractors",
+    "fail": true,
+    "why": "6.4% has no slip behind it, and it does not pass as the listed filler: the note says a divide-instead-of-multiply slip comes within about 4% of it, but 74% ÷ 18% gives 4.1 (and 18% ÷ 74% gives 24%), nowhere near 6.4%. 5.2% (scores 1-2 only, 29% × 18%) and 1.3% (a factor of 10) are both slips."
+  },
+  {
+    "id": "j-5ab8604c",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A's 41% leaves carbon permits out of fleet and airports (376 ÷ 908), B is a near miss (4.1% against 5%), easy to get wrong on a rough estimate or on a base without fuel, and C's 16% puts ground handling in with staff (52 ÷ 327); no common slip makes D the only true statement."
+  },
+  {
+    "id": "j-fe0ed313",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B, C and D are true statements that a candidate drops as false after a common slip: using the cumulative % in place of the group's own step makes B, C and D look false, and leaving out the fixed or the per-call cost makes them all look false; no slip leaves A as the only false statement."
+  },
+  {
+    "id": "j-6fff3306",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A reads both lines sitting at 100 as hours matching cars, C is a near miss (41% in Week 0 against 45% in Week 1) that a gridline misread turns true, and D turns true if the adjacent pair of weeks is read (Week -2 to -1); the slips that still leave B true are the ones sourceHas lists."
+  },
+  {
+    "id": "j-4d8b2075",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A forgets to scale the pie by the gym's 48%, C scales the right slices (35%) by the wrong bar (pool's 30% gives 10.5%), and D (moving on to a class afterwards) is the one statement without basis that sourceHas allows."
+  },
+  {
+    "id": "j-8950d888",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A uses the second pie's 20% on the wrong base (it applies to the 40%, so it should be 8%), B over-reads 'main reason' as 'only reason', and D (money spent) is the one statement without basis that sourceHas allows."
+  },
+  {
+    "id": "j-b7e67ea4",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1,400 skips the first pie (35% of 4,000), 112 is the answer out by a factor of 10, and 800 skips the first pie and also takes the wrong slice (coach party's 20% of 4,000), which is two slips."
+  },
+  {
+    "id": "j-eea30479",
+    "judge": "distractors",
+    "fail": true,
+    "why": "Forgetting that royalties rise with revenue (leaving out the cost the stem tells you to scale) still gives A as the best option ($2.74m against $1.18m and $0.99m), so a candidate who makes that slip is marked right, and sourceHas does not name this slip."
+  },
+  {
+    "id": "j-342c0227",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$165, $175, $185 and $195 form a tight, evenly spaced grid (steps of about 6% of the answer) on a maximum-price question, matching the three grid fillers listed. Pricing each visit at the hourly rate also lands on $165 ($56 − $42 = $14), but sourceHas names that slip as landing on the source's correct option too."
+  }
+]

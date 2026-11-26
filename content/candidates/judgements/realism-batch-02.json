@@ -1,0 +1,12 @@
+[
+  { "id": "j-dee37b77", "judge": "realism", "fail": false, "why": "Both bike-share operators' cost shares and margins sum to 100%, and 18,500 bikes, 950 stations and 240,000 members is a believable city scheme." },
+  { "id": "j-75ffed98", "judge": "realism", "fail": false, "why": "The group user counts add to the stated 24k, and a GBP 5.5 million desk cost (GBP 2.8m fixed plus 90,000 tickets at GBP 30) giving about GBP 230 per user is believable for a large university." },
+  { "id": "j-b50131ca", "judge": "realism", "fail": false, "why": "The group member counts add to the stated 88k, and GBP 9.6 million of cost over 1.2 million visits (about 14 visits per member) is believable for a town's council-run pools and gyms." },
+  { "id": "j-93c742b3", "judge": "realism", "fail": false, "why": "183,000 checking accounts, a $24 card fee and package fees in the tens to low hundreds of dollars are consistent with the stated $7.35 million fee income and believable for a bank." },
+  { "id": "j-ede2c6ec", "judge": "realism", "fail": false, "why": "Both dental chains' cost shares and margins sum to 100%, and about 7 chairs per clinic and 330 to 340 patients per chair are believable." },
+  { "id": "j-a3ed4213", "judge": "realism", "fail": false, "why": "250,000 new customers with first-year profits of $0.50 to $22.50 on 90-day order revenue of $31 to $196 implies thin but believable bookselling margins." },
+  { "id": "j-bef802c9", "judge": "realism", "fail": false, "why": "Each hospital's two driver shares sum to 100% (a negative share where operations per hour fell is possible), and annual growth of 1.7% to 4.5% is believable." },
+  { "id": "j-385a9f03", "judge": "realism", "fail": false, "why": "Both pies sum to 100%, and 7,500 respondents from 30 concerts at a 9,000-seat arena (about 270,000 attendees) is believable." },
+  { "id": "j-dfd78ba2", "judge": "realism", "fail": false, "why": "A used-car salesperson on salary plus 1.5% sales commission and 10% of finance commission, working 9 hours a day, 5 days a week, 46 weeks a year, is believable." },
+  { "id": "j-e112f31c", "judge": "realism", "fail": false, "why": "Each mode's commuting and leisure figures add to its stated total (68, 55, 46, 25, 12 thousand), believable five-year weekday growth for a large city's transit network." }
+]

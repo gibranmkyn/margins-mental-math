@@ -1,0 +1,12 @@
+[
+  { "id": "j-9935f1c8", "judge": "realism", "fail": false, "why": "A payments processor handling $9 billion to $63 billion a year in each of seven countries, with method shares that add to 100% in every country and 39% to 76% of adults banked, is believable." },
+  { "id": "j-8a73ed95", "judge": "realism", "fail": false, "why": "A toll motorway network seeing about 3.8 to 4.1 million vehicles a month, with a tag funnel that narrows from 79% to 69% (71% to 57% in July), is believable." },
+  { "id": "j-7ceaa3d2", "judge": "realism", "fail": false, "why": "A dog food maker sampling a recipe with 56,000 owners is large but possible, and every rating distribution adds to 100%." },
+  { "id": "j-14a13163", "judge": "realism", "fail": false, "why": "A drinks dispenser using about 2,200 kWh a year at 8c per kWh and needing 3 to 6 maintenance visits a year is believable; the $8 labour rate is low but within a factor of a few." },
+  { "id": "j-9b73b24a", "judge": "realism", "fail": false, "why": "A ski rental shop earning about EUR 60,000 a month from about 1,900 rentals (about EUR 32 each) is believable, and both stated margins match revenue minus costs." },
+  { "id": "j-219aac94", "judge": "realism", "fail": false, "why": "Cost shares and margins add to 100% for both chains, and 10,000 to 15,000 kg of mozzarella per restaurant a year (roughly 200 to 400 pizzas a day) is high but plausible." },
+  { "id": "j-547f3d8f", "judge": "realism", "fail": false, "why": "A helpline outsourcer costing a contract from call volume, calls per agent hour and hourly wage is a believable premise, and no figures are given." },
+  { "id": "j-a56cf6b1", "judge": "realism", "fail": false, "why": "About 1.2 million working adults in one region of a national blood service, with contact concentrated at large employers, is believable." },
+  { "id": "j-c750dedb", "judge": "realism", "fail": false, "why": "An agency with $81 million revenue across twelve accounts and 300 staff (about $270,000 per head) is believable, and a long run of losses is unusual but possible." },
+  { "id": "j-84bc987b", "judge": "realism", "fail": false, "why": "Box-office growth of 1% to 6% a year split into price and admissions shares that sum to 100% is believable, and a share above 100% with falling admissions is possible." }
+]

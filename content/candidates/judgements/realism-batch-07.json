@@ -1,0 +1,12 @@
+[
+  { "id": "j-a486cd65", "judge": "realism", "fail": false, "why": "Tier win rates of 44%, 50% and 59% can average the 50% a league must have, and team revenues of $8 to $39 million with profits under $2.5 million are believable for a professional rugby league." },
+  { "id": "j-ca8b2691", "judge": "realism", "fail": false, "why": "Every country's format shares sum to 100%, and 83,000 to 1.31 million copies a year per country is believable for a children's publisher." },
+  { "id": "j-12ac4d89", "judge": "realism", "fail": false, "why": "Every port's cargo shares sum to 100%, and 24 to 80 million tonnes per port (about 366 million in all) is believable for the main ports of a mid-sized country." },
+  { "id": "j-d04520bc", "judge": "realism", "fail": false, "why": "40 truffle shops taking about $0.86 to $1.08 million a month (roughly $22,000 to $27,000 per shop) is believable, as are the modest index movements." },
+  { "id": "j-ab76af0c", "judge": "realism", "fail": false, "why": "Every region's milk-use shares sum to 100%, and 31 to 150 million litres per region is believable for a dairy co-operative." },
+  { "id": "j-4c3909a2", "judge": "realism", "fail": false, "why": "A food-delivery platform with $460 million revenue, courier payments of 78% and overheads of 26% running a 4% loss is consistent and believable." },
+  { "id": "j-2749ff34", "judge": "realism", "fail": false, "why": "Convenience-store profits of about GBP 38,000 to 158,000 per store across estates of 95 to 160 stores are believable." },
+  { "id": "j-37fc1b9c", "judge": "realism", "fail": false, "why": "Each survey row is a subset no larger than the one above it for both apartments (4,860 to 1,244) and houses (2,915 to 376), so the funnel is consistent." },
+  { "id": "j-7ad6eda7", "judge": "realism", "fail": false, "why": "350,000 new shoppers with first-year contribution of $1 to $31 on 90-day spend of $44 to $263 implies thin but believable pet-supply margins." },
+  { "id": "j-9d3a11ed", "judge": "realism", "fail": false, "why": "Each route's two driver shares sum to 100% (negative where passengers per sailing fell), and yearly growth of 1.8% to 4.6% is believable for a ferry operator." }
+]

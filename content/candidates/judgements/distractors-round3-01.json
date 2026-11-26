@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-d28f63ea",
+    "judge": "distractors",
+    "fail": false,
+    "why": "C (P, T, U, R) ranks by the worst year alone, A and D are the two ranking fillers the source also has, and ranking by peak growth landing on B is the slip the source names; reading the credit-risk or customs row instead ties P and T, so it points equally at B and C, and a stricter reading would count that as a wrong-row slip landing on the answer."
+  },
+  {
+    "id": "j-cb5b94f2",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A holds if a candidate reads the private hire row in place of arcade (294 of 402 is 73%), B looks true if tickets (+24, 16%) are read in place of private hire against food and drink, and D comes from comparing margins instead of revenue-weighted profits; the percentage-point slip leads away from C."
+  },
+  {
+    "id": "j-db0939b0",
+    "judge": "distractors",
+    "fail": false,
+    "why": "Options form a tight $10 grid (about 5% of $183) on a maximum-price question, so neighbours are rough-estimate landings, and the one slip that lands on $183 (pricing each visit at the hourly rate, ignoring time per visit) is the slip the source names."
+  },
+  {
+    "id": "j-c4235341",
+    "judge": "distractors",
+    "fail": false,
+    "why": "€1,971 applies the 6.6-point margin difference (or the Nov-Dec margin) to January revenue, €1,777 applies that margin difference to Nov-Dec costs, and €1,618 is the numeric filler the source allows, continuing the roughly 10% ratio spacing (1,777 ÷ 1,618 = 1.10); leaving out the cost rise gives €1,874, which lands on no option."
+  },
+  {
+    "id": "j-ffd7221c",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B forgets to adjust for sailing days (total passengers fall about 5%), C reverses the sign, D reverses the sign and skips the per-day step, and the wrong-base slip that still gives 3% is the one the source names."
+  },
+  {
+    "id": "j-e5cb0123",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A reverses the comparison (agency hours added 33 points against an 11-point rise in calls), B over-reads both index lines sitting at 100 in Week -3, and D compares point changes (-75 against -100) instead of proportions; reading agency hours as a level instead of a share also lands on C, which only roughly matches the source's named slip of reading the staff line instead of total hours."
+  },
+  {
+    "id": "j-b9f800ba",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are all four countries on offer, and the column slips lead to wrong options (packs alone, cost or price give D; pack size alone gives B), so none lands on C."
+  },
+  {
+    "id": "j-574cb7df",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A holds for the wrong row (farming's 7% beats film and media's 2%), and C extends the forecast trend, which comes true if a candidate projects a decade too far; D (under 10%) needs a candidate to divide 72 by the forecast-year total (768, giving 9.4%) or to mistake farming's 7% growth for its share, a weaker slip that a stricter reading might reject."
+  },
+  {
+    "id": "j-ce01291b",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is a near miss (3.5 times read as 3, or industry profits read half a gridline low), C's 7% is the industry-profits line read in place of Pestora's profits, and D compares revenue only, ignoring the margin dip; no common slip gives a 4% fall (revenue alone or margin alone give 2%)."
+  },
+  {
+    "id": "j-734df947",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A's 27% leaves breakfast (or banqueting) out of food and drink, C's 23% wrongly counts banqueting as an other service (33 of 141), and D is a near-miss threshold (3.6% against 4%); no slip keeps B true without also making a wrong statement true."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": "j-8683c18d", "judge": "ambiguity", "fail": false, "why": "Only A holds: profit of £50m rises 10% to £55m over 141 products, which is £390,071 per product; C applies a 10% fall (£45m) and B and D are tenfold unit slips." },
+  { "id": "j-52e64528", "judge": "ambiguity", "fail": false, "why": "Only A holds: the percentage decreases are Q4 45.5%, Q3 33.3%, Q2 29.5%, Q5 26.9%, Q1 21.1%, giving 4, 3, 2, 5, 1 with no ties." },
+  { "id": "j-befa12da", "judge": "ambiguity", "fail": false, "why": "Only C holds: employees = (h+v)/165, so kg per employee = L×165/(h+v); D divides by 165 instead of multiplying, a trap." },
+  { "id": "j-92188573", "judge": "ambiguity", "fail": false, "why": "C holds as the threshold: the proposal saves $14,000 + $27,600 = $41,600, which buys 2,773 assembler hours at $15, so 2,750 is the highest option that still pays and 3,200 does not." },
+  { "id": "j-6ce93e9d", "judge": "ambiguity", "fail": false, "why": "Only C holds: H2 2010 profit index 149×99 = 14,751 beats H1 2010's 143×100 = 14,300 (even at a 98.75 reading), while A is 8.5 times (17 vs 2, both read exactly), B is about 7% and D is about 3.4%." },
+  { "id": "j-f0c8efd3", "judge": "ambiguity", "fail": false, "why": "Only B holds: employees = (w+n)/38, so orders per employee = k×38/(w+n); A divides by 38 instead, a trap." },
+  { "id": "j-1c4f09a5", "judge": "ambiguity", "fail": false, "why": "Only B holds: drops are Q2 45%, Q3 34.3%, Q5 27.8%, Q4 25%, Q1 14.3%, giving 2, 3, 5, 4, 1 with no ties." },
+  { "id": "j-15bca027", "judge": "ambiguity", "fail": false, "why": "D holds: claims not settled automatically are 41% of 618k = 253.4k versus 53% of 638k = 338.1k, a gap of 84.8k ≈ 85k; narrower readings (engine-only failures, about 33k) match no option." },
+  { "id": "j-1ec3245e", "judge": "ambiguity", "fail": false, "why": "Only B holds: sales per ad dollar are D 18.6, B 13.0, E 10.4, A 7.65, C 7.43, giving D, B, E, A, C." },
+  { "id": "j-779e1722", "judge": "ambiguity", "fail": false, "why": "D holds: April-May is 0.5×170×60/41 = 124.4 min per alteration and June is 2.5×170×60/187 = 136.4 min, a difference of about 12 minutes." }
+]

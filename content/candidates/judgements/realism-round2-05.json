@@ -1,0 +1,12 @@
+[
+  { "id": "j-3fc43e6f", "judge": "realism", "fail": false, "why": "A kitchenware retailer earning £60 million profit across three categories is believable, and the product counts read as stylised product lines, which is how screening tests present them." },
+  { "id": "j-4661f9df", "judge": "realism", "fail": false, "why": "The waterfall parts add to the stated 439 thousand vehicles, and a 27% zero-emission share is high but possible for an advanced-adoption country." },
+  { "id": "j-d9f964fb", "judge": "realism", "fail": false, "why": "Direct and indirect contributions add to each bar's stated total, and 0.4 to 0.8 points of GDP growth per sector over a decade is a believable SEZ effect." },
+  { "id": "j-6f05ded6", "judge": "realism", "fail": false, "why": "A $6 to $7.50 ferry fare against a $6 cost per crossing, with commuters making up to 48 crossings a month (about two per working day), is believable." },
+  { "id": "j-5e36ab17", "judge": "realism", "fail": false, "why": "300,000 visits from 210,000 people, with repeat visitors averaging about five visits each, is believable for a theme park with season-pass holders." },
+  { "id": "j-dc9c8e02", "judge": "realism", "fail": false, "why": "A recruitment agency with 430 consultants and $110 million in fees, about $256,000 per consultant, is believable." },
+  { "id": "j-9d60710a", "judge": "realism", "fail": false, "why": "Hospital sanitiser at $16 to $19 per litre ($5.70 to $8 per bottle), in cartons of 40 with a 1,000-bottle discount threshold, is believable." },
+  { "id": "j-c4a76de6", "judge": "realism", "fail": false, "why": "A software vendor with 325 developers and $117 million revenue, about $360,000 per developer, is believable." },
+  { "id": "j-e0dc013e", "judge": "realism", "fail": false, "why": "A pet chain earning $20 million profit across food, toys and grooming is believable, and the product counts read as stylised product lines." },
+  { "id": "j-f4c60bdb", "judge": "realism", "fail": false, "why": "Hotels using 1.6 GWh a year at $0.11 per kWh, 17% savings split 50/50, and roughly $31 million of implied inflow from about 2,200 clients are believable." }
+]

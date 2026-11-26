@@ -1,0 +1,12 @@
+[
+  {"id":"j-2ce2385e","judge":"ambiguity","fail":false,"why":"Only B holds: total cost is £6.8m + 140,000 x £90 = £19.4m, and Group B's 19% share (24% - 5%) is £3.69m, with the other options at least £0.4m away."},
+  {"id":"j-a73b8d8e","judge":"ambiguity","fail":false,"why":"Only D holds: Cooking and Fashion earn €74m of €145m (51.0%), while profit is not shown (A), Cars earns €0.46m per journalist against Fashion's €0.48m (B), and Travel and Cycling tie at €0.3m (C)."},
+  {"id":"j-87fbd258","judge":"ambiguity","fail":false,"why":"Only D holds: industry takes 41.6 + 3.6 = 45.2 of 140 million cubic metres (32.3%), while households are 34.9% (A), farms 15.1% (B) and the three uses together 82.3% (C), all read from gridline values."},
+  {"id":"j-247e4606","judge":"ambiguity","fail":false,"why":"C (40%): the lost 10% of fruit bought at €2.73 costs €0.30 per kg of hulled fruit (or €0.27 per kg bought), 45% or 40% of the €0.68 hulling cost, and both readings fall nearest 40%."},
+  {"id":"j-9ae8925d","judge":"ambiguity","fail":false,"why":"Only B holds: 270,000 kg costs €1.89m now and €1.76m + €0.25m = €2.01m from the cooperative under the stated tiered price, €120,000 more."},
+  {"id":"j-d98c2848","judge":"ambiguity","fail":false,"why":"Only D holds: £30m x 1.1 = £33m over 164 products gives £201,220 per product."},
+  {"id":"j-c425229e","judge":"ambiguity","fail":false,"why":"Only D holds: B and C together average 47% / 420 = 0.112% of sales per installer against Class A's 0.076%, while A, B and C all fail because Class C (0.433%) outsells A (0.076%) and B (0.058%) per installer."},
+  {"id":"j-6835ea73","judge":"ambiguity","fail":false,"why":"C is the incorrect conclusion: home workers rate the seat cushion higher on average (3.55 against 3.28, and only 10% low marks against 32%), while A (90% vs at most 80%), B (look averages 2.55 against 3.42) and D (12,100 marks of 1 against 8,190) all hold."},
+  {"id":"j-89f4054e","judge":"ambiguity","fail":false,"why":"Only B holds: margins are 2.5/17.9 = 13.97% and 1.2/19.4 = 6.19%, a gap of 7.78 points."},
+  {"id":"j-6692f2bb","judge":"ambiguity","fail":false,"why":"Only A holds: £35m x 1.1 = £38.5m over 153 products gives £251,634 per product."}
+]

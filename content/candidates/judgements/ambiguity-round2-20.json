@@ -1,0 +1,12 @@
+[
+  { "id": "j-6e777b2f", "judge": "ambiguity", "fail": false, "why": "Only C holds: profit per loaf (pr − co) times 1,000 ÷ g loaves per tonne; h is irrelevant and no other option has that form." },
+  { "id": "j-ddbb07f6", "judge": "ambiguity", "fail": false, "why": "Only B holds: annual cost falls from $316 ($84 servicing + $232 power) to $259 ($63 + $196), saving $57 a year, so $171 over three years exactly." },
+  { "id": "j-6c8a1cb4", "judge": "ambiguity", "fail": false, "why": "Only A holds: revenue per engineer is E 0.277, A 0.240, D 0.217, B 0.155, C 0.111 ($m), with no ties." },
+  { "id": "j-46c9f71c", "judge": "ambiguity", "fail": false, "why": "B: Country 8 sits on the 7% gridline with a margin read at about 15%, so revenue $168m times about 15% gives about $25m, and every other option is far off." },
+  { "id": "j-b137eb93", "judge": "ambiguity", "fail": false, "why": "Only C holds: at the basic rate M gives about $44,800 against K $41,300, L $22,600 and N $9,400." },
+  { "id": "j-cf04db02", "judge": "ambiguity", "fail": false, "why": "C: 9,400 × 68% × 73% × 95% ≈ 4,433 paying clients, each paying half of 11% × 17% × $850,000 ≈ $7,948, which comes to about $35.2m." },
+  { "id": "j-3c111cea", "judge": "ambiguity", "fail": false, "why": "B: each office nets $120 − $3.60 recycling = $116.40 a week against $10,800 of truck cost, so a profit first comes at 92.8, i.e. 93 offices, and 94 is the first option at which it holds (90 does not)." },
+  { "id": "j-6b67ebf1", "judge": "ambiguity", "fail": false, "why": "Only C can be concluded: the pool-to-club margin ratios are 2, 4 and 5; B and D need pool revenue, which the table does not give because the visit counts include members who swim free, and A is false since Y has the highest club revenue ($327,600)." },
+  { "id": "j-c33d6f6b", "judge": "ambiguity", "fail": false, "why": "Only C holds: profit per garment rises from €4,186/10,193 = €0.411 to €5,758/9,874 = €0.583, about 42% more." },
+  { "id": "j-af7b81d6", "judge": "ambiguity", "fail": false, "why": "B: 52,000 × 72% = 37,440 vehicles that came only once, divided by 365 days gives 102.6, about 103 a day, and the other options are clearly further away." }
+]

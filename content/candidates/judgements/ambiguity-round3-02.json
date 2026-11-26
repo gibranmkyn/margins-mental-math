@@ -1,0 +1,12 @@
+[
+  {"id":"j-7e9311ce","judge":"ambiguity","fail":false,"why":"Only B holds: September margin index 90 (on a gridline) times revenue 1,569/1,486 = 1.056 gives profit at 0.950 of June, 5% less, while A fails (rubber +16% vs margin -14%) and C and D are false or unsupported."},
+  {"id":"j-65574453","judge":"ambiguity","fail":false,"why":"Only A holds: 75% x 60% = 45% of respondents were day-trippers chiefly there for the zoo; B gives 22.5% not 30%, C cannot be concluded, and D confuses main reason with sole reason."},
+  {"id":"j-2ccaf953","judge":"ambiguity","fail":true,"why":"Read under the convention that rates compared in words are relative, no statement holds: hybrid's yearly growth (11.4% compound, 14.3% simple) is about 3 times foam's past rate (3.9% or 4.1%), not twice, and A's 16.4% vs 15.7% is not the same rate; C is true only if 'yearly rate' means $ billion a year (0.6 vs 0.3), which goes against the convention."},
+  {"id":"j-96132969","judge":"ambiguity","fail":false,"why":"Profit per product is D 0.16, A 0.25, C 0.54, B 0.79, so only option D (D, A, C, B) is correct, with no ties."},
+  {"id":"j-38463bd6","judge":"ambiguity","fail":false,"why":"Only B holds: margin is profit per unit of revenue, 41.3/13.8 = 3.0 (about 2.7-3.4 across reasonable readings), while C is wrong (Country 1 is highest) and A and D need market sizes the exhibit does not give."},
+  {"id":"j-a0dfa980","judge":"ambiguity","fail":false,"why":"A: cashier transactions are 60% x 1,779 = 1,067k in August against 51% x 1,836 = 936k on average, a difference of 131k, and the next option is 57k away."},
+  {"id":"j-74b061c4","judge":"ambiguity","fail":false,"why":"Revenue per developer is D 0.63, A 0.52, E 0.46, B 0.35, C 0.23, so only option A (D, A, E, B, C) is correct, with no ties."},
+  {"id":"j-534dc5da","judge":"ambiguity","fail":false,"why":"Only B holds: Ship-call growth is share x total growth, so Line B at -11.8% x 4.7 = -0.55 points is lowest (Line A -0.31), Line I (2.96) beats F (2.07), Line H's load growth (0.35) is below J's (0.41), and A's 31% is an unweighted average the data cannot support."},
+  {"id":"j-d2083a62","judge":"ambiguity","fail":false,"why":"C: 70,000 x 83% = 58,100 one-time callers / 365 = 159 a day, and the next option is 6 away."},
+  {"id":"j-19856fa4","judge":"ambiguity","fail":false,"why":"B: total sales are profit/margin (1,000, 1,200, 800, 1,000), so mobile profit is 3.0%, 3.3%, 2.5% and 3.0% of sales, and 2009 is the clear highest."}
+]

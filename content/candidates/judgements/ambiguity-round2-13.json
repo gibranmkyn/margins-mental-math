@@ -1,0 +1,12 @@
+[
+  { "id": "j-f56e600b", "judge": "ambiguity", "fail": false, "why": "Only D holds: silo margins over haulage margins run from 10/5 = 2x (Central) to 14/2 = 7x (South), 3.6x overall; A fails (Central has the highest haulage revenue, $1.56m a month), C fails (haulage profit is about $149k a month against about $45k for the silo), and B cannot be concluded because g counts all grain stored, including farmers' unpaid grain, so silo revenue is not s x g." },
+  { "id": "j-55617ff1", "judge": "ambiguity", "fail": false, "why": "B: with the same n for both questions, adding the shares gives 2 = 31+44 = 75, well above 4 = 46 and 3 = 36." },
+  { "id": "j-69f90993", "judge": "ambiguity", "fail": false, "why": "B: 22,000 x 63% = 13,860 one-time visitors over 365 open days is 37.97, about 38 a day, and no other option fits any reading." },
+  { "id": "j-e23b3eb4", "judge": "ambiguity", "fail": false, "why": "Only A is true: the 2011 loss of 63 x 79% = $49.8m beats the 2012 loss of 88 x 51% = $44.9m, while revenue sums to $319m (not 312), costs peak in 2013 ($147m), and 2010 costs were $76.8m (not 69)." },
+  { "id": "j-010b586d", "judge": "ambiguity", "fail": false, "why": "B: Capital's 26.4/3.1 = 8.52 against Zone D's best of 38.7/1.7 = 22.76 is a ratio of 2.67, so a rise of 167% (267% is the 'rise to' trap)." },
+  { "id": "j-c2a10120", "judge": "ambiguity", "fail": false, "why": "Only A holds: small towns have 10.3k of 168.9k residents contacted (6%) against 17% and 59% elsewhere; C is false (464.9k of 1,182.5k = 39%), B cannot be told from the table, and D fails because mid-sized towns' uncontacted residents (285.4k) outnumber the cities' (273.6k)." },
+  { "id": "j-79af63f0", "judge": "ambiguity", "fail": false, "why": "C: total profit halves (40 to 20), so wholesale would be 35, making the total 35 - 10 = 25 on 2013 sales of 20/4% = 500, which is 5.0%." },
+  { "id": "j-ddae802c", "judge": "ambiguity", "fail": false, "why": "C: each office nets $35 - 6 x $0.20 = $33.80 a week against $2,800 of van cost, which breaks even at 82.8 offices, so 84 is the smallest option that makes a profit (80 gives only $2,704)." },
+  { "id": "j-35e00cbe", "judge": "ambiguity", "fail": false, "why": "A: with 18,000 current customers and 54,000 non-customers, 25% x 54,000 - 40% x 18,000 = 13,500 - 7,200 = 6,300; keeping the 54,000 total instead gives 4,725, which is not an option." },
+  { "id": "j-ee556a14", "judge": "ambiguity", "fail": false, "why": "D: J has 176,430/2.90 = $60.8k against F's 361,208/6.40 = $56.4k, H's $24.8k and G's $9.5k." }
+]

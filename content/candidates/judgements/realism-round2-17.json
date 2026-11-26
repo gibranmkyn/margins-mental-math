@@ -1,0 +1,12 @@
+[
+  { "id": "j-3d906b25", "judge": "realism", "fail": false, "why": "A single-site car wash selling about 4,800 washes a month (roughly 160 a day) at about $13 each, with stated margins that match revenue minus costs, is believable." },
+  { "id": "j-e849d1b4", "judge": "realism", "fail": false, "why": "Half-year spend of $31 to $92 per garden-centre store-card holder, falling after wet springs, is believable for the business." },
+  { "id": "j-6ae1c7ca", "judge": "realism", "fail": false, "why": "A family garage doing 83 to 368 tyre changes a month, at roughly an hour of fitter time each from 172-hour months, is believable." },
+  { "id": "j-96248b94", "judge": "realism", "fail": true, "why": "The context calls the Main branch 'the biggest', but Exhibit 5 puts it fourth on premiums ($48.6m against $61.8m for Branch C) and third on running cost ($3.4m against $4.7m for Branch C), so the stated fact and the figures cannot both hold." },
+  { "id": "j-9b835d3e", "judge": "realism", "fail": false, "why": "A florist making about 100 arrangements a month, rising to about 490 in February (Valentine's), at roughly 45 to 50 minutes of florist time each, is believable." },
+  { "id": "j-90e0ff81", "judge": "realism", "fail": false, "why": "A large-city climbing centre with 180,000 visits from 48,000 people (the repeat climbers averaging about 12 visits each) is believable." },
+  { "id": "j-f13e286b", "judge": "realism", "fail": false, "why": "Indexed orders and warehouse hours around a back-to-school peak, with temporary hours always below total hours, are believable." },
+  { "id": "j-98a5a9bb", "judge": "realism", "fail": false, "why": "Each survey pie adds to 100%, and a small-business broker with about 5,000 clients in a district (1,300 being 26%) is believable." },
+  { "id": "j-750d3e99", "judge": "realism", "fail": false, "why": "Gym treadmills using 1,250 to 1,600 kWh a year at 12c/kWh with a few service visits a year are believable, and the $10 hourly technician cost is low but within a factor of a few." },
+  { "id": "j-7b1b8c63", "judge": "realism", "fail": false, "why": "An appliance maker cutting emissions by about 3.8 percentage points a year, with each area's own and supplier parts adding to its stated total, is believable." }
+]

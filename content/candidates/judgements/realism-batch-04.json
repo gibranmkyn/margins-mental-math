@@ -1,0 +1,12 @@
+[
+  { "id": "j-3b0fdf49", "judge": "realism", "fail": false, "why": "The flight-type split (54/28/18) and the long-haul purpose pie (43/19/13/12/5/8) each sum to 100%, and 9,000 passengers surveyed is believable for a large airport." },
+  { "id": "j-85e84389", "judge": "realism", "fail": false, "why": "An electricity retailer with $600 million sales, power and network costs of 87% and operating costs of 17% making a 4% loss is consistent and believable for a thin-margin retailer." },
+  { "id": "j-a5d5072f", "judge": "realism", "fail": false, "why": "Each category's like-for-like and new-store figures add to its stated total (55, 36, 21, 16, 16), believable five-year growth for a department-store group." },
+  { "id": "j-42b3eb31", "judge": "realism", "fail": false, "why": "621,500 contract customers, an $18 roaming pass and roaming spend of tens of dollars a year are consistent with the stated $15.75 million and believable for a mobile network." },
+  { "id": "j-26141b6e", "judge": "realism", "fail": false, "why": "Tier win rates of 40%, 50% and 55% can average the 50% a league must have, and team revenues of $2.5 to $15 million with thin profits are believable for a top volleyball division." },
+  { "id": "j-b9726d36", "judge": "realism", "fail": false, "why": "Quarterly spend of GBP 26 to 85 per loyalty member at a 60-bar coffee chain is believable, and the question's fall/rise is a stated hypothetical." },
+  { "id": "j-92d35120", "judge": "realism", "fail": false, "why": "A meal-kit firm with $150 million revenue, variable costs of 63% and fixed costs of 48% making a loss is consistent and believable." },
+  { "id": "j-c2a62d85", "judge": "realism", "fail": false, "why": "A contract cleaner with $85 million revenue, wages of 77% and overheads of 25% running a 2% loss is consistent and believable." },
+  { "id": "j-52c47f71", "judge": "realism", "fail": false, "why": "Each faculty's public-grant and industry figures add to its stated total (6.4, 7.3, 2.7, 0.5, 1.2), believable five-year research-income growth for a mid-sized university." },
+  { "id": "j-44954955", "judge": "realism", "fail": false, "why": "Each region's footfall and spend shares sum to 100% (negative where spend per visit fell), and annual growth of 1.6% to 5.4% is believable for a supermarket chain." }
+]

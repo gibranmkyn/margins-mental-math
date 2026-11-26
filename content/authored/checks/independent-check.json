@@ -1,0 +1,2782 @@
+{
+  "au-001": {
+    "fingerprint": "873a79c5",
+    "choice": 2
+  },
+  "au-002": {
+    "fingerprint": "a8e9f5d7",
+    "choice": 2
+  },
+  "au-003": {
+    "fingerprint": "27bbe0f8",
+    "choice": 2
+  },
+  "au-004": {
+    "fingerprint": "72204fca",
+    "choice": 2
+  },
+  "au-005": {
+    "fingerprint": "a8ab5039",
+    "choice": 2
+  },
+  "au-006": {
+    "fingerprint": "312f519f",
+    "choice": 2
+  },
+  "au-007": {
+    "fingerprint": "74a7b8fb",
+    "choice": 2
+  },
+  "au-008": {
+    "fingerprint": "30faa2c1",
+    "choice": 0
+  },
+  "au-009": {
+    "fingerprint": "70d17aeb",
+    "choice": 3
+  },
+  "au-010": {
+    "fingerprint": "ed96b35b",
+    "choice": 0
+  },
+  "au-011": {
+    "fingerprint": "97659d7b",
+    "choice": 2
+  },
+  "au-012": {
+    "fingerprint": "e4daa1eb",
+    "choice": 2
+  },
+  "au-013": {
+    "fingerprint": "3dcac921",
+    "choice": 2
+  },
+  "au-014": {
+    "fingerprint": "5e20e50e",
+    "choice": 1
+  },
+  "au-015": {
+    "fingerprint": "b3c866a1",
+    "choice": 2
+  },
+  "au-016": {
+    "fingerprint": "6d02fea6",
+    "choice": 0
+  },
+  "au-017": {
+    "fingerprint": "9f163dba",
+    "choice": 2
+  },
+  "au-018": {
+    "fingerprint": "b72983de",
+    "choice": 1
+  },
+  "au-019": {
+    "fingerprint": "a6f1f398",
+    "choice": 0
+  },
+  "au-020": {
+    "fingerprint": "a3b33ebb",
+    "choice": 1
+  },
+  "au-021": {
+    "fingerprint": "0377b1d3",
+    "choice": 2
+  },
+  "au-022": {
+    "fingerprint": "59b800d9",
+    "choice": 1
+  },
+  "au-023": {
+    "fingerprint": "2e05328f",
+    "choice": 1
+  },
+  "au-024": {
+    "fingerprint": "cfdb4d00",
+    "choice": 1
+  },
+  "au-025": {
+    "fingerprint": "d3b21043",
+    "choice": 1
+  },
+  "au-026": {
+    "fingerprint": "fd798578",
+    "choice": 2
+  },
+  "au-027": {
+    "fingerprint": "81c3fa39",
+    "choice": 1
+  },
+  "au-028": {
+    "fingerprint": "743e9e0a",
+    "choice": 1
+  },
+  "au-029": {
+    "fingerprint": "fb36ee2d",
+    "choice": 3
+  },
+  "au-030": {
+    "fingerprint": "f6957f32",
+    "choice": 2
+  },
+  "au-031": {
+    "fingerprint": "85236eed",
+    "choice": 3
+  },
+  "au-032": {
+    "fingerprint": "f08bc12e",
+    "choice": 1
+  },
+  "au-033": {
+    "fingerprint": "cf5e8af6",
+    "choice": 0
+  },
+  "au-034": {
+    "fingerprint": "bb58383b",
+    "choice": 1
+  },
+  "au-035": {
+    "fingerprint": "cf67b818",
+    "choice": 2
+  },
+  "au-036": {
+    "fingerprint": "feee5977",
+    "choice": 2
+  },
+  "au-037": {
+    "fingerprint": "9c52cc35",
+    "choice": 1
+  },
+  "au-038": {
+    "fingerprint": "7e124e69",
+    "choice": 3
+  },
+  "au-039": {
+    "fingerprint": "2f26230b",
+    "choice": 0
+  },
+  "au-040": {
+    "fingerprint": "34fbc8bb",
+    "choice": 2
+  },
+  "au-041": {
+    "fingerprint": "fbb6a0b8",
+    "choice": 2
+  },
+  "au-042": {
+    "fingerprint": "b2752272",
+    "choice": 1
+  },
+  "au-043": {
+    "fingerprint": "43805bd1",
+    "choice": 2
+  },
+  "au-044": {
+    "fingerprint": "0e408b28",
+    "choice": 0
+  },
+  "au-045": {
+    "fingerprint": "eb1ca35d",
+    "choice": 1
+  },
+  "au-046": {
+    "fingerprint": "47369760",
+    "choice": 2
+  },
+  "au-047": {
+    "fingerprint": "56e8f816",
+    "choice": 3
+  },
+  "au-048": {
+    "fingerprint": "0bf1e70f",
+    "choice": 2
+  },
+  "au-049": {
+    "fingerprint": "58516d58",
+    "choice": 2
+  },
+  "au-050": {
+    "fingerprint": "a8257245",
+    "choice": 2
+  },
+  "au-051": {
+    "fingerprint": "d73b9481",
+    "choice": 0
+  },
+  "au-052": {
+    "fingerprint": "b1269b97",
+    "choice": 1
+  },
+  "au-053": {
+    "fingerprint": "008074e5",
+    "choice": 0
+  },
+  "au-054": {
+    "fingerprint": "aace9033",
+    "choice": 2
+  },
+  "au-055": {
+    "fingerprint": "a95bca29",
+    "choice": 2
+  },
+  "au-056": {
+    "fingerprint": "87283cc4",
+    "choice": 2
+  },
+  "au-057": {
+    "fingerprint": "054fe679",
+    "choice": 1
+  },
+  "au-058": {
+    "fingerprint": "0f735305",
+    "choice": 0
+  },
+  "au-059": {
+    "fingerprint": "7f83dcab",
+    "choice": 3
+  },
+  "au-060": {
+    "fingerprint": "117bd13b",
+    "choice": 0
+  },
+  "au-061": {
+    "fingerprint": "d5b8b786",
+    "choice": 1
+  },
+  "au-062": {
+    "fingerprint": "b571e321",
+    "choice": 1
+  },
+  "au-063": {
+    "fingerprint": "ddd614aa",
+    "choice": 1
+  },
+  "au-064": {
+    "fingerprint": "0c75a354",
+    "choice": 1
+  },
+  "au-065": {
+    "fingerprint": "b3dee98d",
+    "choice": 3
+  },
+  "au-066": {
+    "fingerprint": "a51350be",
+    "choice": 2
+  },
+  "au-067": {
+    "fingerprint": "ba4bb89e",
+    "choice": 1
+  },
+  "au-068": {
+    "fingerprint": "8727af9c",
+    "choice": 2
+  },
+  "au-069": {
+    "fingerprint": "f58462e4",
+    "choice": 1
+  },
+  "au-070": {
+    "fingerprint": "598e9498",
+    "choice": 1
+  },
+  "au-071": {
+    "fingerprint": "3f54a075",
+    "choice": 1
+  },
+  "au-072": {
+    "fingerprint": "7a9d193c",
+    "choice": 1
+  },
+  "au-073": {
+    "fingerprint": "c6800323",
+    "choice": 3
+  },
+  "au-074": {
+    "fingerprint": "2acc1b4a",
+    "choice": 1
+  },
+  "au-075": {
+    "fingerprint": "5ad5b202",
+    "choice": 3
+  },
+  "au-076": {
+    "fingerprint": "d3a97e52",
+    "choice": 0
+  },
+  "au-077": {
+    "fingerprint": "4c4058e8",
+    "choice": 0
+  },
+  "au-078": {
+    "fingerprint": "e839d098",
+    "choice": 2
+  },
+  "au-079": {
+    "fingerprint": "efd84f5f",
+    "choice": 3
+  },
+  "au-080": {
+    "fingerprint": "acaba774",
+    "choice": 1
+  },
+  "au-081": {
+    "fingerprint": "021a52a0",
+    "choice": 2
+  },
+  "au-082": {
+    "fingerprint": "7b9cb584",
+    "choice": 3
+  },
+  "au-083": {
+    "fingerprint": "0b8bfd77",
+    "choice": 2
+  },
+  "au-084": {
+    "fingerprint": "5282e523",
+    "choice": 0
+  },
+  "au-085": {
+    "fingerprint": "d2b5a38b",
+    "choice": 1
+  },
+  "au-086": {
+    "fingerprint": "b3b238fd",
+    "choice": 3
+  },
+  "au-087": {
+    "fingerprint": "6749be05",
+    "choice": 3
+  },
+  "au-088": {
+    "fingerprint": "581cd23f",
+    "choice": 3
+  },
+  "au-089": {
+    "fingerprint": "5f1dfb02",
+    "choice": 3
+  },
+  "au-090": {
+    "fingerprint": "ebc2c234",
+    "choice": 2
+  },
+  "au-091": {
+    "fingerprint": "34455974",
+    "choice": 2
+  },
+  "au-092": {
+    "fingerprint": "be47d0b7",
+    "choice": 1
+  },
+  "au-093": {
+    "fingerprint": "407ee72f",
+    "choice": 1
+  },
+  "au-094": {
+    "fingerprint": "42707fcd",
+    "choice": 2
+  },
+  "au-095": {
+    "fingerprint": "cc69ca6f",
+    "choice": 2
+  },
+  "au-096": {
+    "fingerprint": "e8695e8f",
+    "choice": 1
+  },
+  "au-097": {
+    "fingerprint": "7bffbe38",
+    "choice": 2
+  },
+  "au-098": {
+    "fingerprint": "9e7cba30",
+    "choice": 1
+  },
+  "au-099": {
+    "fingerprint": "e318a5cc",
+    "choice": 3
+  },
+  "au-100": {
+    "fingerprint": "36249dda",
+    "choice": 1
+  },
+  "au-101": {
+    "fingerprint": "f1007edf",
+    "choice": 2
+  },
+  "au-102": {
+    "fingerprint": "17deae17",
+    "choice": 0
+  },
+  "au-103": {
+    "fingerprint": "a2d62e9c",
+    "choice": 2
+  },
+  "au-104": {
+    "fingerprint": "0b1bbf61",
+    "choice": 2
+  },
+  "au-105": {
+    "fingerprint": "0f6c9a77",
+    "choice": 2
+  },
+  "au-106": {
+    "fingerprint": "3835e984",
+    "choice": 2
+  },
+  "au-107": {
+    "fingerprint": "9c350549",
+    "choice": 0
+  },
+  "au-108": {
+    "fingerprint": "6e1cd7a9",
+    "choice": 2
+  },
+  "au-109": {
+    "fingerprint": "11f36e33",
+    "choice": 1
+  },
+  "au-110": {
+    "fingerprint": "42b3fe94",
+    "choice": 0
+  },
+  "au-111": {
+    "fingerprint": "8868850b",
+    "choice": 3
+  },
+  "au-112": {
+    "fingerprint": "dc315bc1",
+    "choice": 3
+  },
+  "au-113": {
+    "fingerprint": "abca573b",
+    "choice": 3
+  },
+  "au-114": {
+    "fingerprint": "ffd02531",
+    "choice": 0
+  },
+  "au-115": {
+    "fingerprint": "bc25791e",
+    "choice": 0
+  },
+  "au-116": {
+    "fingerprint": "79b69aea",
+    "choice": 3
+  },
+  "au-117": {
+    "fingerprint": "20339156",
+    "choice": 3
+  },
+  "au-118": {
+    "fingerprint": "b688f6a5",
+    "choice": 3
+  },
+  "au-119": {
+    "fingerprint": "2d2b1473",
+    "choice": 3
+  },
+  "au-120": {
+    "fingerprint": "13c762bf",
+    "choice": 0
+  },
+  "au-121": {
+    "fingerprint": "36ff3d33",
+    "choice": 0
+  },
+  "au-122": {
+    "fingerprint": "0e58c857",
+    "choice": 3
+  },
+  "au-123": {
+    "fingerprint": "68905eb3",
+    "choice": 1
+  },
+  "au-124": {
+    "fingerprint": "c163413f",
+    "choice": 3
+  },
+  "au-125": {
+    "fingerprint": "136f7b48",
+    "choice": 3
+  },
+  "au-126": {
+    "fingerprint": "b18147e4",
+    "choice": 3
+  },
+  "au-127": {
+    "fingerprint": "7886fa60",
+    "choice": 0
+  },
+  "au-128": {
+    "fingerprint": "1e1111d3",
+    "choice": 3
+  },
+  "au-129": {
+    "fingerprint": "5263ae42",
+    "choice": 0
+  },
+  "au-130": {
+    "fingerprint": "e0dff2e1",
+    "choice": 0
+  },
+  "au-131": {
+    "fingerprint": "7abb9ff0",
+    "choice": 3
+  },
+  "au-132": {
+    "fingerprint": "8bd0c963",
+    "choice": 0
+  },
+  "au-133": {
+    "fingerprint": "b5a4b603",
+    "choice": 3
+  },
+  "au-134": {
+    "fingerprint": "4ba0d7d0",
+    "choice": 0
+  },
+  "au-135": {
+    "fingerprint": "0ee238f2",
+    "choice": 3
+  },
+  "au-136": {
+    "fingerprint": "0ecb9b3d",
+    "choice": 0
+  },
+  "au-137": {
+    "fingerprint": "4609521a",
+    "choice": 3
+  },
+  "au-138": {
+    "fingerprint": "1a133603",
+    "choice": 3
+  },
+  "au-139": {
+    "fingerprint": "65ea1a65",
+    "choice": 0
+  },
+  "au-140": {
+    "fingerprint": "99aff364",
+    "choice": 3
+  },
+  "au-141": {
+    "fingerprint": "0766975a",
+    "choice": 3
+  },
+  "au-142": {
+    "fingerprint": "32ad8fb3",
+    "choice": 3
+  },
+  "au-143": {
+    "fingerprint": "2e75da35",
+    "choice": 0
+  },
+  "au-144": {
+    "fingerprint": "7f2e6aea",
+    "choice": 0
+  },
+  "au-145": {
+    "fingerprint": "5eb234a4",
+    "choice": 0
+  },
+  "au-146": {
+    "fingerprint": "54647236",
+    "choice": 0
+  },
+  "au-147": {
+    "fingerprint": "dcd76d2b",
+    "choice": 1
+  },
+  "au-148": {
+    "fingerprint": "349d565a",
+    "choice": 1
+  },
+  "au-149": {
+    "fingerprint": "7cd9f44a",
+    "choice": 1
+  },
+  "au-150": {
+    "fingerprint": "debcabde",
+    "choice": 0
+  },
+  "au-151": {
+    "fingerprint": "4d5b26d7",
+    "choice": 1
+  },
+  "au-152": {
+    "fingerprint": "e4c8f08d",
+    "choice": 0
+  },
+  "au-153": {
+    "fingerprint": "8a217ec9",
+    "choice": 1
+  },
+  "au-154": {
+    "fingerprint": "94c0d3ba",
+    "choice": 1
+  },
+  "au-155": {
+    "fingerprint": "7f9a5b24",
+    "choice": 2
+  },
+  "au-156": {
+    "fingerprint": "de491e13",
+    "choice": 0
+  },
+  "au-157": {
+    "fingerprint": "17b5446d",
+    "choice": 1
+  },
+  "au-158": {
+    "fingerprint": "8a481e02",
+    "choice": 1
+  },
+  "au-159": {
+    "fingerprint": "cb13c902",
+    "choice": 1
+  },
+  "au-160": {
+    "fingerprint": "b4d1981f",
+    "choice": 2
+  },
+  "au-161": {
+    "fingerprint": "b33f23c7",
+    "choice": 1
+  },
+  "au-162": {
+    "fingerprint": "cba0ae89",
+    "choice": 1
+  },
+  "bk-bcg-q02-a": {
+    "fingerprint": "97e9925e",
+    "choice": 2
+  },
+  "bk-bcg-q02-b": {
+    "fingerprint": "dd97d933",
+    "choice": 1
+  },
+  "bk-bcg-q02-c": {
+    "fingerprint": "7a364a66",
+    "choice": 1
+  },
+  "bk-bcg-q02-d": {
+    "fingerprint": "0d0aab51",
+    "choice": 2
+  },
+  "bk-bcg-q04-a": {
+    "fingerprint": "1a9eec2a",
+    "choice": 2
+  },
+  "bk-bcg-q04-b": {
+    "fingerprint": "c3e36389",
+    "choice": 2
+  },
+  "bk-bcg-q04-c": {
+    "fingerprint": "d035b957",
+    "choice": 1
+  },
+  "bk-bcg-q04-d": {
+    "fingerprint": "6cf74269",
+    "choice": 1
+  },
+  "bk-bcg-q12-a": {
+    "fingerprint": "d64cb2d3",
+    "choice": 1
+  },
+  "bk-bcg-q12-b": {
+    "fingerprint": "aefa938c",
+    "choice": 2
+  },
+  "bk-bcg-q12-c": {
+    "fingerprint": "da92b46c",
+    "choice": 1
+  },
+  "bk-bcg-q12-d": {
+    "fingerprint": "ac26503b",
+    "choice": 2
+  },
+  "bk-bcg-q14-b": {
+    "fingerprint": "2be0356d",
+    "choice": 3
+  },
+  "bk-bcg-q14-c": {
+    "fingerprint": "408952e1",
+    "choice": 2
+  },
+  "bk-bcg-q14-d": {
+    "fingerprint": "0470e401",
+    "choice": 0
+  },
+  "bk-bcg-q14-e": {
+    "fingerprint": "80f6a35b",
+    "choice": 1
+  },
+  "bk-bcg-q14-f": {
+    "fingerprint": "4838c9f3",
+    "choice": 3
+  },
+  "bk-bcg-q15-a": {
+    "fingerprint": "11949268",
+    "choice": 1
+  },
+  "bk-bcg-q15-b": {
+    "fingerprint": "e2d25e7c",
+    "choice": 2
+  },
+  "bk-bcg-q15-c": {
+    "fingerprint": "ba274179",
+    "choice": 1
+  },
+  "bk-bcg-q15-d": {
+    "fingerprint": "2e8bcb32",
+    "choice": 2
+  },
+  "bk-pracA-q03-a": {
+    "fingerprint": "c8a3eb9b",
+    "choice": 1
+  },
+  "bk-pracA-q03-b": {
+    "fingerprint": "2422b989",
+    "choice": 0
+  },
+  "bk-pracA-q03-c": {
+    "fingerprint": "bb6e63f0",
+    "choice": 2
+  },
+  "bk-pracA-q03-d": {
+    "fingerprint": "4cc7bc44",
+    "choice": 3
+  },
+  "bk-pracA-q03-e": {
+    "fingerprint": "52cc24d6",
+    "choice": 0
+  },
+  "bk-pracA-q03-f": {
+    "fingerprint": "aecd3037",
+    "choice": 1
+  },
+  "bk-pracA-q03-g": {
+    "fingerprint": "fd5b3bcd",
+    "choice": 2
+  },
+  "bk-pracA-q03-h": {
+    "fingerprint": "d87d43e0",
+    "choice": 3
+  },
+  "bk-pracA-q04-a": {
+    "fingerprint": "d9600281",
+    "choice": 1
+  },
+  "bk-pracA-q04-b": {
+    "fingerprint": "f2db6e40",
+    "choice": 2
+  },
+  "bk-pracA-q04-c": {
+    "fingerprint": "a5904b0a",
+    "choice": 1
+  },
+  "bk-pracA-q04-d": {
+    "fingerprint": "ddf690bd",
+    "choice": 2
+  },
+  "bk-pracA-q06-a": {
+    "fingerprint": "7eb66acf",
+    "choice": 1
+  },
+  "bk-pracA-q06-b": {
+    "fingerprint": "28bd2aeb",
+    "choice": 2
+  },
+  "bk-pracA-q06-c": {
+    "fingerprint": "9eac2d54",
+    "choice": 3
+  },
+  "bk-pracA-q06-d": {
+    "fingerprint": "a73ed0d8",
+    "choice": 2
+  },
+  "bk-pracA-q06-e": {
+    "fingerprint": "13d8793c",
+    "choice": 0
+  },
+  "bk-pracA-q06-f": {
+    "fingerprint": "876528f8",
+    "choice": 0
+  },
+  "bk-pracA-q06-g": {
+    "fingerprint": "dd783614",
+    "choice": 1
+  },
+  "bk-pracA-q06-h": {
+    "fingerprint": "9c6951c4",
+    "choice": 3
+  },
+  "bk-pracA-q07-a": {
+    "fingerprint": "99c5f0c5",
+    "choice": 2
+  },
+  "bk-pracA-q07-b": {
+    "fingerprint": "17cf0408",
+    "choice": 1
+  },
+  "bk-pracA-q07-c": {
+    "fingerprint": "b9ce1317",
+    "choice": 2
+  },
+  "bk-pracA-q07-d": {
+    "fingerprint": "86a35995",
+    "choice": 1
+  },
+  "bk-pracA-q13-a": {
+    "fingerprint": "6b4d55c9",
+    "choice": 3
+  },
+  "bk-pracA-q13-b": {
+    "fingerprint": "cd7c29ac",
+    "choice": 0
+  },
+  "bk-pracA-q13-c": {
+    "fingerprint": "b6aab28c",
+    "choice": 2
+  },
+  "bk-pracA-q13-d": {
+    "fingerprint": "de0579ee",
+    "choice": 1
+  },
+  "bk-pracA-q13-e": {
+    "fingerprint": "d8fef80f",
+    "choice": 3
+  },
+  "bk-pracA-q13-f": {
+    "fingerprint": "c388ed2c",
+    "choice": 0
+  },
+  "bk-pracA-q13-g": {
+    "fingerprint": "ba87dc37",
+    "choice": 2
+  },
+  "bk-pracA-q13-h": {
+    "fingerprint": "33369708",
+    "choice": 1
+  },
+  "bk-pracA-q14-b": {
+    "fingerprint": "e5ce62a4",
+    "choice": 0
+  },
+  "bk-pracA-q14-c": {
+    "fingerprint": "cfbd06cd",
+    "choice": 2
+  },
+  "bk-pracA-q22-a": {
+    "fingerprint": "3c8dcd3a",
+    "choice": 1
+  },
+  "bk-pracA-q22-b": {
+    "fingerprint": "9b5678ad",
+    "choice": 3
+  },
+  "bk-pracA-q22-c": {
+    "fingerprint": "fd9867c1",
+    "choice": 0
+  },
+  "bk-pracA-q22-d": {
+    "fingerprint": "3a4779e3",
+    "choice": 2
+  },
+  "bk-pracA-q22-f": {
+    "fingerprint": "8609f895",
+    "choice": 0
+  },
+  "bk-pracA-q22-g": {
+    "fingerprint": "285e41ee",
+    "choice": 2
+  },
+  "bk-pracA-q22-h": {
+    "fingerprint": "326e86c3",
+    "choice": 1
+  },
+  "bk-pracA-q23-a": {
+    "fingerprint": "a5cc8f52",
+    "choice": 1
+  },
+  "bk-pracA-q23-b": {
+    "fingerprint": "e706574e",
+    "choice": 2
+  },
+  "bk-pracA-q23-c": {
+    "fingerprint": "dc50e4ac",
+    "choice": 1
+  },
+  "bk-pracA-q23-d": {
+    "fingerprint": "d11da7af",
+    "choice": 2
+  },
+  "bk-pracA-q24-a": {
+    "fingerprint": "6e97f22e",
+    "choice": 2
+  },
+  "bk-pracA-q24-b": {
+    "fingerprint": "a538ab11",
+    "choice": 0
+  },
+  "bk-pracA-q24-c": {
+    "fingerprint": "2565506e",
+    "choice": 3
+  },
+  "bk-pracA-q24-d": {
+    "fingerprint": "62a7a971",
+    "choice": 1
+  },
+  "bk-pracA-q24-e": {
+    "fingerprint": "e965a4eb",
+    "choice": 0
+  },
+  "bk-pracA-q24-f": {
+    "fingerprint": "1a6ef34c",
+    "choice": 1
+  },
+  "bk-pracA-q24-g": {
+    "fingerprint": "3fc3f6d1",
+    "choice": 2
+  },
+  "bk-pracA-q24-h": {
+    "fingerprint": "726d1f75",
+    "choice": 3
+  },
+  "bk-pracA-q25-a": {
+    "fingerprint": "cf8f19dd",
+    "choice": 1
+  },
+  "bk-pracA-q25-b": {
+    "fingerprint": "46f955ec",
+    "choice": 2
+  },
+  "bk-pracA-q25-c": {
+    "fingerprint": "13ce30bc",
+    "choice": 1
+  },
+  "bk-pracA-q25-d": {
+    "fingerprint": "d2314e7e",
+    "choice": 2
+  },
+  "bk-pracB-q02-a": {
+    "fingerprint": "abfc6867",
+    "choice": 2
+  },
+  "bk-pracB-q02-b": {
+    "fingerprint": "0a027d0d",
+    "choice": 1
+  },
+  "bk-pracB-q02-c": {
+    "fingerprint": "83075828",
+    "choice": 3
+  },
+  "bk-pracB-q02-d": {
+    "fingerprint": "5f7db0f1",
+    "choice": 0
+  },
+  "bk-pracB-q02-e": {
+    "fingerprint": "6bbd7224",
+    "choice": 0
+  },
+  "bk-pracB-q02-f": {
+    "fingerprint": "fadc3a54",
+    "choice": 1
+  },
+  "bk-pracB-q02-g": {
+    "fingerprint": "7e9843ea",
+    "choice": 2
+  },
+  "bk-pracB-q02-h": {
+    "fingerprint": "8936fe5c",
+    "choice": 3
+  },
+  "bk-pracB-q04-a": {
+    "fingerprint": "5ad2d358",
+    "choice": 3
+  },
+  "bk-pracB-q04-b": {
+    "fingerprint": "ef5fd097",
+    "choice": 2
+  },
+  "bk-pracB-q04-c": {
+    "fingerprint": "51448165",
+    "choice": 1
+  },
+  "bk-pracB-q04-d": {
+    "fingerprint": "9b931743",
+    "choice": 0
+  },
+  "bk-pracB-q04-e": {
+    "fingerprint": "3f0fdccd",
+    "choice": 3
+  },
+  "bk-pracB-q04-f": {
+    "fingerprint": "631d73e8",
+    "choice": 0
+  },
+  "bk-pracB-q04-g": {
+    "fingerprint": "707bd953",
+    "choice": 2
+  },
+  "bk-pracB-q04-h": {
+    "fingerprint": "bb4bf47d",
+    "choice": 1
+  },
+  "bk-pracB-q05-a": {
+    "fingerprint": "49ee5736",
+    "choice": 1
+  },
+  "bk-pracB-q05-b": {
+    "fingerprint": "80e03647",
+    "choice": 2
+  },
+  "bk-pracB-q05-c": {
+    "fingerprint": "33ec407d",
+    "choice": 1
+  },
+  "bk-pracB-q05-d": {
+    "fingerprint": "1ff91cab",
+    "choice": 2
+  },
+  "bk-pracB-q06-a": {
+    "fingerprint": "21a65770",
+    "choice": 0
+  },
+  "bk-pracB-q06-b": {
+    "fingerprint": "4277378c",
+    "choice": 1
+  },
+  "bk-pracB-q06-c": {
+    "fingerprint": "1c060162",
+    "choice": 2
+  },
+  "bk-pracB-q06-d": {
+    "fingerprint": "c21376b6",
+    "choice": 0
+  },
+  "bk-pracB-q06-e": {
+    "fingerprint": "68325cd8",
+    "choice": 3
+  },
+  "bk-pracB-q06-f": {
+    "fingerprint": "8de61b7b",
+    "choice": 3
+  },
+  "bk-pracB-q06-g": {
+    "fingerprint": "92c6b635",
+    "choice": 2
+  },
+  "bk-pracB-q06-h": {
+    "fingerprint": "e30af139",
+    "choice": 1
+  },
+  "bk-pracB-q07-a": {
+    "fingerprint": "8be2025b",
+    "choice": 0
+  },
+  "bk-pracB-q07-b": {
+    "fingerprint": "e7a42640",
+    "choice": 0
+  },
+  "bk-pracB-q07-c": {
+    "fingerprint": "3ccd3fc5",
+    "choice": 3
+  },
+  "bk-pracB-q07-d": {
+    "fingerprint": "dcf1cf54",
+    "choice": 2
+  },
+  "bk-pracB-q09-a": {
+    "fingerprint": "8d0f5406",
+    "choice": 0
+  },
+  "bk-pracB-q09-b": {
+    "fingerprint": "9818240d",
+    "choice": 1
+  },
+  "bk-pracB-q09-c": {
+    "fingerprint": "c12b25a8",
+    "choice": 2
+  },
+  "bk-pracB-q09-f": {
+    "fingerprint": "0e62d397",
+    "choice": 0
+  },
+  "bk-pracB-q09-g": {
+    "fingerprint": "641ef5fe",
+    "choice": 1
+  },
+  "bk-pracB-q09-h": {
+    "fingerprint": "9365e624",
+    "choice": 2
+  },
+  "bk-pracB-q11-a": {
+    "fingerprint": "a64cf162",
+    "choice": 1
+  },
+  "bk-pracB-q11-b": {
+    "fingerprint": "288b47c0",
+    "choice": 3
+  },
+  "bk-pracB-q11-c": {
+    "fingerprint": "91360863",
+    "choice": 0
+  },
+  "bk-pracB-q11-d": {
+    "fingerprint": "40a731fc",
+    "choice": 2
+  },
+  "bk-pracB-q11-e": {
+    "fingerprint": "6c88f27f",
+    "choice": 0
+  },
+  "bk-pracB-q11-f": {
+    "fingerprint": "fc855b2d",
+    "choice": 1
+  },
+  "bk-pracB-q11-g": {
+    "fingerprint": "4211aa34",
+    "choice": 2
+  },
+  "bk-pracB-q11-h": {
+    "fingerprint": "848c9609",
+    "choice": 3
+  },
+  "bk-pracB-q12-a": {
+    "fingerprint": "dd6f58e8",
+    "choice": 1
+  },
+  "bk-pracB-q12-b": {
+    "fingerprint": "e01b1f0a",
+    "choice": 2
+  },
+  "bk-pracB-q12-c": {
+    "fingerprint": "b06725f2",
+    "choice": 0
+  },
+  "bk-pracB-q12-d": {
+    "fingerprint": "5442abdf",
+    "choice": 0
+  },
+  "bk-pracB-q12-e": {
+    "fingerprint": "03e9f267",
+    "choice": 1
+  },
+  "bk-pracB-q12-f": {
+    "fingerprint": "c737a3e8",
+    "choice": 2
+  },
+  "bk-pracB-q15-a": {
+    "fingerprint": "3de7ebbe",
+    "choice": 1
+  },
+  "bk-pracB-q15-b": {
+    "fingerprint": "975489a3",
+    "choice": 3
+  },
+  "bk-pracB-q15-c": {
+    "fingerprint": "39784b8f",
+    "choice": 2
+  },
+  "bk-pracB-q15-d": {
+    "fingerprint": "d0c0a436",
+    "choice": 0
+  },
+  "bk-pracB-q15-e": {
+    "fingerprint": "c2d0237f",
+    "choice": 0
+  },
+  "bk-pracB-q15-f": {
+    "fingerprint": "e000492d",
+    "choice": 1
+  },
+  "bk-pracB-q15-g": {
+    "fingerprint": "b7a1d7a8",
+    "choice": 2
+  },
+  "bk-pracB-q15-h": {
+    "fingerprint": "50c860d8",
+    "choice": 3
+  },
+  "bk-pracB-q18-a": {
+    "fingerprint": "8d04bcf6",
+    "choice": 0
+  },
+  "bk-pracB-q18-b": {
+    "fingerprint": "e2895733",
+    "choice": 1
+  },
+  "bk-pracB-q18-c": {
+    "fingerprint": "18249a86",
+    "choice": 2
+  },
+  "bk-pracB-q18-d": {
+    "fingerprint": "a022b211",
+    "choice": 0
+  },
+  "bk-pracB-q18-e": {
+    "fingerprint": "149f5951",
+    "choice": 1
+  },
+  "bk-pracB-q19-a": {
+    "fingerprint": "78dae6b2",
+    "choice": 0
+  },
+  "bk-pracB-q19-b": {
+    "fingerprint": "52e71e81",
+    "choice": 3
+  },
+  "bk-pracB-q19-c": {
+    "fingerprint": "0e85f7a7",
+    "choice": 0
+  },
+  "bk-pracB-q19-d": {
+    "fingerprint": "86694cc0",
+    "choice": 2
+  },
+  "bk-pracB-q19-e": {
+    "fingerprint": "29f1c837",
+    "choice": 1
+  },
+  "bk-pracB-q19-f": {
+    "fingerprint": "41ae16d4",
+    "choice": 3
+  },
+  "bk-pracB-q19-g": {
+    "fingerprint": "7449f4cd",
+    "choice": 2
+  },
+  "bk-pracB-q19-h": {
+    "fingerprint": "3989c24c",
+    "choice": 1
+  },
+  "bk-pracB-q22-a": {
+    "fingerprint": "289f377c",
+    "choice": 0
+  },
+  "bk-pracB-q22-b": {
+    "fingerprint": "216780b2",
+    "choice": 2
+  },
+  "bk-pracB-q22-c": {
+    "fingerprint": "cf883165",
+    "choice": 3
+  },
+  "bk-pracB-q22-d": {
+    "fingerprint": "cea3358e",
+    "choice": 1
+  },
+  "bk-pracB-q22-e": {
+    "fingerprint": "44278793",
+    "choice": 0
+  },
+  "bk-pracB-q22-f": {
+    "fingerprint": "d313a539",
+    "choice": 1
+  },
+  "bk-pracB-q22-g": {
+    "fingerprint": "5a219d2b",
+    "choice": 2
+  },
+  "bk-pracB-q22-h": {
+    "fingerprint": "0d638c30",
+    "choice": 3
+  },
+  "bk-pracB-q23-a": {
+    "fingerprint": "00b187f4",
+    "choice": 0
+  },
+  "bk-pracB-q23-b": {
+    "fingerprint": "83fd14e5",
+    "choice": 1
+  },
+  "bk-pracB-q23-c": {
+    "fingerprint": "31df9727",
+    "choice": 0
+  },
+  "bk-pracB-q23-d": {
+    "fingerprint": "79dd0398",
+    "choice": 1
+  },
+  "bk-pracB-q25-a": {
+    "fingerprint": "0885ebf6",
+    "choice": 1
+  },
+  "bk-pracB-q25-b": {
+    "fingerprint": "197aa03c",
+    "choice": 2
+  },
+  "bk-pracB-q25-c": {
+    "fingerprint": "6c1edd79",
+    "choice": 3
+  },
+  "bk-pracB-q25-d": {
+    "fingerprint": "f4b7fd13",
+    "choice": 0
+  },
+  "bk-pracB-q25-e": {
+    "fingerprint": "394874aa",
+    "choice": 3
+  },
+  "bk-pracB-q25-f": {
+    "fingerprint": "b299e5dc",
+    "choice": 0
+  },
+  "bk-pracB-q26-a": {
+    "fingerprint": "ad1e5698",
+    "choice": 1
+  },
+  "bk-pracB-q26-b": {
+    "fingerprint": "ac392f02",
+    "choice": 3
+  },
+  "bk-pracB-q26-c": {
+    "fingerprint": "bb61ebaa",
+    "choice": 0
+  },
+  "bk-pracB-q26-d": {
+    "fingerprint": "38c2f458",
+    "choice": 2
+  },
+  "bk-pracC-q02-a": {
+    "fingerprint": "d1381299",
+    "choice": 0
+  },
+  "bk-pracC-q02-b": {
+    "fingerprint": "14cd3283",
+    "choice": 1
+  },
+  "bk-pracC-q02-c": {
+    "fingerprint": "fc1ee2f7",
+    "choice": 2
+  },
+  "bk-pracC-q02-d": {
+    "fingerprint": "c8c2ea42",
+    "choice": 3
+  },
+  "bk-pracC-q02-e": {
+    "fingerprint": "97939d7e",
+    "choice": 3
+  },
+  "bk-pracC-q02-f": {
+    "fingerprint": "b63115a9",
+    "choice": 0
+  },
+  "bk-pracC-q02-g": {
+    "fingerprint": "8b9360ee",
+    "choice": 2
+  },
+  "bk-pracC-q02-h": {
+    "fingerprint": "c17a144d",
+    "choice": 1
+  },
+  "bk-pracC-q03-a": {
+    "fingerprint": "85d2490d",
+    "choice": 1
+  },
+  "bk-pracC-q03-b": {
+    "fingerprint": "515e7c53",
+    "choice": 0
+  },
+  "bk-pracC-q03-c": {
+    "fingerprint": "dcf42a7e",
+    "choice": 2
+  },
+  "bk-pracC-q03-d": {
+    "fingerprint": "9acf1c6f",
+    "choice": 3
+  },
+  "bk-pracC-q03-e": {
+    "fingerprint": "0bfbeeb0",
+    "choice": 3
+  },
+  "bk-pracC-q03-f": {
+    "fingerprint": "1f997383",
+    "choice": 0
+  },
+  "bk-pracC-q03-g": {
+    "fingerprint": "2d315be1",
+    "choice": 2
+  },
+  "bk-pracC-q03-h": {
+    "fingerprint": "49bfd0dd",
+    "choice": 1
+  },
+  "bk-pracC-q05-a": {
+    "fingerprint": "27f99a10",
+    "choice": 0
+  },
+  "bk-pracC-q05-b": {
+    "fingerprint": "92324803",
+    "choice": 1
+  },
+  "bk-pracC-q05-c": {
+    "fingerprint": "d64aa1d7",
+    "choice": 2
+  },
+  "bk-pracC-q05-d": {
+    "fingerprint": "f80326f1",
+    "choice": 3
+  },
+  "bk-pracC-q05-e": {
+    "fingerprint": "ee515286",
+    "choice": 3
+  },
+  "bk-pracC-q05-f": {
+    "fingerprint": "b032fe2c",
+    "choice": 0
+  },
+  "bk-pracC-q05-g": {
+    "fingerprint": "99447009",
+    "choice": 2
+  },
+  "bk-pracC-q05-h": {
+    "fingerprint": "e384822b",
+    "choice": 1
+  },
+  "bk-pracC-q10-a": {
+    "fingerprint": "8dcd6458",
+    "choice": 1
+  },
+  "bk-pracC-q10-b": {
+    "fingerprint": "61c3f670",
+    "choice": 0
+  },
+  "bk-pracC-q10-c": {
+    "fingerprint": "8f1f5643",
+    "choice": 2
+  },
+  "bk-pracC-q10-d": {
+    "fingerprint": "c02b0c45",
+    "choice": 3
+  },
+  "bk-pracC-q12-a": {
+    "fingerprint": "2c70d875",
+    "choice": 0
+  },
+  "bk-pracC-q12-b": {
+    "fingerprint": "ad124af0",
+    "choice": 3
+  },
+  "bk-pracC-q12-c": {
+    "fingerprint": "5b2685af",
+    "choice": 2
+  },
+  "bk-pracC-q12-d": {
+    "fingerprint": "ac64fba0",
+    "choice": 1
+  },
+  "bk-pracC-q12-e": {
+    "fingerprint": "371a0ee3",
+    "choice": 0
+  },
+  "bk-pracC-q12-f": {
+    "fingerprint": "7157d1fc",
+    "choice": 1
+  },
+  "bk-pracC-q12-g": {
+    "fingerprint": "977310cd",
+    "choice": 2
+  },
+  "bk-pracC-q12-h": {
+    "fingerprint": "7c6bafea",
+    "choice": 3
+  },
+  "bk-pracC-q14-a": {
+    "fingerprint": "ad8c3355",
+    "choice": 1
+  },
+  "bk-pracC-q14-b": {
+    "fingerprint": "0c3b2f67",
+    "choice": 3
+  },
+  "bk-pracC-q14-d": {
+    "fingerprint": "9f163075",
+    "choice": 2
+  },
+  "bk-pracC-q16-a": {
+    "fingerprint": "6e57b2f3",
+    "choice": 2
+  },
+  "bk-pracC-q16-b": {
+    "fingerprint": "104c3182",
+    "choice": 1
+  },
+  "bk-pracC-q16-c": {
+    "fingerprint": "e3537e35",
+    "choice": 2
+  },
+  "bk-pracC-q16-d": {
+    "fingerprint": "762cc7d8",
+    "choice": 1
+  },
+  "bk-pracC-q17-a": {
+    "fingerprint": "3798ab5f",
+    "choice": 0
+  },
+  "bk-pracC-q17-b": {
+    "fingerprint": "ac6201ab",
+    "choice": 2
+  },
+  "bk-pracC-q17-c": {
+    "fingerprint": "c24b2e20",
+    "choice": 0
+  },
+  "bk-pracC-q17-d": {
+    "fingerprint": "bbec2b28",
+    "choice": 2
+  },
+  "bk-pracC-q17-e": {
+    "fingerprint": "09533c7a",
+    "choice": 1
+  },
+  "bk-pracC-q17-f": {
+    "fingerprint": "d973e41a",
+    "choice": 1
+  },
+  "bk-pracC-q19-a": {
+    "fingerprint": "f66ab0a1",
+    "choice": 3
+  },
+  "bk-pracC-q19-b": {
+    "fingerprint": "a73fcc5f",
+    "choice": 1
+  },
+  "bk-pracC-q19-c": {
+    "fingerprint": "0e3f2120",
+    "choice": 2
+  },
+  "bk-pracC-q19-d": {
+    "fingerprint": "1fd19caf",
+    "choice": 3
+  },
+  "bk-pracC-q22-a": {
+    "fingerprint": "324a76c7",
+    "choice": 2
+  },
+  "bk-pracC-q22-b": {
+    "fingerprint": "4e5525f1",
+    "choice": 3
+  },
+  "bk-pracC-q22-c": {
+    "fingerprint": "b91a1d3d",
+    "choice": 2
+  },
+  "bk-pracC-q22-d": {
+    "fingerprint": "c7d352b5",
+    "choice": 3
+  },
+  "bk-pracC-q23-a": {
+    "fingerprint": "e8f4a13e",
+    "choice": 0
+  },
+  "bk-pracC-q23-b": {
+    "fingerprint": "bc622c4f",
+    "choice": 3
+  },
+  "bk-pracC-q23-c": {
+    "fingerprint": "1bbdfe87",
+    "choice": 2
+  },
+  "bk-pracC-q23-d": {
+    "fingerprint": "4bcfa8a3",
+    "choice": 1
+  },
+  "bk-pracC-q23-f": {
+    "fingerprint": "69a00b65",
+    "choice": 1
+  },
+  "bk-pracC-q23-h": {
+    "fingerprint": "fd3f4a63",
+    "choice": 3
+  },
+  "bk-pracC-q25-a": {
+    "fingerprint": "69c6d02a",
+    "choice": 2
+  },
+  "bk-pracC-q25-b": {
+    "fingerprint": "1feebfdc",
+    "choice": 0
+  },
+  "bk-pracC-q25-c": {
+    "fingerprint": "5207cac4",
+    "choice": 3
+  },
+  "bk-pracC-q25-d": {
+    "fingerprint": "a7a7514e",
+    "choice": 1
+  },
+  "bk-pracC-q25-e": {
+    "fingerprint": "5a203f08",
+    "choice": 0
+  },
+  "bk-pracC-q25-f": {
+    "fingerprint": "488dff27",
+    "choice": 1
+  },
+  "bk-pracC-q25-g": {
+    "fingerprint": "f633f04e",
+    "choice": 2
+  },
+  "bk-pracC-q25-h": {
+    "fingerprint": "67d17bcc",
+    "choice": 3
+  },
+  "bk-pst1-q03-a": {
+    "fingerprint": "34946969",
+    "choice": 0
+  },
+  "bk-pst1-q03-b": {
+    "fingerprint": "9b0a7bb5",
+    "choice": 1
+  },
+  "bk-pst1-q03-c": {
+    "fingerprint": "f7f4305f",
+    "choice": 3
+  },
+  "bk-pst1-q03-d": {
+    "fingerprint": "e81415ce",
+    "choice": 2
+  },
+  "bk-pst1-q03-e": {
+    "fingerprint": "5bbde4b2",
+    "choice": 0
+  },
+  "bk-pst1-q03-f": {
+    "fingerprint": "e81c4a52",
+    "choice": 1
+  },
+  "bk-pst1-q03-g": {
+    "fingerprint": "becb164e",
+    "choice": 2
+  },
+  "bk-pst1-q03-h": {
+    "fingerprint": "e0a63737",
+    "choice": 3
+  },
+  "bk-pst1-q05-a": {
+    "fingerprint": "cb1b5ad6",
+    "choice": 0
+  },
+  "bk-pst1-q05-b": {
+    "fingerprint": "00786d01",
+    "choice": 1
+  },
+  "bk-pst1-q05-c": {
+    "fingerprint": "85f2f743",
+    "choice": 2
+  },
+  "bk-pst1-q05-d": {
+    "fingerprint": "168c9f3f",
+    "choice": 3
+  },
+  "bk-pst1-q05-e": {
+    "fingerprint": "60981c5e",
+    "choice": 3
+  },
+  "bk-pst1-q05-f": {
+    "fingerprint": "1323de4b",
+    "choice": 0
+  },
+  "bk-pst1-q05-g": {
+    "fingerprint": "a012f2c7",
+    "choice": 2
+  },
+  "bk-pst1-q05-h": {
+    "fingerprint": "bf955fbc",
+    "choice": 1
+  },
+  "bk-pst1-q06-a": {
+    "fingerprint": "bedac8b7",
+    "choice": 0
+  },
+  "bk-pst1-q06-b": {
+    "fingerprint": "351bb93b",
+    "choice": 1
+  },
+  "bk-pst1-q06-c": {
+    "fingerprint": "5334228a",
+    "choice": 0
+  },
+  "bk-pst1-q06-d": {
+    "fingerprint": "f61aab5b",
+    "choice": 1
+  },
+  "bk-pst1-q07-a": {
+    "fingerprint": "442e3406",
+    "choice": 0
+  },
+  "bk-pst1-q07-b": {
+    "fingerprint": "32de323e",
+    "choice": 3
+  },
+  "bk-pst1-q07-c": {
+    "fingerprint": "51a610a9",
+    "choice": 1
+  },
+  "bk-pst1-q07-d": {
+    "fingerprint": "ecf8c924",
+    "choice": 0
+  },
+  "bk-pst1-q09-a": {
+    "fingerprint": "5f81d778",
+    "choice": 1
+  },
+  "bk-pst1-q09-b": {
+    "fingerprint": "4876ef68",
+    "choice": 1
+  },
+  "bk-pst1-q09-c": {
+    "fingerprint": "608d9a81",
+    "choice": 2
+  },
+  "bk-pst1-q09-d": {
+    "fingerprint": "e139c535",
+    "choice": 2
+  },
+  "bk-pst1-q11-a": {
+    "fingerprint": "c88c2780",
+    "choice": 0
+  },
+  "bk-pst1-q11-b": {
+    "fingerprint": "6862e410",
+    "choice": 3
+  },
+  "bk-pst1-q11-c": {
+    "fingerprint": "6393df51",
+    "choice": 0
+  },
+  "bk-pst1-q11-d": {
+    "fingerprint": "dfe29569",
+    "choice": 1
+  },
+  "bk-pst1-q11-e": {
+    "fingerprint": "181b8b1f",
+    "choice": 1
+  },
+  "bk-pst1-q11-f": {
+    "fingerprint": "47e69709",
+    "choice": 2
+  },
+  "bk-pst1-q11-g": {
+    "fingerprint": "ac8a0a21",
+    "choice": 2
+  },
+  "bk-pst1-q11-h": {
+    "fingerprint": "7568d54f",
+    "choice": 3
+  },
+  "bk-pst1-q14-a": {
+    "fingerprint": "99367473",
+    "choice": 0
+  },
+  "bk-pst1-q14-b": {
+    "fingerprint": "92d88c14",
+    "choice": 1
+  },
+  "bk-pst1-q14-c": {
+    "fingerprint": "521b098d",
+    "choice": 2
+  },
+  "bk-pst1-q14-d": {
+    "fingerprint": "6367377e",
+    "choice": 3
+  },
+  "bk-pst1-q14-e": {
+    "fingerprint": "a1c6d9b6",
+    "choice": 3
+  },
+  "bk-pst1-q14-f": {
+    "fingerprint": "0cfc3b42",
+    "choice": 0
+  },
+  "bk-pst1-q14-g": {
+    "fingerprint": "090de08b",
+    "choice": 2
+  },
+  "bk-pst1-q14-h": {
+    "fingerprint": "457e983b",
+    "choice": 1
+  },
+  "bk-pst1-q15-a": {
+    "fingerprint": "8688e959",
+    "choice": 0
+  },
+  "bk-pst1-q15-b": {
+    "fingerprint": "311a82fe",
+    "choice": 1
+  },
+  "bk-pst1-q15-c": {
+    "fingerprint": "c8147200",
+    "choice": 2
+  },
+  "bk-pst1-q15-d": {
+    "fingerprint": "687eed79",
+    "choice": 3
+  },
+  "bk-pst1-q15-e": {
+    "fingerprint": "50c4d582",
+    "choice": 0
+  },
+  "bk-pst1-q15-f": {
+    "fingerprint": "ae14c317",
+    "choice": 1
+  },
+  "bk-pst1-q15-g": {
+    "fingerprint": "d542fe2b",
+    "choice": 2
+  },
+  "bk-pst1-q15-h": {
+    "fingerprint": "7314e51d",
+    "choice": 3
+  },
+  "bk-pst1-q17-a": {
+    "fingerprint": "71f586e1",
+    "choice": 1
+  },
+  "bk-pst1-q17-b": {
+    "fingerprint": "1816a1e7",
+    "choice": 3
+  },
+  "bk-pst1-q17-c": {
+    "fingerprint": "df03814b",
+    "choice": 0
+  },
+  "bk-pst1-q17-d": {
+    "fingerprint": "eeaf89e5",
+    "choice": 2
+  },
+  "bk-pst1-q17-e": {
+    "fingerprint": "3901a3a4",
+    "choice": 0
+  },
+  "bk-pst1-q17-f": {
+    "fingerprint": "99abb980",
+    "choice": 1
+  },
+  "bk-pst1-q17-h": {
+    "fingerprint": "cae26ab6",
+    "choice": 3
+  },
+  "bk-pst1-q22-a": {
+    "fingerprint": "e2b42a43",
+    "choice": 3
+  },
+  "bk-pst1-q22-c": {
+    "fingerprint": "4a8f7f3c",
+    "choice": 2
+  },
+  "bk-pst1-q24-a": {
+    "fingerprint": "cd906cc3",
+    "choice": 1
+  },
+  "bk-pst1-q24-b": {
+    "fingerprint": "467ca95b",
+    "choice": 0
+  },
+  "bk-pst1-q24-c": {
+    "fingerprint": "63b1821f",
+    "choice": 2
+  },
+  "bk-pst1-q24-d": {
+    "fingerprint": "661a2ce7",
+    "choice": 3
+  },
+  "bk-pst1-q24-e": {
+    "fingerprint": "b6bb50ed",
+    "choice": 3
+  },
+  "bk-pst1-q24-f": {
+    "fingerprint": "3eb26958",
+    "choice": 0
+  },
+  "bk-pst1-q24-g": {
+    "fingerprint": "b85fcdbc",
+    "choice": 2
+  },
+  "bk-pst1-q24-h": {
+    "fingerprint": "c28533ff",
+    "choice": 1
+  },
+  "bk-pst1-q25-a": {
+    "fingerprint": "e6efb69d",
+    "choice": 0
+  },
+  "bk-pst1-q25-b": {
+    "fingerprint": "8af3ddcc",
+    "choice": 1
+  },
+  "bk-pst1-q25-c": {
+    "fingerprint": "e476b8bb",
+    "choice": 2
+  },
+  "bk-pst1-q25-d": {
+    "fingerprint": "deb0c979",
+    "choice": 3
+  },
+  "bk-pst1-q26-a": {
+    "fingerprint": "b5d2e18e",
+    "choice": 3
+  },
+  "bk-pst1-q26-b": {
+    "fingerprint": "75661558",
+    "choice": 0
+  },
+  "bk-pst1-q26-c": {
+    "fingerprint": "72d8930c",
+    "choice": 3
+  },
+  "bk-pst1-q26-d": {
+    "fingerprint": "b1ede7ab",
+    "choice": 0
+  },
+  "bk-pst1-q26-e": {
+    "fingerprint": "ca8ed1cf",
+    "choice": 2
+  },
+  "bk-pst1-q26-f": {
+    "fingerprint": "b457b387",
+    "choice": 1
+  },
+  "bk-pst1-q26-g": {
+    "fingerprint": "a0d107fb",
+    "choice": 2
+  },
+  "bk-pst1-q26-h": {
+    "fingerprint": "12e4ee12",
+    "choice": 1
+  },
+  "bk-pst2-q02-a": {
+    "fingerprint": "52469756",
+    "choice": 2
+  },
+  "bk-pst2-q02-b": {
+    "fingerprint": "a261dcc3",
+    "choice": 0
+  },
+  "bk-pst2-q02-c": {
+    "fingerprint": "009e5003",
+    "choice": 3
+  },
+  "bk-pst2-q02-d": {
+    "fingerprint": "96fca441",
+    "choice": 1
+  },
+  "bk-pst2-q02-e": {
+    "fingerprint": "69867ccc",
+    "choice": 0
+  },
+  "bk-pst2-q02-f": {
+    "fingerprint": "018059cc",
+    "choice": 1
+  },
+  "bk-pst2-q02-g": {
+    "fingerprint": "7df9798f",
+    "choice": 2
+  },
+  "bk-pst2-q02-h": {
+    "fingerprint": "91ccb918",
+    "choice": 3
+  },
+  "bk-pst2-q03-a": {
+    "fingerprint": "2b40b462",
+    "choice": 0
+  },
+  "bk-pst2-q03-b": {
+    "fingerprint": "0c8efe2d",
+    "choice": 1
+  },
+  "bk-pst2-q03-c": {
+    "fingerprint": "e6a167f5",
+    "choice": 2
+  },
+  "bk-pst2-q03-d": {
+    "fingerprint": "0a69653a",
+    "choice": 3
+  },
+  "bk-pst2-q03-e": {
+    "fingerprint": "77d3030c",
+    "choice": 3
+  },
+  "bk-pst2-q03-f": {
+    "fingerprint": "839a246b",
+    "choice": 0
+  },
+  "bk-pst2-q03-g": {
+    "fingerprint": "4cad79ab",
+    "choice": 2
+  },
+  "bk-pst2-q03-h": {
+    "fingerprint": "fc4740ea",
+    "choice": 1
+  },
+  "bk-pst2-q07-a": {
+    "fingerprint": "81c8d7a9",
+    "choice": 2
+  },
+  "bk-pst2-q07-b": {
+    "fingerprint": "137788d5",
+    "choice": 3
+  },
+  "bk-pst2-q07-c": {
+    "fingerprint": "74cff6bb",
+    "choice": 1
+  },
+  "bk-pst2-q07-d": {
+    "fingerprint": "c930c742",
+    "choice": 0
+  },
+  "bk-pst2-q07-e": {
+    "fingerprint": "11de2785",
+    "choice": 0
+  },
+  "bk-pst2-q07-f": {
+    "fingerprint": "edba4366",
+    "choice": 1
+  },
+  "bk-pst2-q07-g": {
+    "fingerprint": "197a95dd",
+    "choice": 2
+  },
+  "bk-pst2-q07-h": {
+    "fingerprint": "aa8f35d2",
+    "choice": 3
+  },
+  "bk-pst2-q11-a": {
+    "fingerprint": "f36d8122",
+    "choice": 0
+  },
+  "bk-pst2-q11-b": {
+    "fingerprint": "2e05119a",
+    "choice": 3
+  },
+  "bk-pst2-q11-c": {
+    "fingerprint": "7a3f63ea",
+    "choice": 0
+  },
+  "bk-pst2-q11-d": {
+    "fingerprint": "7f15f616",
+    "choice": 3
+  },
+  "bk-pst2-q11-e": {
+    "fingerprint": "70ffceca",
+    "choice": 2
+  },
+  "bk-pst2-q11-g": {
+    "fingerprint": "a8936283",
+    "choice": 2
+  },
+  "bk-pst2-q11-h": {
+    "fingerprint": "e8ab195b",
+    "choice": 1
+  },
+  "bk-pst2-q12-a": {
+    "fingerprint": "fe51d3c5",
+    "choice": 1
+  },
+  "bk-pst2-q12-b": {
+    "fingerprint": "27db2364",
+    "choice": 1
+  },
+  "bk-pst2-q12-c": {
+    "fingerprint": "d50c9039",
+    "choice": 2
+  },
+  "bk-pst2-q12-d": {
+    "fingerprint": "d72a9c98",
+    "choice": 2
+  },
+  "bk-pst2-q14-a": {
+    "fingerprint": "77599cf6",
+    "choice": 0
+  },
+  "bk-pst2-q14-b": {
+    "fingerprint": "f7bab3c3",
+    "choice": 1
+  },
+  "bk-pst2-q14-c": {
+    "fingerprint": "c67b59ad",
+    "choice": 2
+  },
+  "bk-pst2-q14-d": {
+    "fingerprint": "d33e81ed",
+    "choice": 3
+  },
+  "bk-pst2-q14-e": {
+    "fingerprint": "535a71a3",
+    "choice": 3
+  },
+  "bk-pst2-q14-f": {
+    "fingerprint": "5adeb201",
+    "choice": 0
+  },
+  "bk-pst2-q14-g": {
+    "fingerprint": "85d0a696",
+    "choice": 2
+  },
+  "bk-pst2-q14-h": {
+    "fingerprint": "d8ecce32",
+    "choice": 1
+  },
+  "bk-pst2-q15-a": {
+    "fingerprint": "b24969f5",
+    "choice": 2
+  },
+  "bk-pst2-q15-b": {
+    "fingerprint": "22f121f8",
+    "choice": 0
+  },
+  "bk-pst2-q15-d": {
+    "fingerprint": "47889c98",
+    "choice": 1
+  },
+  "bk-pst2-q15-e": {
+    "fingerprint": "691fd8d9",
+    "choice": 3
+  },
+  "bk-pst2-q15-f": {
+    "fingerprint": "fdfa9ce2",
+    "choice": 3
+  },
+  "bk-pst2-q19-a": {
+    "fingerprint": "9cbad0b4",
+    "choice": 1
+  },
+  "bk-pst2-q19-b": {
+    "fingerprint": "cd6f983a",
+    "choice": 2
+  },
+  "bk-pst2-q19-c": {
+    "fingerprint": "19de54fe",
+    "choice": 0
+  },
+  "bk-pst2-q19-d": {
+    "fingerprint": "ab0e8c2d",
+    "choice": 1
+  },
+  "bk-pst2-q19-e": {
+    "fingerprint": "2846dd78",
+    "choice": 0
+  },
+  "bk-pst2-q19-f": {
+    "fingerprint": "0f90fa14",
+    "choice": 2
+  },
+  "bk-pst2-q21-a": {
+    "fingerprint": "4e8f7827",
+    "choice": 0
+  },
+  "bk-pst2-q21-b": {
+    "fingerprint": "1ef7070f",
+    "choice": 3
+  },
+  "bk-pst2-q21-c": {
+    "fingerprint": "6f0207b8",
+    "choice": 1
+  },
+  "bk-pst2-q21-e": {
+    "fingerprint": "91e457a0",
+    "choice": 2
+  },
+  "bk-pst2-q21-f": {
+    "fingerprint": "58e9808a",
+    "choice": 3
+  },
+  "bk-pst2-q22-a": {
+    "fingerprint": "ffaafd30",
+    "choice": 0
+  },
+  "bk-pst2-q22-b": {
+    "fingerprint": "a1152926",
+    "choice": 1
+  },
+  "bk-pst2-q22-c": {
+    "fingerprint": "0708996b",
+    "choice": 3
+  },
+  "bk-pst2-q22-d": {
+    "fingerprint": "f489538f",
+    "choice": 2
+  },
+  "bk-pst2-q22-e": {
+    "fingerprint": "ce740d5a",
+    "choice": 3
+  },
+  "bk-pst2-q22-f": {
+    "fingerprint": "7e76963f",
+    "choice": 0
+  },
+  "bk-pst2-q22-g": {
+    "fingerprint": "b27d5f71",
+    "choice": 2
+  },
+  "bk-pst2-q22-h": {
+    "fingerprint": "e225bd36",
+    "choice": 1
+  },
+  "bk-pst2-q23-a": {
+    "fingerprint": "472de0bc",
+    "choice": 1
+  },
+  "bk-pst2-q23-b": {
+    "fingerprint": "4e2e1a1f",
+    "choice": 3
+  },
+  "bk-pst2-q23-c": {
+    "fingerprint": "092c9a8e",
+    "choice": 0
+  },
+  "bk-pst2-q23-d": {
+    "fingerprint": "db177c22",
+    "choice": 2
+  },
+  "bk-pst2-q23-e": {
+    "fingerprint": "383da432",
+    "choice": 3
+  },
+  "bk-pst2-q23-f": {
+    "fingerprint": "709abade",
+    "choice": 0
+  },
+  "bk-pst2-q23-g": {
+    "fingerprint": "ec6a19db",
+    "choice": 1
+  },
+  "bk-pst2-q23-h": {
+    "fingerprint": "67116092",
+    "choice": 2
+  },
+  "bk-pst2-q25-a": {
+    "fingerprint": "ad25844e",
+    "choice": 2
+  },
+  "bk-pst2-q25-b": {
+    "fingerprint": "1114341b",
+    "choice": 0
+  },
+  "bk-pst2-q25-c": {
+    "fingerprint": "634e048b",
+    "choice": 3
+  },
+  "bk-pst2-q25-d": {
+    "fingerprint": "ff2e4bc1",
+    "choice": 1
+  },
+  "bk-pst2-q25-e": {
+    "fingerprint": "6e1c9e93",
+    "choice": 3
+  },
+  "bk-pst2-q25-f": {
+    "fingerprint": "eacb1daa",
+    "choice": 0
+  },
+  "bk-pst2-q25-g": {
+    "fingerprint": "abb7d754",
+    "choice": 2
+  },
+  "bk-pst2-q25-h": {
+    "fingerprint": "aa2c966a",
+    "choice": 1
+  },
+  "bk-pst3-q03-a": {
+    "fingerprint": "8a0aaba9",
+    "choice": 3
+  },
+  "bk-pst3-q03-b": {
+    "fingerprint": "f8331185",
+    "choice": 0
+  },
+  "bk-pst3-q03-c": {
+    "fingerprint": "93f0d83b",
+    "choice": 1
+  },
+  "bk-pst3-q03-d": {
+    "fingerprint": "b3598974",
+    "choice": 2
+  },
+  "bk-pst3-q03-f": {
+    "fingerprint": "da45c2db",
+    "choice": 0
+  },
+  "bk-pst3-q03-g": {
+    "fingerprint": "8b40fc52",
+    "choice": 2
+  },
+  "bk-pst3-q04-a": {
+    "fingerprint": "05c18928",
+    "choice": 1
+  },
+  "bk-pst3-q04-b": {
+    "fingerprint": "28c7b2b1",
+    "choice": 2
+  },
+  "bk-pst3-q04-c": {
+    "fingerprint": "85631908",
+    "choice": 1
+  },
+  "bk-pst3-q04-d": {
+    "fingerprint": "136db360",
+    "choice": 2
+  },
+  "bk-pst3-q05-a": {
+    "fingerprint": "cd22a688",
+    "choice": 2
+  },
+  "bk-pst3-q05-b": {
+    "fingerprint": "212599ac",
+    "choice": 0
+  },
+  "bk-pst3-q05-c": {
+    "fingerprint": "338039aa",
+    "choice": 3
+  },
+  "bk-pst3-q05-d": {
+    "fingerprint": "d9c3e214",
+    "choice": 1
+  },
+  "bk-pst3-q05-e": {
+    "fingerprint": "e1b6e2ac",
+    "choice": 0
+  },
+  "bk-pst3-q05-f": {
+    "fingerprint": "307c944a",
+    "choice": 1
+  },
+  "bk-pst3-q05-g": {
+    "fingerprint": "3f29f404",
+    "choice": 2
+  },
+  "bk-pst3-q05-h": {
+    "fingerprint": "f62c2edf",
+    "choice": 3
+  },
+  "bk-pst3-q06-a": {
+    "fingerprint": "9a34ae0f",
+    "choice": 0
+  },
+  "bk-pst3-q06-b": {
+    "fingerprint": "cda2099d",
+    "choice": 1
+  },
+  "bk-pst3-q06-c": {
+    "fingerprint": "ac74bde9",
+    "choice": 3
+  },
+  "bk-pst3-q06-d": {
+    "fingerprint": "27ed147c",
+    "choice": 2
+  },
+  "bk-pst3-q06-e": {
+    "fingerprint": "96895e6c",
+    "choice": 3
+  },
+  "bk-pst3-q06-f": {
+    "fingerprint": "4a23d175",
+    "choice": 0
+  },
+  "bk-pst3-q06-g": {
+    "fingerprint": "5154dbcf",
+    "choice": 1
+  },
+  "bk-pst3-q06-h": {
+    "fingerprint": "e181359c",
+    "choice": 2
+  },
+  "bk-pst3-q11-a": {
+    "fingerprint": "09c57ee7",
+    "choice": 2
+  },
+  "bk-pst3-q11-b": {
+    "fingerprint": "e0cad583",
+    "choice": 1
+  },
+  "bk-pst3-q11-c": {
+    "fingerprint": "e14c82aa",
+    "choice": 3
+  },
+  "bk-pst3-q11-d": {
+    "fingerprint": "f1c9907f",
+    "choice": 3
+  },
+  "bk-pst3-q11-e": {
+    "fingerprint": "7de301ad",
+    "choice": 1
+  },
+  "bk-pst3-q11-f": {
+    "fingerprint": "c825e918",
+    "choice": 2
+  },
+  "bk-pst3-q13-a": {
+    "fingerprint": "77768e53",
+    "choice": 0
+  },
+  "bk-pst3-q13-b": {
+    "fingerprint": "6bcda71b",
+    "choice": 1
+  },
+  "bk-pst3-q13-c": {
+    "fingerprint": "c9501d30",
+    "choice": 2
+  },
+  "bk-pst3-q13-d": {
+    "fingerprint": "024c219f",
+    "choice": 3
+  },
+  "bk-pst3-q13-e": {
+    "fingerprint": "f5424fce",
+    "choice": 3
+  },
+  "bk-pst3-q13-f": {
+    "fingerprint": "a8cf8738",
+    "choice": 0
+  },
+  "bk-pst3-q13-g": {
+    "fingerprint": "5b0fecfc",
+    "choice": 2
+  },
+  "bk-pst3-q13-h": {
+    "fingerprint": "17fe8d76",
+    "choice": 1
+  },
+  "bk-pst3-q14-a": {
+    "fingerprint": "fdcfda0c",
+    "choice": 0
+  },
+  "bk-pst3-q14-b": {
+    "fingerprint": "e36c5e55",
+    "choice": 2
+  },
+  "bk-pst3-q14-c": {
+    "fingerprint": "86ea6dd8",
+    "choice": 3
+  },
+  "bk-pst3-q14-d": {
+    "fingerprint": "d077f15a",
+    "choice": 1
+  },
+  "bk-pst3-q14-e": {
+    "fingerprint": "b99d6c77",
+    "choice": 3
+  },
+  "bk-pst3-q14-f": {
+    "fingerprint": "ec65f020",
+    "choice": 0
+  },
+  "bk-pst3-q14-g": {
+    "fingerprint": "66241973",
+    "choice": 2
+  },
+  "bk-pst3-q14-h": {
+    "fingerprint": "d73a758b",
+    "choice": 1
+  },
+  "bk-pst3-q15-a": {
+    "fingerprint": "1b195b9e",
+    "choice": 0
+  },
+  "bk-pst3-q15-b": {
+    "fingerprint": "06715f79",
+    "choice": 2
+  },
+  "bk-pst3-q15-c": {
+    "fingerprint": "92495fee",
+    "choice": 3
+  },
+  "bk-pst3-q15-d": {
+    "fingerprint": "f8aea714",
+    "choice": 1
+  },
+  "bk-pst3-q15-e": {
+    "fingerprint": "f8b6cc90",
+    "choice": 0
+  },
+  "bk-pst3-q15-f": {
+    "fingerprint": "aa69b714",
+    "choice": 1
+  },
+  "bk-pst3-q15-g": {
+    "fingerprint": "e77fbe47",
+    "choice": 2
+  },
+  "bk-pst3-q15-h": {
+    "fingerprint": "158e2bc3",
+    "choice": 3
+  },
+  "bk-pst3-q19-a": {
+    "fingerprint": "dc22e45c",
+    "choice": 1
+  },
+  "bk-pst3-q19-b": {
+    "fingerprint": "3ea99978",
+    "choice": 1
+  },
+  "bk-pst3-q19-c": {
+    "fingerprint": "28df2ff7",
+    "choice": 2
+  },
+  "bk-pst3-q19-d": {
+    "fingerprint": "b2d55e41",
+    "choice": 2
+  },
+  "bk-pst3-q20-a": {
+    "fingerprint": "8ceeb424",
+    "choice": 3
+  },
+  "bk-pst3-q20-c": {
+    "fingerprint": "7a49584f",
+    "choice": 2
+  },
+  "bk-pst3-q20-d": {
+    "fingerprint": "c4703ad6",
+    "choice": 1
+  },
+  "bk-pst3-q20-e": {
+    "fingerprint": "0508bffa",
+    "choice": 0
+  },
+  "bk-pst3-q20-f": {
+    "fingerprint": "57414511",
+    "choice": 0
+  },
+  "bk-pst3-q20-g": {
+    "fingerprint": "0cbf7568",
+    "choice": 1
+  },
+  "bk-pst3-q20-h": {
+    "fingerprint": "3739296d",
+    "choice": 2
+  },
+  "bk-pst3-q20-i": {
+    "fingerprint": "0d730f4d",
+    "choice": 3
+  },
+  "bk-pst3-q23-a": {
+    "fingerprint": "988cb7cb",
+    "choice": 2
+  },
+  "bk-pst3-q23-b": {
+    "fingerprint": "0e50b87f",
+    "choice": 0
+  },
+  "bk-pst3-q23-c": {
+    "fingerprint": "b665b3f9",
+    "choice": 3
+  },
+  "bk-pst3-q23-d": {
+    "fingerprint": "799a4bcd",
+    "choice": 1
+  },
+  "bk-pst3-q23-e": {
+    "fingerprint": "22faf6cb",
+    "choice": 0
+  },
+  "bk-pst3-q23-f": {
+    "fingerprint": "c506f5f8",
+    "choice": 1
+  },
+  "bk-pst3-q23-g": {
+    "fingerprint": "6447b705",
+    "choice": 2
+  },
+  "bk-pst3-q23-h": {
+    "fingerprint": "0153ccf9",
+    "choice": 3
+  },
+  "bk-pst3-q24-a": {
+    "fingerprint": "c99a9c23",
+    "choice": 1
+  },
+  "bk-pst3-q24-b": {
+    "fingerprint": "e705c2c7",
+    "choice": 2
+  },
+  "bk-pst3-q24-c": {
+    "fingerprint": "cf1aca02",
+    "choice": 1
+  },
+  "bk-pst3-q24-d": {
+    "fingerprint": "19093ed2",
+    "choice": 2
+  },
+  "bk-pst3-q26-a": {
+    "fingerprint": "2ca031a0",
+    "choice": 1
+  },
+  "bk-pst3-q26-b": {
+    "fingerprint": "ee68c014",
+    "choice": 2
+  },
+  "bk-pst3-q26-c": {
+    "fingerprint": "d60fbf53",
+    "choice": 0
+  },
+  "bk-pst3-q26-d": {
+    "fingerprint": "7956fbf8",
+    "choice": 3
+  },
+  "bk-pst3-q26-e": {
+    "fingerprint": "c41b30f6",
+    "choice": 3
+  },
+  "bk-pst3-q26-f": {
+    "fingerprint": "e3fb3420",
+    "choice": 0
+  },
+  "bk-pst3-q26-g": {
+    "fingerprint": "a22d4550",
+    "choice": 2
+  },
+  "bk-pst3-q26-h": {
+    "fingerprint": "6180db7c",
+    "choice": 1
+  },
+  "bk-sample-q02-a": {
+    "fingerprint": "8e5bc941",
+    "choice": 0
+  },
+  "bk-sample-q02-b": {
+    "fingerprint": "e0883c5a",
+    "choice": 1
+  },
+  "bk-sample-q02-c": {
+    "fingerprint": "f9629344",
+    "choice": 3
+  },
+  "bk-sample-q02-d": {
+    "fingerprint": "ee808747",
+    "choice": 2
+  },
+  "bk-sample-q02-e": {
+    "fingerprint": "3c1775f7",
+    "choice": 0
+  },
+  "bk-sample-q02-f": {
+    "fingerprint": "4dd8a049",
+    "choice": 1
+  },
+  "bk-sample-q02-g": {
+    "fingerprint": "b0ebad47",
+    "choice": 2
+  },
+  "bk-sample-q02-h": {
+    "fingerprint": "f41bae9c",
+    "choice": 3
+  },
+  "bk-sample-q04-a": {
+    "fingerprint": "f0a8770d",
+    "choice": 0
+  },
+  "bk-sample-q04-b": {
+    "fingerprint": "d3cccc5a",
+    "choice": 1
+  },
+  "bk-sample-q04-c": {
+    "fingerprint": "fc9ed288",
+    "choice": 2
+  },
+  "bk-sample-q04-d": {
+    "fingerprint": "0053b5d2",
+    "choice": 3
+  },
+  "bk-sample-q04-e": {
+    "fingerprint": "526a5a9e",
+    "choice": 0
+  },
+  "bk-sample-q04-f": {
+    "fingerprint": "51fedf52",
+    "choice": 1
+  },
+  "bk-sample-q04-g": {
+    "fingerprint": "06e4a063",
+    "choice": 2
+  },
+  "bk-sample-q04-h": {
+    "fingerprint": "25e07be0",
+    "choice": 3
+  },
+  "bk-sample-q06-a": {
+    "fingerprint": "fa770860",
+    "choice": 1
+  },
+  "bk-sample-q06-b": {
+    "fingerprint": "0a36b2c1",
+    "choice": 2
+  },
+  "bk-sample-q06-c": {
+    "fingerprint": "b369d4ce",
+    "choice": 3
+  },
+  "bk-sample-q06-d": {
+    "fingerprint": "c179c1de",
+    "choice": 0
+  },
+  "bk-sample-q06-e": {
+    "fingerprint": "d0103334",
+    "choice": 3
+  },
+  "bk-sample-q06-f": {
+    "fingerprint": "5e1c6070",
+    "choice": 0
+  },
+  "bk-sample-q06-g": {
+    "fingerprint": "57795d9a",
+    "choice": 1
+  },
+  "bk-sample-q07-a": {
+    "fingerprint": "ae6a6a48",
+    "choice": 1
+  },
+  "bk-sample-q07-b": {
+    "fingerprint": "faa6e6eb",
+    "choice": 2
+  },
+  "bk-sample-q07-c": {
+    "fingerprint": "7e60a67f",
+    "choice": 1
+  },
+  "bk-sample-q07-d": {
+    "fingerprint": "8a338a67",
+    "choice": 2
+  },
+  "bk-sample-q08-a": {
+    "fingerprint": "b6953723",
+    "choice": 2
+  },
+  "bk-sample-q08-b": {
+    "fingerprint": "53c71945",
+    "choice": 1
+  },
+  "bk-sample-q08-c": {
+    "fingerprint": "0428cf9f",
+    "choice": 3
+  },
+  "bk-sample-q08-d": {
+    "fingerprint": "90dacdff",
+    "choice": 0
+  },
+  "bk-sample-q08-e": {
+    "fingerprint": "434f530f",
+    "choice": 3
+  },
+  "bk-sample-q08-f": {
+    "fingerprint": "7b9a0015",
+    "choice": 0
+  },
+  "bk-sample-q09-a": {
+    "fingerprint": "2a9b765b",
+    "choice": 1
+  },
+  "bk-sample-q09-b": {
+    "fingerprint": "02177856",
+    "choice": 2
+  },
+  "bk-sample-q09-c": {
+    "fingerprint": "65f1f055",
+    "choice": 3
+  },
+  "bk-sample-q09-d": {
+    "fingerprint": "f944d5eb",
+    "choice": 0
+  }
+}

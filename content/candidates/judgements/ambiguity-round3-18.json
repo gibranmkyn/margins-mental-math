@@ -1,0 +1,12 @@
+[
+  {"id":"j-9961e461","judge":"ambiguity","fail":false,"why":"Only A holds: the 10% offcut costs about $0.12-0.14 per kg at the $1.23 price to Formetal (10% of 1.23, or 1.23 x (1/0.9 - 1)), which is 20-22% of the $0.61 stamping cost, and 30% is clearly further away."},
+  {"id":"j-abbb7969","judge":"ambiguity","fail":false,"why":"Only A is true: fare-driven growth is 98.4% x 5.6 = 5.5 points for Route 3, the highest (Route 2 is 4.9), while Route 9 (0.57) is below Route 10 (0.68), Route 2 (-0.51) is below Route 1 (-0.45), and D cannot be derived."},
+  {"id":"j-cd3a5198","judge":"ambiguity","fail":false,"why":"C: with 22,000 existing players and 66,000 new, 20% x 66,000 - 25% x 22,000 = 13,200 - 5,500 = 7,700, an exact match; the strained reading that holds the total at 66,000 gives 5,775, which matches no option."},
+  {"id":"j-2de43b12","judge":"ambiguity","fail":false,"why":"B: 40 cases is 320 bottles, below the 500-bottle threshold, so 320 x 0.5 L x 8.20 = 1,312 and 320 x 6.80 = 2,176, which average to 1,744, near 1,750; the next option (2,100) is far off."},
+  {"id":"j-6fb508e4","judge":"ambiguity","fail":false,"why":"Only A holds: profit per bouquet falls from 3,745/1,846 = 2.03 to 2,131/1,793 = 1.19, which is 41% less."},
+  {"id":"j-bf4f8382","judge":"ambiguity","fail":false,"why":"D: the lost 10% of weight costs 1.20-1.33 per kg at the $11.95 price to Rindery, which is 49-54% of the $2.45 cutting cost, and every other option is further away on either method."},
+  {"id":"j-defee241","judge":"ambiguity","fail":false,"why":"Only C holds: profit per appointment rises from 4,445/1,532 = 2.90 to 6,089/1,486 = 4.10, which is 41% higher."},
+  {"id":"j-7d7c800e","judge":"ambiguity","fail":false,"why":"Only A holds: food factories grew 15.2% (46 to 53) against 10.2% for the rest (215 to 237); B fails (about 2.1x per year compounded and 7x in total, not 3x), C fails (17.6%), and D fails (food stays below hospitals on either extrapolation)."},
+  {"id":"j-8d488461","judge":"ambiguity","fail":true,"why":"The text does not settle whether studio costs scale with sales (it says only that platform fees move with sales): if every cost stays a fixed share of sales, A wins (0.67 against 0.42 for C), but if studio costs are fixed, a 1% sales rise adds 1.63 - 0.67 = 0.96 and C wins."},
+  {"id":"j-d67564d4","judge":"ambiguity","fail":false,"why":"C: 11 + 20 + 40 = 71% of Zone 1 respondents, and 71% x 12% = 8.5% of all clients."}
+]

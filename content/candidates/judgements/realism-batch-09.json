@@ -1,0 +1,12 @@
+[
+  { "id": "j-e6619ab8", "judge": "realism", "fail": false, "why": "A package tour operator with $1.3 billion bookings, supplier costs of 89% and running costs of 12% making a 1% loss is consistent and believable." },
+  { "id": "j-213f7934", "judge": "realism", "fail": false, "why": "Both storage firms' cost shares and margins sum to 100%, and about 370 to 390 units per site with roughly 82% to 83% occupancy is believable." },
+  { "id": "j-69199268", "judge": "realism", "fail": false, "why": "Passenger-route profits of $8 to $24 million across 9 to 14 routes (about $0.6 to $2.7 million per route) are believable for ferry operators." },
+  { "id": "j-ae9fd152", "judge": "realism", "fail": false, "why": "Loss probabilities of 20% to 50% and damages of $3 to $12 million per claim are believable for a software company's customer lawsuits." },
+  { "id": "j-34f5741c", "judge": "realism", "fail": false, "why": "Library incomes of $2 to $47 million (about $179 million in all) against 4 to 72 designers per library are believable for a loss-making e-learning firm." },
+  { "id": "j-6ac008b6", "judge": "realism", "fail": false, "why": "With 5 small, 8 mid and 3 large-market clubs the group figures give a 50% average win rate and reproduce the stated $24 million revenue and $1.1 million profit, and the magnitudes are believable for a hockey league." },
+  { "id": "j-7ff314f8", "judge": "realism", "fail": false, "why": "Late-handover probabilities of 10% to 40% and penalties of $3 to $16 million are believable for large construction projects." },
+  { "id": "j-dcf287cb", "judge": "realism", "fail": false, "why": "Business-line revenues of $31 to $142 million with margins from 3% on hardware resale to about 35% on software licences are believable for an IT reseller." },
+  { "id": "j-c259df7e", "judge": "realism", "fail": false, "why": "The eight uses sum exactly to the 7.3 billion litres a week total (about 1,000 megalitres a day), believable for a regional water company with about 20% leakage." },
+  { "id": "j-9d87a8d8", "judge": "realism", "fail": false, "why": "A brewery sales manager on salary plus 3% of account orders and 15% of new-account first-year orders, working 7.5 hours a day, 5 days a week, 45 weeks a year, is believable." }
+]

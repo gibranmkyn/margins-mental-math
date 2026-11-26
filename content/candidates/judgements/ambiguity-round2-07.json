@@ -1,0 +1,12 @@
+[
+  { "id": "j-5713fcc8", "judge": "ambiguity", "fail": true, "why": "B, C and D are clearly true (cooking means 3.5 vs 3.19, value 93% at 3+ vs 90% max elsewhere, flavour means 2.7 vs 3.3), but A is false only if 'more ratings of 1' counts heads (about 4,080 vs 7,050); read as shares, as 'generally' and the other statements suggest, current customers gave more 1s in 3 of 4 criteria (51 vs 47 points), so A is true and no statement is incorrect." },
+  { "id": "j-cd2e8bd6", "judge": "ambiguity", "fail": false, "why": "Only C holds: profit of $6,193 in May - June less $3,655 in July is $2,538, which rounds to the printed $2,537, and the next option is over $200 away." },
+  { "id": "j-76dbb215", "judge": "ambiguity", "fail": false, "why": "Only A holds: Group B takes 29% - 11% = 18% of total cost of £4.1m + 92,000 x £100 = £13.3m, which is £2.39m, and £2.6m is clearly further away." },
+  { "id": "j-fa0935a5", "judge": "ambiguity", "fail": false, "why": "Only C holds: margins are 6.8/52.6 = 12.9% and 2.0/56.8 = 3.5%, a gap of 9.4 points, and the question asks for points explicitly." },
+  { "id": "j-f4b8e19e", "judge": "ambiguity", "fail": false, "why": "Only A holds: total sales are total profit over margin (1,000, 1,000, 800, 1,000), so online profit is 4.0%, 3.5%, 3.1% and 2.5% of sales, highest in 2009." },
+  { "id": "j-4476c1b2", "judge": "ambiguity", "fail": false, "why": "Only D holds: Region 1's margin (about 24.3%) is roughly twice Region 10's (about 11.4%) under any reasonable reading, while Region 1 out-earns Region 2 per dollar (24.3% vs 23.0%, separable on the gridlines) and B and C need market sizes the chart says it omits." },
+  { "id": "j-c053c6a0", "judge": "ambiguity", "fail": false, "why": "Only B holds: kg per capita are 58.8, 70.8, 68.8 and 57.2, so Country B leads Country C by 2 kg." },
+  { "id": "j-6cf979df", "judge": "ambiguity", "fail": false, "why": "Only A holds: the second country adds about 15% (39.9 - 24.8) of $86bn, about $13bn, and even a loose gridline reading (10-20%) keeps it far from $34.4bn and the other options." },
+  { "id": "j-23c82b1a", "judge": "ambiguity", "fail": false, "why": "Only B holds: 450,000 kg of wax costs $1.8m in soy and $1.9m + 70,000 x $2 = $2.04m blended, $240,000 more, and the tiered wording is clear." },
+  { "id": "j-6ff4d0da", "judge": "ambiguity", "fail": false, "why": "Only A holds: agents per month are (t+s)/152, so calls per agent are c x 152/(t+s)." }
+]

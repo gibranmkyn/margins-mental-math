@@ -1,0 +1,12 @@
+[
+  { "id": "j-a14c6583", "judge": "ambiguity", "fail": false, "why": "Only A holds: 280,000 kg costs $2,520,000 locally versus $1,500,000 + 130,000 x $7 = $2,410,000 imported, so imported is $110,000 cheaper; the tiered price is stated clearly." },
+  { "id": "j-c1c170b1", "judge": "ambiguity", "fail": false, "why": "D: total cost is £3.2m + 248,000 x £26 = £9.648m and Group B is 32% - 9% = 23% of it, about £2.22m; the variable-only figure (£1.48m) is a forgotten-step trap." },
+  { "id": "j-377f9080", "judge": "ambiguity", "fail": false, "why": "B: the second province is about 49.6% - 30.2% = 19.4% (read as roughly 20%) of $62bn, about $12bn, and every reasonable gridline reading stays far nearer $12.4bn than any other option." },
+  { "id": "j-c4a0bf06", "judge": "ambiguity", "fail": false, "why": "B: margins are 9.2/87.3 = 10.54% and 3.2/93.6 = 3.42%, a gap of 7.1 points, and the next option is 1.5 points away." },
+  { "id": "j-0cf1f35a", "judge": "ambiguity", "fail": false, "why": "B: 58,000 x 57% x 78% = 25,787 accepted claims x (260,000 x 15% x 4% / 2 = 780) x 94% = about $18.9m; even omitting the settlement rate gives $20.1m, still nearest B." },
+  { "id": "j-d8fb9bb6", "judge": "ambiguity", "fail": false, "why": "Only B holds: H2 2009 profit relative to H1 is (503/487) x 0.995 = 1.028 (still above 1 at a 99 reading), while A gives a 3.6% fall, C gives 15/2 = 7.5 times, and D gives 7.6% not 11%." },
+  { "id": "j-ff42b68c", "judge": "ambiguity", "fail": false, "why": "C: total profits halved, so resorts fall from 60 to 30, giving a total of 20 on 2011 sales of 15/1.5% = $1,000m, i.e. 2.0%; the absolute-decline reading gives 3.5%, which is not offered." },
+  { "id": "j-99932cd4", "judge": "ambiguity", "fail": false, "why": "B: total profits fell 60%, so online falls from 60 to 24, giving -6 on 2014 sales of 20/2% = $1,000m, i.e. -0.6%; the absolute-decline reading gives 0%, still nearest B." },
+  { "id": "j-5a5a219a", "judge": "ambiguity", "fail": false, "why": "A: 5,000 x 25% came to eat x 40% took the bus = 500." },
+  { "id": "j-9a50f98b", "judge": "ambiguity", "fail": false, "why": "D: the growth ranges are Y 1.3, X 3.4, Z 9.3 and W 23.8 points (largest absolute swing gives the same order), so Y, X, Z, W; C needs a downside-only reading that the definition's 'rise or fall' rules out." }
+]

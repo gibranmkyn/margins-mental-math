@@ -1,0 +1,12 @@
+[
+  {"id":"j-e7cd49b4","judge":"ambiguity","fail":false,"why":"Only D holds: CCTV revenue per rep for 2010-2013 is 4.92, 5.17, 4.86 and 4.81 ($m), averaging about 4.94 (pooled 1,330/270 = 4.93), and reasonable gridline readings cannot move it near $2.5m."},
+  {"id":"j-1b53b4f0","judge":"ambiguity","fail":false,"why":"Only C holds: the swing between highest and lowest yearly change is S 1.6, N 2.3, K 7.5, L 23.0 points, and ranking by largest absolute change (2.8, 3.7, 6.4, 13.8) gives the same S, N, K, L."},
+  {"id":"j-0152d194","judge":"ambiguity","fail":false,"why":"Only C holds: with Lumena customers at 14,000 and other shoppers at 42,000, 20% of 42,000 = 8,400 less 25% of 14,000 = 3,500 gives 4,900."},
+  {"id":"j-8cb37762","judge":"ambiguity","fail":false,"why":"Only B holds: online is 3.1 of 25.7 = 12.1% today, while A gives about three times the yearly rate (14.9% vs 4.8%), C compares 10% with 23% growth, and D leaves online (about 12.4) well below the other two combined after ten years."},
+  {"id":"j-fb68fe2e","judge":"ambiguity","fail":false,"why":"Only C holds: self-checkout returns $6.6m/$25m = 26.4%, and click and collect earns $4.754m a year, so it beats that only up to $4.754m/0.264 = $18.0m invested."},
+  {"id":"j-586bbc1e","judge":"ambiguity","fail":false,"why":"Only B holds: sales per pound of marketing are E 17.1, A 14.5, B 12.1, C 9.5, D 9.3, so E, A, B, C, D."},
+  {"id":"j-eebb0792","judge":"ambiguity","fail":false,"why":"Only A holds: the app rebuild returns €12.72m/€35m = 36.3%, and the loyalty scheme earns €11.97m a year, so it beats that only up to about €11.97m/0.363 = €33.0m invested."},
+  {"id":"j-368dbd71","judge":"ambiguity","fail":false,"why":"Only B holds: revenue per staff member is B 0.270, E 0.205, C 0.186, A 0.119, D 0.078 ($m), so B, E, C, A, D."},
+  {"id":"j-902784bf","judge":"ambiguity","fail":false,"why":"Only D holds: December-January takes 83 hours x 60 / 101 = 49.3 minutes a bouquet and February takes 415 x 60 / 434 = 57.4 minutes, a difference of 8.1 minutes."},
+  {"id":"j-8522a48f","judge":"ambiguity","fail":false,"why":"Only B holds: revenue per order is Q1 52.7, Q2 57.1, Q4 60.0, Q5 62.4, Q3 62.9 (€), so 1, 2, 4, 5, 3 from exact table figures."}
+]

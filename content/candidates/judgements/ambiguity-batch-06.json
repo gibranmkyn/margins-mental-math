@@ -1,0 +1,12 @@
+[
+  { "id": "j-188488a5", "judge": "ambiguity", "fail": false, "why": "Only B holds: Deepgrow earns 200,000 x $0.30 = $60,000, Greenleaf on 220,000 bags earns $1,320,000 - $908,000 - $374,000 = $38,000, a fall of $22,000." },
+  { "id": "j-cccaf69c", "judge": "ambiguity", "fail": false, "why": "Only C holds: hosting is 5,650 x $240 = $1,356,000, leaving $2,024,000 of support = 2,530 x Standard fee, so Standard is $800 and Priority $2,400." },
+  { "id": "j-22bd1ad1", "judge": "ambiguity", "fail": false, "why": "Only C holds: the rises are $1 + $2 + $6.50 + $20.50 = $30 per subscriber across four quintiles of 120,000 each, i.e. $3.6 million." },
+  { "id": "j-351d909a", "judge": "ambiguity", "fail": false, "why": "Only B holds: Vitamax earns 300,000 x $0.60 = $180,000, Corepro on 360,000 shakes earns $1,440,000 - $820,000 - $504,000 = $116,000, a fall of $64,000." },
+  { "id": "j-4105d444", "judge": "ambiguity", "fail": false, "why": "Only D holds: Catheters $22m/40 = $0.55m per engineer beats Stents $29m/58 = $0.50m, while A is 51/113 = 45%, B needs cost data and C is a tie at $0.25m each." },
+  { "id": "j-dbda8639", "judge": "ambiguity", "fail": false, "why": "Threshold answer B: hand costs $6 + $1.80/kg a day, machine $15 + $0.60/kg + $21 (19,278/918), so break-even is exactly 25 kg and 26 kg is the first option at which the machine pays." },
+  { "id": "j-44b6f4d0", "judge": "ambiguity", "fail": false, "why": "Only C holds: 20% of the 55% who came mainly for the museum is 11% of all visitors, while B confuses bases, D turns 'main reason' into 'only' and A infers spending the data does not show." },
+  { "id": "j-a81804fb", "judge": "ambiguity", "fail": false, "why": "Only D holds: earnings are K + 4% of E x P + 25% of G x Q, divided by 8.5 x 5 x 48 hours." },
+  { "id": "j-cc88f21a", "judge": "ambiguity", "fail": false, "why": "Only D holds: road bikes reach about 153 x 153/129 = 181 at 15% (27) against children's 95 x 95/81 = 111 at 8% (8.9), a ratio of about 3.0 (3.0 also with absolute growth), with margins read on or halfway between gridlines." },
+  { "id": "j-3974cb51", "judge": "ambiguity", "fail": false, "why": "Only C holds: the blast furnace mix is 6/30 = 20% efficiency, and 20% of the 201 total cut is 40.2." }
+]

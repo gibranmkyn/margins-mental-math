@@ -1,0 +1,12 @@
+[
+  { "id": "j-fb8cbe21", "judge": "realism", "fail": false, "why": "Trade paint at $11 to $14 per litre in 750mL and 2,500mL tins packed six to a pack, with a volume discount above 500 tins, is believable." },
+  { "id": "j-b39792db", "judge": "realism", "fail": false, "why": "An industrial coatings maker with 1% to 6% market shares and margins of 12% to 44% across ten countries, in an $850 million national market, is stylised but within a few times of real figures." },
+  { "id": "j-d8b82a77", "judge": "realism", "fail": false, "why": "A mobile game studio with about $116 million of revenue across 12 games and about 200 developers (roughly $580k per developer) is believable." },
+  { "id": "j-afc406dc", "judge": "realism", "fail": false, "why": "A pet superstore chain with EUR 440 to 575 million of revenue, single-digit to low-teens margins on goods and 26% to 30% on grooming, is believable." },
+  { "id": "j-87eea211", "judge": "realism", "fail": false, "why": "A parcel courier with 4,300 to 6,900 business customers paying about $500 to $600 a month, hubs sorting 120,000 to 210,000 parcels a week at under $0.50 per parcel, and thin delivery margins is believable." },
+  { "id": "j-930b81b0", "judge": "realism", "fail": false, "why": "Each pie adds to 100%, and 680 respondents being 8% of about 8,500 West subscribers is a plausible survey." },
+  { "id": "j-b7240060", "judge": "realism", "fail": true, "why": "Repairs of $37,500 and subcontracted upholstery of $11,000 leave only $6,900 of the sofa line's $55,400 total cost for materials, frames and all other production of a line with at least 184 sofas (under $40 a sofa), so the repair cost is implausibly close to the whole." },
+  { "id": "j-512b67ee", "judge": "realism", "fail": false, "why": "A frozen food maker with about $119 million of revenue over 12 brands and 176 sales representatives (roughly $675k per rep) is believable." },
+  { "id": "j-94d6179a", "judge": "realism", "fail": false, "why": "A national laundromat chain with 1,850 sites and about $420 million a year (about $230k per site), with a slightly falling margin while industry profits rise, is believable and consistent with the stated revenue." },
+  { "id": "j-c1accdd2", "judge": "realism", "fail": false, "why": "Airline-type contributions that add to about 3.5 percentage points of yearly passenger growth at a busy airport are plausible, and each bar's parts add to its stated total." }
+]

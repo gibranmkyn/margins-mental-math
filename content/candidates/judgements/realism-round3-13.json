@@ -1,0 +1,12 @@
+[
+  {"id": "j-58019f4c", "judge": "realism", "fail": false, "why": "Use of 54 to 118 rolls per person a year, rolls of 20 to 50 metres and roll prices of $0.40 to $0.90 against costs of $0.20 to $0.50 are believable toilet tissue figures."},
+  {"id": "j-d289ca82", "judge": "realism", "fail": false, "why": "About 1.1 million employees across the city's households, most of them not yet contacted by a dental insurer and with the contacted ones concentrated at large employers, is believable."},
+  {"id": "j-ec7c0db6", "judge": "realism", "fail": false, "why": "Market shares of 0.4% to 6.8% in toehold countries and profit margins of 10% to 42% are believable for a games publisher, even if the top margin is high."},
+  {"id": "j-9db07338", "judge": "realism", "fail": true, "why": "The cumulative curve reaches 100% of all developing-market pet food sales at market 41 and stays flat, so markets 42 to 50 and every other developing country together have under 0.05% (about $18m) of a $37bn market, while market 41 alone has about 0.3% (about $110m), a cliff no real tail of national markets shows."},
+  {"id": "j-27053002", "judge": "realism", "fail": false, "why": "Monthly revenue of about $1.9m across 18 showrooms (about $1.2m per showroom a year), a 15% rise in timber prices and a 15% fall in margin index are believable."},
+  {"id": "j-4162fd4d", "judge": "realism", "fail": false, "why": "Toll income of £15m to £44m a road against maintenance spend of £1.8m to £5.8m is believable for a concession toll road operator."},
+  {"id": "j-6092f41f", "judge": "realism", "fail": false, "why": "64,000 out-of-hours consultations for 35,000 pets, £3.4m of fixed cost plus £45 a visit, and group pet counts that add to 35k with cost per pet falling from Group A to Group E are consistent and believable."},
+  {"id": "j-e28fa63f", "judge": "realism", "fail": false, "why": "An industrial robot market of about €0.5bn split across electronics, car and food packaging customers is believable for a national market, with modest past growth and faster forecast growth."},
+  {"id": "j-baa7d18c", "judge": "realism", "fail": false, "why": "Tyre sales of $480m through 960 garages (about $0.4m to $1.0m per garage a year), shares adding to 100% and warranty claims of 3% to 6% are believable."},
+  {"id": "j-9741d267", "judge": "realism", "fail": false, "why": "Exit surveys of 1,340 and 910 bank customers with rating distributions that each add to 100% are believable."}
+]

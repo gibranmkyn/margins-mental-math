@@ -1,0 +1,5045 @@
+[
+  {
+    "id": "au-055",
+    "skill": "unit-economics",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A pizzeria sells through a delivery platform. Its average order is $28."
+      },
+      {
+        "type": "table",
+        "title": "Costs per order",
+        "headers": [
+          "Cost",
+          "Amount"
+        ],
+        "rows": [
+          [
+            "Ingredients",
+            "$7.50"
+          ],
+          [
+            "Box and bag",
+            "$1.20"
+          ],
+          [
+            "Driver pay",
+            "$4.80"
+          ],
+          [
+            "Platform commission",
+            "15% of order value"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What contribution does the pizzeria make on an average order?",
+    "options": [
+      "$6.10",
+      "$8.90",
+      "$10.30",
+      "$12.40"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Commission: 15% × $28 = $4.20",
+      "Contribution: $28 − $7.50 − $1.20 − $4.80 − $4.20 = $10.30"
+    ],
+    "shortcut": "Turn the percentage into dollars first ($4.20), then subtract all four costs: 28 − 17.70.",
+    "check": {
+      "kind": "value",
+      "answer": "28 - 7.50 - 1.20 - 4.80 - 15 / 100 * 28"
+    }
+  },
+  {
+    "id": "au-056",
+    "skill": "unit-economics",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A juice bottling line fills 12,000 bottles per shift. Each shift costs $1,800 in labour and $600 in energy, and the bottle, cap and juice cost $0.18 per bottle."
+      }
+    ],
+    "prompt": "What is the total cost per bottle?",
+    "options": [
+      "$0.20",
+      "$0.33",
+      "$0.38",
+      "$0.43"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Shift costs per bottle: ($1,800 + $600) ÷ 12,000 = $0.20",
+      "Total: $0.20 + $0.18 = $0.38"
+    ],
+    "shortcut": "2,400 ÷ 12,000 = 0.2; then add the per-bottle materials.",
+    "check": {
+      "kind": "value",
+      "answer": "(1800 + 600) / 12000 + 0.18"
+    }
+  },
+  {
+    "id": "au-057",
+    "skill": "unit-economics",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A podcast app has 3.2 million monthly users. 15% of them pay a $10 monthly subscription. The rest use the free tier, which earns $0.40 per user per month from advertising."
+      }
+    ],
+    "prompt": "What is the app's average monthly revenue per user?",
+    "options": [
+      "$1.50",
+      "$1.84",
+      "$2.18",
+      "$5.20"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Subscribers: 15% × $10 = $1.50 per user",
+      "Free users: 85% × $0.40 = $0.34 per user",
+      "Average: $1.50 + $0.34 = $1.84"
+    ],
+    "shortcut": "Work per user, not in totals: weight each revenue by its share of users. The 3.2 million cancels out.",
+    "check": {
+      "kind": "value",
+      "answer": "(3.2 * 1000000 * 15 / 100 * 10 + 3.2 * 1000000 * (1 - 15 / 100) * 0.40) / (3.2 * 1000000)"
+    }
+  },
+  {
+    "id": "au-058",
+    "skill": "unit-economics",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A meal-kit company makes a margin of $12 a month on each subscriber. Subscribers stay for 9 months on average, and winning each one costs $70 in marketing."
+      }
+    ],
+    "prompt": "What profit does the company make over the lifetime of an average subscriber, after the marketing cost?",
+    "options": [
+      "$38",
+      "$48",
+      "$58",
+      "$108"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Lifetime margin: $12 × 9 = $108",
+      "After marketing: $108 − $70 = $38"
+    ],
+    "shortcut": "Lifetime value minus acquisition cost: 108 − 70.",
+    "check": {
+      "kind": "value",
+      "answer": "12 * 9 - 70"
+    }
+  },
+  {
+    "id": "au-059",
+    "skill": "unit-economics",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A supermarket sells its own-brand basmati rice in four pack sizes."
+      },
+      {
+        "type": "table",
+        "title": "Basmati rice",
+        "headers": [
+          "Pack",
+          "Price"
+        ],
+        "rows": [
+          [
+            "1 kg",
+            "$2.40"
+          ],
+          [
+            "2.5 kg",
+            "$5.50"
+          ],
+          [
+            "5 kg",
+            "$11.50"
+          ],
+          [
+            "10 kg",
+            "$21.00"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which pack has the lowest price per kilogram?",
+    "options": [
+      "1 kg pack",
+      "2.5 kg pack",
+      "5 kg pack",
+      "10 kg pack"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Price per kg: $2.40, $2.20, $2.30 and $2.10",
+      "Lowest: the 10 kg pack"
+    ],
+    "shortcut": "Compare each pack with the 1 kg price scaled up: 2.5 kg at $2.40 would be $6.00, so $5.50 saves 20 cents a kg; 10 kg saves 30 cents.",
+    "check": {
+      "kind": "best",
+      "pick": "min",
+      "scores": [
+        "2.40 / 1",
+        "5.50 / 2.5",
+        "11.50 / 5",
+        "21.00 / 10"
+      ]
+    }
+  },
+  {
+    "id": "au-060",
+    "skill": "unit-economics",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A taxi driver earns $0.90 for every kilometre driven with a passenger. He drives 220 km a day, 30% of it without a passenger. Fuel and wear cost $0.25 for every kilometre driven."
+      }
+    ],
+    "prompt": "What is the driver's daily profit?",
+    "options": [
+      "$83.60",
+      "$100.10",
+      "$118.80",
+      "$143.00"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Paid kilometres: 70% × 220 = 154; earnings 154 × $0.90 = $138.60",
+      "Costs: 220 × $0.25 = $55.00",
+      "Profit: $138.60 − $55.00 = $83.60"
+    ],
+    "shortcut": "Revenue counts only paid kilometres, costs count all of them. Charging costs on paid kilometres only gives $100.10, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "220 * (1 - 30 / 100) * 0.90 - 220 * 0.25"
+    }
+  },
+  {
+    "id": "au-061",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An e-scooter operator is reviewing the economics of a single scooter."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Rides per scooter per day: 6",
+          "Average fare per ride, including the unlock fee: $3.50",
+          "Charging and repairs: 25% of fare revenue",
+          "City licence fee: $0.30 per ride",
+          "Scooter purchase price: $600, lasting 200 days of service"
+        ]
+      }
+    ],
+    "prompt": "What is the daily profit per scooter after spreading its purchase price over its life?",
+    "options": [
+      "$7.95",
+      "$10.95",
+      "$13.95",
+      "$15.75"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Revenue: 6 × $3.50 = $21.00; after charging and repairs: 75% × $21.00 = $15.75",
+      "Licence fees: 6 × $0.30 = $1.80; scooter cost per day: $600 ÷ 200 = $3.00",
+      "Profit: $15.75 − $1.80 − $3.00 = $10.95"
+    ],
+    "shortcut": "Per day: 15.75 kept, less 1.80 and 3.00. Leaving out the scooter itself gives $13.95, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "6 * 3.50 * (1 - 25 / 100) - 6 * 0.30 - 600 / 200"
+    }
+  },
+  {
+    "id": "au-062",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A recruitment agency charges employers 18% of a placed candidate's first-year salary. Its average placement has a salary of $65,000. Each recruiter costs $90,000 a year in pay, carries $25,000 a year of office overheads and makes 14 placements a year."
+      }
+    ],
+    "prompt": "Approximately how much profit does the agency make per placement?",
+    "options": [
+      "$1,700",
+      "$3,490",
+      "$5,270",
+      "$11,700"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Fee per placement: 18% × $65,000 = $11,700",
+      "Cost per placement: ($90,000 + $25,000) ÷ 14 ≈ $8,214",
+      "Profit: $11,700 − $8,214 ≈ $3,490"
+    ],
+    "shortcut": "A recruiter's fees are 14 × 11.7k ≈ 164k a year against 115k of cost: about 49k ÷ 14 ≈ 3.5k each.",
+    "check": {
+      "kind": "value",
+      "answer": "18 / 100 * 65000 - (90000 + 25000) / 14"
+    }
+  },
+  {
+    "id": "au-063",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A 120-room city hotel runs at 75% occupancy with an average daily room rate of $160. Each occupied room also brings in $35 a night from breakfast, parking and the bar."
+      }
+    ],
+    "prompt": "What is the hotel's total revenue per available room per night?",
+    "options": [
+      "$120.00",
+      "$146.25",
+      "$160.00",
+      "$195.00"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Revenue per occupied room: $160 + $35 = $195",
+      "Per available room: 75% × $195 = $146.25"
+    ],
+    "shortcut": "Per available room = occupancy × revenue per occupied room; the 120 rooms do not matter.",
+    "check": {
+      "kind": "value",
+      "answer": "75 / 100 * (160 + 35)"
+    }
+  },
+  {
+    "id": "au-064",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An artisan bakery bakes 2,000 loaves a day. Flour, yeast and packaging cost $0.60 per loaf, and the bakery's daily fixed costs are $1,400. It plans to raise output to 2,800 loaves a day with no change in fixed costs."
+      }
+    ],
+    "prompt": "By how much will the cost per loaf fall?",
+    "options": [
+      "$0.10",
+      "$0.20",
+      "$0.30",
+      "$0.50"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Today: $0.60 + $1,400 ÷ 2,000 = $1.30 per loaf",
+      "After: $0.60 + $1,400 ÷ 2,800 = $1.10 per loaf",
+      "Fall: $0.20"
+    ],
+    "shortcut": "Only the fixed share changes: 1,400 ÷ 2,000 = 0.70 against 1,400 ÷ 2,800 = 0.50.",
+    "check": {
+      "kind": "value",
+      "answer": "(0.60 + 1400 / 2000) - (0.60 + 1400 / 2800)"
+    }
+  },
+  {
+    "id": "au-065",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A print shop's large-format press is fully booked, so the manager wants to favour the jobs that earn the most per hour of press time."
+      },
+      {
+        "type": "table",
+        "title": "Typical jobs",
+        "headers": [
+          "Job",
+          "Price",
+          "Materials",
+          "Press hours"
+        ],
+        "rows": [
+          [
+            "Posters",
+            "$400",
+            "$120",
+            "2"
+          ],
+          [
+            "Brochures",
+            "$900",
+            "$380",
+            "4"
+          ],
+          [
+            "Banners",
+            "$650",
+            "$250",
+            "3"
+          ],
+          [
+            "Business cards",
+            "$300",
+            "$80",
+            "1.5"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which job earns the highest contribution per press hour?",
+    "options": [
+      "Brochures",
+      "Posters",
+      "Banners",
+      "Business cards"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Posters: $280 ÷ 2 = $140 an hour; Brochures: $520 ÷ 4 = $130",
+      "Banners: $400 ÷ 3 ≈ $133; Business cards: $220 ÷ 1.5 ≈ $147",
+      "Highest: business cards"
+    ],
+    "shortcut": "When capacity is the constraint, rank by contribution per unit of the scarce resource; brochures earn the most per job but the least per hour.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(900 - 380) / 4",
+        "(400 - 120) / 2",
+        "(650 - 250) / 3",
+        "(300 - 80) / 1.5"
+      ]
+    }
+  },
+  {
+    "id": "au-066",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A fitness app spent $1.2m on a marketing campaign that produced 300,000 downloads. 40% of those who downloaded became active users, and 25% of active users bought a subscription at $8 a month."
+      }
+    ],
+    "prompt": "What was the campaign's marketing cost per subscriber won?",
+    "options": [
+      "$10",
+      "$25",
+      "$40",
+      "$50"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Active users: 40% × 300,000 = 120,000",
+      "Subscribers: 25% × 120,000 = 30,000",
+      "Cost per subscriber: $1.2m ÷ 30,000 = $40"
+    ],
+    "shortcut": "Only 10% of downloads subscribe (0.4 × 0.25), so the cost per subscriber is ten times the $4 per download.",
+    "check": {
+      "kind": "value",
+      "answer": "1.2 * 1000000 / (300000 * 40 / 100 * 25 / 100)"
+    }
+  },
+  {
+    "id": "au-067",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An online grocer is reviewing the economics of a typical home-delivery order."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Average basket: $72, with a gross margin of 28% on the groceries",
+          "Delivery fee: $4, paid on 60% of orders; members pay nothing for delivery",
+          "Picking and packing: $6 per order",
+          "Van and driver: $9 per order"
+        ]
+      }
+    ],
+    "prompt": "What is the grocer's contribution per order?",
+    "options": [
+      "$5.16",
+      "$7.56",
+      "$9.16",
+      "$11.56"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Grocery margin: 28% × $72 = $20.16",
+      "Average delivery fee: 60% × $4 = $2.40",
+      "Contribution: $20.16 + $2.40 − $6 − $9 = $7.56"
+    ],
+    "shortcut": "Average the delivery fee over all orders ($2.40); charging it on every order gives $9.16 and dropping it gives $5.16.",
+    "check": {
+      "kind": "value",
+      "answer": "72 * 28 / 100 + 60 / 100 * 4 - 6 - 9"
+    }
+  },
+  {
+    "id": "au-068",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A parcel firm pays its drivers $22 an hour plus $1.50 per delivery, and earns $6.50 in fees per delivery. Vans cost $0.40 per km to run. Each delivery adds 3 km, and drivers also cover 6 km every hour moving between zones, however many deliveries they make."
+      }
+    ],
+    "prompt": "Roughly how many deliveries an hour must a driver make for the fees to cover driver pay and van costs?",
+    "options": [
+      "4.4 deliveries",
+      "5.8 deliveries",
+      "6.4 deliveries",
+      "7.2 deliveries"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Fixed cost per hour: $22 + 6 km × $0.40 = $24.40",
+      "Margin per delivery: $6.50 − $1.50 − 3 km × $0.40 = $3.80",
+      "Deliveries needed: $24.40 ÷ $3.80 ≈ 6.4 an hour"
+    ],
+    "shortcut": "Split costs into per-hour and per-delivery, then divide one by the margin on the other. Ignoring the van gives 22 ÷ 5 = 4.4.",
+    "check": {
+      "kind": "value",
+      "answer": "(22 + 6 * 0.40) / (6.50 - 1.50 - 3 * 0.40)"
+    }
+  },
+  {
+    "id": "au-069",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A project-management software firm charges $50 per customer per month, at a gross margin of 80%. Each month 4% of customers cancel, and it costs $600 to win a new customer. Assume a customer's expected lifetime in months is 1 divided by the monthly cancellation rate."
+      }
+    ],
+    "prompt": "Approximately what is the ratio of a customer's lifetime gross margin to the cost of winning them?",
+    "options": [
+      "1.3×",
+      "1.7×",
+      "2.1×",
+      "3.3×"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Expected lifetime: 1 ÷ 0.04 = 25 months",
+      "Lifetime gross margin: 25 × 80% × $50 = $1,000",
+      "Ratio: $1,000 ÷ $600 ≈ 1.7"
+    ],
+    "shortcut": "Monthly margin $40 ÷ 4% churn = $1,000. Using revenue rather than margin ($1,250) gives 2.1×, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "50 * 80 / 100 / (4 / 100) / 600"
+    }
+  },
+  {
+    "id": "au-070",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "An airline is reviewing one daily route flown with a 180-seat aircraft. Fuel, crew and airport charges come to $28,000 per flight."
+      },
+      {
+        "type": "table",
+        "title": "Cabin data per flight",
+        "headers": [
+          "Cabin",
+          "Seats",
+          "Average fare",
+          "Share of seats filled"
+        ],
+        "rows": [
+          [
+            "Business",
+            "12",
+            "$900",
+            "75%"
+          ],
+          [
+            "Economy",
+            "168",
+            "$180",
+            "90%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Approximately what profit does the airline make per flight?",
+    "options": [
+      "$5,900",
+      "$7,300",
+      "$8,900",
+      "$13,000"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Business: 12 × 75% = 9 passengers × $900 = $8,100",
+      "Economy: 168 × 90% ≈ 151 passengers × $180 ≈ $27,216",
+      "Profit: $8,100 + $27,216 − $28,000 ≈ $7,300"
+    ],
+    "shortcut": "Apply each cabin's own load factor. Using 90% for both gives $8,900, and full planes give $13,000.",
+    "check": {
+      "kind": "value",
+      "answer": "12 * 75 / 100 * 900 + 168 * 90 / 100 * 180 - 28000"
+    }
+  },
+  {
+    "id": "au-071",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A café sells 400 coffees a day at $4.50. Milk and beans cost $0.90 per coffee, and each disposable cup costs $0.20. The owner plans to switch to compostable cups at $0.05 each, but customers find them flimsy, and she expects to sell 10% fewer coffees as a result."
+      }
+    ],
+    "prompt": "How will the switch change the café's daily contribution from coffee?",
+    "options": [
+      "−$136",
+      "−$82",
+      "−$22",
+      "$60"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Today: 400 × ($4.50 − $0.90 − $0.20) = 400 × $3.40 = $1,360",
+      "After: 360 × ($4.50 − $0.90 − $0.05) = 360 × $3.55 = $1,278",
+      "Change: $1,278 − $1,360 = −$82"
+    ],
+    "shortcut": "Lost sales cost 40 × $3.40 = $136; the cheaper cups save 360 × $0.15 = $54; net −$82.",
+    "check": {
+      "kind": "value",
+      "answer": "(400 * (1 - 10 / 100)) * (4.50 - 0.90 - 0.05) - 400 * (4.50 - 0.90 - 0.20)"
+    }
+  },
+  {
+    "id": "au-072",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A solar company installs rooftop panels and leases them to homeowners."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Installed cost per home: $9,000",
+          "Lease: $85 a month for 15 years",
+          "Maintenance: $150 a year",
+          "Inverter replacement in year 10: $1,200"
+        ]
+      }
+    ],
+    "prompt": "What is the company's total profit per home over the lease, ignoring the timing of cash flows?",
+    "options": [
+      "$1,650",
+      "$2,850",
+      "$4,050",
+      "$5,100"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Lease income: $85 × 12 × 15 = $15,300",
+      "Costs: $9,000 + 15 × $150 + $1,200 = $9,000 + $2,250 + $1,200 = $12,450",
+      "Profit: $15,300 − $12,450 = $2,850"
+    ],
+    "shortcut": "Lease income is $1,020 a year, maintenance takes $150, so $870 × 15 = $13,050, less $10,200 of one-off costs.",
+    "check": {
+      "kind": "value",
+      "answer": "15 * 12 * 85 - 15 * 150 - 9000 - 1200"
+    }
+  },
+  {
+    "id": "bk-bcg-q02-a",
+    "modelledOn": "bcg-q02",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Talkwise is the largest mobile operator in a country where the regulator has just stopped capping the price of mobile data."
+      },
+      {
+        "type": "paragraph",
+        "text": "A user survey shows that subscribers barely react to modest price rises, but if the price climbs too far they move to free wifi and use less mobile data each month."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Doc 2: User survey",
+        "unit": "GB per user per month (right axis); price and cost, $/GB (left axis)",
+        "categories": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "series": [
+          {
+            "name": "Data price ($/GB)",
+            "values": [
+              3,
+              3.5,
+              4,
+              4.5
+            ]
+          },
+          {
+            "name": "Network cost ($/GB)",
+            "values": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "name": "Average use (GB) per user per month (right axis)",
+            "values": [
+              25,
+              21,
+              17,
+              10
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 2.5,
+          "max": 4.5,
+          "step": 0.5
+        },
+        "axisRight": {
+          "min": 0,
+          "max": 25,
+          "step": 5
+        },
+        "labelled": false,
+        "decimals": 1,
+        "prefix": "$",
+        "note": "Along the bottom: price options A to D"
+      }
+    ],
+    "prompt": "What price per GB should the operator charge to earn the most profit from mobile data? (Assume for simplicity that it sells only one prepaid plan)",
+    "options": [
+      "$3.0",
+      "$3.5",
+      "$4.0",
+      "$4.5"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Profit per user per month = (price − cost) × GB.",
+      "$3.0: 0.0 × 25 = 0.0.",
+      "$3.5: 0.5 × 21 = 10.5.",
+      "$4.0: 1.0 × 17 = 17.0.",
+      "$4.5: 1.5 × 10 = 15.0.",
+      "$4.0 gives the highest profit."
+    ],
+    "shortcut": "Profit is margin × GB: 0.5 × 21 = 10.5; 1.0 × 17 = 17; 1.5 × 10 = 15, and $3.0 earns nothing. $4.0 wins.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(3.0 - 3.0) * 25",
+        "(3.5 - 3.0) * 21",
+        "(4.0 - 3.0) * 17",
+        "(4.5 - 3.0) * 10"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q02-b",
+    "modelledOn": "bcg-q02",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "GasPoint is the biggest supplier of bottled gas to restaurants in a country whose government has just ended price controls on cooking gas."
+      },
+      {
+        "type": "paragraph",
+        "text": "Research among its customers finds that restaurants accept small price increases, but if gas becomes too expensive many of them cook more with electricity and buy less gas each week."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Doc 2: Customer study",
+        "unit": "Restaurant purchases, kg per week (right axis); gas, $ per kg (left axis)",
+        "categories": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "series": [
+          {
+            "name": "Gas price ($/kg)",
+            "values": [
+              1.2,
+              1.3,
+              1.4,
+              1.5
+            ]
+          },
+          {
+            "name": "Gas cost ($/kg)",
+            "values": [
+              1.2,
+              1.2,
+              1.2,
+              1.2
+            ]
+          },
+          {
+            "name": "Average purchase (kg) per restaurant per week (right axis)",
+            "values": [
+              50,
+              43,
+              18,
+              10
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 1.1,
+          "max": 1.5,
+          "step": 0.1
+        },
+        "axisRight": {
+          "min": 0,
+          "max": 50,
+          "step": 10
+        },
+        "labelled": false,
+        "decimals": 2,
+        "prefix": "$",
+        "note": "Price options A to D run along the bottom"
+      }
+    ],
+    "prompt": "Which price per kg should the company charge to make the highest profit on its gas sales? (Assume for simplicity that it sells only one size of cylinder)",
+    "options": [
+      "$1.20",
+      "$1.30",
+      "$1.40",
+      "$1.50"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Profit per restaurant per week = (price − cost) × kg.",
+      "$1.20: 0.00 × 50 = 0.00.",
+      "$1.30: 0.10 × 43 = 4.30.",
+      "$1.40: 0.20 × 18 = 3.60.",
+      "$1.50: 0.30 × 10 = 3.00.",
+      "$1.30 gives the highest profit."
+    ],
+    "shortcut": "Profit is margin × kg: 0.10 × 43 = 4.3; 0.20 × 18 = 3.6; 0.30 × 10 = 3, and $1.20 earns nothing. $1.30 wins.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(1.20 - 1.20) * 50",
+        "(1.30 - 1.20) * 43",
+        "(1.40 - 1.20) * 18",
+        "(1.50 - 1.20) * 10"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q02-c",
+    "modelledOn": "bcg-q02",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Bayline runs the only commuter ferry across a wide estuary, and the city has just stopped setting its fares."
+      },
+      {
+        "type": "paragraph",
+        "text": "A commuter survey suggests that regular passengers will absorb a small fare rise, but if fares go too high many will drive around by the bridge and cross by ferry less often each month."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Doc 2: Commuter survey",
+        "unit": "Crossings per commuter per month (right axis); fare and cost per crossing, $ (left axis)",
+        "categories": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "series": [
+          {
+            "name": "Fare ($ per crossing)",
+            "values": [
+              6,
+              6.5,
+              7,
+              7.5
+            ]
+          },
+          {
+            "name": "Cost ($ per passenger crossing)",
+            "values": [
+              6,
+              6,
+              6,
+              6
+            ]
+          },
+          {
+            "name": "Average crossings per commuter per month (right axis)",
+            "values": [
+              48,
+              41,
+              17,
+              12
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 5.5,
+          "max": 7.5,
+          "step": 0.5
+        },
+        "axisRight": {
+          "min": 0,
+          "max": 48,
+          "step": 12
+        },
+        "labelled": false,
+        "decimals": 1,
+        "prefix": "$",
+        "note": "Along the bottom: fare options A to D"
+      }
+    ],
+    "prompt": "What fare per crossing should the company set to maximize its profit from commuters? (Assume for simplicity that every commuter buys single tickets)",
+    "options": [
+      "$6.0",
+      "$6.5",
+      "$7.0",
+      "$7.5"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Profit per commuter per month = (price − cost) × crossings.",
+      "$6.0: 0.0 × 48 = 0.0.",
+      "$6.5: 0.5 × 41 = 20.5.",
+      "$7.0: 1.0 × 17 = 17.0.",
+      "$7.5: 1.5 × 12 = 18.0.",
+      "$6.5 gives the highest profit."
+    ],
+    "shortcut": "Profit is margin × crossings: 0.5 × 41 = 20.5; 1.0 × 17 = 17; 1.5 × 12 = 18, and $6.0 earns nothing. $6.5 wins.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(6.0 - 6.0) * 48",
+        "(6.5 - 6.0) * 41",
+        "(7.0 - 6.0) * 17",
+        "(7.5 - 6.0) * 12"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q02-d",
+    "modelledOn": "bcg-q02",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "BeanWorks roasts coffee and supplies it to offices. Its fixed-price contract with an office buying group has ended, and BeanWorks is now free to choose what it charges per kilogram."
+      },
+      {
+        "type": "paragraph",
+        "text": "Office managers interviewed say they would accept paying a little more, though beyond some point staff start bringing coffee from home and offices order fewer kilograms each month."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Doc 2: Customer research",
+        "unit": "Office orders, kg per month (right axis); coffee, $ per kg (left axis)",
+        "categories": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "series": [
+          {
+            "name": "Coffee price ($/kg)",
+            "values": [
+              14,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "name": "Coffee cost ($/kg)",
+            "values": [
+              14,
+              14,
+              14,
+              14
+            ]
+          },
+          {
+            "name": "Average order (kg) per office per month (right axis)",
+            "values": [
+              40,
+              35,
+              27,
+              16
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 13,
+          "max": 17,
+          "step": 1
+        },
+        "axisRight": {
+          "min": 0,
+          "max": 40,
+          "step": 8
+        },
+        "labelled": false,
+        "decimals": 0,
+        "prefix": "$",
+        "note": "Bottom axis: the four price options, A to D"
+      }
+    ],
+    "prompt": "What price per kg should the roaster charge to maximize profit on its office coffee? (Assume for simplicity that it supplies only one blend)",
+    "options": [
+      "$14",
+      "$15",
+      "$16",
+      "$17"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Profit per office per month = (price − cost) × kg.",
+      "$14: 0 × 40 = 0.",
+      "$15: 1 × 35 = 35.",
+      "$16: 2 × 27 = 54.",
+      "$17: 3 × 16 = 48.",
+      "$16 gives the highest profit."
+    ],
+    "shortcut": "Profit is margin × kg: 1 × 35 = 35; 2 × 27 = 54; 3 × 16 = 48, and $14 earns nothing. $16 wins.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "(14 - 14) * 40",
+        "(15 - 14) * 35",
+        "(16 - 14) * 27",
+        "(17 - 14) * 16"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q04-a",
+    "modelledOn": "bcg-q04",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Spinwell runs the largest chain of self-service laundromats in the country and is deciding what to charge for a standard wash."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Doc 2: Pricing study",
+        "unit": "Price and cost per wash, € (left axis); washes per customer per week (right axis)",
+        "categories": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "series": [
+          {
+            "name": "Price per wash (€)",
+            "values": [
+              2.5,
+              3,
+              3.5,
+              4
+            ]
+          },
+          {
+            "name": "Cost per wash (€)",
+            "values": [
+              2.5,
+              2.5,
+              2.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Washes per customer per week (right axis)",
+            "values": [
+              3,
+              2.5,
+              2.4,
+              2.2
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 2,
+          "max": 4,
+          "step": 0.5
+        },
+        "axisRight": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "labelled": false,
+        "decimals": 1,
+        "prefix": "€",
+        "note": "Along the bottom: the four prices under study, A to D"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every laundromat has vending machines for detergent, snacks and cold drinks. Vending sales in the trade as a whole rise 4% a year and earn a 12% net margin; Spinwell's machines have added 9% a year and earn 40%."
+      },
+      {
+        "type": "table",
+        "title": "Doc 3: Customer research",
+        "headers": [
+          "Price per wash (€)",
+          "Customers per laundromat per week",
+          "Average vending spend per customer per week (€)"
+        ],
+        "rows": [
+          [
+            "2.5",
+            "440",
+            "5"
+          ],
+          [
+            "3.0",
+            "410",
+            "5"
+          ],
+          [
+            "3.5",
+            "330",
+            "5"
+          ],
+          [
+            "4.0",
+            "250",
+            "5"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which price per wash would earn Spinwell the highest combined profit from washing and vending?",
+    "options": [
+      "€2.5",
+      "€3.0",
+      "€3.5",
+      "€4.0"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Vending profit per customer: €5 × 40% = €2.00",
+      "€2.5: 440 customers × (€0.00 × 3.0 + €2.00) = 440 × €2.00 = €880",
+      "€3.0: 410 × (€0.50 × 2.5 + €2.00) = 410 × €3.25 ≈ €1,333",
+      "€3.5: 330 × (€1.00 × 2.4 + €2.00) = 330 × €4.40 = €1,452",
+      "€4.0: 250 × (€1.50 × 2.2 + €2.00) = 250 × €5.30 = €1,325",
+      "€3.5 gives the highest combined profit"
+    ],
+    "shortcut": "Add the €2.00 of vending profit to the washing margin per customer (€0.00, €1.25, €2.40, €3.30), then weigh by customers: 330 × 4.4 = 1,452 beats 410 × 3.25 ≈ 1,333 and 250 × 5.3 = 1,325, and €2.5 is far behind.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "440 * ((2.5 - 2.5) * 3.0 + 5 * 40 / 100)",
+        "410 * ((3.0 - 2.5) * 2.5 + 5 * 40 / 100)",
+        "330 * ((3.5 - 2.5) * 2.4 + 5 * 40 / 100)",
+        "250 * ((4.0 - 2.5) * 2.2 + 5 * 40 / 100)"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q04-b",
+    "modelledOn": "bcg-q04",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Strikeline owns the biggest group of tenpin bowling centres in the country. A two-year price freeze has ended, and the board is setting a new price per game."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Doc 2: Price research",
+        "unit": "Price and cost per game, € (left axis); games per bowler per week (right axis)",
+        "categories": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "series": [
+          {
+            "name": "Price per game (€)",
+            "values": [
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "name": "Cost per game (€)",
+            "values": [
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          {
+            "name": "Games per bowler per week (right axis)",
+            "values": [
+              3,
+              2.1,
+              2,
+              1.7
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 3,
+          "max": 7,
+          "step": 1
+        },
+        "axisRight": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "labelled": false,
+        "decimals": 1,
+        "prefix": "€",
+        "note": "A to D are the price options on the table"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each centre has a bar serving drinks and meals. Bar sales across the sector climb 3% a year, with a 15% net margin; Strikeline's have climbed 8% a year, with a 35% net margin."
+      },
+      {
+        "type": "table",
+        "title": "Doc 3: Bowler survey",
+        "headers": [
+          "Price per game (€)",
+          "Bowlers per centre per week",
+          "Average bar spend per bowler per week (€)"
+        ],
+        "rows": [
+          [
+            "4",
+            "640",
+            "10"
+          ],
+          [
+            "5",
+            "560",
+            "10"
+          ],
+          [
+            "6",
+            "440",
+            "10"
+          ],
+          [
+            "7",
+            "360",
+            "10"
+          ]
+        ]
+      }
+    ],
+    "prompt": "At which price per game would Strikeline make the most profit from bowling and its bars together?",
+    "options": [
+      "€4",
+      "€5",
+      "€6",
+      "€7"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Bar profit per bowler: €10 × 35% = €3.50",
+      "€4: 640 bowlers × (€0.00 × 3.0 + €3.50) = 640 × €3.50 = €2,240",
+      "€5: 560 × (€1.00 × 2.1 + €3.50) = 560 × €5.60 = €3,136",
+      "€6: 440 × (€2.00 × 2.0 + €3.50) = 440 × €7.50 = €3,300",
+      "€7: 360 × (€3.00 × 1.7 + €3.50) = 360 × €8.60 = €3,096",
+      "€6 gives the highest combined profit"
+    ],
+    "shortcut": "Add the €3.50 of bar profit to the bowling margin per bowler (€0.00, €2.10, €4.00, €5.10), then weigh by bowlers: 440 × 7.5 = 3,300 beats 560 × 5.6 = 3,136 and 360 × 8.6 = 3,096, and €4 is far behind.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "640 * ((4 - 4) * 3.0 + 10 * 35 / 100)",
+        "560 * ((5 - 4) * 2.1 + 10 * 35 / 100)",
+        "440 * ((6 - 4) * 2.0 + 10 * 35 / 100)",
+        "360 * ((7 - 4) * 1.7 + 10 * 35 / 100)"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q04-c",
+    "modelledOn": "bcg-q04",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Printhaus has the largest chain of copy and print shops in the country, used mostly by students and small offices, and is reviewing what it charges per printed page."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Doc 2: Customer panel",
+        "unit": "Price and cost per page, € (left axis); pages per customer per week (right axis)",
+        "categories": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "series": [
+          {
+            "name": "Price per page (€)",
+            "values": [
+              0.06,
+              0.07,
+              0.08,
+              0.09
+            ]
+          },
+          {
+            "name": "Cost per page (€)",
+            "values": [
+              0.06,
+              0.06,
+              0.06,
+              0.06
+            ]
+          },
+          {
+            "name": "Pages per customer per week (right axis)",
+            "values": [
+              100,
+              85,
+              60,
+              30
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 0.05,
+          "max": 0.09,
+          "step": 0.01
+        },
+        "axisRight": {
+          "min": 0,
+          "max": 100,
+          "step": 20
+        },
+        "labelled": false,
+        "decimals": 2,
+        "prefix": "€",
+        "note": "Letters A to D mark the prices being tested"
+      },
+      {
+        "type": "paragraph",
+        "text": "Its shops carry paper, folders, pens and envelopes too. In the market overall, stationery revenue increases by 2% annually at a net margin of 10%, against 7% annually and a 25% net margin at Printhaus."
+      },
+      {
+        "type": "table",
+        "title": "Doc 3: Shop records",
+        "headers": [
+          "Price per page (€)",
+          "Customers per shop per week",
+          "Average stationery spend per customer per week (€)"
+        ],
+        "rows": [
+          [
+            "0.06",
+            "470",
+            "3"
+          ],
+          [
+            "0.07",
+            "380",
+            "3"
+          ],
+          [
+            "0.08",
+            "290",
+            "3"
+          ],
+          [
+            "0.09",
+            "200",
+            "3"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What should Printhaus charge per page to make the largest combined profit on printing and stationery?",
+    "options": [
+      "€0.06",
+      "€0.07",
+      "€0.08",
+      "€0.09"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Stationery profit per customer: €3 × 25% = €0.75",
+      "€0.06: 470 customers × (€0.00 × 100 + €0.75) = 470 × €0.75 = €352",
+      "€0.07: 380 × (€0.01 × 85 + €0.75) = 380 × €1.60 = €608",
+      "€0.08: 290 × (€0.02 × 60 + €0.75) = 290 × €1.95 ≈ €566",
+      "€0.09: 200 × (€0.03 × 30 + €0.75) = 200 × €1.65 = €330",
+      "€0.07 gives the highest combined profit"
+    ],
+    "shortcut": "Add the €0.75 of stationery profit to the printing margin per customer (€0.00, €0.85, €1.20, €0.90), then weigh by customers: 380 × 1.6 = 608 beats 290 × 1.95 ≈ 566, and the end prices are far behind.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "470 * ((0.06 - 0.06) * 100 + 3 * 25 / 100)",
+        "380 * ((0.07 - 0.06) * 85 + 3 * 25 / 100)",
+        "290 * ((0.08 - 0.06) * 60 + 3 * 25 / 100)",
+        "200 * ((0.09 - 0.06) * 30 + 3 * 25 / 100)"
+      ]
+    }
+  },
+  {
+    "id": "bk-bcg-q04-d",
+    "modelledOn": "bcg-q04",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Kaffa Point runs most of the coffee kiosks in the country's railway stations. Its concession contract used to fix the price of a regular coffee; from next year the company may set the price itself."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Doc 2: Commuter survey",
+        "unit": "Price and cost per cup, € (left axis); cups per regular per week (right axis)",
+        "categories": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "series": [
+          {
+            "name": "Price per cup (€)",
+            "values": [
+              2,
+              2.4,
+              2.8,
+              3.2
+            ]
+          },
+          {
+            "name": "Cost per cup (€)",
+            "values": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "name": "Cups per regular per week (right axis)",
+            "values": [
+              5,
+              4.5,
+              3.5,
+              1.8
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 1.6,
+          "max": 3.2,
+          "step": 0.4
+        },
+        "axisRight": {
+          "min": 0,
+          "max": 5,
+          "step": 1
+        },
+        "labelled": false,
+        "decimals": 1,
+        "prefix": "€",
+        "note": "The four prices tested are A, B, C and D"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pastries, sandwiches and fruit are sold at every kiosk. Food sold at stations grows by 2% a year industry-wide, at a 15% net margin; Kaffa Point's food sales have risen 6% a year and make a 40% net margin."
+      },
+      {
+        "type": "table",
+        "title": "Doc 3: Kiosk counts",
+        "headers": [
+          "Price per cup (€)",
+          "Regulars per kiosk per week",
+          "Average food spend per regular per week (€)"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "600",
+            "5"
+          ],
+          [
+            "2.4",
+            "470",
+            "5"
+          ],
+          [
+            "2.8",
+            "330",
+            "5"
+          ],
+          [
+            "3.2",
+            "200",
+            "5"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which price per cup gives Kaffa Point the highest combined profit on coffee and food?",
+    "options": [
+      "€2.0",
+      "€2.4",
+      "€2.8",
+      "€3.2"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Food profit per regular: €5 × 40% = €2.00",
+      "€2.0: 600 regulars × (€0.00 × 5.0 + €2.00) = 600 × €2.00 = €1,200",
+      "€2.4: 470 × (€0.40 × 4.5 + €2.00) = 470 × €3.80 = €1,786",
+      "€2.8: 330 × (€0.80 × 3.5 + €2.00) = 330 × €4.80 = €1,584",
+      "€3.2: 200 × (€1.20 × 1.8 + €2.00) = 200 × €4.16 = €832",
+      "€2.4 gives the highest combined profit"
+    ],
+    "shortcut": "Add the €2.00 of food profit to the coffee margin per regular (€0.00, €1.80, €2.80, €2.16), then weigh by regulars: 470 × 3.8 = 1,786 beats 330 × 4.8 = 1,584, and the end prices are far behind.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "600 * ((2.0 - 2.0) * 5.0 + 5 * 40 / 100)",
+        "470 * ((2.4 - 2.0) * 4.5 + 5 * 40 / 100)",
+        "330 * ((2.8 - 2.0) * 3.5 + 5 * 40 / 100)",
+        "200 * ((3.2 - 2.0) * 1.8 + 5 * 40 / 100)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracA-q14-b",
+    "modelledOn": "pracA-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Pagewell is an online bookseller whose customer base has stopped growing. Exhibit 3 follows 250,000 customers who opened an account last year, ranked in quintiles by their first-year profit (what Pagewell made on everything they ordered in their first twelve months). Alongside, it gives each quintile's average number of orders and order revenue in the 90 days after the account was opened."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 3: Average first-year profit",
+        "unit": "$ per customer",
+        "categories": [
+          "Quintile 1",
+          "Quintile 2",
+          "Quintile 3",
+          "Quintile 4",
+          "Quintile 5"
+        ],
+        "series": [
+          {
+            "name": "Average first-year profit",
+            "values": [
+              0.5,
+              1.5,
+              3.5,
+              8.5,
+              22.5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 25,
+          "step": 5
+        },
+        "labelled": true,
+        "decimals": 1
+      },
+      {
+        "type": "table",
+        "title": "Exhibit 3: Average in the first 90 days",
+        "headers": [
+          "Quintile",
+          "Orders",
+          "Order revenue"
+        ],
+        "rows": [
+          [
+            "Quintile 1",
+            "1.2",
+            "$31"
+          ],
+          [
+            "Quintile 2",
+            "1.4",
+            "$38"
+          ],
+          [
+            "Quintile 3",
+            "1.7",
+            "$47"
+          ],
+          [
+            "Quintile 4",
+            "2.9",
+            "$84"
+          ],
+          [
+            "Quintile 5",
+            "6.1",
+            "$196"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If Pagewell had lifted ordering among the customers in Exhibit 3 so that each of Quintiles 1 through 4 reached the first-year profit of the next quintile up, how much higher would its total first-year profit from these customers have been?",
+    "options": [
+      "$1,100,000",
+      "$2,900,000",
+      "$5,500,000",
+      "$14,600,000"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Customers per quintile: 250,000 ÷ 5 = 50,000",
+      "Increase per customer: $1.00 + $2.00 + $5.00 + $14.00 = $22.00",
+      "Total increase: 50,000 × $22 = $1,100,000"
+    ],
+    "shortcut": "Adding the step-ups telescopes to Quintile 5 minus Quintile 1: $22.50 − $0.50 = $22 a customer, times 50,000 customers, $1.1 million.",
+    "check": {
+      "kind": "value",
+      "answer": "250000 / 5 * (22.5 - 0.5)"
+    }
+  },
+  {
+    "id": "bk-pracA-q14-c",
+    "modelledOn": "pracA-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Paw Parcel is an online shop for pet food and supplies whose new sign-ups have flattened. Exhibit 3 groups the 350,000 shoppers who opened an account last calendar year into quintiles of first-year contribution (the profit Paw Parcel made on everything a shopper bought in their first year). It also shows each quintile's average orders and spend over their first 90 days."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 3: Average first-year contribution",
+        "unit": "$ per shopper",
+        "categories": [
+          "Quintile 1",
+          "Quintile 2",
+          "Quintile 3",
+          "Quintile 4",
+          "Quintile 5"
+        ],
+        "series": [
+          {
+            "name": "Average first-year contribution",
+            "values": [
+              1,
+              2,
+              4.5,
+              9.5,
+              31
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 35,
+          "step": 5
+        },
+        "labelled": true,
+        "decimals": 1
+      },
+      {
+        "type": "table",
+        "title": "Exhibit 3: Average across the first 90 days",
+        "headers": [
+          "Quintile",
+          "Orders placed",
+          "Spend"
+        ],
+        "rows": [
+          [
+            "Quintile 1",
+            "1.3",
+            "$44"
+          ],
+          [
+            "Quintile 2",
+            "1.5",
+            "$53"
+          ],
+          [
+            "Quintile 3",
+            "1.9",
+            "$69"
+          ],
+          [
+            "Quintile 4",
+            "3.1",
+            "$117"
+          ],
+          [
+            "Quintile 5",
+            "6.4",
+            "$263"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If Paw Parcel had encouraged the shoppers in Exhibit 3 to buy more, so that the first-year contribution of Quintiles 1 to 4 were each to reach that of the next quintile, how much more would its total first-year contribution from these shoppers have been?",
+    "options": [
+      "$210,000",
+      "$550,000",
+      "$2,100,000",
+      "$5,500,000"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Shoppers per quintile: 350,000 ÷ 5 = 70,000",
+      "Increase per shopper: $1.00 + $2.50 + $5.00 + $21.50 = $30.00",
+      "Total increase: 70,000 × $30 = $2,100,000"
+    ],
+    "shortcut": "Each quintile takes the next one's value, so the gains add up to the top less the bottom: $31 − $1 = $30 for 70,000 shoppers, $2.1 million.",
+    "check": {
+      "kind": "value",
+      "answer": "350000 / 5 * (31 - 1)"
+    }
+  },
+  {
+    "id": "bk-pracB-q06-a",
+    "modelledOn": "pracB-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Fornello is a chain of about 70 pizza restaurants. Its margins have been shrinking over the past year as the price of locally made mozzarella keeps going up. The purchasing manager proposes buying imported mozzarella instead for the chain's best-selling Margherita pizza."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Local mozzarella costs $9 per kg",
+          "Imported mozzarella costs $10 per kg for the first 150,000 kg bought in a year and $7 per kg after that",
+          "Dough, sauce and the other costs of making a Margherita come to $2.50 per pizza",
+          "Each Margherita uses 0.2 kg of mozzarella"
+        ]
+      }
+    ],
+    "prompt": "Assuming annual sales of 1.4 million Margheritas, which of the following statements is most accurate?",
+    "options": [
+      "Using imported mozzarella costs $110,000 less per year",
+      "Using imported mozzarella costs $110,000 more per year",
+      "Using imported mozzarella costs $280,000 less per year",
+      "Using imported mozzarella costs $280,000 more per year"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Mozzarella needed: 1.4m × 0.2 kg = 280,000 kg",
+      "Local: 280,000 × $9 = $2.52m",
+      "Imported: 150,000 × $10 + 130,000 × $7 = $1.50m + $0.91m = $2.41m",
+      "Imported is $110,000 less expensive; other costs ($2.50 a pizza) do not change with the cheese"
+    ],
+    "shortcut": "Work in differences from $9: the first 150,000 kg cost $1 more (+$150k), the other 130,000 kg cost $2 less (−$260k), net −$110k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(150000 * 10 + (1.4 * 1000000 * 0.2 - 150000) * 7 - 1.4 * 1000000 * 0.2 * 9 + 110000) < 1",
+        "abs(150000 * 10 + (1.4 * 1000000 * 0.2 - 150000) * 7 - 1.4 * 1000000 * 0.2 * 9 - 110000) < 1",
+        "abs(150000 * 10 + (1.4 * 1000000 * 0.2 - 150000) * 7 - 1.4 * 1000000 * 0.2 * 9 + 280000) < 1",
+        "abs(150000 * 10 + (1.4 * 1000000 * 0.2 - 150000) * 7 - 1.4 * 1000000 * 0.2 * 9 - 280000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q06-b",
+    "modelledOn": "pracB-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Glowcraft makes scented candles at two factories. Its profit has dropped this year while the soy wax it buys has become steadily more expensive. The operations director wants to switch the Classic Jar candle to a blended wax from a different supplier."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Soy wax costs $4 per kg",
+          "The blended wax costs $5 per kg on the first 380,000 kg each year and $2 per kg beyond that",
+          "The jar, wick and fragrance of a Classic Jar candle cost $1.80",
+          "A Classic Jar candle holds 0.3 kg of wax"
+        ]
+      }
+    ],
+    "prompt": "If Glowcraft sells 1.5 million Classic Jar candles annually, which of the following statements is true?",
+    "options": [
+      "The blended wax would cost $240,000 less a year than soy wax",
+      "The blended wax would cost $240,000 more a year than soy wax",
+      "The blended wax would cost $450,000 less a year than soy wax",
+      "The blended wax would cost $450,000 more a year than soy wax"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Wax needed: 1.5m × 0.3 kg = 450,000 kg",
+      "Soy: 450,000 × $4 = $1.80m",
+      "Blended: 380,000 × $5 + 70,000 × $2 = $1.90m + $0.14m = $2.04m",
+      "The blended wax is $240,000 more expensive; jar, wick and fragrance ($1.80) cost the same with either wax"
+    ],
+    "shortcut": "Compare with $4: the first 380,000 kg cost $1 more (+$380k), the remaining 70,000 kg cost $2 less (−$140k), net +$240k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(380000 * 5 + (1.5 * 1000000 * 0.3 - 380000) * 2 - 1.5 * 1000000 * 0.3 * 4 + 240000) < 1",
+        "abs(380000 * 5 + (1.5 * 1000000 * 0.3 - 380000) * 2 - 1.5 * 1000000 * 0.3 * 4 - 240000) < 1",
+        "abs(380000 * 5 + (1.5 * 1000000 * 0.3 - 380000) * 2 - 1.5 * 1000000 * 0.3 * 4 + 450000) < 1",
+        "abs(380000 * 5 + (1.5 * 1000000 * 0.3 - 380000) * 2 - 1.5 * 1000000 * 0.3 * 4 - 450000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q06-c",
+    "modelledOn": "pracB-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Polar Kitchen produces frozen ready meals for supermarkets. Its margins have been squeezed since the spring because the price of fresh salmon has risen. The head of purchasing suggests buying frozen salmon fillets from a new supplier for the Salmon Pasta Bake."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Fresh salmon costs $18 per kg",
+          "The new supplier charges $19 per kg for the first 100,000 kg ordered in a year and $15 per kg for any further salmon",
+          "Packaging and the other ingredients of a Salmon Pasta Bake cost $1.20 per meal",
+          "Each Salmon Pasta Bake contains 0.1 kg of salmon"
+        ]
+      }
+    ],
+    "prompt": "If annual sales of the Salmon Pasta Bake reach 2.5 million meals, which of the following statements is most accurate?",
+    "options": [
+      "Buying from the new supplier is $250,000 cheaper per year",
+      "Buying from the new supplier is $250,000 more expensive per year",
+      "Buying from the new supplier is $350,000 cheaper per year",
+      "Buying from the new supplier is $350,000 more expensive per year"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Salmon needed: 2.5m × 0.1 kg = 250,000 kg",
+      "Fresh: 250,000 × $18 = $4.50m",
+      "New supplier: 100,000 × $19 + 150,000 × $15 = $1.90m + $2.25m = $4.15m",
+      "The new supplier is $350,000 cheaper; the $1.20 of other costs does not change"
+    ],
+    "shortcut": "Against $18: the first 100,000 kg cost $1 more (+$100k), the next 150,000 kg cost $3 less (−$450k), net −$350k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(100000 * 19 + (2.5 * 1000000 * 0.1 - 100000) * 15 - 2.5 * 1000000 * 0.1 * 18 + 250000) < 1",
+        "abs(100000 * 19 + (2.5 * 1000000 * 0.1 - 100000) * 15 - 2.5 * 1000000 * 0.1 * 18 - 250000) < 1",
+        "abs(100000 * 19 + (2.5 * 1000000 * 0.1 - 100000) * 15 - 2.5 * 1000000 * 0.1 * 18 + 350000) < 1",
+        "abs(100000 * 19 + (2.5 * 1000000 * 0.1 - 100000) * 15 - 2.5 * 1000000 * 0.1 * 18 - 350000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q06-d",
+    "modelledOn": "pracB-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Velvessa makes skincare products sold through pharmacies. Its profits have slipped this year while its usual supplier has kept raising the price of shea butter. The product manager proposes sourcing the shea butter for the Rich Body Cream from a large cooperative instead."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The usual supplier charges $6 per kg",
+          "The cooperative charges $7 per kg up to 120,000 kg a year and $4 per kg above that",
+          "Other ingredients, the jar and labelling cost $1.40 per jar of Rich Body Cream",
+          "One jar of Rich Body Cream contains 0.05 kg of shea butter"
+        ]
+      }
+    ],
+    "prompt": "If Velvessa sells 4.8 million jars of Rich Body Cream annually, which of the following statements is most accurate?",
+    "options": [
+      "It is $120,000 less expensive per year to buy from the cooperative",
+      "It is $120,000 more expensive per year to buy from the cooperative",
+      "It is $240,000 less expensive per year to buy from the cooperative",
+      "It is $240,000 more expensive per year to buy from the cooperative"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Shea butter needed: 4.8m × 0.05 kg = 240,000 kg",
+      "Usual supplier: 240,000 × $6 = $1.44m",
+      "Cooperative: 120,000 × $7 + 120,000 × $4 = $0.84m + $0.48m = $1.32m",
+      "The cooperative is $120,000 less expensive; the other $1.40 per jar does not depend on the supplier"
+    ],
+    "shortcut": "Measured from $6: the first 120,000 kg cost $1 more (+$120k), the other 120,000 kg cost $2 less (−$240k), net −$120k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(120000 * 7 + (4.8 * 1000000 * 0.05 - 120000) * 4 - 4.8 * 1000000 * 0.05 * 6 + 120000) < 1",
+        "abs(120000 * 7 + (4.8 * 1000000 * 0.05 - 120000) * 4 - 4.8 * 1000000 * 0.05 * 6 - 120000) < 1",
+        "abs(120000 * 7 + (4.8 * 1000000 * 0.05 - 120000) * 4 - 4.8 * 1000000 * 0.05 * 6 + 240000) < 1",
+        "abs(120000 * 7 + (4.8 * 1000000 * 0.05 - 120000) * 4 - 4.8 * 1000000 * 0.05 * 6 - 240000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q06-e",
+    "modelledOn": "pracB-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Crunchwell makes breakfast granola for supermarkets. Its margins have narrowed this year as nut prices climbed. Crunchwell buys its almonds from one grower on a volume deal, and the procurement head proposes moving the Almond Granola to a second grower that quotes a single flat price."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The current grower charges $10 per kg for the first 80,000 kg each year and $6 per kg for anything above that",
+          "The second grower charges $9 per kg for any quantity",
+          "Oats, honey and the bag cost $1.10 for each bag of Almond Granola",
+          "Each bag of Almond Granola contains 0.1 kg of almonds"
+        ]
+      }
+    ],
+    "prompt": "With annual sales of 2.2 million bags of Almond Granola, which of the following statements is most accurate?",
+    "options": [
+      "Buying from the second grower costs $220,000 less per year",
+      "Buying from the second grower costs $220,000 more per year",
+      "Buying from the second grower costs $340,000 less per year",
+      "Buying from the second grower costs $340,000 more per year"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Almonds needed: 2.2m × 0.1 kg = 220,000 kg",
+      "Current grower: 80,000 × $10 + 140,000 × $6 = $0.80m + $0.84m = $1.64m",
+      "Second grower: 220,000 × $9 = $1.98m",
+      "The second grower is $340,000 more expensive; oats, honey and the bag ($1.10) cost the same either way"
+    ],
+    "shortcut": "Work in differences from $9: the first 80,000 kg cost the current grower $1 more (+$80k), the other 140,000 kg $3 less (−$420k), so switching costs $340k more.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(2.2 * 1000000 * 0.1 * 9 - (80000 * 10 + (2.2 * 1000000 * 0.1 - 80000) * 6) + 220000) < 1",
+        "abs(2.2 * 1000000 * 0.1 * 9 - (80000 * 10 + (2.2 * 1000000 * 0.1 - 80000) * 6) - 220000) < 1",
+        "abs(2.2 * 1000000 * 0.1 * 9 - (80000 * 10 + (2.2 * 1000000 * 0.1 - 80000) * 6) + 340000) < 1",
+        "abs(2.2 * 1000000 * 0.1 * 9 - (80000 * 10 + (2.2 * 1000000 * 0.1 - 80000) * 6) - 340000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q06-f",
+    "modelledOn": "pracB-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Leafline blends and packs black tea under several brands. Profit has fallen since January while freight rates on its imported leaf have gone up. Its long-standing estate gives a discount on large volumes, but the supply director suggests buying the leaf for Morning Blend from a different estate that charges one rate per kg."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The current estate charges $6 per kg on the first 90,000 kg each year and $3 per kg on the rest",
+          "The other estate charges $5 per kg",
+          "Tea bags, the box and printing cost $0.65 per box of Morning Blend",
+          "A box of 80 Morning Blend tea bags contains 0.2 kg of tea"
+        ]
+      }
+    ],
+    "prompt": "Assuming Leafline sells 1.6 million boxes of Morning Blend annually, which of the following statements is most accurate?",
+    "options": [
+      "It is $320,000 less expensive per year to use the other estate",
+      "It is $320,000 more expensive per year to use the other estate",
+      "It is $370,000 less expensive per year to use the other estate",
+      "It is $370,000 more expensive per year to use the other estate"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Tea needed: 1.6m × 0.2 kg = 320,000 kg",
+      "Current estate: 90,000 × $6 + 230,000 × $3 = $0.54m + $0.69m = $1.23m",
+      "Other estate: 320,000 × $5 = $1.60m",
+      "The other estate is $370,000 more expensive; the $0.65 for bags, box and printing does not change"
+    ],
+    "shortcut": "Against $5: the current estate's first 90,000 kg cost $1 more (+$90k) and the next 230,000 kg $2 less (−$460k), so switching adds $370k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(1.6 * 1000000 * 0.2 * 5 - (90000 * 6 + (1.6 * 1000000 * 0.2 - 90000) * 3) + 320000) < 1",
+        "abs(1.6 * 1000000 * 0.2 * 5 - (90000 * 6 + (1.6 * 1000000 * 0.2 - 90000) * 3) - 320000) < 1",
+        "abs(1.6 * 1000000 * 0.2 * 5 - (90000 * 6 + (1.6 * 1000000 * 0.2 - 90000) * 3) + 370000) < 1",
+        "abs(1.6 * 1000000 * 0.2 * 5 - (90000 * 6 + (1.6 * 1000000 * 0.2 - 90000) * 3) - 370000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q06-g",
+    "modelledOn": "pracB-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Blendo runs about 120 juice bars in shopping malls and railway stations. Its earnings have slipped over the last two quarters as the frozen mango pulp it buys has become more expensive. The operations manager wants to move the Mango Sunrise smoothie to a fruit importer offering a volume discount."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The current supplier sells frozen mango pulp at $4 per kg",
+          "The importer charges $5 per kg up to 80,000 kg in a year and $2 per kg after that",
+          "Yogurt, ice, the cup and the straw for a Mango Sunrise cost $0.90",
+          "Each Mango Sunrise uses 0.15 kg of mango pulp"
+        ]
+      }
+    ],
+    "prompt": "If Blendo sells 2.2 million Mango Sunrise smoothies a year across its bars, which of the following statements is most accurate?",
+    "options": [
+      "The importer's mango pulp is $330,000 cheaper per year",
+      "The importer's mango pulp is $330,000 more expensive per year",
+      "The importer's mango pulp is $420,000 cheaper per year",
+      "The importer's mango pulp is $420,000 more expensive per year"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Mango pulp needed: 2.2m × 0.15 kg = 330,000 kg",
+      "Current supplier: 330,000 × $4 = $1.32m",
+      "Importer: 80,000 × $5 + 250,000 × $2 = $0.40m + $0.50m = $0.90m",
+      "The importer is $420,000 cheaper; the $0.90 for yogurt, ice, cup and straw is unchanged"
+    ],
+    "shortcut": "Measured from $4: the first 80,000 kg cost $1 more (+$80k), the other 250,000 kg cost $2 less (−$500k), net −$420k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(80000 * 5 + (2.2 * 1000000 * 0.15 - 80000) * 2 - 2.2 * 1000000 * 0.15 * 4 + 330000) < 1",
+        "abs(80000 * 5 + (2.2 * 1000000 * 0.15 - 80000) * 2 - 2.2 * 1000000 * 0.15 * 4 - 330000) < 1",
+        "abs(80000 * 5 + (2.2 * 1000000 * 0.15 - 80000) * 2 - 2.2 * 1000000 * 0.15 * 4 + 420000) < 1",
+        "abs(80000 * 5 + (2.2 * 1000000 * 0.15 - 80000) * 2 - 2.2 * 1000000 * 0.15 * 4 - 420000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pracB-q06-h",
+    "modelledOn": "pracB-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Cacaoro is a chocolate maker selling bars through supermarkets and convenience stores. Its operating profit has dropped since last autumn, a period in which hazelnut prices kept going up. The head of buying suggests switching the hazelnuts in the Nutty Milk bar to a large processing cooperative."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Hazelnuts from the current supplier cost €7 per kg",
+          "The cooperative charges €8 per kg for the first 220,000 kg and €5 per kg beyond that",
+          "Cocoa, milk, sugar and wrapping for a Nutty Milk bar cost €0.38",
+          "A Nutty Milk bar contains 0.03 kg of hazelnuts"
+        ]
+      }
+    ],
+    "prompt": "With yearly sales of 9 million Nutty Milk bars, which of the following statements is most accurate?",
+    "options": [
+      "It is €120,000 less expensive per year to buy from the cooperative",
+      "It is €120,000 more expensive per year to buy from the cooperative",
+      "It is €270,000 less expensive per year to buy from the cooperative",
+      "It is €270,000 more expensive per year to buy from the cooperative"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Hazelnuts needed: 9m × 0.03 kg = 270,000 kg",
+      "Current supplier: 270,000 × €7 = €1.89m",
+      "Cooperative: 220,000 × €8 + 50,000 × €5 = €1.76m + €0.25m = €2.01m",
+      "The cooperative is €120,000 more expensive; cocoa, milk, sugar and wrapping (€0.38 a bar) cost the same"
+    ],
+    "shortcut": "Against €7: the first 220,000 kg cost €1 more (+€220k), the last 50,000 kg €2 less (−€100k), net +€120k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(220000 * 8 + (9 * 1000000 * 0.03 - 220000) * 5 - 9 * 1000000 * 0.03 * 7 + 120000) < 1",
+        "abs(220000 * 8 + (9 * 1000000 * 0.03 - 220000) * 5 - 9 * 1000000 * 0.03 * 7 - 120000) < 1",
+        "abs(220000 * 8 + (9 * 1000000 * 0.03 - 220000) * 5 - 9 * 1000000 * 0.03 * 7 + 270000) < 1",
+        "abs(220000 * 8 + (9 * 1000000 * 0.03 - 220000) * 5 - 9 * 1000000 * 0.03 * 7 - 270000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q06-a",
+    "modelledOn": "pst1-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "The catering manager of a cinema chain proposes replacing Crunchos nachos with Toltec nachos at the chain's snack counters."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The chain buys Crunchos nachos for $1.50 per tray",
+          "It sells about 400,000 trays of Crunchos a year at $4.00 per tray",
+          "Toltec nachos would cost $1.75 per tray for the first 160,000 trays ordered in a year and $1.50 per tray after that",
+          "Toltec nachos would also sell at $4.00 per tray",
+          "Cheese sauce, packaging and counter staff come to $1.00 per tray for either brand"
+        ]
+      }
+    ],
+    "prompt": "If the chain sells 10% more trays of Toltec than it now sells of Crunchos, which of the following statements is a valid conclusion?",
+    "options": [
+      "Switching from Crunchos to Toltec nachos raises profits by $20,000",
+      "Switching from Crunchos to Toltec nachos lowers profits by $20,000",
+      "Switching from Crunchos to Toltec nachos raises profits by $100,000",
+      "Switching from Crunchos to Toltec nachos lowers profits by $100,000"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Crunchos: 400,000 × ($4.00 − $1.50 − $1.00) = $600,000",
+      "Toltec: 440,000 trays; first 160,000 × ($4.00 − $1.75 − $1.00) = $200,000, next 280,000 × ($4.00 − $1.50 − $1.00) = $420,000, total $620,000",
+      "Profit rises by $620,000 − $600,000 = $20,000"
+    ],
+    "shortcut": "Margin is $1.25 on the first 160k trays and $1.50 on the rest. Compare with $1.50 on 400k trays: you lose 25c × 160k = $40k and gain $1.50 × 40k = $60k, net +$20k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(160000 * (4 - 1.75 - 1) + (400000 * (1 + 10 / 100) - 160000) * (4 - 1.5 - 1) - 400000 * (4 - 1.5 - 1) - 20000) < 1",
+        "abs(160000 * (4 - 1.75 - 1) + (400000 * (1 + 10 / 100) - 160000) * (4 - 1.5 - 1) - 400000 * (4 - 1.5 - 1) + 20000) < 1",
+        "abs(160000 * (4 - 1.75 - 1) + (400000 * (1 + 10 / 100) - 160000) * (4 - 1.5 - 1) - 400000 * (4 - 1.5 - 1) - 100000) < 1",
+        "abs(160000 * (4 - 1.75 - 1) + (400000 * (1 + 10 / 100) - 160000) * (4 - 1.5 - 1) - 400000 * (4 - 1.5 - 1) + 100000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q06-b",
+    "modelledOn": "pst1-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "The onboard sales team of a low-cost airline wants to replace the chicken wraps it buys from MaxiWrap with wraps from a new supplier, FlyFresh."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The airline pays MaxiWrap $4.00 per wrap",
+          "It sells about 600,000 MaxiWrap wraps a year at $7.00 each",
+          "FlyFresh would charge $4.30 per wrap for the first 480,000 wraps ordered in a year and $4.00 per wrap beyond that",
+          "FlyFresh wraps would also be priced at $7.00 on board",
+          "Cabin handling, chilling and waste cost $2.50 per wrap, whichever supplier is used"
+        ]
+      }
+    ],
+    "prompt": "Suppose the airline sells 10% more FlyFresh wraps than it currently sells MaxiWrap wraps. Which of the following statements is true?",
+    "options": [
+      "Changing to FlyFresh wraps raises profits by $114,000",
+      "Changing to FlyFresh wraps lowers profits by $114,000",
+      "Changing to FlyFresh wraps raises profits by $180,000",
+      "Changing to FlyFresh wraps lowers profits by $180,000"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "MaxiWrap: 600,000 × ($7.00 − $4.00 − $2.50) = $300,000",
+      "FlyFresh: 660,000 wraps; first 480,000 × ($7.00 − $4.30 − $2.50) = $96,000, next 180,000 × ($7.00 − $4.00 − $2.50) = $90,000, total $186,000",
+      "Profit falls by $300,000 − $186,000 = $114,000"
+    ],
+    "shortcut": "Margin is 20c on the first 480k wraps and 50c on the rest. Against 50c on 600k wraps: you lose 30c × 480k = $144k and gain 50c × 60k = $30k, net −$114k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(480000 * (7 - 4.3 - 2.5) + (600000 * (1 + 10 / 100) - 480000) * (7 - 4 - 2.5) - 600000 * (7 - 4 - 2.5) - 114000) < 1",
+        "abs(480000 * (7 - 4.3 - 2.5) + (600000 * (1 + 10 / 100) - 480000) * (7 - 4 - 2.5) - 600000 * (7 - 4 - 2.5) + 114000) < 1",
+        "abs(480000 * (7 - 4.3 - 2.5) + (600000 * (1 + 10 / 100) - 480000) * (7 - 4 - 2.5) - 600000 * (7 - 4 - 2.5) - 180000) < 1",
+        "abs(480000 * (7 - 4.3 - 2.5) + (600000 * (1 + 10 / 100) - 480000) * (7 - 4 - 2.5) - 600000 * (7 - 4 - 2.5) + 180000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q06-c",
+    "modelledOn": "pst1-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A chain of fitness clubs is thinking of dropping the Vitamax protein shake sold at its juice bars in favour of a rival shake, Corepro."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The clubs buy Vitamax for $2.00 per shake",
+          "They sell about 300,000 Vitamax shakes a year at $4.00 each",
+          "Corepro would cost $2.40 per shake for the first 110,000 shakes bought each year and $2.00 per shake after that",
+          "Corepro would sell for the same $4.00",
+          "Milk, cups and bar staff add $1.00 per shake with either brand"
+        ]
+      }
+    ],
+    "prompt": "Assuming the clubs sell 20% more Corepro shakes than they currently sell of Vitamax, which of the following statements can be concluded?",
+    "options": [
+      "Moving to Corepro raises profits by $16,000",
+      "Moving to Corepro lowers profits by $16,000",
+      "Moving to Corepro raises profits by $120,000",
+      "Moving to Corepro lowers profits by $120,000"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Vitamax: 300,000 × ($4.00 − $2.00 − $1.00) = $300,000",
+      "Corepro: 360,000 shakes; first 110,000 × ($4.00 − $2.40 − $1.00) = $66,000, next 250,000 × ($4.00 − $2.00 − $1.00) = $250,000, total $316,000",
+      "Profit rises by $316,000 − $300,000 = $16,000"
+    ],
+    "shortcut": "Margin is 60c on the first 110k shakes and $1.00 on the rest. Against $1.00 on 300k shakes: you lose 40c × 110k = $44k and gain $1.00 × 60k = $60k, net +$16k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(110000 * (4 - 2.4 - 1) + (300000 * (1 + 20 / 100) - 110000) * (4 - 2 - 1) - 300000 * (4 - 2 - 1) - 16000) < 1",
+        "abs(110000 * (4 - 2.4 - 1) + (300000 * (1 + 20 / 100) - 110000) * (4 - 2 - 1) - 300000 * (4 - 2 - 1) + 16000) < 1",
+        "abs(110000 * (4 - 2.4 - 1) + (300000 * (1 + 20 / 100) - 110000) * (4 - 2 - 1) - 300000 * (4 - 2 - 1) - 120000) < 1",
+        "abs(110000 * (4 - 2.4 - 1) + (300000 * (1 + 20 / 100) - 110000) * (4 - 2 - 1) - 300000 * (4 - 2 - 1) + 120000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst1-q06-d",
+    "modelledOn": "pst1-q06",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A chain of garden centres plans to stop stocking Deepgrow compost and to sell Greenleaf peat-free compost in its place."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The chain buys Deepgrow at $4.00 per bag",
+          "It sells about 200,000 bags of Deepgrow a year at $6.00 a bag",
+          "Greenleaf would cost $4.20 per bag on the first 140,000 bags ordered each year, then $4.00 per bag",
+          "Greenleaf would also retail at $6.00 a bag",
+          "Delivery, storage and staff costs are $1.70 per bag for both composts"
+        ]
+      }
+    ],
+    "prompt": "If the chain sells 10% more bags of Greenleaf than it now sells of Deepgrow, which of the following statements is supported by the data?",
+    "options": [
+      "Replacing Deepgrow with Greenleaf raises profits by $22,000",
+      "Replacing Deepgrow with Greenleaf lowers profits by $22,000",
+      "Replacing Deepgrow with Greenleaf raises profits by $40,000",
+      "Replacing Deepgrow with Greenleaf lowers profits by $40,000"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Deepgrow: 200,000 × ($6.00 − $4.00 − $1.70) = $60,000",
+      "Greenleaf: 220,000 bags; first 140,000 × ($6.00 − $4.20 − $1.70) = $14,000, next 80,000 × ($6.00 − $4.00 − $1.70) = $24,000, total $38,000",
+      "Profit falls by $60,000 − $38,000 = $22,000"
+    ],
+    "shortcut": "Margin is 10c on the first 140k bags and 30c on the rest. Against 30c on 200k bags: you lose 20c × 140k = $28k and gain 30c × 20k = $6k, net −$22k.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(140000 * (6 - 4.2 - 1.7) + (200000 * (1 + 10 / 100) - 140000) * (6 - 4 - 1.7) - 200000 * (6 - 4 - 1.7) - 22000) < 1",
+        "abs(140000 * (6 - 4.2 - 1.7) + (200000 * (1 + 10 / 100) - 140000) * (6 - 4 - 1.7) - 200000 * (6 - 4 - 1.7) + 22000) < 1",
+        "abs(140000 * (6 - 4.2 - 1.7) + (200000 * (1 + 10 / 100) - 140000) * (6 - 4 - 1.7) - 200000 * (6 - 4 - 1.7) - 40000) < 1",
+        "abs(140000 * (6 - 4.2 - 1.7) + (200000 * (1 + 10 / 100) - 140000) * (6 - 4 - 1.7) - 200000 * (6 - 4 - 1.7) + 40000) < 1"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst2-q14-a",
+    "modelledOn": "pst2-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Greenyard, a UK retailer of garden products, is benchmarking itself against three rivals that sell a broader mix of goods."
+      },
+      {
+        "type": "table",
+        "title": "Table 1 (Company C): Product count and profit (GBP millions) by category, 2013",
+        "headers": [
+          "Company C",
+          "Furniture",
+          "Tools",
+          "Plants"
+        ],
+        "rows": [
+          [
+            "Number of products",
+            "22",
+            "48",
+            "71"
+          ],
+          [
+            "Profits",
+            "21",
+            "11",
+            "18"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If Company C expects its profit in every category to rise by 10% in 2014 while it sells the same number of products, what would its total profit per product be in 2014?",
+    "options": [
+      "£390,071",
+      "£3,900,709",
+      "£319,149",
+      "£3,191,489"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Total profits: 21 + 11 + 18 = £50m; × 1.10 = £55m.",
+      "Total products: 22 + 48 + 71 = 141.",
+      "£55,000,000 ÷ 141 = £390,071."
+    ],
+    "shortcut": "55 ÷ 141 is a little under 0.4, so the answer is just under £400,000; the number of digits picks it out of its pair.",
+    "check": {
+      "kind": "value",
+      "answer": "(21 + 11 + 18) * (1 + 10 / 100) * 1000000 / (22 + 48 + 71)"
+    }
+  },
+  {
+    "id": "bk-pst2-q14-b",
+    "modelledOn": "pst2-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "SportsHub, an online seller of sports equipment, is measuring its performance against four larger competitors with wider ranges."
+      },
+      {
+        "type": "table",
+        "title": "Table 1 (Company A): Number of products and profits by category, $ millions (2012)",
+        "headers": [
+          "Company A",
+          "Bikes",
+          "Footwear",
+          "Clothing"
+        ],
+        "rows": [
+          [
+            "Number of products",
+            "12",
+            "64",
+            "39"
+          ],
+          [
+            "Profits",
+            "14",
+            "6",
+            "10"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Company A plans to grow profits by 20% in 2013 in each of its categories, with no change in the number of products it sells. What would its total profits per product be in 2013?",
+    "options": [
+      "$31,304",
+      "$313,043",
+      "$20,870",
+      "$208,696"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Total profits: 14 + 6 + 10 = $30m; × 1.20 = $36m.",
+      "Total products: 12 + 64 + 39 = 115.",
+      "$36,000,000 ÷ 115 = $313,043."
+    ],
+    "shortcut": "36 ÷ 115 is just over 0.3, so about $310,000 a product; count the digits to rule out its ten-times partner.",
+    "check": {
+      "kind": "value",
+      "answer": "(14 + 6 + 10) * (1 + 20 / 100) * 1000000 / (12 + 64 + 39)"
+    }
+  },
+  {
+    "id": "bk-pst2-q14-c",
+    "modelledOn": "pst2-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Panstore, a UK chain of kitchenware shops, has asked how its profitability measures up to that of retailers with bigger catalogues."
+      },
+      {
+        "type": "table",
+        "title": "Table 1 (Company D): Products and profits by category, £ millions (2011)",
+        "headers": [
+          "Company D",
+          "Cookware",
+          "Small appliances",
+          "Tableware"
+        ],
+        "rows": [
+          [
+            "Number of products",
+            "26",
+            "83",
+            "49"
+          ],
+          [
+            "Profits",
+            "19",
+            "16",
+            "25"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Assuming Company D lifts profits by 10% in every category in 2012 without changing the number of products it sells, what would its total profits per product be in 2012?",
+    "options": [
+      "£341,772",
+      "£3,417,722",
+      "£417,722",
+      "£4,177,215"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Total profits: 19 + 16 + 25 = £60m; × 1.10 = £66m.",
+      "Total products: 26 + 83 + 49 = 158.",
+      "£66,000,000 ÷ 158 = £417,722."
+    ],
+    "shortcut": "66 ÷ 158 is a little over 0.4, about £420,000; the digit count separates it from the option ten times larger.",
+    "check": {
+      "kind": "value",
+      "answer": "(19 + 16 + 25) * (1 + 10 / 100) * 1000000 / (26 + 83 + 49)"
+    }
+  },
+  {
+    "id": "bk-pst2-q14-d",
+    "modelledOn": "pst2-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Pawprint, which runs pet supplies stores, is studying the performance of other pet chains whose assortments go well beyond its own."
+      },
+      {
+        "type": "table",
+        "title": "Table 1 (Company E): Products and profits ($ millions) by category (2013)",
+        "headers": [
+          "Company E",
+          "Food",
+          "Toys",
+          "Grooming"
+        ],
+        "rows": [
+          [
+            "Number of products",
+            "18",
+            "37",
+            "52"
+          ],
+          [
+            "Profits",
+            "9",
+            "7",
+            "4"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If Company E raises its profits in each category by 20% in 2014 and sells the same number of products as in 2013, what would be its total profits per product in 2014?",
+    "options": [
+      "$14,953",
+      "$149,533",
+      "$22,430",
+      "$224,299"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Total profits: 9 + 7 + 4 = $20m; × 1.20 = $24m.",
+      "Total products: 18 + 37 + 52 = 107.",
+      "$24,000,000 ÷ 107 = $224,299."
+    ],
+    "shortcut": "24 ÷ 107 is a bit over 0.22, so about $220,000 a product; the number of digits rules out its pair.",
+    "check": {
+      "kind": "value",
+      "answer": "(9 + 7 + 4) * (1 + 20 / 100) * 1000000 / (18 + 37 + 52)"
+    }
+  },
+  {
+    "id": "bk-pst2-q14-e",
+    "modelledOn": "pst2-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Inkwell, a stationery retailer, wants to see how its results stack up next to four bigger peers that stock many more lines."
+      },
+      {
+        "type": "table",
+        "title": "Table 1 (Company A): Products and profits (£ millions), 2012",
+        "headers": [
+          "Company A",
+          "Paper",
+          "Pens",
+          "Art supplies"
+        ],
+        "rows": [
+          [
+            "Number of products",
+            "31",
+            "87",
+            "46"
+          ],
+          [
+            "Profits",
+            "13",
+            "8",
+            "9"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Company A forecasts a 10% increase in profits in every category for 2013, selling as many products as it did in 2012. What would total profits per product then be for company A in 2013?",
+    "options": [
+      "£16,463",
+      "£164,634",
+      "£20,122",
+      "£201,220"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Total profits: 13 + 8 + 9 = £30m; × 1.10 = £33m",
+      "Total products: 31 + 87 + 46 = 164",
+      "£33,000,000 ÷ 164 = £201,220"
+    ],
+    "shortcut": "33 ÷ 164 is about 0.2, so roughly £200k per product; the options differ only in the first digits and in a factor of ten.",
+    "check": {
+      "kind": "value",
+      "answer": "(13 + 8 + 9) * (1 + 10 / 100) * 1000000 / (31 + 87 + 46)"
+    }
+  },
+  {
+    "id": "bk-pst2-q14-f",
+    "modelledOn": "pst2-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Tunehouse, which sells musical instruments, is examining the figures of four larger music chains to learn where it falls short."
+      },
+      {
+        "type": "table",
+        "title": "Table 1 (Company C): Products and profits, £ millions (2010)",
+        "headers": [
+          "Company C",
+          "Guitars",
+          "Keyboards",
+          "Accessories"
+        ],
+        "rows": [
+          [
+            "Number of products",
+            "28",
+            "21",
+            "104"
+          ],
+          [
+            "Profits",
+            "16",
+            "11",
+            "8"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Suppose company C raises the profits of each category by 10% in 2011 and keeps selling the same number of products. How much total profit per product would company C make in 2011?",
+    "options": [
+      "£251,634",
+      "£2,516,340",
+      "£205,882",
+      "£2,058,824"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Total profits: 16 + 11 + 8 = £35m; × 1.10 = £38.5m",
+      "Total products: 28 + 21 + 104 = 153",
+      "£38,500,000 ÷ 153 = £251,634"
+    ],
+    "shortcut": "38.5 ÷ 153 is a bit over a quarter, so about £250k per product; check the size of the answer, then its first two digits.",
+    "check": {
+      "kind": "value",
+      "answer": "(16 + 11 + 8) * (1 + 10 / 100) * 1000000 / (28 + 21 + 104)"
+    }
+  },
+  {
+    "id": "bk-pst2-q14-g",
+    "modelledOn": "pst2-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Glowbar sells skincare and make-up, and its board has requested a comparison with four cosmetics groups offering more brands."
+      },
+      {
+        "type": "table",
+        "title": "Table 1 (Company D): Number of products and profits (£ millions), 2013",
+        "headers": [
+          "Company D",
+          "Skincare",
+          "Make-up",
+          "Fragrance"
+        ],
+        "rows": [
+          [
+            "Number of products",
+            "62",
+            "81",
+            "29"
+          ],
+          [
+            "Profits",
+            "11",
+            "5",
+            "9"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Company D expects to lift its profits by 20% in each category in 2014 without changing the number of products it sells. On that basis, what would company D's total profits per product come to in 2014?",
+    "options": [
+      "£116,279",
+      "£1,162,791",
+      "£174,419",
+      "£1,744,186"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Total profits: 11 + 5 + 9 = £25m; × 1.20 = £30m",
+      "Total products: 62 + 81 + 29 = 172",
+      "£30,000,000 ÷ 172 = £174,419"
+    ],
+    "shortcut": "30 ÷ 172 is a little under a fifth, so about £175k per product; once the size is right, the first two digits settle it.",
+    "check": {
+      "kind": "value",
+      "answer": "(11 + 5 + 9) * (1 + 20 / 100) * 1000000 / (62 + 81 + 29)"
+    }
+  },
+  {
+    "id": "bk-pst2-q14-h",
+    "modelledOn": "pst2-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Voltbox, an electronics chain, is reviewing its profitability beside four groups that sell many more kinds of gadget."
+      },
+      {
+        "type": "table",
+        "title": "Table 1 (Company E): Number of products and profits in £ millions (2009)",
+        "headers": [
+          "Company E",
+          "Laptops",
+          "Phones",
+          "Accessories"
+        ],
+        "rows": [
+          [
+            "Number of products",
+            "18",
+            "26",
+            "117"
+          ],
+          [
+            "Profits",
+            "22",
+            "17",
+            "31"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If company E grows profits by 10% in 2010 in each of its categories and sells the same number of products as in 2009, what total profits per product will company E make in 2010?",
+    "options": [
+      "£47,826",
+      "£478,261",
+      "£39,130",
+      "£391,304"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Total profits: 22 + 17 + 31 = £70m; × 1.10 = £77m",
+      "Total products: 18 + 26 + 117 = 161",
+      "£77,000,000 ÷ 161 = £478,261"
+    ],
+    "shortcut": "77 ÷ 161 is a little under a half, so just under £500k per product; get the size right first, then the leading 48.",
+    "check": {
+      "kind": "value",
+      "answer": "(22 + 17 + 31) * (1 + 10 / 100) * 1000000 / (18 + 26 + 117)"
+    }
+  },
+  {
+    "id": "bk-pst2-q25-a",
+    "modelledOn": "pst2-q25",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Cleanova sells a hand sanitiser gel to hospitals in 300mL and 500mL bottles, in cartons of 40 bottles. A hospital that orders more than a set number of bottles pays 5% less for every bottle beyond that number."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Prices and carton size (hand sanitiser gel)",
+        "headers": [
+          "",
+          "300mL bottle",
+          "500mL bottle"
+        ],
+        "rows": [
+          [
+            "Price per litre",
+            "$19",
+            "$16"
+          ],
+          [
+            "Bottles per carton",
+            "40",
+            "40"
+          ],
+          [
+            "Discount threshold",
+            "1,000 bottles",
+            "1,000 bottles"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Based on Table 1, suppose half of the hospitals buy the gel in the 300mL bottle and the other half in the 500mL bottle, and the average order is 8 cartons whichever bottle is chosen. Which of the following is CLOSEST to the average value of a hospital's order?",
+    "options": [
+      "$1,800",
+      "$9,000",
+      "$2,200",
+      "$11,000"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "An order is 8 × 40 = 320 bottles, below the 1,000 bottle discount threshold",
+      "300mL bottle: 0.3 × $19 = $5.70, so 320 bottles = $1,824",
+      "500mL bottle: 0.5 × $16 = $8.00, so 320 bottles = $2,560",
+      "Average: ($1,824 + $2,560) ÷ 2 = $2,192, closest to $2,200"
+    ],
+    "shortcut": "Per order that is 96 litres at $19 and 160 litres at $16: about $1,800 and $2,600, so about $2,200 on average.",
+    "check": {
+      "kind": "value",
+      "answer": "8 * 40 * (300 / 1000 * 19 + 500 / 1000 * 16) / 2"
+    }
+  },
+  {
+    "id": "bk-pst2-q25-b",
+    "modelledOn": "pst2-q25",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Roastwell supplies roasted coffee beans to grocery stores in 250g and 500g bags, packed in cases of 30 bags. Once an order passes a threshold, each further bag is billed at 3% off."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Coffee bean prices and case size",
+        "headers": [
+          "",
+          "250g bag",
+          "500g bag"
+        ],
+        "rows": [
+          [
+            "Price per kilogram",
+            "$24",
+            "$21"
+          ],
+          [
+            "Bags per case",
+            "30",
+            "30"
+          ],
+          [
+            "Discount threshold",
+            "600 bags",
+            "600 bags"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Based on Table 1, if half of the grocery stores order the 250g bag and the other half order the 500g bag, and the average order for each bag size is 6 cases, which of the following is CLOSEST to the average value of one order from a grocery store?",
+    "options": [
+      "$1,500",
+      "$7,500",
+      "$1,800",
+      "$9,000"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "An order is 6 × 30 = 180 bags, below the 600 bag discount threshold",
+      "250g bag: 0.25 × $24 = $6.00, so 180 bags = $1,080",
+      "500g bag: 0.5 × $21 = $10.50, so 180 bags = $1,890",
+      "Average: ($1,080 + $1,890) ÷ 2 = $1,485, closest to $1,500"
+    ],
+    "shortcut": "An order is 45 kg of the small bags at $24 or 90 kg of the large bags at $21: $1,080 and $1,890, which average just under $1,500.",
+    "check": {
+      "kind": "value",
+      "answer": "6 * 30 * (250 / 1000 * 24 + 500 / 1000 * 21) / 2"
+    }
+  },
+  {
+    "id": "bk-pst2-q25-c",
+    "modelledOn": "pst2-q25",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Colorfast sells interior wall paint to painting contractors in 750mL and 2,500mL tins, in packs of 6 tins. Contractors are given 4% off any tin they order over a fixed limit."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Paint prices and packing",
+        "headers": [
+          "",
+          "750mL tin",
+          "2,500mL tin"
+        ],
+        "rows": [
+          [
+            "Price per litre",
+            "$14",
+            "$11"
+          ],
+          [
+            "Tins per pack",
+            "6",
+            "6"
+          ],
+          [
+            "Discount limit",
+            "500 tins",
+            "500 tins"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Based on Table 1, if half of the contractors buy the paint in the 750mL tin and half buy it in the 2,500mL tin, and the average order for both tin sizes is 30 packs, which of the following is CLOSEST to the average value of a contractor's order?",
+    "options": [
+      "$600",
+      "$3,000",
+      "$700",
+      "$3,500"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "An order is 30 × 6 = 180 tins, below the 500 tin discount limit",
+      "750mL tin: 0.75 × $14 = $10.50, so 180 tins = $1,890",
+      "2,500mL tin: 2.5 × $11 = $27.50, so 180 tins = $4,950",
+      "Average: ($1,890 + $4,950) ÷ 2 = $3,420, closest to $3,500"
+    ],
+    "shortcut": "Per order that is 135 litres at $14 and 450 litres at $11: about $1,900 and $5,000, so about $3,400 on average.",
+    "check": {
+      "kind": "value",
+      "answer": "30 * 6 * (750 / 1000 * 14 + 2500 / 1000 * 11) / 2"
+    }
+  },
+  {
+    "id": "bk-pst2-q25-d",
+    "modelledOn": "pst2-q25",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Pawsome makes wet dog food, which pet shops buy in 400g or 800g cans packed 12 to a tray. For an order larger than a set quantity, every can past that quantity is 5% cheaper."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Price list (wet dog food)",
+        "headers": [
+          "",
+          "400g can",
+          "800g can"
+        ],
+        "rows": [
+          [
+            "Price per kilogram",
+            "$5.50",
+            "$5.00"
+          ],
+          [
+            "Cans per tray",
+            "12",
+            "12"
+          ],
+          [
+            "Discount threshold",
+            "1,000 cans",
+            "1,000 cans"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Based on Table 1, if half of the pet shops buy the 400g can and the other half buy the 800g can, and the average order size is 60 trays for both can sizes, which of the following is CLOSEST to the average value of a pet shop's order?",
+    "options": [
+      "$450",
+      "$2,250",
+      "$550",
+      "$2,750"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "An order is 60 × 12 = 720 cans, below the 1,000 can discount threshold",
+      "400g can: 0.4 × $5.50 = $2.20, so 720 cans = $1,584",
+      "800g can: 0.8 × $5.00 = $4.00, so 720 cans = $2,880",
+      "Average: ($1,584 + $2,880) ÷ 2 = $2,232, closest to $2,250"
+    ],
+    "shortcut": "Per order that is 288 kg at $5.50 and 576 kg at $5.00: about $1,600 and $2,900, so about $2,250 on average.",
+    "check": {
+      "kind": "value",
+      "answer": "60 * 12 * (400 / 1000 * 5.5 + 800 / 1000 * 5) / 2"
+    }
+  },
+  {
+    "id": "bk-pst2-q25-e",
+    "modelledOn": "pst2-q25",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Torqline distributes engine oil to car repair garages in 1-litre and 4-litre bottles, sold in crates of 5. Garages are charged 5% less for any bottle they order in excess of a fixed cut-off."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Prices and crate size (engine lubricant)",
+        "headers": [
+          "",
+          "1-litre bottle",
+          "4-litre bottle"
+        ],
+        "rows": [
+          [
+            "Price per litre",
+            "$14",
+            "$12"
+          ],
+          [
+            "Bottles per crate",
+            "5",
+            "5"
+          ],
+          [
+            "Discount cut-off",
+            "300 bottles",
+            "300 bottles"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Based on Table 1, if half of the garages order the oil in the 1-litre bottle and the other half order it in the 4-litre bottle, and the average order for both bottle sizes is 25 crates, which of the following is CLOSEST to the average value of one garage order?",
+    "options": [
+      "$350",
+      "$1,750",
+      "$800",
+      "$4,000"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "An order is 25 × 5 = 125 bottles, below the 300 bottle discount cut-off",
+      "1-litre bottle: 1 × $14 = $14, so 125 bottles = $1,750",
+      "4-litre bottle: 4 × $12 = $48, so 125 bottles = $6,000",
+      "Average: ($1,750 + $6,000) ÷ 2 = $3,875, closest to $4,000"
+    ],
+    "shortcut": "Per order that is 125 litres at $14 and 500 litres at $12: $1,750 and $6,000, so just under $4,000 on average.",
+    "check": {
+      "kind": "value",
+      "answer": "25 * 5 * (1 * 14 + 4 * 12) / 2"
+    }
+  },
+  {
+    "id": "bk-pst2-q25-f",
+    "modelledOn": "pst2-q25",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Rootwell makes a liquid plant fertiliser that nurseries order in 500mL and 1L bottles, in cartons of 25 bottles. When a nursery's order tops a certain level, each bottle after that is invoiced at 5% off."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Rootwell prices and packaging (liquid fertiliser)",
+        "headers": [
+          "",
+          "500mL bottle",
+          "1L bottle"
+        ],
+        "rows": [
+          [
+            "Price per litre",
+            "$12.80",
+            "$9.80"
+          ],
+          [
+            "Bottles per carton",
+            "25",
+            "25"
+          ],
+          [
+            "Discount threshold",
+            "250 bottles",
+            "250 bottles"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Based on Table 1, assume that half of the nurseries buy the fertiliser in the 500mL bottle and half buy it in the 1L bottle, with an average order of 5 cartons for either bottle. Which of the following is CLOSEST to the average value of one nursery order?",
+    "options": [
+      "$1,000",
+      "$5,000",
+      "$1,200",
+      "$6,000"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "An order is 5 × 25 = 125 bottles, below the 250 bottle discount threshold",
+      "500mL bottle: 0.5 × $12.80 = $6.40, so 125 bottles = $800",
+      "1L bottle: 1 × $9.80 = $9.80, so 125 bottles = $1,225",
+      "Average: ($800 + $1,225) ÷ 2 = $1,012.50, closest to $1,000"
+    ],
+    "shortcut": "Per order that is 62.5 litres at $12.80 and 125 litres at $9.80: $800 and about $1,225, so about $1,000 on average.",
+    "check": {
+      "kind": "value",
+      "answer": "5 * 25 * (500 / 1000 * 12.8 + 1 * 9.8) / 2"
+    }
+  },
+  {
+    "id": "bk-pst2-q25-g",
+    "modelledOn": "pst2-q25",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Lathera sells shampoo to hotels in 250mL and 400mL dispenser refills, in boxes of 25 bottles. Hotels ordering more than a stated number of bottles pay 5% less for each bottle over that number."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Lathera price and box details (hotel shampoo)",
+        "headers": [
+          "",
+          "250mL bottle",
+          "400mL bottle"
+        ],
+        "rows": [
+          [
+            "Price per litre",
+            "$38",
+            "$31"
+          ],
+          [
+            "Bottles per box",
+            "25",
+            "25"
+          ],
+          [
+            "Discount threshold",
+            "400 bottles",
+            "400 bottles"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Based on Table 1, if half of the hotels buy the shampoo in the 250mL bottle and half of them buy it in the 400mL bottle, and if the average order is 5 boxes for both bottle sizes, which of the following is CLOSEST to what a hotel's order is worth on average?",
+    "options": [
+      "$1,200",
+      "$6,000",
+      "$1,400",
+      "$7,000"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "An order is 5 × 25 = 125 bottles, below the 400 bottle discount threshold",
+      "250mL bottle: 0.25 × $38 = $9.50, so 125 bottles = $1,187.50",
+      "400mL bottle: 0.4 × $31 = $12.40, so 125 bottles = $1,550",
+      "Average: ($1,187.50 + $1,550) ÷ 2 = $1,368.75, closest to $1,400"
+    ],
+    "shortcut": "A bottle costs $9.50 or $12.40, about $11 on average, and an order is 125 bottles: about $1,370, nearest $1,400.",
+    "check": {
+      "kind": "value",
+      "answer": "5 * 25 * (250 / 1000 * 38 + 400 / 1000 * 31) / 2"
+    }
+  },
+  {
+    "id": "bk-pst2-q25-h",
+    "modelledOn": "pst2-q25",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Oliveto bottles extra virgin olive oil and sells it to supermarkets in 500mL and 1L bottles, in cases of 8. If a supermarket's order surpasses an agreed volume, the extra bottles carry a 5% reduction."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Olive oil price sheet",
+        "headers": [
+          "",
+          "500mL bottle",
+          "1L bottle"
+        ],
+        "rows": [
+          [
+            "Price per litre",
+            "€8.20",
+            "€6.80"
+          ],
+          [
+            "Bottles per case",
+            "8",
+            "8"
+          ],
+          [
+            "Discount threshold",
+            "500 bottles",
+            "500 bottles"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Based on Table 1, if half of the supermarkets order the oil in the 500mL bottle and half in the 1L bottle, and the average order for each bottle size is 40 cases, which of the following is CLOSEST to the average value of a supermarket's order?",
+    "options": [
+      "€350",
+      "€1,750",
+      "€420",
+      "€2,100"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "An order is 40 × 8 = 320 bottles, below the 500 bottle discount threshold",
+      "500mL bottle: 0.5 × €8.20 = €4.10, so 320 bottles = €1,312",
+      "1L bottle: 1 × €6.80 = €6.80, so 320 bottles = €2,176",
+      "Average: (€1,312 + €2,176) ÷ 2 = €1,744, closest to €1,750"
+    ],
+    "shortcut": "Per order that is 160 litres at €8.20 and 320 litres at €6.80: about €1,300 and €2,200, so about €1,750 on average.",
+    "check": {
+      "kind": "value",
+      "answer": "40 * 8 * (500 / 1000 * 8.2 + 1 * 6.8) / 2"
+    }
+  },
+  {
+    "id": "bk-pst3-q13-a",
+    "modelledOn": "pst3-q13",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Danny's Car Wash is a single-site car wash on a busy main road. The owner saw that revenue went up in June but that the profit margin dropped well below the level of April and May."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Key figures for Danny's Car Wash (monthly average)",
+        "headers": [
+          "",
+          "April - May",
+          "June"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "$61,847",
+            "$63,215"
+          ],
+          [
+            "Costs",
+            "$52,390",
+            "$57,936"
+          ],
+          [
+            "Number of washes sold",
+            "4,872",
+            "4,731"
+          ],
+          [
+            "Profit margin",
+            "15.3%",
+            "8.4%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which of the following statements is most accurate regarding the data in Table 1?",
+    "options": [
+      "The car wash made approximately 40% less profit per wash sold in June than the average of April and May",
+      "The car wash made approximately 20% less profit per wash sold in June than the average of April and May",
+      "The car wash made approximately 40% more profit per wash sold in June than the average of April and May",
+      "The car wash made approximately 20% more profit per wash sold in June than the average of April and May"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "April - May: profit $61,847 − $52,390 = $9,457 ÷ 4,872 washes = $1.94 per wash",
+      "June: $63,215 − $57,936 = $5,279 ÷ 4,731 = $1.12 per wash",
+      "Change = (1.12 − 1.94) ÷ 1.94 ≈ −42%, so about 40% less"
+    ],
+    "shortcut": "Washes barely change (−3%), so profit per wash moves with profit: 5,279 ÷ 9,457 ≈ 0.56, a fall of a little over 40%.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(((63215 - 57936) / 4731) / ((61847 - 52390) / 4872) - 1 + 40 / 100) < 10 / 100",
+        "abs(((63215 - 57936) / 4731) / ((61847 - 52390) / 4872) - 1 + 20 / 100) < 10 / 100",
+        "abs(((63215 - 57936) / 4731) / ((61847 - 52390) / 4872) - 1 - 40 / 100) < 10 / 100",
+        "abs(((63215 - 57936) / 4731) / ((61847 - 52390) / 4872) - 1 - 20 / 100) < 10 / 100"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q13-b",
+    "modelledOn": "pst3-q13",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Orion Cinema is an independent four-screen cinema in a mid-sized town. Its manager noticed that March brought in more revenue than the first two months of the year, yet the profit margin was lower."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Main financial figures for Orion Cinema (average per month)",
+        "headers": [
+          "",
+          "January - February",
+          "March"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "$198,472",
+            "$203,915"
+          ],
+          [
+            "Costs",
+            "$176,642",
+            "$187,396"
+          ],
+          [
+            "Number of tickets sold",
+            "17,634",
+            "17,108"
+          ],
+          [
+            "Profit margin",
+            "11.0%",
+            "8.1%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which of the following statements is most accurate regarding the data in Table 1?",
+    "options": [
+      "The cinema made approximately 40% less profit per ticket sold in March compared with the January - February average",
+      "The cinema made approximately 20% less profit per ticket sold in March compared with the January - February average",
+      "The cinema made approximately 40% more profit per ticket sold in March compared with the January - February average",
+      "The cinema made approximately 20% more profit per ticket sold in March compared with the January - February average"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "January - February: profit $198,472 − $176,642 = $21,830 ÷ 17,634 tickets = $1.24 per ticket",
+      "March: $203,915 − $187,396 = $16,519 ÷ 17,108 = $0.97 per ticket",
+      "Change = (0.97 − 1.24) ÷ 1.24 ≈ −22%, so about 20% less"
+    ],
+    "shortcut": "Tickets fall about 3%, so profit per ticket falls a little less than profit: 16,519 ÷ 21,830 ≈ 0.76, so per ticket about 0.78, a fall of roughly a fifth.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(((203915 - 187396) / 17108) / ((198472 - 176642) / 17634) - 1 + 40 / 100) < 10 / 100",
+        "abs(((203915 - 187396) / 17108) / ((198472 - 176642) / 17634) - 1 + 20 / 100) < 10 / 100",
+        "abs(((203915 - 187396) / 17108) / ((198472 - 176642) / 17634) - 1 - 40 / 100) < 10 / 100",
+        "abs(((203915 - 187396) / 17108) / ((198472 - 176642) / 17634) - 1 - 20 / 100) < 10 / 100"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q13-c",
+    "modelledOn": "pst3-q13",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Mia's Dry Cleaning runs two shops in a suburban district. The owner noticed that revenue slipped in August while the profit margin rose clearly above that of June and July."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Financial data for Mia's Dry Cleaning (average per month)",
+        "headers": [
+          "",
+          "June - July",
+          "August"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "€47,216",
+            "€46,387"
+          ],
+          [
+            "Costs",
+            "€43,030",
+            "€40,629"
+          ],
+          [
+            "Number of garments cleaned",
+            "10,193",
+            "9,874"
+          ],
+          [
+            "Profit margin",
+            "8.9%",
+            "12.4%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which of the following statements is most accurate regarding the data in Table 1?",
+    "options": [
+      "The shops earned approximately 40% less profit per garment cleaned in August than the average for June and July",
+      "The shops earned approximately 20% less profit per garment cleaned in August than the average for June and July",
+      "The shops earned approximately 40% more profit per garment cleaned in August than the average for June and July",
+      "The shops earned approximately 20% more profit per garment cleaned in August than the average for June and July"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "June - July: profit €47,216 − €43,030 = €4,186 ÷ 10,193 garments = €0.41 per garment",
+      "August: €46,387 − €40,629 = €5,758 ÷ 9,874 = €0.58 per garment",
+      "Change = (0.58 − 0.41) ÷ 0.41 ≈ +42%, so about 40% more"
+    ],
+    "shortcut": "Garments fall about 3%, so profit per garment rises a little faster than profit: 5,758 ÷ 4,186 ≈ 1.38, so per garment about 1.42, roughly 40% more.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(((46387 - 40629) / 9874) / ((47216 - 43030) / 10193) - 1 + 40 / 100) < 10 / 100",
+        "abs(((46387 - 40629) / 9874) / ((47216 - 43030) / 10193) - 1 + 20 / 100) < 10 / 100",
+        "abs(((46387 - 40629) / 9874) / ((47216 - 43030) / 10193) - 1 - 40 / 100) < 10 / 100",
+        "abs(((46387 - 40629) / 9874) / ((47216 - 43030) / 10193) - 1 - 20 / 100) < 10 / 100"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q13-d",
+    "modelledOn": "pst3-q13",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Luca's Cycle Workshop repairs and services bicycles in a university town. Its revenue grew in April, and Luca also found that the profit margin had improved compared with February and March."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Summary of Luca's Cycle Workshop accounts (average per month)",
+        "headers": [
+          "",
+          "February - March",
+          "April"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "€41,286",
+            "€43,507"
+          ],
+          [
+            "Costs",
+            "€36,914",
+            "€38,152"
+          ],
+          [
+            "Number of repairs",
+            "712",
+            "728"
+          ],
+          [
+            "Profit margin",
+            "10.6%",
+            "12.3%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which of the following statements is most accurate regarding the data in Table 1?",
+    "options": [
+      "The workshop's profit per repair in April was approximately 40% lower than its average for February and March",
+      "The workshop's profit per repair in April was approximately 20% lower than its average for February and March",
+      "The workshop's profit per repair in April was approximately 40% higher than its average for February and March",
+      "The workshop's profit per repair in April was approximately 20% higher than its average for February and March"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "February - March: profit €41,286 − €36,914 = €4,372 ÷ 712 repairs = €6.14 per repair",
+      "April: €43,507 − €38,152 = €5,355 ÷ 728 = €7.36 per repair",
+      "Change = (7.36 − 6.14) ÷ 6.14 ≈ +20%, so about 20% higher"
+    ],
+    "shortcut": "Repairs rise only about 2%, so profit per repair moves almost like profit: 5,355 ÷ 4,372 ≈ 1.22, so per repair about 1.2, a rise of roughly a fifth.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(((43507 - 38152) / 728) / ((41286 - 36914) / 712) - 1 + 40 / 100) < 10 / 100",
+        "abs(((43507 - 38152) / 728) / ((41286 - 36914) / 712) - 1 + 20 / 100) < 10 / 100",
+        "abs(((43507 - 38152) / 728) / ((41286 - 36914) / 712) - 1 - 40 / 100) < 10 / 100",
+        "abs(((43507 - 38152) / 728) / ((41286 - 36914) / 712) - 1 - 20 / 100) < 10 / 100"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q13-e",
+    "modelledOn": "pst3-q13",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Sunny's Juice Bar sells fresh juices and smoothies close to a large office park. Revenue dipped in November, although the profit margin turned out higher than over September and October."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Main figures for Sunny's Juice Bar (average per month)",
+        "headers": [
+          "",
+          "September - October",
+          "November"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "€42,618",
+            "€41,939"
+          ],
+          [
+            "Costs",
+            "€39,205",
+            "€38,014"
+          ],
+          [
+            "Number of drinks sold",
+            "9,812",
+            "9,467"
+          ],
+          [
+            "Profit margin",
+            "8.0%",
+            "9.4%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which of the following statements is most accurate regarding the data in Table 1?",
+    "options": [
+      "Profit per drink sold in November was approximately 40% lower than the September - October average",
+      "Profit per drink sold in November was approximately 20% lower than the September - October average",
+      "Profit per drink sold in November was approximately 40% higher than the September - October average",
+      "Profit per drink sold in November was approximately 20% higher than the September - October average"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "September - October: profit €42,618 − €39,205 = €3,413 ÷ 9,812 drinks = €0.35 per drink",
+      "November: €41,939 − €38,014 = €3,925 ÷ 9,467 = €0.41 per drink",
+      "Change = (0.41 − 0.35) ÷ 0.35 ≈ +19%, so about 20% higher"
+    ],
+    "shortcut": "Drinks sold fall about 3%, so profit per drink rises a little faster than profit: 3,925 ÷ 3,413 ≈ 1.15, so per drink about 1.19, roughly a fifth higher.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(((41939 - 38014) / 9467) / ((42618 - 39205) / 9812) - 1 + 40 / 100) < 10 / 100",
+        "abs(((41939 - 38014) / 9467) / ((42618 - 39205) / 9812) - 1 + 20 / 100) < 10 / 100",
+        "abs(((41939 - 38014) / 9467) / ((42618 - 39205) / 9812) - 1 - 40 / 100) < 10 / 100",
+        "abs(((41939 - 38014) / 9467) / ((42618 - 39205) / 9812) - 1 - 20 / 100) < 10 / 100"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q13-f",
+    "modelledOn": "pst3-q13",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Nina's Flowers is a florist making bouquets for weddings, birthdays and offices. Revenue increased in May, but Nina was surprised to find that the profit margin had slumped compared with March and April."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Trading data for Nina's Flowers (average per month)",
+        "headers": [
+          "",
+          "March - April",
+          "May"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "€29,764",
+            "€31,208"
+          ],
+          [
+            "Costs",
+            "€26,019",
+            "€29,077"
+          ],
+          [
+            "Number of bouquets sold",
+            "1,846",
+            "1,793"
+          ],
+          [
+            "Profit margin",
+            "12.6%",
+            "6.8%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which of the following statements is most accurate regarding the data in Table 1?",
+    "options": [
+      "Nina's Flowers earned approximately 40% less profit on each bouquet in May than it did on average in March and April",
+      "Nina's Flowers earned approximately 20% less profit on each bouquet in May than it did on average in March and April",
+      "Nina's Flowers earned approximately 40% more profit on each bouquet in May than it did on average in March and April",
+      "Nina's Flowers earned approximately 20% more profit on each bouquet in May than it did on average in March and April"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "March - April: profit €29,764 − €26,019 = €3,745 ÷ 1,846 bouquets = €2.03 per bouquet",
+      "May: €31,208 − €29,077 = €2,131 ÷ 1,793 = €1.19 per bouquet",
+      "Change = (1.19 − 2.03) ÷ 2.03 ≈ −41%, so about 40% less"
+    ],
+    "shortcut": "Bouquets sold barely change (−3%), so profit per bouquet moves like profit: 2,131 ÷ 3,745 ≈ 0.57, a fall of roughly 40%.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(((31208 - 29077) / 1793) / ((29764 - 26019) / 1846) - 1 + 40 / 100) < 10 / 100",
+        "abs(((31208 - 29077) / 1793) / ((29764 - 26019) / 1846) - 1 + 20 / 100) < 10 / 100",
+        "abs(((31208 - 29077) / 1793) / ((29764 - 26019) / 1846) - 1 - 40 / 100) < 10 / 100",
+        "abs(((31208 - 29077) / 1793) / ((29764 - 26019) / 1846) - 1 - 20 / 100) < 10 / 100"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q13-g",
+    "modelledOn": "pst3-q13",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Studio Leon is a hair salon with eight chairs on a shopping street. In September revenue eased a little, while the profit margin climbed clearly above July and August."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Studio Leon results (monthly average)",
+        "headers": [
+          "",
+          "July - August",
+          "September"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "€52,371",
+            "€51,684"
+          ],
+          [
+            "Costs",
+            "€47,926",
+            "€45,595"
+          ],
+          [
+            "Number of appointments",
+            "1,532",
+            "1,486"
+          ],
+          [
+            "Profit margin",
+            "8.5%",
+            "11.8%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which of the following statements is most accurate regarding the data in Table 1?",
+    "options": [
+      "The salon's profit per appointment was approximately 40% lower in September than the average for July and August",
+      "The salon's profit per appointment was approximately 20% lower in September than the average for July and August",
+      "The salon's profit per appointment was approximately 40% higher in September than the average for July and August",
+      "The salon's profit per appointment was approximately 20% higher in September than the average for July and August"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "July - August: profit €52,371 − €47,926 = €4,445 ÷ 1,532 appointments = €2.90 per appointment",
+      "September: €51,684 − €45,595 = €6,089 ÷ 1,486 = €4.10 per appointment",
+      "Change = (4.10 − 2.90) ÷ 2.90 ≈ +41%, so about 40% higher"
+    ],
+    "shortcut": "Appointments fall about 3%, so profit per appointment rises a little faster than profit: 6,089 ÷ 4,445 ≈ 1.37, so per appointment about 1.41, roughly 40% higher.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(((51684 - 45595) / 1486) / ((52371 - 47926) / 1532) - 1 + 40 / 100) < 10 / 100",
+        "abs(((51684 - 45595) / 1486) / ((52371 - 47926) / 1532) - 1 + 20 / 100) < 10 / 100",
+        "abs(((51684 - 45595) / 1486) / ((52371 - 47926) / 1532) - 1 - 40 / 100) < 10 / 100",
+        "abs(((51684 - 45595) / 1486) / ((52371 - 47926) / 1532) - 1 - 20 / 100) < 10 / 100"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q13-h",
+    "modelledOn": "pst3-q13",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Elena's Driving School gives driving lessons from one small office in a suburb. Revenue went up in July, but Elena found the profit margin was down on May and June."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Elena's Driving School in numbers (average per month)",
+        "headers": [
+          "",
+          "May - June",
+          "July"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "€38,694",
+            "€40,112"
+          ],
+          [
+            "Costs",
+            "€33,817",
+            "€36,228"
+          ],
+          [
+            "Number of lessons given",
+            "912",
+            "897"
+          ],
+          [
+            "Profit margin",
+            "12.6%",
+            "9.7%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Which of the following statements is most accurate regarding the data in Table 1?",
+    "options": [
+      "The school's profit per lesson given in July was approximately 40% less than its May - June average",
+      "The school's profit per lesson given in July was approximately 20% less than its May - June average",
+      "The school's profit per lesson given in July was approximately 40% more than its May - June average",
+      "The school's profit per lesson given in July was approximately 20% more than its May - June average"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "May - June: profit €38,694 − €33,817 = €4,877 ÷ 912 lessons = €5.35 per lesson",
+      "July: €40,112 − €36,228 = €3,884 ÷ 897 = €4.33 per lesson",
+      "Change = (4.33 − 5.35) ÷ 5.35 ≈ −19%, so about 20% less"
+    ],
+    "shortcut": "Lessons barely change (−2%), so profit per lesson moves almost like profit: 3,884 ÷ 4,877 ≈ 0.80, a fall of about a fifth.",
+    "check": {
+      "kind": "truth",
+      "statements": [
+        "abs(((40112 - 36228) / 897) / ((38694 - 33817) / 912) - 1 + 40 / 100) < 10 / 100",
+        "abs(((40112 - 36228) / 897) / ((38694 - 33817) / 912) - 1 + 20 / 100) < 10 / 100",
+        "abs(((40112 - 36228) / 897) / ((38694 - 33817) / 912) - 1 - 40 / 100) < 10 / 100",
+        "abs(((40112 - 36228) / 897) / ((38694 - 33817) / 912) - 1 - 20 / 100) < 10 / 100"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q14-a",
+    "modelledOn": "pst3-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Ana's Kitchen is a family catering business that cooks for parties, offices and weddings. In May its revenue climbed, but the owner noticed the profit margin had dropped steeply from March and April."
+      },
+      {
+        "type": "paragraph",
+        "text": "In March and April one cook spends 50% of her time preparing party platters. For May the owner adds two seasonal trainee cooks, so 2.5 full time cooks prepare platters. A full time cook works 168 hours per month. Every platter prepared is sold."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Party platters prepared (average per month)",
+        "headers": [
+          "",
+          "March - April",
+          "May"
+        ],
+        "rows": [
+          [
+            "Platters",
+            "103",
+            "495"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the approximate difference in the cooks' productivity, in minutes needed to prepare one platter, in May compared with the average of March and April?",
+    "options": [
+      "2 minutes",
+      "6 minutes",
+      "10 minutes",
+      "14 minutes"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "March - April: 50% × 168 hours = 84 hours, or 5,040 minutes, for 103 platters = 48.9 minutes per platter.",
+      "May: 2.5 × 168 hours = 420 hours, or 25,200 minutes, for 495 platters = 50.9 minutes per platter.",
+      "Difference ≈ 2 minutes."
+    ],
+    "shortcut": "Five times the hours (84 to 420) against 495 ÷ 103 ≈ 4.8 times the platters, so each platter takes about 4% longer: 4% of about 49 minutes is 2 minutes.",
+    "check": {
+      "kind": "value",
+      "answer": "2.5 * 168 * 60 / 495 - 50 / 100 * 168 * 60 / 103"
+    }
+  },
+  {
+    "id": "bk-pst3-q14-b",
+    "modelledOn": "pst3-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Marco Cycles is a bike shop that sells, rents out and repairs bikes. In April its sales went up, but the shop's profit margin slid well below the level of February and March."
+      },
+      {
+        "type": "paragraph",
+        "text": "In February and March a single mechanic devotes 50% of his working hours to servicing bikes. For April two seasonal helpers join him, so the equivalent of 2.5 full time mechanics service bikes. Each full time mechanic is paid for 150 hours a month. Every bike serviced is collected."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Bikes serviced (average per month)",
+        "headers": [
+          "",
+          "February - March",
+          "April"
+        ],
+        "rows": [
+          [
+            "Bikes",
+            "58",
+            "266"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the approximate change in the mechanics' productivity, measured as minutes to service one bike, between the February - March average and April?",
+    "options": [
+      "1 minute",
+      "4 minutes",
+      "7 minutes",
+      "10 minutes"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "February - March: 50% × 150 hours = 75 hours, or 4,500 minutes, for 58 bikes = 77.6 minutes per bike.",
+      "April: 2.5 × 150 hours = 375 hours, or 22,500 minutes, for 266 bikes = 84.6 minutes per bike.",
+      "Difference ≈ 7 minutes."
+    ],
+    "shortcut": "Hours rise 5 times but bikes only 266 ÷ 58 ≈ 4.6 times, so each takes about 9% longer; 9% of roughly 78 minutes is about 7 minutes.",
+    "check": {
+      "kind": "value",
+      "answer": "2.5 * 150 * 60 / 266 - 50 / 100 * 150 * 60 / 58"
+    }
+  },
+  {
+    "id": "bk-pst3-q14-c",
+    "modelledOn": "pst3-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Elena Tailoring is a small tailor that makes and alters suits and dresses. In June, the busiest month for weddings, revenue rose, but the owner saw the profit margin shrink sharply from April and May."
+      },
+      {
+        "type": "paragraph",
+        "text": "In April and May one tailor spends 50% of her time on alterations. For June the owner brings in two short-term assistant tailors, so 2.5 full time tailors focus on alterations. A full time tailor works 170 hours per month. All alterations are collected and paid for."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Alterations completed (average per month)",
+        "headers": [
+          "",
+          "April - May",
+          "June"
+        ],
+        "rows": [
+          [
+            "Alterations",
+            "41",
+            "187"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the approximate difference in the tailors' productivity, counted as minutes per alteration, in June against the average for April and May?",
+    "options": [
+      "3 minutes",
+      "6 minutes",
+      "9 minutes",
+      "12 minutes"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "April - May: 0.5 × 170 = 85 hours = 5,100 minutes for 41 alterations = 124.4 minutes per alteration.",
+      "June: 2.5 × 170 = 425 hours = 25,500 minutes for 187 alterations = 136.4 minutes per alteration.",
+      "Difference ≈ 12 minutes."
+    ],
+    "shortcut": "Five times the hours, but 187 ÷ 41 ≈ 4.6 times the alterations, so each takes about 10% longer; 10% of about 124 minutes is about 12 minutes.",
+    "check": {
+      "kind": "value",
+      "answer": "2.5 * 170 * 60 / 187 - 50 / 100 * 170 * 60 / 41"
+    }
+  },
+  {
+    "id": "bk-pst3-q14-d",
+    "modelledOn": "pst3-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Victor Tyres is a family garage that sells and fits car tyres and does small repairs. Revenue went up in November, at the start of winter, yet the owner noticed the profit margin fell steeply compared with September and October."
+      },
+      {
+        "type": "paragraph",
+        "text": "Through September and October one fitter spends 50% of his time changing tyres. In November the owner hires two extra fitters on short contracts, so 2.5 full time fitters work on tyre changes. A full time fitter works 172 hours per month. Every tyre change is paid for."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Tyre changes (average per month)",
+        "headers": [
+          "",
+          "September - October",
+          "November"
+        ],
+        "rows": [
+          [
+            "Tyre changes",
+            "83",
+            "368"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the approximate difference in productivity, in minutes taken per tyre change, between November and the September - October average?",
+    "options": [
+      "4 minutes",
+      "8 minutes",
+      "12 minutes",
+      "16 minutes"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "September - October: 50% × 172 hours = 86 hours, or 5,160 minutes, for 83 tyre changes = 62.2 minutes each.",
+      "November: 2.5 × 172 hours = 430 hours, or 25,800 minutes, for 368 tyre changes = 70.1 minutes each.",
+      "Difference ≈ 8 minutes."
+    ],
+    "shortcut": "Five times the hours, but 368 ÷ 83 ≈ 4.4 times the tyre changes, so each takes about 13% longer; 13% of about 62 minutes is about 8 minutes.",
+    "check": {
+      "kind": "value",
+      "answer": "2.5 * 172 * 60 / 368 - 50 / 100 * 172 * 60 / 83"
+    }
+  },
+  {
+    "id": "bk-pst3-q14-e",
+    "modelledOn": "pst3-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Rosa Flowers is a florist run by two sisters, offering cut stems, pot plants and hand-tied bouquets. Its revenue climbed in February, but the profit margin slipped well below that of December and January."
+      },
+      {
+        "type": "paragraph",
+        "text": "Over December and January, one florist devotes 50% of working time to bouquets. For February, two short-contract trainees are taken on, so 2.5 full time florists produce bouquets. A full time florist works 166 hours per month. Every bouquet produced is sold."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Bouquets made (average per month)",
+        "headers": [
+          "",
+          "December - January",
+          "February"
+        ],
+        "rows": [
+          [
+            "Bouquets",
+            "101",
+            "434"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the approximate difference in the florists' productivity, measured in minutes to make a bouquet, in February compared with the average of December and January?",
+    "options": [
+      "2 minutes",
+      "4 minutes",
+      "6 minutes",
+      "8 minutes"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "December - January: 0.5 × 166 = 83 hours = 4,980 minutes for 101 bouquets = 49.3 minutes per bouquet.",
+      "February: 2.5 × 166 = 415 hours = 24,900 minutes for 434 bouquets = 57.4 minutes per bouquet.",
+      "Difference ≈ 8 minutes."
+    ],
+    "shortcut": "February has 5 times the hours (415 against 83) but well under 5 times the bouquets (434 against 5 × 101 = 505), so each bouquet takes about 505 ÷ 434 ≈ 16% longer. 16% of about 49 minutes is about 8 minutes.",
+    "check": {
+      "kind": "value",
+      "answer": "2.5 * 166 * 60 / 434 - 50 / 100 * 166 * 60 / 101"
+    }
+  },
+  {
+    "id": "bk-pst3-q14-f",
+    "modelledOn": "pst3-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Hugo Grooming is a pet shop that stocks food, toys and leads and also washes and trims dogs. July brought higher revenue, yet the profit margin shrank from where it stood in May and June."
+      },
+      {
+        "type": "paragraph",
+        "text": "Across May and June one groomer gives 50% of working hours to grooming. In July two summer groomers come in, bringing grooming to 2.5 full time groomers. A full time groomer works 158 hours per month. Each dog groomed is billed."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Dogs groomed (average per month)",
+        "headers": [
+          "",
+          "May - June",
+          "July"
+        ],
+        "rows": [
+          [
+            "Dogs",
+            "77",
+            "367"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the approximate difference in the groomers' productivity, in minutes needed to groom one dog, in July versus the average of May and June?",
+    "options": [
+      "3 minutes",
+      "7 minutes",
+      "11 minutes",
+      "15 minutes"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "May - June: 0.5 × 158 = 79 hours = 4,740 minutes for 77 dogs = 61.6 minutes per dog.",
+      "July: 2.5 × 158 = 395 hours = 23,700 minutes for 367 dogs = 64.6 minutes per dog.",
+      "Difference ≈ 3 minutes."
+    ],
+    "shortcut": "July has 5 times the hours (395 against 79) but a little under 5 times the dogs (367 against 5 × 77 = 385), so each dog takes about 385 ÷ 367 ≈ 5% longer. 5% of about 62 minutes is about 3 minutes.",
+    "check": {
+      "kind": "value",
+      "answer": "2.5 * 158 * 60 / 367 - 50 / 100 * 158 * 60 / 77"
+    }
+  },
+  {
+    "id": "bk-pst3-q14-g",
+    "modelledOn": "pst3-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Nina Frames is a small framing shop offering prints, mirrors and custom picture frames. Revenue went up in March, but the profit margin sank below the January - February level."
+      },
+      {
+        "type": "paragraph",
+        "text": "In January and February one framer puts 50% of working time into frames. For March, two short-term apprentice framers start, so 2.5 full time framers build frames. A full time framer works 176 hours per month. Every frame built is sold."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Frames made (average per month)",
+        "headers": [
+          "",
+          "January - February",
+          "March"
+        ],
+        "rows": [
+          [
+            "Frames",
+            "46",
+            "215"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the approximate difference in the framers' productivity, counted in minutes to make one frame, in March against the average of January and February?",
+    "options": [
+      "2 minutes",
+      "5 minutes",
+      "8 minutes",
+      "11 minutes"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "January - February: 0.5 × 176 = 88 hours = 5,280 minutes for 46 frames = 114.8 minutes per frame.",
+      "March: 2.5 × 176 = 440 hours = 26,400 minutes for 215 frames = 122.8 minutes per frame.",
+      "Difference ≈ 8 minutes."
+    ],
+    "shortcut": "March has 5 times the hours (440 against 88) but fewer than 5 times the frames (215 against 5 × 46 = 230), so each frame takes about 230 ÷ 215 ≈ 7% longer. 7% of about 115 minutes is about 8 minutes.",
+    "check": {
+      "kind": "value",
+      "answer": "2.5 * 176 * 60 / 215 - 50 / 100 * 176 * 60 / 46"
+    }
+  },
+  {
+    "id": "bk-pst3-q14-h",
+    "modelledOn": "pst3-q14",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Leo Upholstery is a workshop that re-covers sofas, armchairs and dining chairs for households and restaurants. In June revenue increased, while the profit margin dipped markedly from its April and May level."
+      },
+      {
+        "type": "paragraph",
+        "text": "Through April and May one upholsterer spends 50% of working time re-covering dining chairs. For June, two seasonal helpers are recruited, so 2.5 full time upholsterers re-cover chairs. A full time upholsterer works 162 hours per month. Every chair re-covered is invoiced."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Dining chairs re-covered (average per month)",
+        "headers": [
+          "",
+          "April - May",
+          "June"
+        ],
+        "rows": [
+          [
+            "Chairs",
+            "50",
+            "233"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the approximate difference in the upholsterers' productivity, measured in minutes per chair, in June compared with the April - May average?",
+    "options": [
+      "2 minutes",
+      "7 minutes",
+      "12 minutes",
+      "17 minutes"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "April - May: 0.5 × 162 = 81 hours = 4,860 minutes for 50 chairs = 97.2 minutes per chair.",
+      "June: 2.5 × 162 = 405 hours = 24,300 minutes for 233 chairs = 104.3 minutes per chair.",
+      "Difference ≈ 7 minutes."
+    ],
+    "shortcut": "June has 5 times the hours (405 against 81) but fewer than 5 times the chairs (233 against 5 × 50 = 250), so each chair takes about 250 ÷ 233 ≈ 7% longer. 7% of about 97 minutes is about 7 minutes.",
+    "check": {
+      "kind": "value",
+      "answer": "2.5 * 162 * 60 / 233 - 50 / 100 * 162 * 60 / 50"
+    }
+  },
+  {
+    "id": "bk-pst3-q15-a",
+    "modelledOn": "pst3-q15",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Bloomhouse is a family-run florist selling cut flowers, plants and flower arrangements. In February its revenue jumped, but the owner saw the profit margin drop well below the level of December and January."
+      },
+      {
+        "type": "paragraph",
+        "text": "In December and January one florist spends 50% of her time making arrangements. For February the owner takes on two temporary florists, so 2.5 full time florists work on arrangements. A full time florist works 160 hours per month. Every arrangement made is sold."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Arrangements made (average per month)",
+        "headers": [
+          "",
+          "December - January",
+          "February"
+        ],
+        "rows": [
+          [
+            "Arrangements",
+            "103",
+            "487"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 1 shows the number of florists needed for each level of monthly output of arrangements."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "join": "step",
+        "title": "Exhibit 1: Florists full time equivalent needed for making arrangements",
+        "unit": "Florists, full time equivalent",
+        "xUnit": "Number of arrangements per month",
+        "categories": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "x": [
+          0,
+          120,
+          240,
+          360,
+          480,
+          600
+        ],
+        "series": [
+          {
+            "name": "Florists",
+            "values": [
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 640,
+          "step": 40
+        },
+        "labelled": false,
+        "decimals": 1
+      }
+    ],
+    "prompt": "According to Exhibit 1, which of the following ideas would do the LEAST to reverse the fall in efficiency in making arrangements in February compared with December and January?",
+    "options": [
+      "Hire a total of 3 extra florists for February, and make an extra 120 arrangements per month to sell through a local hotel in February",
+      "Make an extra 80 arrangements per month and sell them through a local hotel in February",
+      "Hire only 1 extra florist for February and reduce output to 360 arrangements per month",
+      "Hire only 1.5 extra florists for February and reduce output to 480 arrangements per month"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Minutes per arrangement = florists × 160 × 60 ÷ arrangements; December - January is 4,800 ÷ 103 = 47 and February is 24,000 ÷ 487 = 49",
+      "Extra 80: 567 arrangements still need 2.5 florists, 24,000 ÷ 567 = 42",
+      "1 extra florist: 1.5 florists, 14,400 ÷ 360 = 40",
+      "1.5 extra florists: 2 florists, 19,200 ÷ 480 = 40",
+      "3 extra florists: 607 arrangements need 3 florists, 28,800 ÷ 607 = 47 minutes (worse still if 3.5 florists are counted), the only idea that stays above December - January's 47"
+    ],
+    "shortcut": "Minutes per arrangement fall when output sits just short of a jump (more arrangements, same florists). Going to 607 crosses the 600 threshold and brings in another half florist.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "3 * 160 * 60 / (487 + 120)",
+        "2.5 * 160 * 60 / (487 + 80)",
+        "1.5 * 160 * 60 / 360",
+        "2 * 160 * 60 / 480"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q15-b",
+    "modelledOn": "pst3-q15",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "FrameRight is a small picture-framing shop that also sells prints and mirrors. Its revenue rose in June, the wedding and graduation season, yet the owner found that the profit margin fell sharply against April and May."
+      },
+      {
+        "type": "paragraph",
+        "text": "In April and May one framer spends 50% of his time making frames to order. In June the owner brings in two temporary framers, so 2.5 full time framers make frames. A full time framer works 150 hours per month. All frames made are sold."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Frames made to order (average per month)",
+        "headers": [
+          "",
+          "April - May",
+          "June"
+        ],
+        "rows": [
+          [
+            "Frames",
+            "52",
+            "246"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 1 shows how many framers the shop needs for a given number of frames per month."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "join": "step",
+        "title": "Exhibit 1: Framers full time equivalent needed for making frames",
+        "unit": "Framers, full time equivalent",
+        "xUnit": "Number of frames per month",
+        "categories": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "x": [
+          0,
+          60,
+          120,
+          180,
+          240,
+          300
+        ],
+        "series": [
+          {
+            "name": "Framers",
+            "values": [
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 320,
+          "step": 20
+        },
+        "labelled": false,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Which of the following ideas would LEAST improve the efficiency of making frames in June, which has fallen compared with April and May, according to Exhibit 1?",
+    "options": [
+      "Make an extra 40 frames per month in June and sell them through a nearby furniture store",
+      "Hire only 1.5 extra framers in June and reduce output to 240 frames per month",
+      "Hire a total of 3 extra framers in June, and make an extra 60 frames per month to sell through a nearby furniture store",
+      "Hire only 1 extra framer in June and reduce output to 180 frames per month"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Minutes per frame = framers × 150 × 60 ÷ frames; April - May is 4,500 ÷ 52 = 87 and June is 22,500 ÷ 246 = 91",
+      "Extra 40: 286 frames still need 2.5 framers, 22,500 ÷ 286 = 79",
+      "1.5 extra framers: 2 framers, 18,000 ÷ 240 = 75",
+      "1 extra framer: 1.5 framers, 13,500 ÷ 180 = 75",
+      "3 extra framers: 306 frames need 3 framers, 27,000 ÷ 306 = 88 minutes (worse still if 3.5 framers are counted), the only idea that stays above April - May's 87"
+    ],
+    "shortcut": "Output just below a jump uses the framers best; just above it wastes most of a new half framer. Going to 306 frames crosses the 300 threshold.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "2.5 * 150 * 60 / (246 + 40)",
+        "2 * 150 * 60 / 240",
+        "3 * 150 * 60 / (246 + 60)",
+        "1.5 * 150 * 60 / 180"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q15-c",
+    "modelledOn": "pst3-q15",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Greenway is a garden centre selling plants, tools and ready-planted hanging baskets. In May revenue went up, but the manager noticed the profit margin fall steeply from where it stood in March and April."
+      },
+      {
+        "type": "paragraph",
+        "text": "In March and April one gardener spends 50% of her time planting hanging baskets. In May the manager hires two seasonal gardeners, so 2.5 full time gardeners plant baskets. A full time gardener works 160 hours per month. All baskets planted are sold."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Hanging baskets planted (average per month)",
+        "headers": [
+          "",
+          "March - April",
+          "May"
+        ],
+        "rows": [
+          [
+            "Baskets",
+            "80",
+            "368"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 1 shows how many gardeners the garden centre needs depending on how many baskets it plants per month."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "join": "step",
+        "title": "Exhibit 1: Gardeners full time equivalent needed for planting baskets",
+        "unit": "Gardeners, full time equivalent",
+        "xUnit": "Number of baskets per month",
+        "categories": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "x": [
+          0,
+          90,
+          180,
+          270,
+          360,
+          450
+        ],
+        "series": [
+          {
+            "name": "Gardeners",
+            "values": [
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 480,
+          "step": 30
+        },
+        "labelled": false,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Based on Exhibit 1, which of the following ideas would do LEAST to help the garden centre win back the efficiency in planting baskets that it lost in May compared with March and April?",
+    "options": [
+      "Hire only 1.5 extra gardeners in May and reduce output to 360 baskets per month",
+      "Plant an extra 60 baskets per month in May and sell them through a local hardware store",
+      "Hire only 1 extra gardener in May and reduce output to 270 baskets per month",
+      "Hire a total of 3 extra gardeners in May, and plant an extra 90 baskets per month to sell through a local hardware store"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Minutes per basket = gardeners × 160 × 60 ÷ baskets; March - April is 4,800 ÷ 80 = 60 and May is 24,000 ÷ 368 = 65",
+      "Extra 60: 428 baskets still need 2.5 gardeners, 24,000 ÷ 428 = 56",
+      "1.5 extra gardeners: 2 gardeners, 19,200 ÷ 360 = 53",
+      "1 extra gardener: 1.5 gardeners, 14,400 ÷ 270 = 53",
+      "3 extra gardeners: 458 baskets need 3 gardeners, 28,800 ÷ 458 = 63 minutes (worse still if 3.5 gardeners are counted), the only idea that stays above March - April's 60"
+    ],
+    "shortcut": "Each half gardener is used best when output sits at the top of its band. Going to 458 baskets crosses the 450 threshold and calls for another half gardener while the others cut output to a band's end.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "2 * 160 * 60 / 360",
+        "2.5 * 160 * 60 / (368 + 60)",
+        "1.5 * 160 * 60 / 270",
+        "3 * 160 * 60 / (368 + 90)"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q15-d",
+    "modelledOn": "pst3-q15",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Spokesmith is a small independent bicycle shop with a repair workshop; it also stocks spare parts and accessories. April revenue climbed, while the profit margin fell markedly against February and March."
+      },
+      {
+        "type": "paragraph",
+        "text": "In February and March one mechanic spends 50% of the working week on bike services. For April the shop takes on two short-term mechanics, so 2.5 full time mechanics carry out services. A full time mechanic works 160 hours per month. Every service carried out is paid for."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Bike services carried out (average per month)",
+        "headers": [
+          "",
+          "February - March",
+          "April"
+        ],
+        "rows": [
+          [
+            "Services",
+            "39",
+            "183"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 1 gives the number of mechanics the workshop requires for any number of services per month."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "join": "step",
+        "title": "Exhibit 1: Number of mechanics full time equivalent required for bike services",
+        "unit": "Mechanics, full time equivalent",
+        "xUnit": "Number of services per month",
+        "categories": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "x": [
+          0,
+          45,
+          90,
+          135,
+          180,
+          225
+        ],
+        "series": [
+          {
+            "name": "Mechanics",
+            "values": [
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 240,
+          "step": 15
+        },
+        "labelled": false,
+        "decimals": 1
+      }
+    ],
+    "prompt": "According to Exhibit 1, which of the following ideas would do the LEAST to recover the efficiency of bike servicing that the workshop lost in April compared with February and March?",
+    "options": [
+      "Hire only 1 extra mechanic for April and cut the number of services to 129 per month",
+      "Hire a total of 3 extra mechanics for April, and carry out an extra 45 services per month for a local courier company in April",
+      "Carry out an extra 30 services per month for a local courier company in April",
+      "Hire only 1.5 extra mechanics for April and cut the number of services to 172 per month"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Minutes per service = mechanics × 160 × 60 ÷ services; February - March is 4,800 ÷ 39 = 123 and April is 24,000 ÷ 183 = 131",
+      "Extra 30: 213 services still need 2.5 mechanics, 24,000 ÷ 213 = 113",
+      "1.5 extra mechanics: 2 mechanics, 19,200 ÷ 172 = 112",
+      "1 extra mechanic: 1.5 mechanics, 14,400 ÷ 129 = 112",
+      "3 extra mechanics: 228 services need 3 mechanics, 28,800 ÷ 228 = 126 minutes (worse still if 3.5 mechanics are counted), the only idea that stays above February - March's 123"
+    ],
+    "shortcut": "Minutes per service are lowest when output sits at the top end of a step. Going to 228 services passes the 225 threshold and adds another half mechanic for only 3 more services.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "1.5 * 160 * 60 / 129",
+        "3 * 160 * 60 / (183 + 45)",
+        "2.5 * 160 * 60 / (183 + 30)",
+        "2 * 160 * 60 / 172"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q15-e",
+    "modelledOn": "pst3-q15",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Claywork is a small pottery studio selling mugs, plates and hand-thrown bowls, and it runs weekend classes. November revenue went up, yet the profit margin was far lower than in September and October."
+      },
+      {
+        "type": "paragraph",
+        "text": "In September and October one potter spends 50% of each month throwing bowls. For November the studio takes on two extra potters for the month, so 2.5 full time potters throw bowls. A full time potter works 160 hours per month. All bowls thrown are sold."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Bowls thrown (average per month)",
+        "headers": [
+          "",
+          "September - October",
+          "November"
+        ],
+        "rows": [
+          [
+            "Bowls",
+            "31",
+            "147"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 1 shows the number of potters the studio must have to throw a given number of bowls per month."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "join": "step",
+        "title": "Exhibit 1: Potters dedicated to throwing bowls, by monthly output",
+        "unit": "Potters, full time equivalent",
+        "xUnit": "Number of bowls per month",
+        "categories": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "x": [
+          0,
+          36,
+          72,
+          108,
+          144,
+          180,
+          216
+        ],
+        "series": [
+          {
+            "name": "Potters",
+            "values": [
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3,
+              3.5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 228,
+          "step": 12
+        },
+        "labelled": false,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Which of these ideas would do LEAST to restore the bowl-throwing efficiency the studio had in September and October, according to Exhibit 1?",
+    "options": [
+      "Throw an extra 11 bowls per month in November and sell them through a nearby gift shop",
+      "Hire a total of 2.5 extra potters in November, and throw an extra 61 bowls per month to sell through a nearby gift shop",
+      "Hire only 1.5 extra potters in November and cut production to 136 bowls per month",
+      "Hire only 1 extra potter in November and cut production to 102 bowls per month"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Minutes per bowl = potters × 160 × 60 ÷ bowls; September - October is 4,800 ÷ 31 = 155 and November is 24,000 ÷ 147 = 163",
+      "Extra 11: 158 bowls still need 2.5 potters, 24,000 ÷ 158 = 152",
+      "Total of 2.5 extra: 3 potters for 208 bowls, 28,800 ÷ 208 = 138",
+      "1.5 extra: 2 potters, 19,200 ÷ 136 = 141",
+      "1 extra: 1.5 potters, 14,400 ÷ 102 = 141",
+      "The extra 11 bowls leave 152 minutes per bowl, close to September - October's 155; every other idea brings it down to between 138 and 141, so the extra 11 bowls help least"
+    ],
+    "shortcut": "Output just short of a jump uses the potters best. 158 bowls sit early in the 2.5-potter step, while each other idea lands near the end of a step.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "2.5 * 160 * 60 / (147 + 11)",
+        "3 * 160 * 60 / (147 + 61)",
+        "2 * 160 * 60 / 136",
+        "1.5 * 160 * 60 / 102"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q15-f",
+    "modelledOn": "pst3-q15",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Goldleaf is a jewellery workshop that makes rings to order and resizes rings bought elsewhere. In December, the busiest month for engagements, revenue climbed, but the profit margin dropped steeply below October and November."
+      },
+      {
+        "type": "paragraph",
+        "text": "In October and November one jeweller does resizing for 50% of the month. For December the workshop adds two contract jewellers, so 2.5 full time jewellers resize rings. A full time jeweller works 150 hours per month. Every ring resized is paid for."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Rings resized (average per month)",
+        "headers": [
+          "",
+          "October - November",
+          "December"
+        ],
+        "rows": [
+          [
+            "Rings",
+            "26",
+            "128"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 1 shows how many jewellers the workshop has to assign to resizing for each number of rings per month."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "join": "step",
+        "title": "Exhibit 1: Jewellers assigned to resizing, full time",
+        "unit": "Jewellers, full time equivalent",
+        "xUnit": "Number of rings resized per month",
+        "categories": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "x": [
+          0,
+          30,
+          60,
+          90,
+          120,
+          150,
+          180
+        ],
+        "series": [
+          {
+            "name": "Jewellers",
+            "values": [
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3,
+              3.5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 190,
+          "step": 10
+        },
+        "labelled": false,
+        "decimals": 1
+      }
+    ],
+    "prompt": "According to Exhibit 1, which of these ideas would do the LEAST to get back the resizing efficiency the workshop lost in December compared with October and November?",
+    "options": [
+      "Resize an extra 10 rings per month in December for a nearby watch shop",
+      "Hire only 1.5 extra jewellers in December and cut down to 94 rings per month",
+      "Hire a total of 2.5 extra jewellers in December, and resize an extra 50 rings per month for a nearby watch shop",
+      "Hire only a half-time extra jeweller in December and cut down to 54 rings per month"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Minutes per ring = jewellers × 150 × 60 ÷ rings; October - November is 4,500 ÷ 26 = 173 and December is 22,500 ÷ 128 = 176",
+      "Extra 10: 138 rings still need 2.5 jewellers, 22,500 ÷ 138 = 163",
+      "1.5 extra: 94 rings need 2 jewellers, 18,000 ÷ 94 = 191",
+      "Total of 2.5 extra: 3 jewellers for 178 rings, 27,000 ÷ 178 = 152",
+      "Half-time extra: 1 jeweller, 9,000 ÷ 54 = 167",
+      "Cutting to 94 rings is the only idea that leaves minutes per ring above December's 176, so it helps least"
+    ],
+    "shortcut": "94 rings are just past the jump at 90, so the workshop pays for 2 jewellers to do little more than 1.5 could; the other ideas sit near the end of a step.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "2.5 * 150 * 60 / (128 + 10)",
+        "2 * 150 * 60 / 94",
+        "3 * 150 * 60 / (128 + 50)",
+        "1 * 150 * 60 / 54"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q15-g",
+    "modelledOn": "pst3-q15",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Bindwell is a bindery that hand-binds photo albums, notebooks and guest books. June brings most of its wedding orders: revenue rose, but the margin slid well under its April and May level."
+      },
+      {
+        "type": "paragraph",
+        "text": "During April and May one bookbinder works on wedding albums 50% of the time. In June the bindery employs two extra bookbinders for June alone, so 2.5 full time bookbinders make albums. A full time bookbinder works 160 hours per month. All albums made are sold."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Wedding albums bound (average per month)",
+        "headers": [
+          "",
+          "April - May",
+          "June"
+        ],
+        "rows": [
+          [
+            "Albums",
+            "55",
+            "262"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 1 sets out how many bookbinders the bindery must put on albums for each monthly number of albums."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "join": "step",
+        "title": "Exhibit 1: Bookbinders working on wedding albums, full time basis",
+        "unit": "Bookbinders, full time equivalent",
+        "xUnit": "Number of albums per month",
+        "categories": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "x": [
+          0,
+          63,
+          126,
+          189,
+          252,
+          315,
+          378
+        ],
+        "series": [
+          {
+            "name": "Bookbinders",
+            "values": [
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3,
+              3.5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 399,
+          "step": 21
+        },
+        "labelled": false,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Based on Exhibit 1, which of the following ideas would do LEAST to reverse the fall in efficiency in binding albums in June compared with April and May?",
+    "options": [
+      "Hire only 1 extra bookbinder in June and cut the number of albums to 180 per month",
+      "Hire a total of 2.5 extra bookbinders in June, and bind an extra 104 albums per month for a nearby wedding photographer",
+      "Bind an extra 17 albums per month for a nearby wedding photographer in June",
+      "Hire only 1.5 extra bookbinders in June and cut the number of albums to 240 per month"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Minutes per album = bookbinders × 160 × 60 ÷ albums; April - May is 4,800 ÷ 55 = 87 and June is 24,000 ÷ 262 = 92",
+      "1 extra: 1.5 bookbinders, 14,400 ÷ 180 = 80",
+      "Total of 2.5 extra: 3 bookbinders for 366 albums, 28,800 ÷ 366 = 79",
+      "Extra 17: 279 albums still need 2.5 bookbinders, 24,000 ÷ 279 = 86",
+      "1.5 extra: 2 bookbinders, 19,200 ÷ 240 = 80",
+      "The extra 17 albums leave about 86 minutes each, near April - May's 87; the other ideas bring it down to 79 to 80, so the extra 17 help least"
+    ],
+    "shortcut": "Output just short of a jump uses the bookbinders best. 279 albums sit early in the 2.5-bookbinder step; 180, 240 and 366 are near the end of theirs.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "1.5 * 160 * 60 / 180",
+        "3 * 160 * 60 / (262 + 104)",
+        "2.5 * 160 * 60 / (262 + 17)",
+        "2 * 160 * 60 / 240"
+      ]
+    }
+  },
+  {
+    "id": "bk-pst3-q15-h",
+    "modelledOn": "pst3-q15",
+    "skill": "unit-economics",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Tickwell is a watch repair shop that also sells straps and batteries. In November, as customers have watches serviced ahead of the gift season, revenue increased, but the profit margin slumped compared with September and October."
+      },
+      {
+        "type": "paragraph",
+        "text": "In September and October one watchmaker spends 50% of the month on full services. In November the shop hires two extra watchmakers on one-month contracts, so 2.5 full time watchmakers do services. A full time watchmaker works 160 hours per month. Every service is paid for."
+      },
+      {
+        "type": "table",
+        "title": "Table 2: Watch services done (average per month)",
+        "headers": [
+          "",
+          "September - October",
+          "November"
+        ],
+        "rows": [
+          [
+            "Services",
+            "29",
+            "139"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 1 gives the number of watchmakers the shop must assign to services for any monthly number of services."
+      },
+      {
+        "type": "chart",
+        "chart": "scatter",
+        "join": "step",
+        "title": "Exhibit 1: Watchmakers assigned to full services, full time",
+        "unit": "Watchmakers, full time equivalent",
+        "xUnit": "Number of services per month",
+        "categories": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "x": [
+          0,
+          33,
+          66,
+          99,
+          132,
+          165,
+          198
+        ],
+        "series": [
+          {
+            "name": "Watchmakers",
+            "values": [
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3,
+              3.5
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3.5,
+          "step": 0.5
+        },
+        "xAxis": {
+          "min": 0,
+          "max": 209,
+          "step": 11
+        },
+        "labelled": false,
+        "decimals": 1
+      }
+    ],
+    "prompt": "Going by Exhibit 1, which of these ideas would do the LEAST to bring back the efficiency of watch servicing that the shop lost in November compared with September and October?",
+    "options": [
+      "Hire a total of 2.5 extra watchmakers in November, and service an extra 55 watches per month for a nearby jeweller",
+      "Hire only a half-time extra watchmaker in November and cut down to 60 services per month",
+      "Service an extra 9 watches per month for a nearby jeweller in November",
+      "Hire only 1.5 extra watchmakers in November and cut down to 104 services per month"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Minutes per service = watchmakers × 160 × 60 ÷ services; September - October is 4,800 ÷ 29 = 166 and November is 24,000 ÷ 139 = 173",
+      "Total of 2.5 extra: 3 watchmakers for 194 services, 28,800 ÷ 194 = 148",
+      "Half-time extra: 1 watchmaker, 9,600 ÷ 60 = 160",
+      "Extra 9: 148 services still need 2.5 watchmakers, 24,000 ÷ 148 = 162",
+      "1.5 extra: 104 services need 2 watchmakers, 19,200 ÷ 104 = 185",
+      "Cutting to 104 services is the only idea that leaves minutes per service above November's 173, so it helps least"
+    ],
+    "shortcut": "104 services are just past the jump at 99, so 2 watchmakers are paid to do little more than 1.5 could; the other ideas stay inside a step.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "3 * 160 * 60 / (139 + 55)",
+        "1 * 160 * 60 / 60",
+        "2.5 * 160 * 60 / (139 + 9)",
+        "2 * 160 * 60 / 104"
+      ]
+    }
+  }
+]

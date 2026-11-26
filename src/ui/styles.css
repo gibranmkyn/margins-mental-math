@@ -1,0 +1,810 @@
+/*
+ * Margins: the Scoreboard. A black board, lit numerals, one amber.
+ * Steps live in parts/tokens.css, shared parts in parts/parts.css. This file holds only
+ * what is particular to one screen, and uses steps only (no px, hex, ms). See DESIGN.md.
+ */
+
+@import './parts/tokens.css';
+@import './parts/parts.css';
+
+/* ---------- Home ---------- */
+
+.home-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-3);
+}
+
+.home-head .meta {
+  white-space: nowrap;
+}
+
+/* Settings sits in the head beside the wordmark, one tap from Home, not behind Badges at the foot of the scroll; the line goes under. */
+.home-head .home-settings {
+  order: 1;
+  margin-left: auto;
+  align-self: center;
+}
+
+.home-head:has(.home-settings) .meta {
+  order: 2;
+  flex-basis: 100%;
+}
+
+.wordmark {
+  font-family: var(--num);
+  font-size: var(--type-wordmark);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-solid);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+
+.wordmark::after {
+  content: '.';
+  color: var(--lit);
+  -webkit-text-stroke: var(--hairline) var(--lit-outline);
+}
+
+.streak-secured {
+  color: var(--accent);
+}
+
+.goal-line {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.next-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-3);
+}
+
+.next-retries {
+  flex-basis: 100%;
+  text-wrap: balance;
+}
+
+.next-skill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--type-lg);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+}
+
+/* The two spot check lengths: outlined, side by side under the lit action, one row in the thumb zone. */
+.spot-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+/* ---------- Skills ---------- */
+
+.skills-head {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.skills-title {
+  font-family: var(--num);
+  font-size: var(--type-3xl);
+  font-weight: var(--weight-black);
+  line-height: 1;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+
+/* ---------- Library ---------- */
+
+.library-head {
+  display: grid;
+  gap: var(--space-2);
+  padding-top: var(--space-2);
+}
+
+.library-title {
+  font-family: var(--num);
+  font-size: var(--type-3xl);
+  font-weight: var(--weight-black);
+  line-height: 1;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+
+.skills-group {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.library-count {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* Fixed width, so every row's coverage bar is the same length. */
+.library-pct {
+  min-width: 4ch;
+  text-align: right;
+}
+
+.library-number {
+  font-family: var(--num);
+  font-size: var(--type-2xl);
+  font-weight: var(--weight-heavy);
+  line-height: 1;
+  letter-spacing: var(--tracking-display);
+  font-variant-numeric: tabular-nums;
+}
+
+.case-source {
+  display: grid;
+  gap: var(--space-1);
+}
+
+/* ---------- Trends ---------- */
+
+.trends .panel {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.trends-empty {
+  padding-block: var(--space-2);
+}
+
+/* ---------- Session ---------- */
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-3);
+  min-height: 0;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-6);
+}
+
+.stage .progress {
+  flex: none;
+  margin-bottom: var(--space-3);
+}
+
+/* One line always: long prompts shrink to fit the width (--num-glyph is the numeral face's average glyph width). */
+.prompt {
+  --fit: calc((min(100vw, var(--screen-max)) - var(--pad) - var(--content-x)) / (var(--chars, 7) * var(--num-glyph)));
+  white-space: nowrap;
+  font-family: var(--num);
+  font-size: min(var(--type-num-lg), var(--fit));
+  font-weight: var(--weight-heavy);
+  line-height: 1;
+  letter-spacing: var(--tracking-display);
+  font-variant-numeric: tabular-nums;
+}
+
+/* The typed answer sits on the board: a full-bleed black band with lit numerals, in both themes. */
+.entry {
+  display: flex;
+  align-items: center;
+  min-height: 1.25em;
+  margin-inline: calc(var(--content-x) * -1) calc(var(--pad) * -1);
+  padding: var(--space-1) var(--pad) var(--space-1) var(--content-x);
+  background: var(--board);
+  color: var(--board-num);
+  font-family: var(--num);
+  font-size: var(--type-num-md);
+  font-weight: var(--weight-heavy);
+  line-height: 1;
+  letter-spacing: var(--tracking-display);
+  font-variant-numeric: tabular-nums;
+}
+
+/* After a miss the board shows both: what was typed, struck through, and the answer, lit. */
+.entry-miss {
+  --fit: calc((min(100vw, var(--screen-max)) - var(--pad) - var(--content-x)) / (var(--chars, 8) * var(--num-glyph)));
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: end;
+  justify-content: space-between;
+  gap: 0 var(--space-3);
+}
+
+.entry-tag {
+  font-size: var(--type-label);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--board-muted);
+}
+
+.entry-answer {
+  display: grid;
+  justify-items: end;
+}
+
+.entry-typed {
+  display: grid;
+}
+
+.entry-miss .entry-typed,
+.entry-miss .entry-answer {
+  font-size: min(1em, var(--fit));
+}
+
+.entry-miss .entry-tag {
+  font-size: var(--type-label);
+}
+
+.entry-right {
+  color: var(--board-num);
+}
+
+.entry-miss .entry-eq {
+  display: none;
+}
+
+/* A question that brings back an earlier miss says so on a small outlined tag. */
+.retry-mark {
+  margin-right: var(--space-2);
+  padding: 0 var(--space-1);
+  box-shadow: inset 0 0 0 var(--hairline) var(--muted);
+  color: var(--text);
+}
+
+.entry-eq {
+  margin-right: 0.3em;
+  font-size: 0.6em;
+  color: var(--board-muted);
+}
+
+.caret {
+  width: var(--stroke-heavy);
+  height: 0.8em;
+  margin-left: var(--space-1);
+  background: var(--board-num);
+}
+
+/* The answer's unit waits after the caret, quieter than the digits, so it is never typed. */
+.entry-unit {
+  margin-left: var(--space-1);
+  color: var(--board-muted);
+}
+
+/* A hit stays lit; a miss goes red and is struck through. */
+.entry-hit .entry-value {
+  color: var(--board-num);
+}
+
+.entry-miss .entry-value {
+  color: var(--board-miss);
+  text-decoration: line-through;
+  text-decoration-thickness: var(--stroke-heavy);
+}
+
+/* While feedback shows, the drill steps back so the solution has room. */
+/* The drill keeps the height it needs (prompt and board, never clipped); the sheet takes the rest and scrolls inside. */
+.session-feedback {
+  grid-template-rows: auto auto minmax(0, 1fr);
+}
+
+.session-feedback .dock-sheet {
+  max-height: none;
+  min-height: 0;
+}
+
+.session-feedback .stage .progress {
+  display: none;
+}
+
+.session-feedback .stage {
+  gap: var(--space-1);
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-3);
+}
+
+.session-feedback .stage-label {
+  display: none;
+}
+
+.session-feedback .prompt {
+  font-size: min(var(--type-num-sm), var(--fit));
+}
+
+.session-feedback .entry {
+  font-size: var(--type-num-sm);
+}
+
+/* ---------- Feedback sheet ---------- */
+
+.verdict {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.verdict-word {
+  justify-self: start;
+  font-family: var(--num);
+  font-size: var(--type-3xl);
+  font-weight: var(--weight-black);
+  letter-spacing: var(--tracking-caps);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* A hit is stamped on a lit tile, a little crooked. */
+.feedback-hit .verdict-word {
+  padding: var(--space-1) var(--space-2);
+  background: var(--lit);
+  color: var(--lit-ink);
+  box-shadow: inset 0 0 0 var(--stroke) var(--lit-outline);
+  transform: rotate(-1.5deg);
+}
+
+.feedback-miss .verdict-word {
+  text-decoration: underline;
+  text-decoration-color: var(--miss);
+  text-decoration-thickness: var(--stroke-heavy);
+  text-underline-offset: 0.2em;
+}
+
+.verdict-answer {
+  font-size: var(--type-md);
+  color: var(--muted);
+}
+
+.verdict-answer strong {
+  font-family: var(--num);
+  font-size: var(--type-2xl);
+  font-weight: var(--weight-heavy);
+  letter-spacing: var(--tracking-display);
+  line-height: 1;
+  color: var(--text);
+}
+
+/* A chosen option is a letter and its text. The letter is a key, drawn as the key on its card, never as part of the answer. */
+.case-feedback .verdict-answer strong,
+.mock-review .verdict-answer strong {
+  display: inline-grid;
+  place-items: center;
+  min-width: var(--space-6);
+  height: var(--space-6);
+  margin-inline: var(--space-1) 0;
+  background: var(--lit);
+  box-shadow: inset 0 0 0 var(--hairline) var(--lit-outline);
+  color: var(--lit-ink);
+  font-family: var(--num);
+  font-size: var(--type-lg);
+  font-weight: var(--weight-heavy);
+  letter-spacing: 0;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.case-feedback .verdict-answer,
+.mock-review .verdict-answer {
+  font-size: var(--type-lg);
+  font-weight: var(--weight-semibold);
+  color: var(--text);
+}
+
+.xp-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.xp-amount {
+  font-family: var(--num);
+  font-size: var(--type-xl);
+  font-weight: var(--weight-heavy);
+  letter-spacing: var(--tracking-display);
+  color: var(--accent);
+}
+
+/* Nothing earned is not a win: no amber. */
+.xp-none {
+  color: var(--text);
+}
+
+.callout + .feedback-head {
+  margin-top: var(--space-5);
+}
+
+.feedback-head {
+  margin-bottom: var(--space-2);
+  font-family: var(--num);
+  font-size: var(--type-label);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.steps {
+  counter-reset: step;
+  border-top: var(--hairline) solid var(--line);
+  font-size: var(--type-md);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-body);
+}
+
+.steps li {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: var(--space-6) minmax(0, 1fr);
+  padding: var(--space-2) 0;
+  border-bottom: var(--hairline) solid var(--line);
+}
+
+.steps li::before {
+  content: counter(step);
+  font-family: var(--num);
+  font-size: var(--type-lg);
+  font-weight: var(--weight-bold);
+  color: var(--muted);
+}
+
+/* ---------- Scenario session: one scrollable case, the action docked below ---------- */
+
+/* The body manages its own padding so the scroll area reaches the screen edge. */
+.screen-task > .scenario-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0;
+}
+
+.scenario-pace {
+  padding: 0 var(--pad) 0 var(--content-x);
+}
+
+.scenario-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-3) var(--pad) var(--space-7) var(--content-x);
+}
+
+.case {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.case-para {
+  font-size: var(--type-md);
+  line-height: var(--leading-body);
+  text-wrap: pretty;
+}
+
+.case-list {
+  display: grid;
+  gap: var(--space-2);
+  font-size: var(--type-md);
+  line-height: var(--leading-body);
+}
+
+.case-list li {
+  position: relative;
+  padding-left: var(--space-4);
+}
+
+.case-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+
+.case-prompt {
+  margin: var(--space-6) 0 var(--space-4);
+  scroll-margin-top: var(--space-3);
+  font-size: var(--type-lg);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  text-wrap: pretty;
+}
+
+/* Short options docked above Submit: always two to a row, so the question keeps most of the screen. */
+.scenario-options {
+  padding: var(--space-3) var(--pad) 0;
+}
+
+.scenario-options .options-compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scenario-dock .dock-foot {
+  padding-top: var(--space-2);
+}
+
+.case-feedback {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: var(--hairline) solid var(--line);
+}
+
+/* ---------- Summary ---------- */
+
+.summary-head {
+  display: grid;
+  gap: var(--space-2);
+  padding-top: var(--space-2);
+}
+
+.score {
+  display: flex;
+  align-items: baseline;
+  font-family: var(--num);
+  font-size: min(var(--type-num-hero), var(--type-num-hero-fit));
+  font-weight: var(--weight-black);
+  line-height: var(--leading-solid);
+  letter-spacing: var(--tracking-display);
+  font-variant-numeric: tabular-nums;
+}
+
+.score-perfect {
+  color: var(--accent);
+}
+
+.score-of {
+  font-size: 0.36em;
+  color: var(--faint);
+}
+
+/* ---------- Decorative motion, only for those who want it ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .caret {
+    animation: blink var(--dur-blink) steps(1) infinite;
+  }
+
+  .feedback-hit .verdict-word {
+    animation: stamp-crooked var(--dur-base) var(--ease-out-expo);
+  }
+
+  .feedback-miss .verdict-word {
+    animation: nudge var(--dur-base) var(--ease-out);
+  }
+
+  .score {
+    animation: rise var(--dur-slow) var(--ease-out);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes stamp-crooked {
+  from {
+    transform: rotate(-8deg) scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes nudge {
+  25% { transform: translateX(-0.4em); }
+  50% { transform: translateX(0.3em); }
+  75% { transform: translateX(-0.12em); }
+}
+
+/* ---------- Sprint ---------- */
+
+.sprint-rules {
+  max-width: 65ch;
+  line-height: var(--leading-body);
+  color: var(--muted);
+}
+
+.sprint-meter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.sprint-count {
+  font-family: var(--num);
+  font-size: var(--type-num-lg);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-solid);
+  letter-spacing: var(--tracking-display);
+  font-variant-numeric: tabular-nums;
+}
+
+/* One line, stamped by word as well as colour: right and wrong are never colour alone. */
+.sprint-last {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--type-md);
+  font-weight: var(--weight-semibold);
+  color: var(--muted);
+}
+
+.sprint-last-hit {
+  color: var(--accent);
+}
+
+.sprint-last-miss {
+  color: var(--miss);
+}
+
+.sprint-last-miss strong {
+  color: var(--text);
+}
+
+/* Short phones: the count, prompt and entry shrink with the screen so the stage never runs under the bar. */
+.sprint .stage {
+  gap: var(--space-2);
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-3);
+}
+
+.sprint .sprint-count,
+.sprint .clock-hero {
+  font-size: min(var(--type-num-lg), 8dvh);
+}
+
+.sprint .prompt {
+  font-size: min(var(--type-num-lg), 7dvh, var(--fit));
+}
+
+.sprint .entry {
+  font-size: min(var(--type-num-md), 6dvh);
+}
+
+/* ---------- Profile and settings ---------- */
+
+.profile-head {
+  display: grid;
+  gap: var(--space-2);
+  padding-top: var(--space-2);
+}
+
+.profile-title {
+  font-family: var(--num);
+  font-size: var(--type-3xl);
+  font-weight: var(--weight-black);
+  line-height: 1;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+
+.setting {
+  display: grid;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: var(--hairline) solid var(--line);
+}
+
+/* ---------- Mock: ready, sitting, finish, result, review ---------- */
+
+.mock-head {
+  display: grid;
+  gap: var(--space-2);
+  padding-top: var(--space-2);
+}
+
+.mock-title {
+  font-family: var(--num);
+  font-size: var(--type-3xl);
+  font-weight: var(--weight-black);
+  line-height: 1;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+
+.mock-percent {
+  font-family: var(--num);
+  font-weight: var(--weight-heavy);
+  font-variant-numeric: tabular-nums;
+}
+
+.mock-verdict {
+  font-family: var(--num);
+  font-size: var(--type-num);
+  font-weight: var(--weight-heavy);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+/* Right, wrong or blank on a result row: the label voice, coloured for a hit or a miss. */
+.mock-mark {
+  white-space: nowrap;
+}
+
+.mock-mark-pass,
+.mock-mark-hit {
+  color: var(--accent);
+}
+
+.mock-mark-miss {
+  color: var(--miss);
+}
+
+/* The question scrolls behind the bar and the docked controls, like a scenario. */
+.screen-task > .mock-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0;
+}
+
+.mock-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-3) var(--pad) var(--space-7) var(--content-x);
+}
+
+.mock-scroll > .banner {
+  margin-bottom: var(--space-4);
+}
+
+.mock-where {
+  font-variant-numeric: tabular-nums;
+}
+
+.mock-hint {
+  margin-top: var(--space-3);
+}
+
+/* Docked controls: the navigator strip with Submit beside it, then Back, Flag and Skip/Next under the thumb. */
+.mock-navrow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--pad) 0;
+}
+
+.mock-navrow > .button {
+  width: auto;
+  min-height: var(--touch-min);
+  padding-inline: var(--space-4);
+}
+
+.mock-controls,
+.mock-review-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr);
+  align-items: end;
+  gap: var(--space-2);
+}
+
+.mock-review-controls {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+}
+
+.mock-controls > .chip,
+.mock-controls > .button-secondary,
+.mock-review-controls > .button-secondary {
+  min-height: var(--touch-row);
+  padding-inline: var(--space-2);
+}
+
+/* The primary carries the arrow; in a third of the dock it keeps a little room for its label. */
+.mock-controls > .button-arrow {
+  padding-inline: var(--space-4);
+}

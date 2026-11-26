@@ -1,0 +1,12 @@
+[
+  { "id": "j-623025d8", "judge": "ambiguity", "fail": false, "why": "Only B holds: the 2010 loss is $58.2m (82 x 0.71) against $52.3m in 2011, while 2009 costs are $100.8m not $91m, 2008 costs ($62.9m) are the lowest, and total revenue is $405m not $398m." },
+  { "id": "j-0679ec71", "judge": "ambiguity", "fail": false, "why": "B: the cloud share of 20% (read exactly off a gridline) grows by 1.30/1.15 = 1.130 a year and first passes 30% at about 3.3 years, so 4 whole years are needed, well clear of the threshold." },
+  { "id": "j-3a42241b", "judge": "ambiguity", "fail": false, "why": "Average sales per dealer are A $0.057m, B $0.214m, C $0.267m, so A, B and D are false. C is true only when Classes A and C are pooled ($55m / 630 = $0.087m, below B), and read class by class no option holds, so C is the one defensible answer." },
+  { "id": "j-c004f91b", "judge": "ambiguity", "fail": false, "why": "D: with the same n for both questions, rating 4 totals 35% + 57% = 92% against 53% for rating 3, the next highest." },
+  { "id": "j-29ba131e", "judge": "ambiguity", "fail": false, "why": "A: 240,000 kg costs $1.44m from the usual supplier and $0.84m + $0.48m = $1.32m from the cooperative under tiered pricing, a $120,000 saving; reading the $4 price as covering every kilo gives $480,000, which is not an option." },
+  { "id": "j-8af5a5cf", "judge": "ambiguity", "fail": false, "why": "D: February fits 69.18/24 = 2.88k tyres per day against 71.42/26.1 = 2.74k in the other months, about 5.3% more, so the 3% option and the two 'fewer' options are false." },
+  { "id": "j-0acf4384", "judge": "ambiguity", "fail": false, "why": "C: faster delivery returns ($13.14m - $3.84m)/$45m = about 20.7%, so live order tracking (net $8.81m a year) must clear about 21%, which means investing at most about $42.6m, so A and B are false and only 'at least 20%' holds." },
+  { "id": "j-324b0c8c", "judge": "ambiguity", "fail": false, "why": "A: platters take 5,040 min / 103 = 48.9 min in March and April and 25,200 min / 495 = 50.9 min in May, a difference of about 2 minutes, and the next option is 6." },
+  { "id": "j-ea1574b7", "judge": "ambiguity", "fail": false, "why": "Only C holds: the 2008 loss is $42.6m (52 x 0.82) against $38.5m in 2009, while total revenue is $268m not $261m, 2006 costs ($38.7m) are the lowest, and 2007 costs are $65.8m not $59m." },
+  { "id": "j-0fe96e6a", "judge": "ambiguity", "fail": false, "why": "B: at basic rates Q is $67,285 against $61,398 for S, $23,263 for R and $11,349 for P." }
+]

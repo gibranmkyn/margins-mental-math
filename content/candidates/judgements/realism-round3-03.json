@@ -1,0 +1,12 @@
+[
+  {"id": "j-c2722014", "judge": "realism", "fail": false, "why": "The export and home profits add to the stated totals each year (30-20=10, 30+0=30, 30-10=20, 40-10=30), and the 1-3% margins imply total sales of about 800-1,200 million, which is believable for a brewer."},
+  {"id": "j-35bda9ca", "judge": "realism", "fail": false, "why": "50 cities taking $24bn of a $135bn lower-income market is plausible, and so is a top city near $6.6bn and a second near $3.5bn; the flat tail on the unlabelled chart is a reading."},
+  {"id": "j-79fb1fbd", "judge": "realism", "fail": false, "why": "A podcast network with about $140m revenue and 359 producers works out to roughly $0.2-0.5m per producer by category, which is believable."},
+  {"id": "j-f4f99153", "judge": "realism", "fail": false, "why": "Market shares of 0.2-8.4% in export markets are believable, and margins of 10-37% are high for farm machinery but within a factor of a few of what it could report."},
+  {"id": "j-e33c1861", "judge": "realism", "fail": false, "why": "Sales of 410-520 thousand tyres a year in national markets of 2.5-3.6 million give shares of about 15-17%, which is believable for a tyre maker."},
+  {"id": "j-7dc0e81a", "judge": "realism", "fail": false, "why": "Shares of 1-7% and margins of 9-42% are believable for pet food, and the implied Country 5 profit of about $20m on a $1.3bn market is reasonable."},
+  {"id": "j-c9925382", "judge": "realism", "fail": false, "why": "Each hotel's purpose-of-stay split adds to 100%, and 365-470 guest nights per room per year fits per-person guest nights at normal occupancy with more than one guest in some rooms."},
+  {"id": "j-38d386c4", "judge": "realism", "fail": false, "why": "A loss-making car-sharing club growing from EUR 17m to EUR 114m revenue, with losses that narrow from 156% to 28% of revenue, is believable, since losses can exceed revenue."},
+  {"id": "j-b4878b38", "judge": "realism", "fail": false, "why": "About 1.3 million sales, technical and administrative staff in a catchment, split by company size and contact level, is believable for a large metropolitan area."},
+  {"id": "j-434edfd0", "judge": "realism", "fail": false, "why": "Corporate telecom contracts worth $1-12m a year, with switching probabilities of 20-50%, are believable for a bank, a hospital group, a logistics firm and a retailer."}
+]

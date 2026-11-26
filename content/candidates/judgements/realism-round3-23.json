@@ -1,0 +1,12 @@
+[
+  {"id": "j-20f94edc", "judge": "realism", "fail": false, "why": "Each campus's mode-of-study split adds to 100%, and campuses of 8,000 to 26,000 students growing 1% to 7% a year are believable for a private university group."},
+  {"id": "j-95ec1c46", "judge": "realism", "fail": false, "why": "A dealership group with about $500 million in revenue, thin new-car margins of 3-5% and servicing margins around 30% matches how car retailers report."},
+  {"id": "j-9383c768", "judge": "realism", "fail": false, "why": "About 400,000 calls a month for an electricity supplier is believable, and the voice-menu funnel shrinks at each stage as it must (63% to 60% to 52%, and 55% to 50% to 39%)."},
+  {"id": "j-62667948", "judge": "realism", "fail": false, "why": "Revenue of $330-565 million against markets of $1.4-2.6 billion gives a share of roughly 22%, and about $6 million of revenue per sales rep is believable for farm machinery."},
+  {"id": "j-f14f4bd5", "judge": "realism", "fail": false, "why": "Profit equals revenue minus costs in both columns, and about $1.80 of revenue per kg of linen at roughly 125 tonnes a day is believable for a large industrial laundry."},
+  {"id": "j-5f6cbcb2", "judge": "realism", "fail": false, "why": "A fast-growing meat-substitute start-up with revenue rising from €19 million to €124 million and deep but narrowing losses (-161% to -26%) is extreme but possible for a business that has never made a profit."},
+  {"id": "j-2c2d19a7", "judge": "realism", "fail": false, "why": "The table adds up to about 1.1 million staff in one metro area, with most not yet contacted, which is believable for a city-wide B2B app."},
+  {"id": "j-bdc37b5e", "judge": "realism", "fail": false, "why": "Every score distribution adds to 100%, and 40,000 survey responses split 26,000 to 14,000 is believable for a mass-market toothbrush launch."},
+  {"id": "j-6aa1e10b", "judge": "realism", "fail": false, "why": "2.2 million smoothies across 120 bars is about 50 a day per bar, and 0.15 kg of pulp at $2-5 per kg is a believable ingredient cost."},
+  {"id": "j-90cbb288", "judge": "realism", "fail": false, "why": "Salaries at 72% and project expenses at 37% of €212 million in fees add to 109%, which matches the stated loss and is possible for a struggling consultancy."}
+]

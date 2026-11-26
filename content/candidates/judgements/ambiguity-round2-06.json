@@ -1,0 +1,12 @@
+[
+  { "id": "j-1e3f098a", "judge": "ambiguity", "fail": false, "why": "Only D holds: the falls are Q3 44.7%, Q2 33.3%, Q4 28.6%, Q5 25.3%, Q1 17.6%, so the order is 3, 2, 4, 5, 1 with no ties." },
+  { "id": "j-8fe639d6", "judge": "ambiguity", "fail": false, "why": "Only A holds: the context defines market risk as year-to-year variation, and the best-minus-worst ranges are G 2.2, H 4.3, J 9.3, F 16.3 points; B ranks by worst-year growth, which is a trap and not a measure of variation." },
+  { "id": "j-d67a3bb2", "judge": "ambiguity", "fail": false, "why": "Only C holds: 4,500 minutes / 58 bikes = 77.6 min in Feb-Mar against 22,500 / 266 = 84.6 min in April, a change of 7.0 minutes." },
+  { "id": "j-97cd6319", "judge": "ambiguity", "fail": false, "why": "Only B holds: total cost is $2.7m + 148,000 x $45 = $9.36m, and Group B's 20% share is $1.87m, nearest $1.9m." },
+  { "id": "j-054bfafb", "judge": "ambiguity", "fail": false, "why": "Only C holds: 40,520/26 = 1,558 lessons a day in July against 38,410/25.3 = 1,518 in the other months, about 2.7% more; A and B say fewer, and D's 5% is wrong." },
+  { "id": "j-e5d3ee84", "judge": "ambiguity", "fail": false, "why": "Threshold question, answer B: $1.2m / $1,300 a day = 923 days = 2.53 years, so at 2.5 years only $1.19m has come back and the cost is first recovered by 2.6 years; the data are exact, so this is not a knife edge." },
+  { "id": "j-2cd51f98", "judge": "ambiguity", "fail": false, "why": "Only C holds: Country 1's margin (about 59%) is roughly four times Country 10's (about 15%), a ratio of 4.0; A is false because Country 1 plots half a step above Country 2, and B and D need sales or market size, which the exhibit does not give." },
+  { "id": "j-ace4811f", "judge": "ambiguity", "fail": false, "why": "Only C holds: the lost weight costs $11.40/0.9 - $11.40 = $1.27 per kg (or $1.14 if taken simply as 10% of $11.40), which is 44% or 39% of the $2.90 cost, so either way the answer is nearest 40%." },
+  { "id": "j-ae02acdb", "judge": "ambiguity", "fail": false, "why": "Only D holds: profit is $25,863 - $21,285 = $4,578 against $24,971 - $21,999 = $2,972, a gap of $1,606." },
+  { "id": "j-243fc02a", "judge": "ambiguity", "fail": false, "why": "Only C holds: per-capita kg are A 20.5, B 18.7, C 21.2, D 18.9, so Country C is highest." }
+]

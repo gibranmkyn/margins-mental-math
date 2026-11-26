@@ -1,0 +1,12 @@
+[
+  {"id":"j-af1afe70","judge":"ambiguity","fail":false,"why":"Only C holds: comedy is 20% of the 22% cinema share, 4.4% of all visitors, while A is 6.8%, B is 7.04% (not 8.0%) and D has no supporting data."},
+  {"id":"j-067e14d0","judge":"ambiguity","fail":false,"why":"C does least: albums per bookbinder fall from 110 (55/0.5) to 104.8 in June, and C lifts this only to 111.6 (279/2.5) against 126 for A, 122 for B (366/3) and 126 for D."},
+  {"id":"j-997f2bcd","judge":"ambiguity","fail":false,"why":"B: pages per capita are 2,620 (A), 3,060 (B), 2,280 (C) and 2,940 (D), so Country B leads by 120."},
+  {"id":"j-7cff606e","judge":"ambiguity","fail":false,"why":"Only A holds: lessons grew 36.1% and repairs 36.0%, both 36% to the nearest percent, while B is 49.9%, C gives lessons 83 against 95.8 for the other three, and D fails because sheet music fell 40% in relative terms against 25% for instruments (margins read exactly from gridlines)."},
+  {"id":"j-a61429f4","judge":"ambiguity","fail":false,"why":"C: projected 2014 profits are about 19.3 for plants and seeds (101.3 x 19%) and 9.8 for furniture (162.8 x 6%), a ratio of 1.97, and linear growth gives 1.98 too."},
+  {"id":"j-a8b5dd98","judge":"ambiguity","fail":false,"why":"Only C holds: transport is 37.4 of 85 thousand hours, exactly 44%, while water is 26%, buildings 16% and the three sectors together 86% (all segments sit on gridlines or halfway points)."},
+  {"id":"j-ce257f7a","judge":"ambiguity","fail":false,"why":"C: total sales (total profit / margin) are 1,200, 1,000, 800 and 1,000, so print profit is 2.5%, 2.0%, 3.75% and 3.5% of sales, with 2012 highest."},
+  {"id":"j-5dde9bfe","judge":"ambiguity","fail":false,"why":"Only D holds: the pier's ROI is 12.46m/40m = 31.15%, and the rail link's annual profit of 9.98m matches that ROI at an upfront cost of 32.05m, so $32m is the maximum."},
+  {"id":"j-6beef1fb","judge":"ambiguity","fail":false,"why":"Only B holds: frozen meals prices give 0.9 of the 3.3 total (27% > 20%), while A is 45%, C is 46% and D is 30%."},
+  {"id":"j-77392f35","judge":"ambiguity","fail":false,"why":"B: 7,000 x 55% x 20% = 770, and every other option is clearly off."}
+]

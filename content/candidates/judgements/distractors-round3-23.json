@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-e5fab9ea",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B's 45% is the simple average of 60% and 30%, ignoring the campus totals; C's 5% reads Campus D's bar alone; D is a near-miss figure (31.5% true; G alone shows 35%) and passes as the one statement filler the source lists; the simple-average and single-campus slips keep A true, but sourceHas names both."
+  },
+  {
+    "id": "j-c5447759",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A looks true if you compare margins instead of profits or check 2011 alone; B mixes up percentage points (both fell 2 points) with relative decline; C looks true only if you read the used-cars row (18%) in place of servicing against parts (17%), which is a weak wrong-row slip; D still holds under a wrong-year read, which matches the source's single-year parity only loosely."
+  },
+  {
+    "id": "j-a38ccf4f",
+    "judge": "distractors",
+    "fail": false,
+    "why": "63 thousand is the difference in resolved calls (52% of 412 less 39% of 388) instead of unresolved ones, and 15 and 87 continue the 24-thousand spacing either side, so the grid passes; the source's points-times-one-month slip gives about 50-54, not 39."
+  },
+  {
+    "id": "j-8a8f4be5",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$4.2m reads the tractor series (tractor revenue per tractor rep averages 4.15); $0.6m is the answer off by a factor of 10; $0.2m needs two slips, dividing irrigation revenue by all reps (about 2.0) and a factor of 10; the slips that keep $6.2m (five-year average, wrong window, half-gridline read, total over total, single year) are all named in sourceHas."
+  },
+  {
+    "id": "j-e0979ebb",
+    "judge": "distractors",
+    "fail": false,
+    "why": "3% less reverses the comparison (125.4 / 129.4 - 1); 5% less compares total linen (-4.9%) and skips the per-day step; 5% more is that total-change figure with the sign reversed (two slips), or the per-day revenue row (+4.2%); dividing by August's figure still gives 3% more, and sourceHas names that wrong-base slip; close only because 'than in any other month' in A and B could be struck on wording."
+  },
+  {
+    "id": "j-018ac5df",
+    "judge": "distractors",
+    "fail": true,
+    "why": "B's 2011 costs of about €73m come from no slip or pair of slips: the right working gives 36 x 2.32 = €84m, the loss alone is €48m, and pairing a wrong year's margin gives €64m or €94m; only crudely rounding 2.32 down to 2 gets near it, and sourceHas lists no statement filler."
+  },
+  {
+    "id": "j-d91536cc",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A (subscription revenue) is the one statement about something the data does not cover, which sourceHas lists; B rounds 24.7% up past 25%; C compares how many staff were contacted instead of the share contacted (small firms have the fewest at 20.8k); none of the named slips affect D."
+  },
+  {
+    "id": "j-c5c02aa2",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A looks incorrect if you look only at the 5s (former electric users gave 40% vs 20%); D looks incorrect if you add up unweighted percentages (54% vs 37%) and ignore the group sizes; C looks incorrect only if you swap the two series; B stays incorrect under an off-by-one threshold slip (scores of 4 and above), but that is because the handle beats battery life at every score level, not a slip the question builds on."
+  },
+  {
+    "id": "j-0de59f5c",
+    "judge": "distractors",
+    "fail": false,
+    "why": "$330,000 more expensive ignores the $2 tier (all 330,000 kg at $5); $330,000 cheaper is that slip with the sign reversed; $420,000 more expensive reverses the sign of the answer; no single slip gives $420,000 cheaper."
+  },
+  {
+    "id": "j-50b02be7",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A wins if you forget that costs rise with fee income (2% of 212 is €4.2m); C wins if you mix up which cost is the 72% one; D is ruled out by C alone, since travel is part of project expenses, which sourceHas lists; no slip keeps B best while changing the working."
+  }
+]

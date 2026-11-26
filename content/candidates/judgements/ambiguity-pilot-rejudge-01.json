@@ -1,0 +1,11 @@
+[
+  { "id": "j-9af46b49", "judge": "ambiguity", "fail": false, "why": "Only A holds: Vitamax earns 300,000 x $1 = $300,000, while 360,000 Corepro shakes earn $1,440,000 - ($264,000 + $500,000) - $360,000 = $316,000, a $16,000 rise." },
+  { "id": "j-b3401394", "judge": "ambiguity", "fail": false, "why": "A: the per-customer lifts are 1 + 2 + 5 + 14 = $22 across quintiles of 50,000 customers each, so $1,100,000 (C is the trap of multiplying by all 250,000)." },
+  { "id": "j-c691d6e8", "judge": "ambiguity", "fail": false, "why": "Only A holds: Crunchos earns 400,000 x $1.50 = $600,000, while 440,000 Toltec trays earn $1,760,000 - ($280,000 + $420,000) - $440,000 = $620,000, a $20,000 rise." },
+  { "id": "j-63e3d405", "judge": "ambiguity", "fail": false, "why": "C: weekly profit per centre is about 2,240, 3,136, 3,300 and 3,096 for EUR4 to EUR7 with a EUR3.50 bar profit per bowler, and no reasonable reading of the 2.1 or 1.7 games lifts B (max ~3,206) or D (max ~3,231) past C's 3,300, which rests on gridline values." },
+  { "id": "j-93564ce3", "judge": "ambiguity", "fail": false, "why": "B: legal cover brings in 94,000 x $29 = $2.726m, which leaves $1.664m = 41,600 x basic price, so basic is $40 and full is $80 (A is the basic price, C adds legal cover)." },
+  { "id": "j-811b6447", "judge": "ambiguity", "fail": false, "why": "B: the per-subscriber lifts are 1 + 2 + 6.5 + 20.5 = $30 across quintiles of 120,000 each, so $3,600,000 (D is the trap of multiplying by all 600,000)." },
+  { "id": "j-3ce4189e", "judge": "ambiguity", "fail": false, "why": "Only A is false: the total cost is GBP2.5m + 85,000 x GBP80 = GBP9.3m, so Group A spends 12% x 9.3m / 1,500 = GBP744 per home, not GBP544, while B (452), C (326) and D (263) check out." },
+  { "id": "j-753d454f", "judge": "ambiguity", "fail": false, "why": "C: combined weekly profit is about 880, 1,333, 1,452 and 1,325 for EUR2.5 to EUR4.0 with EUR2 vending profit per customer, and reasonable readings of the 2.4 and 2.2 washes leave C (min ~1,411) above D (max ~1,372)." },
+  { "id": "j-c4152816", "judge": "ambiguity", "fail": false, "why": "Only B is false: the total cost is GBP2.8m + 90,000 x GBP30 = GBP5.5m, so Group B costs 19% x 5.5m / 2,500 = GBP418 per user, not GBP344, while A (935), C (289) and D (186) check out." }
+]

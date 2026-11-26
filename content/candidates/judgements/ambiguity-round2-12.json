@@ -1,0 +1,12 @@
+[
+  { "id": "j-1a3a2d61", "judge": "ambiguity", "fail": false, "why": "Only C holds: total cost is $3.1m + 52,000 x $82 = $7.36m, Group B's share is 28% - 8% = 20%, giving $1.47m, and the next option is $0.17m away." },
+  { "id": "j-3d4b362e", "judge": "ambiguity", "fail": false, "why": "Only A holds: running shoes made about $181m profit against about $125m for the other three together; B fails because team kits' margin fell 33% against bicycles' 22% (equal points is the convention trap), C fails (54% vs 25%) and D fails (48%)." },
+  { "id": "j-d0b126cd", "judge": "ambiguity", "fail": false, "why": "Only C holds: electric bikes' forecast CAGR is about 20% against mountain bikes' past 10.4%, about twice; A (15% vs 23%), B (9.8%) and D (electric about $13bn vs about $27bn in ten years) all fail." },
+  { "id": "j-a4a47d49", "judge": "ambiguity", "fail": false, "why": "Only C holds: growth from Outlets is growth x share, and South's 1.0% x 36.9% = 0.37 is the lowest (South-West 0.50); East beats South-West on Sales per outlet (3.23 vs 2.90) and Central is below Capital (-0.66 vs -0.33)." },
+  { "id": "j-cf673ff1", "judge": "ambiguity", "fail": false, "why": "Only A holds: the context names the swing in GDP growth as the guide, and the ranges are T 1.0, R 1.5, S 8.7, V 19.4 points, giving T, R, S, V." },
+  { "id": "j-bc2d40ad", "judge": "ambiguity", "fail": false, "why": "Only C holds: 5,000 x 65% x 40% = 1,300 exactly." },
+  { "id": "j-cbd8de89", "judge": "ambiguity", "fail": false, "why": "B holds on the figures as printed: spend per booking is Q1 $20.7, Q2 $22.8, Q4 $25.1, Q5 $27.14 and Q3 $27.39, though Q5 and Q3 differ by under 1%, so the printed averages' rounding could flip them to option C." },
+  { "id": "j-e50abf75", "judge": "ambiguity", "fail": false, "why": "Only B holds: growth from Price is growth x share, and Exterior paint's 5.1% x 109.3% = 5.6 is the highest; Adhesives (0.47) is below Sealants (0.66) on Price, and Exterior paint (-0.47) is below Spray paint (-0.24) on Volume." },
+  { "id": "j-88d7423d", "judge": "ambiguity", "fail": false, "why": "Only C holds: the annual saving is $6.50 on maintenance (97.5 - 91) plus $38.50 on electricity (350 kWh x 11c), $45 in all, so three years repay at most exactly $135." },
+  { "id": "j-2459b32c", "judge": "ambiguity", "fail": false, "why": "Only B holds: 4,000 x 70% x 15% = 420 exactly." }
+]

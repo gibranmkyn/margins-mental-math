@@ -1,0 +1,2679 @@
+[
+  {
+    "id": "au-091",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A clothing shop sold three lines of shirts last month."
+      },
+      {
+        "type": "table",
+        "title": "Shirt sales",
+        "headers": [
+          "Line",
+          "Shirts sold",
+          "Price"
+        ],
+        "rows": [
+          [
+            "Basic",
+            "300",
+            "$20"
+          ],
+          [
+            "Oxford",
+            "200",
+            "$25"
+          ],
+          [
+            "Linen",
+            "100",
+            "$40"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What was the average selling price of a shirt?",
+    "options": [
+      "$20.00",
+      "$22.50",
+      "$25.00",
+      "$28.33"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Revenue: 300 × $20 + 200 × $25 + 100 × $40 = $6,000 + $5,000 + $4,000 = $15,000",
+      "Average: $15,000 ÷ 600 shirts = $25.00"
+    ],
+    "shortcut": "Weight by shirts sold; the plain average of the three prices ($28.33) overweights the linen line.",
+    "check": {
+      "kind": "value",
+      "answer": "(300 * 20 + 200 * 25 + 100 * 40) / (300 + 200 + 100)"
+    }
+  },
+  {
+    "id": "au-092",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A team of 8 consultants bills an average of 1,450 hours a year each. Two new consultants join, and each is expected to bill 1,200 hours a year."
+      }
+    ],
+    "prompt": "What will the team's average billed hours per consultant be?",
+    "options": [
+      "1,325 hours",
+      "1,400 hours",
+      "1,425 hours",
+      "1,450 hours"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Total hours: 8 × 1,450 + 2 × 1,200 = 11,600 + 2,400 = 14,000",
+      "Average: 14,000 ÷ 10 = 1,400 hours"
+    ],
+    "shortcut": "The two newcomers are 250 hours below; spread 2 × 250 = 500 over 10 people: 50 below 1,450.",
+    "check": {
+      "kind": "value",
+      "answer": "(8 * 1450 + 2 * 1200) / (8 + 2)"
+    }
+  },
+  {
+    "id": "au-093",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A bakery's website took 500 orders over five days, with an average order value of $48 across all of them. Day 5 had 100 orders."
+      },
+      {
+        "type": "table",
+        "title": "Days 1 to 4",
+        "headers": [
+          "Day",
+          "Orders",
+          "Average order value"
+        ],
+        "rows": [
+          [
+            "Day 1",
+            "120",
+            "$44"
+          ],
+          [
+            "Day 2",
+            "80",
+            "$52"
+          ],
+          [
+            "Day 3",
+            "100",
+            "$46"
+          ],
+          [
+            "Day 4",
+            "100",
+            "$50"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What was the average order value on day 5?",
+    "options": [
+      "$48.00",
+      "$49.60",
+      "$51.20",
+      "$52.00"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Total value of all orders: 500 × $48 = $24,000",
+      "Days 1 to 4: $5,280 + $4,160 + $4,600 + $5,000 = $19,040",
+      "Day 5: ($24,000 − $19,040) ÷ 100 = $49.60"
+    ],
+    "shortcut": "Work in gaps from $48: day 1 is 120 × −4, day 2 80 × +4, day 3 100 × −2, day 4 100 × +2, a net −160 that day 5 must make up: +1.60 on 100 orders.",
+    "check": {
+      "kind": "value",
+      "answer": "(48 * 500 - (120 * 44 + 80 * 52 + 100 * 46 + 100 * 50)) / 100"
+    }
+  },
+  {
+    "id": "au-094",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A delivery fleet has 60 diesel vans that use 9 litres of fuel per 100 km and 40 hybrid vans that use 6 litres per 100 km. Every van drives the same distance."
+      }
+    ],
+    "prompt": "What is the fleet's average fuel use per 100 km driven?",
+    "options": [
+      "7.2 litres",
+      "7.5 litres",
+      "7.8 litres",
+      "8.1 litres"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Weighted average: 0.6 × 9 + 0.4 × 6",
+      "= 5.4 + 2.4 = 7.8 litres"
+    ],
+    "shortcut": "Weights 60:40 pull the average 40% of the way from 9 to 6: 9 − 1.2 = 7.8.",
+    "check": {
+      "kind": "value",
+      "answer": "(60 * 9 + 40 * 6) / (60 + 40)"
+    }
+  },
+  {
+    "id": "au-095",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A truck drives 120 km to a customer at an average of 60 km/h, and returns the same 120 km in heavy traffic at an average of 40 km/h."
+      }
+    ],
+    "prompt": "What is the truck's average speed for the round trip?",
+    "options": [
+      "44 km/h",
+      "46 km/h",
+      "48 km/h",
+      "50 km/h"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Time out: 120 ÷ 60 = 2 hours; time back: 120 ÷ 40 = 3 hours",
+      "Average: 240 km ÷ 5 hours = 48 km/h"
+    ],
+    "shortcut": "Average speed is total distance over total time; the slow leg takes longer, so the answer sits below the plain average of 50.",
+    "check": {
+      "kind": "value",
+      "answer": "(120 + 120) / (120 / 60 + 120 / 40)"
+    }
+  },
+  {
+    "id": "au-096",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A manufacturer scores its suppliers out of 100 using a weighted scorecard."
+      },
+      {
+        "type": "table",
+        "title": "Supplier scorecard",
+        "headers": [
+          "Criterion",
+          "Weight",
+          "Supplier's score"
+        ],
+        "rows": [
+          [
+            "Quality",
+            "50%",
+            "72"
+          ],
+          [
+            "Delivery",
+            "30%",
+            "85"
+          ],
+          [
+            "Price",
+            "20%",
+            "90"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the supplier's overall weighted score?",
+    "options": [
+      "76.0",
+      "79.5",
+      "82.3",
+      "85.0"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "0.5 × 72 + 0.3 × 85 + 0.2 × 90",
+      "= 36 + 25.5 + 18 = 79.5"
+    ],
+    "shortcut": "Weight each score; the plain average (82.3) ignores that quality, the weakest score, counts for half.",
+    "check": {
+      "kind": "value",
+      "answer": "50 / 100 * 72 + 30 / 100 * 85 + 20 / 100 * 90"
+    }
+  },
+  {
+    "id": "au-097",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A department store reports sales and gross margin by category."
+      },
+      {
+        "type": "table",
+        "title": "Sales mix and margins",
+        "headers": [
+          "Category",
+          "Share of sales",
+          "Gross margin"
+        ],
+        "rows": [
+          [
+            "Electronics",
+            "50%",
+            "12%"
+          ],
+          [
+            "Apparel",
+            "30%",
+            "45%"
+          ],
+          [
+            "Home",
+            "20%",
+            "30%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the store's overall gross margin?",
+    "options": [
+      "22.0%",
+      "24.0%",
+      "25.5%",
+      "29.0%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Weight margins by sales: 0.5 × 12% + 0.3 × 45% + 0.2 × 30%",
+      "= 6% + 13.5% + 6% = 25.5%"
+    ],
+    "shortcut": "Margins average by sales weight; the simple average of 12, 45 and 30 (29%) overweights apparel.",
+    "check": {
+      "kind": "value",
+      "answer": "50 / 100 * 12 + 30 / 100 * 45 + 20 / 100 * 30"
+    }
+  },
+  {
+    "id": "au-098",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A cosmetics company sells a mass-market range at a 20% margin and a premium range at a 50% margin. Last year the mass range was 70% of revenue and premium 30%. This year the split is 55% mass and 45% premium, and each range's margin is unchanged."
+      }
+    ],
+    "prompt": "By how many percentage points did the company's overall margin change?",
+    "options": [
+      "3.0 pp",
+      "4.5 pp",
+      "6.0 pp",
+      "15.0 pp"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Last year: 0.7 × 20% + 0.3 × 50% = 14% + 15% = 29%",
+      "This year: 0.55 × 20% + 0.45 × 50% = 11% + 22.5% = 33.5%",
+      "Change: +4.5 points"
+    ],
+    "shortcut": "15 points of mix moved from a 20% range to a 50% range: 0.15 × 30 = 4.5 points.",
+    "check": {
+      "kind": "value",
+      "answer": "(55 / 100 * 20 + 45 / 100 * 50) - (70 / 100 * 20 + 30 / 100 * 50)"
+    }
+  },
+  {
+    "id": "au-099",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A coffee roaster blends Arabica beans costing $9 per kg with Robusta beans costing $5 per kg. It wants its espresso blend to cost $7.40 per kg."
+      }
+    ],
+    "prompt": "What percentage of the blend, by weight, must be Arabica?",
+    "options": [
+      "40%",
+      "46%",
+      "55%",
+      "60%"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Let a be the Arabica share: 9a + 5(1 − a) = 7.40",
+      "4a = 2.40, so a = 60%"
+    ],
+    "shortcut": "The target sits 2.40 of the 4.00 gap above Robusta: 2.4 ÷ 4 = 60% Arabica.",
+    "check": {
+      "kind": "value",
+      "answer": "(7.40 - 5) / (9 - 5) * 100"
+    }
+  },
+  {
+    "id": "au-100",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A garden centre has two branches. Last month the town branch served 400 customers with an average spend of $50, and the out-of-town branch served 100 customers with an average spend of $90. Next month the out-of-town branch expects to serve twice as many customers, with the same average spend, while the town branch stays the same."
+      }
+    ],
+    "prompt": "What will the average spend per customer be across both branches next month?",
+    "options": [
+      "$58.00",
+      "$63.33",
+      "$70.00",
+      "$76.67"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Town branch: 400 × $50 = $20,000",
+      "Out-of-town branch: 200 × $90 = $18,000",
+      "Average: $38,000 ÷ 600 = $63.33"
+    ],
+    "shortcut": "One third of customers spend $40 more than the rest: $50 + $40 ÷ 3 ≈ $63.33.",
+    "check": {
+      "kind": "value",
+      "answer": "(400 * 50 + 2 * 100 * 90) / (400 + 2 * 100)"
+    }
+  },
+  {
+    "id": "au-101",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A frozen-yoghurt franchise has 40 outlets with average annual revenue of $1.25m each. Outlets come in three formats. There are 5 flagship outlets."
+      },
+      {
+        "type": "table",
+        "title": "Average annual revenue by format",
+        "headers": [
+          "Format",
+          "Revenue per outlet"
+        ],
+        "rows": [
+          [
+            "Kiosk",
+            "$0.7m"
+          ],
+          [
+            "Standard",
+            "$1.2m"
+          ],
+          [
+            "Flagship",
+            "$3.0m"
+          ]
+        ]
+      }
+    ],
+    "prompt": "How many kiosk outlets does the franchise have?",
+    "options": [
+      "10 outlets",
+      "12 outlets",
+      "14 outlets",
+      "16 outlets"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Total revenue: 40 × $1.25m = $50m; flagships: 5 × $3.0m = $15m",
+      "The other 35 outlets earn $35m, an average of $1.0m",
+      "Kiosks k: 0.7k + 1.2(35 − k) = 35, so 42 − 0.5k = 35 and k = 14"
+    ],
+    "shortcut": "If all 35 were standard they would earn $42m; each kiosk is $0.5m less, and the shortfall is $7m: 7 ÷ 0.5 = 14.",
+    "check": {
+      "kind": "value",
+      "answer": "(1.2 * (40 - 5) - (1.25 * 40 - 5 * 3.0)) / (1.2 - 0.7)"
+    }
+  },
+  {
+    "id": "au-102",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A hotel group has three loans outstanding."
+      },
+      {
+        "type": "table",
+        "title": "Loans",
+        "headers": [
+          "Loan",
+          "Amount",
+          "Interest rate"
+        ],
+        "rows": [
+          [
+            "Bank term loan",
+            "$20m",
+            "4%"
+          ],
+          [
+            "Bond",
+            "$30m",
+            "6%"
+          ],
+          [
+            "Mezzanine loan",
+            "$10m",
+            "9%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "What is the group's average interest rate on its debt, weighted by amount?",
+    "options": [
+      "5.8%",
+      "6.1%",
+      "6.3%",
+      "7.0%"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Interest: $20m × 4% + $30m × 6% + $10m × 9% = $0.8m + $1.8m + $0.9m = $3.5m",
+      "Average rate: $3.5m ÷ $60m ≈ 5.8%"
+    ],
+    "shortcut": "Total interest over total debt; the simple average of the three rates (6.3%) overweights the small mezzanine loan.",
+    "check": {
+      "kind": "value",
+      "answer": "(20 * 4 + 30 * 6 + 10 * 9) / (20 + 30 + 10)"
+    }
+  },
+  {
+    "id": "au-103",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "On one route an airline sells economy seats at $150 and premium seats at $400, prices it has not changed in two years. Last year 12% of passengers flew premium, and average revenue per passenger was $180. This year average revenue per passenger rose to $189."
+      }
+    ],
+    "prompt": "What share of passengers flew premium this year?",
+    "options": [
+      "12.6%",
+      "14.0%",
+      "15.6%",
+      "17.0%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Average revenue = $150 + p × ($400 − $150)",
+      "This year: 150 + 250p = 189, so p = 39 ÷ 250",
+      "p = 15.6%"
+    ],
+    "shortcut": "Each point of premium share adds $2.50 to the average; $189 is $39 above the economy fare: 39 ÷ 2.5 = 15.6. Scaling 12% by 189 ÷ 180 gives 12.6%, the trap.",
+    "check": {
+      "kind": "value",
+      "answer": "(189 - 150) / (400 - 150) * 100"
+    }
+  },
+  {
+    "id": "au-104",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A utility's call centre sorts its calls into two types: 70% are simple calls lasting 4 minutes on average, and 30% are complex calls lasting 11 minutes. A new self-service app is expected to remove half of the simple calls and none of the complex ones."
+      }
+    ],
+    "prompt": "What will the average call length be once the app is live?",
+    "options": [
+      "6.1 minutes",
+      "6.6 minutes",
+      "7.2 minutes",
+      "7.5 minutes"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Per 100 calls today: 70 simple and 30 complex; after the app, 35 simple and 30 complex",
+      "Minutes: 35 × 4 + 30 × 11 = 140 + 330 = 470 over 65 calls",
+      "Average: 470 ÷ 65 ≈ 7.2 minutes"
+    ],
+    "shortcut": "Removing short calls raises the average; recompute on the new counts. Today's average (6.1) and the plain average of 4 and 11 (7.5) are both traps.",
+    "check": {
+      "kind": "value",
+      "answer": "(70 / 2 * 4 + 30 * 11) / (70 / 2 + 30)"
+    }
+  },
+  {
+    "id": "au-105",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A regional airline aims to have 85% of its 48,000 flights this year arrive on time. From January to August it operated 31,500 flights, and 82% of them arrived on time."
+      }
+    ],
+    "prompt": "What on-time rate does it need on its remaining flights to hit the annual target?",
+    "options": [
+      "88.0%",
+      "89.9%",
+      "90.7%",
+      "91.5%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "On-time flights needed: 85% × 48,000 = 40,800",
+      "Achieved so far: 82% × 31,500 = 25,830",
+      "Remaining: 14,970 on-time out of 16,500 flights ≈ 90.7%"
+    ],
+    "shortcut": "The first 31,500 flights fell 3 points short; the other 16,500 must make that up: 85% + 3% × 31.5 ÷ 16.5 ≈ 85% + 5.7%. Mirroring the shortfall (88%) ignores the unequal sizes.",
+    "check": {
+      "kind": "value",
+      "answer": "(85 / 100 * 48000 - 82 / 100 * 31500) / (48000 - 31500) * 100"
+    }
+  },
+  {
+    "id": "au-106",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A packaging supplier prices each order on a sliding scale."
+      },
+      {
+        "type": "list",
+        "items": [
+          "First 1,000 units of an order: $8 each",
+          "Units 1,001 to 5,000: $6.50 each",
+          "Every unit beyond 5,000: $5 each"
+        ]
+      }
+    ],
+    "prompt": "Which is closest to the average price per unit on an order of 8,000 units?",
+    "options": [
+      "$5.26",
+      "$5.75",
+      "$6.13",
+      "$6.50"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "First 1,000: $8,000; next 4,000: $26,000; last 3,000: $15,000",
+      "Total: $49,000 for 8,000 units",
+      "Average: $49,000 ÷ 8,000 ≈ $6.13"
+    ],
+    "shortcut": "Weight each band's price by its units (1 : 4 : 3), not equally; the simple average of the three prices is $6.50.",
+    "check": {
+      "kind": "value",
+      "answer": "(1000 * 8 + (5000 - 1000) * 6.50 + (8000 - 5000) * 5) / 8000"
+    }
+  },
+  {
+    "id": "au-107",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A kitchen-equipment distributor sold two product lines with combined sales of $5m and an overall margin of 18% (total profit divided by total sales). The commercial line earned a 12% margin and the domestic line a 30% margin."
+      }
+    ],
+    "prompt": "What were the domestic line's sales?",
+    "options": [
+      "$1.67m",
+      "$2.09m",
+      "$2.50m",
+      "$3.33m"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Profit: 18% × $5m = $0.9m",
+      "With domestic sales d: 0.12 × (5 − d) + 0.30 × d = 0.9, so 0.6 + 0.18d = 0.9",
+      "d = 0.3 ÷ 0.18 ≈ $1.67m"
+    ],
+    "shortcut": "The average sits 6 points above 12% and 12 points below 30%, so sales split 2 : 1 commercial to domestic; a third of $5m.",
+    "check": {
+      "kind": "value",
+      "answer": "(18 / 100 * 5 - 12 / 100 * 5) / (30 / 100 - 12 / 100)"
+    }
+  },
+  {
+    "id": "au-108",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "A bank expects a share of each type of loan to default each year."
+      },
+      {
+        "type": "table",
+        "title": "Loan book",
+        "headers": [
+          "Loan type",
+          "Share of book today",
+          "Share of book next year",
+          "Expected default rate"
+        ],
+        "rows": [
+          [
+            "Mortgages",
+            "60%",
+            "50%",
+            "1%"
+          ],
+          [
+            "Credit cards",
+            "25%",
+            "35%",
+            "6%"
+          ],
+          [
+            "Business loans",
+            "15%",
+            "15%",
+            "4%"
+          ]
+        ]
+      }
+    ],
+    "prompt": "By approximately what percentage will the bank's expected default rate across the whole book rise from today to next year?",
+    "options": [
+      "0.5%",
+      "10.0%",
+      "18.5%",
+      "40.0%"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Today: 0.6 × 1% + 0.25 × 6% + 0.15 × 4% = 0.6% + 1.5% + 0.6% = 2.7%",
+      "Next year: 0.5 × 1% + 0.35 × 6% + 0.15 × 4% = 0.5% + 2.1% + 0.6% = 3.2%",
+      "Rise: 3.2 ÷ 2.7 − 1 ≈ 18.5%"
+    ],
+    "shortcut": "Moving 10 points of book from a 1% to a 6% product adds 0.5 points on a 2.7% base: 0.5 ÷ 2.7 ≈ 18.5%. The 0.5 is a point change, not the percentage.",
+    "check": {
+      "kind": "value",
+      "answer": "((50 / 100 * 1 + 35 / 100 * 6 + 15 / 100 * 4) / (60 / 100 * 1 + 25 / 100 * 6 + 15 / 100 * 4) - 1) * 100"
+    }
+  },
+  {
+    "id": "bk-bcg-q12-a",
+    "modelledOn": "bcg-q12",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Your client is a professional ice hockey league of 16 clubs, which it groups as Small-Market Clubs, Mid-Market Clubs and Large-Market Clubs. Taking the league as a whole, a club averages $24 million of revenue and $1.1 million of profit a season."
+      },
+      {
+        "type": "table",
+        "title": "Profile of the client's clubs (average per club)",
+        "headers": [
+          "Group",
+          "Win rate, last ten seasons",
+          "Revenue ($ million)",
+          "Profit ($ million)"
+        ],
+        "rows": [
+          [
+            "Small-Market Clubs",
+            "38%",
+            "15",
+            "1.2"
+          ],
+          [
+            "Mid-Market Clubs",
+            "50%",
+            "19",
+            "0.4"
+          ],
+          [
+            "Large-Market Clubs",
+            "70%",
+            "52",
+            "2.9"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Assume the league has 5 Small-Market Clubs. How many of its clubs are Large-Market Clubs?",
+    "options": [
+      "2 clubs",
+      "3 clubs",
+      "4 clubs",
+      "5 clubs"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Each game one club wins is a game another club loses, so across the league clubs win 50% of their games",
+      "Mid-Market Clubs sit at 50%, so Small-Market and Large-Market Clubs must balance: 5 × (50% − 38%) = X × (70% − 50%), so 60 = 20X and X = 3",
+      "Check with revenue: 5 × 15 + 8 × 19 + 3 × 52 = $383 million, and $383 million ÷ 16 ≈ $23.9 million a club, in line with the $24 million average"
+    ],
+    "shortcut": "Small-Market Clubs are 12 points below 50% and Large-Market Clubs 20 points above, so 5 × 12 = X × 20 and X = 3.",
+    "check": {
+      "kind": "value",
+      "answer": "5 * (50 - 38) / (70 - 50)"
+    }
+  },
+  {
+    "id": "bk-bcg-q12-b",
+    "modelledOn": "bcg-q12",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "The client runs the top men's volleyball division in its country. The division has 14 teams in three tiers: Small-Town Teams, Mid-Size City Teams and Big-City Teams. On average a team in the division brings in $7 million of revenue and $0.35 million of profit."
+      },
+      {
+        "type": "table",
+        "title": "Breakdown of the division (average per team)",
+        "headers": [
+          "Tier",
+          "Long-run match win rate",
+          "Revenue ($ million)",
+          "Profit ($ million)"
+        ],
+        "rows": [
+          [
+            "Small-Town Teams",
+            "40%",
+            "2.5",
+            "0.4"
+          ],
+          [
+            "Mid-Size City Teams",
+            "50%",
+            "4",
+            "0.1"
+          ],
+          [
+            "Big-City Teams",
+            "55%",
+            "15",
+            "0.8"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If 2 of the teams in the division are Small-Town Teams, how many Big-City Teams does it contain?",
+    "options": [
+      "2 teams",
+      "3 teams",
+      "4 teams",
+      "5 teams"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Every match has one winner and one loser, so the division as a whole wins 50% of its matches",
+      "With the Mid-Size City Teams at 50%, the Small-Town and Big-City Teams must offset each other: 2 × (50% − 40%) = X × (55% − 50%), so 20 = 5X and X = 4",
+      "Check with revenue: 2 × 2.5 + 8 × 4 + 4 × 15 = $97 million, and $97 million ÷ 14 ≈ $6.9 million a team, close to the $7 million average"
+    ],
+    "shortcut": "Small-Town Teams are 10 points under 50% and Big-City Teams 5 points over, so 2 × 10 = X × 5 and X = 4.",
+    "check": {
+      "kind": "value",
+      "answer": "2 * (50 - 40) / (55 - 50)"
+    }
+  },
+  {
+    "id": "bk-bcg-q12-c",
+    "modelledOn": "bcg-q12",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "The client is a professional rugby league with 20 teams of three kinds: Town Teams, County Teams and Metro Teams. League-wide, revenue averages $16 million per team and profit $0.9 million."
+      },
+      {
+        "type": "table",
+        "title": "Team types in the league (average per team)",
+        "headers": [
+          "Group",
+          "Winning percentage, all seasons",
+          "Revenue ($ million)",
+          "Profit ($ million)"
+        ],
+        "rows": [
+          [
+            "Town Teams",
+            "44%",
+            "8",
+            "1.0"
+          ],
+          [
+            "County Teams",
+            "50%",
+            "12",
+            "0.3"
+          ],
+          [
+            "Metro Teams",
+            "59%",
+            "39",
+            "2.3"
+          ]
+        ]
+      }
+    ],
+    "prompt": "Suppose the league includes 6 Town Teams. How many of the league's teams are Metro Teams?",
+    "options": [
+      "3 teams",
+      "4 teams",
+      "5 teams",
+      "6 teams"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Each game won by one team is lost by another, so the league as a whole wins 50% of its games",
+      "County Teams are at 50%, so Town and Metro Teams must cancel out: 6 × (50% − 44%) = X × (59% − 50%), so 36 = 9X and X = 4",
+      "Check with revenue: 6 × 8 + 10 × 12 + 4 × 39 = $324 million, and $324 million ÷ 20 ≈ $16.2 million a team, close to the $16 million average"
+    ],
+    "shortcut": "Town Teams are 6 points below 50% and Metro Teams 9 points above, so 6 × 6 = X × 9 and X = 4.",
+    "check": {
+      "kind": "value",
+      "answer": "6 * (50 - 44) / (59 - 50)"
+    }
+  },
+  {
+    "id": "bk-bcg-q12-d",
+    "modelledOn": "bcg-q12",
+    "skill": "averages-mixes",
+    "tier": 3,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "The client is a professional baseball league of 12 teams, grouped as Small-Market Teams, Mid-Market Teams and Big-Market Teams. Its average team brings in $68.5 million of revenue and $4.15 million of profit a year."
+      },
+      {
+        "type": "table",
+        "title": "Segments of the client's league (average per team)",
+        "headers": [
+          "Segment",
+          "Share of games won since 2000",
+          "Revenue ($ million)",
+          "Profit ($ million)"
+        ],
+        "rows": [
+          [
+            "Small-Market Teams",
+            "38%",
+            "34",
+            "2.9"
+          ],
+          [
+            "Mid-Market Teams",
+            "50%",
+            "56",
+            "1.5"
+          ],
+          [
+            "Big-Market Teams",
+            "59%",
+            "110",
+            "8.4"
+          ]
+        ]
+      }
+    ],
+    "prompt": "If the league has 3 Small-Market Teams, how many teams belong to the Big-Market segment?",
+    "options": [
+      "2 teams",
+      "3 teams",
+      "4 teams",
+      "5 teams"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "A win for one team is a loss for another, so the league's overall winning percentage is 50%",
+      "Mid-Market Teams are at 50%, so the other two segments must balance: 3 × (50% − 38%) = X × (59% − 50%), so 36 = 9X and X = 4",
+      "Check with revenue: 3 × 34 + 5 × 56 + 4 × 110 = $822 million, and $822 million ÷ 12 = $68.5 million a team"
+    ],
+    "shortcut": "Small-Market Teams are 12 points below 50% and Big-Market Teams 9 points above, so 3 × 12 = X × 9 and X = 4.",
+    "check": {
+      "kind": "value",
+      "answer": "3 * (50 - 38) / (59 - 50)"
+    }
+  },
+  {
+    "id": "bk-pracC-q19-a",
+    "modelledOn": "pracC-q19",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Timberline Mills (TM) saws logs into building timber and runs several sawmills. The log yard at its Mill 2 takes deliveries from 6am to 3pm, Monday to Friday."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Chart A: Logs delivered on each day of the week (Mill 2 log yard)",
+        "unit": "Logs delivered, tonnes",
+        "categories": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "series": [
+          {
+            "name": "Logs delivered",
+            "values": [
+              350,
+              1600,
+              2050,
+              1800,
+              2350,
+              0,
+              0
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3000,
+          "step": 500
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following values best approximates the tonnage of logs delivered to the Mill 2 yard on an average day from Monday to Friday?",
+    "options": [
+      "1,165 tonnes",
+      "1,350 tonnes",
+      "1,450 tonnes",
+      "1,630 tonnes"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Monday to Friday total: 350 + 1,600 + 2,050 + 1,800 + 2,350 = 8,150 tonnes",
+      "Average: 8,150 ÷ 5 = 1,630 tonnes"
+    ],
+    "shortcut": "Tuesday to Friday each sit near 2,000 tonnes (about 7,800 together) and Monday adds about 350, so roughly 8,150 over 5 days, about 1,630 a day. Dividing by 7 gives the 1,165 option.",
+    "check": {
+      "kind": "value",
+      "answer": "(350 + 1600 + 2050 + 1800 + 2350) / 5"
+    }
+  },
+  {
+    "id": "bk-pracC-q19-b",
+    "modelledOn": "pracC-q19",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Volta Home Energy (VHE) supplies gas and electricity to households. Its customer service centre answers calls from 8am to 6pm Monday to Friday and is closed at weekends."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Chart A: Calls received on each day of the week (VHE customer service centre)",
+        "unit": "Calls received",
+        "categories": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "series": [
+          {
+            "name": "Calls received",
+            "values": [
+              5600,
+              3300,
+              2800,
+              3100,
+              2300,
+              0,
+              0
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 6000,
+          "step": 1000
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following values best approximates the number of calls the centre receives per day, on average, from Monday to Friday?",
+    "options": [
+      "2,445 calls",
+      "3,425 calls",
+      "3,700 calls",
+      "3,950 calls"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Monday to Friday total: 5,600 + 3,300 + 2,800 + 3,100 + 2,300 = 17,100 calls",
+      "Average: 17,100 ÷ 5 = 3,420 calls, closest to 3,425"
+    ],
+    "shortcut": "Tuesday to Friday are each near 3,000 (about 11,500 together) and Monday adds about 5,600, so roughly 17,000 over 5 days, about 3,400 a day. Dividing by 7 gives the 2,445 option.",
+    "check": {
+      "kind": "value",
+      "answer": "(5600 + 3300 + 2800 + 3100 + 2300) / 5"
+    }
+  },
+  {
+    "id": "bk-pracC-q19-c",
+    "modelledOn": "pracC-q19",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Goldmill Flour (GF) grinds wheat into flour for bakeries and owns three mills. Its main mill takes in wheat from 7am to 4pm Monday to Friday."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Chart A: Wheat taken in on each day of the week (GF main mill)",
+        "unit": "Wheat taken in, tonnes",
+        "categories": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "series": [
+          {
+            "name": "Wheat taken in",
+            "values": [
+              560,
+              1000,
+              680,
+              860,
+              1620,
+              0,
+              0
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 1750,
+          "step": 250
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following values best approximates how much wheat the main mill takes in on a typical day from Monday to Friday, on average?",
+    "options": [
+      "675 tonnes",
+      "775 tonnes",
+      "940 tonnes",
+      "1,090 tonnes"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Monday to Friday total: 560 + 1,000 + 680 + 860 + 1,620 = 4,720 tonnes",
+      "Average: 4,720 ÷ 5 = 944 tonnes, closest to 940"
+    ],
+    "shortcut": "Mon + Tue come to about 1,550, Wed + Thu about 1,550 and Fri about 1,600: roughly 4,700 tonnes, which over 5 days (not 7) is about 940 a day.",
+    "check": {
+      "kind": "value",
+      "answer": "(560 + 1000 + 680 + 860 + 1620) / 5"
+    }
+  },
+  {
+    "id": "bk-pracC-q19-d",
+    "modelledOn": "pracC-q19",
+    "skill": "averages-mixes",
+    "tier": 1,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Partline Auto (PA) distributes car parts to independent garages. Its central warehouse accepts deliveries from suppliers between 7am and 3pm, Monday to Friday."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Chart A: Pallets arriving on each day of the week (PA central warehouse)",
+        "unit": "Pallets arriving",
+        "categories": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "series": [
+          {
+            "name": "Pallets arriving",
+            "values": [
+              200,
+              740,
+              870,
+              750,
+              980,
+              0,
+              0
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 1200,
+          "step": 200
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following values best approximates how many pallets arrive at the central warehouse on an average day from Monday to Friday?",
+    "options": [
+      "505 pallets",
+      "590 pallets",
+      "640 pallets",
+      "710 pallets"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Monday to Friday total: 200 + 740 + 870 + 750 + 980 = 3,540 pallets",
+      "Average: 3,540 ÷ 5 = 708 pallets, closest to 710"
+    ],
+    "shortcut": "Mon + Fri come to about 1,200, Tue + Thu about 1,500 and Wed about 850: roughly 3,550 pallets, which over 5 days (not 7) is about 710 a day.",
+    "check": {
+      "kind": "value",
+      "answer": "(200 + 740 + 870 + 750 + 980) / 5"
+    }
+  },
+  {
+    "id": "bk-pst2-q21-a",
+    "modelledOn": "pst2-q21",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Frostline Inc. builds commercial kitchen equipment and sells ovens and refrigeration units to restaurants through its own sales team. The board suspects that Frostline is growing more slowly than its rivals."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Revenue and market size by product line, 2010-2014",
+        "unit": "USD millions (left axis: revenue; right axis: market size)",
+        "categories": [
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014"
+        ],
+        "series": [
+          {
+            "name": "Ovens revenue (LHS)",
+            "values": [
+              230,
+              240,
+              245,
+              255,
+              260
+            ]
+          },
+          {
+            "name": "Refrigeration revenue (LHS)",
+            "values": [
+              290,
+              300,
+              330,
+              345,
+              365
+            ]
+          },
+          {
+            "name": "Ovens market size (RHS)",
+            "values": [
+              1225,
+              1240,
+              1310,
+              1335,
+              1390
+            ],
+            "axis": "right"
+          },
+          {
+            "name": "Refrigeration market size (RHS)",
+            "values": [
+              1430,
+              1520,
+              1630,
+              1740,
+              1880
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 225,
+          "max": 400,
+          "step": 25
+        },
+        "axisRight": {
+          "min": 1200,
+          "max": 1900,
+          "step": 100
+        },
+        "labelled": false,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 2: Number of sales representatives by product line, 2010-2014",
+        "unit": "Sales representatives",
+        "categories": [
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014"
+        ],
+        "series": [
+          {
+            "name": "Sales force ovens",
+            "values": [
+              90,
+              95,
+              100,
+              110,
+              110
+            ]
+          },
+          {
+            "name": "Sales force refrigeration",
+            "values": [
+              55,
+              60,
+              70,
+              70,
+              75
+            ]
+          }
+        ],
+        "axis": {
+          "min": 50,
+          "max": 115,
+          "step": 5
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following values best approximates the refrigeration line's revenue per sales representative, averaged over the last four years?",
+    "options": [
+      "$4.9m",
+      "$0.2m",
+      "$2.4m",
+      "$0.5m"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Revenue per sales representative: 2011 300 ÷ 60 = 5.0, 2012 330 ÷ 70 = 4.7, 2013 345 ÷ 70 = 4.9, 2014 365 ÷ 75 = 4.9.",
+      "The average is $4.9m."
+    ],
+    "shortcut": "One year is enough: 300 ÷ 60 = 5, and only $4.9m is close to that.",
+    "check": {
+      "kind": "value",
+      "answer": "(300 / 60 + 330 / 70 + 345 / 70 + 365 / 75) / 4"
+    }
+  },
+  {
+    "id": "bk-pst2-q21-b",
+    "modelledOn": "pst2-q21",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Sedana Co. is an office furniture maker that sells seating and desks to businesses through its own sales force. Its managers fear that the company is losing ground to competitors."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Sedana revenue and the size of each furniture market, 2009-2013",
+        "unit": "USD millions: Sedana revenue (left axis) and market size (right axis)",
+        "categories": [
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "series": [
+          {
+            "name": "Seating revenue (LHS)",
+            "values": [
+              310,
+              325,
+              350,
+              365,
+              390
+            ]
+          },
+          {
+            "name": "Desks revenue (LHS)",
+            "values": [
+              420,
+              430,
+              445,
+              450,
+              470
+            ]
+          },
+          {
+            "name": "Seating market size (RHS)",
+            "values": [
+              2150,
+              2225,
+              2350,
+              2450,
+              2575
+            ],
+            "axis": "right"
+          },
+          {
+            "name": "Desks market size (RHS)",
+            "values": [
+              1825,
+              1880,
+              1940,
+              2010,
+              2090
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 300,
+          "max": 475,
+          "step": 25
+        },
+        "axisRight": {
+          "min": 1800,
+          "max": 2600,
+          "step": 100
+        },
+        "labelled": false,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 2: Sales force headcount by range, 2009-2013",
+        "unit": "Sales representatives",
+        "categories": [
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "series": [
+          {
+            "name": "Sales force seating",
+            "values": [
+              440,
+              460,
+              480,
+              500,
+              540
+            ]
+          },
+          {
+            "name": "Sales force desks",
+            "values": [
+              280,
+              300,
+              300,
+              320,
+              320
+            ]
+          }
+        ],
+        "axis": {
+          "min": 260,
+          "max": 560,
+          "step": 20
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following values best approximates Sedana's seating revenue per sales representative, on average, over the last four years?",
+    "options": [
+      "$1.4m",
+      "$7.2m",
+      "$4.4m",
+      "$0.7m"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Revenue per sales representative: 2010 325 ÷ 460 = 0.71, 2011 350 ÷ 480 = 0.73, 2012 365 ÷ 500 = 0.73, 2013 390 ÷ 540 = 0.72.",
+      "The average is $0.72m, closest to $0.7m."
+    ],
+    "shortcut": "One year is enough: 350 ÷ 480 is a little under 0.75, and only $0.7m is near it.",
+    "check": {
+      "kind": "value",
+      "answer": "(325 / 460 + 350 / 480 + 365 / 500 + 390 / 540) / 4"
+    }
+  },
+  {
+    "id": "bk-pst2-q21-c",
+    "modelledOn": "pst2-q21",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Wrapsol Ltd. supplies packaging to food manufacturers, selling folding cartons and flexible films through a sales team of its own. The chief executive is concerned that sales are rising more slowly than the market."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Wrapsol revenue and market value per segment, 2008-2012",
+        "unit": "USD millions; left axis for revenue, right axis for market size",
+        "categories": [
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "series": [
+          {
+            "name": "Cartons revenue (LHS)",
+            "values": [
+              560,
+              575,
+              580,
+              600,
+              615
+            ]
+          },
+          {
+            "name": "Flexible films revenue (LHS)",
+            "values": [
+              410,
+              440,
+              460,
+              495,
+              520
+            ]
+          },
+          {
+            "name": "Cartons market size (RHS)",
+            "values": [
+              3325,
+              3375,
+              3475,
+              3550,
+              3625
+            ],
+            "axis": "right"
+          },
+          {
+            "name": "Flexible films market size (RHS)",
+            "values": [
+              2450,
+              2575,
+              2725,
+              2875,
+              3050
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 400,
+          "max": 625,
+          "step": 25
+        },
+        "axisRight": {
+          "min": 2400,
+          "max": 3700,
+          "step": 100
+        },
+        "labelled": false,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 2: Size of the sales force in each segment, 2008-2012",
+        "unit": "Sales representatives",
+        "categories": [
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "series": [
+          {
+            "name": "Sales force cartons",
+            "values": [
+              150,
+              150,
+              160,
+              170,
+              170
+            ]
+          },
+          {
+            "name": "Sales force flexible films",
+            "values": [
+              60,
+              70,
+              70,
+              80,
+              80
+            ]
+          }
+        ],
+        "axis": {
+          "min": 50,
+          "max": 180,
+          "step": 10
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following values best approximates the flexible films segment's yearly revenue per salesperson, averaged across the last four years?",
+    "options": [
+      "$3.7m",
+      "$6.4m",
+      "$0.2m",
+      "$0.6m"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Revenue per sales representative: 2009 440 ÷ 70 = 6.3, 2010 460 ÷ 70 = 6.6, 2011 495 ÷ 80 = 6.2, 2012 520 ÷ 80 = 6.5.",
+      "The average is $6.4m."
+    ],
+    "shortcut": "One year is enough: 440 ÷ 70 is just over 6, and only $6.4m is close.",
+    "check": {
+      "kind": "value",
+      "answer": "(440 / 70 + 460 / 70 + 495 / 80 + 520 / 80) / 4"
+    }
+  },
+  {
+    "id": "bk-pst2-q21-e",
+    "modelledOn": "pst2-q21",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Furrowtech Inc. manufactures farm machinery and sells tractors and irrigation systems to growers through its own sales force. The board thinks the company is gaining share more slowly than its competitors."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Furrowtech revenue against total market for each product, 2008-2012",
+        "unit": "USD millions (revenue against the left-hand scale, market size against the right-hand scale)",
+        "categories": [
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "series": [
+          {
+            "name": "Tractors revenue (LHS)",
+            "values": [
+              500,
+              525,
+              540,
+              550,
+              565
+            ]
+          },
+          {
+            "name": "Irrigation revenue (LHS)",
+            "values": [
+              330,
+              355,
+              370,
+              395,
+              420
+            ]
+          },
+          {
+            "name": "Tractors market size (RHS)",
+            "values": [
+              2280,
+              2340,
+              2430,
+              2520,
+              2610
+            ],
+            "axis": "right"
+          },
+          {
+            "name": "Irrigation market size (RHS)",
+            "values": [
+              1380,
+              1470,
+              1620,
+              1740,
+              1910
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 325,
+          "max": 575,
+          "step": 25
+        },
+        "axisRight": {
+          "min": 1300,
+          "max": 2700,
+          "step": 100
+        },
+        "labelled": false,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 2: Headcount of sales representatives per product, 2008-2012",
+        "unit": "Sales representatives",
+        "categories": [
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ],
+        "series": [
+          {
+            "name": "Sales force tractors",
+            "values": [
+              105,
+              115,
+              125,
+              140,
+              150
+            ]
+          },
+          {
+            "name": "Sales force irrigation",
+            "values": [
+              50,
+              55,
+              60,
+              65,
+              70
+            ]
+          }
+        ],
+        "axis": {
+          "min": 45,
+          "max": 155,
+          "step": 5
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following values best approximates irrigation's yearly revenue per salesperson, taking the average over the last four years?",
+    "options": [
+      "$4.2m",
+      "$0.2m",
+      "$6.2m",
+      "$0.6m"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Revenue per sales representative: 2009 355 ÷ 55 = 6.5, 2010 370 ÷ 60 = 6.2, 2011 395 ÷ 65 = 6.1, 2012 420 ÷ 70 = 6.0.",
+      "The average is $6.2m."
+    ],
+    "shortcut": "One year is enough: 370 ÷ 60 is just over 6, and only $6.2m is near it.",
+    "check": {
+      "kind": "value",
+      "answer": "(355 / 55 + 370 / 60 + 395 / 65 + 420 / 70) / 4"
+    }
+  },
+  {
+    "id": "bk-pst2-q21-f",
+    "modelledOn": "pst2-q21",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Sentrix Inc. designs security systems and sells intruder alarms and CCTV cameras to businesses using a dedicated team of sales staff. Management suspects that its revenue is rising more slowly than its rivals'."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 1: Sentrix revenues and overall market size by range, 2009-2013",
+        "unit": "USD millions: revenues (LHS) and market size (RHS)",
+        "categories": [
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "series": [
+          {
+            "name": "Intruder alarms revenues (LHS)",
+            "values": [
+              92,
+              101,
+              103,
+              112,
+              118
+            ]
+          },
+          {
+            "name": "CCTV revenues (LHS)",
+            "values": [
+              270,
+              295,
+              310,
+              340,
+              385
+            ]
+          },
+          {
+            "name": "Intruder alarms market size (RHS)",
+            "values": [
+              1180,
+              1220,
+              1290,
+              1370,
+              1420
+            ],
+            "axis": "right"
+          },
+          {
+            "name": "CCTV market size (RHS)",
+            "values": [
+              1880,
+              1960,
+              2080,
+              2210,
+              2330
+            ],
+            "axis": "right"
+          }
+        ],
+        "axis": {
+          "min": 75,
+          "max": 400,
+          "step": 25
+        },
+        "axisRight": {
+          "min": 1100,
+          "max": 2400,
+          "step": 100
+        },
+        "labelled": false,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Exhibit 2: Sales staff numbers in each range, 2009-2013",
+        "unit": "Sales representatives",
+        "categories": [
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013"
+        ],
+        "series": [
+          {
+            "name": "Sales force intruder alarms",
+            "values": [
+              35,
+              40,
+              40,
+              45,
+              50
+            ]
+          },
+          {
+            "name": "Sales force CCTV",
+            "values": [
+              50,
+              60,
+              60,
+              70,
+              80
+            ]
+          }
+        ],
+        "axis": {
+          "min": 30,
+          "max": 85,
+          "step": 5
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of the following values best approximates the CCTV range's revenue per sales representative, as an average of the last four years?",
+    "options": [
+      "$2.5m",
+      "$0.3m",
+      "$0.5m",
+      "$4.9m"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Revenue per sales representative: 2010 295 ÷ 60 = 4.9, 2011 310 ÷ 60 = 5.2, 2012 340 ÷ 70 = 4.9, 2013 385 ÷ 80 = 4.8.",
+      "The average is $4.9m."
+    ],
+    "shortcut": "One year is enough: 295 ÷ 60 is just under 5, and only $4.9m is close to that.",
+    "check": {
+      "kind": "value",
+      "answer": "(295 / 60 + 310 / 60 + 340 / 70 + 385 / 80) / 4"
+    }
+  },
+  {
+    "id": "bk-sample-q08-a",
+    "modelledOn": "sample-q08",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Ledgerline sells accounting and payroll software to small firms and bookkeepers for an annual licence fee. Its revenue has risen every year since 2005, but its costs have risen faster."
+      },
+      {
+        "type": "paragraph",
+        "text": "Revenue by product for 2011 is given in Exhibit 2, together with the number of developers assigned to each product. Each developer is full-time and on a single product."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Revenue by product, 2011",
+        "unit": "$ million",
+        "categories": [
+          "Product L",
+          "Product K",
+          "Product J",
+          "Product I",
+          "Product H",
+          "Product G",
+          "Product F",
+          "Product E",
+          "Product D",
+          "Product C",
+          "Product B",
+          "Product A"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              6,
+              8,
+              3,
+              1,
+              2,
+              1,
+              14,
+              38,
+              9,
+              7,
+              26,
+              2
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 40,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of developers by product",
+        "unit": "Developers",
+        "categories": [
+          "Product L",
+          "Product K",
+          "Product J",
+          "Product I",
+          "Product H",
+          "Product G",
+          "Product F",
+          "Product E",
+          "Product D",
+          "Product C",
+          "Product B",
+          "Product A"
+        ],
+        "series": [
+          {
+            "name": "Number of developers",
+            "values": [
+              21,
+              29,
+              18,
+              9,
+              15,
+              11,
+              41,
+              65,
+              22,
+              22,
+              56,
+              16
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 80,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Based on Exhibit 2, what is the average revenue per developer across Ledgerline's products?",
+    "options": [
+      "$40,000",
+      "$400,000",
+      "$360,000",
+      "$320,000"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Total revenue = 2 + 26 + 7 + 9 + 38 + 14 + 1 + 2 + 1 + 3 + 8 + 6 = $117m",
+      "Total developers = 16 + 56 + 22 + 22 + 65 + 41 + 11 + 15 + 9 + 18 + 29 + 21 = 325",
+      "$117m ÷ 325 = $0.36m = $360,000 per developer"
+    ],
+    "shortcut": "117 ÷ 325: 325 × 0.36 = 117 exactly, so $360,000; 0.32 would need about 366 developers and 0.40 about 293.",
+    "check": {
+      "kind": "value",
+      "answer": "(2 + 26 + 7 + 9 + 38 + 14 + 1 + 2 + 1 + 3 + 8 + 6) * 1000000 / (16 + 56 + 22 + 22 + 65 + 41 + 11 + 15 + 9 + 18 + 29 + 21)"
+    }
+  },
+  {
+    "id": "bk-sample-q08-b",
+    "modelledOn": "sample-q08",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Archform is an architecture practice that designs schools, offices, hospitals and housing schemes, working from twelve studios. It has won more commissions every year since 2006, but its margins remain thin."
+      },
+      {
+        "type": "paragraph",
+        "text": "For 2012, Exhibit 2 gives the revenue of each studio and how many architects it employs. No architect is shared between studios, and none works part-time."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Revenue by studio, 2012",
+        "unit": "$ million",
+        "categories": [
+          "Studio L",
+          "Studio K",
+          "Studio J",
+          "Studio I",
+          "Studio H",
+          "Studio G",
+          "Studio F",
+          "Studio E",
+          "Studio D",
+          "Studio C",
+          "Studio B",
+          "Studio A"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              1,
+              2,
+              3,
+              3,
+              1,
+              8,
+              17,
+              1,
+              13,
+              2,
+              20,
+              6
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 20,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of architects by studio",
+        "unit": "Architects",
+        "categories": [
+          "Studio L",
+          "Studio K",
+          "Studio J",
+          "Studio I",
+          "Studio H",
+          "Studio G",
+          "Studio F",
+          "Studio E",
+          "Studio D",
+          "Studio C",
+          "Studio B",
+          "Studio A"
+        ],
+        "series": [
+          {
+            "name": "Number of architects",
+            "values": [
+              10,
+              14,
+              27,
+              24,
+              12,
+              38,
+              58,
+              9,
+              47,
+              17,
+              61,
+              33
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 70,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Using Exhibit 2, what is Archform's average revenue per architect over all its studios?",
+    "options": [
+      "$240,000",
+      "$220,000",
+      "$200,000",
+      "$20,000"
+    ],
+    "correctIndex": 1,
+    "solution": [
+      "Total revenue = 6 + 20 + 2 + 13 + 1 + 17 + 8 + 1 + 3 + 3 + 2 + 1 = $77m",
+      "Total architects = 33 + 61 + 17 + 47 + 9 + 58 + 38 + 12 + 24 + 27 + 14 + 10 = 350",
+      "$77m ÷ 350 = $0.22m = $220,000 per architect"
+    ],
+    "shortcut": "77 ÷ 350 = 0.22: 350 × 0.2 = 70 leaves 7, which is another 0.02. So $220,000.",
+    "check": {
+      "kind": "value",
+      "answer": "(6 + 20 + 2 + 13 + 1 + 17 + 8 + 1 + 3 + 3 + 2 + 1) * 1000000 / (33 + 61 + 17 + 47 + 9 + 58 + 38 + 12 + 24 + 27 + 14 + 10)"
+    }
+  },
+  {
+    "id": "bk-sample-q08-c",
+    "modelledOn": "sample-q08",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Stratega is a management consultancy that advises large companies on strategy, mergers and cost cutting, organised in twelve industry practices. Fee income has grown since 2003, though the partners think it could earn more from each consultant."
+      },
+      {
+        "type": "paragraph",
+        "text": "The 2010 fee income of every practice appears in Exhibit 2, alongside the number of consultants in that practice. A consultant belongs to one practice only and works there full-time."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Fee income by practice, 2010",
+        "unit": "$ million",
+        "categories": [
+          "Practice L",
+          "Practice K",
+          "Practice J",
+          "Practice I",
+          "Practice H",
+          "Practice G",
+          "Practice F",
+          "Practice E",
+          "Practice D",
+          "Practice C",
+          "Practice B",
+          "Practice A"
+        ],
+        "series": [
+          {
+            "name": "Fee income",
+            "values": [
+              7,
+              1,
+              9,
+              32,
+              2,
+              11,
+              3,
+              25,
+              5,
+              36,
+              2,
+              10
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 40,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of consultants by practice",
+        "unit": "Consultants",
+        "categories": [
+          "Practice L",
+          "Practice K",
+          "Practice J",
+          "Practice I",
+          "Practice H",
+          "Practice G",
+          "Practice F",
+          "Practice E",
+          "Practice D",
+          "Practice C",
+          "Practice B",
+          "Practice A"
+        ],
+        "series": [
+          {
+            "name": "Number of consultants",
+            "values": [
+              12,
+              9,
+              12,
+              53,
+              10,
+              20,
+              10,
+              44,
+              11,
+              49,
+              10,
+              35
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 60,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "What is the average fee income per consultant for Stratega's practices, based on Exhibit 2?",
+    "options": [
+      "$56,000",
+      "$560,000",
+      "$480,000",
+      "$520,000"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Total fee income = 10 + 2 + 36 + 5 + 25 + 3 + 11 + 2 + 32 + 9 + 1 + 7 = $143m",
+      "Total consultants = 35 + 10 + 49 + 11 + 44 + 10 + 20 + 10 + 53 + 12 + 9 + 12 = 275",
+      "$143m ÷ 275 = $0.52m = $520,000 per consultant"
+    ],
+    "shortcut": "143 ÷ 275: 275 × 0.5 = 137.5, and the remaining 5.5 is another 0.02. So $520,000.",
+    "check": {
+      "kind": "value",
+      "answer": "(10 + 2 + 36 + 5 + 25 + 3 + 11 + 2 + 32 + 9 + 1 + 7) * 1000000 / (35 + 10 + 49 + 11 + 44 + 10 + 20 + 10 + 53 + 12 + 9 + 12)"
+    }
+  },
+  {
+    "id": "bk-sample-q08-d",
+    "modelledOn": "sample-q08",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "AdSpark is an advertising agency that plans and creates campaigns for brands on television, radio, posters and social media. Billings have risen since 2007, yet the agency has never made a profit."
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 2 sets out the 2013 revenue from each of its twelve client accounts and the staff assigned to each account. Every member of staff works full-time on just one account."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Revenue by client account, 2013",
+        "unit": "$ million",
+        "categories": [
+          "Account L",
+          "Account K",
+          "Account J",
+          "Account I",
+          "Account H",
+          "Account G",
+          "Account F",
+          "Account E",
+          "Account D",
+          "Account C",
+          "Account B",
+          "Account A"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              1,
+              5,
+              1,
+              2,
+              3,
+              19,
+              2,
+              12,
+              1,
+              7,
+              25,
+              3
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 30,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of staff by client account",
+        "unit": "Staff",
+        "categories": [
+          "Account L",
+          "Account K",
+          "Account J",
+          "Account I",
+          "Account H",
+          "Account G",
+          "Account F",
+          "Account E",
+          "Account D",
+          "Account C",
+          "Account B",
+          "Account A"
+        ],
+        "series": [
+          {
+            "name": "Number of staff",
+            "values": [
+              10,
+              30,
+              9,
+              15,
+              22,
+              52,
+              12,
+              39,
+              8,
+              34,
+              54,
+              15
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 60,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Based on Exhibit 2, what is AdSpark's average revenue per member of staff across its client accounts?",
+    "options": [
+      "$270,000",
+      "$30,000",
+      "$300,000",
+      "$240,000"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Total revenue = 3 + 25 + 7 + 1 + 12 + 2 + 19 + 3 + 2 + 1 + 5 + 1 = $81m",
+      "Total staff = 15 + 54 + 34 + 8 + 39 + 12 + 52 + 22 + 15 + 9 + 30 + 10 = 300",
+      "$81m ÷ 300 = $0.27m = $270,000 per member of staff"
+    ],
+    "shortcut": "81 ÷ 300 = 0.27, so $270,000; 0.30 would need only 270 staff and 0.24 about 338.",
+    "check": {
+      "kind": "value",
+      "answer": "(3 + 25 + 7 + 1 + 12 + 2 + 19 + 3 + 2 + 1 + 5 + 1) * 1000000 / (15 + 54 + 34 + 8 + 39 + 12 + 52 + 22 + 15 + 9 + 30 + 10)"
+    }
+  },
+  {
+    "id": "bk-sample-q08-e",
+    "modelledOn": "sample-q08",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Brokerline is a ship-broking firm that arranges charters and vessel sales for ship owners and cargo traders, working through twelve broking teams. Its revenue has grown since 2000, but it has never turned a profit."
+      },
+      {
+        "type": "paragraph",
+        "text": "The 2012 revenue of each team is shown in Exhibit 2 together with how many brokers each team has. Each broker is full-time and belongs to just one team."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Revenue by team, 2012",
+        "unit": "$ million",
+        "categories": [
+          "Team L",
+          "Team K",
+          "Team J",
+          "Team I",
+          "Team H",
+          "Team G",
+          "Team F",
+          "Team E",
+          "Team D",
+          "Team C",
+          "Team B",
+          "Team A"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              3,
+              11,
+              5,
+              2,
+              3,
+              2,
+              20,
+              27,
+              12,
+              11,
+              33,
+              4
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 40,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of brokers by team",
+        "unit": "Brokers",
+        "categories": [
+          "Team L",
+          "Team K",
+          "Team J",
+          "Team I",
+          "Team H",
+          "Team G",
+          "Team F",
+          "Team E",
+          "Team D",
+          "Team C",
+          "Team B",
+          "Team A"
+        ],
+        "series": [
+          {
+            "name": "Number of brokers",
+            "values": [
+              8,
+              26,
+              12,
+              6,
+              9,
+              7,
+              51,
+              70,
+              36,
+              34,
+              80,
+              11
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 80,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Based on Exhibit 2, what is Brokerline's average revenue per broker across its twelve teams?",
+    "options": [
+      "$340,000",
+      "$42,000",
+      "$420,000",
+      "$380,000"
+    ],
+    "correctIndex": 3,
+    "solution": [
+      "Total revenue = 4 + 33 + 11 + 12 + 27 + 20 + 2 + 3 + 2 + 5 + 11 + 3 = $133m",
+      "Total brokers = 11 + 80 + 34 + 36 + 70 + 51 + 7 + 9 + 6 + 12 + 26 + 8 = 350",
+      "$133m ÷ 350 = $0.38m = $380,000 per broker"
+    ],
+    "shortcut": "133 ÷ 350: 350 × 0.38 = 133 exactly, so $380,000; 0.42 would need only about 317 brokers and 0.34 about 391.",
+    "check": {
+      "kind": "value",
+      "answer": "(4 + 33 + 11 + 12 + 27 + 20 + 2 + 3 + 2 + 5 + 11 + 3) * 1000000 / (11 + 80 + 34 + 36 + 70 + 51 + 7 + 9 + 6 + 12 + 26 + 8)"
+    }
+  },
+  {
+    "id": "bk-sample-q08-f",
+    "modelledOn": "sample-q08",
+    "skill": "averages-mixes",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Fixwell provides IT support to small and mid-sized businesses on yearly contracts, through twelve regional support teams. Its revenue has climbed since 2008, though it has made a loss in most years."
+      },
+      {
+        "type": "paragraph",
+        "text": "Exhibit 2 lists each team's revenue for 2013 and its headcount of technicians. Technicians are full-time and each is attached to one team."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Revenue by support team, 2013",
+        "unit": "$ million",
+        "categories": [
+          "Team L",
+          "Team K",
+          "Team J",
+          "Team I",
+          "Team H",
+          "Team G",
+          "Team F",
+          "Team E",
+          "Team D",
+          "Team C",
+          "Team B",
+          "Team A"
+        ],
+        "series": [
+          {
+            "name": "Revenue",
+            "values": [
+              2,
+              5,
+              12,
+              3,
+              6,
+              7,
+              2,
+              5,
+              14,
+              1,
+              9,
+              2
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 15,
+          "step": 5
+        },
+        "labelled": true,
+        "decimals": 0
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "horizontal": true,
+        "title": "Exhibit 2: Number of technicians by support team",
+        "unit": "Technicians",
+        "categories": [
+          "Team L",
+          "Team K",
+          "Team J",
+          "Team I",
+          "Team H",
+          "Team G",
+          "Team F",
+          "Team E",
+          "Team D",
+          "Team C",
+          "Team B",
+          "Team A"
+        ],
+        "series": [
+          {
+            "name": "Number of technicians",
+            "values": [
+              11,
+              30,
+              72,
+              14,
+              36,
+              42,
+              10,
+              28,
+              84,
+              9,
+              52,
+              12
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 90,
+          "step": 10
+        },
+        "labelled": true,
+        "decimals": 0
+      }
+    ],
+    "prompt": "From Exhibit 2, what is Fixwell's average revenue per technician over all twelve teams?",
+    "options": [
+      "$170,000",
+      "$190,000",
+      "$15,000",
+      "$150,000"
+    ],
+    "correctIndex": 0,
+    "solution": [
+      "Total revenue = 2 + 9 + 1 + 14 + 5 + 2 + 7 + 6 + 3 + 12 + 5 + 2 = $68m",
+      "Total technicians = 12 + 52 + 9 + 84 + 28 + 10 + 42 + 36 + 14 + 72 + 30 + 11 = 400",
+      "$68m ÷ 400 = $0.17m = $170,000 per technician"
+    ],
+    "shortcut": "68 ÷ 400 = 0.17 exactly, so $170,000; 0.19 would need only about 358 technicians and 0.15 about 453.",
+    "check": {
+      "kind": "value",
+      "answer": "(2 + 9 + 1 + 14 + 5 + 2 + 7 + 6 + 3 + 12 + 5 + 2) * 1000000 / (12 + 52 + 9 + 84 + 28 + 10 + 42 + 36 + 14 + 72 + 30 + 11)"
+    }
+  }
+]

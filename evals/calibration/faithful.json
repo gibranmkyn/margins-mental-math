@@ -1,0 +1,151 @@
+[
+  {
+    "id": "bk-pst2-q05-a",
+    "modelledOn": "pst2-q05",
+    "skill": "break-even-payback",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Harrowgate Grocers, a chain of 40 suburban supermarkets, is losing shoppers to discount rivals and has costed three upgrades to its stores."
+      },
+      {
+        "type": "table",
+        "title": "Table 1: Projected costs and gains from the store upgrades",
+        "headers": [
+          "",
+          "Self-checkout lanes",
+          "Click-and-collect lockers",
+          "Longer opening hours"
+        ],
+        "rows": [
+          [
+            "Upfront investment ($ million)",
+            "$12",
+            "$40",
+            "$0"
+          ],
+          [
+            "Monthly running cost ($ thousands)",
+            "$300",
+            "$500",
+            "$1,200"
+          ],
+          [
+            "Extra shoppers per day",
+            "4,000",
+            "8,000",
+            "6,000"
+          ],
+          [
+            "Profit per extra shopper, before running costs",
+            "$9",
+            "$8",
+            "$10"
+          ]
+        ]
+      }
+    ],
+    "prompt": "How many full years does the chain need before the click-and-collect lockers have paid for themselves?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Extra profit: 8,000 × 365 × $8 = $23.4m a year",
+      "Running cost: 12 × $0.5m = $6m a year",
+      "Net gain: $23.4m − $6m = $17.4m a year",
+      "$40m ÷ $17.4m = 2.3, so the lockers pay for themselves during year 3"
+    ],
+    "shortcut": "8,000 × $8 = $64k a day, about $23m a year; less $6m of running cost leaves about $17m. Two years recover $34m, short of $40m, so it takes three.",
+    "check": {
+      "kind": "best",
+      "pick": "max",
+      "scores": [
+        "1 * (8000 * 365 * 8 / 1000000 - 12 * 500 / 1000) >= 40 ? -1 : -1000",
+        "2 * (8000 * 365 * 8 / 1000000 - 12 * 500 / 1000) >= 40 ? -2 : -1000",
+        "3 * (8000 * 365 * 8 / 1000000 - 12 * 500 / 1000) >= 40 ? -3 : -1000",
+        "4 * (8000 * 365 * 8 / 1000000 - 12 * 500 / 1000) >= 40 ? -4 : -1000"
+      ]
+    },
+    "traps": [
+      { "slip": "forgets the monthly running cost", "option": "2", "result": "40 / (8000 * 365 * 8 / 1000000)", "rule": "at-least" },
+      { "slip": "takes the self-checkout column's $12 million investment", "option": "1", "result": "12 / (8000 * 365 * 8 / 1000000 - 12 * 500 / 1000)", "rule": "at-least" }
+    ]
+  },
+  {
+    "id": "bk-pracC-q21-a",
+    "modelledOn": "pracC-q21",
+    "skill": "unit-economics",
+    "tier": 2,
+    "context": [
+      {
+        "type": "paragraph",
+        "text": "Brightwater Recycling sorts glass and plastic for councils across northern England. Its Leeds depot takes deliveries on weekdays only and is shut at weekends."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Leeds depot's total weekly staff cost is £9,600."
+      },
+      {
+        "type": "chart",
+        "chart": "line",
+        "title": "Chart 1: Material delivered to the Leeds depot on each day of the week",
+        "unit": "Material delivered, tonnes",
+        "categories": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "series": [
+          {
+            "name": "Material delivered",
+            "values": [
+              2200,
+              1400,
+              1100,
+              1700,
+              2400,
+              0,
+              0
+            ]
+          }
+        ],
+        "axis": {
+          "min": 0,
+          "max": 3000,
+          "step": 500
+        },
+        "labelled": false,
+        "decimals": 0
+      }
+    ],
+    "prompt": "Which of these values is closest to the staff cost per tonne of material delivered to the Leeds depot?",
+    "options": [
+      "£0.69",
+      "£0.89",
+      "£1.09",
+      "£1.29"
+    ],
+    "correctIndex": 2,
+    "solution": [
+      "Weekly tonnage: 2,200 + 1,400 + 1,100 + 1,700 + 2,400 = 8,800 tonnes",
+      "Staff cost per tonne: £9,600 ÷ 8,800 ≈ £1.09"
+    ],
+    "shortcut": "The week's deliveries come to a little under 9,000 tonnes against £9,600 of staff cost, so the cost per tonne is a little over £1.",
+    "check": {
+      "kind": "value",
+      "answer": "9600 / (2200 + 1400 + 1100 + 1700 + 2400)"
+    },
+    "traps": [
+      { "slip": "divides tonnes by pounds instead of pounds by tonnes", "option": "£0.89", "result": "(2200 + 1400 + 1100 + 1700 + 2400) / 9600" }
+    ]
+  }
+]

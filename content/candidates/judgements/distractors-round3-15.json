@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-69c20708",
+    "judge": "distractors",
+    "fail": true,
+    "why": "$3,750 comes from no slip or pair of slips (pricing one size, applying the discount, forgetting the bottle size or summing both sizes give $496 to $1,280), so it is not the scaled-up slip option the source's second filler needs and $3,250 and $3,750 are two unexplained values where the notes allow neither."
+  },
+  {
+    "id": "j-f13ce337",
+    "judge": "distractors",
+    "fail": true,
+    "why": "1,250 tonnes has no common slip behind it: dividing by 7 gives 670, averaging Monday to Thursday gives 835, and only averaging Monday and Friday alone (or the two highest days) reaches 1,250, which is not a mistake candidates make; it is also 33% above the answer, too far to count as a grid neighbour."
+  },
+  {
+    "id": "j-ef20bd1c",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B takes the simple average of the Herd size shares (29.7%) as growth, C ranks by total growth (Farm E's 5.8 is the highest), and D ranks by share, not amount (Farm A's -23.6% is the most negative); the ignore-the-split slip lands on Farm A, not H."
+  },
+  {
+    "id": "j-9853d6f6",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A is a near-miss figure (33% x 35% = 11.55%, which a quick estimate rounds to 12%), B gives the right figure on the wrong base (19% of repair customers taken as a share of all customers), and D is the one statement about something the data does not cover, which sourceHas lists."
+  },
+  {
+    "id": "j-71a665f0",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1,165 divides by 7 days, 1,350 divides by 6 (8,150 / 6 = 1,358) and 1,450 averages Monday to Thursday only (5,800 / 4); the half-gridline misread that lands on the answer is named in sourceHas."
+  },
+  {
+    "id": "j-ee59abd1",
+    "judge": "distractors",
+    "fail": true,
+    "why": "$5,000 comes from no plausible slip (pricing one size, the adjacent column (which gives $900), the discount and summing both sizes all stay under $2,000), so $4,500 and $5,000 are two unexplained values where the source's filler notes need $5,000 to be a slip option."
+  },
+  {
+    "id": "j-404c37ec",
+    "judge": "distractors",
+    "fail": false,
+    "why": "1 point compares the 'use now' rates (19.1% vs 18.3%), 14 points compares the 'considered' rates (50.1% vs 36.5%), and 35 points takes shops' awareness against offices' 'considered' row (71.8% - 36.5%); each reads a wrong row."
+  },
+  {
+    "id": "j-0d092a4a",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A reads revenue as profit (revenue rose to April), C misreads the 19% rise against the 16% fall as equal, and B is the one statement about prices the data does not cover, which sourceHas lists; the revenue-as-profit slip is named in sourceHas."
+  },
+  {
+    "id": "j-ba0c1cc3",
+    "judge": "distractors",
+    "fail": false,
+    "why": "20% lower reverses the direction; 40% lower and 40% higher have no slip behind them but pass as the source's two statement fillers that complete the four size-and-direction pairs (though the notes size those fillers at a fifth, not two fifths); comparing total profit (+15%) or margins (+17.5%) lands on D, and sourceHas names both slips."
+  },
+  {
+    "id": "j-1aba6ecb",
+    "judge": "distractors",
+    "fail": false,
+    "why": "C looks worst to a candidate who reads 213 services as needing 3 mechanics (135 minutes); A and D look worst if staffed at the chart's requirement rather than the stated hires (142 and 133 minutes), and their tie is the filler sourceHas lists; the two slips that keep B worst are named in sourceHas."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {"id":"j-6e3b03d4","judge":"ambiguity","fail":false,"why":"Only B holds: total sales are total profit over margin (1,000, 800, 1,000, 1,200), so parts and service profit is 3.5%, 3.75%, 3.0% and 2.5% of sales, and 2012's 3.75% is clearly highest."},
+  {"id":"j-7d9944e9","judge":"ambiguity","fail":false,"why":"Only A holds: legal contracts and technical manuals earn 61 of 130 ($m), 46.9% which rounds to 47%, while software and medical records tie at $0.1875m per translator, websites ($0.231m) trail manuals ($0.245m) and profit is not given."},
+  {"id":"j-2b2aa93d","judge":"ambiguity","fail":false,"why":"Only D holds: 320,000 kg costs $1,230,000 at the current estate (90,000 at $6 plus 230,000 at $3) against $1,600,000 at $5, so the other estate is $370,000 more expensive."},
+  {"id":"j-e238b00d","judge":"ambiguity","fail":false,"why":"Only B holds: each merchant averages 0.443% (A), 0.045% (B) and 0.073% (C) of sales, so A, C and D are false, and A and B together average 48/450 = 0.107, above C's 0.073."},
+  {"id":"j-b4ec81bc","judge":"ambiguity","fail":false,"why":"D is closest: 200+740+870+750+980 = 3,540 over 5 days is 708 pallets, and pushing the answer below the 675 midpoint with 640 would need every between-gridline reading to be about 50 too low at once."},
+  {"id":"j-efbe1097","judge":"ambiguity","fail":false,"why":"Only A holds: $68m revenue over 400 technicians is $170,000, and the simple mean of team ratios (about $172,000) also lands on A."},
+  {"id":"j-6c25af94","judge":"ambiguity","fail":false,"why":"Only B holds: £70m profit grown 10% is £77m over 161 products, £478,261 per product."},
+  {"id":"j-f535b142","judge":"ambiguity","fail":false,"why":"Only A holds: fare income per £ of fuel is E 8.86, B 8.02, D 6.88, A 6.69, C 4.94, giving E, B, D, A, C."},
+  {"id":"j-149e0e8f","judge":"ambiguity","fail":false,"why":"Only B holds: weighting by 380 and 840 ha, wheat is 542 of 1,220 ha (44.4%), oilseeds 15.9%, barley 19.3% and the three crops 79.7%, so only the over-40% wheat statement is true (C is true only under an unweighted average, a trap)."},
+  {"id":"j-49cf5859","judge":"ambiguity","fail":false,"why":"Only A holds: grocery is 1.8+2.2+1.5+0.7 = $6.2bn of $9.8bn (63.3%), while clothing is 20% of non-food, household goods 9.2% and tins 22.4% of sales."}
+]

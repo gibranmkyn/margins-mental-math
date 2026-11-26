@@ -1,0 +1,12 @@
+[
+  { "id": "j-3dc77708", "judge": "realism", "fail": false, "why": "A watch repair shop doing 29 services a month on half of one watchmaker's 160 hours (about 2.8 hours a service) and 139 in November with 2.5 watchmakers (about 2.9 hours each) is believable, and so are one-month contract hires for the gift season." },
+  { "id": "j-796314fb", "judge": "realism", "fail": false, "why": "A bike maker paying $59,400 to a wheel-building firm and $3,200 in mechanic time (about 0.8 hours per faulty wheel at $27/h) for 142 faulty wheels fits within a $69,300 total, and a $18/h wheel builder wage is sensible." },
+  { "id": "j-90b2859c", "judge": "realism", "fail": false, "why": "The robot-picking funnel falls steadily from 100% at each stage, and about 2.4 million order lines a month is believable for a medicines distributor running several regional warehouses." },
+  { "id": "j-6efae51d", "judge": "realism", "fail": false, "why": "Bike-share members riding 29 to 79 times a half-year, ordered by 2011 quintile with some regression in 2012, is believable usage data." },
+  { "id": "j-c5727747", "judge": "realism", "fail": false, "why": "Console, PC and mobile game sales of $9bn to $25bn are stylised but within a factor of a few of real market figures, and the trends are possible." },
+  { "id": "j-111e95a4", "judge": "realism", "fail": false, "why": "A $196bn global pet food market with $37bn from developing economies, a leading market at about 22% ($8bn) and steadily shrinking market shares is believable, though the top 50 reaching exactly 100% leaves nothing for any smaller developing market." },
+  { "id": "j-a7cbabc7", "judge": "realism", "fail": false, "why": "Every mark distribution sums to 100%, the two groups add to the stated 35,000 buyers, and the mark spreads are believable survey results." },
+  { "id": "j-8fb81b31", "judge": "realism", "fail": false, "why": "Liquid fertiliser at $9.80 to $12.80 a litre, cartons of 25 bottles and a typical nursery order of 5 cartons (about $800 to $1,200) are believable wholesale figures." },
+  { "id": "j-fede66a7", "judge": "realism", "fail": false, "why": "A flour company's main mill taking in 560 to 1,620 tonnes of wheat a day in a 9-hour window (at most about 180 tonnes an hour) is believable for a large mill." },
+  { "id": "j-3e316b4a", "judge": "realism", "fail": false, "why": "Hotel shampoo refills at $31 to $38 a litre are on the high side but within a factor of a few of real prices, and orders of 5 boxes of 25 (about $1,200 to $1,550) are believable." }
+]

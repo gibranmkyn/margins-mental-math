@@ -1,0 +1,12 @@
+[
+  {"id":"j-a63b4dd6","judge":"ambiguity","fail":false,"why":"Only B holds: December - January profit is €24,617 - €20,604 = €4,013 and February profit is €25,638 - €23,305 = €2,333, a difference of €1,680, which matches the stated margins."},
+  {"id":"j-8b22b0bb","judge":"ambiguity","fail":false,"why":"C is closest: total cost is £6.1m + 214,000 x £40 = £14.66m, and Group B's 27% - 7% = 20% share gives £2.93m, clearly nearer £2.9m than £3.2m."},
+  {"id":"j-431dd408","judge":"ambiguity","fail":false,"why":"Only C holds: the spreads between the highest and lowest growth years are R 1.7, K 3.4, N 10.9 and Y 25.7 points, which gives R, K, N, Y."},
+  {"id":"j-375954be","judge":"ambiguity","fail":true,"why":"Share falls from about 16.1% (384/2,390) in 2010 to 12.0% (378/3,150) in 2013, a 4.07-point drop; spread over the three yearly steps it gives 1.36 (C), but read as the four years 2010-2013 it gives 1.02 (B), and the wording does not rule out either reading."},
+  {"id":"j-f57becf8","judge":"ambiguity","fail":false,"why":"A is the answer: the wasted glass costs about $1.41-$1.57 per square metre of $14.15 glass (10% of glass in the frame, or 1/0.9 - 1 of glass bought), which is 20-22% of the $7.05 cutting and edging cost."},
+  {"id":"j-ab1fa5a4","judge":"ambiguity","fail":false,"why":"Only D holds: grams per capita are A 2,240, B 1,470, C 2,900 and D 2,960, so D is highest and the exact table values settle it."},
+  {"id":"j-8b2396dc","judge":"ambiguity","fail":false,"why":"Only B holds: profit per lesson is €4,877/912 = €5.35 in May - June and €3,884/897 = €4.33 in July, a fall of about 19%."},
+  {"id":"j-8fc48bdd","judge":"ambiguity","fail":false,"why":"Only C holds: 70% of 130,000 is 91,000 single-visit people, which is 91,000/160,000 = 57% of visits."},
+  {"id":"j-5431e0c9","judge":"ambiguity","fail":false,"why":"Only A holds: revenue per purchase is Q2 $10.67, Q1 $11.67, Q3 $12.22, Q5 $12.32 and Q4 $13.55, so the order is 2, 1, 3, 5, 4 with no ties."},
+  {"id":"j-005692c6","judge":"ambiguity","fail":false,"why":"Only D holds: from Week -2 to -1 jobs rose 126 to 171, which needs about 43 more index points of hours, while casual hours rose only about 23 (20 to 43); A is false (both fell by a third, read on gridlines), B is false (Week 1's casual share of about 55% beats Week 0's 43%), and C compares two different bases."}
+]

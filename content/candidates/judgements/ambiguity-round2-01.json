@@ -1,0 +1,12 @@
+[
+  { "id": "j-2557b626", "judge": "ambiguity", "fail": false, "why": "Only D holds: compounding today's growth rates for another decade puts cargo at about $160m against mountain at about $130m, while A fails (annual growth goes from 3.7% to 7.6%, about twice as fast), B fails (cargo +16% against +27% for the rest of the market) and C fails (cargo was 19% of $167m)." },
+  { "id": "j-8963a528", "judge": "ambiguity", "fail": false, "why": "Only D holds: the profit on a tin is (q − u), and 1,000 litres fill 1,000 ÷ v tins, so the profit is (q − u) × 1,000 ÷ v." },
+  { "id": "j-b9ce550e", "judge": "ambiguity", "fail": false, "why": "Only B holds: revenue per reseller is $0.10m in A, $0.48m in B and $0.64m in C, and A and C together average $176.4m / 1,000 = $0.18m, below B; A, C and D are false on every reading, and reading B as each class on its own makes no option true, so a candidate falls back on the combined reading." },
+  { "id": "j-08c50933", "judge": "ambiguity", "fail": false, "why": "Only B holds: profit per ticket falls from $21,830 / 17,634 = $1.24 to $16,519 / 17,108 = $0.97, which is 22% less." },
+  { "id": "j-5f1fa0aa", "judge": "ambiguity", "fail": false, "why": "Only D holds: the office uses n/y cartridges a year at t each, so it spends (n×t)/y." },
+  { "id": "j-20a5df97", "judge": "ambiguity", "fail": false, "why": "Only A holds: 37% of 779k (288k) minus 26% of 812k (211k) is 77k more cheques keyed by hand, and no other reading gives an option." },
+  { "id": "j-11f11d78", "judge": "ambiguity", "fail": false, "why": "Read as a threshold, C holds: 450 × $5 × 365 = $821,250 a year, so $2m is recovered after 2.44 years, which is not reached by 2.4 years but is passed by 2.5, and 2.44 does not sit on a knife edge." },
+  { "id": "j-5aa101e0", "judge": "ambiguity", "fail": false, "why": "Only B holds: 160,000 one-time visitors make 160,000 of the 500,000 visits, which is 32%." },
+  { "id": "j-d40ae892", "judge": "ambiguity", "fail": false, "why": "Only C holds: each site nets $110 − 2 × 4 × $0.60 = $105.20 a week against $7,700 of car costs, so profit starts at 73.2 sites, meaning 74 is the smallest option (70 sites give only $7,364)." },
+  { "id": "j-9d1d5955", "judge": "ambiguity", "fail": false, "why": "Only C holds: the margins of $0/$1/$2/$3 per kg are read off gridlines exactly, the profit per office is 0, about 35, about 54 and 48 (16 kg sits on a gridline), and even reading C's 27 kg as low as 25 still gives 50, above 48." }
+]

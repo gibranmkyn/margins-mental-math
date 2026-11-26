@@ -1,0 +1,12 @@
+[
+  { "id": "j-b0813a14", "judge": "realism", "fail": false, "why": "An appliance maker with 52,000 warranty visits a year across 39k households, a $3.1m fixed cost and $82 per visit is believable, and the household counts add to the stated 39k with cost per household falling from Group A to E as described." },
+  { "id": "j-65e912cd", "judge": "realism", "fail": false, "why": "An online sports retailer with about $500m of revenue across four categories and margins of 4% to 30% is believable." },
+  { "id": "j-d6ea32a8", "judge": "realism", "fail": false, "why": "A bicycle market of about $21bn today split between road, mountain and electric bikes, with e-bikes forecast to grow fastest, is believable." },
+  { "id": "j-ea58141e", "judge": "realism", "fail": false, "why": "Each region's Outlets and Sales per outlet shares add to 100%, negative shares simply mean sales per outlet fell, and annual growth of 1% to 6% is believable for a burger franchise." },
+  { "id": "j-7ac18ea0", "judge": "realism", "fail": false, "why": "GDP growth ranging from -6.8% to 12.6% over five years, with credit grades and bribery scores, is believable for emerging economies." },
+  { "id": "j-33cfd740", "judge": "realism", "fail": false, "why": "A summer survey of 5,000 visitors to a motor museum near a large town, with both pies adding to 100%, is believable." },
+  { "id": "j-e2b2a66c", "judge": "realism", "fail": false, "why": "A cinema app user spending $29 to $228 over 1.4 to 8.4 bookings in 90 days (about $21 to $27 per booking) and yielding $0.40 to $13 of profit a year is believable." },
+  { "id": "j-f5f54ea4", "judge": "realism", "fail": false, "why": "Each paint line's Price and Volume shares add to 100%, negative volume shares mean litres fell, and annual growth of 1% to 5% is believable." },
+  { "id": "j-c37f64ae", "judge": "realism", "fail": false, "why": "A copy-shop photocopier using about 2,000 kWh a year at 11c/kWh with two or three maintenance visits a year is believable, and the $13 engineer rate is low but within a factor of a few of a technician's wage." },
+  { "id": "j-4e7cdb5d", "judge": "realism", "fail": false, "why": "A month's survey of 4,000 skiers at an indoor ski centre beside a large city, with both pies adding to 100%, is believable." }
+]

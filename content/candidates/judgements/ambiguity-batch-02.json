@@ -1,0 +1,12 @@
+[
+  { "id": "j-b1a7f340", "judge": "ambiguity", "fail": false, "why": "Only A holds: Spokewise has 11,000/550 = 20.0 bikes per station against Velora's 18,500/950 = 19.5, while B and D need revenue and C needs fares, none of which are given." },
+  { "id": "j-9b2c16d7", "judge": "ambiguity", "fail": false, "why": "Total cost is £2.8m + 90,000 x £30 = £5.5m; A (£935), B (£418) and C (£289) check out, but Group D is 22% x £5.5m / 6,500 = £186, so D alone is false." },
+  { "id": "j-c050c8a7", "judge": "ambiguity", "fail": false, "why": "Total cost is £6m + 1.2m x £3 = £9.6m; A (£512), B (£243) and C (£154) check out, but Group D is 23% x £9.6m / 21,500 = £103, so D alone is false." },
+  { "id": "j-41274828", "judge": "ambiguity", "fail": false, "why": "Card fees bring 183,000 x $24 = $4.392m, leaving $2.958m of package fees = 31,900x + 8,700 x 2x, so Plus pays $60 and Premium $120 (B)." },
+  { "id": "j-8857aa8b", "judge": "ambiguity", "fail": false, "why": "Only D holds: DentaCare has 240,000/700 = 343 patients per chair against Brightway's 400,000/1,200 = 333, while A and C need revenue and B needs prices." },
+  { "id": "j-e8dc8a18", "judge": "ambiguity", "fail": false, "why": "Each quintile has 50,000 customers and the step-ups total $1 + $2 + $5 + $14 = $22, so the gain is $1.1m (C)." },
+  { "id": "j-bed6ce50", "judge": "ambiguity", "fail": false, "why": "Growth due to operating room hours is 1.8% x 109.4% = 1.97 points for Hospital 1 and 4.3% x 32.3% = 1.39 for Hospital 10, a difference of 0.58, so 0.6 (B)." },
+  { "id": "j-6a6e294e", "judge": "ambiguity", "fail": false, "why": "Only D holds: 40% x 65% = 26% booked a hotel having come mainly for the concert, while B gives 52% of the subgroup as a share of everyone (it is 33.8%), A has no data, and C turns 'main reason' into 'purely'." },
+  { "id": "j-6aae6a77", "judge": "ambiguity", "fail": false, "why": "Pay is F + 1.5% of H x P + 10% of L x R, divided by 9 x 5 x 46 hours, which is B alone." },
+  { "id": "j-20cfa873", "judge": "ambiguity", "fail": false, "why": "The tram's commuting share is 22/55 = 40%, and 40% of the 206 thousand total growth is 82.4, so 82 (B)." }
+]

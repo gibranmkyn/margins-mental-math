@@ -1,0 +1,14 @@
+[
+  { "id": "j-09317de4", "judge": "ambiguity", "fail": false, "why": "Only B holds: February-March runs at 78 services per mechanic and April at 73.2, A gives 86, C 85.2 and D 86, while B (3.5 mechanics for 228 services) falls to 65.1, so B is the only idea that does not recover efficiency." },
+  { "id": "j-271535d3", "judge": "ambiguity", "fail": false, "why": "Only D holds: the decreases are Q1 52.2%, Q3 30.2%, Q4 27.6%, Q2 22.2% and Q5 15.0%, with no ties, giving 1, 3, 4, 2, 5." },
+  { "id": "j-c3e2fba7", "judge": "ambiguity", "fail": false, "why": "Only B holds: the switch saves $46,600 of workshop cost plus $3,700 of repair cost, $50,300, which pays for 2,958.8 upholsterer hours at $17, so 2,950 is the highest option that is still worthwhile and 3,300 is not." },
+  { "id": "j-9a13b428", "judge": "ambiguity", "fail": false, "why": "Only C holds: April-May runs at 110 albums per bookbinder and June at 104.8, A and D give 120 and B gives 122, while C (279 albums on 2.5 bookbinders) reaches only 111.6, the smallest recovery." },
+  { "id": "j-09a0395d", "judge": "ambiguity", "fail": false, "why": "Only C holds: all segments sit on 5% marks, and on 85 thousand combined hours transport is 37.4 (44%), water 26%, buildings 16% and the three named sectors together 86%, so A, B and D are false." },
+  { "id": "j-191bc9e0", "judge": "ambiguity", "fail": false, "why": "Only B holds: 68% of respondents graded 1 to 3, and respondents are 9% of customers, so 68% x 9% = 6.1% of all customers." },
+  { "id": "j-c470c100", "judge": "ambiguity", "fail": false, "why": "Only A holds: revenue sums to exactly $358m; costs peak in 2013 ($161m), not 2009; losses are $48.9m in 2011 against $52.3m in 2012; and 2010 costs are $89m, too far from $100m to count as approximately." },
+  { "id": "j-06a442fe", "judge": "ambiguity", "fail": false, "why": "Only B holds: October-November runs at 52 rings per jeweller and December at 51.2, A gives 55.2, C 59.3 and D 54, while B (2 jewellers for 94 rings) falls to 47, so B does the least." },
+  { "id": "j-482a8e08", "judge": "ambiguity", "fail": false, "why": "Only A holds: the indirect contributions sum to 1.7 percentage points, and 1.7% of $300bn is $5.1bn, with the next option $2bn away." },
+  { "id": "j-289a973b", "judge": "ambiguity", "fail": false, "why": "Only C holds: share falls from 384/2,390 = 16.1% to 378/3,150 = 12.0%, which is 4.1 points over three years or about 1.36 a year, and reasonable gridline readings stay between 1.2 and 1.5." },
+  { "id": "j-f1120f99", "judge": "ambiguity", "fail": false, "why": "Only C holds: 70% of 130,000 is 91,000 single visits out of 175,000 visits, which is 52%." },
+  { "id": "j-01780046", "judge": "ambiguity", "fail": false, "why": "Only D holds: revenue sums to exactly EUR 335m; losses are EUR 48.4m in 2012 against EUR 52.6m in 2013; 2011 costs are EUR 83.5m, not about EUR 94m; and costs peak in 2014, not 2010." }
+]

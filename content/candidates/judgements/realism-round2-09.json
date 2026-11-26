@@ -1,0 +1,12 @@
+[
+  { "id": "j-cb23c75c", "judge": "realism", "fail": false, "why": "A frozen meal maker selling 2.5 million salmon bakes a year, each with 0.1 kg of salmon at $15 to $19 per kg and $1.20 of other inputs, is believable." },
+  { "id": "j-5a819d36", "judge": "realism", "fail": false, "why": "Gym chains of 40 and 90 sites using about 120 to 150 MWh per gym a year, with cost shares and margins that add to 100% for each chain, are believable." },
+  { "id": "j-0fb41dd9", "judge": "realism", "fail": false, "why": "A tax preparer whose returns and hours peak at the deadline, with seasonal hours always below total hours and permanent hours steady at 80 to 105, is believable." },
+  { "id": "j-45272fc8", "judge": "realism", "fail": false, "why": "A regional brewer selling $530m through 670 distributors, with sales shares that add to 100% and 39 to 58 days to pay, is believable." },
+  { "id": "j-0f61b7f2", "judge": "realism", "fail": false, "why": "A national grocery chain with $12.9bn of sales whose channel bars add exactly to the total, and online at about a fifth of sales, is believable." },
+  { "id": "j-0bd29b87", "judge": "realism", "fail": false, "why": "A hotel trial with 17,000 reviews where every rating distribution adds to 100% is believable." },
+  { "id": "j-cd7c3303", "judge": "realism", "fail": false, "why": "A trade magazine publisher with 12 titles earning $1m to $41m each, about $154m in total, and 202 journalists is believable even though it is loss-making." },
+  { "id": "j-0b7c7083", "judge": "realism", "fail": false, "why": "Portable toilet rental at $60 a week, a truck costing $1,500 a day and about 50 services a day per truck are high or low but within a factor of a few of real figures." },
+  { "id": "j-ae5709e2", "judge": "realism", "fail": true, "why": "The countries are said to be ordered biggest to smallest, but the cumulative series shows country 5 adding 5.5 points after country 4 added 4.4, country 7 adding 3.7 after country 6 added 2.7, and country 38 adding 1.1 after country 37 added nothing, so the figures contradict the stated order." },
+  { "id": "j-4254aa13", "judge": "realism", "fail": false, "why": "A package holiday firm with $290m booked through 1,210 agents, shares adding to 100% and cancellation rates of 9% to 14%, is believable." }
+]

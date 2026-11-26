@@ -1,0 +1,12 @@
+[
+  { "id": "j-c4c87398", "judge": "realism", "fail": false, "why": "A garden-centre chain selling 200,000 bags of compost a year at $6.00, bought at $4.00 to $4.20 with $1.70 of handling, is believable." },
+  { "id": "j-2ecdbb4d", "judge": "realism", "fail": false, "why": "5,650 business software accounts, a $240 hosting fee and support plans costing hundreds to a few thousand dollars a year are consistent with the stated $3.38 million and believable." },
+  { "id": "j-ab33bc98", "judge": "realism", "fail": false, "why": "600,000 new subscribers with first-year margins of $1.50 to $31.50 on 90-day spend of $58 to $298 is believable for a recipe-box company." },
+  { "id": "j-d9c2df89", "judge": "realism", "fail": false, "why": "A fitness chain selling 300,000 shakes a year at $4.00, bought at $2.00 to $2.40 with $1.40 of other costs, is believable." },
+  { "id": "j-1383098d", "judge": "realism", "fail": false, "why": "Line revenues of $1 to $29 million (about $113 million in all) against 6 to 58 engineers per line, roughly $400,000 per engineer, are believable for a loss-making device maker." },
+  { "id": "j-b7e1ad80", "judge": "realism", "fail": false, "why": "Hand filleting at 10 kg an hour, a machine at 30 kg an hour costing about $19,000 over three years and an $18 wage are believable, and 306 days fits six days a week." },
+  { "id": "j-71fdf28f", "judge": "realism", "fail": false, "why": "Both pies sum to 100%, and 5,400 summer exit interviews is believable for a rural farm museum." },
+  { "id": "j-e16f3b50", "judge": "realism", "fail": false, "why": "A software reseller's executive on a retainer plus 4% renewal and 25% new-business commission, working 8.5 hours a day, 5 days a week, 48 weeks a year, is believable." },
+  { "id": "j-bc9043ff", "judge": "realism", "fail": false, "why": "Product revenues of EUR 58 to 153 million with margins of 6% to 15% and modest growth are believable for a bicycle maker." },
+  { "id": "j-db2c74ba", "judge": "realism", "fail": false, "why": "Each unit's efficiency and fuel-switching cuts add to its stated total (42, 37, 30, 65, 27 thousand tonnes), believable decade-long cuts for a steel mill emitting millions of tonnes a year." }
+]

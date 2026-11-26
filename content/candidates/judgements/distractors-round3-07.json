@@ -1,0 +1,62 @@
+[
+  {
+    "id": "j-7a79d1dc",
+    "judge": "distractors",
+    "fail": false,
+    "why": "B over-reads both lines starting at 100 as hours matching rentals, C mistakes equal halving for unequal change by comparing point drops (75 vs 100), and D reads the next pair of weeks (Week -1 to 0: +17 seasonal against +51 rentals); reading the seasonal line's level instead of its share also lands on A, which counts as parity only if you take the source's 'reads the hourly-staff line instead of total hours' to be the same slip."
+  },
+  {
+    "id": "j-faed055d",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are all four countries on offer: B is what you get from cans alone or cans times cost or price, C from can size alone or from rounding (16 vs 16), and D is covered by the all-categories rule (it ranks last, not second-to-last as the source's filler note says); no slip I tried lands on A."
+  },
+  {
+    "id": "j-2933edee",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The options are all four countries on offer: U is what you get from raw income, from income at the PPP rate, or from multiplying by the exchange rate, V and X from reversing the comparison or picking the lowest rate, and the source's label filler covers what is left; the only slip that lands on T (also dividing by PPP) is the one sourceHas names."
+  },
+  {
+    "id": "j-4f3136b0",
+    "judge": "distractors",
+    "fail": false,
+    "why": "83% divides by passengers instead of visits (5/6), 17% takes that wrong base and then the complement, and 60% is the complement of the correct 40%; each is one slip or two."
+  },
+  {
+    "id": "j-71c0816a",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The grid is tight (a step of 1,500, 20% of the answer): 6,000 is the guests' count alone, 9,000 is 45% of the actual 20,000 non-guests, and 10,500 takes away the guests' rating-4 share (13,500 - 3,000); no slip I tried gives 7,500."
+  },
+  {
+    "id": "j-947a1070",
+    "judge": "distractors",
+    "fail": false,
+    "why": "A ranks by probability alone, B ranks by profit missed alone, and D swaps the close pair T and V (1.6 against 1.5), which a slightly rough estimate or reading T half a gridline low does; misreading U or W by half a gridline does not reorder the top of the correct ranking."
+  },
+  {
+    "id": "j-132d6b59",
+    "judge": "distractors",
+    "fail": true,
+    "why": "B (2, 1, 4, 3, 5) needs quintile 1's 17% drop to beat quintile 4's 33%, and no slip or pair of slips gives that: ranking by absolute drop, by the 2014 level (which gives A), by the later-year base, or after swapping adjacent bars (which gives D) all miss it, and sourceHas lists no ranking filler."
+  },
+  {
+    "id": "j-f8bf5fc3",
+    "judge": "distractors",
+    "fail": false,
+    "why": "The grid is tight (a step of 1,700, 17% of the answer): 6,800 is the owners' count alone, 8,500 is 25% of the actual 34,000 other drivers, and 5,100 is that figure minus the owners' rating-3 share; no slip I tried gives 10,200."
+  },
+  {
+    "id": "j-7b46e0c7",
+    "judge": "distractors",
+    "fail": false,
+    "why": "Each true statement looks false after a common slip: leaving out the £9m fixed cost makes A come out at about £205, and using the running total (52% and 77%) instead of each group's own slice makes C and D look false; no slip I tried makes B the only false statement other than the correct working."
+  },
+  {
+    "id": "j-2332e5c1",
+    "judge": "distractors",
+    "fail": false,
+    "why": "306 is the fall in accepted containers (the accepted share, not the rejected one), 482 counts the containers not in good enough shape (477, the wrong row), and 218 is a numeric filler that continues the 88-thousand spacing as sourceHas allows; the 8-point times one-month-volume slip that lands near 394 is the one sourceHas names."
+  }
+]

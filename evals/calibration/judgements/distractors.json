@@ -1,0 +1,212 @@
+[
+ {
+  "id": "cal-044-ae9e77f9",
+  "judge": "distractors",
+  "fail": false,
+  "why": "$3.4m reads the skin cancer series (about 3.3), $0.3m reads that series and divides the wrong way round (about 0.31), and $0.8m is the answer a factor of ten off; every slip that still lands on $7.9m (five-year average, wrong window, half-gridline misread, totals ratio, single year) is named in sourceHas."
+ },
+ {
+  "id": "cal-144-1e0ab576",
+  "judge": "distractors",
+  "fail": false,
+  "why": "0.5% is the botulinum share loss taken from 2009 over four steps (about 0.47), 5.5% is the relative (percent, not point) loss averaged over four years (about 5.6), and 3.5% is the listed numeric filler continuing the 1.5/3.5/5.5 spacing; the four-year and early-start slips that land on 1.5% are named in sourceHas."
+ },
+ {
+  "id": "cal-036-4311a589",
+  "judge": "distractors",
+  "fail": false,
+  "why": "335% gives the ratio (3.3x) as the increase, 196% picks Region C as the best region (2.96x), and 296% does both; no common slip lands on 235%."
+ },
+ {
+  "id": "cal-041-7918574c",
+  "judge": "distractors",
+  "fail": false,
+  "why": "A whole-year threshold grid: 2 is the 2.3-year payback rounded down, and also what you get by leaving out the running cost or not annualising it; 4 comes from counting the running cost twice; 1 is the listed numeric filler at the bottom of the grid; the adjacent-column slips that land on 3 are named in sourceHas."
+ },
+ {
+  "id": "cal-145-d268f2e0",
+  "judge": "distractors",
+  "fail": true,
+  "why": "Ranking by profit alone lands on the correct C, A, D, B, but sourceHas names that slip, so it is parity; A, C, D, B is a row swap of A and C (both have 20 products), but neither A, B, D, C nor B, C, D, A comes from a slip or pair of slips (dividing the wrong way gives B, D, A, C, and reversing gives B, D, A, C), which leaves two fillers where sourceHas lists only one."
+ },
+ {
+  "id": "cal-143-30f0d30e",
+  "judge": "distractors",
+  "fail": false,
+  "why": "Half compares revenues alone (0.55), twice compares margins alone (1.8), and three times is the listed coarse filler; skipping the growth step, which lands on the same, is named in sourceHas."
+ },
+ {
+  "id": "cal-140-f3d2a68b",
+  "judge": "distractors",
+  "fail": false,
+  "why": "A forgets that claims rise with premium (it seems to add $7m), B swaps the cost bases (20% and 83%), and D is ruled out by B alone, the one dominated option sourceHas allows."
+ },
+ {
+  "id": "cal-050-ff1de5ca",
+  "judge": "distractors",
+  "fail": false,
+  "why": "$36.0m leaves out the margin step, $42.0m reads the share half a gridline high (3.5%) and also leaves out the margin, and $37.2m is the listed numeric filler about 3% from $36.0m; the misreads that land on $12.6m are named in sourceHas."
+ },
+ {
+  "id": "cal-139-5ea4e27f",
+  "judge": "distractors",
+  "fail": false,
+  "why": "C applies the 50% to the wrong base (it is 50% of the 60%), D over-reads 'main reason' as 'only reason', and B is about spending, which the data does not cover, the one such statement sourceHas allows."
+ },
+ {
+  "id": "cal-031-20891112",
+  "judge": "distractors",
+  "fail": true,
+  "why": "Neither $9,000 nor $73 million comes from any slip or pair of slips (total revenue over total analysts is 0.44m, the inverse is 2.3, and unit slips give 44,000 or 4.4m), so two wrong options lack a mistake while sourceHas allows only one filler, and that filler's note (a factor of ten below a grid option) fits no option here."
+ },
+ {
+  "id": "cal-029-becdc4d9",
+  "judge": "distractors",
+  "fail": false,
+  "why": "A minimum-number threshold grid: 100 is the break-even of about 103 rounded the wrong way (and what you get by forgetting disposal and stopping at break-even), and 96 and 108 are where rough estimates land; the slips that land on 104 are named in sourceHas."
+ },
+ {
+  "id": "cal-032-c7398d60",
+  "judge": "distractors",
+  "fail": false,
+  "why": "Country A is where rough rounding lands (600 × 0.4 = 240, about the same as D), Country B is the highest on cups alone, ignoring cup size, and Country C is the listed label filler, second-to-last on the true measure; the cost-column and price-column slips that land on D are both named in sourceHas, and every country on offer is a fair option anyway."
+ },
+ {
+  "id": "cal-046-549343cc",
+  "judge": "distractors",
+  "fail": false,
+  "why": "$94, $104 and $124 form a tight evenly spaced grid (steps about 9% of the answer) around a maximum-price answer, matching the three numeric fillers in sourceHas; pricing each visit at the hourly rate also gives $114, and sourceHas names that slip."
+ },
+ {
+  "id": "cal-142-8870d8c3",
+  "judge": "distractors",
+  "fail": false,
+  "why": "A, C, D, B swaps A and C (wrong row or reversed comparison in the 20-product pair), C, A, B, D does the same for B and D, and A, D, C, B is the one ranking filler sourceHas allows; ranking by profit alone also gives the correct order, and sourceHas names that slip."
+ },
+ {
+  "id": "cal-054-4236b3d4",
+  "judge": "distractors",
+  "fail": false,
+  "why": "This is a minimum-whole-years threshold grid: 2 comes from reading transport half a gridline high (35%) or from adding percentage points, 6 from reading it half a gridline low (25%), and 8 from reading the energy series (20%); the slips that land on 4 (difference of growth rates, simple growth of the total, wrong country's total) are all named in sourceHas."
+ },
+ {
+  "id": "cal-053-57fa4875",
+  "judge": "distractors",
+  "fail": true,
+  "why": "No common slip or pair of slips reaches 57 or 88 percentage points (the slips give about 44% relative difference, a ratio of 144%, or 55% from differencing the counts), sourceHas is empty, and the grid is wide."
+ },
+ {
+  "id": "cal-049-89d4f1be",
+  "judge": "distractors",
+  "fail": false,
+  "why": "1, 9 and 13 are an evenly spaced wide grid that sourceHas lists, with three numeric fillers placed as the notes say (counting only the extra staff gives about 10.6 minutes, between 9 and 13); no common slip lands on 5."
+ },
+ {
+  "id": "cal-051-0e213401",
+  "judge": "distractors",
+  "fail": true,
+  "why": "Option C (more cakes than bread sold in December) is about a product split Table 1 never shows, so it has no basis, and sourceHas does not list a statement about something the data does not cover."
+ },
+ {
+  "id": "cal-037-94345148",
+  "judge": "distractors",
+  "fail": false,
+  "why": "This is a tight threshold grid (steps about 4%): 2.7 years is 2.74 rounded the wrong way, and 2.6 and 2.9 are the two numeric fillers sourceHas lists, placed as described; using a 360-day year only shifts 2.74 to 2.78, which is immaterial."
+ },
+ {
+  "id": "cal-043-701243fd",
+  "judge": "distractors",
+  "fail": false,
+  "why": "1.0% is the actual 2013 margin (the counterfactual skipped, or a sign slip), −2.0% computes sales with the adjacent year's 2.0% margin (5 ÷ 2% = 250), and 2.0% is that adjacent year's margin read directly, or −2.0% with a sign slip; the slips that land on −1.0% are named in sourceHas."
+ },
+ {
+  "id": "cal-028-400f4de9",
+  "judge": "distractors",
+  "fail": false,
+  "why": "B holds for the wrong row (electronics grew about 27%, close to gardening's 26%), C holds for the wrong row (electronics plus fashion is 68%), and D reads true in percentage points (both margins fell 2pp); the slips that land on A are named in sourceHas."
+ },
+ {
+  "id": "cal-033-b22b657a",
+  "judge": "distractors",
+  "fail": false,
+  "why": "600 skips the first pie (10% of 6,000), 60 chains the local-area 10% slice instead of the 60% slice, and 2,400 takes 40% of all respondents (the hotel slice with the first pie skipped, or the complement 6,000 − 3,600); no common slip lands on 360."
+ },
+ {
+  "id": "cal-035-7d0d7685",
+  "judge": "distractors",
+  "fail": false,
+  "why": "A minimum-years threshold grid: 10 years is the threshold rounded the wrong way (and what ignoring the total's growth gives, about 6.4 years), 20 years is where compounding the share linearly (about 17.5) or reading Product E lands, and 25 continues the grid (B against the rest of revenue gives about 21); the slips that still land on 15 years (counting inclusively, subtracting growth rates, simple growth of the total) are all named in sourceHas."
+ },
+ {
+  "id": "cal-042-57527eff",
+  "judge": "distractors",
+  "fail": false,
+  "why": "The four options form a tight even grid (steps of £0.20, about 18% of the answer), so rough estimates land on neighbours; leaving out Wednesday gives about £1.25, near £1.29; and the slip that still lands on £1.09, misreading one day off the gridlines, is the one sourceHas names."
+ },
+ {
+  "id": "cal-141-0b7ffb87",
+  "judge": "distractors",
+  "fail": true,
+  "why": "Forgetting the set-up and clean-up labour row (a fixed cost) cuts the break-even to about 7 kg a day, and 11 kg is still the smallest option that clears it, so that slip lands on the correct option; sourceHas names only the 365-day slip."
+ },
+ {
+  "id": "cal-048-ee6a500d",
+  "judge": "distractors",
+  "fail": false,
+  "why": "The options form a tight grid at steady ratios (each about 9-10% from the next), so a rough estimate or an arithmetic slip lands on a neighbour, and no slip that changes the working gives €2,334 exactly (applying the 6.5-point margin gap to revenue gives about €2,426-2,505)."
+ },
+ {
+  "id": "cal-034-c1f074e7",
+  "judge": "distractors",
+  "fail": false,
+  "why": "4,000 hours divides the Korean line's total cost ($60,000) by $15 (wrong row, and also the break-even rounded the wrong way), 3,000 hours leaves out the Translation Company cost (45,000 ÷ 15), and 3,500 is a rough estimate below the maximum on this threshold question; the nearest-option slip on 3,650 is the one sourceHas names."
+ },
+ {
+  "id": "cal-038-b4fb9f4b",
+  "judge": "distractors",
+  "fail": false,
+  "why": "The options are all four price points on offer, so each is what a misreading or miscomparing candidate picks (€1.8 reverses the comparison), and the slips that still land on €1.5 (multiplying by the gasoline price, applying a margin) are both named in sourceHas."
+ },
+ {
+  "id": "cal-040-e0e22e1f",
+  "judge": "distractors",
+  "fail": false,
+  "why": "$250,000 is the answer off by a factor of 10 (10,000 customers per quintile), $3.3 million takes Quintile 5's level instead of the Q4-to-Q5 uplift for the last step (0.5 + 1.5 + 5 + 26 = 33), and $1.7 million continues the even 0.8 spacing of that grid."
+ },
+ {
+  "id": "cal-030-a8df09ad",
+  "judge": "distractors",
+  "fail": false,
+  "why": "A over-reads Forrest's higher shrimp-cost share as poorer procurement, B over-reads the higher margin as a bigger profit, and C (dish prices) is the one statement about something the data does not cover that sourceHas allows; comparing totals without dividing by restaurants is the named parity slip."
+ },
+ {
+  "id": "cal-146-061279f4",
+  "judge": "distractors",
+  "fail": true,
+  "why": "Reading the wrong market line, so dividing skin cancer revenue by the botulinum toxins market size (28.2% in 2010 to 23.75% in 2013), gives 1.50 points a year, exactly the correct option, and sourceHas does not name this slip."
+ },
+ {
+  "id": "cal-047-b17e042e",
+  "judge": "distractors",
+  "fail": false,
+  "why": "A is a near-miss (12% against 17% growth, similar absolute gains), B is a near-miss share figure (15% against 10.5%), and C extends the emerging markets' fast growth past the years shown, all fair statements; no common slip, such as simple instead of compound growth (about 2.7 times), still makes D read as 'about two times' while leaving the others false."
+ },
+ {
+  "id": "cal-045-565d5b97",
+  "judge": "distractors",
+  "fail": true,
+  "why": "'$2,000,000 less expensive' comes from no slip or pair of slips: reversing the sign gives $150,000 less, ignoring the tier gives $300,000 more, applying $11 to all gives $600,000 less, and forgetting the 0.25 kg gives $1.65 million less (or $2.4 million with $11 applied to all)."
+ },
+ {
+  "id": "cal-039-695a70d1",
+  "judge": "distractors",
+  "fail": false,
+  "why": "A is the average of the ten Hours shares (about 24%) read as growth, C (Spain) and D (Germany) are the lowest Productivity and Hours shares read as amounts of growth, and the slip of ranking by total growth that also lands on B is named in sourceHas as landing on the source's correct option too."
+ },
+ {
+  "id": "cal-052-cf10aff2",
+  "judge": "distractors",
+  "fail": false,
+  "why": "104 million is the fall in machine-sorted items (604m to 501m) taken in place of the rise in hand-sorted items, 132 and 160 million are the two numeric fillers sourceHas allows, continuing the 28-step spacing exactly, and the 9-point rise applied to one month's volume (87m to 89m) landing near 76 is the slip sourceHas names."
+ }
+]

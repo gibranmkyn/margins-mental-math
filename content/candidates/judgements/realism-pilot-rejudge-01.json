@@ -1,0 +1,11 @@
+[
+  { "id": "j-f91af732", "judge": "realism", "fail": false, "why": "A fitness club chain selling about 300,000 protein shakes a year at $4.00, bought at $2.00 to $2.40 with $1.00 of milk, cups and staff per shake, is believable." },
+  { "id": "j-0749cea5", "judge": "realism", "fail": false, "why": "An online bookseller with 250,000 new customers earning $0.50 to $22.50 first-year profit on $31 to $196 of 90-day order revenue implies thin but plausible bookselling margins, and nothing contradicts." },
+  { "id": "j-ae5daea5", "judge": "realism", "fail": false, "why": "A cinema chain selling 400,000 nacho trays a year at $4.00, bought at $1.50 to $1.75 with $1.00 of sauce, packaging and staff per tray, is believable." },
+  { "id": "j-c5fac212", "judge": "realism", "fail": false, "why": "Bowling at EUR 4 to 7 a game against a EUR 4 cost, 360 to 640 bowlers per centre a week playing about 2 to 3 games, and EUR 10 of bar spend at a 35% net margin are all within plausible ranges for a large bowling chain." },
+  { "id": "j-e204f03e", "judge": "realism", "fail": false, "why": "A broker with 94,000 motor policyholders, a $29 legal cover add-on and a $4.39 million combined income implies breakdown cover prices of tens of dollars a year, which is believable." },
+  { "id": "j-342c7e54", "judge": "realism", "fail": false, "why": "A recipe-box company with 600,000 new subscribers, about $48 per box and first-year margins of $1.50 to $31.50 per subscriber is believable for a low-margin subscription business." },
+  { "id": "j-261b8e7b", "judge": "realism", "fail": false, "why": "A 40,000-home housing association doing 85,000 repair jobs at a total cost of about GBP 9.3m, with group home counts that sum to the stated 31.5k, is consistent and within a few times typical repair spend." },
+  { "id": "j-05aa076e", "judge": "realism", "fail": false, "why": "Laundromat washes at EUR 2.50 to 4.00 against a EUR 2.50 cost, 250 to 440 customers per site a week doing 2 to 3 washes, and EUR 5 of vending spend at a 40% margin are plausible." },
+  { "id": "j-9516fcf5", "judge": "realism", "fail": false, "why": "A large UK university IT desk handling 90,000 tickets from 24k users at about GBP 5.5m a year, with group user counts summing to the stated 24k, is believable." }
+]
