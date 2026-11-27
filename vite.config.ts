@@ -4,7 +4,11 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 const INK = '#12100b';
 
+// The app is served from the site root, except the public demo on GitHub Pages, which sits under the repository's name.
+const BASE = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env?.BASE_PATH ?? '/';
+
 export default defineConfig({
+  base: BASE,
   plugins: [
     preact(),
     VitePWA({
@@ -16,8 +20,8 @@ export default defineConfig({
         name: 'Margins',
         short_name: 'Margins',
         description: 'Case math, daily.',
-        start_url: '/',
-        scope: '/',
+        start_url: BASE,
+        scope: BASE,
         display: 'standalone',
         orientation: 'portrait',
         theme_color: INK,

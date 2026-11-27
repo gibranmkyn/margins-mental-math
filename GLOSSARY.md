@@ -1,6 +1,6 @@
 # Margins
 
-A personal, single-user trainer for business mental math: fast, accurate arithmetic on the kind of numbers a business case throws up. Consulting screening tests (McKinsey PST, BCG Potential Test) are the source material and the practice format, not the thing being simulated. The booklet questions themselves are not in this repository; see the README.
+A personal, single-user trainer for business mental math: fast, accurate arithmetic on the kind of numbers a business case throws up. Consulting screening tests are the source material and the practice format, not the thing being simulated. The booklet questions themselves are not in this repository; see the README.
 
 ## Language
 

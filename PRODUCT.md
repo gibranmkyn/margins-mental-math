@@ -6,7 +6,7 @@ product
 
 ## Users
 
-One person who wants to keep their business mental math sharp, drilling case math of the kind consulting screening tests (McKinsey, BCG, Bain) are built from. They practise in short bursts on a phone held in one hand, often standing or between other things, thumb only. Every visit is a few minutes: open, answer, see the result, leave.
+One person who wants to keep their business mental math sharp, drilling case math of the kind consulting screening tests are built from. They practise in short bursts on a phone held in one hand, often standing or between other things, thumb only. Every visit is a few minutes: open, answer, see the result, leave.
 
 ## Product Purpose
 

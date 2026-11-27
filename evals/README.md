@@ -302,7 +302,7 @@ The review page (`review.eval.ts`) searched more widely, because the page is pub
   - labels: cells, headers, categories, series names and options.
 
   Eight-word runs of all of these are still checked.
-- **Names** as the page searched them: the test-makers' names (McKinsey, BCG, MCP, PST), and booklet names and case titles in any case.
+- **Names** as the page searched them: the test-makers' names, and booklet names and case titles in any case.
 - **Trap slips** go through the same wording check in the candidate gate, because the page shows them for moved-claim variants.
 - **One place.** The review page's `bookletMatches` is now these two functions. It withholds a string the gate would fail, and it searches its finished page with the same rule: wording within each element and attribute value, names anywhere.
 - **The bank.** The bank's test (authored-content.test.ts) applies the new rule to the admitted questions too, with one exception. The 14 matches in 10 admitted questions listed below are a known backlog (`ORIGINALITY_BACKLOG`), an exact list: any other match fails `npm test`, and an entry comes off the list when it is reworded. Rewording those questions needs a new blind solve and fresh judge verdicts, so it is a separate job, not part of this change. Candidates face the full rule through the gate, so nothing new can join the backlog.

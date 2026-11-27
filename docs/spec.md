@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-I want my mental math to be fast and reliable, and it is not. The hardest business arithmetic I know of is in consulting screening tests, so that is what I practise on. The practice material I own is a folder of PDF test booklets (McKinsey PST practice tests, a BCG Potential Test sample, a calculation workbook). They are awkward to use: they need a printer or a laptop, they run out after one pass, they give no sense of which kinds of calculation I am weak at, and nothing about them pulls me back to practise every day. I want to practise in the spare minutes I actually have, on my phone, and see myself getting measurably faster and more accurate.
+I want my mental math to be fast and reliable, and it is not. The hardest business arithmetic I know of is in consulting screening tests, so that is what I practise on. The practice material I own is a folder of PDF test booklets (screening practice tests and a calculation workbook). They are awkward to use: they need a printer or a laptop, they run out after one pass, they give no sense of which kinds of calculation I am weak at, and nothing about them pulls me back to practise every day. I want to practise in the spare minutes I actually have, on my phone, and see myself getting measurably faster and more accurate.
 
 ## Solution
 
@@ -235,12 +235,12 @@ Design-step tests guard the design system (named steps only, both theme values, 
 - Accounts, a backend, cross-device sync, and export or import of progress.
 - Live AI generation of questions inside the app.
 - Technique lessons separate from the per-question shortcut.
-- Simulating the current McKinsey Solve game or BCG Casey chatbot formats, and BCG-style negative marking.
+- Simulating the newer game-based or chatbot screening formats, and negative marking.
 - Publishing the booklet questions. The owner's own deployment contains them and is for personal use only; the public repository leaves them out (see the README).
 - Native iOS or Android apps and app-store distribution.
 
 ## Further Notes
 
-- The transcribed booklet questions were each verified against the booklet's answer key and recomputed. A handful were deliberately left out because the booklet's key was ambiguous or inconsistent (PST 3 Q12, BCG practice Q1 and Q3) or the question turned on verbal judgement.
+- The transcribed booklet questions were each verified against the booklet's answer key and recomputed. A handful were deliberately left out because the booklet's key was ambiguous or inconsistent (three questions) or the question turned on verbal judgement.
 - An earlier no-build draft was abandoned before this design was agreed. Nothing from it carries over except the transcribed booklet questions and the glossary.
 - Progress loss is an accepted risk: clearing browser data or changing phone resets everything.

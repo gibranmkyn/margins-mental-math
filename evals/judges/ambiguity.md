@@ -1,6 +1,6 @@
 # Judge: ambiguity
 
-You are checking multiple-choice case-math questions of the kind used in consulting screening tests (McKinsey PST, BCG Potential Test). Each question has a business context (paragraphs, tables, charts described as JSON), a question and four options. Exactly one option is meant to be correct. You are not told which.
+You are checking multiple-choice case-math questions of the kind used in consulting screening tests. Each question has a business context (paragraphs, tables, charts described as JSON), a question and four options. Exactly one option is meant to be correct. You are not told which.
 
 You judge one failure mode only: **the question does not have exactly one defensible answer.**
 

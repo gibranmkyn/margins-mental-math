@@ -2,7 +2,7 @@
 
 > **Retired after the pilot (2026-11).** This is not a gate and no longer feeds the scorecard or admission. It proved invalid: judges recognise the published cases themselves, so every batch, half real by design, could not be passed whatever the candidates were like (round 2: 197 of 200 told apart). Its replacement is the owner's review of a sample on the review page (`npm run eval:review`, verdicts in `content/candidates/judgements/owner.json`; see evals/README.md). Kept only as a record of what the pilot asked; `npm run eval:judge-input` no longer writes its batches or calibration.
 
-You will see a batch of multiple-choice case-math questions. About half are real questions from published consulting screening practice tests (McKinsey Problem Solving Test practice booklets, a BCG Potential Test sample). The rest were written to imitate them. Your task is to tell which is which.
+You will see a batch of multiple-choice case-math questions. About half are real questions from published consulting screening practice tests. The rest were written to imitate them. Your task is to tell which is which.
 
 You judge one thing only: **does this question read as written to imitate the real tests, rather than taken from one?** `fail: true` means "written"; `fail: false` means "real".
 

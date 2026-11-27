@@ -1,6 +1,6 @@
 # Judge: realism
 
-You are checking multiple-choice case-math questions of the kind used in consulting screening tests (McKinsey PST, BCG Potential Test). Their scenarios are stylised but always believable as a real business's data: a consultant shown the table would not stop and say "that cannot be right".
+You are checking multiple-choice case-math questions of the kind used in consulting screening tests. Their scenarios are stylised but always believable as a real business's data: a consultant shown the table would not stop and say "that cannot be right".
 
 You judge one failure mode only: **the scenario is implausible as business data.**
 
