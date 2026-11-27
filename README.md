@@ -1,6 +1,10 @@
 # Margins
 
-A phone app for practising business mental math, a few minutes a day. I'm a product manager and I like building things that feed my own curiosity. This one I vibecoded in three days with Claude Code.
+A phone app for practising business mental math, and the AI pipeline that writes and checks its questions.
+
+I'm a product manager. I vibecoded this in three days with Claude Code because I wanted it to exist. The app is the product; the part I'd point an AI PM to is how the questions get made and how I know they are good.
+
+**695 questions · 6 checks on every AI-written one · 97% pass rate after one fix round · 2,100+ automated tests**
 
 <p>
   <img src="docs/screenshots/home.png" width="24%" alt="Home screen: streak, daily goal and the next session" />
@@ -9,114 +13,142 @@ A phone app for practising business mental math, a few minutes a day. I'm a prod
   <img src="docs/screenshots/feedback.png" width="24%" alt="Feedback after an answer: the worked solution and the shortcut" />
 </p>
 
-## Why mental math, now
+## Why mental math
 
-I think being quick with numbers matters more as AI gets better, not less.
+- **You can't check what you can't estimate.** AI hands you a number in a second. Number sense is how you notice it is wrong by a factor of ten.
+- **Thinking happens in the room.** A pricing conversation does not pause while someone opens a tool.
+- **Use it or lose it.** The skill is easy to outsource now, so it fades unless you practise on purpose.
 
-- **You can't check what you can't estimate.** A model hands you a number in a second. Number sense is how you notice it is wrong by a factor of ten.
-- **Thinking happens in the room.** A conversation about pricing or a forecast does not pause while someone opens a tool. If you can do the arithmetic, you stay in the argument.
-- **Use it or lose it.** The skill is now easy to outsource, so it fades unless you practise it on purpose.
+## The problem I was solving
 
-The hardest business arithmetic I know of sits in the screening tests the big consulting firms (McKinsey, BCG, Bain) use: a paragraph, a table or a chart, four close options, about two minutes. I wanted that kind of practice on my phone, in the spare minutes I actually have, and I wanted it not to run out.
-
-## What it does
-
-- **Drills.** Bare arithmetic in ten skills, typed on a large keypad. Easy ones are marked exactly, hard ones within about 3%, so a sound estimate counts.
-- **Scenario and chart questions.** Multiple choice, with tables and drawn charts (bar, stacked, line, pie, cumulative, waterfall), in nine skills such as break-even, unit economics and testing statements against data.
-- **Every miss teaches.** After each answer you see the worked solution and the fastest shortcut.
-- **Retries.** A missed question comes back in the next session, then once more about three days later.
-- **Sprints, spot checks and timed mocks**, and a trends view to show whether you are getting faster.
-- **A light game layer.** Streak, daily goal, XP, mastery per skill, badges.
-
-It is an installable web app that works offline. There are no accounts and no backend; progress stays on the phone.
+Good practice questions are scarce. A set of published practice tests runs out after one pass, and once you have seen a question you are remembering, not calculating. So the product question became an AI question: **can a model write new questions that train exactly what the originals train, and how would I know?**
 
 ## Where the questions come from
 
-This is the part I most wanted to get right. A stack of practice tests runs out after one pass, so the app needed new questions that train the same thing as the real ones. It has three sources.
+```mermaid
+flowchart LR
+    S["Practice-test questions<br/>(the reference set, not published here)"]
+    S -->|"patterns turned into code"| G["Generated<br/>49 templates, new numbers every time"]
+    S -->|"same skills, new stories"| O["Original<br/>162 questions"]
+    S -->|"one question in, up to eight out"| V["Variants<br/>533 questions"]
+    G --> B(["The app's question bank"])
+    O --> B
+    V --> B
+```
 
-| Source | How many | What it is |
-|---|---|---|
-| Generated | 49 templates | Code that draws new numbers every time, so a question never repeats exactly. |
-| Authored, original | 162 questions | One-off scenarios written for the app. |
-| Authored, modelled on a test question | 533 questions from 86 sources | Each keeps the structure, difficulty and traps of one practice-test question and changes everything a reader would recognise: company, industry, wording and every number. |
+A variant keeps the structure, difficulty and traps of one reference question and changes everything a reader would recognise: company, industry, wording and every number.
 
-The practice-test questions I started from (103 of them, from McKinsey PST and BCG Potential Test practice material) are **not in this repository**. They belong to their publishers. The app's code can still load them from a local folder, which is how my own copy works; without them the app runs on the other three sources.
+## How an AI-written question earns its place
 
-### How a new question earns its place
+Getting a model to write 500 plausible questions takes an afternoon. Knowing they are correct, unambiguous and as hard as the original is the real work.
 
-Writing 500 plausible-looking questions with a language model is easy. Knowing they are correct, unambiguous and as hard as the original is the real work, so most of the effort went into the checks. The standard is **parity with the source: a new question fails only where it is worse than the question it is modelled on.**
+```mermaid
+flowchart TD
+    W["Writer model drafts a variant"] --> C1
+    subgraph CODE ["Checked by code"]
+        C1["Check 1: The answer recomputes<br/>from the numbers shown"] --> C2["Check 2: Each wrong option comes from<br/>a named slip, never the right answer"]
+        C2 --> C3["Check 3: Original wording,<br/>names and figures"]
+        C3 --> C4["Check 4: Same shape as its source,<br/>not a copy of a sibling"]
+    end
+    C4 --> M1
+    subgraph MODELS ["Checked by other models"]
+        M1["Check 5: Blind solve: a fresh model sees<br/>only the question and must agree"] --> M2["Check 6: Four judges: ambiguity,<br/>distractors, realism, difficulty"]
+    end
+    M2 -->|"all pass"| A(["Admitted to the bank"])
+    M2 -->|"any fail"| F["One fix round"]
+    F -->|"re-checked from the top"| C1
+    F -->|"still failing"| D(["Dropped"])
+```
 
-A candidate is admitted to the bank only when all of these pass:
+**One standard for every check:** a new question fails only where it is worse than the question it is modelled on.
 
-1. **Its own calculation.** Every question carries a formula that recomputes the answer from numbers the reader can see. A test runs it.
-2. **Its traps.** The slips behind the wrong options (wrong base, skipped step, factor of ten) are declared as formulas too, and a test confirms each one lands on its wrong option and never on the right one.
-3. **A blind solve.** A fresh model that has seen only the question text, never the answer, must pick the same option. The result is recorded against a fingerprint of the text, so editing a question voids its check.
-4. **Originality.** No company or case name from a source test, no eight-word run of source wording, and at most two distinctive figures in common.
-5. **Fidelity and variety.** Same skill, tier, exhibit type and length as its source, within set bands, and not a renamed copy of a sibling.
-6. **Four judges.** Separate model judges for ambiguity, distractor quality, realism and difficulty. Each judge was first calibrated on questions with known answers, including deliberately broken copies, and was trusted only if it passed at least 90% of the good ones and failed at least 80% of the broken ones.
+| | Written | Passed every check first time | After one fix round |
+|---|---|---|---|
+| The two main rounds | 448 | 379 (85%) | 437 (97%) |
 
-The roles were kept apart: one model wrote, a different one solved blind, fresh ones judged, and none of them checked its own work.
+Across the whole project, pilot included, 548 variants were written and 533 are in the bank.
 
-Over three rounds, 548 candidates were written and 533 admitted. In the first round, fourteen candidates let a common mistake land on the correct answer, so someone making the mistake would have been marked right. That is why traps became a check of their own. The full method is in [`evals/README.md`](evals/README.md), the writer's brief in [`evals/WRITING.md`](evals/WRITING.md), the judge prompts in [`evals/judges/`](evals/judges), and what each round found in [`evals/rounds/`](evals/rounds).
+### What makes the checks trustworthy
 
-### One example
+- **Judges are tested before they are trusted.** Each judge first ran on questions with known verdicts, including copies that had been deliberately broken. A judge was used only if it passed at least 90% of the good ones and caught at least 80% of the broken ones.
+- **No model marks its own work.** One model writes, a different one solves blind, fresh ones judge.
+- **Checks are tied to the exact text.** Each result is stored against a fingerprint of the question, so editing a question voids its checks.
+- **Code first, models second.** Anything that can be computed is computed. Models judge only what code cannot.
 
-A source question gave a table of product counts and profits by category, and asked for profit per product after a rise in profits. Its wrong options came from two slips: getting the direction of the change wrong, and losing a factor of ten when turning millions into units. Eight variants were written from that pattern. This is one of them:
+## One pattern, many questions
 
-> SportsHub, an online seller of sports equipment, is measuring its performance against four larger competitors with wider ranges.
->
-> | Company A | Bikes | Footwear | Clothing |
-> |---|---|---|---|
-> | Number of products | 12 | 64 | 39 |
-> | Profits ($ millions) | 14 | 6 | 10 |
->
-> Company A plans to grow profits by 20% in 2013 in each of its categories, with no change in the number of products it sells. What would its total profits per product be in 2013?
->
-> A. $31,304  B. $313,043  C. $20,870  D. $208,696
+The reference question gave a table of product counts and profits by category, and asked for profit per product after a rise in profits. Its wrong options came from two slips: getting the direction of the change wrong, and losing a factor of ten when converting millions. Eight variants were written from that pattern. Three of them:
 
-What the bank stores beside it:
+| Setting | The change | Right answer | Slip 1: wrong direction | Slip 2: factor of ten |
+|---|---|---|---|---|
+| Garden products retailer | profits up 10% | £390,071 | £319,149 | £3,900,709 |
+| Online sports equipment seller | profits up 20% | $313,043 | $208,696 | $31,304 |
+| Kitchenware chain | profits up 10% | £417,722 | £341,772 | £4,177,215 |
+
+Each one is stored with the formula that proves its answer and the formulas for its slips:
 
 ```json
 "check": { "kind": "value", "answer": "(14 + 6 + 10) * (1 + 20 / 100) * 1000000 / (12 + 64 + 39)" },
 "traps": [
-  { "slip": "slips a factor of ten when turning millions into units", "option": "$31,304" },
   { "slip": "cuts profits by 20% instead of raising them", "option": "$208,696" },
-  { "slip": "cuts profits by 20% and slips a factor of ten", "option": "$20,870" }
-],
-"shortcut": "36 ÷ 115 is just over 0.3, so about $310,000 a product; count the digits to rule out its ten-times partner."
+  { "slip": "slips a factor of ten when turning millions into units", "option": "$31,304" }
+]
 ```
 
-### What I would not claim
+## What changed because of what the evals found
 
-- I did not read every question. The last round's 217 variants passed every automated check and went in unread, on my call. The reasoning and what it gives up are written down in `evals/README.md`.
-- The checks cannot be re-run from this repository, because they compare each candidate with its source and the sources are not published. The calibration inputs are left out for the same reason. The code, the prompts, every recorded verdict and the round records are here.
-- Model judges disagree with each other on close calls. The round records say where.
+```mermaid
+flowchart LR
+    R["Run a round"] --> E["Read the failures"]
+    E --> Q{"Is the question wrong,<br/>or the rule?"}
+    Q -->|"question"| X["Fix it or drop it"]
+    Q -->|"rule"| U["Change the rule,<br/>write down why,<br/>re-test the judge"]
+    X --> R
+    U --> R
+```
 
-## How it was built
+- **Traps became their own check.** In the first round, fourteen candidates let a common mistake land on the correct answer, so a wrong method would have been marked right.
+- **One judge was retired.** A "real or AI-written?" judge recognised the published questions, so it could not give a fair verdict. A human sample review replaced it.
+- **Tightening a question made it worse.** One variant fixed a loose premise in its source, and the blind solver then ruled out the intended answer. The rule became: as loose as the source, in new words.
+- **One solve per question.** Re-solving after seeing the answer key is not a blind solve. Those results were thrown out and counted as failures.
 
-Three days, 24 to 26 November 2026, about 230 commits, all through Claude Code. I did not write the code by hand.
+## What I did and what the AI did
 
-What I did:
+| Me | Claude |
+|---|---|
+| The problem, 93 user stories, what is out of scope | All the code and the tests |
+| Success measures: mock score of 70% or more, falling time per drill | The question templates and the question writing |
+| The quality bar: the one standard, which checks block and which only warn | Blind solving and judging |
+| When to change a rule and when to drop a question | Drafting the docs from my decisions |
+| Design direction: a scoreboard for an adult, no mascots, no confetti | |
 
-- **Spec and scope.** The problem, 93 user stories, what is out of scope, and how I would know it works: a mock score of 70% or more and a falling average time per drill. See [`docs/spec.md`](docs/spec.md).
-- **The quality bar.** The one criterion (parity with the source), which checks block and which only warn, when to change a rule and when to drop a question instead.
-- **Design direction.** A match-day scoreboard for an adult: numbers are the hero, one thing to do per screen, no mascots and no confetti. See [`PRODUCT.md`](PRODUCT.md) and [`DESIGN.md`](DESIGN.md).
+| If you want to see | Look at |
+|---|---|
+| Problem framing and scope | [`docs/spec.md`](docs/spec.md) |
+| Eval design, and every rule change with its reason | [`evals/README.md`](evals/README.md) |
+| The brief the writer model works from | [`evals/WRITING.md`](evals/WRITING.md) |
+| Judge prompts | [`evals/judges/`](evals/judges) |
+| What each round found | [`evals/rounds/`](evals/rounds) |
+| Product and design principles | [`PRODUCT.md`](PRODUCT.md), [`DESIGN.md`](DESIGN.md) |
+| The shared vocabulary used by the spec, the code and the prompts | [`GLOSSARY.md`](GLOSSARY.md) |
 
-What Claude did: the code, the tests, the question templates, the question writing, the blind solving and the judging, working from those documents. A shared vocabulary ([`GLOSSARY.md`](GLOSSARY.md)) kept the spec, the code and the prompts using the same words for the same things.
+## What I would not claim
+
+- **I did not read every question.** The last 217 variants passed every automated check and went in unread. That was my call to ship, and the trade-off is written down in `evals/README.md`.
+- **The evals cannot be re-run from this repository.** They compare each variant with its reference question, and the reference questions are not mine to publish. The code, the prompts, every recorded verdict and the round records are here.
+- **Model judges disagree on close calls.** The round records say where.
 
 ## Run it
 
 ```sh
 npm install
 npm run dev        # the app, at the address Vite prints
-npm test           # unit tests; those that need the practice-test questions are skipped
+npm test           # tests that need the reference questions are skipped
 npm run build
 ```
 
-Built with TypeScript, Preact and Vite. Best viewed at phone width.
+TypeScript, Preact and Vite. An installable web app that works offline, with no accounts and no backend. Best viewed at phone width.
 
-## Use and credits
+## Use
 
-This is a personal, non-commercial project, shared to show how it was made. No licence is granted: you are welcome to read the code, but please do not reuse or redistribute it.
-
-Margins is not affiliated with or endorsed by McKinsey & Company, Boston Consulting Group or Bain & Company. Their names are used only to describe the test formats the questions are modelled on. If you hold rights in any material here and want it changed or removed, open an issue.
+A personal, non-commercial project, shared to show how it was made. No licence is granted: you are welcome to read it, but please do not reuse or redistribute it. If you hold rights in anything here and want it changed or removed, open an issue.
