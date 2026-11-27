@@ -53,14 +53,15 @@ flowchart LR
     F -->|"still failing"| D(["Dropped"])
 ```
 
-| Stage | What it asks |
-|---|---|
-| **Code: calculation** | Does the answer recompute from the numbers shown? |
-| **Code: traps** | Does each declared slip land on a wrong option, and never on the right one? |
-| **Code: originality** | Are the wording, names and figures new? |
-| **Code: fidelity and variety** | Is it the same shape as its source, and not a copy of a sibling? |
-| **Blind solve** | Does a model that sees only the question pick the same answer? |
-| **Judges** | Is it unambiguous, are the wrong options good, is it realistic, is it as hard as the source? |
+| Eval I built | What it asks | Why it exists |
+|---|---|---|
+| **Calculation** (code) | Does the answer recompute from the numbers shown? | A model states a wrong answer as confidently as a right one. Arithmetic should be proved, not judged. |
+| **Traps** (code) | Does each declared slip land on a wrong option, and never on the right one? | If a common mistake lands on the correct answer, the app rewards the wrong method. |
+| **Originality** (code) | Are the wording, names and figures new? | A variant has to be a new question, not a paraphrase of its source. |
+| **Fidelity and variety** (code) | Is it the same shape as its source, and not a copy of a sibling? | Left alone, a model drifts easier or longer, and repeats its own stories. |
+| **Blind solve** (model) | Does a model that sees only the question pick the same answer? | The writer cannot see its own ambiguity. A solver without the answer key can. |
+| **Four judges** (model) | Is it unambiguous, are the wrong options good, is it realistic, is it as hard as the source? | These are the qualities code cannot measure. One judge per failure mode keeps each verdict narrow. |
+| **Judge calibration** | Does each judge catch known-bad questions and pass known-good ones? | A judge is a model too. It has to earn trust before its verdicts count. |
 
 **One standard for every check:** a new question fails only where it is worse than the question it is modelled on.
 
@@ -134,12 +135,6 @@ flowchart LR
 | Product and design principles | [`PRODUCT.md`](PRODUCT.md), [`DESIGN.md`](DESIGN.md) |
 | The shared vocabulary used by the spec, the code and the prompts | [`GLOSSARY.md`](GLOSSARY.md) |
 
-## What I would not claim
-
-- **I did not read every question.** The last 217 variants passed every automated check and went in unread. That was my call to ship, and the trade-off is written down in `evals/README.md`.
-- **The evals cannot be re-run from this repository.** They compare each variant with its reference question, and the reference questions are not mine to publish. The code, the prompts, every recorded verdict and the round records are here.
-- **Model judges disagree on close calls.** The round records say where.
-
 ## Run it
 
 ```sh
@@ -148,6 +143,8 @@ npm run dev        # the app, at the address Vite prints
 npm test           # tests that need the reference questions are skipped
 npm run build
 ```
+
+The evals themselves cannot be re-run from this repository: they compare each variant with its reference question, and the reference questions are not mine to publish. The code, the prompts, the recorded verdicts and the round records are all here.
 
 TypeScript, Preact and Vite. An installable web app that works offline, with no accounts and no backend. Best viewed at phone width.
 
