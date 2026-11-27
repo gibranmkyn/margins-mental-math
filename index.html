@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#12100b" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Margins" />
+    <meta name="description" content="Case math, daily." />
+    <link rel="icon" href="/margins-mental-math/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/margins-mental-math/apple-touch-icon.png" />
+    <title>Margins</title>
+    <script>
+      // Paint the right theme first time: the owner's stored choice, else the phone's appearance.
+      // src/ui/theme.ts takes over once the app loads; theme.test.ts keeps the two in step.
+      (function () {
+        var choice = null;
+        try {
+          choice = localStorage.getItem('margins.theme');
+        } catch (e) {}
+        var light = choice === 'light' || (choice !== 'dark' && matchMedia('(prefers-color-scheme: light)').matches);
+        var theme = light ? 'light' : 'dark';
+        var chrome = {
+          'theme-color': light ? '#ffffff' : '#12100b',
+          'color-scheme': theme,
+          'apple-mobile-web-app-status-bar-style': light ? 'default' : 'black-translucent',
+        };
+        document.documentElement.dataset.theme = theme;
+        for (var name in chrome) {
+          var meta = document.querySelector('meta[name="' + name + '"]');
+          if (meta) meta.setAttribute('content', chrome[name]);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/margins-mental-math/assets/index-LVdnPrRU.js"></script>
+    <link rel="stylesheet" crossorigin href="/margins-mental-math/assets/index-ot2l6obp.css">
+  <link rel="manifest" href="/margins-mental-math/manifest.webmanifest"></head>
+  <body>
+    <div id="app"></div>
+    <!-- Shown only when a phone is turned sideways (parts.css): Margins is laid out for portrait. -->
+    <div class="rotate" role="status" aria-live="polite">
+      <p class="rotate-title">Turn your phone upright</p>
+      <p class="rotate-note">Margins is built for one hand, in portrait. Your place is kept. A sprint or mock clock keeps running.</p>
+    </div>
+  </body>
+</html>
