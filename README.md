@@ -8,6 +8,13 @@ Margins is a phone app for practising business mental math. I'm a product manage
 
 **695 questions · 7 evals · 97% of AI-written questions pass after one fix round · 2,100+ automated tests**
 
+<p>
+  <img src="docs/screenshots/home.png" width="24%" alt="Home screen: streak, daily goal and the next session" />
+  <img src="docs/screenshots/drill.png" width="24%" alt="A typed drill with the on-screen keypad" />
+  <img src="docs/screenshots/scenario.png" width="24%" alt="A multiple-choice scenario question with a table" />
+  <img src="docs/screenshots/feedback.png" width="24%" alt="Feedback after an answer: the worked solution and the shortcut" />
+</p>
+
 ## The problem
 
 Good practice questions are scarce. A set of published practice tests runs out after one pass, and once you have seen a question you are remembering, not calculating. Asking a model for 500 more takes an afternoon. Knowing they are correct, unambiguous and as hard as the originals is the real work.
@@ -122,13 +129,6 @@ flowchart LR
 - **One solve per question.** Re-solving after seeing the answer key is not a blind solve. Those results were thrown out and counted as failures.
 
 ## The app
-
-<p>
-  <img src="docs/screenshots/home.png" width="24%" alt="Home screen: streak, daily goal and the next session" />
-  <img src="docs/screenshots/drill.png" width="24%" alt="A typed drill with the on-screen keypad" />
-  <img src="docs/screenshots/scenario.png" width="24%" alt="A multiple-choice scenario question with a table" />
-  <img src="docs/screenshots/feedback.png" width="24%" alt="Feedback after an answer: the worked solution and the shortcut" />
-</p>
 
 Short sessions of typed drills and multiple-choice questions with tables and charts. Every answer is followed by the worked solution and the fastest shortcut, and a missed question comes back later. It installs to the home screen, works offline and keeps progress on the phone.
 
