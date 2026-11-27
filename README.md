@@ -16,12 +16,10 @@ Good practice questions are scarce. A set of published practice tests runs out a
 
 ```mermaid
 flowchart LR
-    A["Step 1<br/>Analyse the reference questions"] --> B["Step 2<br/>Extract the patterns"]
-    B --> C["Step 3<br/>Define what good means"]
-    C --> D["Step 4<br/>Pilot on a small set"]
-    D --> E["Step 5<br/>Scale with agents"]
-    E --> F(["533 new questions<br/>in the bank"])
-    D -.->|"failures rewrite the rules"| C
+    A["Analyse"] --> B["Extract<br/>patterns"]
+    B --> C["Define<br/>good"]
+    C --> D["Pilot"]
+    D --> E["Scale with<br/>agents"]
     E -.->|"failures rewrite the rules"| C
 ```
 
