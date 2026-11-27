@@ -10,22 +10,53 @@ Margins is a phone app for practising business mental math. I'm a product manage
 
 ## The problem
 
-Good practice questions are scarce. A set of published practice tests runs out after one pass, and once you have seen a question you are remembering, not calculating.
+Good practice questions are scarce. A set of published practice tests runs out after one pass, and once you have seen a question you are remembering, not calculating. Asking a model for 500 more takes an afternoon. Knowing they are correct, unambiguous and as hard as the originals is the real work.
 
-So I had a model write **variants**: each keeps the structure, difficulty and traps of one reference question and changes everything a reader would recognise, such as the company, the industry, the wording and every number. Getting a model to write 500 plausible questions takes an afternoon. Knowing they are correct, unambiguous and as hard as the original is the real work.
-
-## The evals I built
+## The approach
 
 ```mermaid
 flowchart LR
-    W["Writer model<br/>drafts a variant"] --> C["4 checks<br/>by code"]
-    C --> S["Blind solve<br/>by a second model"]
-    S --> J["4 judges<br/>fresh models"]
-    J -->|"all pass"| A(["Admitted"])
-    J -->|"any fail"| F["One fix round"]
-    F -->|"re-checked"| C
-    F -->|"still failing"| D(["Dropped"])
+    A["1. Analyse<br/>the reference questions"] --> B["2. Extract<br/>the patterns"]
+    B --> C["3. Define<br/>what good means"]
+    C --> D["4. Pilot<br/>on a small set"]
+    D --> E["5. Scale<br/>with agents"]
+    E --> F(["533 new questions<br/>in the bank"])
+    D -.->|"failures rewrite the rules"| C
+    E -.->|"failures rewrite the rules"| C
 ```
+
+1. **Analyse.** Every one of the 103 reference questions was taken apart: the skill it tests, how hard it is, what its exhibit looks like, and what mistake each wrong option is there to catch. 17 were set aside as unsuitable to copy from, for example where the answer key was disputed.
+2. **Extract the patterns.** The analysis gave three things to extrapolate from: nine skills (such as break-even, unit economics and testing statements against data), the trap behind each wrong option, and a measured profile of the set as a whole (length, amount of data, chart types, where the right answer sits).
+3. **Define what good means.** One standard: a new question fails only where it is worse than the question it is modelled on. Every eval below is that sentence made checkable.
+4. **Pilot.** 100 variants from 25 reference questions, run three times. Most of the rules came from reading what failed here.
+5. **Scale.** Two larger rounds, 448 variants, written and checked by teams of agents working in parallel.
+
+A **variant** keeps the structure, difficulty and traps of one reference question and changes everything a reader would recognise: the company, the industry, the wording and every number.
+
+## How a round runs
+
+Each round is a long-running, multi-agent job. I set the brief, the standard and the rules; the agents do the volume; I read the report and make the calls.
+
+```mermaid
+flowchart TD
+    ME["Me<br/>the brief, the standard, the decisions"] --> O["Orchestrating agent<br/>plans the round and splits the work"]
+    O --> W1["Writer agent"]
+    O --> W2["Writer agent"]
+    O --> W3["... up to 14 in parallel"]
+    W1 --> G["Code checks<br/>each writer loops until its batch passes"]
+    W2 --> G
+    W3 --> G
+    G --> SV["Blind-solver agents<br/>see only the question, never the answer"]
+    SV --> JD["Judge agents<br/>four judges, one failure mode each"]
+    JD --> RP["Round report<br/>pass, fix or drop for every question"]
+    RP -.-> ME
+```
+
+- **Every agent starts with a fresh context** and sees only what its role needs. A writer never judges or solves its own batch.
+- **Writers work from a written brief**, not from a chat. The same brief can run a round with no memory of earlier ones.
+- **A failed question gets one fix round**, is re-checked from the start, and is dropped if it still fails.
+
+## The evals I built
 
 | Eval | What it asks | Why it exists |
 |---|---|---|
@@ -50,7 +81,6 @@ Across the whole project, pilot included, 548 variants were written and 533 are 
 ### Design choices
 
 - **Code first, models second.** Anything that can be computed is computed. Models judge only what code cannot.
-- **No model marks its own work.** One model writes, a different one solves blind, fresh ones judge.
 - **Judges are tested before they are trusted.** Each judge first ran on questions with known verdicts, including deliberately broken copies. It was used only if it passed at least 90% of the good ones and caught at least 80% of the broken ones.
 - **Results are tied to the exact text.** Each verdict is stored against a fingerprint of the question, so editing a question voids its results.
 
@@ -104,18 +134,7 @@ flowchart LR
 
 Short sessions of typed drills and multiple-choice questions with tables and charts. Every answer is followed by the worked solution and the fastest shortcut, and a missed question comes back later. It installs to the home screen, works offline and keeps progress on the phone.
 
-Its questions come from three places:
-
-```mermaid
-flowchart LR
-    S["Reference questions<br/>(not published here)"]
-    S -->|"patterns turned into code"| G["Generated<br/>49 templates, new numbers every time"]
-    S -->|"same skills, new stories"| O["Original<br/>162 questions"]
-    S -->|"one question in, up to eight out"| V["Variants<br/>533 questions"]
-    G --> B(["The question bank"])
-    O --> B
-    V --> B
-```
+Its questions come from three places: 49 templates that draw new numbers every time, 162 original questions, and the 533 variants.
 
 ## Why mental math
 
