@@ -43,22 +43,24 @@ A variant keeps the structure, difficulty and traps of one reference question an
 Getting a model to write 500 plausible questions takes an afternoon. Knowing they are correct, unambiguous and as hard as the original is the real work.
 
 ```mermaid
-flowchart TD
-    W["Writer model drafts a variant"] --> C1
-    subgraph CODE ["Checked by code"]
-        C1["Check 1: The answer recomputes<br/>from the numbers shown"] --> C2["Check 2: Each wrong option comes from<br/>a named slip, never the right answer"]
-        C2 --> C3["Check 3: Original wording,<br/>names and figures"]
-        C3 --> C4["Check 4: Same shape as its source,<br/>not a copy of a sibling"]
-    end
-    C4 --> M1
-    subgraph MODELS ["Checked by other models"]
-        M1["Check 5: Blind solve: a fresh model sees<br/>only the question and must agree"] --> M2["Check 6: Four judges: ambiguity,<br/>distractors, realism, difficulty"]
-    end
-    M2 -->|"all pass"| A(["Admitted to the bank"])
-    M2 -->|"any fail"| F["One fix round"]
-    F -->|"re-checked from the top"| C1
+flowchart LR
+    W["Writer model<br/>drafts a variant"] --> C["4 checks<br/>by code"]
+    C --> S["Blind solve<br/>by a second model"]
+    S --> J["4 judges<br/>fresh models"]
+    J -->|"all pass"| A(["Admitted"])
+    J -->|"any fail"| F["One fix round"]
+    F -->|"re-checked"| C
     F -->|"still failing"| D(["Dropped"])
 ```
+
+| Stage | What it asks |
+|---|---|
+| **Code: calculation** | Does the answer recompute from the numbers shown? |
+| **Code: traps** | Does each declared slip land on a wrong option, and never on the right one? |
+| **Code: originality** | Are the wording, names and figures new? |
+| **Code: fidelity and variety** | Is it the same shape as its source, and not a copy of a sibling? |
+| **Blind solve** | Does a model that sees only the question pick the same answer? |
+| **Judges** | Is it unambiguous, are the wrong options good, is it realistic, is it as hard as the source? |
 
 **One standard for every check:** a new question fails only where it is worse than the question it is modelled on.
 
